@@ -127,3 +127,31 @@ def test_unrecognized_report_rows_do_not_crash_or_claim_pass(tmp_path,rows):
     data,_=snapshot(cfg)
     assert data['pairs'][0]['artifact_check'] is None
     assert data['pairs'][0]['savings']['input_tokens']==80
+
+
+def test_native_tool_coverage_detects_missing_command_receipts(tmp_path):
+    from server import native_tool_coverage
+    path=tmp_path/'wire.jsonl'
+    hook={'method':'hook/completed','params':{'threadId':'t','run':{'eventName':'preToolUse','id':'pre-tool-use:0:config:exec-one'}}}
+    path.write_text(json.dumps(hook)+'\n'+json.dumps(hook)+'\n')
+    value=native_tool_coverage(path,'t')
+    assert value['observed_pretool_hooks']==1
+    assert value['unmatched_pretool_hooks']==1
+    assert value['command_trace_coverage'].startswith('UNKNOWN')
+    command={'method':'item/completed','params':{'threadId':'t','item':{'type':'commandExecution','id':'exec-one'}}}
+    with path.open('a') as f:f.write(json.dumps(command)+'\n')
+    value=native_tool_coverage(path,'t')
+    assert value['unmatched_pretool_hooks']==0
+    assert 'completeness unproven' in value['command_trace_coverage']
+    assert native_tool_coverage(path,'other')['observed_pretool_hooks']==0
+
+
+def test_hook_gap_surfaces_as_snapshot_alert(tmp_path):
+    cfg=setup(tmp_path);wire=tmp_path/'native.jsonl'
+    wire.write_text(json.dumps({'method':'hook/completed','params':{'threadId':'t','run':{'eventName':'preToolUse','id':'pre-tool-use:0:config:exec-missing'}}})+'\n')
+    status=json.loads((tmp_path/'on.json').read_text());status.update(thread_id='t',native_events_sha256=hashlib.sha256(wire.read_bytes()).hexdigest());(tmp_path/'on.json').write_text(json.dumps(status))
+    cfg['experiments'][0]['runs'][1]['native_events']='native.jsonl'
+    data,_=snapshot(cfg)
+    assert data['runs'][1]['commands']==0
+    assert data['runs'][1]['unmatched_pretool_hooks']==1
+    assert any('zero recorded commands' in p['message'] for p in data['problems'])

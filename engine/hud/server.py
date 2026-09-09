@@ -95,6 +95,33 @@ def engine_view(path):
             'engine_event_source_hash':hashlib.sha256(raw).hexdigest()}
 
 
+
+COVERAGE_CACHE={}
+def native_tool_coverage(path,thread_id):
+    raw=cached_bytes(path,16_000_000);digest=hashlib.sha256(raw).hexdigest()
+    key=(str(path),thread_id);prior=COVERAGE_CACHE.get(key)
+    if prior and prior[0]==digest:return prior[1]
+    hooks=set();commands=set()
+    for line in raw.splitlines():
+        try:event=json.loads(line)
+        except (ValueError,UnicodeError):continue
+        params=event.get('params',{})
+        if params.get('threadId')!=thread_id:continue
+        if event.get('method')=='hook/completed':
+            run=params.get('run',{})
+            if run.get('eventName')=='preToolUse':
+                hooks.add(run.get('id','unknown').rsplit(':',1)[-1])
+        if event.get('method')=='item/completed':
+            item=params.get('item',{})
+            if item.get('type')=='commandExecution':commands.add(item.get('id'))
+    unmatched={h for h in hooks if h.startswith('exec-')}-commands
+    result={'observed_pretool_hooks':len(hooks),
+            'unmatched_pretool_hooks':len(unmatched),
+            'command_trace_coverage':'UNKNOWN: unmatched pre-tool hooks' if unmatched else 'No unmatched hooks observed; completeness unproven'}
+    COVERAGE_CACHE[key]=(digest,result)
+    return result
+
+
 def native_cumulative(path,thread_id):
     raw=cached_bytes(path,16_000_000);latest=None
     for line in raw.splitlines():
@@ -220,6 +247,9 @@ def snapshot(config):
                 if spec.get('native_events') and status.get('thread_id'):
                     native_tokens,native_hash=native_cumulative(safe_path(root,spec['native_events']),status['thread_id'])
                     if status.get('native_events_sha256') and native_hash!=status['native_events_sha256']:raise ValueError('Raw native wire hash mismatch')
+                    row.update(native_tool_coverage(safe_path(root,spec['native_events']),status['thread_id']))
+                    if row['unmatched_pretool_hooks']:
+                        problems.append({'run':rid,'message':'Command pre-tool hooks lack matching command receipts; zero recorded commands does not mean zero tool work.'})
                     if native_tokens:
                         if row['usage'] and any(row['usage'].get(k)!=native_tokens[k] for k in native_tokens):raise ValueError('Raw native usage mismatch')
                         row['usage']=native_tokens;row['usage_source']='Native app-server cumulative update'
