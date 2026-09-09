@@ -2,8 +2,10 @@
   "benchmark_ranges.py": "72e0f96bf964f9b1f3825ac0efdd1c392e5cb0c937ad1ccf2ec92da362cfb28c",
   "evidence.py": "9cb833c82855c3472f4c9e670a97a110060768da8f11057bf957442b688a918a",
   "line_index.py": "0c760f65baf6d754d87ee3577d0ace3d30b1451cf6f05c712a7eb11fef57abcc",
+  "renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
   "test_evidence.py": "2dc2087725a26aeb1296111f4c9512382bc56a492c42f783d42f269b8b764a81",
   "test_line_index.py": "168209813755470379581eda172ac02cbefdf29973a2b7afad9eea41dd2e9dc7",
+  "test_renderer.py": "747d9987984d42ee6fc70cfa0be16778675f5e089c2260bf2a0f5a069124b41b",
   "test_verification.py": "844913f6b8ba6486972577e4a1cb1aeed8886ec6024af872f6a1edc13493273b",
   "verification.py": "85698a51637ee5c08349a89f799edb33ab96e1ff6c2c474304e1ceb1b4d15427"
 }

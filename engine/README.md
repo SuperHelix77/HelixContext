@@ -19,10 +19,10 @@ The command wrapper emits a candidate. Acceptance is an explicit separate operat
 ## Reproduce the structural tests
 
 ```sh
-python3 -m pytest -q engine/prototype/test_evidence.py engine/prototype/test_verification.py engine/prototype/test_line_index.py
+python3 -m pytest -q engine/prototype/test_evidence.py engine/prototype/test_verification.py engine/prototype/test_line_index.py engine/prototype/test_renderer.py
 ```
 
-Observed: **25 tests passed**. These include corrupt metadata, altered numeric evidence, omitted diagnostics/counts, invalid spans, stale publication, byte corruption, timeout and nonzero process exits. They are infrastructure tests, not model capability evidence.
+Observed: **33 tests passed**. These include corrupt metadata, altered numeric evidence, omitted diagnostics/counts, invalid spans, stale publication, byte corruption, timeout and nonzero process exits. They are infrastructure tests, not model capability evidence.
 
 ## Costs and unresolved limits
 
@@ -58,3 +58,11 @@ Reproduce with `python3 engine/prototype/benchmark_ranges.py`. The committed `ra
 The extra index objects occupy 4,434,674 logical file bytes. Both arms start with one identical raw object; the index arm includes construction, verification and lookups. These timings are single local observations with OS caching, not confidence intervals. The ordinary arm is the existing full-hash range reader; an efficient seek-based ordinary control is still needed for a broader systems comparison. Very long individual lines can exceed the target chunk size. Memory peak, physical disk activity and monetary cost are unmeasured. **This is not a model benchmark or a token-savings result.**
 
 The one-lookup loss and five-lookup latency loss prohibit enabling this indiscriminately. A future admission policy must account for expected reuse and fail open to ordinary exact retrieval.
+
+## Exact-source output renderer (not yet model-benchmarked)
+
+`renderer.assemble(store, plan)` accepts `helix.copy.v1` plans containing hash-bound half-open byte ranges and optional UTF-8 literals. It assembles bytes deterministically without evaluating model code or accepting source filesystem paths. `renderer.publish` validates the entire plan before replacing a caller-supplied destination. A required previous-content digest prevents stale cooperating writers from overwriting each other; null means the destination must be absent.
+
+Eight dedicated tests cover exact binary/numeric-spelling preservation, invalid operations, late failure without destination mutation, stale versions, corrupt evidence and output limits. Destination reads/writes are reported separately. There is an advisory lock, not hostile-writer isolation; parent-directory fsync and power-loss durability are not guaranteed. Whole source objects are read and cached, so output-size limits do not bound source-memory consumption.
+
+The model remains responsible for semantic selection. The renderer only copies exact selected bytes; literal output still costs model generation. This is an optional callable prototype, not an installed interception layer or a demonstrated token reduction. A fair future evaluation must allow ordinary agents efficient copying and file generation too.

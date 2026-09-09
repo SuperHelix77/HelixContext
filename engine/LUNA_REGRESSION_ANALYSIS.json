@@ -1,0 +1,40 @@
+{
+  "scope": "Descriptive audit of existing V2 pilot, not a causal attribution or new experiment",
+  "observations": [
+    {
+      "arm": "off",
+      "trace_sha256": "790f4cdec6cfd5d820af8a0a56fe7f5fbde5bab6ec4258dfadfba0b49bdc8be8",
+      "command_execution_items": 3,
+      "command_output_bytes": 3070,
+      "nonempty_agent_messages": 1,
+      "usage": {
+        "input_tokens": 56170,
+        "cached_input_tokens": 44032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 724,
+        "reasoning_output_tokens": 295
+      }
+    },
+    {
+      "arm": "on",
+      "trace_sha256": "c1fd7edec6f7cad2e6e488e03933392ad0c97d30b796bbc4b31859f3054bb0b1",
+      "command_execution_items": 2,
+      "command_output_bytes": 2971,
+      "nonempty_agent_messages": 3,
+      "usage": {
+        "input_tokens": 60034,
+        "cached_input_tokens": 45056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1275,
+        "reasoning_output_tokens": 704
+      }
+    }
+  ],
+  "findings": [
+    "On has two command executions versus three off, so more shell commands do not explain the total regression.",
+    "On re-inspects raw facts, including facts present in the packet; the packet does not eliminate ordinary source checking.",
+    "On reports a memory-helper permission error without a corresponding command_execution item in this public event trace; whether unexposed runtime work explains it is unverified.",
+    "Reasoning output and extra messages increase, but this single trace pair cannot establish the cause or generalize a model-specific policy."
+  ],
+  "next_gate": "Prospective efficient ordinary-copy versus renderer-assisted tasks; preserve complete source and output verification, record all native and renderer costs."
+}
