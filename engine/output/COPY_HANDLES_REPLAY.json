@@ -1,0 +1,172 @@
+{
+  "classification": "Offline replay of exposed historical selections; no new model call",
+  "source_sha256": "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2",
+  "selection_sha256": "30ba2706b93db29ca9c122b2975dd44f707531772306d8167ef95060effb7b6f",
+  "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+  "artifact_bytes": 21539,
+  "payload_tokenizer": "o200k_base; syntax counts only, not native usage",
+  "strategies": {
+    "numeric_aliases": {
+      "creation": {
+        "schema": "helix.copy_catalog.creation.v1",
+        "reference": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "3f626c6e995e37cc5d84f15f10782f10039faf44509372bfb4899a9b40249027"
+        },
+        "catalog_bytes": 9157,
+        "handles": 72,
+        "elapsed_seconds": 0.0016572499880567193,
+        "store_io": {
+          "object_bytes_read": 172454,
+          "object_bytes_written": 9157,
+          "object_bytes_hashed": 181611,
+          "object_read_operations": 1,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "limits": "Model setup/discovery, physical I/O and upstream ingestion excluded."
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 21539,
+        "sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+        "source_sha256": [
+          "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2"
+        ],
+        "operations": 9,
+        "io": {
+          "object_bytes_read": 354065,
+          "object_bytes_written": 181611,
+          "object_bytes_hashed": 535676,
+          "object_read_operations": 3,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 21539,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "3f626c6e995e37cc5d84f15f10782f10039faf44509372bfb4899a9b40249027"
+        },
+        "selection_io": {
+          "object_bytes_read": 181611,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 181611,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "695857eee91cbfb19a9e3af2116a7540e55a71ad6637933fc42780a07a31899d",
+        "response_bytes": 46,
+        "semantic_success": null
+      },
+      "completion_seconds": 0.0006128329550847411,
+      "available_handles": 72,
+      "selected_handles": 9,
+      "exact_bytes_match": true,
+      "payload_tokens": {
+        "explicit_range_plan": 463,
+        "prior_compact_id_selection": 55,
+        "selection": 19,
+        "additional_alias_legend_if_injected": 649,
+        "catalog_reference_if_injected": 50
+      }
+    },
+    "original_ids": {
+      "creation": {
+        "schema": "helix.copy_catalog.creation.v1",
+        "reference": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "ff9034b47eeabd74fb6fef73c190ff066395fb09c532825adc91bdfa73bb098a"
+        },
+        "catalog_bytes": 9455,
+        "handles": 72,
+        "elapsed_seconds": 0.0004519589710980654,
+        "store_io": {
+          "object_bytes_read": 172454,
+          "object_bytes_written": 9455,
+          "object_bytes_hashed": 181909,
+          "object_read_operations": 1,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "limits": "Model setup/discovery, physical I/O and upstream ingestion excluded."
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 21539,
+        "sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+        "source_sha256": [
+          "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2"
+        ],
+        "operations": 9,
+        "io": {
+          "object_bytes_read": 354363,
+          "object_bytes_written": 181909,
+          "object_bytes_hashed": 536272,
+          "object_read_operations": 3,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 21539,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "ff9034b47eeabd74fb6fef73c190ff066395fb09c532825adc91bdfa73bb098a"
+        },
+        "selection_io": {
+          "object_bytes_read": 181909,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 181909,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "46c0ed829f774a934c4d99111fcb08ca01dc76c3502f3c9eea624f72d94a33b3",
+        "response_bytes": 82,
+        "semantic_success": null
+      },
+      "completion_seconds": 0.0005542500293813646,
+      "available_handles": 72,
+      "selected_handles": 9,
+      "exact_bytes_match": true,
+      "payload_tokens": {
+        "explicit_range_plan": 463,
+        "prior_compact_id_selection": 55,
+        "selection": 55,
+        "additional_alias_legend_if_injected": 0,
+        "catalog_reference_if_injected": 46
+      }
+    }
+  },
+  "decision": "Use original IDs for this caller-completion candidate; renaming spends input to save output syntax.",
+  "limits": [
+    "Source semantic selection is reused, not retested.",
+    "Prior helper already accepted IDs; no novelty or new native saving follows from ID selection.",
+    "New hypothesis: remove model-side helper invocation, selection-file creation and hash transcription.",
+    "Caller preparation, physical I/O and upstream ingestion not fully timed or priced.",
+    "Original IDs must already be present in semantic evidence; zero alias overhead is conditional on that.",
+    "Native input/output savings, error-recovery costs and capability parity remain unmeasured."
+  ],
+  "implementation_hashes": {
+    "copy_handles.py": "4ef3523b164fb27878f46c45db75fe5c9af0ff887179398b586abd773886bc52",
+    "renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+    "evidence.py": "936e29154f49ac65a1b6d09af460d9931ad1998bd60f5852fbf1c98f0ee7cc57"
+  }
+}

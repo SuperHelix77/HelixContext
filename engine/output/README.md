@@ -6,6 +6,11 @@ workflow. No result here establishes that goal or universal intelligence parity.
 Model-specific strategies are mandatory; a measured benefit does not transfer
 between models, workloads, or cold/warm execution without evidence.
 
+Latest mechanism: [caller-side completion](CALLER_COMPLETION.md) moves exact
+assembly out of the model's tool loop. Offline replay preserves the artifact,
+but rejects numeric alias recoding after accounting for its input legend.
+Original IDs remain preferred. Native qualification is still pending.
+
 ## Fresh Luna High cold-plan diagnostic
 
 One task, three batches, two fresh calls in fixed control/candidate order. Both
