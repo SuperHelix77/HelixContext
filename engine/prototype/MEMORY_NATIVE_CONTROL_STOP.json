@@ -1,0 +1,39 @@
+{
+  "classification": "Fresh native control completed; pair stopped at predeclared post-call budget gate",
+  "model": "gpt-5.6-luna",
+  "effort": "high",
+  "calls_completed": 1,
+  "candidate_calls": 0,
+  "usage": {
+    "input_tokens": 194759,
+    "cached_input_tokens": 167424,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1659,
+    "reasoning_output_tokens": 674
+  },
+  "input_minus_reported_cached": 27335,
+  "elapsed_seconds": 49.292,
+  "prompt_payload_proxy_tokens": 18238,
+  "exact_answer_pass": true,
+  "source_unchanged": true,
+  "input_saved_percent": null,
+  "output_saved_percent": null,
+  "joint_80": null,
+  "stop_rule": "No expansion. If first call exceeds 60000 input or 4000 output, do not launch second. Per-call runner timeout 600 seconds. Token limits are post-call stop thresholds, not server hard caps.",
+  "stop_reason": "Control input 194759 exceeded 60000 post-call threshold; candidate not launched.",
+  "artifacts": "/Users/mert/Documents/ChatGPT/Helix/research/memory-native-pair-20260909",
+  "hashes": {
+    "run.py": "e966581790e689ef1ee2ad500f89641534cdc6c2922a7eb17cf020b8606b3a12",
+    "manifest.json": "e872c0ff07ca80d8930db8edfb17198ac15c33013c0047f787ef229817b7e0d3",
+    "results.json": "1e0e9fbfb0211ed833eae09d5e76080d8c164aa7ec145d02278bdf94fbf016b0",
+    "receipts/off/events.jsonl": "ba5bd9b2271c8263af2c734a5dd677720932e6a9d7646c5d0b394fbedbecac26",
+    "receipts/off/status.json": "be59f8152086ab9ba2561c591465c2f4bc1b0ba9303be640d834859dcbc9096c",
+    "tasks/off/answer.json": "616529a4343959673b841e736c8dd64992010fe31e4e91780b8687e2db27bf3c"
+  },
+  "limits": [
+    "Post-call budget cannot bound spend inside one multi-tool native turn.",
+    "Reported cached input is preserved; no monetary conversion.",
+    "Only one control and bounded artifact checks; no pair, no output-saving or general-parity evidence.",
+    "No task restriction, reduced reasoning, omitted verification or forced one-command rule was introduced to meet the budget."
+  ]
+}

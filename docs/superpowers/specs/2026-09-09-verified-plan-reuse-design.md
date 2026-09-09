@@ -1,6 +1,6 @@
-# Verified named-plan reuse: proposed design
+# Verified named-plan reuse: approved design, experimental implementation
 
-Status: design audited; awaiting user design approval. No implementation or native benchmark launch in this step.
+Status: user approved the design and five additions below. A partial experimental implementation exists; full isolation, complete accounting and performance admission remain open. See `engine/prototype/NAMED_PLANS_STATUS.md` from the repository root.
 
 ## Requirements and context
 

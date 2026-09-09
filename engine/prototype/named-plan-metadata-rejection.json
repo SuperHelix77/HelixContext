@@ -1,0 +1,49 @@
+{
+  "classification": "observed workflow rejection; external metadata-change cause unknown",
+  "artifact_root": "/Users/mert/Documents/ChatGPT/Helix/research/named-plan-overhead-20260909/256",
+  "expected": {
+    "sha256": "85e62acd750c4eb56b7b6a1d66dca5bfaac5f062608a1a893410d0288936c09a",
+    "stamp": [
+      16777232,
+      84787666,
+      256,
+      1788959415863909969,
+      1788959415863909969,
+      420
+    ]
+  },
+  "observed": {
+    "sha256": "85e62acd750c4eb56b7b6a1d66dca5bfaac5f062608a1a893410d0288936c09a",
+    "stamp": [
+      16777232,
+      84787666,
+      256,
+      1788959415863909969,
+      1788959416076285957,
+      420
+    ]
+  },
+  "attempts": [
+    {
+      "receipt": "f54a7aa6943be28e84685cc1e50e1f055f925635bc24ed072af0de6538b6a656",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "receipt": "ad5a159cc6b82f87c62fdf7f4c7216a7eb4612e200e1716577330e300261699e",
+      "status": "SUCCEEDED",
+      "error": null
+    },
+    {
+      "receipt": "14b1b4a66d40721e611d686ccb8beff711440f389bd1e79f497cf09bcde8e84d",
+      "status": "FAILED",
+      "error": "ValueError: Declared dependency invalidated: input.bin"
+    },
+    {
+      "receipt": "cc51164769391898f5f9c30dd88ccf7029b300800bf600123202fc1780dde673",
+      "status": "SUCCEEDED",
+      "error": null
+    }
+  ],
+  "conclusion": "Same content hash and other bound fields; ctime differs. Strict stamp checking rejected reuse. Do not promote workflow parity."
+}

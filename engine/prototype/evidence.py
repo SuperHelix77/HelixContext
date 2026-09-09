@@ -93,7 +93,7 @@ def packet(store,key,kind='generic',max_bytes=6000):
  if len(encode())>max_bytes:raise ValueError('Metadata exceeds packet budget; raw receipt remains available')
  return p
 
-def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=()):
+def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=(),env=None):
  cwd=Path(cwd).resolve();watch=[Path(x) if Path(x).is_absolute() else cwd/x for x in watch]
  snap=lambda:{str(p):digest(p.read_bytes()) if p.is_file() else None for p in watch}
  before=snap();start=time.time();timed_out=False
@@ -101,7 +101,7 @@ def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=()):
  out=staging/'stdout';err=staging/'stderr';interrupted=False
  start_json=json.dumps({'argv':argv,'cwd':str(cwd),'started_unix':start});(staging/'started.json').write_text(start_json);store.metrics['staging_bytes_written']+=len(start_json.encode())
  with out.open('wb') as o,err.open('wb') as e:
-  child=subprocess.Popen(argv,cwd=cwd,stdout=o,stderr=e,start_new_session=True)
+  child=subprocess.Popen(argv,cwd=cwd,stdout=o,stderr=e,start_new_session=True,env=env)
   try:code=child.wait(timeout=timeout)
   except (subprocess.TimeoutExpired,KeyboardInterrupt) as exc:
    timed_out=isinstance(exc,subprocess.TimeoutExpired);interrupted=not timed_out;os.killpg(child.pid,signal.SIGKILL);code=child.wait()

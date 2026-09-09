@@ -6,6 +6,8 @@
 **Architecture:** Content-addressed manifests + immutable (id,version) registration; snapshot-based checked execution; SQLite success pointer committed only after final validation. Failed attempts retain independent receipts. Cost vectors and strict break-even arithmetic preserve unknown measurements.
 **Tech Stack:** Python standard library, existing evidence/checked-step engine, SQLite, pytest.
 
+**Follow-on integration:** [Skill entry point and Huashu HUD requirements](../specs/2026-09-09-hud-and-skill-integration.md). Freeze execution/accounting telemetry before HUD implementation; maintain both skill-only and skill-plus-engine optimization lanes.
+
 ## Task 1 — identity and dependencies
 - [ ] Add `engine/prototype/test_named_plans.py` tests that register a valid plan, reject a changed plan under the same identity, detect tampered manifests and changed input/config/schema/executable/environment, and preserve version references.
 - [ ] Run `python3 -m pytest -q engine/prototype/test_named_plans.py`; verify missing API assertion fails.

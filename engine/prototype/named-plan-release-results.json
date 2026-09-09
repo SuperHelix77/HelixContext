@@ -1,0 +1,1185 @@
+{
+  "schema": "helix.plan_overhead.v1",
+  "classification": "offline infrastructure overhead; no native model evidence",
+  "python": "3.14.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "sources": {
+    "benchmark_named_plans.py": "00476788d8f4c0035ab9f745c2006c24c7c63c96ad322b2667e03cd0669368d7",
+    "named_plans.py": "e1a8a05d70e6349fe520ac31bd6b400217eabe0a011053e6924ef995cfebfe59",
+    "plan_dependencies.py": "360c9755afd8622ed590787120622ab41b00c135f09c2b35a593b540c343e6d8",
+    "plan_costs.py": "bac361c56c6307cb509f4e645b99cb7b5c85796eae5f8d7d704f9de88e127dc3",
+    "checked_steps.py": "8bad95798863b74401b26482d9928b794c0084bb2c003f43962cb9b6cb97e8f2",
+    "evidence.py": "936e29154f49ac65a1b6d09af460d9931ad1998bd60f5852fbf1c98f0ee7cc57"
+  },
+  "cases": [
+    {
+      "input_bytes": 256,
+      "repeats": 7,
+      "creation_seconds": 0.0029792090062983334,
+      "creation_retained_bytes": 34728,
+      "samples": [
+        {
+          "ordinary": {
+            "seconds": 0.028144916985183954,
+            "retained_growth_bytes": 1633,
+            "store_io": {
+              "object_bytes_read": 854,
+              "object_bytes_written": 1252,
+              "object_bytes_hashed": 2106,
+              "object_read_operations": 3,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 381,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.030919249984435737,
+            "retained_growth_bytes": 3633,
+            "store_io": {
+              "object_bytes_read": 2554,
+              "object_bytes_written": 2552,
+              "object_bytes_hashed": 5106,
+              "object_read_operations": 4,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 429,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "58ee8ab7071f7fbf65ec5defac44196f44c1bfe45230fca96c4fe55fa532a338",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 6.645801477134228e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0005760000203736126,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "cbe588b236af62fc185c5071ca5f0a0452321ba345982941acec3817372716cc",
+              "total_seconds": 0.0007627499871887267
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.0305299159954302,
+            "retained_growth_bytes": 3567,
+            "store_io": {
+              "object_bytes_read": 2619,
+              "object_bytes_written": 2487,
+              "object_bytes_hashed": 5171,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 429,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "4ab1aaa972409582e7af83de8facd374ef14c6bac72f24f3a6fe0858fe83700c",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 8.041708497330546e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.000548041018191725,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "8c8f1504f3ff2a861599dd2a06579fb8f5734c2478ab8ce6fc1cb6456c521e9d",
+              "total_seconds": 0.0007315410184673965
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.02924479200737551,
+            "retained_growth_bytes": 1565,
+            "store_io": {
+              "object_bytes_read": 917,
+              "object_bytes_written": 1185,
+              "object_bytes_hashed": 2167,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 380,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.02940320799825713,
+            "retained_growth_bytes": 1567,
+            "store_io": {
+              "object_bytes_read": 918,
+              "object_bytes_written": 1186,
+              "object_bytes_hashed": 2169,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 381,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.03107504197396338,
+            "retained_growth_bytes": 3565,
+            "store_io": {
+              "object_bytes_read": 2618,
+              "object_bytes_written": 2485,
+              "object_bytes_hashed": 5168,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 428,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "c2a18c218e2984252965e2fe37993b6a93b6e37ee50224c623604c4e8ea95be2",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 6.608391413465142e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0004852919955737889,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "834840eb788d521c31fcb4dd10a07ff5a725dda2473f1a71d4c3c0db598d1e02",
+              "total_seconds": 0.0006419169949367642
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.0309311660239473,
+            "retained_growth_bytes": 3565,
+            "store_io": {
+              "object_bytes_read": 2618,
+              "object_bytes_written": 2485,
+              "object_bytes_hashed": 5168,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 428,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "738fb03d4b6216488639798c921d026fd53ecda87e09cf3819d712d6f607c3d1",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 7.095793262124062e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0004718750133179128,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "5dfa63388bac3eb6984fdf86ff15296f4d72f025443a0eb0fc53df0ba2e02a79",
+              "total_seconds": 0.0006453330279327929
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.02722508297301829,
+            "retained_growth_bytes": 1569,
+            "store_io": {
+              "object_bytes_read": 919,
+              "object_bytes_written": 1187,
+              "object_bytes_hashed": 2171,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 382,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.02619962504832074,
+            "retained_growth_bytes": 1567,
+            "store_io": {
+              "object_bytes_read": 918,
+              "object_bytes_written": 1186,
+              "object_bytes_hashed": 2169,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 381,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.032027166977059096,
+            "retained_growth_bytes": 3568,
+            "store_io": {
+              "object_bytes_read": 2620,
+              "object_bytes_written": 2487,
+              "object_bytes_hashed": 5172,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 429,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "2fe14d3752a515f79d0fdfaaadeb6932a0128418c6cba87247f9c0a9e6504018",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 8.687505032867193e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0005956249660812318,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "95c45ce1fe274c24177006bef2865d09011deecceb1203f02b28c7b001c2639f",
+              "total_seconds": 0.0008087090100161731
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.029966749949380755,
+            "retained_growth_bytes": 3564,
+            "store_io": {
+              "object_bytes_read": 2618,
+              "object_bytes_written": 2486,
+              "object_bytes_hashed": 5169,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 428,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "b9cea347770691f3ed9fb6c9b919aed2df96d70117697646a4017c340a4315ee",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 7.02079851180315e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.000503833987750113,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "bdda6dc7f3768df5c200f949fef6efb1e587311172ed756c21709304cfa21d4b",
+              "total_seconds": 0.000681541976518929
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.027806832978967577,
+            "retained_growth_bytes": 1566,
+            "store_io": {
+              "object_bytes_read": 917,
+              "object_bytes_written": 1185,
+              "object_bytes_hashed": 2167,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 381,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.027504958037752658,
+            "retained_growth_bytes": 1568,
+            "store_io": {
+              "object_bytes_read": 919,
+              "object_bytes_written": 1187,
+              "object_bytes_hashed": 2171,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 381,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.03163312503602356,
+            "retained_growth_bytes": 3563,
+            "store_io": {
+              "object_bytes_read": 2618,
+              "object_bytes_written": 2484,
+              "object_bytes_hashed": 5167,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 428,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 829752,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "04edfa185d47ebf9e21ff8575f3f47d3f4e7a39fc9dc967850da9433b2e88bf4",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 362,
+              "errors": [],
+              "validation": {
+                "bytes_read": 724,
+                "bytes_hashed": 724,
+                "seconds": 8.587498450651765e-05
+              },
+              "store_io": {
+                "object_bytes_read": 1960,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1960,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.000537916028406471,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "0be115c29ee75548f72a029e88d5e930b6ef9af1556ab5fd58c0e483962e9892",
+              "total_seconds": 0.0007368749938905239
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        }
+      ],
+      "median_seconds": {
+        "ordinary": 0.027806832978967577,
+        "planned": 0.0309311660239473
+      },
+      "incremental_median_seconds": 0.0031243330449797213,
+      "latency_break_even_reuses_constant_median_assumption": null,
+      "total_seconds_including_creation": {
+        "ordinary": 0.19552941602887586,
+        "planned": 0.22006162494653836
+      },
+      "retained_bytes": {
+        "ordinary": 11035,
+        "planned": 59753
+      }
+    },
+    {
+      "input_bytes": 1048576,
+      "repeats": 7,
+      "creation_seconds": 0.004239249974489212,
+      "creation_retained_bytes": 1083056,
+      "samples": [
+        {
+          "ordinary": {
+            "seconds": 0.02858970797387883,
+            "retained_growth_bytes": 1641,
+            "store_io": {
+              "object_bytes_read": 858,
+              "object_bytes_written": 1256,
+              "object_bytes_hashed": 2114,
+              "object_read_operations": 3,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 385,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.03722941706655547,
+            "retained_growth_bytes": 3667,
+            "store_io": {
+              "object_bytes_read": 2565,
+              "object_bytes_written": 2565,
+              "object_bytes_hashed": 5130,
+              "object_read_operations": 4,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 432,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "fc86017e073bda5e78978f7e98cc7fe32892525011e397ca9206a76017f7d96f",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0007977490313351154
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0017046669963747263,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "42d1bac1040597647e9ee2a9aaa496bc5d072357c58ee7ccaba22542f040612a",
+              "total_seconds": 0.0018753750482574105
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.03841620893217623,
+            "retained_growth_bytes": 3601,
+            "store_io": {
+              "object_bytes_read": 2631,
+              "object_bytes_written": 2501,
+              "object_bytes_hashed": 5197,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 432,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "32bd90babcac0bb5681f51df3062a3c5ef2bcf0df336e3de01909fe3047eeb5a",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0008411250310018659
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.00181049999082461,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "24af6e1d3ec2199d21883ad1df50e6f2bc4ab970e7d5fc98fa429aa894d4c6e7",
+              "total_seconds": 0.002024416986387223
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.029724834021180868,
+            "retained_growth_bytes": 1575,
+            "store_io": {
+              "object_bytes_read": 922,
+              "object_bytes_written": 1190,
+              "object_bytes_hashed": 2177,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 385,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.027645915979519486,
+            "retained_growth_bytes": 1577,
+            "store_io": {
+              "object_bytes_read": 923,
+              "object_bytes_written": 1191,
+              "object_bytes_hashed": 2179,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 386,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.03908724995562807,
+            "retained_growth_bytes": 3599,
+            "store_io": {
+              "object_bytes_read": 2629,
+              "object_bytes_written": 2498,
+              "object_bytes_hashed": 5192,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 431,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "a259e09c06925b0627e00ff20be58fcd6a1027dc4d3a68a2c2d66519e023c7fa",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0009692489984445274
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0019734579836949706,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "47a67e081fab844b92ab8db4dc7958ad895e821794d3a441c9d08c1044c34d51",
+              "total_seconds": 0.0023391249706037343
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.03888516704319045,
+            "retained_growth_bytes": 3602,
+            "store_io": {
+              "object_bytes_read": 2631,
+              "object_bytes_written": 2500,
+              "object_bytes_hashed": 5196,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 433,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "ca5ba13199a19ca199035e279f36f668eb5f4ce84090ae54ecf1091c7edfcb1a",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0008272500708699226
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.001674707978963852,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "8b67f646a2b4a9239c9fba0ce4025747cdafb6dd8f047912bf101cdc10593236",
+              "total_seconds": 0.001876708003692329
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.027385624998714775,
+            "retained_growth_bytes": 1576,
+            "store_io": {
+              "object_bytes_read": 923,
+              "object_bytes_written": 1191,
+              "object_bytes_hashed": 2179,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 385,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.027511832944583148,
+            "retained_growth_bytes": 1573,
+            "store_io": {
+              "object_bytes_read": 921,
+              "object_bytes_written": 1189,
+              "object_bytes_hashed": 2175,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 384,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.0375141249387525,
+            "retained_growth_bytes": 3602,
+            "store_io": {
+              "object_bytes_read": 2630,
+              "object_bytes_written": 2500,
+              "object_bytes_hashed": 5195,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 433,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "8992f51131562b6b3d22efa0e56396fe005d76c86fa34cf8a8bc3b6eee2fe5da",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.000864416069816798
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0018557090079411864,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "f4423ed11dc537c91dbcde4666518fd13003386ddc670cb6f9262066fe168600",
+              "total_seconds": 0.0020769169786944985
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "planned": {
+            "seconds": 0.038341542007401586,
+            "retained_growth_bytes": 3603,
+            "store_io": {
+              "object_bytes_read": 2630,
+              "object_bytes_written": 2501,
+              "object_bytes_hashed": 5196,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 432,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "45aa79a93bd71124faaa58b1436698416e96b8609ebd56aa054965a2db857444",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0009096249705180526
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0019145000260323286,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "6342e2ed27b008b1ac1e708d9c67820573d2dbf051a78fed206c1baab50a8415",
+              "total_seconds": 0.002274958009365946
+            },
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "ordinary": {
+            "seconds": 0.028023583989124745,
+            "retained_growth_bytes": 1576,
+            "store_io": {
+              "object_bytes_read": 923,
+              "object_bytes_written": 1191,
+              "object_bytes_hashed": 2179,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 385,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          }
+        },
+        {
+          "ordinary": {
+            "seconds": 0.026862209022510797,
+            "retained_growth_bytes": 1575,
+            "store_io": {
+              "object_bytes_read": 922,
+              "object_bytes_written": 1190,
+              "object_bytes_hashed": 2177,
+              "object_read_operations": 5,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 385,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": null,
+            "release": null,
+            "exact_output": true,
+            "exit_code": 0
+          },
+          "planned": {
+            "seconds": 0.039752457989379764,
+            "retained_growth_bytes": 3599,
+            "store_io": {
+              "object_bytes_read": 2630,
+              "object_bytes_written": 2497,
+              "object_bytes_hashed": 5192,
+              "object_read_operations": 6,
+              "staging_bytes_read": 65,
+              "staging_bytes_written": 432,
+              "projection_bytes_parsed": 65
+            },
+            "dependency_validation_bytes_read": 12361272,
+            "release": {
+              "schema": "helix.plan_input_release.v1",
+              "attempt_hash": "140aee346b3ae509185d5e1b6f981b125fd9c5df8d7992b7231d2efb2ae74b39",
+              "status": "RELEASED",
+              "removed": [
+                "input.bin",
+                "job.py"
+              ],
+              "bytes_removed": 1048682,
+              "errors": [],
+              "validation": {
+                "bytes_read": 2097364,
+                "bytes_hashed": 2097364,
+                "seconds": 0.0008763759979046881
+              },
+              "store_io": {
+                "object_bytes_read": 1050288,
+                "object_bytes_written": 0,
+                "object_bytes_hashed": 1050288,
+                "object_read_operations": 3,
+                "staging_bytes_read": 0,
+                "staging_bytes_written": 0,
+                "projection_bytes_parsed": 0
+              },
+              "seconds_before_receipt": 0.0017637910204939544,
+              "scope": "Explicit caller release after consumers finish; no concurrent writers. Logical bytes; physical I/O unmeasured.",
+              "release_receipt": "e4a2c8726e1fb057c3a3cb6f5b2d29508725b695ecc3637ab0c17462c17d6e80",
+              "total_seconds": 0.0020281660254113376
+            },
+            "exact_output": true,
+            "exit_code": 0
+          }
+        }
+      ],
+      "median_seconds": {
+        "ordinary": 0.027645915979519486,
+        "planned": 0.03841620893217623
+      },
+      "incremental_median_seconds": 0.010770292952656746,
+      "latency_break_even_reuses_constant_median_assumption": null,
+      "total_seconds_including_creation": {
+        "ordinary": 0.19574370892951265,
+        "planned": 0.2734654179075733
+      },
+      "retained_bytes": {
+        "ordinary": 11093,
+        "planned": 1108329
+      }
+    }
+  ],
+  "release_inputs_after_last_consumer": true,
+  "native_input_tokens": null,
+  "native_output_tokens": null,
+  "artifacts": "/private/tmp/helix-plan-release-retained-20260909",
+  "artifact_manifest": {
+    "1048576/ordinary/objects/1ef897e3910f167b91de12a1d83ebabd9633e21049cf90e9e20d8a6b2f32b469": "1ef897e3910f167b91de12a1d83ebabd9633e21049cf90e9e20d8a6b2f32b469",
+    "1048576/ordinary/objects/293ca62fe2ac610c7594f08e6e89a57d7ff21f4b4ed0583f27d7de973df173fd": "293ca62fe2ac610c7594f08e6e89a57d7ff21f4b4ed0583f27d7de973df173fd",
+    "1048576/ordinary/objects/2ca71471d4dc1c7b5799d735e5ab0092fc0aaa450d4a4545e17855ef19879ef8": "2ca71471d4dc1c7b5799d735e5ab0092fc0aaa450d4a4545e17855ef19879ef8",
+    "1048576/ordinary/objects/2cb53efd0dd68f308eccb7e81bf3094939d2fb5b1e696ce7db70ac2ecd1d1987": "2cb53efd0dd68f308eccb7e81bf3094939d2fb5b1e696ce7db70ac2ecd1d1987",
+    "1048576/ordinary/objects/3f2d17cfdfdde4965ffd23a6ffd584325fb7c6c8a36d0f39b6a4283cc4f79e77": "3f2d17cfdfdde4965ffd23a6ffd584325fb7c6c8a36d0f39b6a4283cc4f79e77",
+    "1048576/ordinary/objects/52b819b469f8c5bbb0b6d97f8198604f59c0f020e89921fb0f1b04910cc8b7e3": "52b819b469f8c5bbb0b6d97f8198604f59c0f020e89921fb0f1b04910cc8b7e3",
+    "1048576/ordinary/objects/5c5dc5039d7fcb3e6439f9a59a7efbb9066d2590b846d11b9371db3db85faf66": "5c5dc5039d7fcb3e6439f9a59a7efbb9066d2590b846d11b9371db3db85faf66",
+    "1048576/ordinary/objects/7fd31c960125e7125051bc7188e224e4de072bf1e182a948a9cef7be0741852a": "7fd31c960125e7125051bc7188e224e4de072bf1e182a948a9cef7be0741852a",
+    "1048576/ordinary/objects/91c8877b71a48bc8ace1ab352a345a5d6df17134203f4c679ca7cb91dd7efaf0": "91c8877b71a48bc8ace1ab352a345a5d6df17134203f4c679ca7cb91dd7efaf0",
+    "1048576/ordinary/objects/a4664b790671d286aca078705594ffe0aeade6e6402da5ed08e45ef4b2011fd5": "a4664b790671d286aca078705594ffe0aeade6e6402da5ed08e45ef4b2011fd5",
+    "1048576/ordinary/objects/ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/objects/af6dfe3ad96ce690b82243dd63010f8d13e6635510f340d7f381fe7b8dd19787": "af6dfe3ad96ce690b82243dd63010f8d13e6635510f340d7f381fe7b8dd19787",
+    "1048576/ordinary/objects/c8764dd8e7e3592deb120d6fa74133b41ff2fdfc11b6f96b0d8420f168d23572": "c8764dd8e7e3592deb120d6fa74133b41ff2fdfc11b6f96b0d8420f168d23572",
+    "1048576/ordinary/objects/e133b679ef67d8065c1e8ec6b1135336533f91109b14926d015ab73cd3ba8abc": "e133b679ef67d8065c1e8ec6b1135336533f91109b14926d015ab73cd3ba8abc",
+    "1048576/ordinary/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/objects/f303e98cb311607951f335f518cb37c3505a51e827544425c316318f9d3d3324": "f303e98cb311607951f335f518cb37c3505a51e827544425c316318f9d3d3324",
+    "1048576/ordinary/runs/0eb7f8c11f2e4bf8aa7cc1d80513673b/receipt.json": "fdd4d5a17631ec646bc4746c56de1f394591787c1d719edf65d789d5faf2418a",
+    "1048576/ordinary/runs/0eb7f8c11f2e4bf8aa7cc1d80513673b/started.json": "22a7857ed8771d2d085822354f031db85f049b81dcf1b27b8955b4e92d060704",
+    "1048576/ordinary/runs/0eb7f8c11f2e4bf8aa7cc1d80513673b/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/0eb7f8c11f2e4bf8aa7cc1d80513673b/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/2a99f786bd5f4be4aee77a453cb43c53/receipt.json": "c4058360d008d81aec6f234f0b519a1d42b1f108705227e5d790f10f797dfec2",
+    "1048576/ordinary/runs/2a99f786bd5f4be4aee77a453cb43c53/started.json": "d2c40063ad553c8b9653a447d44aebb2f5e3c2a6431977bdbadb5c7a7739f0f2",
+    "1048576/ordinary/runs/2a99f786bd5f4be4aee77a453cb43c53/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/2a99f786bd5f4be4aee77a453cb43c53/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/4bc1e0ff2fd446689532a5b3cb100d9f/receipt.json": "ee09427e22a0a8f008e7d7d3071f1e2c9592a51c111e3e1fd5233d0f7f853741",
+    "1048576/ordinary/runs/4bc1e0ff2fd446689532a5b3cb100d9f/started.json": "43d017fde3ddb6c18e9b6db8027563ac7f68c5ae15f1fe265791edd10d17ff58",
+    "1048576/ordinary/runs/4bc1e0ff2fd446689532a5b3cb100d9f/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/4bc1e0ff2fd446689532a5b3cb100d9f/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/66aaa54e4f4f412199a365ec30b768b9/receipt.json": "a1619d37b765e63ec22d4b16580b2456e2b56064e5bebda8d21e1dfcb9fb0b59",
+    "1048576/ordinary/runs/66aaa54e4f4f412199a365ec30b768b9/started.json": "44e56949157b25822ca2d1d81983172e69440877684dcb8ffe5d185228295b51",
+    "1048576/ordinary/runs/66aaa54e4f4f412199a365ec30b768b9/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/66aaa54e4f4f412199a365ec30b768b9/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/7145b7a18e4a432abe48cf3f14839c8e/receipt.json": "112086810b729de1814034bfb61c67086f2a2e0ae80d6c783d6ab36758616479",
+    "1048576/ordinary/runs/7145b7a18e4a432abe48cf3f14839c8e/started.json": "62f6b3c1781b9a7a3973e4f569d33ebf05d12dc9b2610153236946f3e0d9e69e",
+    "1048576/ordinary/runs/7145b7a18e4a432abe48cf3f14839c8e/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/7145b7a18e4a432abe48cf3f14839c8e/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/77557e9b6d0e4ec3922ce1feedfded2a/receipt.json": "97ab44d3ba245ea7a9a2e9ae5d22a380b19a317b174242678ca8194d66b45315",
+    "1048576/ordinary/runs/77557e9b6d0e4ec3922ce1feedfded2a/started.json": "1eb3442efb306fec9b788696f88a64033054eee94f1640219c312f2a48f33a91",
+    "1048576/ordinary/runs/77557e9b6d0e4ec3922ce1feedfded2a/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/77557e9b6d0e4ec3922ce1feedfded2a/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/ordinary/runs/ae2b07932b964bb089be22297c78e821/receipt.json": "905ba8e1944497915d93dcaed0df217be8044686f8e8fa6bd71921a16683badf",
+    "1048576/ordinary/runs/ae2b07932b964bb089be22297c78e821/started.json": "7e8ae20718421b325ab4c1b756e8646fceb5b7dfe882501cb54bc135558b79a0",
+    "1048576/ordinary/runs/ae2b07932b964bb089be22297c78e821/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/ordinary/runs/ae2b07932b964bb089be22297c78e821/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/objects/0c2f1491e2b3e51c5c9bb72bec9d5b656abc2532953875b65f4751a4c77dc467": "0c2f1491e2b3e51c5c9bb72bec9d5b656abc2532953875b65f4751a4c77dc467",
+    "1048576/planned/objects/140aee346b3ae509185d5e1b6f981b125fd9c5df8d7992b7231d2efb2ae74b39": "140aee346b3ae509185d5e1b6f981b125fd9c5df8d7992b7231d2efb2ae74b39",
+    "1048576/planned/objects/1497ab6ec79bc588b6477d374b1c64ab1f0f95278711fb7c4b6866ce210e481a": "1497ab6ec79bc588b6477d374b1c64ab1f0f95278711fb7c4b6866ce210e481a",
+    "1048576/planned/objects/24af6e1d3ec2199d21883ad1df50e6f2bc4ab970e7d5fc98fa429aa894d4c6e7": "24af6e1d3ec2199d21883ad1df50e6f2bc4ab970e7d5fc98fa429aa894d4c6e7",
+    "1048576/planned/objects/2c3576ccc7724efef85c9a9d5156d38bb2207d67dc745edda8a911d26d923be3": "2c3576ccc7724efef85c9a9d5156d38bb2207d67dc745edda8a911d26d923be3",
+    "1048576/planned/objects/2c649d47868802b6c259e2c66accbd8c3e912e18a5a06011d52e4741e47c96d9": "2c649d47868802b6c259e2c66accbd8c3e912e18a5a06011d52e4741e47c96d9",
+    "1048576/planned/objects/32bd90babcac0bb5681f51df3062a3c5ef2bcf0df336e3de01909fe3047eeb5a": "32bd90babcac0bb5681f51df3062a3c5ef2bcf0df336e3de01909fe3047eeb5a",
+    "1048576/planned/objects/3a997755773605701502e8c4efa10dcb51885fbeff807ab3affdf7ec7ba25beb": "3a997755773605701502e8c4efa10dcb51885fbeff807ab3affdf7ec7ba25beb",
+    "1048576/planned/objects/42d1bac1040597647e9ee2a9aaa496bc5d072357c58ee7ccaba22542f040612a": "42d1bac1040597647e9ee2a9aaa496bc5d072357c58ee7ccaba22542f040612a",
+    "1048576/planned/objects/45aa79a93bd71124faaa58b1436698416e96b8609ebd56aa054965a2db857444": "45aa79a93bd71124faaa58b1436698416e96b8609ebd56aa054965a2db857444",
+    "1048576/planned/objects/47a67e081fab844b92ab8db4dc7958ad895e821794d3a441c9d08c1044c34d51": "47a67e081fab844b92ab8db4dc7958ad895e821794d3a441c9d08c1044c34d51",
+    "1048576/planned/objects/5652b92f3c786520fd3d2d845bfe880c75c36200310eef37307919734923cafc": "5652b92f3c786520fd3d2d845bfe880c75c36200310eef37307919734923cafc",
+    "1048576/planned/objects/5cb3ea46e54d1ab40eac5d083aea440aeee7b11cf46bf1fccc3c698e7f3f17ec": "5cb3ea46e54d1ab40eac5d083aea440aeee7b11cf46bf1fccc3c698e7f3f17ec",
+    "1048576/planned/objects/6342e2ed27b008b1ac1e708d9c67820573d2dbf051a78fed206c1baab50a8415": "6342e2ed27b008b1ac1e708d9c67820573d2dbf051a78fed206c1baab50a8415",
+    "1048576/planned/objects/7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d": "7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d",
+    "1048576/planned/objects/7b1eb48be02e404c17fd597e58bfb2d2c030af5cb69a0779834982d621fcfe40": "7b1eb48be02e404c17fd597e58bfb2d2c030af5cb69a0779834982d621fcfe40",
+    "1048576/planned/objects/86f5eccf3facf5a6f9682c64f0b1da05fafcd42269622a132645915b90c58e70": "86f5eccf3facf5a6f9682c64f0b1da05fafcd42269622a132645915b90c58e70",
+    "1048576/planned/objects/8992f51131562b6b3d22efa0e56396fe005d76c86fa34cf8a8bc3b6eee2fe5da": "8992f51131562b6b3d22efa0e56396fe005d76c86fa34cf8a8bc3b6eee2fe5da",
+    "1048576/planned/objects/8b67f646a2b4a9239c9fba0ce4025747cdafb6dd8f047912bf101cdc10593236": "8b67f646a2b4a9239c9fba0ce4025747cdafb6dd8f047912bf101cdc10593236",
+    "1048576/planned/objects/8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b": "8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b",
+    "1048576/planned/objects/9219e48dc72ab129e4264d21050fd291677c11c5e15d7acf89db503e59b255da": "9219e48dc72ab129e4264d21050fd291677c11c5e15d7acf89db503e59b255da",
+    "1048576/planned/objects/a259e09c06925b0627e00ff20be58fcd6a1027dc4d3a68a2c2d66519e023c7fa": "a259e09c06925b0627e00ff20be58fcd6a1027dc4d3a68a2c2d66519e023c7fa",
+    "1048576/planned/objects/a3cfa144adea170acb6793db96f57b69d0bbe3d6e67681db3e1da9bab3337720": "a3cfa144adea170acb6793db96f57b69d0bbe3d6e67681db3e1da9bab3337720",
+    "1048576/planned/objects/ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/objects/b6f805b9bc664996209e7801ea6b0de760b6f3c62582708d80d29ba056db2452": "b6f805b9bc664996209e7801ea6b0de760b6f3c62582708d80d29ba056db2452",
+    "1048576/planned/objects/ca5ba13199a19ca199035e279f36f668eb5f4ce84090ae54ecf1091c7edfcb1a": "ca5ba13199a19ca199035e279f36f668eb5f4ce84090ae54ecf1091c7edfcb1a",
+    "1048576/planned/objects/db93c88e5f91edf0ef6bd623dff1f47eb89af22a705a19f4ebbc2afc22674ffa": "db93c88e5f91edf0ef6bd623dff1f47eb89af22a705a19f4ebbc2afc22674ffa",
+    "1048576/planned/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/objects/e4a2c8726e1fb057c3a3cb6f5b2d29508725b695ecc3637ab0c17462c17d6e80": "e4a2c8726e1fb057c3a3cb6f5b2d29508725b695ecc3637ab0c17462c17d6e80",
+    "1048576/planned/objects/e780165a3cda8976e90d1918a35e794d0ae02bb7715608500330210b5fef631e": "e780165a3cda8976e90d1918a35e794d0ae02bb7715608500330210b5fef631e",
+    "1048576/planned/objects/ec5f6f4c684e303362989066bd8f4377ae9c1da9007e69a7af4b5e739234b863": "ec5f6f4c684e303362989066bd8f4377ae9c1da9007e69a7af4b5e739234b863",
+    "1048576/planned/objects/f4423ed11dc537c91dbcde4666518fd13003386ddc670cb6f9262066fe168600": "f4423ed11dc537c91dbcde4666518fd13003386ddc670cb6f9262066fe168600",
+    "1048576/planned/objects/fc86017e073bda5e78978f7e98cc7fe32892525011e397ca9206a76017f7d96f": "fc86017e073bda5e78978f7e98cc7fe32892525011e397ca9206a76017f7d96f",
+    "1048576/planned/plans.sqlite3": "ad76782293629114851255bd984338cc552e95587d3ac28dcb41f4ce4ac42706",
+    "1048576/planned/runs/386db7276a7d432bac8d2c33e0466113/receipt.json": "4174a714790f0e2effa8cc5cbd515a19d0ca6d14a523e703dfd70fd2ee1363f5",
+    "1048576/planned/runs/386db7276a7d432bac8d2c33e0466113/started.json": "07ebf8877bbcce068cd9a26c89e2bc5ec52e928e41039fe27a96cf04e7bea366",
+    "1048576/planned/runs/386db7276a7d432bac8d2c33e0466113/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/386db7276a7d432bac8d2c33e0466113/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/3f78ffdc2aeb40ed973691871985448a/receipt.json": "aa575de081e8232fc5ae878390edab9ce50b170810026fe4a18b72f6827b7440",
+    "1048576/planned/runs/3f78ffdc2aeb40ed973691871985448a/started.json": "d0ecd7cc4183b5584b7ecc440a290fc7b240b08e80324015471b14050c02ff67",
+    "1048576/planned/runs/3f78ffdc2aeb40ed973691871985448a/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/3f78ffdc2aeb40ed973691871985448a/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/4aa79a9771c24f07a2f6327d40182857/receipt.json": "380eebae0d1266005fcf1129bfc1f02a6336997208fbea96844f99bb6a2a18ba",
+    "1048576/planned/runs/4aa79a9771c24f07a2f6327d40182857/started.json": "17349e5959d372b92a3ea3d570727f28e6e982ecca9ec690a975f7165beef7a7",
+    "1048576/planned/runs/4aa79a9771c24f07a2f6327d40182857/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/4aa79a9771c24f07a2f6327d40182857/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/e3c1d11d105240909f79ef81c377206d/receipt.json": "1ca6c636e77b47d50dd81c0aa1bd7ed8defe552eca5cb326caf882a52aa3bc98",
+    "1048576/planned/runs/e3c1d11d105240909f79ef81c377206d/started.json": "07021daff31b732453ca4976cbb5bfc071cb9e3c0a4eb277cde0b68910858f4d",
+    "1048576/planned/runs/e3c1d11d105240909f79ef81c377206d/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/e3c1d11d105240909f79ef81c377206d/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/efa2187ca2ae40bb8a41caee376dabe1/receipt.json": "5215957ca2c4a239686dce829abb1760983eea874b7bf41b0af9961ec1476b90",
+    "1048576/planned/runs/efa2187ca2ae40bb8a41caee376dabe1/started.json": "09d6c306736c80b459bd1b080d7c1c7704e4fd243e31a58616f343baec818702",
+    "1048576/planned/runs/efa2187ca2ae40bb8a41caee376dabe1/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/efa2187ca2ae40bb8a41caee376dabe1/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/f22232da1cdc4e77b24b41c1b2680633/receipt.json": "8988685e9a38a69a05b934ab1f2331bfc39245224df1d43749f8c1f98e46838e",
+    "1048576/planned/runs/f22232da1cdc4e77b24b41c1b2680633/started.json": "fe6cbcd39e6239ed4f2b6a42fd6dc0ebeb792e36af4a1fc9e5e8a7d78b7e4a9f",
+    "1048576/planned/runs/f22232da1cdc4e77b24b41c1b2680633/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/f22232da1cdc4e77b24b41c1b2680633/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/planned/runs/fcbe21f4a70f4d039c36e128cbf1a3d9/receipt.json": "143d535abaeeb6f4cbd1dca3e81b19c3a857db0bb9c321b69b4d717d4c938c91",
+    "1048576/planned/runs/fcbe21f4a70f4d039c36e128cbf1a3d9/started.json": "deb8455e5c334a7c8f7b1619e6ed309c553236650305036b9dd448df5c3bfefb",
+    "1048576/planned/runs/fcbe21f4a70f4d039c36e128cbf1a3d9/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "1048576/planned/runs/fcbe21f4a70f4d039c36e128cbf1a3d9/stdout": "ae191bf7ef29caf08cec5ad5a2d4ed4ca934de4f5b9ce239aeb08cbb7f2affc8",
+    "1048576/source/input.bin": "8f990ba0b577b51cf009ea049368c16bbda1b21e1b93be07a824758bb253c39b",
+    "1048576/source/job.py": "7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d",
+    "256/ordinary/objects/009ae023d7391768405ea960529c611da1e7e82e2f77db9e98d5462d26c8da34": "009ae023d7391768405ea960529c611da1e7e82e2f77db9e98d5462d26c8da34",
+    "256/ordinary/objects/06abcf55e2db4132b3b098c38c384c35cec9c4e2510eee89744dc96a892c1123": "06abcf55e2db4132b3b098c38c384c35cec9c4e2510eee89744dc96a892c1123",
+    "256/ordinary/objects/24bed3dc8c573bd78dd60552b4f6360ff988a094e741809b775dea497c21a9c8": "24bed3dc8c573bd78dd60552b4f6360ff988a094e741809b775dea497c21a9c8",
+    "256/ordinary/objects/6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/objects/82f4b0405d153405c789c2c71290b4e353b7de3ab57bb6c169dcb6ffd922551a": "82f4b0405d153405c789c2c71290b4e353b7de3ab57bb6c169dcb6ffd922551a",
+    "256/ordinary/objects/8789f4b4ee2343db1338024812453f2f91904e0a4fbd48c1b03a7d8b661f274c": "8789f4b4ee2343db1338024812453f2f91904e0a4fbd48c1b03a7d8b661f274c",
+    "256/ordinary/objects/8c826bcd334018e9221ec48b99305bc35881ca83094e4802516a0c89ba92f532": "8c826bcd334018e9221ec48b99305bc35881ca83094e4802516a0c89ba92f532",
+    "256/ordinary/objects/94fa40739090b5066fe21f4a96cd9c30ca1becf3ebbb0260e5d7c6a77e0ada6c": "94fa40739090b5066fe21f4a96cd9c30ca1becf3ebbb0260e5d7c6a77e0ada6c",
+    "256/ordinary/objects/af203f126f1155762cb2c573ce033d4d9a3bfeaf327f64c3e6163d9288e56feb": "af203f126f1155762cb2c573ce033d4d9a3bfeaf327f64c3e6163d9288e56feb",
+    "256/ordinary/objects/c36d686c7e9425d95cb8ce5b0483ca26804d93d4fbd0f87a6e0572aeddef27d0": "c36d686c7e9425d95cb8ce5b0483ca26804d93d4fbd0f87a6e0572aeddef27d0",
+    "256/ordinary/objects/ccee0a69a190ca2ef3d8bc648f6e1a4b7a2e5c190b9104819a4b93cbbf6706d3": "ccee0a69a190ca2ef3d8bc648f6e1a4b7a2e5c190b9104819a4b93cbbf6706d3",
+    "256/ordinary/objects/d7dc8ba9d782b2706b7fde8b5e06d1ee5ed9d7c9d852e179de73ad771835567b": "d7dc8ba9d782b2706b7fde8b5e06d1ee5ed9d7c9d852e179de73ad771835567b",
+    "256/ordinary/objects/ddfa649621544930b41479b0f015a82e29d823f6588848017d3bd8f4be95a5fb": "ddfa649621544930b41479b0f015a82e29d823f6588848017d3bd8f4be95a5fb",
+    "256/ordinary/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/objects/f777dfc1a30fd9532c12343e7dc8780675d3e48743ed393f5ac957d55eb0fe73": "f777dfc1a30fd9532c12343e7dc8780675d3e48743ed393f5ac957d55eb0fe73",
+    "256/ordinary/objects/fa8ab539286893c5a0de397920ae259d2a627bbfd35484011b15344bf34e94f7": "fa8ab539286893c5a0de397920ae259d2a627bbfd35484011b15344bf34e94f7",
+    "256/ordinary/runs/23c7785d662d46afa5523c71bfca6a55/receipt.json": "aeb4724025b93d43c2737b1856f54a2d4c51b505f01fa72c13aba2b406881295",
+    "256/ordinary/runs/23c7785d662d46afa5523c71bfca6a55/started.json": "a5895c7599513dad82756a988b4682d1019ce1a08dd447fc8672041e0827c569",
+    "256/ordinary/runs/23c7785d662d46afa5523c71bfca6a55/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/23c7785d662d46afa5523c71bfca6a55/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/a95ec23cb378438fa91b633835389365/receipt.json": "b8fd2e7fe4b4fc7833761994c13329ebb6fdbf86e5cc544d1640c6cacc1e448f",
+    "256/ordinary/runs/a95ec23cb378438fa91b633835389365/started.json": "6f3dae180e77bec9aca60ea28624440b202e8519f2f7ef11e1946fe6c734344d",
+    "256/ordinary/runs/a95ec23cb378438fa91b633835389365/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/a95ec23cb378438fa91b633835389365/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/b056b36d2e1d49a495f5cdd1a6e3a43a/receipt.json": "0e24c61bbd09a783bb5317855195d1f5ecc15baf62c5c80d6eb94976d1f7e502",
+    "256/ordinary/runs/b056b36d2e1d49a495f5cdd1a6e3a43a/started.json": "c15aeb76351ed9810311186383e8819eceba1b4dfc9fcee15598bf3a16ce51ae",
+    "256/ordinary/runs/b056b36d2e1d49a495f5cdd1a6e3a43a/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/b056b36d2e1d49a495f5cdd1a6e3a43a/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/b812369485d34d80b53f2f3b30060d16/receipt.json": "51fe15e1a46ee8d3a08af9290cd01a14dea1cdef6cfcc9b7bdc7ee848dade667",
+    "256/ordinary/runs/b812369485d34d80b53f2f3b30060d16/started.json": "84f81eec2cb5ec5f2e11b4eb8fc1f1a91b3f6445319ee7d0bde1f3a924b87c3e",
+    "256/ordinary/runs/b812369485d34d80b53f2f3b30060d16/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/b812369485d34d80b53f2f3b30060d16/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/bdf78badf86d4b43b6734d87ae4dfbf7/receipt.json": "188c7c0caa1374d2232a4cf929a021335cc1ba3d56f713ffadb754365196710b",
+    "256/ordinary/runs/bdf78badf86d4b43b6734d87ae4dfbf7/started.json": "bab68f2da3057a8eab033f0978cc90436ee3eceb52f7b51e79bc408767e8a50c",
+    "256/ordinary/runs/bdf78badf86d4b43b6734d87ae4dfbf7/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/bdf78badf86d4b43b6734d87ae4dfbf7/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/c2baf840daa74c979aebee81350d9a8f/receipt.json": "3bed7b76e91a800140d333783304601e906e5b3d2faee4ea1893c0dca0374029",
+    "256/ordinary/runs/c2baf840daa74c979aebee81350d9a8f/started.json": "f3b869b4d473e9bcb80cfd8a1d6784e5764796677bece5e1c1b68dc55b0c7a6a",
+    "256/ordinary/runs/c2baf840daa74c979aebee81350d9a8f/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/c2baf840daa74c979aebee81350d9a8f/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/ordinary/runs/ff90a89112264a598a34dcec05ededd2/receipt.json": "d4c940fe3553cccefc2128a15fa8145b789e26250dd52d4ace1e497633364e19",
+    "256/ordinary/runs/ff90a89112264a598a34dcec05ededd2/started.json": "3d36849162e421f28d772bea7f434d306a8e39bcabfae43b2062c33ea871c9ff",
+    "256/ordinary/runs/ff90a89112264a598a34dcec05ededd2/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/ordinary/runs/ff90a89112264a598a34dcec05ededd2/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/objects/04edfa185d47ebf9e21ff8575f3f47d3f4e7a39fc9dc967850da9433b2e88bf4": "04edfa185d47ebf9e21ff8575f3f47d3f4e7a39fc9dc967850da9433b2e88bf4",
+    "256/planned/objects/0be115c29ee75548f72a029e88d5e930b6ef9af1556ab5fd58c0e483962e9892": "0be115c29ee75548f72a029e88d5e930b6ef9af1556ab5fd58c0e483962e9892",
+    "256/planned/objects/0cbde609d829ca42e2f829a6b9579b27f4e9b96b55208592ed0d7afb335fb68b": "0cbde609d829ca42e2f829a6b9579b27f4e9b96b55208592ed0d7afb335fb68b",
+    "256/planned/objects/2abf1cbc10fdcfe1f68deb96739c4fd6dbb29373b728a9d513b7742917d4bce7": "2abf1cbc10fdcfe1f68deb96739c4fd6dbb29373b728a9d513b7742917d4bce7",
+    "256/planned/objects/2fe14d3752a515f79d0fdfaaadeb6932a0128418c6cba87247f9c0a9e6504018": "2fe14d3752a515f79d0fdfaaadeb6932a0128418c6cba87247f9c0a9e6504018",
+    "256/planned/objects/383e0d0f61cda33b5d3f14a829bc96dcea0da7b9e50fbb4605e025bd6c24bb71": "383e0d0f61cda33b5d3f14a829bc96dcea0da7b9e50fbb4605e025bd6c24bb71",
+    "256/planned/objects/3df910ab396ba858c408e3541f92a63eef5681231bc66e1a1d0382cfded3e5ff": "3df910ab396ba858c408e3541f92a63eef5681231bc66e1a1d0382cfded3e5ff",
+    "256/planned/objects/480f1afbf6d93f3aa6197efc7aaabe48b2a3a9e82d882d4a5cd86d807d25d609": "480f1afbf6d93f3aa6197efc7aaabe48b2a3a9e82d882d4a5cd86d807d25d609",
+    "256/planned/objects/4995da8d183416b6b76c05d37f722eaf32b46a22deca148c2078e47bf6370e6f": "4995da8d183416b6b76c05d37f722eaf32b46a22deca148c2078e47bf6370e6f",
+    "256/planned/objects/4ab1aaa972409582e7af83de8facd374ef14c6bac72f24f3a6fe0858fe83700c": "4ab1aaa972409582e7af83de8facd374ef14c6bac72f24f3a6fe0858fe83700c",
+    "256/planned/objects/58ee8ab7071f7fbf65ec5defac44196f44c1bfe45230fca96c4fe55fa532a338": "58ee8ab7071f7fbf65ec5defac44196f44c1bfe45230fca96c4fe55fa532a338",
+    "256/planned/objects/5b1d7c5b2bf0f778ccab2b36200f040714666a816106751e67a985a9fc3cd1ac": "5b1d7c5b2bf0f778ccab2b36200f040714666a816106751e67a985a9fc3cd1ac",
+    "256/planned/objects/5dfa63388bac3eb6984fdf86ff15296f4d72f025443a0eb0fc53df0ba2e02a79": "5dfa63388bac3eb6984fdf86ff15296f4d72f025443a0eb0fc53df0ba2e02a79",
+    "256/planned/objects/5e7e76c6e9465b8c530eee33066ff71552323ecd3a98c78e37989a1e8fd57953": "5e7e76c6e9465b8c530eee33066ff71552323ecd3a98c78e37989a1e8fd57953",
+    "256/planned/objects/68098868686abec4d9b72105a3f71f9c6bb33acf9d7a7de04af351c89c2a1801": "68098868686abec4d9b72105a3f71f9c6bb33acf9d7a7de04af351c89c2a1801",
+    "256/planned/objects/6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/objects/7186793a811c7ccf73b5b0f0ab5f6d418f48bb56c346edf878454d1eed4d6dca": "7186793a811c7ccf73b5b0f0ab5f6d418f48bb56c346edf878454d1eed4d6dca",
+    "256/planned/objects/738fb03d4b6216488639798c921d026fd53ecda87e09cf3819d712d6f607c3d1": "738fb03d4b6216488639798c921d026fd53ecda87e09cf3819d712d6f607c3d1",
+    "256/planned/objects/7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d": "7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d",
+    "256/planned/objects/834840eb788d521c31fcb4dd10a07ff5a725dda2473f1a71d4c3c0db598d1e02": "834840eb788d521c31fcb4dd10a07ff5a725dda2473f1a71d4c3c0db598d1e02",
+    "256/planned/objects/85e62acd750c4eb56b7b6a1d66dca5bfaac5f062608a1a893410d0288936c09a": "85e62acd750c4eb56b7b6a1d66dca5bfaac5f062608a1a893410d0288936c09a",
+    "256/planned/objects/8c8f1504f3ff2a861599dd2a06579fb8f5734c2478ab8ce6fc1cb6456c521e9d": "8c8f1504f3ff2a861599dd2a06579fb8f5734c2478ab8ce6fc1cb6456c521e9d",
+    "256/planned/objects/95c45ce1fe274c24177006bef2865d09011deecceb1203f02b28c7b001c2639f": "95c45ce1fe274c24177006bef2865d09011deecceb1203f02b28c7b001c2639f",
+    "256/planned/objects/95c4cbf25cc9e3a25669f07aa68fb7fd02a6fdcbaf43b5db36789417b4e544a6": "95c4cbf25cc9e3a25669f07aa68fb7fd02a6fdcbaf43b5db36789417b4e544a6",
+    "256/planned/objects/a464624005dacc5fd6755eda558c25127fe0255d6de1f94f83a6cdd13bbb02c3": "a464624005dacc5fd6755eda558c25127fe0255d6de1f94f83a6cdd13bbb02c3",
+    "256/planned/objects/b9cea347770691f3ed9fb6c9b919aed2df96d70117697646a4017c340a4315ee": "b9cea347770691f3ed9fb6c9b919aed2df96d70117697646a4017c340a4315ee",
+    "256/planned/objects/bdda6dc7f3768df5c200f949fef6efb1e587311172ed756c21709304cfa21d4b": "bdda6dc7f3768df5c200f949fef6efb1e587311172ed756c21709304cfa21d4b",
+    "256/planned/objects/c2a18c218e2984252965e2fe37993b6a93b6e37ee50224c623604c4e8ea95be2": "c2a18c218e2984252965e2fe37993b6a93b6e37ee50224c623604c4e8ea95be2",
+    "256/planned/objects/cbe588b236af62fc185c5071ca5f0a0452321ba345982941acec3817372716cc": "cbe588b236af62fc185c5071ca5f0a0452321ba345982941acec3817372716cc",
+    "256/planned/objects/d4438cb5cefdbf5741c50d6bc3650e65c38e4097641eec29af92fef12f308b74": "d4438cb5cefdbf5741c50d6bc3650e65c38e4097641eec29af92fef12f308b74",
+    "256/planned/objects/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/objects/eb5b16051424a83240c95cd78d75aef25101f5dabf4837811c00ee5f0e9fdd39": "eb5b16051424a83240c95cd78d75aef25101f5dabf4837811c00ee5f0e9fdd39",
+    "256/planned/objects/fe244cf97e922788529df0dafde73f9dd20f38af4e735e36679b061228e6a8e1": "fe244cf97e922788529df0dafde73f9dd20f38af4e735e36679b061228e6a8e1",
+    "256/planned/plans.sqlite3": "60e54b44c0d3dbefb12b13f5cd6216bae071046c0423373e921b0df03f598066",
+    "256/planned/runs/22b46f1e84c7457ba8dc552f5805da72/receipt.json": "5e0705c61532ebea28405c10bd484e4defc971811b0980152535a965356be624",
+    "256/planned/runs/22b46f1e84c7457ba8dc552f5805da72/started.json": "99633e876a5abb7db8ecc66aa6508a18c532f5985893c9fe0cd33e8c52e85dbc",
+    "256/planned/runs/22b46f1e84c7457ba8dc552f5805da72/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/22b46f1e84c7457ba8dc552f5805da72/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/292250c97b1648399b1f2afda1aa23a6/receipt.json": "d8dd3e51dd9f8e708b0f36b25cb362bd6e93cebe9560c451fc782b32f5ac2464",
+    "256/planned/runs/292250c97b1648399b1f2afda1aa23a6/started.json": "22737f777cc30da1ea31cd24eca4e3de290ab963c9a4b592f4f384cacc1e2c2d",
+    "256/planned/runs/292250c97b1648399b1f2afda1aa23a6/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/292250c97b1648399b1f2afda1aa23a6/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/2f1613cc71984b958c33410c02674e62/receipt.json": "8d2306453fd7c23b05ebde66b496231d643d7a7a3ebe00ac59317941272d6e7e",
+    "256/planned/runs/2f1613cc71984b958c33410c02674e62/started.json": "25c9fa585a99da7ca539f6f5b3bd4e0d7e04b9b142cd5b3b52fadbd883d0309a",
+    "256/planned/runs/2f1613cc71984b958c33410c02674e62/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/2f1613cc71984b958c33410c02674e62/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/8753b88b84324638b14e62309d9d9ebf/receipt.json": "cc0dc301ab18110c4ffc32ce70ac766dfe1adce41c7ca3cf66d349799cfcebf5",
+    "256/planned/runs/8753b88b84324638b14e62309d9d9ebf/started.json": "a27f75efdf8d4310ec83eefcf586a7216130808701c8f372055b81c5f1493cab",
+    "256/planned/runs/8753b88b84324638b14e62309d9d9ebf/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/8753b88b84324638b14e62309d9d9ebf/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/97bad552c696408db30f93b55643fac9/receipt.json": "e8e4a858b3638c974eadb9f8ca47b1d0d2e50f9233993227b1d0a6640d529685",
+    "256/planned/runs/97bad552c696408db30f93b55643fac9/started.json": "2bf0c88dbbbd04b352d36c308d0577aad8cbe37d1106b7b9f6f59a89b8871bb4",
+    "256/planned/runs/97bad552c696408db30f93b55643fac9/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/97bad552c696408db30f93b55643fac9/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/cd4d090ac6c345e1b5c0077bd62f6e09/receipt.json": "74be8c71a91d1e543902ddd50fb112436c7442e63c6851546019fef36390d14d",
+    "256/planned/runs/cd4d090ac6c345e1b5c0077bd62f6e09/started.json": "f54d0d0a49173c67e3b2f21020212f429a86b58c9194c615d945a7b44c92628d",
+    "256/planned/runs/cd4d090ac6c345e1b5c0077bd62f6e09/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/cd4d090ac6c345e1b5c0077bd62f6e09/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/planned/runs/ed9a26d4ec3b4287a911c3d53a3a3571/receipt.json": "d400ccfd88b366a9db21eaa818a24557b7b1e3b5933e1b570f14cf6d8a362c30",
+    "256/planned/runs/ed9a26d4ec3b4287a911c3d53a3a3571/started.json": "266f09426ab127552681c251f5caf49ae04a9a1b08d77b121a02835c0b344980",
+    "256/planned/runs/ed9a26d4ec3b4287a911c3d53a3a3571/stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "256/planned/runs/ed9a26d4ec3b4287a911c3d53a3a3571/stdout": "6b93f9dec78992535c7b19d1021b4cd53fa81e7ac720d3ad3711f8de233cdf33",
+    "256/source/input.bin": "85e62acd750c4eb56b7b6a1d66dca5bfaac5f062608a1a893410d0288936c09a",
+    "256/source/job.py": "7667cc687b5e4ae82a6f37b0b163154ef85f0514348f747df0482a9c5f0a127d"
+  },
+  "limits": [
+    "Single local process; OS caches uncontrolled; alternating order, no confidence interval.",
+    "Logical retained file bytes, not physical I/O or allocated storage.",
+    "Ordinary control has exact status/output capture but no plan dependency isolation.",
+    "No model plan creation, reasoning, command generation or skill costs measured.",
+    "Raw evidence and plan snapshots retained at artifacts path with per-file hashes."
+  ]
+}

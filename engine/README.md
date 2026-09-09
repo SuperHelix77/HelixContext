@@ -6,6 +6,23 @@ This prototype applies the Q38-derived design principles of explicit state, exac
 
 The contract is in `CONTRACT.json`. The priority is capability and workflow parity, then net efficiency; 95% is aspirational.
 
+## Experimental engine checkpoint
+
+This branch also contains [named plans](prototype/NAMED_PLANS_STATUS.md), an
+[explicit plan CLI](prototype/PLAN_CLI.md), [workflow memory](prototype/WORKFLOW_MEMORY.md)
+and native usage validation. These additions are not installed or admitted as
+automatic policies. A [clean-copy check](prototype/CLEAN_COPY_VERIFICATION.json)
+passed 128 infrastructure tests using the same local Python dependencies.
+
+Measured limits matter: plans added latency, a ctime-only change rejected unchanged
+content, and memory indexing increased retained storage. Shared provenance reduced
+exhaustive memory recovery's payload overhead from about 58% to 0.35%, but this is
+not a native token-saving result. A fresh native control passed its artifact checks
+and exceeded its post-call launch threshold; the candidate arm was not run.
+
+See the [measurement and admission summary](prototype/CHECKPOINT.md). No result
+here establishes 80% input/output savings or general capability/workflow parity.
+
 ## Implemented
 
 - Command capture preserves separate stdout/stderr bytes, exit/signal status, timeout, timestamps, caller-supplied environment label and explicitly watched file changes.

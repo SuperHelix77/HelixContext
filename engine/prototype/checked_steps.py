@@ -3,7 +3,7 @@ import json
 from evidence import run
 
 
-def execute(store,steps,cwd,environment_id,timeout=None):
+def execute(store,steps,cwd,environment_id,timeout=None,env=None):
     if not isinstance(steps,list) or not steps:
         raise ValueError('Nonempty step list required')
     names=set()
@@ -20,7 +20,7 @@ def execute(store,steps,cwd,environment_id,timeout=None):
         raise ValueError('Finite positive timeout required')
     results=[]
     for step in steps:
-        packet=run(store,step['argv'],cwd,environment_id,timeout=timeout)
+        packet=run(store,step['argv'],cwd,environment_id,timeout=timeout,env=env)
         ok=packet['exit_code']==0 and not packet['timed_out'] and not packet['interrupted']
         results.append({'name':step['name'],'receipt':packet['receipt'],'exit_code':packet['exit_code'],'timed_out':packet['timed_out'],'interrupted':packet['interrupted'],'process_success':ok})
         if not ok:break

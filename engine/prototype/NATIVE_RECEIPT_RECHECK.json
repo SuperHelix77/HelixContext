@@ -1,0 +1,147 @@
+{
+  "classification": "Existing development native receipts reverified; not a new benchmark",
+  "source_sha256": "9d639d80a75eb727c558c10df9c99061f28230146a1110339ba5677ef1389a8e",
+  "checks": [
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "off",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 27366,
+        "output_tokens": 532,
+        "cached_input_tokens": 22016,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 289
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "on",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 28336,
+        "output_tokens": 533,
+        "cached_input_tokens": 17920,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 345
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "on",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 28543,
+        "output_tokens": 410,
+        "cached_input_tokens": 24064,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 186
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "off",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 56598,
+        "output_tokens": 820,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 388
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "off",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 44405,
+        "output_tokens": 277,
+        "cached_input_tokens": 39040,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "on",
+      "trace_hash_verified": true,
+      "usage": {
+        "input_tokens": 33006,
+        "output_tokens": 170,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 38
+      },
+      "quality_scope": "Original bounded fixture checks reported passed; no new workflow or capability evaluation"
+    }
+  ],
+  "pairs": [
+    {
+      "model": "gpt-5.6-luna",
+      "off": {
+        "input_tokens": 27366,
+        "output_tokens": 532,
+        "cached_input_tokens": 22016,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 289
+      },
+      "on": {
+        "input_tokens": 28336,
+        "output_tokens": 533,
+        "cached_input_tokens": 17920,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 345
+      },
+      "input_saved_percent": -3.5445443250749165,
+      "output_saved_percent": -0.1879699248120259,
+      "joint_80_pass": false
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "off": {
+        "input_tokens": 56598,
+        "output_tokens": 820,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 388
+      },
+      "on": {
+        "input_tokens": 28543,
+        "output_tokens": 410,
+        "cached_input_tokens": 24064,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 186
+      },
+      "input_saved_percent": 49.56888936004806,
+      "output_saved_percent": 50.0,
+      "joint_80_pass": false
+    },
+    {
+      "model": "gpt-6-astra",
+      "off": {
+        "input_tokens": 44405,
+        "output_tokens": 277,
+        "cached_input_tokens": 39040,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "on": {
+        "input_tokens": 33006,
+        "output_tokens": 170,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 38
+      },
+      "input_saved_percent": 25.67053259768044,
+      "output_saved_percent": 38.628158844765345,
+      "joint_80_pass": false
+    }
+  ],
+  "scope": "Native usage totals; no dollar conversion; cache and reasoning categories not added to totals. Parent research excluded. Universal parity not established."
+}
