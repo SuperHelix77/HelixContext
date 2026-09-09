@@ -2,19 +2,46 @@
   "schema": "helix.model_task_routing.research.v1",
   "status": "EXPLORATORY_SELECTION_NOT_DEPLOYMENT_VALIDATED",
   "new_native_experiment_launches": "paused after in-flight query V2 batch; require an explicit diagnostic hypothesis and a bounded predeclared comparison before next launch",
-  "objective_order": ["capability and agentic workflow parity", "net native input and output savings"],
+  "objective_order": [
+    "capability and agentic workflow parity",
+    "net native input and output savings"
+  ],
   "default": "ordinary execution",
   "candidates": [
-    {"model": "gpt-5.6-luna", "workload": "exact source assembly", "candidate": "validated renderer", "status": "one positive paired task; requires independent confirmation", "do_not_generalize_to": "novel prose or semantic selection"},
-    {"model": "gpt-5.6-sol", "workload": "typed terminal diagnosis", "candidate": "typed evidence projection", "status": "promising single pair, large observed control variation; requires repeated controls", "do_not_generalize_to": "renderer"},
-    {"model": "gpt-6-astra", "workload": "log diagnosis", "candidate": "request-conditioned exact evidence", "status": "positive development observations, no independent holdout", "do_not_generalize_to": "arbitrary latent-future-relevance history"}
+    {
+      "model": "gpt-5.6-luna",
+      "workload": "exact source assembly",
+      "candidate": "validated renderer",
+      "status": "one positive paired task; requires independent confirmation",
+      "do_not_generalize_to": "novel prose or semantic selection"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "workload": "typed terminal diagnosis",
+      "candidate": "typed evidence projection",
+      "status": "promising single pair, large observed control variation; requires repeated controls",
+      "do_not_generalize_to": "renderer"
+    },
+    {
+      "model": "gpt-6-astra",
+      "workload": "log diagnosis",
+      "candidate": "request-conditioned exact evidence",
+      "status": "positive development observations, no independent holdout",
+      "do_not_generalize_to": "arbitrary latent-future-relevance history"
+    }
   ],
   "composition": {
     "requirement": "Test selected model/task policy jointly with exact retrieval and source-copy only where the actual task requires them.",
     "no_arithmetic_shortcut": "Do not add or multiply percentages from different pairs. Features may remove the same cost or add verification and retrieval work.",
     "measurement": "Compare complete joint episodes against the same efficient baseline, including all preparation, fallback, failed attempts and required validation.",
     "routing_cost": "Deterministic model ID plus explicit task type; no extra LLM router. Charge classification and ambiguous-case fallback to total costs.",
-    "quality": "Any observed regression rejects the candidate for that scope. Finite no-failure results do not prove zero intelligence loss."
+    "quality": "Any observed regression rejects the candidate for that scope. Finite no-failure results do not prove zero intelligence loss.",
+    "distinct_cost_targets": [
+      "recurring workflow history",
+      "multiple exact evidence ranges when actually needed",
+      "exact source artifact assembly when actually needed"
+    ],
+    "reject_overlap": "Do not stack typed and lexical log projections merely because each has a favorable separate pair."
   },
   "next_experiment_gate": [
     "Finish offline trace attribution and baseline variability analysis first.",
@@ -26,5 +53,11 @@
     "Publish per-model and task Q/A/W checks, input and output separately, confidence limits, and complete known costs."
   ],
   "installed_skill_changed": false,
-  "hook_ownership": "Spark"
+  "hook_ownership": "Spark",
+  "stopped_experiment_families": [
+    {
+      "family": "single exposed short-log lexical/typed projection sweeps",
+      "reason": "18 trace-audited native calls show overlapping mechanisms, baseline command-count variability, and no evidence that further lexical tuning can reach 80% joint savings."
+    }
+  ]
 }

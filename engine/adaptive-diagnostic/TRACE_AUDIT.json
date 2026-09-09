@@ -1,0 +1,426 @@
+{
+  "schema": "helix.trace_diagnostic.v1",
+  "native_calls_reused": 18,
+  "new_native_calls": 0,
+  "rows": [
+    {
+      "concept": "typed_terminal",
+      "model": "luna",
+      "arm": "off",
+      "events_sha256": "790f4cdec6cfd5d820af8a0a56fe7f5fbde5bab6ec4258dfadfba0b49bdc8be8",
+      "usage": {
+        "input_tokens": 56170,
+        "cached_input_tokens": 44032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 724,
+        "reasoning_output_tokens": 295
+      },
+      "completed_commands": 3,
+      "command_output_utf8_bytes": 3070,
+      "command_text_utf8_bytes": 307,
+      "agent_message_utf8_bytes": 273,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "luna",
+      "arm": "on",
+      "events_sha256": "c1fd7edec6f7cad2e6e488e03933392ad0c97d30b796bbc4b31859f3054bb0b1",
+      "usage": {
+        "input_tokens": 60034,
+        "cached_input_tokens": 45056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1275,
+        "reasoning_output_tokens": 704
+      },
+      "completed_commands": 2,
+      "command_output_utf8_bytes": 2971,
+      "command_text_utf8_bytes": 302,
+      "agent_message_utf8_bytes": 529,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "sol",
+      "arm": "off",
+      "events_sha256": "2c44b68488053de37651829806b5ec1d99fd6261fb94197090375f89401a3016",
+      "usage": {
+        "input_tokens": 62402,
+        "cached_input_tokens": 51072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 611,
+        "reasoning_output_tokens": 191
+      },
+      "completed_commands": 3,
+      "command_output_utf8_bytes": 3405,
+      "command_text_utf8_bytes": 283,
+      "agent_message_utf8_bytes": 273,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "sol",
+      "arm": "on",
+      "events_sha256": "f93682943c1b3d4e6dd2dc6c0dd25c5e479ad2c6feb7920c5cb65af1ee5dd6f2",
+      "usage": {
+        "input_tokens": 28771,
+        "cached_input_tokens": 19840,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 496,
+        "reasoning_output_tokens": 241
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 1097,
+      "command_text_utf8_bytes": 217,
+      "agent_message_utf8_bytes": 389,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "astra",
+      "arm": "off",
+      "events_sha256": "2506f86cdc18929ff248dac9d72ba56baafae36064a70d1b5e4aa45545fb0e1c",
+      "usage": {
+        "input_tokens": 44286,
+        "cached_input_tokens": 39040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 213,
+        "reasoning_output_tokens": 0
+      },
+      "completed_commands": 2,
+      "command_output_utf8_bytes": 3114,
+      "command_text_utf8_bytes": 218,
+      "agent_message_utf8_bytes": 366,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "astra",
+      "arm": "on",
+      "events_sha256": "85217954626c0eee1e075457183fcee72aa8b6a1d1e3fb01bfca89b6ecae4d56",
+      "usage": {
+        "input_tokens": 30191,
+        "cached_input_tokens": 25216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 141,
+        "reasoning_output_tokens": 0
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 946,
+      "command_text_utf8_bytes": 106,
+      "agent_message_utf8_bytes": 343,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "luna",
+      "arm": "off",
+      "events_sha256": "0c6f483fd285b4d8aacef0acfe20aba7b6d69f4527bf6771d760afc245fc2343",
+      "usage": {
+        "input_tokens": 60146,
+        "cached_input_tokens": 50176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1188,
+        "reasoning_output_tokens": 748
+      },
+      "completed_commands": 3,
+      "command_output_utf8_bytes": 8563,
+      "command_text_utf8_bytes": 348,
+      "agent_message_utf8_bytes": 273,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "luna",
+      "arm": "on",
+      "events_sha256": "93a9dff83737093533920239f1850a8654942e63b74fdd8b099a1029a04b84df",
+      "usage": {
+        "input_tokens": 46709,
+        "cached_input_tokens": 36096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 871,
+        "reasoning_output_tokens": 460
+      },
+      "completed_commands": 2,
+      "command_output_utf8_bytes": 13307,
+      "command_text_utf8_bytes": 375,
+      "agent_message_utf8_bytes": 436,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "sol",
+      "arm": "off",
+      "events_sha256": "a0bb4aa7660312cb8f5b10a6ea8ac208b86ef84e22e9d9a156c391aabcf8fcd2",
+      "usage": {
+        "input_tokens": 27400,
+        "cached_input_tokens": 19200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 445,
+        "reasoning_output_tokens": 194
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 1234,
+      "command_text_utf8_bytes": 186,
+      "agent_message_utf8_bytes": 386,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "sol",
+      "arm": "on",
+      "events_sha256": "a64add941c75398cfe92c8b5108913340a0d786264841da3fe7a970af9f69f1e",
+      "usage": {
+        "input_tokens": 28037,
+        "cached_input_tokens": 23168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 349,
+        "reasoning_output_tokens": 108
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 1517,
+      "command_text_utf8_bytes": 163,
+      "agent_message_utf8_bytes": 376,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "astra",
+      "arm": "off",
+      "events_sha256": "ea75b9c371561f24a6e3f6f22a284c5cfcb7354813237ea4a4f9bce3d4a6a3dd",
+      "usage": {
+        "input_tokens": 44557,
+        "cached_input_tokens": 24576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 278,
+        "reasoning_output_tokens": 0
+      },
+      "completed_commands": 2,
+      "command_output_utf8_bytes": 3680,
+      "command_text_utf8_bytes": 444,
+      "agent_message_utf8_bytes": 379,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "astra",
+      "arm": "on",
+      "events_sha256": "8a9f6d5b621b3288a91ec02d09693306ad99f9092dab71306533a049a861dbd4",
+      "usage": {
+        "input_tokens": 32706,
+        "cached_input_tokens": 27520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 181,
+        "reasoning_output_tokens": 25
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 973,
+      "command_text_utf8_bytes": 124,
+      "agent_message_utf8_bytes": 372,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "luna",
+      "arm": "off",
+      "events_sha256": "1444b7660196263e6cc169fd9d8c36f22a349f3a6173d4ea5795b05fe316fffc",
+      "usage": {
+        "input_tokens": 27366,
+        "cached_input_tokens": 22016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 532,
+        "reasoning_output_tokens": 289
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 1163,
+      "command_text_utf8_bytes": 155,
+      "agent_message_utf8_bytes": 443,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "luna",
+      "arm": "on",
+      "events_sha256": "1a20ab01e6932107c801166b4037c8eaf44145e3d0d88c6c53fae10b31dad653",
+      "usage": {
+        "input_tokens": 28336,
+        "cached_input_tokens": 17920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 533,
+        "reasoning_output_tokens": 345
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 874,
+      "command_text_utf8_bytes": 107,
+      "agent_message_utf8_bytes": 273,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "sol",
+      "arm": "off",
+      "events_sha256": "dc4fbac3a8ea093dfc219c84bc0fc3ceba9cae62a0b372cde3e8678367e821d4",
+      "usage": {
+        "input_tokens": 56598,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 820,
+        "reasoning_output_tokens": 388
+      },
+      "completed_commands": 3,
+      "command_output_utf8_bytes": 3969,
+      "command_text_utf8_bytes": 313,
+      "agent_message_utf8_bytes": 273,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "sol",
+      "arm": "on",
+      "events_sha256": "24561593b5ef4fa7f14e958a505b360590e610963a5a77ceef87dad767c20bc3",
+      "usage": {
+        "input_tokens": 28543,
+        "cached_input_tokens": 24064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 410,
+        "reasoning_output_tokens": 186
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 1805,
+      "command_text_utf8_bytes": 96,
+      "agent_message_utf8_bytes": 366,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "astra",
+      "arm": "off",
+      "events_sha256": "d4f70dd6d9ce332fc7e923f93c138c4044c8831430ee99199d77b38bd5bc9527",
+      "usage": {
+        "input_tokens": 44405,
+        "cached_input_tokens": 39040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 277,
+        "reasoning_output_tokens": 0
+      },
+      "completed_commands": 2,
+      "command_output_utf8_bytes": 3117,
+      "command_text_utf8_bytes": 441,
+      "agent_message_utf8_bytes": 362,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "astra",
+      "arm": "on",
+      "events_sha256": "3010e87a68895432b4d1057ed645a75d6f773bde9b06516b891b1cda06b1da1b",
+      "usage": {
+        "input_tokens": 33006,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_output_tokens": 38
+      },
+      "completed_commands": 1,
+      "command_output_utf8_bytes": 928,
+      "command_text_utf8_bytes": 48,
+      "agent_message_utf8_bytes": 321,
+      "scope": "Public CLI trace surface only; command count is not model inference count. Output may already be truncated."
+    }
+  ],
+  "pairs": [
+    {
+      "concept": "typed_terminal",
+      "model": "luna",
+      "commands_off": 3,
+      "commands_on": 2,
+      "input_saving": -0.0687911696635215,
+      "output_saving": -0.761049723756906
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "sol",
+      "commands_off": 3,
+      "commands_on": 1,
+      "input_saving": 0.5389410595814237,
+      "output_saving": 0.18821603927986907
+    },
+    {
+      "concept": "typed_terminal",
+      "model": "astra",
+      "commands_off": 2,
+      "commands_on": 1,
+      "input_saving": 0.3182721401797408,
+      "output_saving": 0.3380281690140845
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "luna",
+      "commands_off": 3,
+      "commands_on": 2,
+      "input_saving": 0.22340637781398598,
+      "output_saving": 0.26683501683501687
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "sol",
+      "commands_off": 1,
+      "commands_on": 1,
+      "input_saving": -0.02324817518248179,
+      "output_saving": 0.21573033707865163
+    },
+    {
+      "concept": "literal_query_v1",
+      "model": "astra",
+      "commands_off": 2,
+      "commands_on": 1,
+      "input_saving": 0.26597392104495365,
+      "output_saving": 0.34892086330935257
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "luna",
+      "commands_off": 1,
+      "commands_on": 1,
+      "input_saving": -0.035445443250749165,
+      "output_saving": -0.001879699248120259
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "sol",
+      "commands_off": 3,
+      "commands_on": 1,
+      "input_saving": 0.49568889360048063,
+      "output_saving": 0.5
+    },
+    {
+      "concept": "literal_query_v2",
+      "model": "astra",
+      "commands_off": 2,
+      "commands_on": 1,
+      "input_saving": 0.2567053259768044,
+      "output_saving": 0.3862815884476535
+    }
+  ],
+  "optimistic_unpaired_envelopes": [
+    {
+      "model": "luna",
+      "optimistic_unpaired_input_saving": 0.5288797260000665,
+      "optimistic_unpaired_output_saving": 0.5513468013468014,
+      "warning": "Cherry-picked retrospective envelope only, not a paired benchmark, theoretical limit, or achievable joint point. Used only to reject further tiny local tuning as a supported route to 80% on these observations."
+    },
+    {
+      "model": "sol",
+      "optimistic_unpaired_input_saving": 0.5507035030928495,
+      "optimistic_unpaired_output_saving": 0.5743902439024391,
+      "warning": "Cherry-picked retrospective envelope only, not a paired benchmark, theoretical limit, or achievable joint point. Used only to reject further tiny local tuning as a supported route to 80% on these observations."
+    },
+    {
+      "model": "astra",
+      "optimistic_unpaired_input_saving": 0.3224184752115268,
+      "optimistic_unpaired_output_saving": 0.4928057553956835,
+      "warning": "Cherry-picked retrospective envelope only, not a paired benchmark, theoretical limit, or achievable joint point. Used only to reject further tiny local tuning as a supported route to 80% on these observations."
+    }
+  ],
+  "causality": "Associations only. CLI receipts lack per-inference usage and full model-facing context, so hidden context versus extra inference versus tool-output contribution cannot be decomposed exactly."
+}
