@@ -1,0 +1,43 @@
+{
+  "classification": "Post-outcome caller-obligation completion; original runner FAIL retained",
+  "original_result_sha256": "387ffacecfdfcc11441213742eab15fb328640f1e209648ecb77a7d20bf50d1d",
+  "recovery_script_sha256": "52f2189b3bf80d2268dc32a763b28a222eae4c289d592cc2004b95e5e2896313",
+  "original_unresolved": [
+    "Caller must run the independent allocation oracle against the exact source.",
+    "Caller must atomically publish allocation.py only after all checks succeed."
+  ],
+  "usage": {
+    "input_tokens": 73074,
+    "output_tokens": 5361,
+    "cached_input_tokens": 56320,
+    "reasoning_output_tokens": 3555,
+    "cache_write_input_tokens": 0
+  },
+  "native_sha256": "cb70144f6f8be70f3936058c7a2a3ad60a48d0f403713167e1281ac6b68a4596",
+  "segments": 4,
+  "native_calls_added_by_recovery": 0,
+  "general_workflow_parity": "NOT_ESTABLISHED",
+  "checks": {
+    "independent_allocation_oracle": "PASS",
+    "stdout": "ORACLE_CASES 4433\n"
+  },
+  "state": "CALLER_OBLIGATIONS_COMPLETED",
+  "source_sha256": "5cc00c59b4c2f910600744d1d9ba186dbff809529eae73090f3f1ea87b773748",
+  "recovery_seconds": 0.053262957953847945,
+  "obligation_status": [
+    "Exact returned source passed public suite and 4433-case allocation oracle",
+    "Exact returned source atomically published after bound-input checks"
+  ],
+  "control_usage": {
+    "input_tokens": 134764,
+    "output_tokens": 3525,
+    "cached_input_tokens": 109824,
+    "reasoning_output_tokens": 2114,
+    "cache_write_input_tokens": 0
+  },
+  "savings_percent": {
+    "input_tokens": 45.776320085482766,
+    "output_tokens": -52.08510638297872
+  },
+  "uncached_savings_percent": 32.822774659182045
+}
