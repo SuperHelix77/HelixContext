@@ -1,0 +1,17 @@
+{
+  "scope": "Offline synthetic structured-envelope test; no native interception or token-saving claim",
+  "received_wire_bytes": 350181,
+  "replacement_bytes": 1235,
+  "exact_archive_recovered": true,
+  "exit_code_preserved": true,
+  "io": {
+    "object_bytes_read": 350181,
+    "object_bytes_written": 350181,
+    "object_bytes_hashed": 700362,
+    "object_read_operations": 1,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 300036,
+    "hook_input_bytes_parsed": 350181
+  }
+}
