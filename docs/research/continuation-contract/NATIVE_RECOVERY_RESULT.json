@@ -1,0 +1,104 @@
+{
+  "state": "BOUNDED_NATIVE_RECOVERY_PASS",
+  "manifest_sha256": "8ea94ed0189725f9acf192ecb77f32e3b5707fbcf47632ffc45981f7fe90b95c",
+  "turns": [
+    {
+      "receipt": {
+        "state": "completed",
+        "index": 1,
+        "baseline": null,
+        "turn_id": "01a0876a-125f-79e0-93f4-07de480a73b3",
+        "usage_delta": {
+          "input_tokens": 19405,
+          "output_tokens": 376,
+          "cached_input_tokens": 11264,
+          "reasoning_output_tokens": 128,
+          "cache_write_input_tokens": 0
+        },
+        "usage_cumulative": {
+          "input_tokens": 19405,
+          "output_tokens": 376,
+          "cached_input_tokens": 11264,
+          "reasoning_output_tokens": 128,
+          "cache_write_input_tokens": 0
+        }
+      },
+      "answer": "{\n  \"decision\": \"ACCEPT\",\n  \"assessment\": \"The proposal satisfies the supplied contract within its finite synchronous domain. It traverses the input once, staging values privately and accepting only nonnegative exact ints. Neither public field changes during iteration or validation, so observing inputs see call-entry state. Invalid values raise ValueError; iteration-entry and iteration-step exceptions propagate unchanged because they are not caught. Failures preserve list contents, identity and cursor, including a stale cursor. On success, extend preserves the existing list identity and input order; computing len afterward correctly handles prior alias mutations and synchronizes cursor even for an empty batch. Repeated calls and recovery require no additional state. This reasoning assumes the stated exclusions of input-driven mutation, reentrancy, concurrency, asynchronous exceptions and resource exhaustion. Expected checks include alias append/clear/replacement/removal, stale-cursor failures, empty-batch synchronization, bool/int-subclass/negative rejection, single-use iterables, observing iterators, exception identity at iteration entry and after a valid prefix, and recovery. No execution is claimed. This judgment applies only to the supplied contract and proposal; changed authority requires fresh review.\",\n  \"unresolved\": []\n}"
+    },
+    {
+      "receipt": {
+        "state": "completed",
+        "index": 2,
+        "baseline": {
+          "input_tokens": 19405,
+          "output_tokens": 376,
+          "cached_input_tokens": 11264,
+          "reasoning_output_tokens": 128,
+          "cache_write_input_tokens": 0
+        },
+        "turn_id": "01a0876a-4da6-7f80-b0ce-502671b8ff51",
+        "usage_delta": {
+          "input_tokens": 20952,
+          "output_tokens": 406,
+          "cached_input_tokens": 19200,
+          "reasoning_output_tokens": 97,
+          "cache_write_input_tokens": 0
+        },
+        "usage_cumulative": {
+          "input_tokens": 40357,
+          "output_tokens": 782,
+          "cached_input_tokens": 30464,
+          "reasoning_output_tokens": 225,
+          "cache_write_input_tokens": 0
+        }
+      },
+      "answer": "{\n  \"decision\": \"REVISE\",\n  \"source\": \"class Queue:\\n    def __init__(self):\\n        self.items = []\\n        self.cursor = 0\\n\\n    def append_batch(self, values):\\n        pending = []\\n        for value in values:\\n            if len(pending) >= 2:\\n                raise ValueError('batch too large')\\n            if type(value) is not int or value < 0:\\n                raise ValueError('invalid')\\n            pending.append(value)\\n        self.items.extend(pending)\\n        self.cursor = len(self.items)\\n        return self.cursor\\n\",\n  \"assessment\": \"The authoritative v2 amendment invalidates the earlier acceptance: the unchanged proposal permits batches longer than two values. This revision rejects upon receiving a third value, without exhausting the rejected iterable or changing either public field. Staging preserves call-entry observations and failure state, including stale cursors and list identity. Uncaught iteration exceptions retain their identity. Successful batches of zero, one or two valid exact ints append in order and synchronize cursor to the actual list length after any permitted prior alias mutation. Expected checks cover these size boundaries, third-value rejection without further iteration, invalid values, iteration-entry and iteration-step failures, observing inputs, stale cursors, identity preservation and recovery. No execution or checker result is claimed. The assessment retains the contract's stated domain exclusions.\",\n  \"unresolved\": []\n}"
+    }
+  ],
+  "stale_execution_refused": true,
+  "new_head": {
+    "task": "task",
+    "root": "92a9eb66cc5b4c20c4412eb0612a2efefda8d69cb7f3676585bcead962867971",
+    "revision": 2
+  },
+  "attempt": {
+    "id": "revised",
+    "task": "task",
+    "base": "92a9eb66cc5b4c20c4412eb0612a2efefda8d69cb7f3676585bcead962867971",
+    "revision": 2,
+    "candidate": "f38180092ba972690e95a8b3405abb897b9e85c48b3ce8f39a780dd5655629e7",
+    "status": "AWAITING_REVIEW",
+    "evidence": "d45c37fe8e170e6745c8331173f7c51b82826f5a26e9b0db654203dd135c13f6",
+    "review": null
+  },
+  "usage": {
+    "input_tokens": 40357,
+    "output_tokens": 782,
+    "cached_input_tokens": 30464,
+    "reasoning_output_tokens": 225,
+    "cache_write_input_tokens": 0
+  },
+  "thread_id": "01a0876a-11de-7293-9dc9-252c08706345",
+  "audit": {
+    "one_thread_two_turns": true,
+    "raw_hashes_and_cumulative_deltas_verified": true,
+    "model_commands": 0,
+    "stale_attempt_never_reserved": true,
+    "exact_returned_source": true,
+    "checks": {
+      "check.py": {
+        "exit_code": 0,
+        "stdout": "PASS 2745 sequences / 8282 transitions\nPASS amended batch limit and failure atomicity\n",
+        "stdout_sha256": "b9bdc3d2109d197b717b4cb067a6b7c303b780f67127211f60b3972a18b3b1b7"
+      },
+      "check_independence.py": {
+        "exit_code": 0,
+        "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+        "stdout_sha256": "3054a00dc20d7c6584fed727c5856e15c225f3822b03ad769d5a51402055453f"
+      }
+    },
+    "uncached_input": 9893,
+    "publication": "Not automatically accepted; research attempt remains awaiting review",
+    "scope": "One injected development amendment, not paired savings, compaction/restart recovery or general workflow parity"
+  }
+}
