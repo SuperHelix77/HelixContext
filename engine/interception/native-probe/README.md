@@ -24,3 +24,11 @@ The received `tool_response` was a **string**, exactly matching the synthetic 18
 The native turn reported 46,802 input tokens and 130 output tokens, including 25,600 cached-input tokens as a subset. The hook reported `permission_mode=bypassPermissions` despite the driver's workspace-write request, so this result must not be cited as sandbox enforcement evidence. The installer changed no permission settings.
 
 `NATIVE_OBSERVER_RESULT.json` contains the scoped result and a private-trace hash commitment. Prior failed session-only registration attempts remain preserved above.
+
+## Exit-status ambiguity probe
+
+A second authorized temporary-observer experiment ran the identical command twice with unchanged stdout and exits 0 then 7. Native command events exposed both statuses; the hook received identical text and command input. The model correctly returned `[0,7]`. The observer was removed and original configuration values restored.
+
+This shows that hook text and command input alone cannot distinguish these observed statuses. It does **not** show that result replacement necessarily loses status: native metadata may remain available separately, which must be tested. In this trace, each command-completed event arrived before the corresponding post-hook started, suggesting a caller-owned metadata bridge keyed by tool-call ID as an experimental route. Ordering reliability and bridge costs remain unverified.
+
+`EXIT_STATUS_RESULT.json` contains the independent adjudication. The native turn consumed 59,765 input and 217 output tokens; there is no compression/savings claim. The observation did not modify tool results or permission settings.

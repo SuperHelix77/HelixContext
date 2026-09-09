@@ -1,0 +1,44 @@
+{
+  "scope": "One native Sol High observer turn, two separate identical commands with distinct exit status. No replacement or compression enabled.",
+  "observations": [
+    {
+      "tool_use_id": "exec-70824168-af0a-4839-accd-d44e96eddfbe",
+      "exit_code": 0,
+      "hook_response": "IDENTICAL_OUTPUT_000.050\n",
+      "hook_tool_input": {
+        "command": "python3 status_probe_exit7.py"
+      },
+      "post_hook_started_after_command_event": true
+    },
+    {
+      "tool_use_id": "exec-d7bfa1fd-6716-4f34-b9d6-65f101fc6653",
+      "exit_code": 7,
+      "hook_response": "IDENTICAL_OUTPUT_000.050\n",
+      "hook_tool_input": {
+        "command": "python3 status_probe_exit7.py"
+      },
+      "post_hook_started_after_command_event": true
+    }
+  ],
+  "model_answer": {
+    "exit_codes": [
+      0,
+      7
+    ]
+  },
+  "observed_gate_pass": true,
+  "hook_text_alone_distinguishes_status": false,
+  "command_events_expose_status": true,
+  "configuration_values_restored": true,
+  "temporary_observer_removed": true,
+  "native_usage": {
+    "totalTokens": 59982,
+    "inputTokens": 59765,
+    "cachedInputTokens": 49664,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 217,
+    "reasoningOutputTokens": 0
+  },
+  "native_trace_sha256": "d03c97343e7fdcddf29371a88d2fb8a610b1e384243c79dcb5e394673c8481fe",
+  "limits": "Finite probe only. Stable event ordering, replacement compatibility, nested code-mode behavior, sandbox enforcement and token savings remain unestablished. Legacy final_done field in private driver is inapplicable to this JSON-return probe; exact JSON and event checks are adjudicated here."
+}
