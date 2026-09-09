@@ -1,0 +1,110 @@
+{
+  "status": "BOUNDED_VERDICTS_REVIEWED_ECONOMIC_RELEASE_REJECTED",
+  "rows": [
+    {
+      "variant": "defect",
+      "arm": "kernel",
+      "usage": {
+        "input_tokens": 56827,
+        "output_tokens": 917,
+        "cached_input_tokens": 40960,
+        "reasoning_output_tokens": 70,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 3,
+      "recorded_commands": 2,
+      "native_sha256": "3eeb2d50aa3bad969b5c249139b3e6f09b38dff4797c2823316a883eb022583d",
+      "command_hashes": [
+        "fca3752479ff42d0ca1a8865bfe38e7e813d00af34ce70cfa1cabef5ce4c4701",
+        "69026ced508f9417bece0c1224a2acc3499cecf820325e0981bac468e3e8d491"
+      ],
+      "semantic_review": "Known defect identified with reproducer"
+    },
+    {
+      "variant": "defect",
+      "arm": "default",
+      "usage": {
+        "input_tokens": 90226,
+        "output_tokens": 946,
+        "cached_input_tokens": 75392,
+        "reasoning_output_tokens": 13,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "recorded_commands": 3,
+      "native_sha256": "5221fdc0aa3ef2712f5de1f02be1649c946b1c63326f0ea59ca55f86b1690521",
+      "command_hashes": [
+        "13a6f8bd9b96e67b8662aa385deee20eb0be0f656d2ddaad5befb3715057cd68",
+        "4176c2c96008902a2445bb24833bd41b6a2abd3ef2b9f30b9279da277f217f69",
+        "f29d59dd2fefcd9b2ea33133f6a168ea526d0e53709d59dafe3a5b3317c8f750"
+      ],
+      "semantic_review": "Known defect identified with reproducer"
+    },
+    {
+      "variant": "valid",
+      "arm": "default",
+      "usage": {
+        "input_tokens": 63605,
+        "output_tokens": 947,
+        "cached_input_tokens": 50432,
+        "reasoning_output_tokens": 334,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 3,
+      "recorded_commands": 2,
+      "native_sha256": "7877e787d05d4a22d39b0911e9a486c1947fc04ceb0d969772b5fff6332287fe",
+      "command_hashes": [
+        "4ba2c774ad5843576698811a9a0e867db46b088e19cc257862c90eab0e5fb2b7",
+        "b3a21e4ba68065f0beaac4967c10d01b126dfc4810822e74ba882db899a91daa"
+      ],
+      "semantic_review": "Valid acceptance justified within frozen contract; kernel adds four passing probes"
+    },
+    {
+      "variant": "valid",
+      "arm": "kernel",
+      "usage": {
+        "input_tokens": 78179,
+        "output_tokens": 1210,
+        "cached_input_tokens": 55296,
+        "reasoning_output_tokens": 264,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "recorded_commands": 3,
+      "native_sha256": "ea687f36ebcbda74897aee36c2e5329aaef4b9417ed638534ea08c6f8cecd081",
+      "command_hashes": [
+        "fca3752479ff42d0ca1a8865bfe38e7e813d00af34ce70cfa1cabef5ce4c4701",
+        "8b8f1a671dc65bbe8d2e680daa6ed8b3c93d0e2c755645cc1001c6206e99937c",
+        "822a50406d895145d6e40d4e9cf999ccba34f0e1aca328f9f8596b91961fc44e"
+      ],
+      "semantic_review": "Valid acceptance justified within frozen contract; kernel adds four passing probes"
+    }
+  ],
+  "pairs": [
+    {
+      "variant": "defect",
+      "savings_percent": {
+        "input_tokens": 37.01704608427726,
+        "output_tokens": 3.0655391120507414,
+        "uncached_input": -6.963731967102604
+      }
+    },
+    {
+      "variant": "valid",
+      "savings_percent": {
+        "input_tokens": -22.91329298011162,
+        "output_tokens": -27.771911298838447,
+        "uncached_input": -73.71137933652167
+      }
+    }
+  ],
+  "manifest_sha256": "027a18f652f31f55af414fddde33b8637e9ee064ef31257b8c4cb7088e497dbe",
+  "amendment_sha256": "a94c46b185db241b7c1b832200ed1646a4ea0074d55084c0127d70dec0e5f9d5",
+  "limits": [
+    "Known development fixtures; no general parity claim.",
+    "Post-first-outcome harness schema amendment; no repeated model call.",
+    "Same cwd and counterbalanced order require artifact/cache audit.",
+    "Proxy text savings are not native or monetary savings."
+  ],
+  "semantic_review_method": "Manual review of exact final answers, visible commands and probe outputs; not independent model replication."
+}
