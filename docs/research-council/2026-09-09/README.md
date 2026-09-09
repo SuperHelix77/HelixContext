@@ -19,6 +19,7 @@ This branch is a **frozen research-intake lane** created from `Helix-Output` so 
 | Kimi clean-room / second Kimi dossier | PENDING | Independent mechanism discovery / cross-disciplinary transfer |
 | Arena dossier(s) | PENDING | Hostile falsification, counterexamples, mechanism tournament |
 | `ASTRA_MEDIUM_01_RESEARCH_DOSSIER.md` | **FROZEN** | Independent mechanism cell: computation placement, semantic IR, certified receipts, prepared cognition/deltas, model-specific ABI |
+| `ASTRA_MEDIUM_02_TOURNAMENT_SYNTHESIS.md` | **FROZEN INTAKE** | Tournament/planning synthesis: removable-share bounds, dependency-certified continuations, Astra receipt falsifier, Sol 2x2 composition test; explicitly **not** independent empirical replication |
 | Additional Astra Medium tournament findings | PENDING | Parallel bounded research cells |
 | Astra adjudication | PENDING | Disagreement matrix and experiment selection |
 | Final Helix synthesis | PENDING | Cross-dossier adjudication only after all inputs are frozen |
