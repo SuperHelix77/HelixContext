@@ -1,0 +1,11 @@
+{
+  "finite_integer_checks": 14520,
+  "passed": true,
+  "new_model_calls": 0,
+  "scope": "Finite audit of conditional cost bound, not observed Helix component attribution or native savings",
+  "required_but_unidentified": [
+    "removable native input share",
+    "removable native output share",
+    "complete incremental overhead"
+  ]
+}
