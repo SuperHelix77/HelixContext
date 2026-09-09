@@ -1,0 +1,66 @@
+{
+  "classification": "Adaptive known coding V3; source-only caller completion plus task-bound memory preflight; retained control",
+  "checks": "Public suite and 4433-case oracle PASS; exact publication and protected files PASS",
+  "control_usage": {
+    "input_tokens": 134764,
+    "output_tokens": 3525,
+    "cached_input_tokens": 109824,
+    "reasoning_output_tokens": 2114,
+    "cache_write_input_tokens": 0
+  },
+  "candidate_usage": {
+    "input_tokens": 19142,
+    "output_tokens": 696,
+    "cached_input_tokens": 9984,
+    "reasoning_output_tokens": 455,
+    "cache_write_input_tokens": 0
+  },
+  "savings_percent": {
+    "input_tokens": 85.7959098869134,
+    "output_tokens": 80.25531914893617
+  },
+  "uncached_savings_percent": 63.27987169206095,
+  "native_sha256": "cd7f62039d0cd21f9dbd896087ceae65f7e1bd51b687229738d6ca9325272e09",
+  "source_sha256": "525604483f5049340652d3c53b05b5b2928602b2cd0faddd9c37656aafe60d10",
+  "manifest_sha256": "f23b1c3a1207d87e240f8708616a3ae1b53caa3694d79e9dd1aa687ff7f765ba",
+  "turns": 1,
+  "segments": 1,
+  "segment_usage": [
+    {
+      "totalTokens": 19838,
+      "inputTokens": 19142,
+      "cachedInputTokens": 9984,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 696,
+      "reasoningOutputTokens": 455
+    }
+  ],
+  "raw_capture": {
+    "sha256": "c8629ae6ccbddf31e9e8acfbf7124b6a2dc6488fd7f81b0ccdfb6c79291b5eff",
+    "bytes": 77688,
+    "calls": 0,
+    "outputs": 0,
+    "unmatched_calls": [],
+    "logical_capture_read_bytes": 77688,
+    "logical_capture_write_bytes": 77688
+  },
+  "caller_seconds": 0.07847345800837502,
+  "engine_active": true,
+  "general_release": false,
+  "limits": [
+    "N=1 adaptive candidate, reused control; no general parity inference",
+    "Candidate durable raw capture differs from ephemeral control",
+    "Exact physical I/O and complete preprocessing/research costs not measured",
+    "Current-state checks are not hostile concurrent-writer isolation"
+  ],
+  "memory_preflight": {
+    "state": "completed",
+    "query": "allocation.py allocate largest remainder unittest",
+    "raw_bytes": 13071,
+    "stderr_bytes": 0,
+    "elapsed_seconds": 0.17874266696162522,
+    "excluded_other_scope_count": 8,
+    "raw_sha256": "d775b9f5061bb24b415078b6e00a0f6499d96919b2837d3d04fd516c6de345c2"
+  },
+  "local_instruction_source_verified": true
+}

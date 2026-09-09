@@ -5,7 +5,7 @@ from app_server_native import usage
 from luna_coding_decision_v2 import cap,source
 
 
-def audit(root):
+def audit(root,output_name='LUNA_CODING_DECISION_V2_RESULT.json'):
     root=Path(root);m=json.loads((root/'manifest.json').read_text());cap.verify(m)
     r=json.loads((root/'results.json').read_text());assert r['state']=='AWAITING_AUDIT'
     s=json.loads((root/'run/status.json').read_text())
@@ -39,8 +39,16 @@ def audit(root):
             'raw_capture':{k:index[k] for k in ('sha256','bytes','calls','outputs','unmatched_calls','logical_capture_read_bytes','logical_capture_write_bytes')},
             'caller_seconds':final['completion']['caller_seconds'],'engine_active':True,'general_release':False,
             'limits':['N=1 adaptive candidate, reused control; no general parity inference','Candidate durable raw capture differs from ephemeral control','Exact physical I/O and complete preprocessing/research costs not measured','Current-state checks are not hostile concurrent-writer isolation']}
-    Path(__file__).with_name('LUNA_CODING_DECISION_V2_RESULT.json').write_text(json.dumps(report,indent=2)+'\n')
+    if 'memory_preflight' in m:
+        local=str(root/'on/AGENTS.md')
+        start=json.loads((root/'run/thread-start.json').read_text())
+        assert local in start['instructionSources'], 'Local preflight instruction not attached'
+        report['classification']=m['classification']
+        mem=json.loads(Path(m['memory_preflight']).read_text())
+        report['memory_preflight']={k:mem[k] for k in ('state','query','raw_bytes','stderr_bytes','elapsed_seconds','excluded_other_scope_count','raw_sha256')}
+        report['local_instruction_source_verified']=True
+    Path(__file__).with_name(output_name).write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps({k:report[k] for k in ('checks','savings_percent','uncached_savings_percent','segments','turns')}))
 
 
-if __name__=='__main__':audit(sys.argv[1])
+if __name__=='__main__':audit(*sys.argv[1:])
