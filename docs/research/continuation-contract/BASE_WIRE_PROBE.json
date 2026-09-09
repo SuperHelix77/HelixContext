@@ -1,0 +1,145 @@
+{
+  "classification": "Loopback custom-provider serialization; no hosted model execution",
+  "model_calls": 0,
+  "global_config_modified": false,
+  "rows": [
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "default",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": false,
+      "input_text_proxy": 4349,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "5e4f253dce1e7e4a3f308ff3ae3eef2da9146addb217f0724c406da3ae6eb99d",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "override",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": true,
+      "input_text_proxy": 815,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "33341df01c23d89e46f0b8d472cd61a11dbea3acc779f26e1af6a7f2533c6418",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "default",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": false,
+      "input_text_proxy": 4349,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "f1af001d45bb83742266d638d260f0824864d613be777282804123a5dde15300",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "override",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": true,
+      "input_text_proxy": 815,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "34a7626cda0811abed7b6d8f9f89ef9153c862dee2141923f0a391be09f48133",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "default",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": false,
+      "input_text_proxy": 5156,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "7991af054ee06e338e22193781c75d5ee9d06b97b9e86a2363b4e207ed5ff35a",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "override",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "lite_header": "true",
+      "top_level_instruction_bytes": 0,
+      "top_level_instruction_proxy": 0,
+      "marker_in_top_level": false,
+      "marker_in_input": true,
+      "input_text_proxy": 1064,
+      "tool_count": null,
+      "input_item_types": [
+        "additional_tools",
+        "message",
+        "message",
+        "message",
+        "message"
+      ],
+      "request_sha256": "78a668cdaf6650a4cce245209c634966509fe811b6a3a75d634cfe0d89669e9f",
+      "marker_detection_note": "Exact marker identifier; CLI trims surrounding whitespace."
+    }
+  ],
+  "limits": [
+    "Custom no-auth loopback provider, not hosted authenticated service.",
+    "Intentional400response confirms serialization only; no generated response, token receipt or capability test.",
+    "Hosted service-injected instructions cannot be observed by this mock.",
+    "No credentials or global config used; raw request bodies remain local."
+  ]
+}

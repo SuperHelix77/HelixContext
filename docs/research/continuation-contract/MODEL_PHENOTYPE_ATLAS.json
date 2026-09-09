@@ -1,0 +1,4587 @@
+{
+  "classification": "Observable segment-activity atlas; automatic heuristic annotations, not cognitive attribution",
+  "native_calls": 0,
+  "models": {
+    "gpt-5.6-luna": {
+      "streams": 7,
+      "segments": 58,
+      "total": {
+        "inputTokens": 1253478,
+        "outputTokens": 3083,
+        "reasoningOutputTokens": 1720
+      },
+      "segment_association_percent_NONADDITIVE": {
+        "semantic_choice": {
+          "inputTokens": 11.965188060739798,
+          "outputTokens": 58.319818358741486
+        },
+        "evidence_acquisition": {
+          "inputTokens": 0.0,
+          "outputTokens": 0.0
+        },
+        "mechanical_verification": {
+          "inputTokens": 0.0,
+          "outputTokens": 0.0
+        },
+        "state_transition": {
+          "inputTokens": 89.51277964192431,
+          "outputTokens": 52.96788842036977
+        },
+        "serialization_reporting": {
+          "inputTokens": 11.965188060739798,
+          "outputTokens": 58.319818358741486
+        }
+      },
+      "mixed_segments": 7,
+      "unknown_segments": 0,
+      "causal_class_token_fractions": "UNKNOWN",
+      "safe_counterfactual_savings": "UNKNOWN"
+    },
+    "gpt-5.6-sol": {
+      "streams": 6,
+      "segments": 13,
+      "total": {
+        "inputTokens": 265558,
+        "outputTokens": 4042,
+        "reasoningOutputTokens": 2272
+      },
+      "segment_association_percent_NONADDITIVE": {
+        "semantic_choice": {
+          "inputTokens": 70.27692632118031,
+          "outputTokens": 79.3666501731816
+        },
+        "evidence_acquisition": {
+          "inputTokens": 29.810436891375897,
+          "outputTokens": 35.18060366155369
+        },
+        "mechanical_verification": {
+          "inputTokens": 16.401690026284278,
+          "outputTokens": 20.979713013359724
+        },
+        "state_transition": {
+          "inputTokens": 0.0,
+          "outputTokens": 0.0
+        },
+        "serialization_reporting": {
+          "inputTokens": 45.681169462038426,
+          "outputTokens": 35.304304799604154
+        }
+      },
+      "mixed_segments": 7,
+      "unknown_segments": 0,
+      "causal_class_token_fractions": "UNKNOWN",
+      "safe_counterfactual_savings": "UNKNOWN"
+    },
+    "gpt-6-astra": {
+      "streams": 21,
+      "segments": 84,
+      "total": {
+        "inputTokens": 1777546,
+        "outputTokens": 24709,
+        "reasoningOutputTokens": 1997
+      },
+      "segment_association_percent_NONADDITIVE": {
+        "semantic_choice": {
+          "inputTokens": 57.66196767903615,
+          "outputTokens": 83.79537820227448
+        },
+        "evidence_acquisition": {
+          "inputTokens": 56.960326202528655,
+          "outputTokens": 58.38763203690963
+        },
+        "mechanical_verification": {
+          "inputTokens": 35.23087447525971,
+          "outputTokens": 56.19409931603869
+        },
+        "state_transition": {
+          "inputTokens": 9.85257202907829,
+          "outputTokens": 3.881176899105589
+        },
+        "serialization_reporting": {
+          "inputTokens": 28.005744999004246,
+          "outputTokens": 22.6759480351289
+        }
+      },
+      "mixed_segments": 55,
+      "unknown_segments": 0,
+      "causal_class_token_fractions": "UNKNOWN",
+      "safe_counterfactual_savings": "UNKNOWN"
+    }
+  },
+  "streams": [
+    {
+      "path": "astra-caller-patch-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "767dc1c18ae3f247d7630bd2950a9a48b72e8fac9aaa25a97543afab5dd403a5",
+      "usage": {
+        "input_tokens": 101159,
+        "output_tokens": 1135,
+        "cached_input_tokens": 80640,
+        "reasoning_output_tokens": 48,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19058,
+            "inputTokens": 18969,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 89,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "8c0e684ab5b95ed6f7d52c05069bdabe95aeba62c6c348e380aaf93d193b69d0"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "6660a52f3caa79934daa5c1774395d9012312be1df7de39908326ea26c581f25"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19186,
+            "inputTokens": 19151,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 35,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "64f41b8752e731f91e55aeb8a96846c6d0a59d173be08e4351d7cc8eaf5b1d69"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 20729,
+            "inputTokens": 20475,
+            "cachedInputTokens": 18944,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 254,
+            "reasoningOutputTokens": 48
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "88e64b0a7e6a190d0bbd67fbc440996943e2c256d4cc106307989f69c94fe7f2"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "75f396b8d2e951a7d5faba9b925afbd7fc4739f639120bb9d4e5875c4dbf70df"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "b96b3f83737f96676275e44bc1fac11c14cf62276511f0cdb70ee7e5aa3ed3ea"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21582,
+            "inputTokens": 20917,
+            "cachedInputTokens": 20352,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 665,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "f46b02c6f3add15c8a1a22ba4ee73f649b766c7827b19144691e8314ff21f615"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 21739,
+            "inputTokens": 21647,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 92,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "ce50a8a5bd115ea1d0b95652e3b5236ca555d60148558c0d47d829e6e12581b9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "8eaad445a10e61250d917473c3f744b35156c589e7d20c8e85854539582f4c4a",
+      "usage": {
+        "input_tokens": 19940,
+        "output_tokens": 387,
+        "cached_input_tokens": 11264,
+        "reasoning_output_tokens": 124,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20327,
+            "inputTokens": 19940,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 387,
+            "reasoningOutputTokens": 124
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "af65793c4ad07b6367be881fb017ad4cb7be7b205139612bc2bee1d0c2a98376"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-v2-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "a299f77a629189b2ce402c212589d89bf55cb30e6999a40c6cf31804ae0d49e2",
+      "usage": {
+        "input_tokens": 101113,
+        "output_tokens": 955,
+        "cached_input_tokens": 78848,
+        "reasoning_output_tokens": 28,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19145,
+            "inputTokens": 19056,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 89,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "d0574563ea6afd4618a1298ced8b4e3c834f176a3dfe66d1a5ec705559c560f8"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "eadb928d290f2ff4807527961fa3012dac9484c1905249c2b69eb582d361c4ce"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19275,
+            "inputTokens": 19240,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 35,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "11cfba2d388081473242336fd865af397500b2ae6715fe634ddc4a4d59e07fb2"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 20771,
+            "inputTokens": 20565,
+            "cachedInputTokens": 19072,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 206,
+            "reasoningOutputTokens": 28
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "fc0f8bbae0e0375615bab2d937d4266ed082ff44e442bdd6617c2687d90bd077"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "ae2cf46917f6edf34cf2e473d909b4ffecb51d91a7a0a1e1b96fe09f1a87c427"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21351,
+            "inputTokens": 20839,
+            "cachedInputTokens": 20352,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 512,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "46469cb6bafa64ae67c14a8bcc13d40075f5933cf2bcc2dedbd0c5efef82db67"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 21526,
+            "inputTokens": 21413,
+            "cachedInputTokens": 20608,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 113,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "20b52f8cb571c2c98572ccdb3311aacb9bd20595f44dbb4a2c44389e54f3e1c1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-v2-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "8861cee75b8323dd56780887434cc5ee15850320a2bf916c439ed5e82a831d38",
+      "usage": {
+        "input_tokens": 20038,
+        "output_tokens": 507,
+        "cached_input_tokens": 6400,
+        "reasoning_output_tokens": 215,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20545,
+            "inputTokens": 20038,
+            "cachedInputTokens": 6400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 507,
+            "reasoningOutputTokens": 215
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "4d61962c5354a57bda18ebde81b4d00524139ab5d59aae79a09b27ba145553cb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-patch-pair-20260909/receipts/off/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "fc8d45ba46830b36a0e0aa783bda72891b3e4f94e79fdadc530f00b5bfc6f449",
+      "usage": {
+        "input_tokens": 98251,
+        "output_tokens": 1464,
+        "cached_input_tokens": 76160,
+        "reasoning_output_tokens": 41,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 18667,
+            "inputTokens": 18575,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 92,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "c38fa3a18090d2f5278e70209d23b6315e56b95d683f02b19c8669abe602d77f"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "639937c155d7e139cdcbc748a3e79f210f32f0447283b8482c4bb10a63e5e99e"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 18802,
+            "inputTokens": 18764,
+            "cachedInputTokens": 18432,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 38,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "7ce6990425f4285e69b070c4ac55e3c3ea51fc8e6d117fb592434f66bbba6100"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 19518,
+            "inputTokens": 19483,
+            "cachedInputTokens": 18560,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 35,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "af9e296dff8b74c1bc2c027a77926091a1ecf2a3f062e779fe0a29d2917ea41e"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21201,
+            "inputTokens": 19993,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1208,
+            "reasoningOutputTokens": 41
+          },
+          "visible_activity_tags": [
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "b75dfd09f1147b546874412de2638983c2218c2842b05d076e30bcb82eb02633"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "26abb3c0767f62713d2ab6d0a3986611c4a140d6bd87ce7120394dc1e05ac071"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "a7f23d195fbe3c92820f135f2d8f24a98695d53fb70a39c6be3d5e813d6aa0cb"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 21527,
+            "inputTokens": 21436,
+            "cachedInputTokens": 19840,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 91,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "98f34f687ba22f8e171090daa55a4b02dd5dc1e0440e60cbde2e093d70d69529"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-patch-pair-20260909/receipts/on/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "613b5c71c2a088d47b45da67f44f70f4016fab0c4cd1e7c8a223c9e522c8d08a",
+      "usage": {
+        "input_tokens": 127397,
+        "output_tokens": 1371,
+        "cached_input_tokens": 115072,
+        "reasoning_output_tokens": 61,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19868,
+            "inputTokens": 19748,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 120,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "500ee88a4a6a2acfc59d1f049cbc93a590df87291d271649da18ccbbe0d4e9dd"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "a4b66eb047274ca1970171855cfc6fbbd8b7640821c33d0d17b61a484f52b7e5"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20831,
+            "inputTokens": 20801,
+            "cachedInputTokens": 19584,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 30,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "7523c72f481444c500354371e54fb8d57d463b0e7a2d0c2ae91f1bd2d4b8935e"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 21245,
+            "inputTokens": 21014,
+            "cachedInputTokens": 20608,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 231,
+            "reasoningOutputTokens": 22
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "7ea90e7e3f25afb59415ce9296132f41cd7af682ebdd0545f2d2d540f39d0f7c"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21327,
+            "inputTokens": 21269,
+            "cachedInputTokens": 20864,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 58,
+            "reasoningOutputTokens": 23
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "80cf7dde35a86e498a7ac2b9e2bea260ecdb31285523d89cb052c890030c3093"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 22606,
+            "inputTokens": 21761,
+            "cachedInputTokens": 21120,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 845,
+            "reasoningOutputTokens": 16
+          },
+          "visible_activity_tags": [
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "31741cc18d5a35b410b7b5b98bb6c9e91e9bae8fc1e0bec587701b6287e5a64e"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "3e87c8d2a8b33c00c65821ac4df249ab7425fcfd06302e75aeaea30b9b2d9d70"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "eb360f9d2971e4d21a8f841096bb342e5cf38b05632b236d1bf875f08c256176"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 22891,
+            "inputTokens": 22804,
+            "cachedInputTokens": 21632,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 87,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "686ba7a7e505f091b4f812da35695ebc86742a7b958d8331ae9d3c95eb1e127b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-receipt-native-v1-20260909/helix_valid/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "9e77c9845c09a80d9dcf34f42bdaac43c6dd428cfdc65031bdbfc8c2eecbf48d",
+      "usage": {
+        "input_tokens": 81365,
+        "output_tokens": 1377,
+        "cached_input_tokens": 51456,
+        "reasoning_output_tokens": 72,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19470,
+            "inputTokens": 19397,
+            "cachedInputTokens": 6400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 73,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "ff716f01d0e37cda9e3bb6ba3e342055460ee8937eeb314f0d72e4f15b780b6c"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "2f34b84d6f10c028b01d40afd45867e621026560bcb13a9918a0d1173a5c2da8"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19695,
+            "inputTokens": 19581,
+            "cachedInputTokens": 6400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 114,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "e59271a40e320c704be6a74d12e758e4f629e32102306227e6f2c58ac0ffe421"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 21530,
+            "inputTokens": 20668,
+            "cachedInputTokens": 19456,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 862,
+            "reasoningOutputTokens": 72
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "93b7753378ab757d53babbb706e517bda2f498213ed08bf67ae0a1b4b674a911"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 22047,
+            "inputTokens": 21719,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 328,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "63030ea226c18d4b6f8a87420ecd71bf169664ba1ac537adee162059571600a8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-transfer-v1-20260909/receipts/off/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "8b01cc21fc6332a8d2cc7f9be4400fe13ca6b04e5a2f1e48c8081e56361e0724",
+      "usage": {
+        "input_tokens": 63449,
+        "output_tokens": 751,
+        "cached_input_tokens": 40832,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19774,
+            "inputTokens": 19597,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 177,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "190a269adbb387a2829a4c41001526b8b6a535d616e572c36be4a0b4017f7f52"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "18b470f1b1d3d8492260867db74f723e363ddc0666003602bbac057280c54555"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 22126,
+            "inputTokens": 21557,
+            "cachedInputTokens": 19456,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 569,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "526178e67b4eb95befa628775dc3d508e6966df98f86eb3a61f3fec31eea1b19"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 22300,
+            "inputTokens": 22295,
+            "cachedInputTokens": 21376,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 5,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "4d0d6650fc8e64e4f971c12a164a6b5926e6b307aa83841abc7a6475ad1c9386"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "astra-transfer-v1-20260909/receipts/on/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "f764e10b7f30d00a1bb7c0c04a131c4af0f5486e0d31db2b77b1a3c595b96373",
+      "usage": {
+        "input_tokens": 20716,
+        "output_tokens": 257,
+        "cached_input_tokens": 11264,
+        "reasoning_output_tokens": 198,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20973,
+            "inputTokens": 20716,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 257,
+            "reasoningOutputTokens": 198
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "a3a08e6fd47bf5f6b9aa8270f688f89b43f2efa3fd9d3785ff5a52288b2572ff"
+            },
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "7fa4ed2c749c1924f8d586f470a382f7de0e270fb0ca12fbae9dc7a0cb64b687"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v2-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "224826ba9ac0db0081dba4917f5605c52c6dfe2b9c4530d70b1705ce1c041754",
+      "usage": {
+        "input_tokens": 22813,
+        "output_tokens": 264,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 187,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 23077,
+            "inputTokens": 22813,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 264,
+            "reasoningOutputTokens": 187
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "3838225a6afb1188ea63e8168e0a3b49fcddeac1fe761e6c13e48cbf30a36433"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v3-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "039bb0d16eb081565ee352f07ebff603993d537c921758f153d51412b9c94a78",
+      "usage": {
+        "input_tokens": 22829,
+        "output_tokens": 228,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 188,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 23057,
+            "inputTokens": 22829,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 228,
+            "reasoningOutputTokens": 188
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "64febbf05d86d2c9e2c756f16173e76c21b7fcb6d81b85f2d8da4ce3285c65d2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v4-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "1bcc9f4f6e8bbd98345e8c8df47a9c9c38ebf9ef18827e2e52d766adc50c8628",
+      "usage": {
+        "input_tokens": 18692,
+        "output_tokens": 172,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 132,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 18864,
+            "inputTokens": 18692,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 172,
+            "reasoningOutputTokens": 132
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "91c74e014a6ba9969d25fa6281a7c7530a143033d1e80d1a85c8d325db8f2cfa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v5-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "1df44aef7f22cdc76629495eeb3de4f9376481e7707c5e3da15551d189215f04",
+      "usage": {
+        "input_tokens": 18439,
+        "output_tokens": 160,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 124,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 18599,
+            "inputTokens": 18439,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 160,
+            "reasoningOutputTokens": 124
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "c29dd4e17268a95e0d8448c39e7c9e1bc06d34aaf5bc2a4bdc3704a63e1e3ad3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v6-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "1c8ffbb15088deb54a56d8ee7e0a4e034dcc190fc38e9911332bf579d3449681",
+      "usage": {
+        "input_tokens": 18526,
+        "output_tokens": 348,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 302,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 18874,
+            "inputTokens": 18526,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 348,
+            "reasoningOutputTokens": 302
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "1d3243c61c083937686ccd0bfcbc38bf39d506e24163abb3d9ad29d284dc334a"
+            },
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "cae4d7ae94ff2963dc9a198e8d758f1825fb1e02a66384d4af42618ce9c2d815"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-pair-v1-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "963e89482bca14aed39be2221fad49687ce3f9349ddc81cb166aad634f369c87",
+      "usage": {
+        "input_tokens": 1082542,
+        "output_tokens": 641,
+        "cached_input_tokens": 1035776,
+        "reasoning_output_tokens": 169,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 17699,
+            "inputTokens": 17674,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 25,
+            "reasoningOutputTokens": 16
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "99fc0dc4441aa79764ca236bda3d43801ad0a2d581ac80cbf700060273c8f35a"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 18688,
+            "inputTokens": 18681,
+            "cachedInputTokens": 17152,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "7d363933340206de89bfd711ddfb1163eef56751804abf6478205e92992289a6"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 18815,
+            "inputTokens": 18808,
+            "cachedInputTokens": 18176,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "d1f8a5013a3754f49758228193f56e5e412aba1016c05df74cca2415028cc3d7"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 18952,
+            "inputTokens": 18935,
+            "cachedInputTokens": 18176,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 17,
+            "reasoningOutputTokens": 8
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "31d82a1ce649a73b1493d0fcdca9f7cba725408531cf2d55a2073ca9bf172249"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 19079,
+            "inputTokens": 19072,
+            "cachedInputTokens": 18176,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "40f787bed5ecd140d3122db2341c981e43d5c1b85af0d83156df48b5291681b0"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 19206,
+            "inputTokens": 19199,
+            "cachedInputTokens": 18176,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "5db39bd9053e845e8e2f3072098d267ac2fa7c65f129057f550146bb03567393"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "usage": {
+            "totalTokens": 19332,
+            "inputTokens": 19325,
+            "cachedInputTokens": 18176,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "38dbeb71c8ce1b81345a5c5475422387d1244ed1142928730b42a2c57ccd6f4a"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "usage": {
+            "totalTokens": 19458,
+            "inputTokens": 19451,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "f989ba6d8b97fbc97bf32f005dd51f2dafd063210c2f07adb3cacf1dc3fa227e"
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "usage": {
+            "totalTokens": 19584,
+            "inputTokens": 19577,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "fde3b44074c8704b288d1c2f86392077a1edeb29ee32788a6195d0d00f990b40"
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "usage": {
+            "totalTokens": 19710,
+            "inputTokens": 19703,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "74eda0504501cd41789ffc55950e95cab8600b42e2e4acfd856d7e21d49cf039"
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "usage": {
+            "totalTokens": 19836,
+            "inputTokens": 19829,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "7be5d8c79de98d3c70e91947e66e75e765a64799802fbe1b5a97a932eda1cf75"
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "usage": {
+            "totalTokens": 19962,
+            "inputTokens": 19955,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "a1c7a35657dbfb70866501ac50b27cbc102924addf0e639f53dbeec51b868317"
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "usage": {
+            "totalTokens": 20089,
+            "inputTokens": 20082,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "462fe0793d36cc3db709cd09217aa20705797d72f643c02ca1b4573001d197a6"
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "usage": {
+            "totalTokens": 20215,
+            "inputTokens": 20208,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "c2d0ea57637ca2faef625388c026e1300c271523066194ce01e53af37bbdfc44"
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "usage": {
+            "totalTokens": 20341,
+            "inputTokens": 20334,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "f9c9ec4a44643ab913275fdb703e9bf804e47e0a7135160509cc1d91f3cdf145"
+            }
+          ]
+        },
+        {
+          "index": 16,
+          "usage": {
+            "totalTokens": 20468,
+            "inputTokens": 20461,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "946bb19c6c1f6a4285f79199bd1bdc0ad6716e4e3a433425aca2aab2bc660415"
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "usage": {
+            "totalTokens": 20589,
+            "inputTokens": 20582,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "19a291abae03582bc0d8662f0b4022da117f1fbcd7283054bddf7505aedbf48e"
+            }
+          ]
+        },
+        {
+          "index": 18,
+          "usage": {
+            "totalTokens": 20716,
+            "inputTokens": 20709,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "82ff0edf3e70b0c5899aba7249d16943da43fecd504dd32cbf5b8476f0810158"
+            }
+          ]
+        },
+        {
+          "index": 19,
+          "usage": {
+            "totalTokens": 20843,
+            "inputTokens": 20836,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "4e163707471a5e4816161b8aaf0d280d83dbd5a9e9f2f8ce8e93fcd7bd3242e0"
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "usage": {
+            "totalTokens": 20969,
+            "inputTokens": 20962,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "8d1a98378a19432df80eafce6390c9f1fd74e41f76674f30700b1b0cb09f1906"
+            }
+          ]
+        },
+        {
+          "index": 21,
+          "usage": {
+            "totalTokens": 21096,
+            "inputTokens": 21089,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "d4660e5364188b07e44968547bedf442913f88ee41e459a94e8d14c53beb49c8"
+            }
+          ]
+        },
+        {
+          "index": 22,
+          "usage": {
+            "totalTokens": 21222,
+            "inputTokens": 21215,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "1697f4facdb45494f7fbc3e9b54a58664d63126504a1f801c15f840157767a97"
+            }
+          ]
+        },
+        {
+          "index": 23,
+          "usage": {
+            "totalTokens": 21349,
+            "inputTokens": 21342,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "6a9eac814be192361b30adf6e4ca38b2f1467b02179d02e5b79f5ea35e841b21"
+            }
+          ]
+        },
+        {
+          "index": 24,
+          "usage": {
+            "totalTokens": 21476,
+            "inputTokens": 21469,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "0c4a354e9ac148244f63adf2b349a00f9f0b457e6db7271ed325333c7b7d593f"
+            }
+          ]
+        },
+        {
+          "index": 25,
+          "usage": {
+            "totalTokens": 21603,
+            "inputTokens": 21596,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "98011a58823ea2f44fe92f18a1b40d0e54a529b422048ba6da32c8f906d7cafc"
+            }
+          ]
+        },
+        {
+          "index": 26,
+          "usage": {
+            "totalTokens": 21730,
+            "inputTokens": 21723,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "1a1602ee720e36868d8f25c6c7b574e4fd3bb126ad5a8701647a7ef9c9750a3b"
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "usage": {
+            "totalTokens": 21857,
+            "inputTokens": 21850,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "c616a293f8eef956786df7afadee420e3fb25744da57b499905e2dec0470d2ce"
+            }
+          ]
+        },
+        {
+          "index": 28,
+          "usage": {
+            "totalTokens": 21984,
+            "inputTokens": 21977,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "a3c96c43f83c397001576e7933c904ea6560e8cd0a529c19a0806a0d983bb925"
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "usage": {
+            "totalTokens": 22111,
+            "inputTokens": 22104,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "7fec94d5d73cb3424afe270ce7360ea2edb8e332d1f4f548a1cf7bb77fc262d2"
+            }
+          ]
+        },
+        {
+          "index": 30,
+          "usage": {
+            "totalTokens": 22238,
+            "inputTokens": 22231,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "401ffc805b16c7941011b1376d8bd534838bcf1de4b45cc1412551be8081319d"
+            }
+          ]
+        },
+        {
+          "index": 31,
+          "usage": {
+            "totalTokens": 22375,
+            "inputTokens": 22358,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 17,
+            "reasoningOutputTokens": 8
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "c6eb9e49fd3c9617c2eb1fad7b96015209d6f3749d255a3444032a362113fe2c"
+            }
+          ]
+        },
+        {
+          "index": 32,
+          "usage": {
+            "totalTokens": 22502,
+            "inputTokens": 22495,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "d3c1710ab9f1501bfe64c41ba82971f0580359846a9beb8915f8451513f945f4"
+            }
+          ]
+        },
+        {
+          "index": 33,
+          "usage": {
+            "totalTokens": 22628,
+            "inputTokens": 22621,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "450eb112e18a5246c36c02da5c7d7e6134fabbd2c65f8ed5819dacc9ba26b490"
+            }
+          ]
+        },
+        {
+          "index": 34,
+          "usage": {
+            "totalTokens": 22755,
+            "inputTokens": 22748,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "5c6a8d06e198657c8b10fa61b30238434d7f5f8a4a4bd69bd981cc45653bf574"
+            }
+          ]
+        },
+        {
+          "index": 35,
+          "usage": {
+            "totalTokens": 22881,
+            "inputTokens": 22874,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "7820916ebec90d10e57cd9ff4f51b2dedc08d950ce535ea2c34f2ab42f9b8e00"
+            }
+          ]
+        },
+        {
+          "index": 36,
+          "usage": {
+            "totalTokens": 23008,
+            "inputTokens": 23001,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "5dec752b2b976732442e2cd77232aedf75ef9c3d03bcd315a766620ca82f8245"
+            }
+          ]
+        },
+        {
+          "index": 37,
+          "usage": {
+            "totalTokens": 23135,
+            "inputTokens": 23128,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "078ef745c46d9b88f144d585421fea2127ed08c531f4bb7fed5104dfec8e5219"
+            }
+          ]
+        },
+        {
+          "index": 38,
+          "usage": {
+            "totalTokens": 23262,
+            "inputTokens": 23255,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "56fa1119ebad790c2d78a19dabc26ea6b75006dbc77cba9ae193a25f028ae8d6"
+            }
+          ]
+        },
+        {
+          "index": 39,
+          "usage": {
+            "totalTokens": 23389,
+            "inputTokens": 23382,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "d64f64606616fb3ea866daa3cd701d87d0a15a97af86f075268bceaefa37cf9e"
+            }
+          ]
+        },
+        {
+          "index": 40,
+          "usage": {
+            "totalTokens": 23516,
+            "inputTokens": 23509,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "3c546fea2ee21c6c1fe755c65d1cd937977a9ade19f7f58b459ea5e54c61646d"
+            }
+          ]
+        },
+        {
+          "index": 41,
+          "usage": {
+            "totalTokens": 23643,
+            "inputTokens": 23636,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "dafc66c00c63e2647dbec284edf3f13fa00f6b7488ac708ad9f7cde5e577f4b6"
+            }
+          ]
+        },
+        {
+          "index": 42,
+          "usage": {
+            "totalTokens": 23770,
+            "inputTokens": 23763,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "14e591aa7532557dcd9cd172ddd4cac8a23789853fb5d1d196bb37acaf450588"
+            }
+          ]
+        },
+        {
+          "index": 43,
+          "usage": {
+            "totalTokens": 23907,
+            "inputTokens": 23890,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 17,
+            "reasoningOutputTokens": 8
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "adc0cb8df66ddb3bcf9b611590c938439b888d892340649665c1dfa8b77abd78"
+            }
+          ]
+        },
+        {
+          "index": 44,
+          "usage": {
+            "totalTokens": 24033,
+            "inputTokens": 24026,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "0cea1b29fd14689c2b48b215adb8eb5bb689149e783cd3de424d24f5231ee72c"
+            }
+          ]
+        },
+        {
+          "index": 45,
+          "usage": {
+            "totalTokens": 24159,
+            "inputTokens": 24152,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "862b3ef1effab621b69898f00f11a8128bb2540679ac083d93fd211aa4cb2518"
+            }
+          ]
+        },
+        {
+          "index": 46,
+          "usage": {
+            "totalTokens": 24285,
+            "inputTokens": 24278,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "224e03794db3887bd0576cb3c5a0b2fefc77f2a48db84811e545234a3ed6ddd5"
+            }
+          ]
+        },
+        {
+          "index": 47,
+          "usage": {
+            "totalTokens": 24412,
+            "inputTokens": 24405,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "f6451df44b54978a22faf5d6e4aa22b3da9c4539e6ffbc241939486add7c913a"
+            }
+          ]
+        },
+        {
+          "index": 48,
+          "usage": {
+            "totalTokens": 24538,
+            "inputTokens": 24531,
+            "cachedInputTokens": 23296,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "8f16cc40f458ed1b6f32b4fecbc8faad6f2f888638156c738108bde461018f6a"
+            }
+          ]
+        },
+        {
+          "index": 49,
+          "usage": {
+            "totalTokens": 24665,
+            "inputTokens": 24658,
+            "cachedInputTokens": 24320,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 7,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "a264cdb053a7a548bb7403bac24074497d5a4f58f450c8075f82de6663dd3ab4"
+            }
+          ]
+        },
+        {
+          "index": 50,
+          "usage": {
+            "totalTokens": 25103,
+            "inputTokens": 24853,
+            "cachedInputTokens": 24320,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 250,
+            "reasoningOutputTokens": 129
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "58c04a5470ab53357e7bb002ad6337ff87f0924020bf241939bb56d56bb797d8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-pair-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-5.6-luna",
+      "native_sha256": "6beeff53ed80f4872392a92554b4eb219e595efce8dddad69154047a59ddd88a",
+      "usage": {
+        "input_tokens": 69637,
+        "output_tokens": 1270,
+        "cached_input_tokens": 54528,
+        "reasoning_output_tokens": 618,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 23116,
+            "inputTokens": 22519,
+            "cachedInputTokens": 9984,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 597,
+            "reasoningOutputTokens": 308
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "afc5c63f053cc5aa29de6640a0e12555c5bbdb542acd989808e71294a098c766"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 23586,
+            "inputTokens": 23289,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 297,
+            "reasoningOutputTokens": 43
+          },
+          "visible_activity_tags": [
+            "state_transition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "0320c4e6ece1ecd6597ab02259ac8e3b6671be965d9c3aa10edd47eee102a666"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 24205,
+            "inputTokens": 23829,
+            "cachedInputTokens": 22272,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 376,
+            "reasoningOutputTokens": 267
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "89fddc44377012165b8931a11ef7f472984a7d1e34913467767eeb575201059c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-pair-v1-20260909/candidate/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "cca4a28bee87f6d79339296c0c1096f753640654b57e0abc03141b50c73fc018",
+      "usage": {
+        "input_tokens": 91543,
+        "output_tokens": 1625,
+        "cached_input_tokens": 75776,
+        "reasoning_output_tokens": 147,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19668,
+            "inputTokens": 19560,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 108,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "080f5765882082a8530dfd1671fea4c842c041c2def9b296fce84e783ee0f3d1"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "2a2cb5ffe4c44fc3dd38d93c87f051a915e39a9f2f1937cb6520fbde0c7b1a1d"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20326,
+            "inputTokens": 20140,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 186,
+            "reasoningOutputTokens": 11
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "70d1960cc7c59a8fd3b4e6508af651393db3e489852a4d336c8b404a6568c350"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 26357,
+            "inputTokens": 25374,
+            "cachedInputTokens": 19968,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 983,
+            "reasoningOutputTokens": 136
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "cf69fbcddcc46375a7080ecbff60489704297fb808dbeadce31343d422188f56"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 26817,
+            "inputTokens": 26469,
+            "cachedInputTokens": 25216,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 348,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "043ea3fc2ac452f3dff6f27cf9a472439c1327c87df23d4a3930748b08300a65"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-pair-v1-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "4354679c3c147e01e07118146da8dbcc053cd28647b2cdaa4455e64d36f77778",
+      "usage": {
+        "input_tokens": 130422,
+        "output_tokens": 2055,
+        "cached_input_tokens": 116480,
+        "reasoning_output_tokens": 215,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19098,
+            "inputTokens": 19005,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 93,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "2ea272726ba83903b1bd6ad3f6916e3df4d2c52b8cf86f74641ed0b1907fa796"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "2ef719acba71cbbe5a1cac18dd058ff066d2f0a3095e025e95a4b5d9d619cf7f"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19371,
+            "inputTokens": 19253,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 118,
+            "reasoningOutputTokens": 21
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "f7d0c8bea7ef78a27c2b31e521ba7775d10bf48d61aad88868b2ee039fd2c981"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 22340,
+            "inputTokens": 22005,
+            "cachedInputTokens": 19072,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 335,
+            "reasoningOutputTokens": 91
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "cf1b13cdfd04e36832fd313fb5626768f40ee4c9f43d5acbf1f93ea615a6f4ae"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 22874,
+            "inputTokens": 22756,
+            "cachedInputTokens": 21888,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 118,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "c7a0d1ee456153c5896b6bbdf07f9240491c6d4f6b7056471a1408bd453d814a"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "b9b8acf324385eec3749e9b47064bfd399a3d0da203c16db0005cc3009cb9aa1"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "06b8b3eaee10db6a61245f06e35a744fdb06758bc5ca3ac067aab064253d4cfe"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 24163,
+            "inputTokens": 23139,
+            "cachedInputTokens": 22528,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1024,
+            "reasoningOutputTokens": 103
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "d17682395fd66b94642995379fba923af9dc76b9b2f76ec9fd8aab407b9a6d03"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "56e32c5ed2a86fbbb510fc50d0376da6ba95c511fe9262d0099d5a1aa328d3fd"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 24631,
+            "inputTokens": 24264,
+            "cachedInputTokens": 22912,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 367,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "e728ab96c18e7916616b685f372cfce81be41193acd280eb8672439f70c0679d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-safety-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "3bd7c869d8e7715a353d9bfa19515d46fe050a2cbabb7ae75188257f9b47aee9",
+      "usage": {
+        "input_tokens": 91732,
+        "output_tokens": 1207,
+        "cached_input_tokens": 75648,
+        "reasoning_output_tokens": 26,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19638,
+            "inputTokens": 19547,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 91,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "ae24a9d65946999f576bffe5082da69dfacee090b9664f8f9947561d6f71e351"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "92fe55f976bb5555926ae0072bd698089902b235074103c7665dc708e18840bb"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20597,
+            "inputTokens": 20409,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 188,
+            "reasoningOutputTokens": 11
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "d2c6fd1be4929265d12e28190c144fdecdb67095e67f51d5e8ea674ee561ec2a"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 25623,
+            "inputTokens": 25036,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 587,
+            "reasoningOutputTokens": 15
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "df38e97f297bf305277e3ea5af0f953102a764e635ed13928e118ebeb325682a"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 27081,
+            "inputTokens": 26740,
+            "cachedInputTokens": 24832,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 341,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "de5d604037f3624a5e25b001b1770c0e6387c3e6d44a0307173d2fd3dfb13a0c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-prereview-pair-v1-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "d8bee5328fac831c533843a8bc90ded99e1c84997548d807d6b9dd9b451bbe9e",
+      "usage": {
+        "input_tokens": 126477,
+        "output_tokens": 1606,
+        "cached_input_tokens": 113664,
+        "reasoning_output_tokens": 146,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19134,
+            "inputTokens": 19055,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 79,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "5df192804031734b0e16f916e2666f6191d16ca5cd9445fefbb5c2826dd8c427"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "503c706ee37d08eae3dfd48e2eee5d6535bb7bd44ed7a367d67cf4e5e0f51750"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19396,
+            "inputTokens": 19290,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 106,
+            "reasoningOutputTokens": 16
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "5bdfb242693f680f312f33513b194d905448a175e83f3cfbdf89364d365836d5"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 21531,
+            "inputTokens": 21228,
+            "cachedInputTokens": 19072,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 303,
+            "reasoningOutputTokens": 75
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "fdac3ba708fe0113b2674e9b9ea2f265a961b8b508d83675848e7ebba4ba1c26"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21941,
+            "inputTokens": 21845,
+            "cachedInputTokens": 20992,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 96,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "173471dba83fafb87c7c6c0a89b721f986bb55123b83e59d5b0a1c8e80b637fa"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "8d0635e77c20fbe1720d927200dc483b10cc0244d6e4f3cfa2d598e1478b618c"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 22858,
+            "inputTokens": 22071,
+            "cachedInputTokens": 21632,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 787,
+            "reasoningOutputTokens": 55
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "48693d3d4641e29d98c08e637299d4bc44a16bddb36203278421b5905890b823"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 23223,
+            "inputTokens": 22988,
+            "cachedInputTokens": 21888,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 235,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "3ac81f87a48277511e95e4eb796e23e0b25b11173dd7ad266ff844dd24d39d9c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-prereview-pair-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "653c6a43a367e2688981b4d53f156c00ab5f37b4cfacda9e04f8f8d43d2b2780",
+      "usage": {
+        "input_tokens": 85055,
+        "output_tokens": 1452,
+        "cached_input_tokens": 59136,
+        "reasoning_output_tokens": 96,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19619,
+            "inputTokens": 19524,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 95,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "7cd050790102dd5def114b8a77dc30cc70ed95fbe92405acdec243fdd754b6d4"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "640df92b3f0bf574f868ae525aaf06552db7fb9718076a6c48fbfc9ef66638c0"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19943,
+            "inputTokens": 19782,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 161,
+            "reasoningOutputTokens": 34
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "9a1df34b29dbc78d8877f1fbac454d5b345c71a454467c79e79322c585df2fe4"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 23263,
+            "inputTokens": 22354,
+            "cachedInputTokens": 6400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 909,
+            "reasoningOutputTokens": 62
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "c59df58a551de32d13f5f96fa1c621bf58bb37fe6fe74bf4fe1a8f9f91984c78"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 23682,
+            "inputTokens": 23395,
+            "cachedInputTokens": 22144,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 287,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "4aa6e2dc74f7c9925949761dad7d4cb2f749cbe6da9d426e18da8152deef58b1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-recovery-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "e6d3d0af983dce211f1413b5e60b26f8ebbb704eb6a7ffd66b42129bf8932198",
+      "usage": {
+        "input_tokens": 40357,
+        "output_tokens": 782,
+        "cached_input_tokens": 30464,
+        "reasoning_output_tokens": 225,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19781,
+            "inputTokens": 19405,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 376,
+            "reasoningOutputTokens": 128
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "e1c1011d1436625a8f8a501b9978c75cd5c9b03584b5c69f6d89c01782765a2f"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 21358,
+            "inputTokens": 20952,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 406,
+            "reasoningOutputTokens": 97
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "22adcba24e56602bee012cf3734627e1c1f2dbacafc481a370a19bf21f24b78c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-review-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "e374decaf9e90a27cdbca75d1498cb2a8773e30fdf44dc0180cdd8d4cb9ebec9",
+      "usage": {
+        "input_tokens": 105901,
+        "output_tokens": 1167,
+        "cached_input_tokens": 93824,
+        "reasoning_output_tokens": 29,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19446,
+            "inputTokens": 19371,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 75,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "96eacdb031513d6cf707fd32f4664c07c15351f4a2e103d06bf3777666fdf06c"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "83e6f99705c6d474be3716962e6ed24827b6719ced329c8eb9dc3bbab456db37"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20071,
+            "inputTokens": 20021,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 50,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "23c3f495d5433eff953dc6bcdbb4411cc3ce2a44a8f69310921120be174f9864"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 20871,
+            "inputTokens": 20635,
+            "cachedInputTokens": 20480,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 236,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "caa0817981f67028a5cef22cd395c6fd7e94742fbe2976688ad122b800b2e4e1"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 23107,
+            "inputTokens": 22519,
+            "cachedInputTokens": 20480,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 588,
+            "reasoningOutputTokens": 29
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "071b60d52b62bf150de66a2e059b5cfb8cf320d5e7abba0e9c5fe691024e80fd"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 23573,
+            "inputTokens": 23355,
+            "cachedInputTokens": 22400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 218,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "691acba71ebe4009de8ad1e51f0cebdefb5862d544c93fd7c3e67f76501d4483"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-review-pair-v1-20260909/off/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "df26510d80eb36a52f4cd26bdbd90fea0381cf9623d718d81e9dd0555bdc8f25",
+      "usage": {
+        "input_tokens": 127289,
+        "output_tokens": 2737,
+        "cached_input_tokens": 113792,
+        "reasoning_output_tokens": 172,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19113,
+            "inputTokens": 19004,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 109,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "0fce3726f1cdb2dbaa654d8c9985a4c352a21dc535d46947681d19f9fffe910a"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "c4100cee6949621145a1f7a5d16f232597a4b9b7f63d8969959664e36caae1e6"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19291,
+            "inputTokens": 19204,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 87,
+            "reasoningOutputTokens": 23
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "27bf29d580b6d017d47d4a669fef7cd29c127e6370d89c6c5dfc37be8459a368"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 20804,
+            "inputTokens": 20397,
+            "cachedInputTokens": 19072,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 407,
+            "reasoningOutputTokens": 53
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "cef1018fb6ed5f9c39b6dedf2acce016a8d69de8d83db031f2278f6fd30fe4dc"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 22997,
+            "inputTokens": 21798,
+            "cachedInputTokens": 20224,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1199,
+            "reasoningOutputTokens": 96
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "5de323129fd489514c179a6ce877c8a9392b1eb0515d96cb94dd218210b8019c"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "07187f586b1c19eca5dc5e5958a3617192c4d44f9c0c985304d746f853508e4e"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 23767,
+            "inputTokens": 23021,
+            "cachedInputTokens": 21632,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 746,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "d7ba411b334dcf11e4f55e463d0454b33557382db9dfdc03efa5bf6ab0f1786c"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 24054,
+            "inputTokens": 23865,
+            "cachedInputTokens": 22784,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 189,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "8b811986dffbffde34da684ee13b718f0b9ba3235a45bea33c76571602326dc1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-review-pair-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "eafa8ff77afe797849ac61785edf1b4f760c8f1fb03f5fa73b032e8256a87c7a",
+      "usage": {
+        "input_tokens": 110213,
+        "output_tokens": 1363,
+        "cached_input_tokens": 95360,
+        "reasoning_output_tokens": 70,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19469,
+            "inputTokens": 19392,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 77,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "0bed39572b3a2d06f0f75807327637adee1eb56fcd2a75c5f7b1dd3689a85d6a"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "6624373f4c43860505260272a3cc82279e5fced82e254797187e2e7a948a0bf6"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20099,
+            "inputTokens": 20047,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 52,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "f01471135a7ce5232209eaab783402521b5546d59eff319f9444e14dd28d2d88"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 21324,
+            "inputTokens": 21028,
+            "cachedInputTokens": 19840,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 296,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "4663f5abcd19468334d448c6a12e2e7eced45e8187111a7c1d26dc42a49d6fcd"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 25054,
+            "inputTokens": 24310,
+            "cachedInputTokens": 20864,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 744,
+            "reasoningOutputTokens": 70
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "02a79434ad3607c8f60fcbff87caf93a9ad446a0b10c27197c8f549ecd3f5071"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "5b9298b964d8f76ac8f805f12b6426e6d6b9d18bdc5f851352a0287de505e975"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 25630,
+            "inputTokens": 25436,
+            "cachedInputTokens": 24192,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 194,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "01060ac158f784d045f98e9d2978774f7418e00e22be623ef1a1c7a5b07c9d48"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-timing-gate-v1-20260909/a/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "a83597982663ea9e078b2a455f7df53aaf21786879ab17678ded0dbb462a155a",
+      "usage": {
+        "input_tokens": 39127,
+        "output_tokens": 530,
+        "cached_input_tokens": 30464,
+        "reasoning_output_tokens": 33,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19641,
+            "inputTokens": 19393,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 248,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "b16372c7ba95d6b91af53c4b3f062a0beac503494d03f2269d69e8e113b3eb81"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "abf27f6dfd93dd137df8a90a6699bb41497c73d884746ee08f8cac26d078123b"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20016,
+            "inputTokens": 19734,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 282,
+            "reasoningOutputTokens": 33
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "6a2b135af302ea1a9683921b6fa784d89cb9ec6b1cc83e45467a9ac367fd5d68"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-timing-gate-v1-20260909/b/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "bf9f0cac735be7d55e920b330dc44bc4cb27bbb659f5d9e2db779d80dfb0f781",
+      "usage": {
+        "input_tokens": 110714,
+        "output_tokens": 1292,
+        "cached_input_tokens": 95104,
+        "reasoning_output_tokens": 35,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19476,
+            "inputTokens": 19389,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 87,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "mechanical_verification",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "aa3ba5f3cf2c971d3950c55a38cb499e435eb0536d4a7f078b12a53a6a01f38f"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "a98ed2e40476cce8e36efd7586f2a0a7e3f0cadb92b8adf340c1ec4cb051c1f8"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20129,
+            "inputTokens": 20075,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 54,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "682fd00c2294b93745318a005d28a1ec6d912851bf0ba9f06e0af4e7001c5de8"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 21307,
+            "inputTokens": 21069,
+            "cachedInputTokens": 19840,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 238,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "bd7b3f13976ed5f84309c9fc0f702b3c1deed3d3ece470dddf25106d99857689"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 24763,
+            "inputTokens": 24092,
+            "cachedInputTokens": 20864,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 671,
+            "reasoningOutputTokens": 35
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "edb7eea570c1b6b0145e2c2961cafbe8b2df00d81e5919784c27c180aa5ce443"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "bff79ff575e498c099b9f2a7072f3eb80ded24c85c508edc88f99cbd2d7f6587"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 26331,
+            "inputTokens": 26089,
+            "cachedInputTokens": 23936,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 242,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "99fe3af8dc86e26bd5e7d31a6bf2531685f82575d8016b64a2434e88e81c94a0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "native-trust-safety-v1-20260909/on/receipts/run/native-events.jsonl",
+      "model": "gpt-6-astra",
+      "native_sha256": "9bf2cbf51facce3af42752f43620579c3364ae6cd91fca23682250135b135915",
+      "usage": {
+        "input_tokens": 85288,
+        "output_tokens": 689,
+        "cached_input_tokens": 59392,
+        "reasoning_output_tokens": 16,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19666,
+            "inputTokens": 19561,
+            "cachedInputTokens": 11264,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 105,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "state_transition"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "d666cc7ac39d12e34fb1fac63544934adee4597f8835301619fc32d6f86e9fbb"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "5ac833de6242444c1312d424d37a9b0a727abb9e1d3261ad8603317c97ee20fe"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 20099,
+            "inputTokens": 19985,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 114,
+            "reasoningOutputTokens": 16
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "6840ddd390463c017b1fc95e6301af863d7ddad7108118f1b76e8db9069216f7"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 22846,
+            "inputTokens": 22627,
+            "cachedInputTokens": 6400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 219,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "63010137843d0135b8e5acbb67b4a36b10c0e1b4a9ceac87341b8b20cba4737f"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 23366,
+            "inputTokens": 23115,
+            "cachedInputTokens": 22400,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 251,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "d98381d21dcfa4adc6fce53c54155b04cd04b879b9fca2eb10568d81d7a4b006"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-integrated-v3-20260909/receipts/off/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "305579567ea0db0b66366f5bf12d7e6c33d24edb3b35e10280de31d88e9b5f9b",
+      "usage": {
+        "input_tokens": 167119,
+        "output_tokens": 2659,
+        "cached_input_tokens": 127360,
+        "reasoning_output_tokens": 1074,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 18939,
+            "inputTokens": 18751,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 188,
+            "reasoningOutputTokens": 50
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "378a3378e811b1616b0ed6b224ad57db3c81f56420b0de102001ee6f7b9a479a"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "7e35d1a0a736feb3f588534269ca9e95fb0dfc6ad4db60e1729b5fde7a077e1b"
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "usage": {
+            "totalTokens": 19143,
+            "inputTokens": 19003,
+            "cachedInputTokens": 18560,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 140,
+            "reasoningOutputTokens": 30
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "139ed25d8b4ec1de910ed0c04b0c17aa237304da14bfa0732d81bec77cf9043e"
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "usage": {
+            "totalTokens": 19892,
+            "inputTokens": 19516,
+            "cachedInputTokens": 18816,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 376,
+            "reasoningOutputTokens": 216
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "f438801966fb7e0e85428bcbba7ee078ca15f082abfd5a0947e7f5d052ee2391"
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "usage": {
+            "totalTokens": 21638,
+            "inputTokens": 20643,
+            "cachedInputTokens": 19328,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 995,
+            "reasoningOutputTokens": 566
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "commentary",
+              "content_sha256": "f2f58d6ff48fb304e850b7320995a7ec0e6ce529badcd9d443e4eac85e8242ab"
+            },
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "15d3c6086425439c5188e63be4d84c95be40a1e95914d6e1465720191396ed0d"
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "usage": {
+            "totalTokens": 21792,
+            "inputTokens": 21662,
+            "cachedInputTokens": 20480,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 130,
+            "reasoningOutputTokens": 9
+          },
+          "visible_activity_tags": [
+            "mechanical_verification"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "26cc909c062b7cd8b1f4bb90d74c835c7bce4a706415bf7fa9c3389a714ad107"
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "usage": {
+            "totalTokens": 22612,
+            "inputTokens": 21894,
+            "cachedInputTokens": 6016,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 718,
+            "reasoningOutputTokens": 142
+          },
+          "visible_activity_tags": [
+            "evidence_acquisition",
+            "mechanical_verification",
+            "semantic_choice"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "commandExecution",
+              "phase": null,
+              "content_sha256": "769179f33ab45b31a3034a2a5192c7e7d3e7deb5e5ce154a7b490d7a443f61a8"
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "usage": {
+            "totalTokens": 22847,
+            "inputTokens": 22779,
+            "cachedInputTokens": 21504,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 68,
+            "reasoningOutputTokens": 24
+          },
+          "visible_activity_tags": [
+            "semantic_choice"
+          ],
+          "mixed": false,
+          "items": [
+            {
+              "type": "hook",
+              "event": "preToolUse"
+            },
+            {
+              "type": "fileChange",
+              "phase": null,
+              "content_sha256": "a283dba6000d2220a81f3abce858884aff08cdb8b2901e96f1259ff13dbc6ef3"
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "usage": {
+            "totalTokens": 22915,
+            "inputTokens": 22871,
+            "cachedInputTokens": 22656,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 44,
+            "reasoningOutputTokens": 37
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "558abc70a244a293a572c2e9bf2c390ced8cdf262ec4bb735f534dc642976fd4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-integrated-v3-20260909/receipts/on/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "63841561fbb5f1bd45f315d111dee655ad18db3df5070cafb83f883ebae381ae",
+      "usage": {
+        "input_tokens": 19893,
+        "output_tokens": 293,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 256,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20186,
+            "inputTokens": 19893,
+            "cachedInputTokens": 6016,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 293,
+            "reasoningOutputTokens": 256
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "0f0bc9f7d7f463353e5a775af1fea34f173557eab12519e42fa87a87b983f324"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/0/receipts/on/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "e87c2268b8767f630b4494b3300621da429e56a49e0b8d86bffa860b77ce311a",
+      "usage": {
+        "input_tokens": 19868,
+        "output_tokens": 248,
+        "cached_input_tokens": 10368,
+        "reasoning_output_tokens": 211,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20116,
+            "inputTokens": 19868,
+            "cachedInputTokens": 10368,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 248,
+            "reasoningOutputTokens": 211
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "28db833c566f529bfca902702e4b4330456d86e3130f11ab190fd55f6580b81c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/1/receipts/on/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "22a26c55ccd86373d63fea334b21d23206a3172b9f3c3f36a14733c21d2d9659",
+      "usage": {
+        "input_tokens": 19405,
+        "output_tokens": 311,
+        "cached_input_tokens": 10368,
+        "reasoning_output_tokens": 274,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19716,
+            "inputTokens": 19405,
+            "cachedInputTokens": 10368,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 311,
+            "reasoningOutputTokens": 274
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "6294a1e360f94760309654cb3e42eacdb50672c249be7a71ad7b6247dbfd292a"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/2/receipts/on/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "da6d95bc542207cd164de20cebf5d01e745b5bc6b83fc346fdf5e47ab00e2c0b",
+      "usage": {
+        "input_tokens": 19405,
+        "output_tokens": 281,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 244,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 19686,
+            "inputTokens": 19405,
+            "cachedInputTokens": 6016,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 281,
+            "reasoningOutputTokens": 244
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "955228c4a833539fb4de3c2ed7bf5420d09b866ae48018458edccece447d152d"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/3/receipts/on/native-events.jsonl",
+      "model": "gpt-5.6-sol",
+      "native_sha256": "de0de77d4dec0a90af06f02f6241931690835c1c00db00741b8141eb5c3fe883",
+      "usage": {
+        "input_tokens": 19868,
+        "output_tokens": 250,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 213,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "index": 1,
+          "usage": {
+            "totalTokens": 20118,
+            "inputTokens": 19868,
+            "cachedInputTokens": 6016,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 250,
+            "reasoningOutputTokens": 213
+          },
+          "visible_activity_tags": [
+            "semantic_choice",
+            "serialization_reporting"
+          ],
+          "mixed": true,
+          "items": [
+            {
+              "type": "agentMessage",
+              "phase": "final_answer",
+              "content_sha256": "b2757faf80024a5b7c5f85ddf72df3deac107857c8e297001066457eb73c9e0f"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "excluded_nonterminal": [],
+  "limits": [
+    "Tags describe visible activity associated with an entire segment, not tokens spent on that activity.",
+    "Tags overlap; shares must not be summed or called F_m(k).",
+    "Reasoning-output counters retained, content neither inspected nor classified.",
+    "Semantic-choice tag marks possible judgment/probe/patch/final answer, not proof of irreducible reasoning.",
+    "Different tasks, controls and adaptive candidates are mixed; model aggregates are corpus composition, not causal model phenotypes.",
+    "Omitted commands can hide activity; hooks retained and unknown counts do not imply no work.",
+    "Removing tagged segments may remove necessary reasoning or change later costs. Delta_m(k) cannot be identified observationally."
+  ]
+}
