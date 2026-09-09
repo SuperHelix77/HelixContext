@@ -13,6 +13,7 @@ import subprocess
 import threading
 import time
 import uuid
+from pricing import Prices, estimate
 from urllib.parse import urlsplit, parse_qs
 
 HERE=Path(__file__).resolve().parent
@@ -107,6 +108,7 @@ def native_cumulative(path,thread_id):
         if usage(value) is None or any(v is None for v in value.values()):raise ValueError('Invalid native cumulative counter')
         if value['cached_input_tokens']>value['input_tokens'] or value['reasoning_output_tokens']>value['output_tokens']:raise ValueError('Invalid native subsets')
         if latest and any(value[k]<latest[k] for k in value):raise ValueError('Cumulative native counters decreased')
+        value['cache_write_input_tokens']=total.get('cacheWriteInputTokens')
         latest=value
     return latest,hashlib.sha256(raw).hexdigest()
 
@@ -114,7 +116,7 @@ def native_cumulative(path,thread_id):
 def usage(value):
     if not isinstance(value,dict):return None
     result={}
-    for key in ['input_tokens','output_tokens','cached_input_tokens','reasoning_output_tokens']:
+    for key in ['input_tokens','output_tokens','cached_input_tokens','reasoning_output_tokens','cache_write_input_tokens']:
         n=value.get(key)
         if n is not None and (type(n) is not int or n<0):return None
         result[key]=n
@@ -264,6 +266,7 @@ class Observer:
         self.current=None;self.revision=0;self.receipts={};self.last_scan=None
         self.error=None;self.digest=None;self.read_cycles=0
         self.observer_id=uuid.uuid4().hex
+        self.prices=Prices()
 
     def scan(self):
         data,receipts=snapshot(self.config)
@@ -278,7 +281,11 @@ class Observer:
 
     def state(self):
         with self.condition:
-            return {**(self.current or {}),'observer':{'last_scan':self.last_scan,'read_cycles':self.read_cycles,
+            data=dict(self.current or {})
+            price=self.prices.state()
+            data['pricing']=price
+            data['costs']={r['id']:estimate(r.get('usage'),(price.get('rates') or {}).get(r.get('model'))) for r in data.get('runs',[]) if r.get('state')=='COMPLETED' and r.get('usage_source')=='Native app-server cumulative update'}
+            return {**data,'observer':{'last_scan':self.last_scan,'read_cycles':self.read_cycles,
                 'error':self.error,'journal':str(self.journal),'poll_seconds':2,'logical_file_bytes_read':READ_BYTES,
                 'cost_scope':'File reads and local CPU; no inference. Exact physical I/O unmetered.'}}
 
@@ -338,6 +345,7 @@ def main():
     observer=Observer(config,Path(args.journal));observer.scan()
     server=ThreadingHTTPServer(('127.0.0.1',args.port),make_handler(observer));server.daemon_threads=True
     threading.Thread(target=observer.loop,daemon=True).start()
+    threading.Thread(target=observer.prices.loop,daemon=True).start()
     print(f'Helix HUD http://127.0.0.1:{args.port} · read-only · no inference',flush=True)
     server.serve_forever()
 

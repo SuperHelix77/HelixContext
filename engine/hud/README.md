@@ -61,3 +61,32 @@ was visually inspected. Test screenshots and local path configuration stay local
 Huashu Design informs restrained layout and hierarchy; this v0 deliberately omits
 decorative graphs, external assets and inference-based analysis. The adapter is
 independent of visual styling. Keeping this server open cannot launch benchmarks.
+
+## Current-price comparison
+
+The observer fetches the official OpenAI pricing Markdown over verified HTTPS on
+startup and every two minutes. It parses only the Standard table with an exact
+column schema; Batch/Flex prices cannot silently substitute. Quotes expire after
+five minutes. Fetch/schema errors are visible; expired or missing prices suppress
+dollar estimates, including when browser telemetry disconnects. This is periodic
+freshness, not a guarantee of instantaneous provider updates.
+
+The HUD prices only completed, raw-native-verified counters with explicit input,
+cache-read, cache-write and output counts. Cache subsets are subtracted before
+pricing ordinary input; reported reasoning is not added to output again. It
+shows both short- and long-context **tariff scenarios**, since service/context
+billing tier is not established by these receipts. These are current-price USD
+API-equivalent estimates, not historical charges or Codex subscription costs.
+Full effective cost remains unknown until Engine, storage, recovery, coordination
+and parent-chat costs have a comparable accounting basis.
+
+Each row compares its own registered control/candidate task. The overhead trials
+use V3 as their control, not native bypass. Rows are not pooled into a cross-model
+ranking. No matching Luna XHigh or Terra receipts were found; their absence is
+shown explicitly, without relabeling Luna High or repricing another model's run.
+
+Validation for this change: 13 HUD/pricing tests passed. Chromium verified live
+pricing, paired dollars, missing-model labels, filters, mobile overflow, expiry
+after telemetry disconnect, and absence of JavaScript errors. Official quote
+retrieved during verification had SHA256
+`244b537c06fb94e4d7214ba7f076f2bd18cace4ad165d30ad5da77cbaaad36c6`.
