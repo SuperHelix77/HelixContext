@@ -118,3 +118,12 @@ def test_native_usage_uses_last_cumulative_update_not_sum(tmp_path):
     assert native_cumulative(path,'other')[0] is None
     path.write_text('\n'.join(json.dumps(event(n)) for n in [200,100])+'\n')
     with pytest.raises(ValueError):native_cumulative(path,'T')
+
+
+@pytest.mark.parametrize('rows',[{'off':{'checks_passed':True}},[None,'invalid',12]])
+def test_unrecognized_report_rows_do_not_crash_or_claim_pass(tmp_path,rows):
+    cfg=setup(tmp_path)
+    (tmp_path/'result.json').write_text(json.dumps({'rows':rows}))
+    data,_=snapshot(cfg)
+    assert data['pairs'][0]['artifact_check'] is None
+    assert data['pairs'][0]['savings']['input_tokens']==80

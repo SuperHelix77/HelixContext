@@ -142,10 +142,13 @@ def live_process(status,cwd):
     except (OSError,subprocess.TimeoutExpired):return None
 
 
-def measured_check(report,arm):
+def report_rows(report):
     rows=report.get('rows',[]) if isinstance(report,dict) else []
-    if not isinstance(rows,list):return None
-    row=next((r for r in rows if r.get('arm')==arm),{})
+    return [r for r in rows if isinstance(r,dict)] if isinstance(rows,list) else []
+
+
+def measured_check(report,arm):
+    row=next((r for r in report_rows(report) if r.get('arm')==arm),{})
     # Finite artifact/source checks only; never intelligence or workflow parity.
     grade=row.get('grade',{})
     exact=row.get('artifact_exact',grade.get('exact_artifact'))
@@ -176,7 +179,7 @@ def snapshot(config):
                 'state':'UNAVAILABLE','model':manifest.get('model'),'usage':None,'elapsed_seconds':None,
                 'source':str(path),'source_hash':None,'updated_at':None,
                 'artifact_check':measured_check(report,spec['arm']),'last_event':None}
-            report_row=next((r for r in report.get('rows',[]) if r.get('arm')==spec['arm']),{}) if isinstance(report,dict) else {}
+            report_row=next((r for r in report_rows(report) if r.get('arm')==spec['arm']),{})
             completion=report_row.get('completion')
             row.update(raw_source_bytes=manifest.get('source_bytes'),model_visible_bytes=None,
                 engine_calls=1 if isinstance(completion,dict) else None,

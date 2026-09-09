@@ -1,0 +1,141 @@
+{
+  "state": "BELOW_TARGET",
+  "classification": "Evaluator-corrected development pair; not untouched preregistration",
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 98251,
+        "output_tokens": 1464,
+        "cached_input_tokens": 76160,
+        "reasoning_output_tokens": 41,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 93.95220383297419,
+      "events_sha256": "1d7e7a2876e87c74a41e1af46abc7d52f4bfd163e82e89da03c8ef7d5d36e81c",
+      "native_events_sha256": "fc8d45ba46830b36a0e0aa783bda72891b3e4f94e79fdadc530f00b5bfc6f449",
+      "behavioral_checks": {
+        "checks_passed": true,
+        "preserved_original_tests": true,
+        "check_exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "checker_log_sha256": "d5a7a46e9088325fe808f706aca8d7bd10470d31f7323bac386c824a751ded82"
+      }
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 127397,
+        "output_tokens": 1371,
+        "cached_input_tokens": 115072,
+        "reasoning_output_tokens": 61,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 64.95921962504508,
+      "events_sha256": "fff18322673e400f2abef2fda28b96b82fbf877bdf519973e2e99e90b3e3477e",
+      "native_events_sha256": "613b5c71c2a088d47b45da67f44f70f4016fab0c4cd1e7c8a223c9e522c8d08a",
+      "behavioral_checks": {
+        "checks_passed": true,
+        "preserved_original_tests": true,
+        "check_exit_codes": [
+          0,
+          0,
+          0
+        ],
+        "checker_log_sha256": "eb310f589fdcab2fa237b9c3c054d9badd195341a1f932dcef2439ab1d34ff3d"
+      }
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": -29.664838016915862,
+    "output_tokens": 6.352459016393441
+  },
+  "original_stopped_sha256": "4e967f299911fb26cd1e348f1c3844430aa509c68764b730d8459e9cbed14836",
+  "correction_sha256": "ca9598a6d22d0e0501451a0a820fd6c5271f643f6d410750d3b85cfe28dd9995",
+  "limitations": "Finite coding checks only; no general parity or total billing claim.",
+  "trace_profiles": {
+    "off": {
+      "schema": "helix.observable_trace.v1",
+      "events_sha256": "1d7e7a2876e87c74a41e1af46abc7d52f4bfd163e82e89da03c8ef7d5d36e81c",
+      "native_usage": {
+        "input_tokens": 98251,
+        "output_tokens": 1464,
+        "cached_input_tokens": 76160,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 41
+      },
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 4,
+        "file_change": 1,
+        "reasoning": 1,
+        "userMessage": 1
+      },
+      "commands": 4,
+      "command_text_bytes": 293,
+      "recorded_terminal_bytes": 5747,
+      "nonzero_command_exits": 1,
+      "missing_command_exits": 0,
+      "message_text_bytes": 833,
+      "limitations": [
+        "Bytes are not native tokens or disjoint native output categories.",
+        "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+        "File-change events need not contain generated patch text.",
+        "No private reasoning contents or causal model psychology are inferred.",
+        "Model/effort identity must be verified separately against the launch receipt."
+      ],
+      "raw_error_notifications": 0
+    },
+    "on": {
+      "schema": "helix.observable_trace.v1",
+      "events_sha256": "fff18322673e400f2abef2fda28b96b82fbf877bdf519973e2e99e90b3e3477e",
+      "native_usage": {
+        "input_tokens": 127397,
+        "output_tokens": 1371,
+        "cached_input_tokens": 115072,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 61
+      },
+      "completed_item_types": {
+        "agent_message": 3,
+        "command_execution": 4,
+        "file_change": 2,
+        "reasoning": 3,
+        "userMessage": 1
+      },
+      "commands": 4,
+      "command_text_bytes": 319,
+      "recorded_terminal_bytes": 6874,
+      "nonzero_command_exits": 0,
+      "missing_command_exits": 0,
+      "message_text_bytes": 801,
+      "limitations": [
+        "Bytes are not native tokens or disjoint native output categories.",
+        "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+        "File-change events need not contain generated patch text.",
+        "No private reasoning contents or causal model psychology are inferred.",
+        "Model/effort identity must be verified separately against the launch receipt."
+      ],
+      "raw_error_notifications": 0
+    }
+  },
+  "manifest_sha256": "55402c047150f9569f4c17906f16d8a949df7f418f6513cce4d8e0bb5e745838",
+  "preflight": {
+    "argv": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "-m",
+      "unittest",
+      "-v",
+      "test_contract"
+    ],
+    "exit_code": 1,
+    "seconds": 0.04346908297156915,
+    "raw_bytes": 1955,
+    "sha256": "6f8e4d7d022e4b26ef26b43bd77461135cfa2914e4871a3e2cfbb1d8eaf64afd",
+    "source_sha256": "c3862e8e90d21db708e4ff8676199974af92ca494d915080f72295da1a680e60"
+  },
+  "research_receipts": "/Users/mert/Documents/ChatGPT/Helix/research/astra-patch-pair-20260909"
+}
