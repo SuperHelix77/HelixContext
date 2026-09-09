@@ -1,0 +1,12 @@
+{
+  "files": {
+    "run.py": "89c1fe3387e0dea62b33b30c2e5275f5551c01e3eebcd208133cd533f707030a",
+    "../../helix-frontier/run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "../../helix-middleware/renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+    "../../helix-middleware/evidence.py": "9cb833c82855c3472f4c9e670a97a110060768da8f11057bf957442b688a918a"
+  },
+  "source_sha256": "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2",
+  "expected_artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+  "expected_bytes": 21539,
+  "scope": "Prospective one-task per model renderer pilot. Both arms may script efficient file-copy; exact artifact plus source integrity and identical final DONE. No model capability or three-task parity proof."
+}

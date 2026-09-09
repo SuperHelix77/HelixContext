@@ -1,0 +1,217 @@
+{
+  "rows": [
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "off",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 297228,
+        "cached_input_tokens": 263168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6410,
+        "reasoning_output_tokens": 2805
+      },
+      "elapsed_seconds": 142.929,
+      "events_sha256": "0899c47609d1a64f07905dbf74d53c882372136c63f8afe2ad02676a8bd7b022",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": null
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "on",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 218350,
+        "cached_input_tokens": 192768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4620,
+        "reasoning_output_tokens": 1555
+      },
+      "elapsed_seconds": 108.098,
+      "events_sha256": "82572a3e8752589c5bfe50ffea54e00d103a0d19fae335353a652bc5fb6977d5",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 21539,
+        "sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+        "source_sha256": [
+          "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2"
+        ],
+        "operations": 9,
+        "io": {
+          "object_bytes_read": 172454,
+          "object_bytes_written": 172454,
+          "object_bytes_hashed": 344908,
+          "object_read_operations": 1,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 21539,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee"
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "on",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 113760,
+        "cached_input_tokens": 81152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1857,
+        "reasoning_output_tokens": 286
+      },
+      "elapsed_seconds": 80.181,
+      "events_sha256": "b10eba6c31e06c5f9092f3e0bb00400d28e3506afacb2bb37dd10387c8133df4",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 21539,
+        "sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+        "source_sha256": [
+          "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2"
+        ],
+        "operations": 9,
+        "io": {
+          "object_bytes_read": 172454,
+          "object_bytes_written": 172454,
+          "object_bytes_hashed": 344908,
+          "object_read_operations": 1,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 21539,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee"
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "off",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 58386,
+        "cached_input_tokens": 28032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1636,
+        "reasoning_output_tokens": 423
+      },
+      "elapsed_seconds": 65.352,
+      "events_sha256": "1414094d8b6c67a132f0be59f76096272c9ba80daff4137cec6199cf3a3a05b8",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": null
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "off",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 43710,
+        "cached_input_tokens": 24704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 673,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 35.129,
+      "events_sha256": "7aa4fc826efab39b922c9f0e819ea53d192224ec11268482384e55c87ffd69e4",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": null
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "on",
+      "artifact_exact": true,
+      "source_unchanged": true,
+      "final_done": true,
+      "usage": {
+        "input_tokens": 82703,
+        "cached_input_tokens": 68992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 850,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 45.03,
+      "events_sha256": "5d378bbb4018d57f6552c2d8ab183337d8122879de42411d405d44c493c7a706",
+      "artifact_sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+      "artifact_bytes": 21539,
+      "renderer_receipt": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 21539,
+        "sha256": "9c2e07c7b01024b27633dfbd472ae5ed09e0a41672099e2fd048d2b18e3334b9",
+        "source_sha256": [
+          "ab007e56bc77a12e98b82656d901492be8834d7f94624939fe187610dbabe9b2"
+        ],
+        "operations": 9,
+        "io": {
+          "object_bytes_read": 172454,
+          "object_bytes_written": 172454,
+          "object_bytes_hashed": 344908,
+          "object_read_operations": 1,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 21539,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "gpt-5.6-luna",
+      "all_scored_checks_pass": true,
+      "input_saving_fraction": 0.26537876646883873,
+      "output_saving_fraction": 0.2792511700468019
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "all_scored_checks_pass": true,
+      "input_saving_fraction": -0.9484122906176138,
+      "output_saving_fraction": -0.1350855745721271
+    },
+    {
+      "model": "gpt-6-astra",
+      "all_scored_checks_pass": true,
+      "input_saving_fraction": -0.892084191260581,
+      "output_saving_fraction": -0.263001485884101
+    }
+  ],
+  "usage": {
+    "input_tokens": 814137,
+    "output_tokens": 16046,
+    "cached_input_tokens": 658816,
+    "reasoning_output_tokens": 5069
+  },
+  "scope": "One exact-file assembly task per model, six native calls. Efficient ordinary scripting allowed. All raw native costs included; parent/research and remote compute not included. Renderer byte counters are application I/O, not physical disk or dollar cost. No repeated trials or universal parity claim."
+}
