@@ -1,0 +1,30 @@
+{
+  "observer_sha256": "5c8682b2c7addd1182e98853e627fb16c21c45ecd9d8b5cf3b4ca0268fe630a0",
+  "user_authorized": true,
+  "native_run_started": true,
+  "captured_events": 1,
+  "final_done": true,
+  "temporary_observer_removed": true,
+  "configuration_values_restored": true,
+  "temporary_project_trust_removed": true,
+  "scope": "One native Sol High observer probe; output not compressed; no token-saving claim",
+  "effective_permission_mode_observed": "bypassPermissions",
+  "permission_scope_note": "Hook reported bypassPermissions despite the observer driver requesting workspace-write. This probe is not evidence of sandbox enforcement. No permission configuration was changed by the installer.",
+  "native_usage": {
+    "totalTokens": 46932,
+    "inputTokens": 46802,
+    "cachedInputTokens": 25600,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 130,
+    "reasoningOutputTokens": 0
+  },
+  "native_trace_sha256": "b2314f457b2818bb908642faca27dce1ca94ae8abf24cba39d3ffa546d19f47e",
+  "observed_response": {
+    "type": "string",
+    "received_bytes": 18019,
+    "matches_expected_synthetic_stdout": true,
+    "exit_code_field_available": false,
+    "interception_candidate_accepts_this_shape": false
+  },
+  "limits": "One successful Sol High observer probe. Compression remained off. This supplies no performance parity, output interception or sandbox enforcement evidence."
+}
