@@ -59,3 +59,9 @@ After freezing the candidate and prespecified parity checks: run **Luna High, So
 [OpenAI programmatic tool calling](https://developers.openai.com/api/docs/guides/tools-programmatic-tool-calling) and [Anthropic code execution with MCP](https://www.anthropic.com/engineering/code-execution-with-mcp) motivate deterministic intermediate processing and selective context. Their example percentages are not evidence for this experiment's results.
 
 The current objective is specified in `results/research-contract.json`. Resident context size, cumulative input tokens and semantic information are different quantities: a 95% token reduction does not establish that 95% of decision-relevant information was discarded. Cold evidence must remain recoverable, and actual successful retrieval must be tested.
+
+## Ongoing High-model frontier benchmark
+
+See `results/frontier-interim.json` for the explicitly incomplete Luna/Sol/Astra comparisons and `results/cost-audit.json` for overhead accounting. The clarified reasoning follow-up passes in both conditions for all three models, but input savings can coexist with increased output and latency. The 50-turn and latent-future-relevance gates remain in progress. No final skill release or universal parity claim is justified yet. Component-level grading issues are retained and disclosed rather than hidden or silently rewritten.
+
+The next candidate addresses observed unnecessary decoder generation and unavailable-Git checks; subsequent workflow work addresses redundant caller-owned bookkeeping. Every revision requires fresh paired validation. 95% remains aspirational, and net resource costs are part of the acceptance decision.

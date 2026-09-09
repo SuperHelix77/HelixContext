@@ -1,0 +1,11 @@
+{
+  "known_prior_development_native_calls": 33,
+  "known_prior_development_native_tokens": {
+    "input_tokens": 1331377,
+    "output_tokens": 17311
+  },
+  "limits": "Lower-bound development accounting: excludes parent/coordinator conversation usage and native attempts without receipts. Not a billing total. Do not amortize as zero.",
+  "recurring_cost_rule": "Native task receipts include skill prompt, retrieval/tool calls and recovery. Report input and output separately, plus cached subset, wall time, local CPU and file storage.",
+  "pricing": "No monetary claim without applicable rates. Cached input is a subset, reasoning output is a subset; never add subsets twice.",
+  "break_even": "Only compute under explicit rates and positive per-task net benefit; unmetered setup costs prevent a complete break-even claim."
+}
