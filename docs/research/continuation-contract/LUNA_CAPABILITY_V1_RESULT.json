@@ -1,0 +1,180 @@
+{
+  "classification": "Three development task pairs; exact behavioral gates passed; not general parity",
+  "rows": [
+    {
+      "case": "coding",
+      "arm": "helix",
+      "usage": {
+        "input_tokens": 122437,
+        "output_tokens": 3529,
+        "cached_input_tokens": 102656,
+        "reasoning_output_tokens": 1755,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 7,
+      "recorded_commands": 4,
+      "checks": {
+        "independent_allocation_oracle": "PASS",
+        "stdout": "ORACLE_CASES 4433\n"
+      },
+      "native_sha256": "774c1aff9c8e159b982d76e03ba93813de067b8801d5aa5944302ea0d5826d91",
+      "command_hashes": [
+        "4367f55d15f4e5cfbd35da0b63320822b0ed05fb6c24db24964a5c13f4938705",
+        "66505b226ed06f69aa347498a0bac87bdc59696d2cff7b5e02eedea0aae58724",
+        "8a6d903e97367c9f578b0f665eef1805be9fb653037c37adad5a64f599791863",
+        "bf2488c16622d296c3c828aa894e363f35e8cfd900a6dc28fed530cd4fe12a4e"
+      ]
+    },
+    {
+      "case": "coding",
+      "arm": "default",
+      "usage": {
+        "input_tokens": 134764,
+        "output_tokens": 3525,
+        "cached_input_tokens": 109824,
+        "reasoning_output_tokens": 2114,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 7,
+      "recorded_commands": 4,
+      "checks": {
+        "independent_allocation_oracle": "PASS",
+        "stdout": "ORACLE_CASES 4433\n"
+      },
+      "native_sha256": "d4e5a684321d305b8f4f6324a11774a828a3aebddbb1f735c02d18bc955005b8",
+      "command_hashes": [
+        "0660a3e258fb374eb195a3d03e237da1abe570841043738ef73e4459a934277b",
+        "fc4f11c1ddd2b8d7d63d21afe8d4d5be9e1a37c5b359e55fae6daf17955f3253",
+        "e4962b54516a9b0a09e6b89f33d2f99721900f122d4af9633492bca51d8b0abf",
+        "9d213b471d488818aca66811f7ccb1fac1248f23ce697cf19f71130f602fe398"
+      ]
+    },
+    {
+      "case": "selection",
+      "arm": "default",
+      "usage": {
+        "input_tokens": 57216,
+        "output_tokens": 668,
+        "cached_input_tokens": 46336,
+        "reasoning_output_tokens": 266,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 3,
+      "recorded_commands": 2,
+      "checks": {
+        "exact_selection": "PASS"
+      },
+      "native_sha256": "37501dac58d42e3028902a80d8553d9a82618ea2bd8a0efed0ca7e4c115544ba",
+      "command_hashes": [
+        "09fdb59e61ac31e6f36ef7b1acb26db5e157edfba7490d96493589984a530b66",
+        "558aeda437e6d9e4276395c8542170d22fc5a8aabc3d947abb005d6b99b5b032"
+      ]
+    },
+    {
+      "case": "selection",
+      "arm": "helix",
+      "usage": {
+        "input_tokens": 123001,
+        "output_tokens": 1750,
+        "cached_input_tokens": 94976,
+        "reasoning_output_tokens": 664,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 5,
+      "recorded_commands": 3,
+      "checks": {
+        "exact_selection": "PASS"
+      },
+      "native_sha256": "8b933401fef098f9d33b90adfbc702e6e6c822c0eb2b825ebba1a56e41132d3c",
+      "command_hashes": [
+        "634deb22b15c4fd644c24ac41871b38530b7b4939c8d35701312b3fce1f6959c",
+        "0d6ffa0fab53810c0c43019835ae5b44d00b89a0a858a395388c0e41c7a92c18",
+        "c2fe423deeca375ef6853433bac065bfc0dc4eec3bce588b980e3a946c9d9832"
+      ]
+    },
+    {
+      "case": "cold",
+      "arm": "helix",
+      "usage": {
+        "input_tokens": 67261,
+        "output_tokens": 1313,
+        "cached_input_tokens": 53248,
+        "reasoning_output_tokens": 472,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "recorded_commands": 2,
+      "checks": {
+        "exact_late_detail": "PASS"
+      },
+      "native_sha256": "074e9cc02a9d5c28683b6f2518d75e2d1c651ffc8471e40a4e9c1faf71ca2e04",
+      "command_hashes": [
+        "c8f602418f96ef5afa9f6e4d4f8bfec706fc4c618b255827e7a718f0ad15ba8a",
+        "59e0df62aaa09139905461ef948ffa72c765933df95dbcd145e8169b705de8b7"
+      ]
+    },
+    {
+      "case": "cold",
+      "arm": "default",
+      "usage": {
+        "input_tokens": 83946,
+        "output_tokens": 809,
+        "cached_input_tokens": 67584,
+        "reasoning_output_tokens": 365,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "recorded_commands": 3,
+      "checks": {
+        "exact_late_detail": "PASS"
+      },
+      "native_sha256": "acd03c0042e01fe5b0ff59759019fb5405d7691ac7cb38920ba35813efadee4e",
+      "command_hashes": [
+        "5b9884565d56c7842ca34a96ac800abebd9065b1ad0f43a183b1a563940f0e06",
+        "cfdc30b39fce9bd5bf8889bfcf5a443d441df10990af72c4262557bfe002ab27",
+        "21ca134f02ab7478cd09e318e75c879d3b2ad04cfcf6c5a5300fb74552aab0bb"
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "case": "coding",
+      "savings_percent": {
+        "input_tokens": 9.147101599833785,
+        "output_tokens": -0.11347517730495582
+      },
+      "uncached_savings_percent": 20.685645549318366
+    },
+    {
+      "case": "selection",
+      "savings_percent": {
+        "input_tokens": -114.97657997762865,
+        "output_tokens": -161.97604790419163
+      },
+      "uncached_savings_percent": -157.58272058823528
+    },
+    {
+      "case": "cold",
+      "savings_percent": {
+        "input_tokens": 19.87587258475687,
+        "output_tokens": -62.2991347342398
+      },
+      "uncached_savings_percent": 14.356435643564359
+    }
+  ],
+  "manifest_sha256": "193ee4b798b5a2be062dcfc032829220f1f6a55519f7e684e3309cf760623e5b",
+  "limits": [
+    "Cold snapshot task is not a 40-turn continuation/compaction test.",
+    "Prior fixture exposure and nonrandom counterbalanced order; no population parity inference.",
+    "Product base/skill comparison; W50 renderer not applicable.",
+    "Same native High tools; no model retries. Caller audit costs additional.",
+    "Command count does not establish complete tool coverage; manual trace audit required."
+  ],
+  "workflow_parity": "NOT_ESTABLISHED",
+  "economic_admission": "REJECTED_GENERAL_V7_BASE_SKILL",
+  "trace_findings": {
+    "coding_helix": "Repeated activation PermissionError and broad runtime search outside task directory",
+    "selection_helix": "Full source load, generated extraction and additional verification; no observed repeated activation",
+    "cold_helix": "Four segments despite two commands; exact recovery PASS, output regression"
+  }
+}
