@@ -1,0 +1,19 @@
+{
+  "files": {
+    "pilot.py": "ce963fc75aa941484212c5bc68d4ca7e58f5e72b8e45b5641659a876917aea2a",
+    "query.py": "7443725edfc96da7b36081a846f764223807414164eabab3b7b94b2bc794f543",
+    "test_query.py": "3e77daaed1f779b5df862757fa49c6501fa0b8173af1c282b0c6e3e3d8eb9a4a"
+  },
+  "dependencies": {
+    "work/helix-frontier/run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "work/helix-middleware/evidence.py": "9a91b52fa8f74bc2337e03e98ed899c6214d44d938f1f95980507977ee09d84b"
+  },
+  "models": [
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-6-astra"
+  ],
+  "effort": "high",
+  "scope": "Development exposed task; fresh controls; direct shared dependency hashes recorded before launch; not complete environment or evaluator isolation",
+  "config_sha256_before": "4f49fdf5e92797d2ecdc3a52e6b5d3f9958c7d3261782a9726fda2f95470dcd3"
+}

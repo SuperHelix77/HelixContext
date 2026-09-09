@@ -1,0 +1,168 @@
+{
+  "rows": [
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-luna",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 27366,
+        "cached_input_tokens": 22016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 532,
+        "reasoning_output_tokens": 289
+      },
+      "elapsed_seconds": 21.372,
+      "events_sha256": "1444b7660196263e6cc169fd9d8c36f22a349f3a6173d4ea5795b05fe316fffc",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 1
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-luna",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 28336,
+        "cached_input_tokens": 17920,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 533,
+        "reasoning_output_tokens": 345
+      },
+      "elapsed_seconds": 20.865,
+      "events_sha256": "1a20ab01e6932107c801166b4037c8eaf44145e3d0d88c6c53fae10b31dad653",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.012723874999210238,
+        "view_bytes": 1761
+      },
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 1
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-sol",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 28543,
+        "cached_input_tokens": 24064,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 410,
+        "reasoning_output_tokens": 186
+      },
+      "elapsed_seconds": 117.618,
+      "events_sha256": "24561593b5ef4fa7f14e958a505b360590e610963a5a77ceef87dad767c20bc3",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.013360624958295375,
+        "view_bytes": 1761
+      },
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 1
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-sol",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 56598,
+        "cached_input_tokens": 36352,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 820,
+        "reasoning_output_tokens": 388
+      },
+      "elapsed_seconds": 42.061,
+      "events_sha256": "dc4fbac3a8ea093dfc219c84bc0fc3ceba9cae62a0b372cde3e8678367e821d4",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 3
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-6-astra",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 44405,
+        "cached_input_tokens": 39040,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 277,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 34.109,
+      "events_sha256": "d4f70dd6d9ce332fc7e923f93c138c4044c8831430ee99199d77b38bd5bc9527",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 2
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-6-astra",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 33006,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 170,
+        "reasoning_output_tokens": 38
+      },
+      "elapsed_seconds": 18.149,
+      "events_sha256": "3010e87a68895432b4d1057ed645a75d6f773bde9b06516b891b1cda06b1da1b",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.01954854204086587,
+        "view_bytes": 1761
+      },
+      "strict_type_and_value_pass": true,
+      "command_execution_count": 1
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "luna",
+      "bounded_checks_pass_both": true,
+      "input_saving": -0.035445443250749165,
+      "output_saving": -0.001879699248120259,
+      "commands_off": 1,
+      "commands_on": 1
+    },
+    {
+      "model": "sol",
+      "bounded_checks_pass_both": true,
+      "input_saving": 0.49568889360048063,
+      "output_saving": 0.5,
+      "commands_off": 3,
+      "commands_on": 1
+    },
+    {
+      "model": "astra",
+      "bounded_checks_pass_both": true,
+      "input_saving": 0.2567053259768044,
+      "output_saving": 0.3862815884476535,
+      "commands_off": 2,
+      "commands_on": 1
+    }
+  ],
+  "native_calls": 6,
+  "usage": {
+    "input_tokens": 218254,
+    "cached_input_tokens": 167040,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2742,
+    "reasoning_output_tokens": 1246
+  },
+  "scope": "Exposed development task; fresh native controls, one pair/model. No general parity or independent holdout. Cached/reasoning fields are subsets. Parent work and remote compute excluded, not zero. Strict recursive type grading is an additional post-run audit; original grader remains frozen."
+}

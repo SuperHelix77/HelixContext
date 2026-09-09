@@ -1,0 +1,188 @@
+{
+  "sources": [
+    {
+      "concept": "typed_terminal",
+      "path": "engine/native-pilots/pilot-v2/results.json",
+      "sha256": "126e5e752b3d5584912f101ad1ec17c9307e4e76b88c3082fabe3029ff6363a1"
+    },
+    {
+      "concept": "exact_renderer",
+      "path": "engine/render-pilot/results.json",
+      "sha256": "ba51cbd7a8a034b76f26cedcc0516a4ede4618f6c2b4a0a030a7547f5d4d3cbd"
+    },
+    {
+      "concept": "literal_query_v1",
+      "path": "engine/query-pilot-v1/results.json",
+      "sha256": "84ca4fdaef450c4fa5a783d55d3495d5b1a03941de876f38689f3a5d5eb68d22"
+    },
+    {
+      "concept": "literal_query_v2",
+      "path": "engine/query-pilot-v2/results.json",
+      "sha256": "9d639d80a75eb727c558c10df9c99061f28230146a1110339ba5677ef1389a8e"
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "gpt-5.6-luna",
+      "concept": "typed_terminal",
+      "input_off": 56170,
+      "input_on": 60034,
+      "output_off": 724,
+      "output_on": 1275,
+      "input_saved": -0.0687911696635215,
+      "output_saved": -0.761049723756906,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "concept": "typed_terminal",
+      "input_off": 62402,
+      "input_on": 28771,
+      "output_off": 611,
+      "output_on": 496,
+      "input_saved": 0.5389410595814237,
+      "output_saved": 0.18821603927986907,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-6-astra",
+      "concept": "typed_terminal",
+      "input_off": 44286,
+      "input_on": 30191,
+      "output_off": 213,
+      "output_on": 141,
+      "input_saved": 0.3182721401797408,
+      "output_saved": 0.3380281690140845,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "concept": "exact_renderer",
+      "input_off": 297228,
+      "input_on": 218350,
+      "output_off": 6410,
+      "output_on": 4620,
+      "input_saved": 0.26537876646883873,
+      "output_saved": 0.2792511700468019,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "concept": "exact_renderer",
+      "input_off": 58386,
+      "input_on": 113760,
+      "output_off": 1636,
+      "output_on": 1857,
+      "input_saved": -0.9484122906176138,
+      "output_saved": -0.1350855745721271,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-6-astra",
+      "concept": "exact_renderer",
+      "input_off": 43710,
+      "input_on": 82703,
+      "output_off": 673,
+      "output_on": 850,
+      "input_saved": -0.892084191260581,
+      "output_saved": -0.263001485884101,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "concept": "literal_query_v1",
+      "input_off": 60146,
+      "input_on": 46709,
+      "output_off": 1188,
+      "output_on": 871,
+      "input_saved": 0.22340637781398598,
+      "output_saved": 0.26683501683501687,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "concept": "literal_query_v1",
+      "input_off": 27400,
+      "input_on": 28037,
+      "output_off": 445,
+      "output_on": 349,
+      "input_saved": -0.02324817518248179,
+      "output_saved": 0.21573033707865163,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-6-astra",
+      "concept": "literal_query_v1",
+      "input_off": 44557,
+      "input_on": 32706,
+      "output_off": 278,
+      "output_on": 181,
+      "input_saved": 0.26597392104495365,
+      "output_saved": 0.34892086330935257,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "concept": "literal_query_v2",
+      "input_off": 27366,
+      "input_on": 28336,
+      "output_off": 532,
+      "output_on": 533,
+      "input_saved": -0.035445443250749165,
+      "output_saved": -0.001879699248120259,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "concept": "literal_query_v2",
+      "input_off": 56598,
+      "input_on": 28543,
+      "output_off": 820,
+      "output_on": 410,
+      "input_saved": 0.49568889360048063,
+      "output_saved": 0.5,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    },
+    {
+      "model": "gpt-6-astra",
+      "concept": "literal_query_v2",
+      "input_off": 44405,
+      "input_on": 33006,
+      "output_off": 277,
+      "output_on": 170,
+      "input_saved": 0.2567053259768044,
+      "output_saved": 0.3862815884476535,
+      "quality_scope": "single paired exposed task, exact-answer/artifact and source-integrity only"
+    }
+  ],
+  "baseline_variability": [
+    {
+      "model": "gpt-5.6-luna",
+      "same_task_control_count": 3,
+      "input_min": 27366,
+      "input_max": 60146,
+      "output_min": 532,
+      "output_max": 1188,
+      "warning": "Controls from different development runs, not randomized contemporaneous replicates; range shows observed variability, not a confidence interval or a causal noise estimate."
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "same_task_control_count": 3,
+      "input_min": 27400,
+      "input_max": 62402,
+      "output_min": 445,
+      "output_max": 820,
+      "warning": "Controls from different development runs, not randomized contemporaneous replicates; range shows observed variability, not a confidence interval or a causal noise estimate."
+    },
+    {
+      "model": "gpt-6-astra",
+      "same_task_control_count": 3,
+      "input_min": 44286,
+      "input_max": 44557,
+      "output_min": 213,
+      "output_max": 278,
+      "warning": "Controls from different development runs, not randomized contemporaneous replicates; range shows observed variability, not a confidence interval or a causal noise estimate."
+    }
+  ],
+  "new_model_calls": 0
+}
