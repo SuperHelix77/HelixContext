@@ -1,0 +1,50 @@
+{
+  "classification": "Offline engine callback verification; native behavior/savings untested",
+  "valid_exact_prior_semantic_suite": {
+    "schema": "helix.validated-probe.research.v1",
+    "status": "PROBE_PASS",
+    "receipt_hash": "cf9b69f62dc6738d7d135673678e5ff6b21b8443aab5670f4b0cc079048ffa12",
+    "probe_sha256": "6493bbed05a40bce1b83b65d4b8559af813f72246bc1a5d732e80aea5c2e05cc",
+    "probe_started": true,
+    "semantic_acceptance": null,
+    "unchecked": [
+      "semantic adequacy",
+      "general capability parity"
+    ],
+    "cost": {
+      "snapshot_bytes_written": 11022,
+      "validation_seconds": 0.021614749915897846,
+      "elapsed_seconds": 0.05423937499290332,
+      "limits": "Explicit bytes and wall times only; validator/interpreter/OS I/O, inference and amortization excluded.",
+      "probe_seconds": 0.029875459033064544,
+      "raw_output_bytes": 3
+    },
+    "stdout_sha256": "25d4f2a86deb5e2574bb3210b67bb24fcc4afb19f93a7b65a057daa874a9d18e",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_code": 0
+  },
+  "new_probe_detects_prepared_test_passing_defect": {
+    "schema": "helix.validated-probe.research.v1",
+    "status": "PROBE_FAIL",
+    "receipt_hash": "dccabf8be37aabe187cb4c05611dddadb6d4d2f6e91cf4f791f9a2726263dbd6",
+    "probe_sha256": "52b414f7c2ac7617e566a04f6eb74ae242fe235d1477240b15f9fa5923bd0aa5",
+    "probe_started": true,
+    "semantic_acceptance": null,
+    "unchecked": [
+      "semantic adequacy",
+      "general capability parity"
+    ],
+    "cost": {
+      "snapshot_bytes_written": 11032,
+      "validation_seconds": 0.00346008304040879,
+      "elapsed_seconds": 0.04430850001517683,
+      "limits": "Explicit bytes and wall times only; validator/interpreter/OS I/O, inference and amortization excluded.",
+      "probe_seconds": 0.03922841598978266,
+      "raw_output_bytes": 329
+    },
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "stderr_sha256": "8db4903104f456e74992916c7da9e2f56482195c8f0e0ea2504774eb06b44843",
+    "exit_code": 1
+  },
+  "native_calls": 0
+}
