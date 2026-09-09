@@ -1,7 +1,7 @@
 {
-  "as_of_utc": "2026-09-09T09:32:52.045384+00:00",
-  "status": "INTERIM; long-horizon and latent-future-relevance work still running",
-  "scope": "Same-model High comparisons; skill plus caller policy vs normal. Not skill text alone.",
+  "as_of_utc": "2026-09-09T10:06:43.720234+00:00",
+  "status": "Exploratory iterations; V3 long-horizon validation ongoing",
+  "scope": "Same-model High, skill plus caller policy, not installed slash-skill alone",
   "primary": {
     "luna": {
       "Q": {
@@ -84,10 +84,50 @@
       },
       "W": {
         "off": {
-          "status": "pending"
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "fifty_native_turns": true,
+            "all_acknowledgements": true,
+            "final_historical_facts": true,
+            "evidence_provenance": true,
+            "explanation_present": true,
+            "complete_history": true
+          },
+          "usage": {
+            "input_tokens": 895345,
+            "output_tokens": 6776,
+            "cached_input_tokens": 574976,
+            "reasoning_output_tokens": 5527
+          },
+          "turns": 50
         },
         "on": {
-          "status": "pending"
+          "status": "graded",
+          "passed": false,
+          "checks": {
+            "fifty_native_turns": true,
+            "all_acknowledgements": false,
+            "final_historical_facts": true,
+            "evidence_provenance": true,
+            "explanation_present": true,
+            "complete_history": true,
+            "actual_cold_retrieval": true
+          },
+          "usage": {
+            "input_tokens": 2144268,
+            "output_tokens": 39908,
+            "cached_input_tokens": 1803776,
+            "reasoning_output_tokens": 21059
+          },
+          "turns": 50
+        },
+        "comparison": {
+          "observed_parity": false,
+          "reduction_pct": {
+            "input_tokens": -139.491,
+            "output_tokens": -488.961
+          }
         }
       }
     },
@@ -172,7 +212,23 @@
       },
       "W": {
         "off": {
-          "status": "pending"
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "fifty_native_turns": true,
+            "all_acknowledgements": true,
+            "final_historical_facts": true,
+            "evidence_provenance": true,
+            "explanation_present": true,
+            "complete_history": true
+          },
+          "usage": {
+            "input_tokens": 926028,
+            "output_tokens": 944,
+            "cached_input_tokens": 637568,
+            "reasoning_output_tokens": 150
+          },
+          "turns": 50
         },
         "on": {
           "status": "graded",
@@ -193,6 +249,13 @@
             "reasoning_output_tokens": 306
           },
           "turns": 50
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 15.479,
+            "output_tokens": -16.419
+          }
         }
       }
     },
@@ -277,6 +340,429 @@
       },
       "W": {
         "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "fifty_native_turns": true,
+            "all_acknowledgements": true,
+            "final_historical_facts": true,
+            "evidence_provenance": true,
+            "explanation_present": true,
+            "complete_history": true
+          },
+          "usage": {
+            "input_tokens": 933283,
+            "output_tokens": 812,
+            "cached_input_tokens": 634752,
+            "reasoning_output_tokens": 291
+          },
+          "turns": 50
+        },
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "fifty_native_turns": true,
+            "all_acknowledgements": true,
+            "final_historical_facts": true,
+            "evidence_provenance": true,
+            "explanation_present": true,
+            "complete_history": true,
+            "actual_cold_retrieval": true
+          },
+          "usage": {
+            "input_tokens": 896213,
+            "output_tokens": 2619,
+            "cached_input_tokens": 635008,
+            "reasoning_output_tokens": 1458
+          },
+          "turns": 50
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 3.972,
+            "output_tokens": -222.537
+          }
+        }
+      }
+    }
+  },
+  "followups": {
+    "luna": {
+      "Q2": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 156874,
+            "output_tokens": 1154,
+            "cached_input_tokens": 123904,
+            "reasoning_output_tokens": 587
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 36.67,
+            "caller_cpu_seconds": 0.19,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.07,
+            "local_client_max_rss_bytes": 219217920
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 76894,
+            "output_tokens": 1743,
+            "cached_input_tokens": 62464,
+            "reasoning_output_tokens": 896
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 45.053,
+            "caller_cpu_seconds": 0.104,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.02,
+            "local_client_max_rss_bytes": 214040576
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 50.984,
+            "output_tokens": -51.04
+          }
+        }
+      },
+      "L20": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 536309,
+            "output_tokens": 4890,
+            "cached_input_tokens": 366336,
+            "reasoning_output_tokens": 3376
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "off",
+            "turns": 21,
+            "task_wall_seconds": 390.868,
+            "caller_cpu_seconds": 0.682,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 33.76,
+            "local_client_max_rss_bytes": 226017280
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true,
+            "actual_cold_retrieval": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 1481491,
+            "output_tokens": 25764,
+            "cached_input_tokens": 1236992,
+            "reasoning_output_tokens": 11102
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "on",
+            "turns": 21,
+            "task_wall_seconds": 869.074,
+            "caller_cpu_seconds": 1.085,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 38.2,
+            "local_client_max_rss_bytes": 227573760
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": -176.238,
+            "output_tokens": -426.871
+          }
+        }
+      },
+      "L40": {
+        "off": {
+          "status": "pending"
+        },
+        "on": {
+          "status": "pending"
+        }
+      }
+    },
+    "sol": {
+      "Q2": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 121001,
+            "output_tokens": 502,
+            "cached_input_tokens": 90624,
+            "reasoning_output_tokens": 77
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 30.761,
+            "caller_cpu_seconds": 0.038,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.0,
+            "local_client_max_rss_bytes": 208715776
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 19109,
+            "output_tokens": 352,
+            "cached_input_tokens": 10624,
+            "reasoning_output_tokens": 242
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 22.422,
+            "caller_cpu_seconds": 0.219,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 0.69,
+            "local_client_max_rss_bytes": 166920192
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 84.208,
+            "output_tokens": 29.88
+          }
+        }
+      },
+      "L20": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 430884,
+            "output_tokens": 678,
+            "cached_input_tokens": 264832,
+            "reasoning_output_tokens": 295
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "off",
+            "turns": 21,
+            "task_wall_seconds": 347.308,
+            "caller_cpu_seconds": 0.671,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 30.939999999999998,
+            "local_client_max_rss_bytes": 211795968
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true,
+            "actual_cold_retrieval": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 370529,
+            "output_tokens": 1601,
+            "cached_input_tokens": 257024,
+            "reasoning_output_tokens": 854
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "on",
+            "turns": 21,
+            "task_wall_seconds": 315.874,
+            "caller_cpu_seconds": 0.541,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 27.48,
+            "local_client_max_rss_bytes": 224788480
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 14.007,
+            "output_tokens": -136.136
+          }
+        }
+      },
+      "L40": {
+        "off": {
+          "status": "pending"
+        },
+        "on": {
+          "status": "pending"
+        }
+      }
+    },
+    "astra": {
+      "Q2": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 82378,
+            "output_tokens": 386,
+            "cached_input_tokens": 52352,
+            "reasoning_output_tokens": 0
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 28.152,
+            "caller_cpu_seconds": 0.185,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 0.94,
+            "local_client_max_rss_bytes": 231276544
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "exact_reasoning_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 40662,
+            "output_tokens": 591,
+            "cached_input_tokens": 31360,
+            "reasoning_output_tokens": 0
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 30.44,
+            "caller_cpu_seconds": 0.09,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.0,
+            "local_client_max_rss_bytes": 215515136
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 50.64,
+            "output_tokens": -53.109
+          }
+        }
+      },
+      "L20": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 451799,
+            "output_tokens": 506,
+            "cached_input_tokens": 296832,
+            "reasoning_output_tokens": 43
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "off",
+            "turns": 21,
+            "task_wall_seconds": 285.332,
+            "caller_cpu_seconds": 0.568,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 26.66,
+            "local_client_max_rss_bytes": 210567168
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "actual_sequential_turn_count": true,
+            "acknowledgements": true,
+            "late_exact_answer": true,
+            "complete_history": true,
+            "actual_cold_retrieval": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 383464,
+            "output_tokens": 1139,
+            "cached_input_tokens": 278144,
+            "reasoning_output_tokens": 435
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "on",
+            "turns": 21,
+            "task_wall_seconds": 408.482,
+            "caller_cpu_seconds": 0.714,
+            "archive_write_bytes": 289877,
+            "local_client_cpu_seconds": 32.21,
+            "local_client_max_rss_bytes": 225230848
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 15.125,
+            "output_tokens": -125.099
+          }
+        }
+      },
+      "L40": {
+        "off": {
           "status": "pending"
         },
         "on": {
@@ -285,169 +771,678 @@
       }
     }
   },
-  "clarified_Q2": {
+  "iteration2": {
     "luna": {
-      "off": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "Q3": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 113750,
+            "output_tokens": 678,
+            "cached_input_tokens": 83200,
+            "reasoning_output_tokens": 328
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 50.372,
+            "caller_cpu_seconds": 0.473,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.1099999999999999,
+            "local_client_max_rss_bytes": 221708288
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 156874,
-          "output_tokens": 1154,
-          "cached_input_tokens": 123904,
-          "reasoning_output_tokens": 587
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 73961,
+            "output_tokens": 1676,
+            "cached_input_tokens": 62464,
+            "reasoning_output_tokens": 729
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 54.304,
+            "caller_cpu_seconds": 0.235,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.5100000000000002,
+            "local_client_max_rss_bytes": 212172800
+          }
         },
-        "resources": {
-          "model": "gpt-5.6-luna",
-          "condition": "off",
-          "turns": 1,
-          "task_wall_seconds": 36.67,
-          "caller_cpu_seconds": 0.19,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 1.07,
-          "local_client_max_rss_bytes": 219217920
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 34.979,
+            "output_tokens": -147.198
+          }
         }
       },
-      "on": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "A2": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 139510,
+            "output_tokens": 3664,
+            "cached_input_tokens": 118528,
+            "reasoning_output_tokens": 1354
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 93.154,
+            "caller_cpu_seconds": 0.114,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 4.09,
+            "local_client_max_rss_bytes": 223412224
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 76894,
-          "output_tokens": 1743,
-          "cached_input_tokens": 62464,
-          "reasoning_output_tokens": 896
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 94909,
+            "output_tokens": 3520,
+            "cached_input_tokens": 77312,
+            "reasoning_output_tokens": 1561
+          },
+          "resources": {
+            "model": "gpt-5.6-luna",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 81.281,
+            "caller_cpu_seconds": 0.106,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.58,
+            "local_client_max_rss_bytes": 221593600
+          }
         },
-        "resources": {
-          "model": "gpt-5.6-luna",
-          "condition": "on",
-          "turns": 1,
-          "task_wall_seconds": 45.053,
-          "caller_cpu_seconds": 0.104,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 1.02,
-          "local_client_max_rss_bytes": 214040576
-        }
-      },
-      "comparison": {
-        "observed_parity": true,
-        "reduction_pct": {
-          "input_tokens": 50.984,
-          "output_tokens": -51.04
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 31.97,
+            "output_tokens": 3.93
+          }
         }
       }
     },
     "sol": {
-      "off": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "Q3": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 118016,
+            "output_tokens": 546,
+            "cached_input_tokens": 88704,
+            "reasoning_output_tokens": 77
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 40.362,
+            "caller_cpu_seconds": 0.064,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.7400000000000002,
+            "local_client_max_rss_bytes": 208748544
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 121001,
-          "output_tokens": 502,
-          "cached_input_tokens": 90624,
-          "reasoning_output_tokens": 77
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 38668,
+            "output_tokens": 550,
+            "cached_input_tokens": 21248,
+            "reasoning_output_tokens": 194
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 51.838,
+            "caller_cpu_seconds": 0.253,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.05,
+            "local_client_max_rss_bytes": 219660288
+          }
         },
-        "resources": {
-          "model": "gpt-5.6-sol",
-          "condition": "off",
-          "turns": 1,
-          "task_wall_seconds": 30.761,
-          "caller_cpu_seconds": 0.038,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 1.0,
-          "local_client_max_rss_bytes": 208715776
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 67.235,
+            "output_tokens": -0.733
+          }
         }
       },
-      "on": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "A2": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 96128,
+            "output_tokens": 2080,
+            "cached_input_tokens": 88320,
+            "reasoning_output_tokens": 604
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 90.983,
+            "caller_cpu_seconds": 0.11,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.87,
+            "local_client_max_rss_bytes": 228229120
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 19109,
-          "output_tokens": 352,
-          "cached_input_tokens": 10624,
-          "reasoning_output_tokens": 242
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 66361,
+            "output_tokens": 1549,
+            "cached_input_tokens": 58752,
+            "reasoning_output_tokens": 625
+          },
+          "resources": {
+            "model": "gpt-5.6-sol",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 66.581,
+            "caller_cpu_seconds": 0.088,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.41,
+            "local_client_max_rss_bytes": 215728128
+          }
         },
-        "resources": {
-          "model": "gpt-5.6-sol",
-          "condition": "on",
-          "turns": 1,
-          "task_wall_seconds": 22.422,
-          "caller_cpu_seconds": 0.219,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 0.69,
-          "local_client_max_rss_bytes": 166920192
-        }
-      },
-      "comparison": {
-        "observed_parity": true,
-        "reduction_pct": {
-          "input_tokens": 84.208,
-          "output_tokens": 29.88
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 30.966,
+            "output_tokens": 25.529
+          }
         }
       }
     },
     "astra": {
-      "off": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "Q3": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 80310,
+            "output_tokens": 361,
+            "cached_input_tokens": 51328,
+            "reasoning_output_tokens": 0
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 42.407,
+            "caller_cpu_seconds": 0.194,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 0.99,
+            "local_client_max_rss_bytes": 200392704
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 82378,
-          "output_tokens": 386,
-          "cached_input_tokens": 52352,
-          "reasoning_output_tokens": 0
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "exact_answer": true
+          },
+          "usage": {
+            "input_tokens": 40379,
+            "output_tokens": 408,
+            "cached_input_tokens": 31232,
+            "reasoning_output_tokens": 0
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 33.471,
+            "caller_cpu_seconds": 0.099,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.12,
+            "local_client_max_rss_bytes": 174391296
+          }
         },
-        "resources": {
-          "model": "gpt-6-astra",
-          "condition": "off",
-          "turns": 1,
-          "task_wall_seconds": 28.152,
-          "caller_cpu_seconds": 0.185,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 0.94,
-          "local_client_max_rss_bytes": 231276544
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 49.721,
+            "output_tokens": -13.019
+          }
         }
       },
-      "on": {
-        "status": "graded",
-        "checks": {
-          "exact_reasoning_answer": true
+      "A2": {
+        "off": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 82167,
+            "output_tokens": 937,
+            "cached_input_tokens": 75648,
+            "reasoning_output_tokens": 55
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "off",
+            "turns": 1,
+            "task_wall_seconds": 56.356,
+            "caller_cpu_seconds": 0.076,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.36,
+            "local_client_max_rss_bytes": 228196352
+          }
         },
-        "passed": true,
-        "usage": {
-          "input_tokens": 40662,
-          "output_tokens": 591,
-          "cached_input_tokens": 31360,
-          "reasoning_output_tokens": 0
+        "on": {
+          "status": "graded",
+          "passed": true,
+          "checks": {
+            "preserved": true,
+            "semantics": true,
+            "existing_suite_executed": true
+          },
+          "usage": {
+            "input_tokens": 68314,
+            "output_tokens": 1421,
+            "cached_input_tokens": 55552,
+            "reasoning_output_tokens": 85
+          },
+          "resources": {
+            "model": "gpt-6-astra",
+            "condition": "on",
+            "turns": 1,
+            "task_wall_seconds": 61.952,
+            "caller_cpu_seconds": 0.084,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.94,
+            "local_client_max_rss_bytes": 225722368
+          }
         },
-        "resources": {
-          "model": "gpt-6-astra",
-          "condition": "on",
-          "turns": 1,
-          "task_wall_seconds": 30.44,
-          "caller_cpu_seconds": 0.09,
-          "archive_write_bytes": 0,
-          "local_client_cpu_seconds": 1.0,
-          "local_client_max_rss_bytes": 215515136
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 16.86,
+            "output_tokens": -51.654
+          }
         }
-      },
-      "comparison": {
-        "observed_parity": true,
-        "reduction_pct": {
-          "input_tokens": 50.64,
-          "output_tokens": -53.109
+      }
+    }
+  },
+  "iteration3": {
+    "luna": {
+      "QAW": {
+        "Q": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 86345,
+              "output_tokens": 1762,
+              "cached_input_tokens": 66048,
+              "reasoning_output_tokens": 664
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 42619,
+              "output_tokens": 1185,
+              "cached_input_tokens": 36096,
+              "reasoning_output_tokens": 583
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 50.641,
+              "output_tokens": 32.747
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 102914,
+              "output_tokens": 2561,
+              "cached_input_tokens": 85248,
+              "reasoning_output_tokens": 974
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 59108,
+              "output_tokens": 2000,
+              "cached_input_tokens": 50176,
+              "reasoning_output_tokens": 1141
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 42.566,
+              "output_tokens": 21.906
+            }
+          }
+        },
+        "W": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 895345,
+              "output_tokens": 6776,
+              "cached_input_tokens": 574976,
+              "reasoning_output_tokens": 5527
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "pending"
+          }
+        }
+      }
+    },
+    "sol": {
+      "QAW": {
+        "Q": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 55826,
+              "output_tokens": 1099,
+              "cached_input_tokens": 46976,
+              "reasoning_output_tokens": 358
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 63581,
+              "output_tokens": 1142,
+              "cached_input_tokens": 52224,
+              "reasoning_output_tokens": 245
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": -13.891,
+              "output_tokens": -3.913
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 96577,
+              "output_tokens": 2170,
+              "cached_input_tokens": 84352,
+              "reasoning_output_tokens": 750
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 65103,
+              "output_tokens": 1606,
+              "cached_input_tokens": 52736,
+              "reasoning_output_tokens": 537
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 32.59,
+              "output_tokens": 25.991
+            }
+          }
+        },
+        "W": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 926028,
+              "output_tokens": 944,
+              "cached_input_tokens": 637568,
+              "reasoning_output_tokens": 150
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "pending"
+          }
+        }
+      }
+    },
+    "astra": {
+      "QAW": {
+        "Q": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 59314,
+              "output_tokens": 975,
+              "cached_input_tokens": 53632,
+              "reasoning_output_tokens": 62
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "exact_reasoning_answer": true,
+              "original_source_preserved": true
+            },
+            "usage": {
+              "input_tokens": 67016,
+              "output_tokens": 1101,
+              "cached_input_tokens": 55296,
+              "reasoning_output_tokens": 10
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": -12.985,
+              "output_tokens": -12.923
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 74279,
+              "output_tokens": 1139,
+              "cached_input_tokens": 64128,
+              "reasoning_output_tokens": 41
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 50791,
+              "output_tokens": 1221,
+              "cached_input_tokens": 44160,
+              "reasoning_output_tokens": 55
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 31.621,
+              "output_tokens": -7.199
+            }
+          }
+        },
+        "W": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 933283,
+              "output_tokens": 812,
+              "cached_input_tokens": 634752,
+              "reasoning_output_tokens": 291
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "pending"
+          }
         }
       }
     }
@@ -469,12 +1464,18 @@
     "Luna_W_on_v1": {
       "issue": "Extra reads and writes of caller bookkeeping; observed repeated memory lookup attempts, archive reads and ledger changes",
       "action": "retain all recurring native costs; next candidate will clarify caller ownership and avoid duplicate persistence work. No current net-savings claim."
+    },
+    "Q_identifier_mapping": {
+      "issue": "Q1/Q2 and V3 reuse request job_0177_eligible while source ID is job-0177. Output-field-to-entity mapping was implicit. Traces show both arms resolving the mismatch.",
+      "action": "Retain measurements and exact-answer grades; classify as ambiguous development fixture, not clean held-out reasoning proof or pure skill-overhead estimate. Future fixtures must explicitly bind output fields to literal source IDs."
     }
   },
   "limits": [
-    "Single observed pairs; no global intelligence-equivalence claim",
-    "All participant native usage counted; parent/coordinator overhead outside recurring comparison",
-    "Runs concurrent: wall-time differences are descriptive, not isolated speed benchmarks",
-    "Source-copy renderer was used in earlier synthetic experiments, not in these current Q/A/W runs"
+    "Single observed pairs and adaptively reused development cases; no universal intelligence equivalence or global maximum",
+    "50 turns means 50 native ephemeral invocations with caller-reconstructed state, not a native persistent session",
+    "Causal prompts do not constitute OS-enforced isolation from other workspace files",
+    "V3 A/W reuse original same-task off receipts; Q uses a new stronger file-reference control; L40 uses new same-ownership controls",
+    "Concurrent runs: latency descriptive, not controlled speed measurements",
+    "Original strict grades retained alongside separately justified component adjudications"
   ]
 }

@@ -52,7 +52,7 @@ The current helper suite has 50 passing tests. These local tests verify helper m
 
 ## Pending final model gate
 
-After freezing the candidate and prespecified parity checks: run **Luna High, Sol High, and Astra High**, each on **three tasks without and with the skill** (at least 18 native runs). Each model must pass the same behavioral and agentic checks before savings are accepted. Add an adversarial 50-turn case where an early fact becomes decisive late. Estimate separate input/output savings and uncertainty; do not infer universal parity or a global maximum from finite tasks. This gate is **not run**. See `results/final-validation-plan.json`.
+After freezing the candidate and prespecified parity checks: run **Luna High, Sol High, and Astra High**, each on **three tasks without and with the skill** (at least 18 native runs). Each model must pass the same behavioral and agentic checks before savings are accepted. Add an adversarial 50-turn case where an early fact becomes decisive late. Estimate separate input/output savings and uncertainty; do not infer universal parity or a global maximum from finite tasks. The first High-model gate has run and exposed recurring-cost regressions. Subsequent frozen iterations are under evaluation; see `results/frontier-interim.json`.
 
 ## Research background
 
@@ -60,8 +60,14 @@ After freezing the candidate and prespecified parity checks: run **Luna High, So
 
 The current objective is specified in `results/research-contract.json`. Resident context size, cumulative input tokens and semantic information are different quantities: a 95% token reduction does not establish that 95% of decision-relevant information was discarded. Cold evidence must remain recoverable, and actual successful retrieval must be tested.
 
-## Ongoing High-model frontier benchmark
+## High-model iterations: rejected costs stay in the results
 
-See `results/frontier-interim.json` for the explicitly incomplete Luna/Sol/Astra comparisons and `results/cost-audit.json` for overhead accounting. The clarified reasoning follow-up passes in both conditions for all three models, but input savings can coexist with increased output and latency. The 50-turn and latent-future-relevance gates remain in progress. No final skill release or universal parity claim is justified yet. Component-level grading issues are retained and disclosed rather than hidden or silently rewritten.
+`results/frontier-interim.json` contains the first Luna/Sol/Astra High suite, clarified reasoning follow-ups, a 20-turn latent-future-relevance family, and subsequent iterations. `results/frontier-native-usage.json` publishes extracted per-call receipts with original trace commitments. `results/cost-audit.json` includes observed development tokens as a **lower bound**, including unsuccessful candidates. Unmetered coordinator usage prevents a complete whole-project break-even claim.
 
-The next candidate addresses observed unnecessary decoder generation and unavailable-Git checks; subsequent workflow work addresses redundant caller-owned bookkeeping. Every revision requires fresh paired validation. 95% remains aspirational, and net resource costs are part of the acceptance decision.
+All three models recovered the decisive early evidence on the first 50-turn task and the delayed 20-turn Unicode/whitespace task. That did not make the policy efficient. Luna's 50-turn candidate used 2.39 times the input and 5.89 times the output of its control, and failed the strict acknowledgement-format check. Its 20-turn latent case used 2.76 times the input and 5.27 times the output. Sol and Astra also increased output on these long-horizon tasks. This version is rejected as a general efficiency policy.
+
+V3 removes duplicate caller-owned bookkeeping and loads the full skill only for substantive decisions. Its five-turn diagnostic passed exact acknowledgements and caller-file integrity for every model and arm, but small-task costs remained mixed. Its reasoning and code-repair outcomes pass so far; the stronger file-reference reasoning control is sometimes cheaper than Helix. The full 50-turn V3 and held-out 40-turn latent checks are running. No universal no-loss or fixed-percentage claim follows.
+
+The runner uses **a fresh native invocation for every turn**, reconstructing released context through an external caller. This evaluates caller plus skill, not a stock desktop persistent-session slash skill. No native calls are skipped. V3 A/W comparisons explicitly reuse original same-model, same-task controls; its Q and L40 controls are newly run. Future events are omitted from prompts, but there is no OS-enforced filesystem isolation from evaluator files.
+
+[LongMemEval](https://arxiv.org/abs/2410.10813) motivates testing updates, temporal reasoning and abstention in addition to extraction. [Anthropic's context-engineering guidance](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) motivates selective retrieval and context management. Neither source establishes Helix's savings or parity. These synthetic delayed-relevance tests remain narrower than sustained dependent-action workflows.
