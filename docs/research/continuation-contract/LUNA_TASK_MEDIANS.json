@@ -1,0 +1,47 @@
+{
+  "classification": "Three-task Luna development product comparison; not always-on revised runner qualification",
+  "source": "docs/research/continuation-contract/LUNA_CAPABILITY_V1_RESULT.json",
+  "n_pairs": 3,
+  "median_task_savings_percent": {
+    "input_tokens": 9.147101599833785,
+    "output_tokens": -62.2991347342398
+  },
+  "median_uncached_input_savings_percent": 14.356435643564359,
+  "tasks": [
+    {
+      "case": "coding",
+      "savings_percent": {
+        "input_tokens": 9.147101599833785,
+        "output_tokens": -0.11347517730495582
+      },
+      "uncached_savings_percent": 20.685645549318366
+    },
+    {
+      "case": "selection",
+      "savings_percent": {
+        "input_tokens": -114.97657997762865,
+        "output_tokens": -161.97604790419163
+      },
+      "uncached_savings_percent": -157.58272058823528
+    },
+    {
+      "case": "cold",
+      "savings_percent": {
+        "input_tokens": 19.87587258475687,
+        "output_tokens": -62.2991347342398
+      },
+      "uncached_savings_percent": 14.356435643564359
+    }
+  ],
+  "limits": [
+    "Known development tasks; finite checks not general parity",
+    "Base/skill differ between arms",
+    "W50 excluded from this median; separate trajectory family",
+    "Complete monetary costs unavailable; no quota conversion",
+    "Failures/regressions retained"
+  ],
+  "aggregate_token_savings_percent": {
+    "input_tokens": -13.32712393902713,
+    "output_tokens": -31.78728508596562
+  }
+}
