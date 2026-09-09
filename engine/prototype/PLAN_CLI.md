@@ -71,3 +71,12 @@ Vary reuse count rather than repeating unrelated tiny tasks. Report per-model
 input and output savings separately, and keep source-change recovery and later
 evidence retrieval as workflow gates. A command-length saving alone cannot admit
 the mechanism. Do not launch a full model sweep while correctness gates remain open.
+# Cold execution shortcut
+
+`python plan_cli.py --store STORE execute-spec SPEC [--timeout SECONDS]` uses the
+same explicit reviewed JSON specification as `register`, then invokes the
+resulting immutable plan. It preserves registration costs in the full receipt
+envelope, per-step evidence and stop-on-failure. Identity conflicts reject before
+execution. This avoids generating Python integration code or an intermediate
+reference file; semantic applicability and output verification remain caller
+obligations. Native token savings are unmeasured for this new command.

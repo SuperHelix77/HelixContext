@@ -1,0 +1,242 @@
+{
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 134824,
+        "output_tokens": 3140,
+        "cached_input_tokens": 118016,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 1501
+      },
+      "elapsed_seconds": 72.163,
+      "events_sha256": "e37a68c399cbb9559370c765f16f4fab5c5e8002147a5b5d7e97d3821d36c518",
+      "grade": {
+        "exact_artifact": true,
+        "source_unchanged": true,
+        "actual": [
+          {
+            "batch": "batch1",
+            "net_cents": {
+              "north": 8289,
+              "south": 8289,
+              "west": 13404,
+              "zero": 0
+            },
+            "posted_count": 29
+          },
+          {
+            "batch": "batch2",
+            "net_cents": {
+              "north": 8358,
+              "south": 8358,
+              "west": 13519,
+              "zero": 0
+            },
+            "posted_count": 29
+          },
+          {
+            "batch": "batch3",
+            "net_cents": {
+              "north": 8427,
+              "south": 8427,
+              "west": 13634,
+              "zero": 0
+            },
+            "posted_count": 29
+          }
+        ],
+        "workflow_trace_review": "required; artifact correctness alone is insufficient"
+      },
+      "overrun": false
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 218973,
+        "output_tokens": 4519,
+        "cached_input_tokens": 191232,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 1788
+      },
+      "elapsed_seconds": 114.835,
+      "events_sha256": "949b4dda6176b9ab11c63783f14837388b0cc43655c900d5c1d241a809de6d39",
+      "grade": {
+        "exact_artifact": true,
+        "source_unchanged": true,
+        "actual": [
+          {
+            "batch": "batch1",
+            "net_cents": {
+              "north": 8289,
+              "south": 8289,
+              "west": 13404,
+              "zero": 0
+            },
+            "posted_count": 29
+          },
+          {
+            "batch": "batch2",
+            "net_cents": {
+              "north": 8358,
+              "south": 8358,
+              "west": 13519,
+              "zero": 0
+            },
+            "posted_count": 29
+          },
+          {
+            "batch": "batch3",
+            "net_cents": {
+              "north": 8427,
+              "south": 8427,
+              "west": 13634,
+              "zero": 0
+            },
+            "posted_count": 29
+          }
+        ],
+        "workflow_trace_review": "required; artifact correctness alone is insufficient"
+      },
+      "overrun": false
+    }
+  ],
+  "state": "REVIEWED_DEVELOPMENT_REGRESSION",
+  "savings_percent": {
+    "input_tokens": -62.41396190589212,
+    "output_tokens": -43.9171974522293
+  },
+  "combined_native_usage": {
+    "input_tokens": 353797,
+    "output_tokens": 7659,
+    "cached_input_tokens": 309248,
+    "cache_write_input_tokens": 0,
+    "reasoning_output_tokens": 3289
+  },
+  "joint_80_numeric": false,
+  "capability_parity": "not established",
+  "observable_traces": {
+    "off": {
+      "schema": "helix.observable_trace.v1",
+      "events_sha256": "e37a68c399cbb9559370c765f16f4fab5c5e8002147a5b5d7e97d3821d36c518",
+      "native_usage": {
+        "input_tokens": 134824,
+        "output_tokens": 3140,
+        "cached_input_tokens": 118016,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 1501
+      },
+      "completed_item_types": {
+        "agent_message": 4,
+        "command_execution": 7,
+        "error": 1,
+        "file_change": 1
+      },
+      "commands": 7,
+      "command_text_bytes": 2191,
+      "recorded_terminal_bytes": 21052,
+      "nonzero_command_exits": 0,
+      "missing_command_exits": 0,
+      "message_text_bytes": 1167,
+      "limitations": [
+        "Bytes are not native tokens or disjoint native output categories.",
+        "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+        "File-change events need not contain generated patch text.",
+        "No private reasoning contents or causal model psychology are inferred.",
+        "Model/effort identity must be verified separately against the launch receipt."
+      ]
+    },
+    "on": {
+      "schema": "helix.observable_trace.v1",
+      "events_sha256": "949b4dda6176b9ab11c63783f14837388b0cc43655c900d5c1d241a809de6d39",
+      "native_usage": {
+        "input_tokens": 218973,
+        "output_tokens": 4519,
+        "cached_input_tokens": 191232,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 1788
+      },
+      "completed_item_types": {
+        "agent_message": 5,
+        "command_execution": 6,
+        "error": 1,
+        "file_change": 1
+      },
+      "commands": 6,
+      "command_text_bytes": 5044,
+      "recorded_terminal_bytes": 42682,
+      "nonzero_command_exits": 0,
+      "missing_command_exits": 0,
+      "message_text_bytes": 1612,
+      "limitations": [
+        "Bytes are not native tokens or disjoint native output categories.",
+        "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+        "File-change events need not contain generated patch text.",
+        "No private reasoning contents or causal model psychology are inferred.",
+        "Model/effort identity must be verified separately against the launch receipt."
+      ]
+    }
+  },
+  "manifest_sha256": "b1bd76519a04cc99a3b54979a2d96915c864ff019088583c05c5d6455cc1e842",
+  "manifest": {
+    "schema": "helix.native_plan_diagnostic.v1",
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "classification": "fresh development cold-start pair; fixed off/on order; one task with three batches",
+    "hypothesis": "A supplied named-plan API reduces total procedural generation even against an efficient reusable-script control.",
+    "max_calls": 2,
+    "timeout_per_call_seconds": 600,
+    "post_call_stop": {
+      "input_tokens": 250000,
+      "output_tokens": 8000
+    },
+    "budget_limit": "Post-call thresholds are not hard token caps. Stop after any failure or overrun; never retry.",
+    "promotion": "No expansion unless both token categories improve and independent artifact and workflow gates pass. 80 percent target remains separate.",
+    "accounting": "All native setup/verification included. Research and common fixture construction excluded and disclosed. No warm reuse claim.",
+    "runner_hash": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "orchestrator_hash": "425bd40621f14d8c014f619228ce462060d7f8f5441fc3b62e887fff3a3c9643",
+    "usage_validator_hash": "a8cdf528f50f3e5edd322bd678a36ac561de523147320998db7a10adf72e4e4f",
+    "prompts": {
+      "off": "8aae273c47ae2991bba825fef4351398c6ec9f286cf93a85d9b8c43db7b8b179",
+      "on": "0f32960378a7a0332935de09d67e3a1f2e7dd87f372a3179998665270b033fa3"
+    },
+    "initial_files": {
+      "tasks/on/batch2.json": "3f176ea685bc96135f1a832b0dfb3dc7b3239ac15a02cc866f845310f673c1e2",
+      "tasks/on/batch3.json": "938bded8ffbc66375074d10591b665567cc1cf9f34fb7e44462c8573b2bea601",
+      "tasks/on/process.py": "4184f10889dc6f0bb1499ad01756fb56c7c29584b43b91bcbf328e8c1cc75b64",
+      "tasks/on/batch1.json": "45185992dfab7c109fdff299c872326ac0a0e8e8a3f0deea72b35fbe954df3da",
+      "tasks/off/batch2.json": "3f176ea685bc96135f1a832b0dfb3dc7b3239ac15a02cc866f845310f673c1e2",
+      "tasks/off/batch3.json": "938bded8ffbc66375074d10591b665567cc1cf9f34fb7e44462c8573b2bea601",
+      "tasks/off/process.py": "4184f10889dc6f0bb1499ad01756fb56c7c29584b43b91bcbf328e8c1cc75b64",
+      "tasks/off/batch1.json": "45185992dfab7c109fdff299c872326ac0a0e8e8a3f0deea72b35fbe954df3da",
+      "tasks/on/engine/bundle.py": "ff6c75ee34258bcc3afcaeccad2cd8c28fd1291afc3e11f4a320f01dbe9c5308",
+      "tasks/on/engine/benchmark_batch.py": "d09f08ec8f108cbda6967f9c4774c95304fc5d29431d0dd4eb3ed7cf8440fa73",
+      "tasks/on/engine/verification.py": "18afa524f87be008090645b45dc353ee1ad1749827b4e50fe05cdbf404efdb80",
+      "tasks/on/engine/named_plans.py": "e0b73dc0b42d1415fa652b595fa099b85a1c82b21227f22f3c60f09bac266611",
+      "tasks/on/engine/benchmark_ranges.py": "72e0f96bf964f9b1f3825ac0efdd1c392e5cb0c937ad1ccf2ec92da362cfb28c",
+      "tasks/on/engine/renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+      "tasks/on/engine/plan_cli.py": "88b1c770ac4bbfec140f2d467a4de2e2e65931cc4df80f787088bf9120103cbd",
+      "tasks/on/engine/frozen_search.py": "f6602431d91a0ccef4f710d9f520916d6e009c644ecaf12aae2018c8004e5c6a",
+      "tasks/on/engine/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "tasks/on/engine/benchmark_named_plans.py": "00476788d8f4c0035ab9f745c2006c24c7c63c96ad322b2667e03cd0669368d7",
+      "tasks/on/engine/plan_costs.py": "bac361c56c6307cb509f4e645b99cb7b5c85796eae5f8d7d704f9de88e127dc3",
+      "tasks/on/engine/jsonl_extract.py": "242f20d57771818ac139d60b6dbecc82a3e20345eaca1d238a62c5024c72a76d",
+      "tasks/on/engine/native_usage.py": "a8cdf528f50f3e5edd322bd678a36ac561de523147320998db7a10adf72e4e4f",
+      "tasks/on/engine/plan_dependencies.py": "360c9755afd8622ed590787120622ab41b00c135f09c2b35a593b540c343e6d8",
+      "tasks/on/engine/evidence.py": "936e29154f49ac65a1b6d09af460d9931ad1998bd60f5852fbf1c98f0ee7cc57",
+      "tasks/on/engine/checked_steps.py": "8bad95798863b74401b26482d9928b794c0084bb2c003f43962cb9b6cb97e8f2",
+      "tasks/on/engine/line_index.py": "0c760f65baf6d754d87ee3577d0ace3d30b1451cf6f05c712a7eb11fef57abcc",
+      "tasks/on/engine/benchmark_workflow_memory.py": "88fa664894a1a9fac134da82162ff6c404f7515890a14f4773d3b2684a38f5db"
+    },
+    "preparation_seconds": 0.00945629202760756,
+    "prepared_file_bytes": 124941
+  },
+  "review": {
+    "artifacts": "Both exact artifacts passed; all original source hashes preserved.",
+    "execution": "Control ran three process commands with exit zero. Candidate recorded one successful immutable plan attempt with three zero-exit steps.",
+    "verification": "Both recomputed over complete original sources. Failure-path recovery is untested; candidate verifier prints errors but does not set a nonzero exit.",
+    "reporting": "Candidate narrates an external helper failure; no corresponding failure call appears in recorded completed command items. Cause unestablished, claim not verified.",
+    "decision": "Reject cold API recipe as a savings policy for this Luna fixture. Do not promote or generalize to Sol/Astra.",
+    "scope": "One fresh development pair in fixed order. Three batches are one task, not the required three-task model matrix."
+  }
+}
