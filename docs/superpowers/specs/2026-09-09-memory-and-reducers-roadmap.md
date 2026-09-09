@@ -1,6 +1,6 @@
 # Helix Memory and Reducers
 
-Status: researched roadmap, 2026-09-09. These additions are not implemented or performance-qualified by this document. Continue the approved named-plan work; do not start another native sweep merely because the roadmap expanded.
+Status: partially implemented research roadmap, 2026-09-09. The prototype implements portions below; this document does not qualify their performance or production integration. Continue the approved named-plan work; do not start another native sweep merely because the roadmap expanded.
 
 ## Source findings
 
@@ -13,7 +13,23 @@ These are upstream documentation observations, not an implementation/security au
 
 `engine/prototype/evidence.py` already captures raw streams and produces bounded generic/pytest/compiler projections. `verification.py` independently checks declared structural invariants. `line_index.py` and batched retrieval support exact expansion. Extend these surfaces instead of introducing another archive.
 
-Missing from this prototype are a project/session-scoped searchable workflow memory, a request-conditioned history compiler, a conservative command-adapter registry and activation economics. Named plans remain in progress in this branch. Existing infrastructure does not establish universal recoverability in practice or semantic sufficiency of projections.
+`workflow_memory.py` now provides project-scoped lexical search, session-labelled events, timeline, exact retrieval and exhaustive replay. `frozen_search.py` provides an explicitly pinned immutable literal-search generation. `jsonl_extract.py` extracts verified matching text lines without exposing whole matching JSONL records. These are explicit caller APIs, not automatic interception or a complete request-conditioned history compiler. Named plans provide immutable registration, checked execution and explicit input rebinding under a new version.
+
+Remaining gaps include automatic authorized observation capture, branch/authority/supersession semantics, verified compaction restoration, a conservative command-adapter registry, and measured admission policies. Session labels alone do not establish session access isolation. Existing infrastructure does not establish universal recoverability in practice or semantic sufficiency of projections.
+
+## Current evidence and next integration gate
+
+The prototype suite was re-run at code commit `589c438`: **154 passed**. These are infrastructure tests, not model capability certification.
+
+- The [native memory follow-up](../../../engine/prototype/MEMORY_NATIVE_FOLLOWUP.md) reduced input 39.73% but increased output 15.01% against its retained control. Both task artifacts passed exact checks; this exploratory comparison failed the joint savings objective.
+- [Frozen search](../../../engine/prototype/FROZEN_SEARCH.md) lowered measured application object traffic over repeated fixture queries after including index construction. It still reads the index/catalog, incurs rebuild cost and does not demonstrate native-token savings.
+- Plans preserve declared workflow steps but measured local execution overhead remains positive. Creation, validation, recovery and reuse must be charged before promotion.
+
+Integrate through a caller-owned Helix Context capability packet: available API/schema versions, project scope, evidence generation, active plan reference and current obligations. Only advertise capabilities the caller actually supplied. A model searching for nonexistent helpers adds cost and is not successful integration.
+
+Use one durable evidence store for Memory, Reducers and Plans. A command runs once; reducers operate on that captured result. Memory indexes its receipt and exact source references. A later retrieval must be charged both for engine work and any model-visible expansion. Output retained in future conversation history is shared between mechanisms: savings attribution requires ablations, not summed percentages.
+
+Before another native experiment, freeze a bounded workflow with an equally efficient ordinary-tool control, deterministic exact checks, required tool obligations, late relevance and recovery cases, and explicit startup/reuse boundaries. Count all model calls, skill/bootstrap tokens, retries and generated setup. Report input and output separately, with cached categories kept separate from billing claims. Unknown costs remain unknown. Only then expand a qualifying policy to the requested Luna/Sol/Astra task matrix.
 
 ## Helix Memory contract
 
