@@ -1,0 +1,44 @@
+{
+  "classification": "Offline exact same 49 completions; no model benchmark",
+  "rows": [
+    {
+      "arm": "before",
+      "root": "82fdf459688d36f82c5d7cd5d7fb3d726ff2ed39f91cc5ee299f0c45ba89f6b0",
+      "seconds": 0.13908225001068786,
+      "payload_bytes": 17236,
+      "ingest_io": {
+        "object_bytes_read": 1403484,
+        "object_bytes_written": 28604,
+        "object_bytes_hashed": 1432088,
+        "object_read_operations": 4802,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "arm": "after",
+      "root": "82fdf459688d36f82c5d7cd5d7fb3d726ff2ed39f91cc5ee299f0c45ba89f6b0",
+      "seconds": 0.08984391600824893,
+      "payload_bytes": 17236,
+      "ingest_io": {
+        "object_bytes_read": 716044,
+        "object_bytes_written": 28604,
+        "object_bytes_hashed": 744648,
+        "object_read_operations": 2450,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  ],
+  "object_read_saving_percent": 48.980964514023675,
+  "native_calls": 0,
+  "before_sha256": "4282a87fdd76fa9fec58905c26bbcc6c07426bc41c74b0f64c1844b33934ba97",
+  "after_sha256": "7e42b2d61fe43f36d726011b5a10c34449eed72acb5bea548083efd9e5bd15cf",
+  "limits": [
+    "Full-chain validation remains quadratic",
+    "Snapshot validation; concurrent hostile CAS modification outside tested fault model",
+    "SQLite and physical I/O unmeasured; timing one observation"
+  ]
+}

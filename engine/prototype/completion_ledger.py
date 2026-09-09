@@ -78,8 +78,12 @@ class CompletionLedger:
                     record = dict(schema='helix.completion.v1', scope=scope,
                                   event=event, parent=head, payload=payload, bytes=len(raw))
                     key = self.memory.store.put(encode(record))['sha256']
-                    # Read back before publishing authoritative index/head.
-                    self._chain(key, scope)
+                    # Prior chain was verified in this transaction. Validate the
+                    # new objects without rereading the entire prefix a second
+                    # time. This is snapshot validation, not protection against
+                    # a hostile process modifying CAS concurrently with commit.
+                    if self.memory.store.get(key) != encode(record) or self.memory.store.get(payload) != raw:
+                        raise ValueError('Completion readback mismatch')
                     db.execute('INSERT INTO completion_ids VALUES(?,?,?)', (scope,event,key))
                     db.execute('INSERT INTO completion_heads VALUES(?,?) ON CONFLICT(scope) DO UPDATE SET root=excluded.root', (scope,key))
                     result = {'receipt': key, 'head': key, 'replayed': False}
