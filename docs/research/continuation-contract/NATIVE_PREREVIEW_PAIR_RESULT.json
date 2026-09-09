@@ -1,0 +1,211 @@
+{
+  "state": "DEVELOPMENT_PAIR_COMPLETE",
+  "rows": {
+    "on": {
+      "answer": "{\n  \"decision\": \"ACCEPT\",\n  \"assessment\": \"The exact proposal satisfies the contract within its stated finite synchronous domain. Each instance creates its own ordinary list. One traversal stages values privately; exact-type validation rejects bool, int subclasses and negative values before any public mutation. Iteration exceptions propagate unchanged, preserving list identity, contents and even stale cursor values. Successful iteration extends the existing list in order, then synchronizes cursor to its actual length, including empty batches and prior alias mutations. Self-review found no identified semantic gap. Both checkers were inspected; 35 additional semantic cases passed, covering iteration observations through termination, exception identity, stale cursors, invalid values, self-alias inputs and sequence-protocol iteration. All protected files remain unchanged. The declared checks have NOT run. This acceptance authorizes the caller's exact proposal copy into an isolated snapshot and predicts both `python3 check.py queue_state.py` and `python3 check_independence.py queue_state.py` will exit zero under the unchanged bound state. Acceptance binds proposal SHA-256 860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810. Changed identities or unexpected execution results require reconsideration. Finite checks support this assessment but do not prove universal correctness.\",\n  \"unresolved\": []\n}",
+      "turns": [
+        {
+          "state": "completed",
+          "index": 1,
+          "baseline": null,
+          "turn_id": "01a08776-bdcc-7842-b955-1a7f03618029",
+          "usage_delta": {
+            "input_tokens": 85055,
+            "output_tokens": 1452,
+            "cached_input_tokens": 59136,
+            "reasoning_output_tokens": 96,
+            "cache_write_input_tokens": 0
+          },
+          "usage_cumulative": {
+            "input_tokens": 85055,
+            "output_tokens": 1452,
+            "cached_input_tokens": 59136,
+            "reasoning_output_tokens": 96,
+            "cache_write_input_tokens": 0
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 85055,
+        "output_tokens": 1452,
+        "cached_input_tokens": 59136,
+        "reasoning_output_tokens": 96,
+        "cache_write_input_tokens": 0
+      },
+      "attempt": {
+        "id": "candidate",
+        "task": "task",
+        "base": "611f2d518ad2b3ee798e8d14255fa314baea6733352c6b1d5a1722fc5f038cd8",
+        "revision": 1,
+        "candidate": "677c7a504b68bf210aef5196c15c1f7e1e1fd237ffec5bf7374556c287d6ef63",
+        "status": "AWAITING_REVIEW",
+        "evidence": "04d4000012f82d548be2f5002908f5d0e15174e2a482ec5f230e381fcc865ea4",
+        "review": null
+      },
+      "caller_seconds": 0.38552804198116064,
+      "status": {
+        "state": "closed",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "thread_id": "01a08776-bd5c-7f80-9e39-84df6508e1a8",
+        "pid": 30778,
+        "usage": {
+          "input_tokens": 85055,
+          "output_tokens": 1452,
+          "cached_input_tokens": 59136,
+          "reasoning_output_tokens": 96,
+          "cache_write_input_tokens": 0
+        },
+        "turns": [
+          {
+            "state": "completed",
+            "index": 1,
+            "baseline": null,
+            "turn_id": "01a08776-bdcc-7842-b955-1a7f03618029",
+            "usage_delta": {
+              "input_tokens": 85055,
+              "output_tokens": 1452,
+              "cached_input_tokens": 59136,
+              "reasoning_output_tokens": 96,
+              "cache_write_input_tokens": 0
+            },
+            "usage_cumulative": {
+              "input_tokens": 85055,
+              "output_tokens": 1452,
+              "cached_input_tokens": 59136,
+              "reasoning_output_tokens": 96,
+              "cache_write_input_tokens": 0
+            }
+          }
+        ],
+        "registration": {
+          "skill_sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+          "thread_id": "01a08776-bd5c-7f80-9e39-84df6508e1a8",
+          "scope": "registered before first inference; subsequent skill availability not yet behaviorally qualified"
+        },
+        "elapsed_seconds": 59.10365379101131,
+        "error": null,
+        "native_events_sha256": "653c6a43a367e2688981b4d53f156c00ab5f37b4cfacda9e04f8f8d43d2b2780",
+        "events_sha256": "48d459dcea99b9f35dca1a62c6186a6deb02e391a1ca21d5b76a363207d1914d"
+      },
+      "passed": true,
+      "audit": {
+        "hashes_and_native_totals_verified": true,
+        "segments": 4,
+        "commands": 3,
+        "uncached_input": 25919,
+        "independent_checks": {
+          "check.py": {
+            "exit_code": 0,
+            "stdout": "PASS 2745 sequences / 8282 transitions\n"
+          },
+          "check_independence.py": {
+            "exit_code": 0,
+            "stdout": "{'sequences': 1000, 'transitions': 3000}\n"
+          }
+        },
+        "tool_output_bytes": 10670
+      }
+    },
+    "off": {
+      "answer": "{\n  \"decision\": \"ACCEPT\",\n  \"assessment\": \"Reviewed exact staged copies in .queue-review-sqtf_0z2. Both required checks exited successfully: check.py passed 2745 sequences / 8282 transitions; check_independence.py passed 1000 sequences / 3000 transitions. Supplemental tests passed for iteration-entry and exhaustion observations, queue-list inputs, exception-object preservation including BaseException, sequence-protocol inputs, large integers, rejected subclass comparison hooks, and recovery. Semantically, validation buffers values privately before committing, preserving call-entry public state during iteration and on failure. Successful extension retains list identity and derives cursor from actual length, including empty batches and stale cursors after alias mutation. Each instance owns fresh storage. Interpretation: invalid input may fail immediately; exhausting its remaining values is unnecessary. All five original files remain byte-identical; nothing was published to the base module. Results apply to the reviewed artifacts under Python 3.14.0 and the stated finite synchronous domain. Finite checks supplement semantic review and do not prove universal correctness; no previous PASS was reused.\",\n  \"unresolved\": []\n}",
+      "turns": [
+        {
+          "state": "completed",
+          "index": 1,
+          "baseline": null,
+          "turn_id": "01a08777-a483-7f61-b0f2-a7eb515ba97f",
+          "usage_delta": {
+            "input_tokens": 126477,
+            "output_tokens": 1606,
+            "cached_input_tokens": 113664,
+            "reasoning_output_tokens": 146,
+            "cache_write_input_tokens": 0
+          },
+          "usage_cumulative": {
+            "input_tokens": 126477,
+            "output_tokens": 1606,
+            "cached_input_tokens": 113664,
+            "reasoning_output_tokens": 146,
+            "cache_write_input_tokens": 0
+          }
+        }
+      ],
+      "usage": {
+        "input_tokens": 126477,
+        "output_tokens": 1606,
+        "cached_input_tokens": 113664,
+        "reasoning_output_tokens": 146,
+        "cache_write_input_tokens": 0
+      },
+      "status": {
+        "state": "closed",
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "thread_id": "01a08777-a42d-7a13-b3e1-5af0a30492a7",
+        "pid": 31010,
+        "usage": {
+          "input_tokens": 126477,
+          "output_tokens": 1606,
+          "cached_input_tokens": 113664,
+          "reasoning_output_tokens": 146,
+          "cache_write_input_tokens": 0
+        },
+        "turns": [
+          {
+            "state": "completed",
+            "index": 1,
+            "baseline": null,
+            "turn_id": "01a08777-a483-7f61-b0f2-a7eb515ba97f",
+            "usage_delta": {
+              "input_tokens": 126477,
+              "output_tokens": 1606,
+              "cached_input_tokens": 113664,
+              "reasoning_output_tokens": 146,
+              "cache_write_input_tokens": 0
+            },
+            "usage_cumulative": {
+              "input_tokens": 126477,
+              "output_tokens": 1606,
+              "cached_input_tokens": 113664,
+              "reasoning_output_tokens": 146,
+              "cache_write_input_tokens": 0
+            }
+          }
+        ],
+        "registration": null,
+        "elapsed_seconds": 66.96416791703086,
+        "error": null,
+        "native_events_sha256": "d8bee5328fac831c533843a8bc90ded99e1c84997548d807d6b9dd9b451bbe9e",
+        "events_sha256": "62aad4d539a0a29006f44b5c61af95850f5f0aa030484408f2237df461238bb4"
+      },
+      "passed": true,
+      "audit": {
+        "hashes_and_native_totals_verified": true,
+        "segments": 6,
+        "commands": 6,
+        "uncached_input": 12813,
+        "independent_checks": {
+          "check.py": {
+            "exit_code": 0,
+            "stdout": "PASS 2745 sequences / 8282 transitions\n"
+          },
+          "check_independence.py": {
+            "exit_code": 0,
+            "stdout": "{'sequences': 1000, 'transitions': 3000}\n"
+          }
+        },
+        "tool_output_bytes": 8957
+      }
+    }
+  },
+  "manifest_sha256": "cc9b4363a81ae2c470ad626c5c985c75671727ca156c0f83fc92cb14f696252c",
+  "savings_percent": {
+    "input_tokens": 32.750618689564114,
+    "output_tokens": 9.589041095890416
+  },
+  "uncached_input_savings_percent": -102.28674002965738,
+  "parity": "NOT_ESTABLISHED",
+  "disposition": "DO_NOT_PROMOTE_PREREVIEW_SHORTCUT",
+  "limitations": "Known supplied-proposal review. One candidate-first pair; task and instructions differ from earlier results. No general parity, full effective-cost or automatic-closure qualification. Candidate remains awaiting research review; original working files unchanged."
+}
