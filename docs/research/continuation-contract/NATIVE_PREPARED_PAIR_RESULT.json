@@ -1,0 +1,220 @@
+{
+  "state": "DEVELOPMENT_PAIR_COMPLETE",
+  "rows": {
+    "on": {
+      "state": "AWAITING_INDEPENDENT_AUDIT",
+      "answer": "{\n  \"decision\": \"ACCEPT\",\n  \"assessment\": {\n    \"semantics\": \"The exact proposal satisfies the contract. Each instance starts with its own ordinary empty list and zero cursor. A single traversal validates values into private pending storage; exact-type checking rejects bool and int subclasses before comparison. Until successful exhaustion, neither public field changes, so observers see call-entry state and validation or iteration failures preserve list contents, identity and even a stale cursor. Iteration exceptions propagate unchanged. Success extends the existing list in order and computes cursor and return value from its actual length, including empty batches and prior alias mutations. Repeated calls, recovery and self-alias inputs follow these same rules.\",\n    \"evidence\": \"Verified the supplied receipt SHA-256, every bound source and checker snapshot, staged module equality, raw-output hashes and current runtime identity. Inspected all three checker sources: recorded results cover 2,745 sequences / 8,282 transitions, 1,000 independence sequences / 3,000 transitions, and 35 supplemental cases. Independently passed 11 targeted cases covering stale-state exception preservation, recovery, sequence-protocol failure and exception identity when entering iteration. Bound files remained unchanged; nothing was published.\",\n    \"limitations\": \"Acceptance rests on source-level reasoning within the stated finite synchronous domain, supported by finite tests; checker coverage is not exhaustive. The module uses only standard Python builtins and list operations, with no undeclared external dependencies. No general capability parity or correctness outside the contract's boundaries is established. Changed contract, proposal, checker, environment or initial-state identities require renewed review; unchanged identities alone do not establish semantic completeness.\"\n  },\n  \"unresolved\": []\n}",
+      "usage": {
+        "input_tokens": 91543,
+        "output_tokens": 1625,
+        "cached_input_tokens": 75776,
+        "reasoning_output_tokens": 147,
+        "cache_write_input_tokens": 0
+      },
+      "turn": {
+        "state": "completed",
+        "index": 1,
+        "baseline": null,
+        "turn_id": "01a0878b-105d-7742-aeeb-9aa921d975a8",
+        "usage_delta": {
+          "input_tokens": 91543,
+          "output_tokens": 1625,
+          "cached_input_tokens": 75776,
+          "reasoning_output_tokens": 147,
+          "cache_write_input_tokens": 0
+        },
+        "usage_cumulative": {
+          "input_tokens": 91543,
+          "output_tokens": 1625,
+          "cached_input_tokens": 75776,
+          "reasoning_output_tokens": 147,
+          "cache_write_input_tokens": 0
+        }
+      },
+      "manifest_sha256": "c7e64093b58ffd3145f89e8f94f770fb5fc74384bb43ae9aa4db0f7657ea40f1"
+    },
+    "off": {
+      "answer": "{\n  \"decision\": \"ACCEPT\",\n  \"assessment\": {\n    \"justification\": \"The exact proposal satisfies the contract within its stated domain. Each Queue owns a fresh ordinary list. Iteration occurs once and validation accepts only nonnegative exact ints. Buffering leaves both public fields and list identity unchanged throughout iteration and on validation or iteration failure; iteration exceptions propagate unchanged. Success extends the existing list in order, then records and returns its actual length, correctly handling alias mutations, stale cursors, empty batches and recovery.\",\n    \"evidence\": {\n      \"check.py\": \"Passed 2745 sequences / 8282 transitions.\",\n      \"check_independence.py\": \"Passed 1000 sequences / 3000 transitions.\",\n      \"supplemental.py\": \"Passed 35 cases.\",\n      \"additional_tests\": \"Passed 27 cases covering stale-state observation through exhaustion, iteration-entry exception identity, sequence-protocol failure, invalid-object rejection and recovery.\",\n      \"integrity\": \"All five bound files and their staged copies remained byte-identical. Staged queue_state.py exactly matches proposal.py.\",\n      \"review_directory\": \".queue-review-14r37u48\",\n      \"environment\": \"Python 3.14.0\",\n      \"proposal_sha256\": \"860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810\"\n    },\n    \"limitations\": \"Acceptance rests on source-level semantic review supported by finite tests, not exhaustive coverage or prior PASS reuse. It excludes the contract's concurrent/reentrant mutation, asynchronous exceptions and resource exhaustion boundaries. Changed identities require fresh review. No working-tree publication was performed.\"\n  },\n  \"unresolved\": []\n}",
+      "usage": {
+        "input_tokens": 130422,
+        "output_tokens": 2055,
+        "cached_input_tokens": 116480,
+        "reasoning_output_tokens": 215,
+        "cache_write_input_tokens": 0
+      },
+      "turn": {
+        "state": "completed",
+        "index": 1,
+        "baseline": null,
+        "turn_id": "01a0878c-242e-7821-99ed-e630a65904b6",
+        "usage_delta": {
+          "input_tokens": 130422,
+          "output_tokens": 2055,
+          "cached_input_tokens": 116480,
+          "reasoning_output_tokens": 215,
+          "cache_write_input_tokens": 0
+        },
+        "usage_cumulative": {
+          "input_tokens": 130422,
+          "output_tokens": 2055,
+          "cached_input_tokens": 116480,
+          "reasoning_output_tokens": 215,
+          "cache_write_input_tokens": 0
+        }
+      }
+    }
+  },
+  "manifest_sha256": "2dc93432f03ae00598cba2e51225ed2b1fae2e2d4ad5001e5c93bf5d64ce678f",
+  "audit": {
+    "on": {
+      "segments": [
+        {
+          "totalTokens": 19668,
+          "inputTokens": 19560,
+          "cachedInputTokens": 11264,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 108,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20326,
+          "inputTokens": 20140,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 186,
+          "reasoningOutputTokens": 11
+        },
+        {
+          "totalTokens": 26357,
+          "inputTokens": 25374,
+          "cachedInputTokens": 19968,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 983,
+          "reasoningOutputTokens": 136
+        },
+        {
+          "totalTokens": 26817,
+          "inputTokens": 26469,
+          "cachedInputTokens": 25216,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 348,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "commands": 3,
+      "visible_output_bytes": 18706,
+      "uncached_input": 15767,
+      "elapsed_seconds": 70.60170729103265,
+      "independent_replay": [
+        {
+          "checker": "check.py",
+          "exit": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": ""
+        },
+        {
+          "checker": "check_independence.py",
+          "exit": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": ""
+        },
+        {
+          "checker": "supplemental.py",
+          "exit": 0,
+          "stdout": "{'additional_semantic_cases_passed': 35, 'protected_files_unchanged': True, 'declared_checks_executed': False, 'proposal_sha256': '860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810'}\n",
+          "stderr": ""
+        }
+      ],
+      "event_hashes": {
+        "events_sha256": "f50f629cd17b3faa440bff750ebf19cfa9c538aa01533022888c7f51981283cf",
+        "native_events_sha256": "cca4a28bee87f6d79339296c0c1096f753640654b57e0abc03141b50c73fc018"
+      }
+    },
+    "off": {
+      "segments": [
+        {
+          "totalTokens": 19098,
+          "inputTokens": 19005,
+          "cachedInputTokens": 11264,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 93,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19371,
+          "inputTokens": 19253,
+          "cachedInputTokens": 18816,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 118,
+          "reasoningOutputTokens": 21
+        },
+        {
+          "totalTokens": 22340,
+          "inputTokens": 22005,
+          "cachedInputTokens": 19072,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 335,
+          "reasoningOutputTokens": 91
+        },
+        {
+          "totalTokens": 22874,
+          "inputTokens": 22756,
+          "cachedInputTokens": 21888,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 118,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24163,
+          "inputTokens": 23139,
+          "cachedInputTokens": 22528,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 1024,
+          "reasoningOutputTokens": 103
+        },
+        {
+          "totalTokens": 24631,
+          "inputTokens": 24264,
+          "cachedInputTokens": 22912,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 367,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "commands": 7,
+      "visible_output_bytes": 12299,
+      "uncached_input": 13942,
+      "elapsed_seconds": 94.01227162504802,
+      "independent_replay": [
+        {
+          "checker": "check.py",
+          "exit": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": ""
+        },
+        {
+          "checker": "check_independence.py",
+          "exit": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": ""
+        },
+        {
+          "checker": "supplemental.py",
+          "exit": 0,
+          "stdout": "{'additional_semantic_cases_passed': 35, 'protected_files_unchanged': True, 'declared_checks_executed': False, 'proposal_sha256': '860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810'}\n",
+          "stderr": ""
+        }
+      ],
+      "event_hashes": {
+        "events_sha256": "677c40a513d1805d21203dba58683de541d6d3f9a37f7a81b0a773d51e62a178",
+        "native_events_sha256": "4354679c3c147e01e07118146da8dbcc053cd28647b2cdaa4455e64d36f77778"
+      }
+    }
+  },
+  "savings_percent": {
+    "input_tokens": 29.81015472849673,
+    "output_tokens": 20.92457420924574,
+    "uncached_input": -13.089944053937753
+  },
+  "qualification": "Finite checks pass, general intelligence/agentic parity NOT_ESTABLISHED; no promotion"
+}
