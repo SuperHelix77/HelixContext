@@ -1,0 +1,169 @@
+{
+  "schema": "helix.fixed_prefix_cost_bound.v1",
+  "rows": [
+    {
+      "arm": "baseline_large",
+      "trace_sha256": "53b0ddc0c82191d1973548b9587d15ddb23f1a12f893c5508ac57191873f2075",
+      "reported_calls": [
+        {
+          "totalTokens": 19543,
+          "inputTokens": 19468,
+          "cachedInputTokens": 6016,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 75,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 38354,
+          "inputTokens": 38349,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 5,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "total": {
+        "totalTokens": 57897,
+        "inputTokens": 57817,
+        "cachedInputTokens": 25344,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 80,
+        "reasoningOutputTokens": 0
+      },
+      "fixed_first_call_max_input_saving": 0.6632824255841707,
+      "fixed_first_call_max_output_saving": 0.0625
+    },
+    {
+      "arm": "hook_observe_large",
+      "trace_sha256": "d00717c6e417424c62529ede27581896019976d423505ccb28e29aa8a022864f",
+      "reported_calls": [
+        {
+          "totalTokens": 19590,
+          "inputTokens": 19468,
+          "cachedInputTokens": 6016,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 122,
+          "reasoningOutputTokens": 56
+        },
+        {
+          "totalTokens": 21518,
+          "inputTokens": 21513,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 5,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "total": {
+        "totalTokens": 41108,
+        "inputTokens": 40981,
+        "cachedInputTokens": 25344,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 127,
+        "reasoningOutputTokens": 56
+      },
+      "fixed_first_call_max_input_saving": 0.5249505868573241,
+      "fixed_first_call_max_output_saving": 0.03937007874015752
+    },
+    {
+      "arm": "hook_compact_replace_large",
+      "trace_sha256": "66a010b3d2e3c37ac117773e2fd6d5b295673dd6ea10e0dfd4b08eb90e0f0b94",
+      "reported_calls": [
+        {
+          "totalTokens": 19571,
+          "inputTokens": 19468,
+          "cachedInputTokens": 10368,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 103,
+          "reasoningOutputTokens": 38
+        },
+        {
+          "totalTokens": 38202,
+          "inputTokens": 38197,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 5,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "total": {
+        "totalTokens": 57773,
+        "inputTokens": 57665,
+        "cachedInputTokens": 29696,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 108,
+        "reasoningOutputTokens": 38
+      },
+      "fixed_first_call_max_input_saving": 0.6623948669036677,
+      "fixed_first_call_max_output_saving": 0.04629629629629628
+    },
+    {
+      "arm": "hook_compact_allow_large",
+      "trace_sha256": "36f0fa87ef284beff9cb065b88f3ce43e408473e605cadb53c4d80f5bc543cb5",
+      "reported_calls": [
+        {
+          "totalTokens": 19586,
+          "inputTokens": 19493,
+          "cachedInputTokens": 17280,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 93,
+          "reasoningOutputTokens": 23
+        },
+        {
+          "totalTokens": 21514,
+          "inputTokens": 21509,
+          "cachedInputTokens": 10368,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 5,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "total": {
+        "totalTokens": 41100,
+        "inputTokens": 41002,
+        "cachedInputTokens": 27648,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 98,
+        "reasoningOutputTokens": 23
+      },
+      "fixed_first_call_max_input_saving": 0.5245841666260183,
+      "fixed_first_call_max_output_saving": 0.05102040816326525
+    },
+    {
+      "arm": "hook_compact_fail_large",
+      "trace_sha256": "70c9c751bcf5c5067e4b4f5fe21f389e1e20c6bf31bb51fca10d1bc2832e23d4",
+      "reported_calls": [
+        {
+          "totalTokens": 19547,
+          "inputTokens": 19468,
+          "cachedInputTokens": 0,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 79,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21475,
+          "inputTokens": 21470,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 5,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "total": {
+        "totalTokens": 41022,
+        "inputTokens": 40938,
+        "cachedInputTokens": 19328,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 84,
+        "reasoningOutputTokens": 0
+      },
+      "fixed_first_call_max_input_saving": 0.5244516097513312,
+      "fixed_first_call_max_output_saving": 0.059523809523809534
+    }
+  ],
+  "new_model_calls": 0,
+  "assumption": "Candidate leaves first native call and its cost unchanged; every subsequent token is optimistically removed with zero additional overhead.",
+  "claim_scope": "Conditional limit for these recorded runs and that restricted intervention class only; not a limit on redesigned first calls or long-horizon Helix.",
+  "observability": "Reported per-call usage is verified against totals; context content and precise component attribution remain unobserved."
+}
