@@ -1,0 +1,33 @@
+{
+  "classification": "Offline completion ingestion; not native token benchmark",
+  "events": 49,
+  "exact_recovery": true,
+  "native_calls": 0,
+  "append_seconds": 0.15253595798276365,
+  "payload_bytes": 17236,
+  "ingest_object_io": {
+    "object_bytes_read": 1403484,
+    "object_bytes_written": 28604,
+    "object_bytes_hashed": 1432088,
+    "object_read_operations": 4802,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "total_object_io": {
+    "object_bytes_read": 1432088,
+    "object_bytes_written": 28604,
+    "object_bytes_hashed": 1460692,
+    "object_read_operations": 4900,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "stored_file_bytes": 94140,
+  "root": "82fdf459688d36f82c5d7cd5d7fb3d726ff2ed39f91cc5ee299f0c45ba89f6b0",
+  "limits": [
+    "Logical CAS I/O only; SQLite I/O and physical writes unmeasured",
+    "No model/tool routing activated",
+    "Not physical crash/concurrency certification"
+  ]
+}
