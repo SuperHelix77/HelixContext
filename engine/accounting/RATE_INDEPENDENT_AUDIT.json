@@ -1,0 +1,203 @@
+{
+  "schema": "helix.rate_independent_cost_audit.v1",
+  "sources": [
+    {
+      "path": "engine/native-pilots/pilot-v2/results.json",
+      "sha256": "126e5e752b3d5584912f101ad1ec17c9307e4e76b88c3082fabe3029ff6363a1"
+    },
+    {
+      "path": "engine/render-pilot/results.json",
+      "sha256": "ba51cbd7a8a034b76f26cedcc0516a4ede4618f6c2b4a0a030a7547f5d4d3cbd"
+    }
+  ],
+  "equation": "model benefit = delta_uncached*p_uncached + delta_cached*p_cached + delta_output*p_output; total benefit subtracts incremental non-model overhead",
+  "rate_scope": "Nonnegative per-token rates; same model and rates across each pair; no price assumptions. Cached input and reasoning output are subsets, not additive usage.",
+  "limits": [
+    "Two diagnostic tasks, one paired episode per model per task; no confidence intervals or general capability parity.",
+    "The model-only ceiling excludes non-model costs and is not a billing estimate or full-system bound.",
+    "Storage, preprocessing CPU, parent coordination, recovery outside native receipts, and development amortization remain incomplete; missing is not zero.",
+    "No additional model calls incurred by this arithmetic audit."
+  ],
+  "comparisons": [
+    {
+      "source": "engine/native-pilots/pilot-v2/results.json",
+      "model": "gpt-5.6-luna",
+      "off": {
+        "uncached_input": 12138,
+        "cached_input": 44032,
+        "output": 724
+      },
+      "on": {
+        "uncached_input": 14978,
+        "cached_input": 45056,
+        "output": 1275
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": -2840,
+        "cached_input": -1024,
+        "output": -551
+      },
+      "category_savings": {
+        "uncached_input": -0.2339759433185038,
+        "cached_input": -0.023255813953488413,
+        "output": -0.761049723756906
+      },
+      "optimistic_model_only_saving_ceiling": -0.023255813953488413,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": true,
+      "elapsed_seconds_delta_on_minus_off": 9.571999999999996,
+      "gross_input_saving": -0.0687911696635215,
+      "output_saving": -0.761049723756906
+    },
+    {
+      "source": "engine/native-pilots/pilot-v2/results.json",
+      "model": "gpt-5.6-sol",
+      "off": {
+        "uncached_input": 11330,
+        "cached_input": 51072,
+        "output": 611
+      },
+      "on": {
+        "uncached_input": 8931,
+        "cached_input": 19840,
+        "output": 496
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": 2399,
+        "cached_input": 31232,
+        "output": 115
+      },
+      "category_savings": {
+        "uncached_input": 0.21173874669020298,
+        "cached_input": 0.6115288220551378,
+        "output": 0.18821603927986907
+      },
+      "optimistic_model_only_saving_ceiling": 0.6115288220551378,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": false,
+      "elapsed_seconds_delta_on_minus_off": -11.858000000000004,
+      "gross_input_saving": 0.5389410595814237,
+      "output_saving": 0.18821603927986907
+    },
+    {
+      "source": "engine/native-pilots/pilot-v2/results.json",
+      "model": "gpt-6-astra",
+      "off": {
+        "uncached_input": 5246,
+        "cached_input": 39040,
+        "output": 213
+      },
+      "on": {
+        "uncached_input": 4975,
+        "cached_input": 25216,
+        "output": 141
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": 271,
+        "cached_input": 13824,
+        "output": 72
+      },
+      "category_savings": {
+        "uncached_input": 0.05165840640487995,
+        "cached_input": 0.35409836065573774,
+        "output": 0.3380281690140845
+      },
+      "optimistic_model_only_saving_ceiling": 0.35409836065573774,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": false,
+      "elapsed_seconds_delta_on_minus_off": -2.9819999999999993,
+      "gross_input_saving": 0.3182721401797408,
+      "output_saving": 0.3380281690140845
+    },
+    {
+      "source": "engine/render-pilot/results.json",
+      "model": "gpt-5.6-luna",
+      "off": {
+        "uncached_input": 34060,
+        "cached_input": 263168,
+        "output": 6410
+      },
+      "on": {
+        "uncached_input": 25582,
+        "cached_input": 192768,
+        "output": 4620
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": 8478,
+        "cached_input": 70400,
+        "output": 1790
+      },
+      "category_savings": {
+        "uncached_input": 0.24891368173810924,
+        "cached_input": 0.2675097276264592,
+        "output": 0.2792511700468019
+      },
+      "optimistic_model_only_saving_ceiling": 0.2792511700468019,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": false,
+      "elapsed_seconds_delta_on_minus_off": -34.831,
+      "gross_input_saving": 0.26537876646883873,
+      "output_saving": 0.2792511700468019
+    },
+    {
+      "source": "engine/render-pilot/results.json",
+      "model": "gpt-5.6-sol",
+      "off": {
+        "uncached_input": 30354,
+        "cached_input": 28032,
+        "output": 1636
+      },
+      "on": {
+        "uncached_input": 32608,
+        "cached_input": 81152,
+        "output": 1857
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": -2254,
+        "cached_input": -53120,
+        "output": -221
+      },
+      "category_savings": {
+        "uncached_input": -0.07425709955854254,
+        "cached_input": -1.8949771689497719,
+        "output": -0.1350855745721271
+      },
+      "optimistic_model_only_saving_ceiling": -0.07425709955854254,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": true,
+      "elapsed_seconds_delta_on_minus_off": 14.828999999999994,
+      "gross_input_saving": -0.9484122906176138,
+      "output_saving": -0.1350855745721271
+    },
+    {
+      "source": "engine/render-pilot/results.json",
+      "model": "gpt-6-astra",
+      "off": {
+        "uncached_input": 19006,
+        "cached_input": 24704,
+        "output": 673
+      },
+      "on": {
+        "uncached_input": 13711,
+        "cached_input": 68992,
+        "output": 850
+      },
+      "model_cost_benefit_coefficients": {
+        "uncached_input": 5295,
+        "cached_input": -44288,
+        "output": -177
+      },
+      "category_savings": {
+        "uncached_input": 0.27859623276859935,
+        "cached_input": -1.7927461139896375,
+        "output": -0.263001485884101
+      },
+      "optimistic_model_only_saving_ceiling": 0.27859623276859935,
+      "eighty_percent_model_cost_possible_at_any_nonnegative_rates": false,
+      "on_dominated_for_all_positive_token_rates": false,
+      "elapsed_seconds_delta_on_minus_off": 9.901000000000003,
+      "gross_input_saving": -0.892084191260581,
+      "output_saving": -0.263001485884101
+    }
+  ]
+}
