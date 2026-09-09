@@ -1,0 +1,262 @@
+{
+  "assertions": {
+    "all_four_contract_mutations_rejected": true,
+    "no_apply_on_stale": true,
+    "stale_contract_mismatch": true,
+    "valid_mechanical_pass": true,
+    "valid_semantic_pass": true,
+    "wrong_mechanical_pass": true,
+    "wrong_receipt_binds_real_wrong_source": true,
+    "wrong_semantic_fail": true
+  },
+  "classification": "ZERO_CALL_CHECKER_DISCRIMINATION_ONLY",
+  "engine_changes": 0,
+  "executions": {
+    "valid": {
+      "mechanical": {
+        "argv": [
+          "python3",
+          "mechanical_checker.py",
+          "proposed_valid.py"
+        ],
+        "exit_code": 0,
+        "logs": {
+          "stderr": {
+            "bytes": 0,
+            "path": "valid-mechanical.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout": {
+            "bytes": 57,
+            "path": "valid-mechanical.stdout",
+            "sha256": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64"
+          }
+        },
+        "seconds": 0.02760791697073728
+      },
+      "semantic": {
+        "argv": [
+          "python3",
+          "semantic_checker.py",
+          "proposed_valid.py"
+        ],
+        "exit_code": 0,
+        "logs": {
+          "stderr": {
+            "bytes": 0,
+            "path": "valid-semantic.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout": {
+            "bytes": 37,
+            "path": "valid-semantic.stdout",
+            "sha256": "92367d1d1e7ac363005ab1d2b5c24f259a7758da55c9ac2007d6d69c83cd8b6f"
+          }
+        },
+        "seconds": 0.02485250000609085
+      }
+    },
+    "wrong": {
+      "mechanical": {
+        "argv": [
+          "python3",
+          "mechanical_checker.py",
+          "proposed_wrong.py"
+        ],
+        "exit_code": 0,
+        "logs": {
+          "stderr": {
+            "bytes": 0,
+            "path": "wrong-mechanical.stderr",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          "stdout": {
+            "bytes": 57,
+            "path": "wrong-mechanical.stdout",
+            "sha256": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64"
+          }
+        },
+        "seconds": 0.023779291950631887
+      },
+      "semantic": {
+        "argv": [
+          "python3",
+          "semantic_checker.py",
+          "proposed_wrong.py"
+        ],
+        "exit_code": 1,
+        "logs": {
+          "stderr": {
+            "bytes": 349,
+            "path": "wrong-semantic.stderr",
+            "sha256": "89e8291885ba1f6733117de274d3383853c71343853e8f298e84b15fe8aa66ea"
+          },
+          "stdout": {
+            "bytes": 0,
+            "path": "wrong-semantic.stdout",
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          }
+        },
+        "seconds": 0.035548790998291224
+      }
+    }
+  },
+  "files": {
+    "CONTRACT.md": {
+      "bytes": 451,
+      "sha256": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2"
+    },
+    "cursor_corruption.stderr": {
+      "bytes": 308,
+      "sha256": "ec9164048cbb7ac0da5985b667617f8562327d98cd6200ac65116729c248d446"
+    },
+    "cursor_corruption.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "double_consumption.stderr": {
+      "bytes": 349,
+      "sha256": "89e8291885ba1f6733117de274d3383853c71343853e8f298e84b15fe8aa66ea"
+    },
+    "double_consumption.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "mechanical_checker.py": {
+      "bytes": 422,
+      "sha256": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1"
+    },
+    "mutation-cursor_corruption.py": {
+      "bytes": 394,
+      "sha256": "2b48f564325e1f77d780aee19cbc9dec4e16a2c9e57d73b23b71b88dfe646859"
+    },
+    "mutation-double_consumption.py": {
+      "bytes": 426,
+      "sha256": "92125abbc314a27c2207e4a657e96fc3930bb90837c79eea6fb9b991d2cbdb0b"
+    },
+    "mutation-replace_list.py": {
+      "bytes": 412,
+      "sha256": "4f0f348db7ca479e8b25f4b3a20719e592876b6fdc6a434d3676cc48d41d2327"
+    },
+    "mutation-reverse_order.py": {
+      "bytes": 415,
+      "sha256": "222fcd3e94915916b46fa149a08b9ddc75204fb1490729737598985cfeee50b5"
+    },
+    "old-CONTRACT.md": {
+      "bytes": 441,
+      "sha256": "438625a7c22f54bf7e022830fe008f47e3f5376d51d9e32e47da864b6dbb0655"
+    },
+    "proposed_valid.py": {
+      "bytes": 405,
+      "sha256": "2009fc5089625039414a50c7a79173f0786959605f23de90950f495925b4f561"
+    },
+    "proposed_wrong.py": {
+      "bytes": 409,
+      "sha256": "1ac3821286c9e4257cf87cad9331d426b38c894728eee81f1d73e9ce0be69678"
+    },
+    "replace_list.stderr": {
+      "bytes": 309,
+      "sha256": "28711d4dd66f05c625afa9745eeccf34facc12a82dc650d1fc3e365ec49231fb"
+    },
+    "replace_list.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "reverse_order.stderr": {
+      "bytes": 288,
+      "sha256": "524fb4ab225c9ae48ca96c57c7115bfe1b9162de243ed4da1540c86caa80a4e1"
+    },
+    "reverse_order.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "semantic_checker.py": {
+      "bytes": 1101,
+      "sha256": "881fd0677c828c239ae496e32b7bcd12cd4a822574ad19fbc70a7f1005925609"
+    },
+    "stale-receipt.json": {
+      "bytes": 1406,
+      "sha256": "3fbb808164e02d7d56b0f293dea369981f574ddd18c60693483442eb679bc57a"
+    },
+    "valid-mechanical.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "valid-mechanical.stdout": {
+      "bytes": 57,
+      "sha256": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64"
+    },
+    "valid-receipt.json": {
+      "bytes": 1406,
+      "sha256": "4744a191feb4090768673381ec6882051202a8d4f9b1684faa1ec2f57ec382db"
+    },
+    "valid-semantic.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "valid-semantic.stdout": {
+      "bytes": 37,
+      "sha256": "92367d1d1e7ac363005ab1d2b5c24f259a7758da55c9ac2007d6d69c83cd8b6f"
+    },
+    "wrong-mechanical.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "wrong-mechanical.stdout": {
+      "bytes": 57,
+      "sha256": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64"
+    },
+    "wrong-receipt.json": {
+      "bytes": 1407,
+      "sha256": "d880637355426bd91bb6b1d699ccbfa43f127940bae7e12089add230c53aa426"
+    },
+    "wrong-semantic.stderr": {
+      "bytes": 349,
+      "sha256": "89e8291885ba1f6733117de274d3383853c71343853e8f298e84b15fe8aa66ea"
+    },
+    "wrong-semantic.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "limitations": [
+    "no production transactionality or TOCTOU claim",
+    "no model exposed to fixtures",
+    "finite semantic checks, not proof of all valid Python behavior",
+    "development fixture derived from public prior failure family, not holdout"
+  ],
+  "model_parity": "UNTESTED",
+  "mutation_results": {
+    "cursor_corruption": {
+      "exit_code": 1,
+      "seconds": 0.035165750014130026
+    },
+    "double_consumption": {
+      "exit_code": 1,
+      "seconds": 0.031895457999780774
+    },
+    "replace_list": {
+      "exit_code": 1,
+      "seconds": 0.03401058301096782
+    },
+    "reverse_order": {
+      "exit_code": 1,
+      "seconds": 0.03378662496106699
+    }
+  },
+  "native_calls": 0,
+  "physical_io_bytes": null,
+  "publication_note": "Command paths normalized for publication; exact original audit and separate stdout/stderr preserved locally. Not model evidence.",
+  "python": "3.14.0",
+  "schema": "helix.research.fixture-audit.v1",
+  "script_sha256": "07dfcc245cfd8e4a362e046fe26b6b75fd03ad664862a5ce7588fe33d7029164",
+  "seconds": 0.2490700000198558,
+  "source_roots": {
+    "CONTRACT.md": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+    "mechanical_checker.py": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1",
+    "proposed_valid.py": "2009fc5089625039414a50c7a79173f0786959605f23de90950f495925b4f561",
+    "proposed_wrong.py": "1ac3821286c9e4257cf87cad9331d426b38c894728eee81f1d73e9ce0be69678",
+    "semantic_checker.py": "881fd0677c828c239ae496e32b7bcd12cd4a822574ad19fbc70a7f1005925609"
+  },
+  "token_savings": "UNMEASURED"
+}
