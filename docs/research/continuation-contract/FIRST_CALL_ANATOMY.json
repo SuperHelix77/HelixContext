@@ -1,0 +1,137 @@
+{
+  "classification": "OBSERVED native counters, text proxies and UNKNOWN attribution; no native calls",
+  "arms": {
+    "off": {
+      "native_initial_input": 19005,
+      "native_initial_cached_subset": 11264,
+      "native_initial_uncached": 7741,
+      "native_total_input": 130422,
+      "initial_thread_turn_count": 0,
+      "cli_version": "0.153.4",
+      "first_text": {
+        "utf8_bytes": 3575,
+        "o200k_proxy_tokens": 694
+      },
+      "text_regions": {
+        "task_and_orchestration": {
+          "utf8_bytes": 982,
+          "o200k_proxy_tokens": 179
+        },
+        "prepared_evidence": {
+          "utf8_bytes": 0,
+          "o200k_proxy_tokens": 0
+        },
+        "contract": {
+          "utf8_bytes": 2190,
+          "o200k_proxy_tokens": 425
+        },
+        "proposed_module": {
+          "utf8_bytes": 360,
+          "o200k_proxy_tokens": 79
+        }
+      },
+      "attached_skill_sources": [],
+      "recorded_instruction_sources": [
+        {
+          "path": "/Users/mert/.codex/AGENTS.md",
+          "current_sha256": "8aeab698b7ef733520f68349117df6eebf95e065e7fb14b1f2c5ec75fe5835c1",
+          "current_mtime_ns": 1788950299957164004,
+          "utf8_bytes": 2305,
+          "o200k_proxy_tokens": 465,
+          "limit": "Recorded path; current bytes are not a frozen historical instruction-body receipt."
+        }
+      ],
+      "unknown_native_terms": [
+        "platform/system/developer serialization",
+        "built-in and MCP tool-schema serialization",
+        "skill catalogue injection and formatting",
+        "environment/context wrappers",
+        "tokenizer/boundary differences"
+      ],
+      "caller_prior_conversation_turns": 0,
+      "provenance": {
+        "thread-start.json": "f6f365e0071521478b613bd314f07af68a0628ff7f85583e70ccd3133c1bf38a",
+        "turn-1-input.json": "cbc484f48b456f1d2835a5089a89c80b205b00fcc1fcdadb26ff6cd776c5a012",
+        "requests.jsonl": "7aa749ae63d5a6ef885af8829410fa51744dac38dde781c20562a9b15b8fbd2c",
+        "native-events.jsonl": "4354679c3c147e01e07118146da8dbcc053cd28647b2cdaa4455e64d36f77778"
+      }
+    },
+    "on": {
+      "native_initial_input": 19560,
+      "native_initial_cached_subset": 11264,
+      "native_initial_uncached": 8296,
+      "native_total_input": 91543,
+      "initial_thread_turn_count": 0,
+      "cli_version": "0.153.4",
+      "first_text": {
+        "utf8_bytes": 4044,
+        "o200k_proxy_tokens": 854
+      },
+      "text_regions": {
+        "task_and_orchestration": {
+          "utf8_bytes": 883,
+          "o200k_proxy_tokens": 156
+        },
+        "prepared_evidence": {
+          "utf8_bytes": 548,
+          "o200k_proxy_tokens": 176
+        },
+        "contract": {
+          "utf8_bytes": 2190,
+          "o200k_proxy_tokens": 425
+        },
+        "proposed_module": {
+          "utf8_bytes": 360,
+          "o200k_proxy_tokens": 79
+        }
+      },
+      "attached_skill_sources": [
+        {
+          "path": "/Users/mert/Documents/ChatGPT/Helix/research/native-prepared-pair-v1-20260909/candidate/on/.agents/skills/helixcontext/SKILL.md",
+          "sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+          "utf8_bytes": 1819,
+          "o200k_proxy_tokens": 317
+        }
+      ],
+      "recorded_instruction_sources": [
+        {
+          "path": "/Users/mert/.codex/AGENTS.md",
+          "current_sha256": "8aeab698b7ef733520f68349117df6eebf95e065e7fb14b1f2c5ec75fe5835c1",
+          "current_mtime_ns": 1788950299957164004,
+          "utf8_bytes": 2305,
+          "o200k_proxy_tokens": 465,
+          "limit": "Recorded path; current bytes are not a frozen historical instruction-body receipt."
+        }
+      ],
+      "unknown_native_terms": [
+        "platform/system/developer serialization",
+        "built-in and MCP tool-schema serialization",
+        "skill catalogue injection and formatting",
+        "environment/context wrappers",
+        "tokenizer/boundary differences"
+      ],
+      "caller_prior_conversation_turns": 0,
+      "provenance": {
+        "thread-start.json": "c0af3b2fc57551edc0f26c3e0f4ccda3dfadf93c553ea25efe50eb43b4d24e58",
+        "turn-1-input.json": "593c5f776265d74e2148c3f01230d9955edf133ea013ad5be639d5ee0294503e",
+        "requests.jsonl": "8ae35271693e974108724fbb3effeed3d82cfa2135521609487b767c30d611f4",
+        "native-events.jsonl": "cca4a28bee87f6d79339296c0c1096f753640654b57e0abc03141b50c73fc018"
+      },
+      "available_skill_catalog": {
+        "count": 27,
+        "utf8_bytes": 12758,
+        "o200k_proxy_tokens": 3138,
+        "limit": "Availability API rendering proxy; not evidence of injection or additive native attribution."
+      }
+    }
+  },
+  "conditional_geometry": {
+    "control_input": 130422,
+    "target_80_budget": 26084.4,
+    "assumed_unavoidable_first_charge": 19560,
+    "maximum_input_saving_if_that_charge_is_unavoidable_and_everything_else_free": 85.0025302479643,
+    "two_equal_first_charges": 39120,
+    "limit": "Conditional sensitivity only; irreducibility is UNKNOWN. No empirical lower bound established."
+  },
+  "accounting_rule": "Proxy regions may have boundary differences and overlapping runtime representations. No additive causal decomposition or platform residual is claimed."
+}
