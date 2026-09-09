@@ -1,0 +1,80 @@
+{
+  "scope": "Two local subprocess wrapper qualifications using prior fixture; no native model calls or hook integration; byte ratios are not token savings",
+  "engine_sha256": "9a91b52fa8f74bc2337e03e98ed899c6214d44d938f1f95980507977ee09d84b",
+  "raw_fixture_sha256": "b564919e7e3419d6b2ab423f3adcacfe8b79fbb656f02aa27fc422bd0fafb36b",
+  "rows": [
+    {
+      "requested_exit": 0,
+      "wrapper_exit": 0,
+      "packet_exit": 0,
+      "wrapper_stdout_bytes": 2002,
+      "wrapper_stderr_bytes": 0,
+      "raw_stdout_bytes": 9200129,
+      "raw_stdout_sha256": "b564919e7e3419d6b2ab423f3adcacfe8b79fbb656f02aa27fc422bd0fafb36b",
+      "packet_sha256": "ddcfcadbaa12a19fbff0d65c8bdc73af5b5f0e511cff4954d0d1ebe495163e7a",
+      "exact_archive_equal": true,
+      "middle_line": 40002,
+      "middle_retrieval_exact": true,
+      "capture_wall_seconds": 0.17625525000039488,
+      "capture_io": {
+        "object_bytes_read": 9201085,
+        "object_bytes_written": 9201085,
+        "object_bytes_hashed": 18402170,
+        "object_read_operations": 3,
+        "staging_bytes_read": 9200129,
+        "staging_bytes_written": 9200594,
+        "projection_bytes_parsed": 9200129
+      },
+      "verification_and_retrieval_io": {
+        "object_bytes_read": 27603255,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 27603255,
+        "object_read_operations": 7,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "retained_file_bytes": 18401679
+    },
+    {
+      "requested_exit": 7,
+      "wrapper_exit": 7,
+      "packet_exit": 7,
+      "wrapper_stdout_bytes": 2002,
+      "wrapper_stderr_bytes": 0,
+      "raw_stdout_bytes": 9200129,
+      "raw_stdout_sha256": "b564919e7e3419d6b2ab423f3adcacfe8b79fbb656f02aa27fc422bd0fafb36b",
+      "packet_sha256": "cf3166ddd5509bb1a73570100ad0ffd391741b424f6e6c3c5976e4c4611b0083",
+      "exact_archive_equal": true,
+      "middle_line": 40002,
+      "middle_retrieval_exact": true,
+      "capture_wall_seconds": 0.1763267909991555,
+      "capture_io": {
+        "object_bytes_read": 9201085,
+        "object_bytes_written": 9201085,
+        "object_bytes_hashed": 18402170,
+        "object_read_operations": 3,
+        "staging_bytes_read": 9200129,
+        "staging_bytes_written": 9200594,
+        "projection_bytes_parsed": 9200129
+      },
+      "verification_and_retrieval_io": {
+        "object_bytes_read": 27603255,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 27603255,
+        "object_read_operations": 7,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "retained_file_bytes": 18401679
+    }
+  ],
+  "limits": [
+    "Whole-source verification and retrieval read amplification remains in counters.",
+    "Store metrics omit metadata, output hashing, physical disk and some CPU costs.",
+    "Retained file bytes are logical byte lengths, not allocated disk blocks.",
+    "Partial projection does not establish semantic sufficiency.",
+    "The native model-facing wrapper workflow and its setup, fallback, Q/A/W and token costs remain unmeasured."
+  ]
+}
