@@ -1,0 +1,14 @@
+{
+  "scope": "Native app-server configuration probe only, no turn/start reached, no model inference launched",
+  "attempts": 2,
+  "observer_sha256": "5c8682b2c7addd1182e98853e627fb16c21c45ecd9d8b5cf3b4ca0268fe630a0",
+  "handler_source": "sessionFlags",
+  "original_trust_status": "untrusted",
+  "trust_status_with_exact_session_hash": "untrusted",
+  "definition_hash_stable": true,
+  "global_config_modified": false,
+  "blanket_trust_bypass_used": false,
+  "captured_native_tool_envelopes": 0,
+  "conclusion": "Session-provided review hash did not establish trusted status on this runtime. This does not prove other supported review flows fail. A normally reviewed stable hook configuration is needed before native interception tests.",
+  "no_loss_and_savings": "Not evaluated by this configuration probe"
+}
