@@ -1,0 +1,152 @@
+{
+  "state": "DEVELOPMENT_RECOVERY_COMPLETE",
+  "qualification": "Frozen V3 schema FAIL; subsequent exact-ID adapter recovery PASS on known fixture. Post-hoc development recovery, not original-policy success, independent pair, production admission or80/80.",
+  "manifest_sha256": "6c037c7648a66b60eea973699c092b7370bc63bf44a27aade8cf1ab66931f435",
+  "rows": {
+    "off": {
+      "usage": {
+        "input_tokens": 1082542,
+        "output_tokens": 641,
+        "cached_input_tokens": 1035776,
+        "reasoning_output_tokens": 169,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Rollback is not authorized with exactly one violet approver. E01 set the minimum at 2; E17 changed only the approver_group to violet; E31 was an untrusted vendor note and did not amend the policy.\"}",
+      "acks": [
+        "ACK E01",
+        "ACK E02",
+        "ACK E03",
+        "ACK E04",
+        "ACK E05",
+        "ACK E06",
+        "ACK E07",
+        "ACK E08",
+        "ACK E09",
+        "ACK E10",
+        "ACK E11",
+        "ACK E12",
+        "ACK E13",
+        "ACK E14",
+        "ACK E15",
+        "ACK E16",
+        "ACK E17",
+        "ACK E18",
+        "ACK E19",
+        "ACK E20",
+        "ACK E21",
+        "ACK E22",
+        "ACK E23",
+        "ACK E24",
+        "ACK E25",
+        "ACK E26",
+        "ACK E27",
+        "ACK E28",
+        "ACK E29",
+        "ACK E30",
+        "ACK E31",
+        "ACK E32",
+        "ACK E33",
+        "ACK E34",
+        "ACK E35",
+        "ACK E36",
+        "ACK E37",
+        "ACK E38",
+        "ACK E39",
+        "ACK E40",
+        "ACK E41",
+        "ACK E42",
+        "ACK E43",
+        "ACK E44",
+        "ACK E45",
+        "ACK E46",
+        "ACK E47",
+        "ACK E48",
+        "ACK E49"
+      ],
+      "caller": {
+        "logical_written_bytes": 35388,
+        "logical_read_bytes": 18069,
+        "prep_seconds": 0.0,
+        "ack_owner": "model"
+      },
+      "elapsed_seconds": 118.1037709999946
+    },
+    "on": {
+      "usage": {
+        "input_tokens": 22829,
+        "output_tokens": 228,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 188,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\": false, \"minimum_distinct_approvers\": 2, \"approver_group\": \"violet\", \"recovery_nonce\": \"6LZFFYRJQB62\", \"latency_threshold_ms\": \"0.125\", \"accounting_sequence\": \"9007199254740993\", \"evidence_turns\": [1, 17, 31], \"explanation\": \"The requested single approver does not meet the policy minimum of 2 distinct approvers. The applicable group is violet; rejected records do not amend this requirement.\"}",
+      "original_semantic_decision": {
+        "authorized": false,
+        "policy": "E01",
+        "amendments": [
+          "E17"
+        ],
+        "rejected": [
+          "E31"
+        ],
+        "reason": "INSUFFICIENT_APPROVERS"
+      },
+      "resolved_decision": {
+        "authorized": false,
+        "policy": 1,
+        "amendments": [
+          17
+        ],
+        "rejected": [
+          31
+        ],
+        "reason": "INSUFFICIENT_APPROVERS"
+      }
+    }
+  },
+  "savings_percent": {
+    "input_tokens": 97.89116727110819,
+    "output_tokens": 64.43057722308893,
+    "uncached_input": 72.53346448274387
+  },
+  "audit": {
+    "original_failure": {
+      "state": "STOPPED_PENDING_AUDIT",
+      "error": "ValueError('invalid policy')"
+    },
+    "raw_native_sha256": "039bb0d16eb081565ee352f07ebff603993d537c921758f153d51412b9c94a78",
+    "native_turns": 1,
+    "native_segments": 1,
+    "native_hook_events": 0,
+    "uncached_input": 12845,
+    "recovery_semantic_checks": true,
+    "recovery_seconds": 0.00038783298805356026,
+    "recovery_logical_read_bytes": 18118,
+    "raw_receipt_storage_bytes": 173139,
+    "source_history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+    "adapter_sha256": "1951e741aa1d7e6999e9073c5a124cb5d018e7026b5b55be56d88b045a885991",
+    "80_percent_output_budget": 128.20000000000002,
+    "candidate_attempts_total_usage": {
+      "input_tokens": 115279,
+      "output_tokens": 1762,
+      "cached_input_tokens": 74496,
+      "reasoning_output_tokens": 993,
+      "cache_write_input_tokens": 0
+    },
+    "all_research_usage": {
+      "input_tokens": 1197821,
+      "output_tokens": 2403,
+      "cached_input_tokens": 1110272,
+      "reasoning_output_tokens": 1162,
+      "cache_write_input_tokens": 0
+    }
+  },
+  "limits": [
+    "Reused control; two post-result candidate adaptations.",
+    "Engine resolves exact identities only; no reinterpretation of source roles, reason or authorization.",
+    "Recovery was not pre-registered; original failed trace retained.",
+    "Caller full-path metrics were not persisted by failing driver; recovery-only byte/time counts are partial, not total effective-cost accounting.",
+    "Reported reasoning tokens are included in output, never discounted; no universal floor or hidden reasoning claims.",
+    "Known W50 receipt-only fixture, not broad coding or intelligence/workflow qualification."
+  ]
+}
