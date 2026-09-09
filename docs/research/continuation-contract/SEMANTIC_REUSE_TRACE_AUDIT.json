@@ -1,0 +1,759 @@
+{
+  "classification": "OBSERVED exact-request necessary-condition census; not complete semantic equivalence search",
+  "native_calls": 0,
+  "terminal_streams": 31,
+  "turn_requests": 81,
+  "multi_turn_threads": 2,
+  "within_thread_exact_repeats": [],
+  "cross_thread_repeated_signatures": 0,
+  "streams": [
+    {
+      "path": "astra-caller-patch-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "f33efa91c9288f002cd5fa4ce5f07f5a3bfcf0846c695b60956755347a5ed68d",
+      "status_sha256": "1752cc7a9f5889548d71ba11a11a464345712888994b8e4ee21c69d5aa5d7c4e",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "b5deb6b16bad196a87169f05b16f819424533f0c9da40d57d99bb939be5420d6",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "486143dc8cbfe68ae185db4e22533273af09f1d7dca488ec2f5e7e44f941f33d",
+      "status_sha256": "0e517c9d85145ea0be66ed38be059e36ad5f8033b32a8a5332781ae6bc39d73d",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "161b2df0a4fc901c8a2df7769299c6a8aa180da3a88fdd80268bacf955912de9",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-v2-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "899e66fdbf94e93a658f79904586646f1759083fc20634254d40e2406d9c495b",
+      "status_sha256": "1b8680a1f4d799559bfe493ff3f031e570bbe4e295545f39a7fa00af70238b8d",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "cb11d262e5f2e775872d731a3c86cdfa4ead7f02f1f9e435453c820d6b22ba64",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-caller-patch-v2-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "fe5ceaf529ab76d8c919cba787839d3a5f20e1fa0435414cbf134f63357b727f",
+      "status_sha256": "e4827e5e9ffd06b6bfd762c6d9c3cee279a35858d7c646d015289e746ca3f5d4",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "d6666c5c9f24aeafd067d71c6e324ba6fd405d697a33a263952f39eafa6aae42",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-patch-pair-20260909/receipts/off/requests.jsonl",
+      "request_sha256": "042271e78a67a1668f98af0b2b280e85282c5ea0e9a905db73fbea4536eaa3a3",
+      "status_sha256": "a0be80763f97e8f5b0f24cf4f4e261dc333e92acc62697869ceb6fc2563d3fdd",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "955bfe75cc2659fa6d76fcf373bcdd87e437ef1973403ad5f8ade34eab9be834",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-patch-pair-20260909/receipts/on/requests.jsonl",
+      "request_sha256": "4595fd599abd902a82c383c99c9a747c02dd74f07e47bbfe81a74c87278e7eb9",
+      "status_sha256": "b3dbd221b7fa977c872ea2b5091a76490d6e888c42cd1de6ebb20a9020bb3204",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "fe6c1f669876868712ba2142ca962761e0fc5dba11d3ec78d6b9acae65b1e3a7",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-receipt-native-v1-20260909/helix_valid/receipts/run/requests.jsonl",
+      "request_sha256": "b4edb1c6f9dd4ca03292e08b804db1d8cfd803d5578d5c4e2ed9bd7b12d91e19",
+      "status_sha256": "a4e979af26e6590b27f359d391fa43b77efb25e02f4b2cd59bb5f8f164f1e948",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "0df25d3a425490d6f89d73b175a6d7efd1fed01ad62a8c8ab9b88db5d6fa72aa",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-transfer-v1-20260909/receipts/off/requests.jsonl",
+      "request_sha256": "90b566911580834f5dcf2369850b7493549114ee5db751e489a5e6baae960b75",
+      "status_sha256": "8abcb7900440a1730ad62e133a2217e5853b526945708bb9d8d3d95d49580c17",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "c139c4bdf9cb32b6f38d6f32d5cb97f4dc56e978bde06456b9518066d420fa64",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "astra-transfer-v1-20260909/receipts/on/requests.jsonl",
+      "request_sha256": "31f51a7969b1dd224079c6f3420a467eba2e73f83a3c49bdb45b32497704ba0f",
+      "status_sha256": "4d69b4795236485fe511ac6ba5ff7e446e33683caee5be19f1b21cedd8dfaadc",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "6ee683d2715891cf1557bcfe97d7a58a976b9c3e6910f749ec0b879ffa0a7cb5",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v2-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "a92ce1b2b786516b98f7b3936d6fba6c868957bcfee2f79fbd86fdb11de198be",
+      "status_sha256": "793d6127399816d33c0f670d1aae58913a3edb543c7348780deaf7258c9f3810",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "74a25e574e81f1502b93303d47e7a6db3f34766806d9cbb144e7e1a7704f48e9",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-output-v3-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "42e2f5b55fe8b967b15e0e9a9acc545cf944647bc2200fed9d8b85fb84eea3dd",
+      "status_sha256": "3d0f4a72d3823f600375806863981987d28adf8f0443340596e40a76203a3d57",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "04511bd3ba1ea54be5fa3bdb0a5f2cae13137819860a861f6e4bcce2463a89e1",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-pair-v1-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "c66271a553c0fd627353f765085ec62873d946a3f8e0784c031b3d0c5fabe385",
+      "status_sha256": "af4f052e5db301cc336b7de9eef0b393bca6241d91e4189176b4367940a76661",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "341c62a03300e50587794d79a9029648ff8f4c707ac508ff6fc0bb61f43c4ce7",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 2,
+          "signature": "96546169141fd9c701cc14405129fcda454919aebdb17f29249861279d3cb32c",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 3,
+          "signature": "4915af43fc8d8b9b815891b4e7efd668202e897b2be0428b91a03238067e486d",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 4,
+          "signature": "d8a2deb0d4e86432756f16b0d56a591c36a1f4a68b79db8a5eafa816a219288d",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 5,
+          "signature": "cc801e31abd00cb54cdfaea081b8eb849bdb8e2289c192b7416eebb99cafd3af",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 6,
+          "signature": "f1cf033f4e5526f3689c42e0aef64ed7cfef70f2de6837a3c919980f73ccbef2",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 7,
+          "signature": "315d803fc298cb475a59cdf03456a128e795777f63c8c58d758b9c7dd36c45e3",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 8,
+          "signature": "f03e731a03661d1449cd7b76bdfc5e1f79b1e39e14fdc02f28ed1ab9cb896c54",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 9,
+          "signature": "815f0cff81b08f7e858c6495edfdf6d00a4e7a5ccaf347ffb2a4292a65ac8543",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 10,
+          "signature": "34239e5ed7873494f531e70cec3fb843e64614b6e04ca3cdd4fc7e18be5529ab",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 11,
+          "signature": "66c4c90d40d65b506dedc304cfd8f7ca100574c25ddd35af69d1194554d606d4",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 12,
+          "signature": "066f55d2fe8729dfad771822ebf1ce1e2193c9a6d55ea2c98a4e6e5f6ab1d559",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 13,
+          "signature": "d48662233cd2b792573584c9d6c27b09cbf0cfd05758af0fc5b2e3bc5687a8cd",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 14,
+          "signature": "f4c88e8d559dccdfe711bf232d30e32db2ef8d0d6c0bbf3e0f6a9d713dd02634",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 15,
+          "signature": "633278dfca7c78cea205aa33dbb0bfafb7de07a47da8e954cb28ff96667ba1c3",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 16,
+          "signature": "b8ac9b041388685af96c98a2e77855a67340be5f1e0ab95588c43a2e8c507309",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 17,
+          "signature": "9d15b832c6e5c390be6344ee2048e70a924986b9af2d19ce17d2f329fa434bf9",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 18,
+          "signature": "7f67a1cb558846ae6435822db6380c6f65ab8ccb430cbf926a94ba2465436cc0",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 19,
+          "signature": "c980d2e2a4bcbafba40d731aefc8dcf38798046bb35418b6fe4b28d64393b592",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 20,
+          "signature": "222f74a3aa7b502bda44e0012e2d25efc378c1f2fb1bc10e8d49344d9a1db7bf",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 21,
+          "signature": "a733b44556a684ef6c13168d579c5fc15c3428e0c6219b48d6a5705a9805185c",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 22,
+          "signature": "895c7482667606df46228bfef17147ac16d79937a7bfc589e1d6d90448dceeec",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 23,
+          "signature": "e92f1a5f567afa19a38ad3ba2aba0244e3f92a0cf68e3fe1ae71ceaab36c6f4d",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 24,
+          "signature": "9e67f6f165d9bdedb5077d5ca7d9e5b10bd47c16446e8f280155fce92b9107bd",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 25,
+          "signature": "982ecfccaea1b4bd23de76ca26c9ec0ffddb2893e3641449589ac10709c53f49",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 26,
+          "signature": "4f0f85b9ce5d06363adb4ab2501fdfbb6aaebbef7eb2797c4c70170984fc88cf",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 27,
+          "signature": "adfe288490fb6f3d9434c794a0f0ad60d14621cd42d11ca85ef18ad00f380e2e",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 28,
+          "signature": "f1a3cd7e58000c3d1afe340c652832eaf3e55e006f0dd966e72ecb0d629fcf28",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 29,
+          "signature": "7017b455e5d19f288cd234e633c698f856a2a48184e7aacfb40e2613ddd57aa7",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 30,
+          "signature": "e2cc8412490c031bf44b72abb578faa2aada35fe549cb2f0d600dd265cee64ed",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 31,
+          "signature": "6d2091bc7e147917bb554266d74bb78a39f1ace1cf6d864a308e8530889febdb",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 32,
+          "signature": "d52300405840d0a7f2bf75d20e19d7e5d2707c5b782e588b711c4b091c7785db",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 33,
+          "signature": "b1c1c21b198f2ea77e884c721879ec761c6c5eb46ea5804b5e80017588f02302",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 34,
+          "signature": "b2ff8a2f05ae17d3991772031d2142fb4ab072b36b8b349f37ee3c0920a4e0a2",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 35,
+          "signature": "17e8361f4c4ae9b89e9853c94909f1caba07164e1f09488307de30c5731d7962",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 36,
+          "signature": "f090127a63a70a335fef25a3fb165078c887e367cde825bff8400f1ebc574ae7",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 37,
+          "signature": "022eeb344bfd33c3d02f1ea2dcf34dc0825101203a43cb107286fa8e931dbe1d",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 38,
+          "signature": "4e4c0eb86cfc34d21a6d41054ea023a05e7e3334eb74fe63b8178b1da15603f3",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 39,
+          "signature": "98fcbd789e3817822288f10e7295a9ecb86ab586b7ac39bae0bdaec6da0fda5e",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 40,
+          "signature": "404e4d0a47762fd5a08fd81e030536e7554a48c58fd8b62219323455eb8ffa63",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 41,
+          "signature": "6d9fc5d79af49fe517d6cad86e987c1b55732abaec775acea3626a8c527ee522",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 42,
+          "signature": "1b758c8f7ceda213376bc2652cb3718fe50fd38bcb52c3a58410a91147dba950",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 43,
+          "signature": "e4c675de6ede3037bc6afd3f7d5b3f4c4a13d30ee1c4714d194ccefe6a961f85",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 44,
+          "signature": "46ab67d549b42d6c8d844a62f2f86cfd96eca9d23405af96c06afd4e0ade61b4",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 45,
+          "signature": "074d6360dd2c30e35a3697cf22d9e5035a36d70016db41e68435ce75d91efafb",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 46,
+          "signature": "e54f0aa4e19e9072aebf2d2359df041912a35108f6f75c8e07be5bf6376d5490",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 47,
+          "signature": "6b3996508614352a531782b8aa499f5109ba261018e6529c3cf269f78ce04930",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 48,
+          "signature": "d893d9221c722bd63f51c871c900a2775d359a22dbba7a3655e958a8ed52fbee",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 49,
+          "signature": "aeac2a6331b1911622954775306ab48b7153c1b7425ca4df23f5aa0e94502df2",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        },
+        {
+          "index": 50,
+          "signature": "07e77805b66cf5c1a28b130da6f46ffae096e8aece093c97e6275d3debdb2a7d",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        }
+      ]
+    },
+    {
+      "path": "native-luna-ack-pair-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "654bea6dea783ccfd5467e967268cf19a58146e287e3f189c68bcbd16988bf40",
+      "status_sha256": "1b0f469b161ad945cf07b0f665ff6351d999cf3e62c29126dfe396918ed3245d",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "a027dc89bd19fb1b9b5817b7eda70a76a53dd59b6968fd7aed0845dbe5cf387b",
+          "kind": "input",
+          "model": "gpt-5.6-luna"
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-pair-v1-20260909/candidate/on/receipts/run/requests.jsonl",
+      "request_sha256": "8ae35271693e974108724fbb3effeed3d82cfa2135521609487b767c30d611f4",
+      "status_sha256": "05504a24c6f0aad05f784c286f6161439205f8de92109d17d805add93f79f100",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "a33929a1151dc442cfd04224aad41985a7c538a33cfc15a83c49d2da9e850770",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-pair-v1-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "7aa749ae63d5a6ef885af8829410fa51744dac38dde781c20562a9b15b8fbd2c",
+      "status_sha256": "fab23ef4fdd5c15cd581831a609785131d6404812f5218a79b79d72b4d680f4a",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "432c0039e7a2c1cd67540ba8665bc3518b8481b0f01f52990445385e823e4d3c",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-prepared-safety-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "5367a12166fc839b690b9b55c35dfc320127a3947a4dc23bd374519a463ebe00",
+      "status_sha256": "cd537bb884ebddb7d2034b98a2d7a107d2598655d4ad004c711da090a5e7d748",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "cb2d007fb128e214e092d8b64a03ccca781f634e18e1a5144fba398caf9a369a",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-prereview-pair-v1-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "a1f2362979a163c1345c26e6ac4a46a29025c878e6b8ec64e061972bac6c2319",
+      "status_sha256": "21798c35fc892de2b9c95e3e8ca70b008988640d1e8044b116bdabe48c773971",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "708b10e176882a4a23e7902574a812824d56de797f3db077d055415790a48acd",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-prereview-pair-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "3ad96af52538e7ce5f2c3c61c3a58f9283879d1c724baf0f989c9346cbf2c964",
+      "status_sha256": "d15fd7a6d300305b9adfdd612a1ff68065642823210d71669508f1e3a3d362ad",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "1b4040022b117b6d5af2200df7ebd890b3cd512e0774ee53e041432093845822",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-recovery-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "78c5a8b82cea4af9b392cc2ea8be690c21cf09943380aa683441c5f6e0781020",
+      "status_sha256": "5a9f26d0f795ade5b2dfd23f5c51707df8cf5baf22a091200bff795fdf3a87e8",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "84b7f0f913b8ad2f363d7eb28f3ed183dadd7787fcb55b7c10effa4ad72abd19",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        },
+        {
+          "index": 2,
+          "signature": "514dd00ccffbe9554843773c2426f27fffffca4cf42cd028bbc05e4826b8e81e",
+          "kind": "tool_output",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-review-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "0a874480ebcc7e231a070a9095644e818495efd23358eac208c6339fefe973f8",
+      "status_sha256": "095bdaf7a2d3037ccab776ee5467d3474403e1ef11a3b2ddd5ec81083bc75ad2",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "d8d07229ecbe492e1c1fcb042c1bf93af5eb84ed0693cd868ef0fbbed901d84b",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-review-pair-v1-20260909/off/receipts/run/requests.jsonl",
+      "request_sha256": "c09ab9fed2e27948918db92bb94de11d21331458a8fd5891e0b6d958d11893f7",
+      "status_sha256": "0ce43b578a342f200ac1ae009cffd5e7785806cdac472c825642bc9d1ea947ee",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "2ffbb5b11be5b91ac96b27462cf91cd1a9990d6d9dcf543713ffd724ec46b3c4",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-review-pair-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "11b818b30919ac9bc993107f09d6ad965ab667bbb988423e46735e47da8bbaa0",
+      "status_sha256": "9e8a57b975c00ca82950a2ab87621751bed64fe8be2f26fa0fe956e23f2d395c",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "3edb514861568bd31da4188b246bd648ade0eb928918c3f94610d383a28cf9b9",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-timing-gate-v1-20260909/a/on/receipts/run/requests.jsonl",
+      "request_sha256": "d1fb829342f90826c0ef80010c814c8cf6716a5a3c6639bfeb099cf9a5cff8c8",
+      "status_sha256": "4a1a079e79d715859e5354769136be98f03d3eb4829578260576fc1c1a50faaf",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "b551d19302b92477335f66807114926dfc7bc6333bcb67c155cfab75d3c0342c",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-timing-gate-v1-20260909/b/on/receipts/run/requests.jsonl",
+      "request_sha256": "88523a0203a305a9facf0eaa5be71dcb44c2761559910ee61cf4a7202e836b36",
+      "status_sha256": "9c8101018bc65cf2636332ad8a55bef14796e4ecf5c81daf68b8ebc07f561dd9",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "f682dded2f144bfa774a1efb684b35391bdcd65dfff802a08cd7c0f8b8b9e8f9",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "native-trust-safety-v1-20260909/on/receipts/run/requests.jsonl",
+      "request_sha256": "609963224fc2845082acbdf4d23d68b2ba344ccf6cc0ad43c866df3ed633246d",
+      "status_sha256": "4520a8866b091e81e21d9ce139528fcd253a10118f624ff396669a17acd254b6",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "1e2eb44458172edc1ecc8adbef720d01214e0fb4d2d5f9f9d9a367f8cec5a16f",
+          "kind": "input",
+          "model": "gpt-6-astra"
+        }
+      ]
+    },
+    {
+      "path": "sol-integrated-v3-20260909/receipts/off/requests.jsonl",
+      "request_sha256": "85d38491f1bfb8e284c98ec8019e19721b54665c174507718f636071ec48947a",
+      "status_sha256": "df6842f9b9586488ebd3d941d4d17e7c36acdc52511debacc0487d5d9c36945d",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "21e98154d6e846b2541d292d862980732f371b03fa7350a8131f7ddfeb9977cb",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "path": "sol-integrated-v3-20260909/receipts/on/requests.jsonl",
+      "request_sha256": "408816d2cf13c7eaaf632680388435f3f6831a0c00c4f0219f44dbd9e87b8219",
+      "status_sha256": "d0d91103057c92b9f0dd5144173d5473aa6aecbeaf034fa41a9ef989a0443ac9",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "ddb7240760c96acd035c36e61c33b73961a08397b82783f850f0329264280130",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/0/receipts/on/requests.jsonl",
+      "request_sha256": "28c77541cf15e4d4434f225ba7c4c34113fabd00c02e8caf5b6a32031a0ddf8e",
+      "status_sha256": "229ff97ff781666f96941c5b0ab9de5066d31df0ba8ffa133ae6c857697eb0f8",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "19e6f18fa22baa195a7a575bb621df1ce2a3c5689d2831fc97ba98b314d8afae",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/1/receipts/on/requests.jsonl",
+      "request_sha256": "80fe8940735e60984613c305ea4e7d5e7bddec12891a87160f1eac0a94267d2c",
+      "status_sha256": "0aee4360595d324e00913061036e66f4ad1a95b0609a94fb692a73870ba251e1",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "22a6e03dd33cb0216fa87b59caf95ea6d90c031d510b8303dfafd4b389561fce",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/2/receipts/on/requests.jsonl",
+      "request_sha256": "66335c2c71f87572c31b8c93a7313b7432dcc976832615ce587a3f61d14146e3",
+      "status_sha256": "efaeb98ca58e2557915ff00f9b0846a97f175e75e6902ad8be2819b34b1d4ea7",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "211b675c64d21e850670f3a001eba1f6cb671c62d0961f80de8b3c1c632a3d81",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    },
+    {
+      "path": "sol-overhead-native-20260909/3/receipts/on/requests.jsonl",
+      "request_sha256": "e1c3e4c453ea93134bf07aa3ad3e37a58ca72270e012193342d877e132b44e1a",
+      "status_sha256": "7a3e43119a68a215055db6054878f5697770086bcaefe051a962234f36427534",
+      "native_binding": "raw_native_hash_verified",
+      "turns": [
+        {
+          "index": 1,
+          "signature": "e57da5ce5aac619f97e25710e86275b5646074aa79e8c3a10dd3ce5487755b52",
+          "kind": "input",
+          "model": "gpt-5.6-sol"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "stream": "sol-v3-protocol-preflight/receipts/requests.jsonl",
+      "reason": "not a terminal completed/closed receipt; excluded"
+    }
+  ],
+  "limits": [
+    "Only current local research requests.jsonl streams; not all user workflows or old CLI receipts.",
+    "Exact request equality is necessary for the narrowly proposed exact-bound reuse, not sufficient: world/history/authority may differ.",
+    "Changed text may be semantically equivalent, but safe equivalence is not established by this audit.",
+    "Cross-thread benchmark arms and replications are not reusable workload invocations.",
+    "Tool-loop model segments are not new user turn requests; redundant internal computation is not measured here.",
+    "No raw prompt text is published."
+  ]
+}
