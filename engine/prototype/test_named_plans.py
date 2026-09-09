@@ -228,3 +228,44 @@ def test_release_partial_filesystem_failure_is_reported(tmp_path,monkeypatch):
     assert release['status']=='PARTIAL' and release['errors']
     assert release['removed']==['config.json']
     assert api().latest_success(s,ref)==result['attempt_hash']
+
+
+def test_explicit_input_rebind_preserves_old_plan_and_executes_new_data(tmp_path):
+    s,root,opts,ref=setup(tmp_path)
+    old=api().load(s,ref)
+    (root/'input.txt').write_text('000.750')
+    new=api().rebind_inputs(s,ref,2,environment=opts['environment'])
+    assert new['plan_version']==2 and new['plan_hash']!=ref['plan_hash']
+    assert api().load(s,ref)==old
+    result=api().invoke(s,new,environment=opts['environment'])
+    assert result['status']=='SUCCEEDED'
+    assert s.retrieve(result['steps'][0]['receipt'])['text']=='000.750\n'
+
+
+@pytest.mark.parametrize('name',['job.py','config.json','schema.json'])
+def test_input_rebind_refuses_changed_logic_dependencies(tmp_path,name):
+    s,root,opts,ref=setup(tmp_path)
+    (root/name).write_text('changed')
+    with pytest.raises(ValueError):api().rebind_inputs(s,ref,2,environment=opts['environment'])
+    with api().database(s) as db:
+        assert db.execute('SELECT count(*) FROM plans').fetchone()[0]==1
+
+
+def test_input_rebind_refuses_changed_environment_and_old_version(tmp_path):
+    s,root,opts,ref=setup(tmp_path)
+    with pytest.raises(ValueError):api().rebind_inputs(s,ref,2,environment={'HELIX_TEST':'different'})
+    with pytest.raises(ValueError):api().rebind_inputs(s,ref,1,environment=opts['environment'])
+
+
+def test_input_rebind_rechecks_logic_changed_during_registration(tmp_path,monkeypatch):
+    import plan_dependencies as dep
+    s,root,opts,ref=setup(tmp_path)
+    original=dep.read_file
+    def change_logic(path,metrics):
+        result=original(path,metrics)
+        if path==root/'input.txt':(root/'job.py').write_text('print("different logic")')
+        return result
+    monkeypatch.setattr(dep,'read_file',change_logic)
+    with pytest.raises(ValueError):api().rebind_inputs(s,ref,2,environment=opts['environment'])
+    with api().database(s) as db:
+        assert db.execute('SELECT count(*) FROM plans').fetchone()[0]==1

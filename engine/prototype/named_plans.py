@@ -31,7 +31,7 @@ def validate_steps(steps,executables):
             raise ValueError('Unbound executable or invalid argv')
 
 
-def register(store,plan_id,plan_version,*,cwd,steps,files,executables,env_names=(),environment=None):
+def register(store,plan_id,plan_version,*,cwd,steps,files,executables,env_names=(),environment=None,_rebind=None):
     started=time.perf_counter();cost=dep.metric();before_io=dict(store.metrics)
     if not isinstance(plan_id,str) or not re.fullmatch(r'[a-zA-Z0-9_.-]{1,128}',plan_id) or type(plan_version) is not int or plan_version<1:
         raise ValueError('Invalid plan identity')
@@ -54,6 +54,11 @@ def register(store,plan_id,plan_version,*,cwd,steps,files,executables,env_names=
         manifest['executables'][name]={'requested':str(requested),'resolved':str(resolved),'identity':identity}
     for path in [Path(__file__).resolve(),Path(dep.__file__).resolve(),Path(checked_steps.__file__).resolve(),Path(evidence.__file__).resolve()]:
         identity,_=dep.read_file(path,cost);manifest['runner_modules'][str(path)]=identity['sha256']
+    if _rebind is not None:
+        if fixed_contract(manifest)!=fixed_contract(_rebind['manifest']):
+            raise ValueError('Fixed plan dependencies changed during input rebinding')
+        manifest['parent_plan']=_rebind['reference']
+        cost['rebind_preflight']=_rebind['cost']
     blob=encode(manifest);ref=store.put(blob)['sha256']
     cost.update(seconds_total=time.perf_counter()-started,manifest_bytes=len(blob),native_input_tokens=None,native_output_tokens=None)
     with database(store) as db:
@@ -68,6 +73,30 @@ def register(store,plan_id,plan_version,*,cwd,steps,files,executables,env_names=
             db.execute('COMMIT')
         except BaseException:db.execute('ROLLBACK');raise
     return {'plan_id':plan_id,'plan_version':plan_version,'plan_hash':ref}
+
+
+def fixed_contract(manifest):
+    result={key:value for key,value in manifest.items() if key not in ('plan_version','parent_plan','files')}
+    result['files']={name:({'role':'input'} if binding['role']=='input' else binding) for name,binding in manifest['files'].items()}
+    return result
+
+
+def rebind_inputs(store,reference,new_version,*,environment=None):
+    """Explicitly register new data under unchanged logic; never auto-execute."""
+    started=time.perf_counter();before=dict(store.metrics);metrics=dep.metric()
+    old=load(store,reference)
+    if type(new_version) is not int or new_version<=old['plan_version']:
+        raise ValueError('A strictly newer version is required')
+    environment=dict(os.environ if environment is None else environment)
+    fixed={**old,'files':{name:binding for name,binding in old['files'].items() if binding['role']!='input'}}
+    dep.verify(fixed,environment,metrics)
+    cost={'validation':metrics,'seconds':time.perf_counter()-started,
+          'store_io':{k:store.metrics[k]-before[k] for k in before}}
+    return register(store,old['plan_id'],new_version,cwd=old['cwd']['path'],steps=old['steps'],
+        files={name:binding['role'] for name,binding in old['files'].items()},
+        executables={name:binding['requested'] for name,binding in old['executables'].items()},
+        env_names=list(old['environment']),environment=environment,
+        _rebind={'manifest':old,'reference':reference,'cost':cost})
 
 
 def load(store,ref):

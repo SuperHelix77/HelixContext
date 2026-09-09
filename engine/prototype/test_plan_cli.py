@@ -56,3 +56,15 @@ def test_cli_register_creates_immutable_reference_without_running(tmp_path):
     proc,created=call(s,'register',str(path))
     assert proc.returncode==0 and created['plan_id']=='cli-plan'
     assert not (s.root/'plan-runs').exists()
+
+
+def test_cli_rebinds_inputs_without_execution(tmp_path,monkeypatch):
+    import named_plans
+    s,root,opts,ref=setup(tmp_path)
+    monkeypatch.setenv('HELIX_TEST',opts['environment']['HELIX_TEST'])
+    (root/'input.txt').write_text('000.750')
+    proc,new=call(s,'rebind-inputs',reference(tmp_path,ref),'2')
+    assert proc.returncode==0 and new['plan_version']==2
+    assert named_plans.load(s,new)['parent_plan']==ref
+    assert named_plans.creation_cost(s,new)['rebind_preflight']['validation']['bytes_read']>0
+    assert not (s.root/'plan-runs').exists()

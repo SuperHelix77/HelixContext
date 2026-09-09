@@ -1,6 +1,9 @@
 # Explicit skill-to-plan bridge
 
 Development interface, not installed as a hook or automatic Helix policy.
+
+For changed declared data under the same procedure, use the explicit
+[input-rebinding operation](INPUT_REBINDING.md) to create a new immutable version.
 `plan_cli.py` connects a caller such as Helix Context to named plans without
 requiring it to generate Python glue, transcribe hashes or inspect helper modules
 on every invocation. Bootstrap discovery still costs tokens and must be measured.

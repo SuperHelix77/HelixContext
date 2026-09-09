@@ -15,6 +15,7 @@ def main(argv=None):
     parser.add_argument('--store',required=True)
     commands=parser.add_subparsers(dest='command',required=True)
     commands.add_parser('register').add_argument('spec')
+    rebind=commands.add_parser('rebind-inputs');rebind.add_argument('reference');rebind.add_argument('new_version',type=int)
     run=commands.add_parser('run');run.add_argument('reference');run.add_argument('--timeout',type=float)
     commands.add_parser('receipt').add_argument('sha256')
     args=parser.parse_args(argv)
@@ -27,6 +28,9 @@ def main(argv=None):
                 raise ValueError('Registration requires identity, cwd, steps, files and executables; optional env_names')
             result=named_plans.register(store,**spec)
             code=0
+        elif args.command=='rebind-inputs':
+            ref=json.loads(Path(args.reference).read_text())
+            result=named_plans.rebind_inputs(store,ref,args.new_version);code=0
         elif args.command=='receipt':
             result=store.receipt(args.sha256);code=0
         else:
