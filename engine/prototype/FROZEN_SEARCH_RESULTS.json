@@ -1,0 +1,60 @@
+{
+  "classification": "Offline search overhead comparison on exposed ASCII fixture; no native tokens or general FTS equivalence",
+  "reference": {
+    "project": "p",
+    "index_hash": "0536ba878a4a97f3cd354d352230223cc67fd4e6258cc6ca7223f06fdc721002",
+    "catalog_hash": "d11fc125595e9f68431dd531a5298241ca8cf0a5b4adcc6e87ab2722fac10257",
+    "build_cost": {
+      "seconds": 0.007392790983431041,
+      "index_bytes": 10057,
+      "store_io": {
+        "object_bytes_read": 218328,
+        "object_bytes_written": 10057,
+        "object_bytes_hashed": 228385,
+        "object_read_operations": 200,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "scope": "Application object traffic; catalog/SQLite/physical I/O and complete CPU unmetered"
+    }
+  },
+  "measurements": [
+    {
+      "mode": "checked_fts",
+      "queries": 20,
+      "seconds": 0.03973491600481793,
+      "store_io": {
+        "object_bytes_read": 2187780,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 2187780,
+        "object_read_operations": 2020,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "mode": "frozen",
+      "queries": 20,
+      "seconds": 0.004605749971233308,
+      "store_io": {
+        "object_bytes_read": 205640,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 205640,
+        "object_read_operations": 40,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  ],
+  "artifact_root": "/tmp/helix-frozen-search-20260909",
+  "implementation_sha256": "f6602431d91a0ccef4f710d9f520916d6e009c644ecaf12aae2018c8004e5c6a",
+  "limitations": [
+    "20 repeated literal lookups, one local run, fixed arm order and warm caches.",
+    "Common archive ingestion excluded from both arms; frozen index build reported separately and must be added.",
+    "Full catalog rows and entire frozen index read per query; not constant-time or general sparse access.",
+    "Unicode tokenizer explicitly differs from SQLite FTS; no automatic replacement or semantic parity claim."
+  ]
+}
