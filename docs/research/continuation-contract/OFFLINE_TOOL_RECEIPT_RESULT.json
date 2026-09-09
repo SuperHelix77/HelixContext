@@ -1,0 +1,188 @@
+{
+  "classification": "Exploratory offline native protocol probes; no model economics evidence",
+  "hosted_model_calls": 0,
+  "production_config_changed": false,
+  "rows": [
+    {
+      "run": "offline-tool-receipt-discovery-20260910",
+      "local_requests": 1,
+      "result": {
+        "exit_code": 0,
+        "local_requests": 1,
+        "hosted_model_calls": 0,
+        "synthetic_usage_not_economic_evidence": true,
+        "production_config_changed": false
+      },
+      "artifacts": {
+        "result.json": {
+          "sha256": "d7052ce24d043ceaab07f10612d21bea1b5fd08f13113688fdc607a059744380",
+          "bytes": 157
+        },
+        "request-1.json": {
+          "sha256": "43fb5d0a3052057042ba9d7cfca2bd643c4645816dcf2f64221a63508844527a",
+          "bytes": 40136
+        },
+        "catalog.json": {
+          "sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+          "bytes": 640120
+        },
+        "stdout.jsonl": {
+          "sha256": "30276c948f135372b709f679692c3baa7864c667c6bd373e77d72d6c26029440",
+          "bytes": 357
+        }
+      }
+    },
+    {
+      "run": "offline-tool-receipt-command-20260910",
+      "local_requests": 2,
+      "result": {
+        "exit_code": 0,
+        "local_requests": 2,
+        "hosted_model_calls": 0,
+        "synthetic_usage_not_economic_evidence": true,
+        "production_config_changed": false
+      },
+      "artifacts": {
+        "result.json": {
+          "sha256": "6e9fe4128d4360d43f188813e51199a371509cc2e0feed5909bd9cddb91f7bc2",
+          "bytes": 157
+        },
+        "request-1.json": {
+          "sha256": "c6455115231fff606bb0a6ac47346a2a41b898fe2219a7bc3a095c6a012e1fb5",
+          "bytes": 40130
+        },
+        "catalog.json": {
+          "sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+          "bytes": 640120
+        },
+        "request-2.json": {
+          "sha256": "6e9e3ad27c779a64dd22efb29cd529ca6be810674485b94515a75e8ced5cffe3",
+          "bytes": 40915
+        },
+        "stdout.jsonl": {
+          "sha256": "10f6856513a3692e842d9aab25c48316fa7c12866d86d71b0d95770d9b3b3633",
+          "bytes": 759
+        }
+      }
+    },
+    {
+      "run": "offline-tool-receipt-appserver-success-20260910",
+      "local_requests": 2,
+      "result": {
+        "status": "POST_TURN_INSPECTION_FAILED",
+        "reason": "ephemeral thread does not support includeTurns; actual command completed"
+      },
+      "artifacts": {
+        "request-1.json": {
+          "sha256": "97328d48f12fa849973ccdfe44dd93f8ca17bb0cd31f263debfb6d4e019c36c3",
+          "bytes": 37251
+        },
+        "catalog.json": {
+          "sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+          "bytes": 640120
+        },
+        "request-2.json": {
+          "sha256": "0a402f460c7a677d8f25b135776e12bc20a7cf09603e471df3936fe006ee3f79",
+          "bytes": 38133
+        },
+        "stdout.jsonl": {
+          "sha256": "7c86e141137409ce26f765fa3b2bad3f30a40f9f773d1b3e7ded18986129ea70",
+          "bytes": 8407
+        }
+      }
+    },
+    {
+      "run": "offline-tool-receipt-appserver-missing-20260910",
+      "local_requests": 2,
+      "result": {
+        "exit_code": 0,
+        "transport": "appserver",
+        "mode": "missing_cwd",
+        "local_requests": 2,
+        "hosted_model_calls": 0,
+        "synthetic_usage_not_economic_evidence": true,
+        "production_config_changed": false
+      },
+      "artifacts": {
+        "thread-items-list.json": {
+          "sha256": "4656edd504d3272084795d6b58fb3d973f0ae11c4ec88ef2321725b621143ce6",
+          "bytes": 97
+        },
+        "result.json": {
+          "sha256": "035cfa7b36561f55161d753cb92857d6068a34e59fc4d5d9b6253b61966ef507",
+          "bytes": 210
+        },
+        "request-1.json": {
+          "sha256": "af944a9b0ab775453c480e2d1de2938fd01478eccdb4b6c6dc3f915feb59610d",
+          "bytes": 37251
+        },
+        "thread-read.json": {
+          "sha256": "75a89d8496af22a8eeda60089051b5df54f141fc828788b1f27a2c30381e250f",
+          "bytes": 104
+        },
+        "catalog.json": {
+          "sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+          "bytes": 640120
+        },
+        "request-2.json": {
+          "sha256": "677d2667b77d5250c0d76bcf8f06a63d7a806d57472d6d099a1f5711b06f509d",
+          "bytes": 38282
+        },
+        "stdout.jsonl": {
+          "sha256": "f1d9fbf4015e1cf2d802af5204f5713a1f42a3f02e5cb032402149547e8a1302",
+          "bytes": 7117
+        }
+      }
+    },
+    {
+      "run": "offline-tool-receipt-persistent-missing-20260910",
+      "local_requests": 2,
+      "result": {
+        "exit_code": 0,
+        "transport": "persistent",
+        "mode": "missing_cwd",
+        "local_requests": 2,
+        "hosted_model_calls": 0,
+        "synthetic_usage_not_economic_evidence": true,
+        "production_config_changed": false
+      },
+      "artifacts": {
+        "thread-items-list.json": {
+          "sha256": "f6bf7d6e1d67172b7aac9377c43208242118bd300c70251dc69a772cd8854f1b",
+          "bytes": 917
+        },
+        "result.json": {
+          "sha256": "a0945367007cc176008574ddbb33a7d5284f026949f51be125698932698b8996",
+          "bytes": 211
+        },
+        "request-1.json": {
+          "sha256": "f0094f0182a135dfd563f1a68170e1b1098a1cafefddfae72d5dbfd15ec6c044",
+          "bytes": 40136
+        },
+        "thread-start.json": {
+          "sha256": "b659d21fe550e19495705c0b7b664c555e7b7ebd62c69787396a96cf70714f3c",
+          "bytes": 1701
+        },
+        "thread-read.json": {
+          "sha256": "706e6e7a94ea30b831b4fc92ea4a2d31e176d764357fa1210a8f7f6dd7a84960",
+          "bytes": 2065
+        },
+        "catalog.json": {
+          "sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+          "bytes": 640120
+        },
+        "request-2.json": {
+          "sha256": "b4c77f75bdfed239844773cfc88afdcdc026756507cc2e2b8e462c21f29bc7bd",
+          "bytes": 41088
+        },
+        "stdout.jsonl": {
+          "sha256": "ab696a653ad6e07e9814f000219359b1670138b1a426a0efb37f20933603de6a",
+          "bytes": 9745
+        }
+      }
+    }
+  ],
+  "local_requests": 9,
+  "original_native_missing_tool_identity": "UNKNOWN",
+  "finding": "A pre-process tool failure can reach model input without a commandExecution event; persistent raw rollout retains exact call and output."
+}
