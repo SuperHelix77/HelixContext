@@ -1,0 +1,95 @@
+{
+  "classification": "One adaptive frozen-component composition; references retained, no fresh pair or general release",
+  "rows": [
+    {
+      "arm": "retained_native",
+      "usage": {
+        "input_tokens": 181635,
+        "output_tokens": 3871,
+        "cached_input_tokens": 163584,
+        "reasoning_output_tokens": 1844,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "3350bf96236dd947e2244435ba807fce08142b8fc25d249cbb9cf44192e660ca"
+    },
+    {
+      "arm": "retained_helix_default_base",
+      "usage": {
+        "input_tokens": 19186,
+        "output_tokens": 1371,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 1152,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "1ce225c46bd7b1b978f8a52e3192b69e8db4a6dd1b9da39b873c1c15a18b45cc"
+    },
+    {
+      "arm": "candidate",
+      "usage": {
+        "input_tokens": 16623,
+        "output_tokens": 632,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 410,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "54916260a2ad3aa550d631f76afbd69767a20134619b338da1f34f62cd12f279",
+      "checks": "PASS"
+    }
+  ],
+  "comparisons": [
+    {
+      "reference": "retained_native",
+      "savings_percent": {
+        "input_tokens": 90.84812949046164,
+        "output_tokens": 83.6734693877551
+      },
+      "uncached_savings_percent": 46.20242645836796
+    },
+    {
+      "reference": "retained_helix_default_base",
+      "savings_percent": {
+        "input_tokens": 13.358699051391643,
+        "output_tokens": 53.90226112326768
+      },
+      "uncached_savings_percent": -5.531406216040002
+    }
+  ],
+  "manifest_sha256": "4fd593f9802102bbbdd51019b2ec1edc1e628b3a3df67846861f169080fa88d6",
+  "base_sha256": "f07e19dbe57d410b23524332acf30c0f19650ab631f9e654897cbf440c61c4c0",
+  "base_bytes": 6188,
+  "native_base_matches_exact_file_without_terminal_lf": true,
+  "native_base_bytes": 6187,
+  "native_base_sha256": "8ec56d80df8b5b9cd609e4f2251c1e26b29aa50bbc76de0c01bbfd85a2231106",
+  "audit_amendment": "V1 required final LF preservation; Codex metadata strips exactly that byte. V2 admits only that exact normalization; task graders and native execution unchanged",
+  "auditor_sha256": "9bd1fdcb956bead7602373e87f72210047fc06a568d717d2949b5a3c020cfa5d",
+  "finite_checks": "PASS",
+  "segments": 1,
+  "turns": 1,
+  "raw_capture": {
+    "sha256": "6de1528d820bbf3d0e4915ce71c7375dde71c107fa616c80bb7f2ccb54790535",
+    "bytes": 65228,
+    "calls": 0,
+    "outputs": 0,
+    "unmatched_calls": [],
+    "logical_capture_read_bytes": 65228,
+    "logical_capture_write_bytes": 65228
+  },
+  "memory_preflight": {
+    "state": "completed",
+    "query": "allocation.py allocate largest remainder unittest",
+    "raw_bytes": 13071,
+    "stderr_bytes": 0,
+    "elapsed_seconds": 0.12584320799214765,
+    "excluded_other_scope_count": 8,
+    "raw_sha256": "458a17405f60c77bbccf89d911e88af5920e7458fa9427e9f4d48fe86cc102c3"
+  },
+  "caller_seconds": 0.08299637498566881,
+  "new_candidate_streams": 1,
+  "general_release": false,
+  "limits": [
+    "Known fixture and adaptive composition; retained comparisons, not causal replication",
+    "Only the client base changes; server-side instruction additions remain unknown",
+    "Reported reasoning counts are observable, their causal internal allocation is not",
+    "Full physical I/O, implementation/research and coordinator cost are not metered"
+  ]
+}
