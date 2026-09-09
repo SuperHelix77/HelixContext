@@ -106,3 +106,15 @@ def test_engine_events_bind_exact_objects_and_show_switches(tmp_path):
     (tmp_path/'objects'/evidence).write_bytes(b'tampered')
     import pytest
     with pytest.raises(ValueError):engine_view(path)
+
+
+def test_native_usage_uses_last_cumulative_update_not_sum(tmp_path):
+    from server import native_cumulative
+    path=tmp_path/'native.jsonl'
+    def event(n):return {'method':'thread/tokenUsage/updated','params':{'threadId':'T','tokenUsage':{'total':{'inputTokens':n,'outputTokens':10,'cachedInputTokens':0,'reasoningOutputTokens':5}}}}
+    path.write_text('\n'.join(json.dumps(event(n)) for n in [100,200])+'\n')
+    value,digest=native_cumulative(path,'T')
+    assert value['input_tokens']==200
+    assert native_cumulative(path,'other')[0] is None
+    path.write_text('\n'.join(json.dumps(event(n)) for n in [200,100])+'\n')
+    with pytest.raises(ValueError):native_cumulative(path,'T')

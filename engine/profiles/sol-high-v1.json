@@ -1,0 +1,28 @@
+{
+  "schema": "helix.model_policy.v1",
+  "id": "SOL_V1_80_80_CANDIDATE",
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "frozen": true,
+  "activation": "Explicit qualified-fixture/research use; native bypass for unsupported tasks. Not a universal production policy.",
+  "mechanisms": {
+    "memory": "Exact scoped recovery; complete small history",
+    "reducers": "Verified typed presentation with native fallback",
+    "completion": "Caller-owned original-ID exact copy",
+    "skill_admission": "Native skill input; caller registration before turn/start",
+    "cold_plans": false
+  },
+  "evidence": "../output/SOL_INTEGRATED_V3_RESULT.json",
+  "evidence_sha256": "e806b0c0d6b6a155dfe2b4135db5820c67aa8647929d8e39c8875b3db722fcaa",
+  "source_hashes": {
+    "engine/output/v3_budget_followup.py": "bcd5f5f686b00b7f1493b87b7e396cf3cc73ed026d0bbba3569251ae2a0b39cc",
+    "engine/output/trace_profile.py": "f3fc4a8eb3d7bc51c2c76961a4a4e0ea82e215844369ea0bbbe5bbddbe3410c3"
+  },
+  "budget_amended": true,
+  "quality_scope": "Exact finite artifacts, not universal intelligence/workflow parity",
+  "measured_savings": {
+    "input_tokens": 88.09650608249213,
+    "output_tokens": 88.98081985708913
+  },
+  "source_binding_note": "Freeze binds current verified code; original preregistration dependencies remain in the raw manifest. Followup driver is bound by the separate budget amendment."
+}

@@ -6,7 +6,12 @@ workflow. No result here establishes that goal or universal intelligence parity.
 Model-specific strategies are mandatory; a measured benefit does not transfer
 between models, workloads, or cold/warm execution without evidence.
 
-Latest mechanism: [caller-side completion](CALLER_COMPLETION.md) moves exact
+Latest: [V3 measured 88.10% input / 88.98% output savings](SOL_INTEGRATED_V3_RESULT.md)
+and froze Sol as a **budget-amended development candidate**, after V2 reached
+70.53% / 73.10%. Native skill attachment removed the last model-side skill read.
+Exact artifacts passed; general intelligence and workflow parity remain open.
+
+Earlier mechanism: [caller-side completion](CALLER_COMPLETION.md) moves exact
 assembly out of the model's tool loop. Offline replay preserves the artifact,
 but rejects numeric alias recoding after accounting for its input legend.
 Original IDs remain preferred. Native qualification remains limited to development fixtures.

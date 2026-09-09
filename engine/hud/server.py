@@ -94,6 +94,23 @@ def engine_view(path):
             'engine_event_source_hash':hashlib.sha256(raw).hexdigest()}
 
 
+def native_cumulative(path,thread_id):
+    raw=cached_bytes(path,16_000_000);latest=None
+    for line in raw.splitlines():
+        try:event=json.loads(line)
+        except (ValueError,UnicodeError):continue
+        if event.get('method')!='thread/tokenUsage/updated':continue
+        params=event.get('params',{})
+        if params.get('threadId')!=thread_id:continue
+        total=params['tokenUsage']['total']
+        value={key:total[field] for key,field in [('input_tokens','inputTokens'),('output_tokens','outputTokens'),('cached_input_tokens','cachedInputTokens'),('reasoning_output_tokens','reasoningOutputTokens')]}
+        if usage(value) is None or any(v is None for v in value.values()):raise ValueError('Invalid native cumulative counter')
+        if value['cached_input_tokens']>value['input_tokens'] or value['reasoning_output_tokens']>value['output_tokens']:raise ValueError('Invalid native subsets')
+        if latest and any(value[k]<latest[k] for k in value):raise ValueError('Cumulative native counters decreased')
+        latest=value
+    return latest,hashlib.sha256(raw).hexdigest()
+
+
 def usage(value):
     if not isinstance(value,dict):return None
     result={}
@@ -116,6 +133,11 @@ def live_process(status,cwd):
     try:
         result=subprocess.run(['ps','-p',str(pid),'-o','command='],capture_output=True,text=True,timeout=1)
         command=result.stdout
+        if status.get('runner')=='app-server':
+            if result.returncode!=0 or 'app-server' not in command or status.get('model','<unknown>') not in command:return False
+            location=subprocess.run(['lsof','-a','-p',str(pid),'-d','cwd','-Fn'],capture_output=True,text=True,timeout=2)
+            paths=[line[1:] for line in location.stdout.splitlines() if line.startswith('n')]
+            return any(Path(p).resolve()==Path(cwd).resolve() for p in paths)
         return result.returncode==0 and 'codex' in command and str(cwd) in command and status.get('model','<unknown>') in command
     except (OSError,subprocess.TimeoutExpired):return None
 
@@ -190,6 +212,13 @@ def snapshot(config):
                         if status.get('events_sha256') and row['trace_sha256']!=status['events_sha256']:
                             row['artifact_check']=None
                             problems.append({'run':rid,'message':'Trace hash differs from status receipt; checks unverified.'})
+                if spec.get('native_events') and status.get('thread_id'):
+                    native_tokens,native_hash=native_cumulative(safe_path(root,spec['native_events']),status['thread_id'])
+                    if status.get('native_events_sha256') and native_hash!=status['native_events_sha256']:raise ValueError('Raw native wire hash mismatch')
+                    if native_tokens:
+                        if row['usage'] and any(row['usage'].get(k)!=native_tokens[k] for k in native_tokens):raise ValueError('Raw native usage mismatch')
+                        row['usage']=native_tokens;row['usage_source']='Native app-server cumulative update'
+                        row['usage_live']=row['state']=='RUNNING'
                 bound=bool(status.get('events_sha256')) and report_row.get('events_sha256')==status.get('events_sha256')
                 if not bound:
                     row['artifact_check']=None
