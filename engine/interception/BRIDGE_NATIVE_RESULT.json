@@ -1,0 +1,47 @@
+{
+  "scope": "One native Sol High metadata-bridge replacement attempt, two synthetic shell calls",
+  "replacement_gate_pass": false,
+  "model_answer": {
+    "exit_codes": [
+      0,
+      7
+    ],
+    "schemas": [
+      null,
+      null
+    ]
+  },
+  "fail_open_retained_correct_status": true,
+  "observations": [
+    {
+      "tool_use_id": "exec-7b04385e-b3dd-4b74-84fc-7c38c46faca3",
+      "exit_code": 0,
+      "raw_event_output_bytes": 25622,
+      "hook_output_bytes": 4105,
+      "native_truncation_warning": true,
+      "hook_input_sha256": "7c9297e23035e70355b2346183ab5803a7177485a0a3a23a2f33da3d6379b617"
+    },
+    {
+      "tool_use_id": "exec-58aa1b22-0f7c-4d3d-8faf-f4298a8f4ebc",
+      "exit_code": 7,
+      "raw_event_output_bytes": 25622,
+      "hook_output_bytes": 4105,
+      "native_truncation_warning": true,
+      "hook_input_sha256": "8cb5bc5b75009a1834f30eed099c20370ad13809592ee9f47717dbab01fe95a3"
+    }
+  ],
+  "reason": "Native truncation changed the string before PostToolUse; strict event-output hash comparison failed, so no replacement was emitted.",
+  "native_usage": {
+    "totalTokens": 64910,
+    "inputTokens": 64517,
+    "cachedInputTokens": 46976,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 393,
+    "reasoningOutputTokens": 198
+  },
+  "configuration_values_restored": true,
+  "temporary_hook_removed": true,
+  "native_trace_sha256": "e774fa60f08592297e36ff93e4b68964a754f26e5c96fdd05b9b779f456dea6e",
+  "confound": "An existing separate passive PostToolUse observer was present and left unchanged. It captured the matching hook inputs used for diagnosis; its latency is included in native elapsed execution.",
+  "limits": "No live compression savings demonstrated. Caller-owned full-output archival plus explicit handling of native truncation would need separate validation. Do not compare a future packet only to raw event bytes while ignoring built-in reduction."
+}

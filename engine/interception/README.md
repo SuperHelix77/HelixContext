@@ -28,3 +28,15 @@ python3 -m pytest -q engine/interception/test_post_tool.py
 4. Measure complete native usage and recurring process/archive overhead on all requested models against efficient ordinary controls.
 
 Until those gates pass, this adapter is an experimental source file, not an enabled compression policy.
+
+## Metadata bridge and native attempt
+
+`metadata_bridge.py` records immutable command-completion metadata keyed by session, turn and tool-call ID. The adapter can consume a native string only when the corresponding metadata exists and the complete output digest matches. Missing, conflicting, cross-turn, corrupt or changed output fails open. Receipts correlate data; they are not an access-control boundary against another process with write access.
+
+**12 adapter/bridge tests pass.** Offline replay of earlier captured native events correctly correlates identical text with exits 0 and 7, preserving exact hook-input archives (`BRIDGE_REPLAY_RESULT.json`).
+
+A subsequent native Sol High replacement attempt **did not pass** (`BRIDGE_NATIVE_RESULT.json`). The app-server events contained 25,622 output bytes per command, but the hook received 4,101-byte strings with native truncation warnings. The strict output-hash guard rejected both replacements. The model returned correct exit codes and null packet schemas, confirming that ordinary output remained in use.
+
+The native attempt consumed 64,517 input tokens and 393 output tokens. The temporary hook was removed and original configuration values restored. A pre-existing passive observer was left unchanged and contributes latency to this run.
+
+This result changes the accounting baseline: raw terminal-event bytes can substantially exceed the output already delivered by Codex. Future work must preserve the raw event separately, handle upstream truncation explicitly, and compare actual native token usage rather than advertising raw-to-packet size reduction as savings. Exact event ordering, nested code-mode compatibility and end-to-end quality remain open.

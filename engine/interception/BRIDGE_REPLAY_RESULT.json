@@ -1,0 +1,34 @@
+{
+  "scope": "Offline replay of previously captured native events and hooks. min_bytes=1 exercises matching on the short fixture; no new native inference or live replacement.",
+  "rows": [
+    {
+      "tool_use_id": "exec-70824168-af0a-4839-accd-d44e96eddfbe",
+      "matched_exit_code": 0,
+      "received_hook_sha256": "cc3e0cf36ab346692ea4c89d0aeba6cd5f88df6afa09ae047f66e92a0450fe7f",
+      "archive_exact": true,
+      "bridge_lookup_io": {
+        "receipt_bytes_written": 0,
+        "receipt_bytes_read": 632,
+        "output_bytes_hashed": 25
+      }
+    },
+    {
+      "tool_use_id": "exec-d7bfa1fd-6716-4f34-b9d6-65f101fc6653",
+      "matched_exit_code": 7,
+      "received_hook_sha256": "7dcfcaaecc39d5fc742b10e689aa0504c3b177a4895a62c86e1f319e1ea14285",
+      "archive_exact": true,
+      "bridge_lookup_io": {
+        "receipt_bytes_written": 0,
+        "receipt_bytes_read": 629,
+        "output_bytes_hashed": 25
+      }
+    }
+  ],
+  "publisher_io": {
+    "receipt_bytes_written": 1261,
+    "receipt_bytes_read": 0,
+    "output_bytes_hashed": 50
+  },
+  "source_native_trace_sha256": "d03c97343e7fdcddf29371a88d2fb8a610b1e384243c79dcb5e394673c8481fe",
+  "live_ordering_or_workflow_parity_established": false
+}
