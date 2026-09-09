@@ -24,7 +24,7 @@ def identity(*values):
 class Memory:
     def __init__(self,store):
         self.store=store
-        self.metrics={'index_input_bytes':0,'index_seconds':0.0}
+        self.metrics={'index_input_bytes':0,'index_seconds':0.0,'index_validation_bytes':0,'index_validation_seconds':0.0}
         with self.db() as db:
             db.executescript('''
             CREATE TABLE IF NOT EXISTS events(
@@ -85,11 +85,55 @@ class Memory:
         # Literal tokens only: a caller cannot inject FTS operators via query.
         match=' AND '.join('"'+word+'"' for word in words)
         with self.db() as db:
+            db.execute('BEGIN')
+            self._check_index(db,project)
             rows=db.execute('''SELECT e.ordinal,e.project,e.session,e.event_id,e.record_hash
               FROM search JOIN events e ON e.ordinal=search.rowid
               WHERE search MATCH ? AND e.project=? ORDER BY e.ordinal DESC LIMIT ?''',
                             (match,project,limit)).fetchall()
         return [self._reference(row) for row in rows]
+
+    def _check_index(self,db,project):
+        """Conservative full comparison; charge source reads instead of hiding them.
+
+        Protects existing event rows against missing/altered searchable bodies.
+        Does not prove an externally deleted event catalog is complete.
+        """
+        start=time.perf_counter()
+        try:
+            rows=db.execute('''SELECT e.ordinal,e.project,e.session,e.event_id,e.record_hash,s.body
+              FROM events e LEFT JOIN search s ON s.rowid=e.ordinal WHERE e.project=?''',(project,)).fetchall()
+            for row in rows:
+                ref=self._reference(row[:5]);raw=self.store.get(ref['source_hash'])
+                self.metrics['index_validation_bytes']+=len(raw)
+                if len(raw)!=ref['bytes'] or row[5]!=raw.decode('utf-8',errors='replace'):
+                    raise ValueError('Search index does not match archived evidence; rebuild or use exact timeline recovery')
+        finally:self.metrics['index_validation_seconds']+=time.perf_counter()-start
+
+    def rebuild_index(self,project):
+        """Rebuild one project's search rows transactionally from verified sources.
+
+        The event catalog must still exist. No inference or automatic retry.
+        """
+        identity(project);start=time.perf_counter();before=dict(self.store.metrics)
+        with self.db() as db:
+            db.execute('BEGIN IMMEDIATE')
+            try:
+                rows=db.execute('SELECT ordinal,project,session,event_id,record_hash FROM events WHERE project=? ORDER BY ordinal',
+                                (project,)).fetchall()
+                replacements=[]
+                for row in rows:
+                    ref=self._reference(row);raw=self.store.get(ref['source_hash'])
+                    if len(raw)!=ref['bytes']:raise ValueError('Source size mismatch')
+                    replacements.append((row[0],raw.decode('utf-8',errors='replace')))
+                for ordinal,body in replacements:
+                    db.execute('DELETE FROM search WHERE rowid=?',(ordinal,))
+                    db.execute('INSERT INTO search(rowid,body) VALUES(?,?)',(ordinal,body))
+                db.execute('COMMIT')
+            except BaseException:db.execute('ROLLBACK');raise
+        return {'project':project,'records':len(replacements),'seconds':time.perf_counter()-start,
+                'store_io':{k:self.store.metrics[k]-before[k] for k in before},
+                'scope':'Rebuild existing catalog records only; SQLite/physical I/O unmetered'}
 
     def timeline(self,project,session,after=0,limit=50):
         identity(project,session)

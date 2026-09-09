@@ -90,3 +90,25 @@ def test_replay_keeps_exact_text_with_one_shared_provenance_reference(tmp_path):
 def test_replay_rejects_oversize_without_silent_truncation(tmp_path):
     m=memory(tmp_path);m.record('p','s','1',b'large')
     with pytest.raises(ValueError):m.replay('p','s',max_bytes=1)
+
+
+@pytest.mark.parametrize('mutation',["DELETE FROM search", "UPDATE search SET body='nothing relevant'"])
+def test_damaged_search_index_is_not_a_successful_empty_search(tmp_path,mutation):
+    m=memory(tmp_path);m.record('p','s','1',b'decisive cobalt')
+    with m.db() as db:db.execute(mutation)
+    with pytest.raises(ValueError,match='index'):m.search('p','cobalt')
+
+
+def test_index_rebuild_restores_search_from_verified_sources(tmp_path):
+    m=memory(tmp_path);ref=m.record('p','s','1',b'decisive cobalt')
+    with m.db() as db:db.execute('DELETE FROM search')
+    result=m.rebuild_index('p')
+    assert result['records']==1
+    assert m.search('p','cobalt')[0]['record_hash']==ref['record_hash']
+
+
+def test_failed_rebuild_preserves_previous_index(tmp_path):
+    m=memory(tmp_path);ref=m.record('p','s','1',b'decisive cobalt')
+    (tmp_path/'objects'/ref['source_hash']).write_bytes(b'corrupt')
+    with pytest.raises(ValueError):m.rebuild_index('p')
+    with m.db() as db:assert db.execute('SELECT body FROM search').fetchone()[0]=='decisive cobalt'

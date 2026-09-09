@@ -4,6 +4,11 @@ Follow-up: [payload measurements and exhaustive-recovery correction](MEMORY_PAYL
 `replay` provides exact paged history with one shared provenance reference; it
 does not select relevance. The full suite now passes 123 tests.
 
+Later [index-corruption checks and transactional rebuild](MEMORY_INDEX_INTEGRITY.md)
+close tested silent-search failures. Full suite: 142 passed. Search now scans all
+existing project evidence to verify indexed bodies; earlier sparse-read counters
+do not describe this more conservative implementation.
+
 `workflow_memory.Memory(Store(path))` provides:
 
 - `record(project, session, event_id, raw_bytes)`: immutable event identity,
