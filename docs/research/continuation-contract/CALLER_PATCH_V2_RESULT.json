@@ -1,0 +1,96 @@
+{
+  "state": "DEVELOPMENT_PAIR_COMPLETE",
+  "rows": {
+    "on": {
+      "usage": {
+        "input_tokens": 20038,
+        "output_tokens": 507,
+        "cached_input_tokens": 6400,
+        "reasoning_output_tokens": 215,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 19.657406083017122,
+      "events_sha256": "0f07d67f85aa061b26a88b92a32d899ba635a0ebaf18030b85e6cbd9b9705b75",
+      "native_events_sha256": "8861cee75b8323dd56780887434cc5ee15850320a2bf916c439ed5e82a831d38",
+      "caller_materialized_sha256": "1c116b638ec79d9a0e69b6edd87d36fb59ea4950a9d21e687d3942d7a17b455b",
+      "checks": {
+        "exit_code": 0,
+        "seconds": 0.20633325004018843,
+        "stdout_bytes": 39,
+        "stderr_bytes": 0,
+        "stdout_sha256": "a4e5adef14c1a24cbdaaadf02df89472be849d3af7995b69094f31fc95b58ed0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "assessment": "The defect is publishing progress while the input is still being evaluated. Staging validated values in a private list keeps observers from seeing partial changes and makes validation or iteration failures leave both public fields untouched, including a stale cursor. Iteration exceptions propagate directly without wrapping or replacement. Once staging succeeds, extending the existing list preserves aliases, and deriving the cursor from its resulting length accounts for prior client mutations and empty batches. This also handles an input that aliases items: iteration finishes before the list grows. Relevant verification must distinguish failure entering iteration, failure after valid values, invalid types or negative values after a valid prefix, observation during iteration, and recovery with a stale cursor. The correctness argument relies on the stated finite synchronous domain; interruption or resource exhaustion during the commit is not covered, and finite checks alone cannot establish universal behavior.",
+      "artifact_sha256": "1c116b638ec79d9a0e69b6edd87d36fb59ea4950a9d21e687d3942d7a17b455b",
+      "delivery": {
+        "sha256": "6e8125279d9c33dc68bfbf0fbf16954d964412319c7bbbb2153381720d9c9a87",
+        "bytes": 2396,
+        "seconds": 0.0004470410058274865,
+        "logical_bytes_written": 2396,
+        "physical_io": "unmeasured",
+        "inference_calls": 0
+      },
+      "passed": true
+    },
+    "off": {
+      "usage": {
+        "input_tokens": 101113,
+        "output_tokens": 955,
+        "cached_input_tokens": 78848,
+        "reasoning_output_tokens": 28,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 46.16591191699263,
+      "events_sha256": "51d396dbb2aad108d6d7fb9d23cce71d25f8a97efbfe1a22670895a956b43093",
+      "native_events_sha256": "a299f77a629189b2ce402c212589d89bf55cb30e6999a40c6cf31804ae0d49e2",
+      "checks": {
+        "exit_code": 0,
+        "seconds": 0.19838600000366569,
+        "stdout_bytes": 39,
+        "stderr_bytes": 0,
+        "stdout_sha256": "a4e5adef14c1a24cbdaaadf02df89472be849d3af7995b69094f31fc95b58ed0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "assessment": "The repair stages validated values privately before committing, preventing partial updates and keeping iteration observers on the entry state. It then extends the original list and derives cursor from its actual length, correcting stale bookkeeping after alias mutations. Exceptions propagate without interception. The supplied checker and focused checks support this reasoning, including self-alias input, observation at iterator entry and exhaustion, exception identity, and recovery. Finite checks are not universal proof; staging requires memory proportional to batch size, and correctness is assessed within the stated synchronous domain.",
+      "artifact_sha256": "997d804133c5c4680dad5ba07c8c7e651fdced7a9cef4971c71ea533782469c0",
+      "delivery": {
+        "sha256": "bba69bef7abaf7896af9ba85bddfa7f443c6573cac66a407296fd03e090ae860",
+        "bytes": 1859,
+        "seconds": 0.0003364580334164202,
+        "logical_bytes_written": 1859,
+        "physical_io": "unmeasured",
+        "inference_calls": 0
+      },
+      "passed": true
+    }
+  },
+  "manifest_sha256": "7544f690fa4959f0ff7825f043f7e6459442355679a7b8327dac121a56cdf799",
+  "savings_percent": {
+    "input_tokens": 80.18256801796011,
+    "output_tokens": 46.910994764397905
+  },
+  "parity": "NOT_ESTABLISHED",
+  "independent_audit": {
+    "off": {
+      "native_hashes_verified": true,
+      "delivery_verified": true,
+      "protected_sources_verified": true,
+      "segments": 5,
+      "commands": 4,
+      "assessment_proxy_tokens": 102
+    },
+    "on": {
+      "native_hashes_verified": true,
+      "delivery_verified": true,
+      "protected_sources_verified": true,
+      "segments": 1,
+      "commands": 0,
+      "assessment_proxy_tokens": 163
+    }
+  },
+  "repairs_ast_equal_ignoring_locations": true,
+  "uncached_input_saving_percent": 38.74691219402649,
+  "disposition": "DO_NOT_PROMOTE_OUTPUT_VARIANT",
+  "limits": "Finite development pair; native variance/order/cache and instruction changes are not causally isolated. Full cost and representative parity remain unmeasured."
+}
