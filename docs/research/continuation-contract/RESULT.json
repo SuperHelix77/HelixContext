@@ -1,0 +1,86 @@
+{
+  "classification": "OFFLINE_FINITE_TRANSITION_AND_MUTATION_AUDIT",
+  "native_calls": 0,
+  "contract_sha256": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+  "audit_sha256": "998cc0ea839e123e68ffda95ec43f7f80bb4236d6e50e5009d8026dc9283c665",
+  "reference_sha256": "860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810",
+  "python": "3.14.0",
+  "sequences": 2745,
+  "transitions": 8282,
+  "mutation_rejections": {
+    "stale_cursor": {
+      "witness": [
+        "append",
+        "alias_add",
+        "append"
+      ],
+      "exception": "AssertionError"
+    },
+    "accept_bool_subclass": {
+      "witness": [
+        "append",
+        "append",
+        "bool"
+      ],
+      "exception": "AssertionError"
+    },
+    "reverse_order": {
+      "witness": [
+        "append",
+        "append",
+        "append"
+      ],
+      "exception": "AssertionError"
+    },
+    "replace_list": {
+      "witness": [
+        "append",
+        "append",
+        "append"
+      ],
+      "exception": "AssertionError"
+    },
+    "double_consumption": {
+      "witness": [
+        "append",
+        "append",
+        "append"
+      ],
+      "exception": "AssertionError"
+    },
+    "empty_no_sync": {
+      "witness": [
+        "append",
+        "alias_add",
+        "empty"
+      ],
+      "exception": "AssertionError"
+    },
+    "eager_mutation": {
+      "witness": [
+        "append",
+        "append",
+        "append"
+      ],
+      "exception": "AssertionError"
+    },
+    "wrap_iteration_exception": {
+      "witness": [
+        "append",
+        "append",
+        "failure_enter"
+      ],
+      "exception": "AssertionError"
+    }
+  },
+  "delayed_trajectory_length": 50,
+  "reference_pass": true,
+  "seconds": 0.1689550830051303,
+  "parity": "UNTESTED",
+  "token_savings": null,
+  "limitations": [
+    "Finite evaluator coverage, not proof for arbitrary Python programs",
+    "Delayed sequence is an offline state test, not a 50-turn model memory test",
+    "No Engine stale-state gate or persistence implementation tested"
+  ]
+}

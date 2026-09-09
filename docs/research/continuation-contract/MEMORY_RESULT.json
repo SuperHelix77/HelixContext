@@ -1,0 +1,71 @@
+{
+  "classification": "OFFLINE_RECOVERY_ONLY",
+  "native_calls": 0,
+  "assertions": {
+    "old_exact_after_index_loss": true,
+    "new_exact_after_index_loss": true,
+    "old_epoch_excludes_future_record": true,
+    "different_authority_roots": true,
+    "index_not_silently_rebuilt": true
+  },
+  "old_contract_sha256": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+  "new_contract_sha256": "33695110dddd0fae4feef2385674071a389da85a1ba1ff6d0b9082477038e58b",
+  "old_epoch": "84e02b4f3a19a77088b4c6c3d99c9b282f49880674be8570f5ffb8af24c00419",
+  "new_epoch": "c3bf0b8c3809979fb212e413699519a56a0e9907e98ac7bff306fa762f9c4cc1",
+  "old_read_store_io": {
+    "object_bytes_read": 12247,
+    "object_bytes_written": 0,
+    "object_bytes_hashed": 12247,
+    "object_read_operations": 3,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "useful_old_evidence_bytes": 2190,
+  "old_freeze": {
+    "epoch_sha256": "84e02b4f3a19a77088b4c6c3d99c9b282f49880674be8570f5ffb8af24c00419",
+    "project": "continuation",
+    "count": 40,
+    "source_bytes": 3165,
+    "seconds": 0.004403125029057264,
+    "store_io": {
+      "object_bytes_read": 35885,
+      "object_bytes_written": 9805,
+      "object_bytes_hashed": 45690,
+      "object_read_operations": 161,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "scope": "Logical store I/O; SQLite/physical traffic and inference costs unmeasured."
+  },
+  "new_freeze": {
+    "epoch_sha256": "c3bf0b8c3809979fb212e413699519a56a0e9907e98ac7bff306fa762f9c4cc1",
+    "project": "continuation",
+    "count": 41,
+    "source_bytes": 5471,
+    "seconds": 0.003914500004611909,
+    "store_io": {
+      "object_bytes_read": 41246,
+      "object_bytes_written": 10050,
+      "object_bytes_hashed": 51296,
+      "object_read_operations": 165,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "scope": "Logical store I/O; SQLite/physical traffic and inference costs unmeasured."
+  },
+  "seconds": 0.047629416978452355,
+  "source_hashes": {
+    "memory_preflight.py": "47396d35761eefed1a0298e1c2b4170136d2ebc8b9c3aaf2b17ef0a72faf8dce",
+    "memory_epoch.py": "1294a13d650d641f9ef4b648d48d946c83633f89c4beef15f33703bee5ab448b",
+    "workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede"
+  },
+  "limits": [
+    "No model relevance selection or automatic authority invalidation tested",
+    "No production admission, continuation executor or compaction restoration claim",
+    "Logical Store I/O only; SQLite, physical I/O, storage cost and coordinator inference not fully accounted"
+  ]
+}
