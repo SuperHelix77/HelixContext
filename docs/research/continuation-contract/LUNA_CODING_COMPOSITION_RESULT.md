@@ -95,6 +95,13 @@ globally activated. Existing research callers are not yet a production Codex-app
 adapter. Engine remains active on ordinary semantic routes; unsupported work must
 not be silently treated as mechanically resolved.
 
+## Public reproduction
+
+Both exact implementations and the original synthetic task are [published with
+an offline verifier](coding-composed-artifacts/README.md). The verifier reproduces
+the public/oracle/domain checks using temporary staging without model calls or
+changes to frozen reports. Raw private environment transcripts remain local.
+
 ## Decision
 
 Freeze this coding configuration at the accepted 75/75 boundary; do not tune the

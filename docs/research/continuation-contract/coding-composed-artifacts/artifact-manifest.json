@@ -1,0 +1,17 @@
+{
+  "classification": "Exact synthetic task and generated code from fresh native pair; no raw environment/memory transcripts",
+  "native_pair_report": "../LUNA_CODING_COMPOSED_FRESH_PAIR_RESULT.json",
+  "sha256": {
+    "off/allocation.py": "97fcb467af999e65f5727791d46c1f2b8a6c55c58013312a316de2c81170346a",
+    "off/settings.json": "cfe122ecf10934c2ef72cdc8a4eb6ee04ba8b444203a5f1dbe5b8cd3783f55ef",
+    "off/test_allocation.py": "8f0a832313a8160050f42f66b1ca1752dcebd37aa6235e5209973ec942264a6b",
+    "on/allocation.py": "b7003ee5a968006324437d7160be2eb670adb1c64766e9f525095b7eb51d3352",
+    "on/settings.json": "cfe122ecf10934c2ef72cdc8a4eb6ee04ba8b444203a5f1dbe5b8cd3783f55ef",
+    "on/test_allocation.py": "8f0a832313a8160050f42f66b1ca1752dcebd37aa6235e5209973ec942264a6b",
+    "coding-source.json": "dc3493661aa3af275998a0a19df1cea738325ec147b30cdeceacf476895388fe"
+  },
+  "verifier_sources": {
+    "../luna_capability_pair.py": "1d8e8cb8b9dbaafa47650d2cb75d80840d3cd3d28e8da8ac369717357a3f8912",
+    "../luna_coding_domain_audit.py": "dfc9142b70e737ed0eb03eb126b9665bfb9d6154c48207459fd71725e142cfc3"
+  }
+}
