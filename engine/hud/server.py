@@ -74,6 +74,26 @@ def trace_view(path):
     return result
 
 
+def engine_view(path):
+    raw=cached_bytes(path,4_000_000)
+    events=[];types={};policy=None
+    for line in raw.splitlines():
+        try:event=json.loads(line)
+        except (ValueError,UnicodeError):continue # Incomplete append is retried next scan.
+        if event.get('schema')!='helix.engine.event.v1':raise ValueError('Unknown Engine event')
+        for field in ('evidence_ref','policy_ref'):
+            key=event.get(field,'')
+            if not re.fullmatch('[0-9a-f]{64}',key):raise ValueError('Invalid Engine ref')
+            source=cached_bytes(path.parent/'objects'/key,4_000_000)
+            if hashlib.sha256(source).hexdigest()!=key:raise ValueError('Engine evidence tampered')
+            if field=='policy_ref':policy=json.loads(source)['policy']
+        kind=event['type'];types[kind]=types.get(kind,0)+1
+        events.append({'sequence':len(events)+1,'type':'engine.'+kind,'detail':event['evidence_ref'][:12],
+                       'execution_timestamp':event['timestamp'],'exit_code':None})
+    return {'engine_timeline':events[-20:],'engine_event_counts':types,'engine_policy':policy,
+            'engine_event_source_hash':hashlib.sha256(raw).hexdigest()}
+
+
 def usage(value):
     if not isinstance(value,dict):return None
     result={}
@@ -131,7 +151,7 @@ def snapshot(config):
             path=safe_path(root,spec['status'])
             row={'id':rid,'experiment_id':experiment['id'],'experiment':experiment['name'],
                 'classification':experiment['classification'],'arm':spec['arm'],
-                'state':'UNAVAILABLE','model':None,'usage':None,'elapsed_seconds':None,
+                'state':'UNAVAILABLE','model':manifest.get('model'),'usage':None,'elapsed_seconds':None,
                 'source':str(path),'source_hash':None,'updated_at':None,
                 'artifact_check':measured_check(report,spec['arm']),'last_event':None}
             report_row=next((r for r in report.get('rows',[]) if r.get('arm')==spec['arm']),{}) if isinstance(report,dict) else {}
@@ -179,6 +199,16 @@ def snapshot(config):
             except (OSError,ValueError,TypeError) as exc:
                 row.update(state='UNAVAILABLE',usage=None,error=type(exc).__name__)
                 problems.append({'run':rid,'message':'Receipt unavailable or invalid; measurements are unknown.'})
+            if spec.get('engine_events'):
+                try:
+                    row.update(engine_view(safe_path(root,spec['engine_events'])))
+                    policy=row.get('engine_policy') or {}
+                    for key in ('memory','reducers','cold_plans','completion'):
+                        row['mechanisms'][key]='enabled (policy)' if policy.get(key) is True else 'disabled (policy)' if policy.get(key) is False else 'unknown'
+                    counts=row['engine_event_counts']
+                    row['delegated_work']='; '.join(k+': '+str(v) for k,v in counts.items()) or row['delegated_work']
+                except (OSError,ValueError,KeyError,TypeError):
+                    problems.append({'run':rid,'message':'Engine events unavailable or integrity check failed.'})
             current.append(row);runs.append(row)
         off=next((r for r in current if r['arm']=='off'),None)
         on=next((r for r in current if r['arm']=='on'),None)

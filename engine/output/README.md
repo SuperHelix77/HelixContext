@@ -9,12 +9,17 @@ between models, workloads, or cold/warm execution without evidence.
 Latest mechanism: [caller-side completion](CALLER_COMPLETION.md) moves exact
 assembly out of the model's tool loop. Offline replay preserves the artifact,
 but rejects numeric alias recoding after accounting for its input legend.
-Original IDs remain preferred. Native qualification is still pending.
+Original IDs remain preferred. Native qualification remains limited to development fixtures.
 
 The subsequent [fresh Sol pair](SOL_CALLER_COMPLETION_RESULT.md) measured
 67.34% input and 71.90% output savings with exact artifacts. It misses the
 75/75 Sol freeze threshold; one integrated attempt is authorized next, with
 independently switchable Memory/Reducers/completion and cold plans off.
+
+The [integrated Sol attempt](SOL_INTEGRATED_RESULT.md) subsequently measured
+14.56% input / 40.59% output savings. It passed exact artifact checks but missed
+the freeze gate, with residual rereading/orchestration and runtime confounds.
+Memory/Reducers/completion now share a [versioned runtime](../prototype/INTEGRATION.md).
 
 The [live HUD](../hud/README.md) observes registered receipts without inference.
 

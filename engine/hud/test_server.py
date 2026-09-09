@@ -7,7 +7,7 @@ from urllib.request import urlopen
 from urllib.error import HTTPError
 
 import pytest
-from server import snapshot,Observer,make_handler,trace_view
+from server import snapshot,Observer,make_handler,trace_view,engine_view
 
 
 def setup(tmp_path):
@@ -89,3 +89,20 @@ def test_http_read_only_and_scoped_receipts(tmp_path):
         for path in ['/api/receipt?id=../../etc/passwd','/server.py','/../../etc/passwd']:
             with pytest.raises(HTTPError):urlopen(base+path)
     finally:server.shutdown();server.server_close()
+
+
+def test_engine_events_bind_exact_objects_and_show_switches(tmp_path):
+    import hashlib
+    (tmp_path/'objects').mkdir()
+    def obj(value):
+        raw=json.dumps(value).encode();key=hashlib.sha256(raw).hexdigest()
+        (tmp_path/'objects'/key).write_bytes(raw);return key
+    policy=obj({'policy':{'memory':True,'cold_plans':False}});evidence=obj({'result':'ok'})
+    path=tmp_path/'events.jsonl'
+    path.write_text(json.dumps({'schema':'helix.engine.event.v1','timestamp':'2026-09-09T00:00:00Z','type':'completion','policy_ref':policy,'evidence_ref':evidence})+'\n')
+    result=engine_view(path)
+    assert result['engine_event_counts']=={'completion':1}
+    assert result['engine_policy']['cold_plans'] is False
+    (tmp_path/'objects'/evidence).write_bytes(b'tampered')
+    import pytest
+    with pytest.raises(ValueError):engine_view(path)

@@ -93,7 +93,7 @@ def packet(store,key,kind='generic',max_bytes=6000):
  if len(encode())>max_bytes:raise ValueError('Metadata exceeds packet budget; raw receipt remains available')
  return p
 
-def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=(),env=None):
+def capture(store,argv,cwd,environment_id,timeout=None,watch=(),env=None):
  cwd=Path(cwd).resolve();watch=[Path(x) if Path(x).is_absolute() else cwd/x for x in watch]
  snap=lambda:{str(p):digest(p.read_bytes()) if p.is_file() else None for p in watch}
  before=snap();start=time.time();timed_out=False
@@ -109,7 +109,10 @@ def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=(),env=N
    if child.poll() is None:os.killpg(child.pid,signal.SIGKILL);child.wait()
  out_bytes=out.read_bytes();err_bytes=err.read_bytes();store.metrics['staging_bytes_read']+=len(out_bytes)+len(err_bytes);store.metrics['staging_bytes_written']+=len(out_bytes)+len(err_bytes);stdout=store.put(out_bytes);stderr=store.put(err_bytes)
  end=time.time();after=snap();receipt={'schema':'helix.command.v1','argv':argv,'cwd':str(cwd),'environment_id':environment_id,'started_unix':start,'finished_unix':end,'wall_seconds':round(end-start,6),'exit_code':code,'timed_out':timed_out,'interrupted':interrupted,'stdout':stdout,'stderr':stderr,'changed_watched_files':{p:{'before':before[p],'after':after[p]} for p in before if before[p]!=after[p]},'limits':'stdout/stderr bytes retained separately; cross-stream interleaving not recorded; watched-file changes only; environment label is caller supplied, not a full environment attestation'}
- key=store.put(json.dumps(receipt,ensure_ascii=False,separators=(',',':')).encode())['sha256'];staging_json=json.dumps({'receipt':key,'staging_copies_retained':True});(staging/'receipt.json').write_text(staging_json);store.metrics['staging_bytes_written']+=len(staging_json.encode());return packet(store,key,kind)
+ key=store.put(json.dumps(receipt,ensure_ascii=False,separators=(',',':')).encode())['sha256'];staging_json=json.dumps({'receipt':key,'staging_copies_retained':True});(staging/'receipt.json').write_text(staging_json);store.metrics['staging_bytes_written']+=len(staging_json.encode());return key
+
+def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=(),env=None):
+ return packet(store,capture(store,argv,cwd,environment_id,timeout,watch,env),kind)
 
 def main():
  a=argparse.ArgumentParser();a.add_argument('--store',required=True);sub=a.add_subparsers(dest='op',required=True)
