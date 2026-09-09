@@ -1,0 +1,123 @@
+{
+  "classification": "Read-only routing/protocol audit; no native calls or token savings",
+  "admission_probe": {
+    "classification": "Admission engineering probe only; no native execution, savings or parity measurement",
+    "decisions": {
+      "gpt-5.6-sol/production": {
+        "schema": "helix.admission.v1",
+        "route": "native",
+        "reason": "No production qualification established",
+        "request": {
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "production"
+        },
+        "logical_bytes_read": 0,
+        "read_operations": 0,
+        "seconds": 2.667016815394163e-06,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      },
+      "gpt-5.6-sol/qualified_fixture_research": {
+        "schema": "helix.admission.v1",
+        "route": "optimized",
+        "reason": "Exact frozen research qualification only; general parity remains open",
+        "request": {
+          "model": "gpt-5.6-sol",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "qualified_fixture_research"
+        },
+        "logical_bytes_read": 120179,
+        "read_operations": 18,
+        "seconds": 0.0051603749743662775,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      },
+      "gpt-6-astra/production": {
+        "schema": "helix.admission.v1",
+        "route": "native",
+        "reason": "No production qualification established",
+        "request": {
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "production"
+        },
+        "logical_bytes_read": 0,
+        "read_operations": 0,
+        "seconds": 8.33999365568161e-07,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      },
+      "gpt-6-astra/qualified_fixture_research": {
+        "schema": "helix.admission.v1",
+        "route": "native",
+        "reason": "Model, effort or exact task contract mismatch",
+        "request": {
+          "model": "gpt-6-astra",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "qualified_fixture_research"
+        },
+        "logical_bytes_read": 0,
+        "read_operations": 0,
+        "seconds": 1.667009200900793e-06,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      },
+      "gpt-5.6-luna/production": {
+        "schema": "helix.admission.v1",
+        "route": "native",
+        "reason": "No production qualification established",
+        "request": {
+          "model": "gpt-5.6-luna",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "production"
+        },
+        "logical_bytes_read": 0,
+        "read_operations": 0,
+        "seconds": 3.33995558321476e-07,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      },
+      "gpt-5.6-luna/qualified_fixture_research": {
+        "schema": "helix.admission.v1",
+        "route": "native",
+        "reason": "Model, effort or exact task contract mismatch",
+        "request": {
+          "model": "gpt-5.6-luna",
+          "effort": "high",
+          "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+          "mode": "qualified_fixture_research"
+        },
+        "logical_bytes_read": 0,
+        "read_operations": 0,
+        "seconds": 7.500057108700275e-07,
+        "savings_claim": null,
+        "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+      }
+    },
+    "caller_obligation": "Request contract hash must describe the verified actual task, not a label supplied by model output.",
+    "remaining_limits": [
+      "No global platform hook installed",
+      "Gate validates before callback; concurrent file mutation during execution is not prevented",
+      "Qualified research input remains caller-owned and trusted",
+      "Production no-loss and net-economics qualification absent"
+    ]
+  },
+  "thread_start_schema_sha256": "25f490368ec6df52a2a3b82a5469d2413307eb93439121b309f415b5648eee7a",
+  "native_requests_sha256": "8ae35271693e974108724fbb3effeed3d82cfa2135521609487b767c30d611f4",
+  "caller_added_dynamic_tools_in_latest_pair": false,
+  "dynamic_function_defer_loading_schema": {
+    "type": "boolean"
+  },
+  "official_source": "https://learn.chatgpt.com/docs/app-server",
+  "limits": [
+    "No evidence total first-segment input equals tool schema or Helix bootstrap",
+    "deferLoading schema supports dynamic function tools; built-in deferral not established",
+    "Admission is callback API, not global interception"
+  ]
+}
