@@ -1,0 +1,125 @@
+{
+  "classification": "OBSERVED counters and proxies; conditional trajectory arithmetic only",
+  "native_usage": {
+    "input_tokens": 105901,
+    "output_tokens": 1167,
+    "cached_input_tokens": 93824,
+    "reasoning_output_tokens": 29,
+    "cache_write_input_tokens": 0
+  },
+  "segments": [
+    {
+      "totalTokens": 19446,
+      "inputTokens": 19371,
+      "cachedInputTokens": 11264,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 75,
+      "reasoningOutputTokens": 0
+    },
+    {
+      "totalTokens": 20071,
+      "inputTokens": 20021,
+      "cachedInputTokens": 19200,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 50,
+      "reasoningOutputTokens": 0
+    },
+    {
+      "totalTokens": 20871,
+      "inputTokens": 20635,
+      "cachedInputTokens": 20480,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 236,
+      "reasoningOutputTokens": 0
+    },
+    {
+      "totalTokens": 23107,
+      "inputTokens": 22519,
+      "cachedInputTokens": 20480,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 588,
+      "reasoningOutputTokens": 29
+    },
+    {
+      "totalTokens": 23573,
+      "inputTokens": 23355,
+      "cachedInputTokens": 22400,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 218,
+      "reasoningOutputTokens": 0
+    }
+  ],
+  "commands": [
+    {
+      "index": 1,
+      "classification": "fixed apply/check",
+      "command": {
+        "bytes": 37,
+        "proxy_tokens": 12
+      },
+      "output": {
+        "bytes": 1606,
+        "proxy_tokens": 498
+      }
+    },
+    {
+      "index": 2,
+      "classification": "evidence path listing",
+      "command": {
+        "bytes": 98,
+        "proxy_tokens": 31
+      },
+      "output": {
+        "bytes": 1054,
+        "proxy_tokens": 507
+      }
+    },
+    {
+      "index": 3,
+      "classification": "snapshot and provenance inspection",
+      "command": {
+        "bytes": 523,
+        "proxy_tokens": 210
+      },
+      "output": {
+        "bytes": 5815,
+        "proxy_tokens": 1536
+      }
+    },
+    {
+      "index": 4,
+      "classification": "new semantic tests plus stdout retrieval",
+      "command": {
+        "bytes": 1803,
+        "proxy_tokens": 492
+      },
+      "output": {
+        "bytes": 612,
+        "proxy_tokens": 188
+      }
+    }
+  ],
+  "duplicates": {
+    "source": {
+      "in_initial_prompt": true,
+      "in_inspection_output": true,
+      "bytes": 358,
+      "proxy_tokens": 80
+    },
+    "contract": {
+      "in_initial_prompt": true,
+      "in_inspection_output": true,
+      "bytes": 2190,
+      "proxy_tokens": 425
+    }
+  },
+  "conditional_drop_two_navigation_segments": {
+    "retained_input": 65245,
+    "removed_input_percent": 38.39057232698464,
+    "assumption": "Delete the two navigation-producing model segments; retain other segment costs unchanged. Neither safe removal nor unchanged trajectory established."
+  },
+  "output_80_percent_allowance_relative_to_this_safety_run": 233.4,
+  "proxy_warning": "o200k_base counts are not native output attribution, additive token bills, or model lower bounds.",
+  "no_new_native_calls": true,
+  "source_sha256": "388881c4d87f72e2afd66787cb8a23c85d32ccae788758a158e0ccabdc6906d1"
+}
