@@ -1,0 +1,57 @@
+{
+  "classification": "OBSERVED deterministic grader false-positive; no new native evidence",
+  "native_calls": 0,
+  "source_hashes": {
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/luna_reason_falsifier.py": "0bcb39fd4324bd195dd6b53262f195d0866ec2b6378d40c9c6097c9fd7679283",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/native_luna_ack_output_v3.py": "4d1ce2bb900c2ffaf825dcc34637e393b7ac87e3477aafb6f1ad93f5eb78b41b",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/native_luna_ack_pair.py": "af431f7d1ef88a60257d83d1ee25833c59bd172301c494064b6cc155f65357e7"
+  },
+  "cases": [
+    {
+      "reason": "INSUFFICIENT_APPROVERS",
+      "answer": {
+        "authorized": false,
+        "minimum_distinct_approvers": 2,
+        "approver_group": "violet",
+        "recovery_nonce": "6LZFFYRJQB62",
+        "latency_threshold_ms": "0.125",
+        "accounting_sequence": "9007199254740993",
+        "evidence_turns": [
+          1,
+          17,
+          31
+        ],
+        "explanation": "The requested single approver does not meet the policy minimum of 2 distinct approvers. The applicable group is violet; rejected records do not amend this requirement."
+      },
+      "frozen_grade_pass": true,
+      "reason_entailed_by_request_and_resolved_policy": true
+    },
+    {
+      "reason": "WRONG_GROUP",
+      "answer": {
+        "authorized": false,
+        "minimum_distinct_approvers": 2,
+        "approver_group": "violet",
+        "recovery_nonce": "6LZFFYRJQB62",
+        "latency_threshold_ms": "0.125",
+        "accounting_sequence": "9007199254740993",
+        "evidence_turns": [
+          1,
+          17,
+          31
+        ],
+        "explanation": "The requested approver group does not match the applicable policy group violet."
+      },
+      "frozen_grade_pass": true,
+      "reason_entailed_by_request_and_resolved_policy": false
+    }
+  ],
+  "finding": "Frozen grade checks final factual fields and nonempty explanation, not explanation entailment. WRONG_GROUP receives PASS despite requested and resolved group both violet.",
+  "impact": "Actual V3 recovery used INSUFFICIENT_APPROVERS and survives this additional check. No evidence of loss in its actual reason; broader reason-code interface qualification weakened.",
+  "next_gate": "Before another native trial, prospectively bind structured request facts and independently verify reason entailment. Treat unsupported obligations as unresolved. Never silently repair a model reason.",
+  "limits": [
+    "Synthetic falsifier of checker sufficiency, not observed model error.",
+    "No full semantic correctness theorem; source authority/completeness and extra obligations remain model responsibilities.",
+    "Frozen results, graders and native traces unchanged."
+  ]
+}
