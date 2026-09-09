@@ -1,0 +1,190 @@
+{
+  "classification": "POSTHOC finite-suite coverage; not native decisions, holdout or capability parity",
+  "native_calls": 0,
+  "provenance": {
+    "events_sha256": "48d459dcea99b9f35dca1a62c6186a6deb02e391a1ca21d5b76a363207d1914d",
+    "command_sha256": "cce7d76ce8ef9bc360832b8175a2a16238ccc09fade15397c28d820dcb4dceae",
+    "extraction": "Unchanged Python heredoc from completed semantic-probe command; supplied proposal varied in private temporary directories only",
+    "suite_hashes": {
+      "declared": "d1f00ba60194616b15dff7d00ea4456e4f1ec44a8c678d552a4ccac9a44aaba8",
+      "independence": "1f9fe8344621529ba19d271cac17b617a75019e1cc15157d96ea039ddfc1471c",
+      "astra_supplemental": "0029f97ebd962bef6cd19013e256b66ca3e85c00870ac28cc062e84b86c0ec0a"
+    }
+  },
+  "results": {
+    "reference": {
+      "source_sha256": "860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.1830946669797413
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.07888762501534075
+        },
+        "astra_supplemental": {
+          "exit_code": 0,
+          "stdout": "{'additional_semantic_cases_passed': 35, 'protected_files_unchanged': True, 'declared_checks_executed': False, 'proposal_sha256': '860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810'}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.02953504101606086
+        }
+      }
+    },
+    "shared_storage": {
+      "source_sha256": "ecfa8eb1ba98112b55ec00cebc91b727c3881fe7b211daae9fa2c12bc5baf913",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.18962862499756739
+        },
+        "independence": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-dy1nhiby/probe.py\", line 35, in <module>\n    if __name__=='__main__':print(check(Path(sys.argv[1]).read_text()))\n                                  ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-dy1nhiby/probe.py\", line 11, in check\n    assert aliases[0] is not aliases[1], 'Distinct live queues must not share their mutable storage'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Distinct live queues must not share their mutable storage\n",
+          "elapsed_seconds": 0.034943167003802955
+        },
+        "astra_supplemental": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-v89kkk81/probe.py\", line 49, in <module>\n    assert q.append_batch(alias)==4 and alias==[1,2,1,2] and q.items is alias;checks+=1\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "elapsed_seconds": 0.03735287504969165
+        }
+      }
+    },
+    "self_alias_noop": {
+      "source_sha256": "6abfac2cd754a344f7a8343cb545021f7ca4b4bd86c21482278213270abad81c",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.19393950002267957
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.08410516701405868
+        },
+        "astra_supplemental": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-4w2zieys/probe.py\", line 49, in <module>\n    assert q.append_batch(alias)==4 and alias==[1,2,1,2] and q.items is alias;checks+=1\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+          "elapsed_seconds": 0.03843208303442225
+        }
+      }
+    },
+    "huge_int_rejected": {
+      "source_sha256": "0e19ce1f5d6e567df88de0e80196c84d6c885ce0140f2fbe17f83d3c843aed7c",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.1921380830463022
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.08497795899165794
+        },
+        "astra_supplemental": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-q7twzfr0/probe.py\", line 20, in <module>\n    it=Observed();assert q.append_batch(it)==len(entry)+2;assert it.calls==1\n                         ~~~~~~~~~~~~~~^^^^\n  File \"proposal.py\", line 6, in append_batch\n    if type(value) is not int or value<0 or value>2**63-1: raise ValueError('invalid')\n                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: invalid\n",
+          "elapsed_seconds": 0.03659600001992658
+        }
+      }
+    },
+    "legacy_sequence_rejected": {
+      "source_sha256": "01e6546a58aff4a911c1e08e1fc19776e716e670585e835eeed921ff3edb6c41",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.20325879100710154
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.08741445903433487
+        },
+        "astra_supplemental": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-6cto0w3c/probe.py\", line 57, in <module>\n    assert q.append_batch(Sequence())==11 and alias==entry+[0,1,2];checks+=1\n           ~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"proposal.py\", line 4, in append_batch\n    if not hasattr(values,'__iter__'): raise TypeError('iterator required')\n                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: iterator required\n",
+          "elapsed_seconds": 0.03641195798991248
+        }
+      }
+    },
+    "input_length_hint_used": {
+      "source_sha256": "53bdc5c79a83ed500ebce4ada85e1d6281b58450639db73749f574ccd42692b6",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.19969358295202255
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.08636495901737362
+        },
+        "astra_supplemental": {
+          "exit_code": 1,
+          "stdout": "",
+          "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-yy7rlszs/probe.py\", line 20, in <module>\n    it=Observed();assert q.append_batch(it)==len(entry)+2;assert it.calls==1\n                         ~~~~~~~~~~~~~~^^^^\n  File \"proposal.py\", line 5, in append_batch\n    operator.length_hint(values)\n    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-probe-inventory-yy7rlszs/probe.py\", line 19, in __length_hint__\n    def __length_hint__(self):raise AssertionError('input length hint must not be needed')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: input length hint must not be needed\n",
+          "elapsed_seconds": 0.03650937497150153
+        }
+      }
+    },
+    "untested_value_dropped": {
+      "source_sha256": "7b348b4c085a2b1febc0b05d2d3c750bdbe6176854a0b9b9624bec0b328e012a",
+      "suites": {
+        "declared": {
+          "exit_code": 0,
+          "stdout": "PASS 2745 sequences / 8282 transitions\n",
+          "stderr": "",
+          "elapsed_seconds": 0.19425429200055078
+        },
+        "independence": {
+          "exit_code": 0,
+          "stdout": "{'sequences': 1000, 'transitions': 3000}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.08218620799016207
+        },
+        "astra_supplemental": {
+          "exit_code": 0,
+          "stdout": "{'additional_semantic_cases_passed': 35, 'protected_files_unchanged': True, 'declared_checks_executed': False, 'proposal_sha256': '7b348b4c085a2b1febc0b05d2d3c750bdbe6176854a0b9b9624bec0b328e012a'}\n",
+          "stderr": "",
+          "elapsed_seconds": 0.02938962500775233
+        }
+      }
+    }
+  },
+  "independent_gap_witness": {
+    "input": [
+      4093
+    ],
+    "required_items": [
+      4093
+    ],
+    "observed_items": [],
+    "required_return": 1,
+    "observed_return": 0,
+    "all_existing_suites_pass": true
+  },
+  "script_sha256": "ab32a35c0f0df6f1ba7bc797cc51ffbe30a75b926dec86e18a5ffde1d9642302"
+}
