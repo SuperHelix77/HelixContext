@@ -15,16 +15,19 @@ function renderFocus(runs){if(!runs.some(r=>r.id===selected))selected=runs.find(
  $('timeline').replaceChildren(...[...(current.timeline||[]),...(current.engine_timeline||[])].map(event=>{const li=element('li');const stamp=event.execution_timestamp==null?'—':String(event.execution_timestamp);li.append(element('span',stamp,'event-time'),element('span','#'+event.sequence,'event-seq'),element('span',event.type+' '+event.detail),element('span',event.recorded_output_bytes==null?'':number(event.recorded_output_bytes)+' B recorded','event-value'));if(event.exit_code!=null)li.append(element('span','exit '+event.exit_code,event.exit_code===0?'good':'bad'));return li;}));$('timeline-note').textContent='Native events then Engine events, each in source order · observed '+time(state.observed_at)+' · missing execution timestamps shown as —';
 }
 function render(){if(!state||paused)return;const runs=state.runs.filter(r=>fits(r.model)), pairs=state.pairs.filter(p=>fits(p.model));
- $('scope').textContent=state.scope;renderFocus(runs);renderCosts();
+ $('scope').textContent=state.scope;renderFocus(runs);renderCosts();renderEngineReplays();renderCohorts();
  $('active').textContent=runs.filter(r=>r.state==='RUNNING').length;
  $('active-note').textContent=`${runs.filter(r=>['STALE','RUNNING_UNVERIFIED'].includes(r.state)).length} stale / unverified process reports`;
- for(const [id,key] of [['input','input_tokens'],['output','output_tokens']]){const known=runs.filter(r=>r.usage?.[key]!=null);$(id).textContent=known.length?number(known.reduce((n,r)=>n+r.usage[key],0)):'—';}
+ const totals=state.observed_totals?.[model==='all'?'all':Object.keys(state.observed_totals||{}).find(k=>k.includes(model))];
+ for(const [id,key] of [['input','input_tokens'],['output','output_tokens']])$(id).textContent=number(totals?.usage?.[key]);
+ $('total-scope').textContent=totals?`${totals.unique_threads} unique native threads · ${totals.aliases_removed} reused receipt aliases removed · ${totals.conflicting_threads} conflicting threads excluded · includes metered failed attempts`:'Verified thread totals unavailable';
  $('gaps').textContent=runs.filter(r=>r.usage?.input_tokens==null||r.usage?.output_tokens==null).length+' runs unmetered';
+ $('scan-cost').textContent=state.observer?.last_scan_seconds!=null?(state.observer.last_scan_seconds*1000).toFixed(1)+' ms':'—';$('observer-reads').textContent=number(state.observer?.logical_file_bytes_read)+' B';
  $('count').textContent=pairs.length+' comparisons';$('scan').textContent=time(state.observer?.last_scan);$('revision').textContent='REV '+state.revision;
  $('updated').textContent='Snapshot '+time(state.observed_at);$('pairs').replaceChildren();
  for(const p of pairs){const card=element('article',null,'pair');const title=element('div');title.append(element('h3',p.name),element('div',shortModel(p.model)+' · '+p.classification,'meta'),element('div',p.artifact_check===true?'ARTIFACT CHECKS PASSED · PARITY UNPROVEN':p.artifact_check===false?'ARTIFACT CHECK FAILED':'ARTIFACT CHECKS UNVERIFIED','check'));card.append(title,saving(p.savings.input_tokens,'INPUT SAVED'),saving(p.savings.output_tokens,'OUTPUT SAVED'));$('pairs').append(card);}
  if(!pairs.length)$('pairs').append(element('p','No registered comparisons for this model.','empty'));
- $('runs').replaceChildren();for(const r of runs){const tr=element('tr');const values=[r.experiment+' / '+(r.arm==='off'?'control':'Helix'),shortModel(r.model),r.state,number(r.usage?.input_tokens),number(r.usage?.output_tokens),typeof r.elapsed_seconds==='number'?r.elapsed_seconds.toFixed(1)+'s':'—',r.last_event||'—'];values.forEach((v,i)=>tr.append(element('td',v,i===2?'state '+(r.state==='COMPLETED'?'good':r.state==='RUNNING'?'unknown':'bad'):null)));const td=element('td');const link=element('a','Receipt ↗');link.href='/api/receipt?id='+encodeURIComponent(r.id);link.target='_blank';link.rel='noopener';td.append(link);tr.append(td);$('runs').append(tr);}
+ $('runs').replaceChildren();for(const r of runs){const tr=element('tr');const values=[r.experiment+' / '+(r.arm==='off'?'control':'Helix'),shortModel(r.model),r.state,number(r.usage?.input_tokens),number(r.usage?.output_tokens),typeof r.elapsed_seconds==='number'?r.elapsed_seconds.toFixed(1)+'s':'—',r.last_event||'—'];values.forEach((v,i)=>tr.append(element('td',v,i===2?'state '+(['COMPLETED','CLOSED'].includes(r.state)?'good':r.state==='RUNNING'?'unknown':'bad'):null)));const td=element('td');const link=element('a','Receipt ↗');link.href='/api/receipt?id='+encodeURIComponent(r.id);link.target='_blank';link.rel='noopener';td.append(link);tr.append(td);$('runs').append(tr);}
  const alerts=[];if(state.observer?.error)alerts.push('Observer error: '+state.observer.error+'. Last snapshot may be stale.');for(const p of state.problems||[])if(runs.some(r=>r.id===p.run))alerts.push(p.message);for(const p of pairs)if(Object.values(p.savings).some(v=>v!=null&&v<0))alerts.push(shortModel(p.model)+' · '+p.name+' has a token regression.');if(runs.some(r=>r.state==='STALE'))alerts.push('A reported running process is no longer identifiable.');if(!alerts.length)alerts.push('No measured regression in this view. General parity remains unproven.');$('alerts').replaceChildren(...alerts.map(t=>element('li',t)));
 }
 for(const button of document.querySelectorAll('[data-model]'))button.addEventListener('click',()=>{model=button.dataset.model;for(const b of document.querySelectorAll('[data-model]')){b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));}render();});
@@ -48,5 +51,27 @@ function renderCosts(){
  }
  for(const name of ['Luna XHigh','Terra']){const tr=element('tr');tr.append(element('td',name),element('td','No matched receipts'),element('td','—'),element('td','—'),element('td','No substituted model or effort'));$('cost-rows').append(tr);}
 }
+function renderEngineReplays(){
+ const body=$('engine-replays');body.replaceChildren();
+ for(const row of state.engine_replays||[]){
+  const tr=element('tr');
+  for(const value of [row.case,row.state,row.model_calls??'Unknown',row.source_bytes??'—',row.answer_bytes??'—',row.elapsed_seconds!=null?(row.elapsed_seconds*1000).toFixed(2)+' ms':'—',row.scope])tr.append(element('td',String(value)));
+  body.append(tr);
+ }
+ if(!body.children.length){const tr=element('tr'),td=element('td','No verified Engine replay registered.');td.colSpan=7;tr.append(td);body.append(tr);}
+}
 // Expire visible prices even if the observer connection has stopped delivering events.
-setInterval(()=>{if(state)renderCosts();},1000);
+setInterval(()=>{if(state){renderCosts();renderCohorts();}},1000);
+
+function renderCohorts(){
+ const body=$('cohorts');body.replaceChildren();
+ const pct=n=>n==null?'—':n.toFixed(2)+'%';
+ for(const c of (state.cohorts||[]).filter(c=>fits(c.model))){
+  const tr=element('tr'),m=c.median_savings_percent,p=c.ratio_of_totals_savings_percent;
+  const tariff=state.pricing?.fresh&&Date.now()/1000<state.pricing.expires_at?c.tariff_median_savings_percent:null;
+  const values=[shortModel(c.model)+' '+c.effort,c.name,`${c.n_pairs}/${c.registered_pairs}`,pct(m.input_tokens),pct(m.output_tokens),pct(m.uncached_input_tokens),pct(tariff?.short)+' / '+pct(tariff?.long),pct(p.input_tokens)+' / '+pct(p.output_tokens),`${c.finite_check_passes} pass · ${c.finite_check_failures} fail · ${c.finite_check_unknown} unknown`,c.classification];
+  values.forEach((v,i)=>tr.append(element('td',v,i>=3&&i<=5?([m.input_tokens,m.output_tokens,m.uncached_input_tokens][i-3]<0?'bad':''):null)));
+  body.append(tr);
+ }
+ if(!body.children.length){const tr=element('tr'),td=element('td','No matched task cohort registered.');td.colSpan=10;tr.append(td);body.append(tr);}
+}

@@ -1,5 +1,20 @@
 # Helix telemetry HUD v0
 
+## Scoped statistics and Engine-only execution
+
+`cohorts` declares exact experiment membership, model, effort and evidence scope.
+Medians and ratio-of-totals stay separate. Regressions remain included; missing
+pairs, duplicate threads and mismatched effort are explicit exclusions. No
+descriptive statistic automatically qualifies a release.
+
+`audit_reports` pins finite-check reports and matches exact native stream hashes.
+`engine_replays` separately pins offline source/answer/state artifacts; tampering
+withdraws verification. Zero-inference replay never enters native-model medians.
+Headline totals deduplicate native threads. Pricing includes metered closed and
+failed sessions. Unchanged native-trace parsing is cached; scan duration and logical
+reads are visible. See the
+[current evidence and limits](../../docs/research/continuation-contract/BOUND_RETRIEVAL_AND_LUNA_STATUS_20260910.md).
+
 Local, read-only research instrument. No routine inference, model-generated
 summaries or agent polling. It observes explicitly registered native status,
 trace and result files every two seconds; unchanged file contents are cached.

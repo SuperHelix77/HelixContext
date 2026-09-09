@@ -5,7 +5,8 @@ agentic/workflow preservation first. Original 80/80 remains an aspiration; do no
 mislabel 75/75 as 80/80. Keep actual paired counters and failures visible.
 
 1. Luna: finish qualification and packaging. W50 is a bounded candidate; general
-   coding is not qualified. Unsupported cells must use native execution. A profile
+   coding is not qualified. Unsupported cells retain ordinary model execution
+   inside the active Engine; do not disable Engine for those tasks. A profile
    cannot inherit W50 savings on unrelated tasks. Native no-loss and full lifecycle
    evidence are still required before a release label.
 2. Complete the live HUD after Luna: quick refresh, low monitoring overhead,

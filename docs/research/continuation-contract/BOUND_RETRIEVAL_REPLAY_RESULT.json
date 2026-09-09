@@ -1,0 +1,118 @@
+{
+  "classification": "Offline deterministic execution replay, not a native paired model benchmark",
+  "model_capability_replication": false,
+  "gate_sha256": "e86795c19f1efcb214ba4746a67d56657413930701771f9f69e245b958eccd6b",
+  "production_codex_app_integration": false,
+  "rows": [
+    {
+      "case": "selection",
+      "execution": "Engine-only recognized request; no model invocation",
+      "checks": {
+        "exact_selection": "PASS"
+      },
+      "engine_active": true,
+      "model_calls": 0,
+      "state_root": "4048a5736f2ea9287179559cdf9165d22d0ecbf0f41876ba6629295f1662c24d",
+      "state_file_sha256": "34b55fb260ff118ff6c6a9e029b70ebc4e75a3bc85b3eef4cc83a32d92a84d4e",
+      "state_bytes_written": 308,
+      "model_input_tokens": 0,
+      "model_output_tokens": 0,
+      "source_path": "/Users/mert/Documents/ChatGPT/Helix/research/luna-capability-v1-20260909/selection/default/records.json",
+      "original_native_input_bytes_preserved": true,
+      "source_ref": {
+        "sha256": "043190ff033f56185866c15d728ddd24f6aec165eb94caa13b7e922b70823631",
+        "bytes": 74982
+      },
+      "answer_sha256": "0b5603c5bda9d40897a572d7b5195977f99b013fdb3d85411db653570910ef06",
+      "answer_bytes": 215,
+      "elapsed_seconds": 0.0029813749715685844,
+      "ingest_store_io": {
+        "object_bytes_read": 0,
+        "object_bytes_written": 74982,
+        "object_bytes_hashed": 74982,
+        "object_read_operations": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "recovery_store_io": {
+        "object_bytes_read": 74982,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 74982,
+        "object_read_operations": 1,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "retained_control_usage": {
+        "input_tokens": 57216,
+        "output_tokens": 668,
+        "cached_input_tokens": 46336,
+        "reasoning_output_tokens": 266,
+        "cache_write_input_tokens": 0
+      },
+      "retained_control_native_sha256": "37501dac58d42e3028902a80d8553d9a82618ea2bd8a0efed0ca7e4c115544ba",
+      "task_sha256": "db0f16ba5b0be04da5fcd250103fc8da97c369a01ba4f984f994c33976f084b6"
+    },
+    {
+      "case": "cold",
+      "execution": "Engine-only recognized request; no model invocation",
+      "checks": {
+        "exact_late_detail": "PASS"
+      },
+      "engine_active": true,
+      "model_calls": 0,
+      "state_root": "392556c8c310f64e037348bc3b4ac3057745d857f95de8e945e5afc82dc342c3",
+      "state_file_sha256": "4cc223f07613ad5412a3333fec649cdfb9ce2352cca0e5b716ee6fab85dc132a",
+      "state_bytes_written": 308,
+      "model_input_tokens": 0,
+      "model_output_tokens": 0,
+      "source_path": "/Users/mert/Documents/ChatGPT/Helix/research/luna-capability-v1-20260909/cold/default/history.json",
+      "original_native_input_bytes_preserved": true,
+      "source_ref": {
+        "sha256": "1ef7c496f05b1b296d92a5c9091cdb1235f4ffce8b7e24322341f46c327bf96a",
+        "bytes": 27224
+      },
+      "answer_sha256": "a99978864fe7658f7a25d495f089b1648b77885719a48e6957576c4109077bb0",
+      "answer_bytes": 148,
+      "elapsed_seconds": 0.0014849579893052578,
+      "ingest_store_io": {
+        "object_bytes_read": 0,
+        "object_bytes_written": 27224,
+        "object_bytes_hashed": 27224,
+        "object_read_operations": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "recovery_store_io": {
+        "object_bytes_read": 27224,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 27224,
+        "object_read_operations": 1,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "retained_control_usage": {
+        "input_tokens": 83946,
+        "output_tokens": 809,
+        "cached_input_tokens": 67584,
+        "reasoning_output_tokens": 365,
+        "cache_write_input_tokens": 0
+      },
+      "retained_control_native_sha256": "acd03c0042e01fe5b0ff59759019fb5405d7691ac7cb38920ba35813efadee4e",
+      "task_sha256": "99153a8e4c88f1cb41b76c7329ff3628e251b30e1636a3ff245b811002817a31"
+    }
+  ],
+  "mechanism_sha256": "1debe7d17d6567e479445b546c2c18cd33032e0cf1c26c80a341e37323fea2c9",
+  "runner_sha256": "91047fc02c3dfa99e22b51895a8b57702db44f8ddb34df0202cb774dde98cd44",
+  "limits": [
+    "Caller must supply complete task authority; this replay explicitly has no inherited task constraints",
+    "Concurrent external delivery still requires compare-and-swap on the returned state root",
+    "Only two exact parameterized request grammars; unrecognized forms need semantic execution",
+    "Zero inference is observed for these compiled tasks, not a universal model saving",
+    "Research implementation and full physical/system I/O costs are unmetered",
+    "Cold task is a history snapshot, not forty live turns"
+  ]
+}

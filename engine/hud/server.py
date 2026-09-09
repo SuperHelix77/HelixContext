@@ -14,6 +14,7 @@ import threading
 import time
 import uuid
 from pricing import Prices, estimate
+from cohorts import summarize, unique_usage, tariff_medians
 from urllib.parse import urlsplit, parse_qs
 
 HERE=Path(__file__).resolve().parent
@@ -122,22 +123,29 @@ def native_tool_coverage(path,thread_id):
     return result
 
 
+NATIVE_USAGE_CACHE={}
 def native_cumulative(path,thread_id):
-    raw=cached_bytes(path,16_000_000);latest=None
+    raw=cached_bytes(path,16_000_000);digest=hashlib.sha256(raw).hexdigest()
+    key=(str(path),thread_id);prior=NATIVE_USAGE_CACHE.get(key)
+    if prior and prior[0]==digest:return prior[1],digest
+    latest=None
     for line in raw.splitlines():
         try:event=json.loads(line)
         except (ValueError,UnicodeError):continue
         if event.get('method')!='thread/tokenUsage/updated':continue
         params=event.get('params',{})
         if params.get('threadId')!=thread_id:continue
-        total=params['tokenUsage']['total']
-        value={key:total[field] for key,field in [('input_tokens','inputTokens'),('output_tokens','outputTokens'),('cached_input_tokens','cachedInputTokens'),('reasoning_output_tokens','reasoningOutputTokens')]}
+        try:
+            total=params['tokenUsage']['total']
+            value={key:total[field] for key,field in [('input_tokens','inputTokens'),('output_tokens','outputTokens'),('cached_input_tokens','cachedInputTokens'),('reasoning_output_tokens','reasoningOutputTokens')]}
+        except (KeyError,TypeError):raise ValueError('Incomplete native cumulative counter')
         if usage(value) is None or any(v is None for v in value.values()):raise ValueError('Invalid native cumulative counter')
         if value['cached_input_tokens']>value['input_tokens'] or value['reasoning_output_tokens']>value['output_tokens']:raise ValueError('Invalid native subsets')
         if latest and any(value[k]<latest[k] for k in value):raise ValueError('Cumulative native counters decreased')
         value['cache_write_input_tokens']=total.get('cacheWriteInputTokens')
         latest=value
-    return latest,hashlib.sha256(raw).hexdigest()
+    NATIVE_USAGE_CACHE[key]=(digest,latest)
+    return latest,digest
 
 
 def usage(value):
@@ -187,8 +195,56 @@ def measured_check(report,arm):
     return None
 
 
+def engine_replays(config):
+    rows=[]
+    for spec in config.get('engine_replays',[]):
+        root=Path(spec['root']).resolve()
+        try:
+            report,digest=read_json(safe_path(root,spec['result']))
+            if digest!=spec['sha256']:raise ValueError('Replay report changed')
+            for row in report['rows']:
+                case=row['case']
+                answer=cached_bytes(safe_path(root,case+'/answer.json'),4_000_000)
+                source=cached_bytes(safe_path(root,case+'/store/objects/'+row['source_ref']['sha256']),4_000_000)
+                if hashlib.sha256(answer).hexdigest()!=row['answer_sha256'] or hashlib.sha256(source).hexdigest()!=row['source_ref']['sha256']:
+                    raise ValueError('Replay artifact changed')
+                if len(answer)!=row['answer_bytes'] or len(source)!=row['source_ref']['bytes']:
+                    raise ValueError('Replay byte count changed')
+                if row.get('state_file_sha256'):
+                    state,state_digest=read_json(safe_path(root,case+'/task-state.json'))
+                    state_root=hashlib.sha256(json.dumps(state,sort_keys=True,ensure_ascii=False,separators=(',',':'),allow_nan=False).encode()).hexdigest()
+                    if state_digest!=row['state_file_sha256'] or state_root!=row['state_root']:
+                        raise ValueError('Replay authority state changed')
+            rows.extend({'case':r['case'],'state':'VERIFIED_ARTIFACTS','model_calls':r['model_calls'],'source_bytes':r['source_ref']['bytes'],'answer_bytes':r['answer_bytes'],'elapsed_seconds':r['elapsed_seconds'],'checks':r['checks'],'scope':report['classification']} for r in report['rows'])
+        except (OSError,ValueError,KeyError,TypeError):
+            rows.append({'case':spec['id'],'state':'UNVERIFIED','model_calls':None,'scope':'Replay receipt or artifact missing/changed'})
+    return rows
+
+
+def audit_checks(config):
+    """Finite checks only, bound to a pinned audit and its exact native stream."""
+    index={}
+    for spec in config.get('audit_reports',[]):
+        try:
+            report,digest=read_json(safe_path(Path(spec['root']).resolve(),spec['path']))
+            if digest!=spec['sha256']:continue
+            for row in report.get('rows',[]):
+                native=row.get('native_sha256')
+                if not isinstance(native,str) or not re.fullmatch('[0-9a-f]{64}',native):continue
+                checks=row.get('checks',report.get('finite_checks'))
+                if isinstance(checks,dict):
+                    values=[v for k,v in checks.items() if k!='stdout']
+                    checks='PASS' if values and all(v=='PASS' for v in values) else 'FAIL' if 'FAIL' in values else None
+                passed=True if checks=='PASS' else False if checks=='FAIL' else None
+                if native in index and index[native]!=passed:index[native]=None
+                else:index[native]=passed
+        except (OSError,ValueError,KeyError,TypeError):continue
+    return index
+
+
 def snapshot(config):
     runs=[];pairs=[];problems=[];receipts={}
+    audited=audit_checks(config)
     for experiment in config['experiments']:
         root=Path(experiment['root']).resolve()
         report={}
@@ -224,7 +280,8 @@ def snapshot(config):
                 row.update(model=status.get('model'),state=str(status.get('state','UNKNOWN')).upper(),
                     usage=usage(status.get('usage')),elapsed_seconds=status.get('elapsed_seconds'),
                     source_hash=digest,updated_at=path.stat().st_mtime,
-                    trace_hash=status.get('events_sha256'),effort=status.get('effort'))
+                    trace_hash=status.get('events_sha256'),effort=status.get('effort',manifest.get('effort')),
+                    native_thread_id=status.get('thread_id'))
                 if row['state'] in ('RUNNING','STARTING'):
                     present=live_process(status,safe_path(root,spec['cwd']) if spec.get('cwd') else None)
                     row['state']='RUNNING' if present is True else 'STALE' if present is False else 'RUNNING_UNVERIFIED'
@@ -247,6 +304,7 @@ def snapshot(config):
                 if spec.get('native_events') and status.get('thread_id'):
                     native_tokens,native_hash=native_cumulative(safe_path(root,spec['native_events']),status['thread_id'])
                     if status.get('native_events_sha256') and native_hash!=status['native_events_sha256']:raise ValueError('Raw native wire hash mismatch')
+                    row['native_sha256']=native_hash
                     row.update(native_tool_coverage(safe_path(root,spec['native_events']),status['thread_id']))
                     if row['unmatched_pretool_hooks']:
                         problems.append({'run':rid,'message':'Command pre-tool hooks lack matching command receipts; zero recorded commands does not mean zero tool work.'})
@@ -260,6 +318,8 @@ def snapshot(config):
                     row.update(engine_calls=None,engine_operations=None,engine_output_bytes=None,engine_seconds=None,
                                delegated_work='Not instrumented')
                     row['mechanisms']['exact_copy']='not observed'
+                if row.get('usage_source')=='Native app-server cumulative update' and row.get('native_sha256') in audited:
+                    row['artifact_check']=audited[row['native_sha256']]
             except (OSError,ValueError,TypeError) as exc:
                 row.update(state='UNAVAILABLE',usage=None,error=type(exc).__name__)
                 problems.append({'run':rid,'message':'Receipt unavailable or invalid; measurements are unknown.'})
@@ -285,7 +345,9 @@ def snapshot(config):
             'off':off['id'] if off else None,'on':on['id'] if on else None,'savings':savings,
             'artifact_check':True if off and on and off['artifact_check'] is True and on['artifact_check'] is True else
                 False if any(r['artifact_check'] is False for r in current) else None})
-    return {'schema':'helix.hud.v1','runs':runs,'pairs':pairs,'problems':problems,
+    return {'schema':'helix.hud.v1','runs':runs,'pairs':pairs,'problems':problems,'engine_replays':engine_replays(config),
+        'cohorts':summarize(config.get('cohorts',[]),pairs,runs),
+        'observed_totals':{m:unique_usage([r for r in runs if m=='all' or r.get('model')==m]) for m in ['all']+sorted({r['model'] for r in runs if r.get('model')})},
         'scope':'Registered native benchmark runs only. Parent chat and unregistered agents are not instrumented.',
         'capability_parity':'Not established','inference_calls_by_hud':0},receipts
 
@@ -295,11 +357,13 @@ class Observer:
         self.config=config;self.journal=journal;self.condition=threading.Condition()
         self.config_path=Path(config_path) if config_path else None
         self.current=None;self.revision=0;self.receipts={};self.last_scan=None
+        self.last_scan_seconds=None
         self.error=None;self.digest=None;self.read_cycles=0
         self.observer_id=uuid.uuid4().hex
         self.prices=Prices()
 
     def scan(self):
+        started=time.perf_counter()
         candidate=self.config
         if self.config_path:
             candidate,_=read_json(self.config_path)
@@ -315,15 +379,20 @@ class Observer:
                 self.journal.parent.mkdir(parents=True,exist_ok=True)
                 with self.journal.open('a') as out:out.write(json.dumps({'type':'snapshot','event_id':self.observer_id+':'+str(self.revision),'revision':self.revision,'at':self.last_scan,'timestamp_kind':'observation','state':data})+'\n')
                 self.current=data;self.digest=digest;self.condition.notify_all()
+            self.last_scan_seconds=time.perf_counter()-started
 
     def state(self):
         with self.condition:
             data=dict(self.current or {})
             price=self.prices.state()
             data['pricing']=price
-            data['costs']={r['id']:estimate(r.get('usage'),(price.get('rates') or {}).get(r.get('model'))) for r in data.get('runs',[]) if r.get('state')=='COMPLETED' and r.get('usage_source')=='Native app-server cumulative update'}
+            # Charge every metered attempt, including CLOSED and failed sessions.
+            # These are tariff scenarios on observed usage, not a success signal.
+            data['costs']={r['id']:estimate(r.get('usage'),(price.get('rates') or {}).get(r.get('model'))) for r in data.get('runs',[]) if r.get('usage_source')=='Native app-server cumulative update' and r.get('usage') is not None}
+            data['cohorts']=[{**c,'tariff_median_savings_percent':tariff_medians(c,data.get('pairs',[]),data['costs'])} for c in data.get('cohorts',[])]
             return {**data,'observer':{'last_scan':self.last_scan,'read_cycles':self.read_cycles,
                 'error':self.error,'journal':str(self.journal),'poll_seconds':2,'logical_file_bytes_read':READ_BYTES,
+                'last_scan_seconds':self.last_scan_seconds,
                 'cost_scope':'File reads and local CPU; no inference. Exact physical I/O unmetered.'}}
 
     def loop(self):

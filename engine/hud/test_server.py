@@ -7,7 +7,7 @@ from urllib.request import urlopen
 from urllib.error import HTTPError
 
 import pytest
-from server import snapshot,Observer,make_handler,trace_view,engine_view
+from server import snapshot,Observer,make_handler,trace_view,engine_view,engine_replays
 
 
 def setup(tmp_path):
@@ -71,6 +71,52 @@ def test_config_reload_preserves_last_snapshot_on_interrupted_write(tmp_path):
     assert observer.current is first and observer.revision==1
     updated={'experiments':[]};path.write_text(json.dumps(updated));observer.scan()
     assert observer.config==updated and observer.current['runs']==[] and observer.revision==2
+
+
+def test_engine_replay_keeps_zero_inference_separate_and_rejects_tamper(tmp_path):
+    raw=b'[]';answer=b'{}';h=hashlib.sha256(raw).hexdigest();case=tmp_path/'selection'
+    objects=case/'store/objects';objects.mkdir(parents=True);(objects/h).write_bytes(raw)
+    (case/'answer.json').write_bytes(answer)
+    report={'classification':'Offline Engine replay, not model parity','rows':[{'case':'selection','source_ref':{'sha256':h,'bytes':len(raw)},'answer_sha256':hashlib.sha256(answer).hexdigest(),'answer_bytes':len(answer),'model_calls':0,'elapsed_seconds':0.1,'checks':{'exact_selection':'PASS'}}]}
+    path=tmp_path/'result.json';path.write_text(json.dumps(report))
+    config={'engine_replays':[{'id':'r','root':str(tmp_path),'result':'result.json','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}]}
+    rows=engine_replays(config);assert rows[0]['model_calls']==0 and rows[0]['state']=='VERIFIED_ARTIFACTS'
+    (case/'answer.json').write_bytes(b'changed')
+    rows=engine_replays(config);assert rows[0]['model_calls'] is None and rows[0]['state']=='UNVERIFIED'
+
+
+def test_costs_include_closed_and_failed_verified_usage(tmp_path):
+    observer=Observer({'experiments':[]},tmp_path/'journal.jsonl')
+    counters={'input_tokens':100,'cached_input_tokens':50,'cache_write_input_tokens':0,'output_tokens':10}
+    observer.current={'runs':[{'id':state,'state':state,'model':'luna','usage':counters,
+        'usage_source':'Native app-server cumulative update'} for state in ('CLOSED','FAILED')]}
+    observer.prices.state=lambda:{'rates':{'luna':{'short':[1,0.1,1,10],'long':[2,0.2,2,20]}}}
+    assert set(observer.state()['costs'])=={'CLOSED','FAILED'}
+    assert observer.state()['costs']['CLOSED']['short']==pytest.approx(0.000155)
+
+
+def test_audit_requires_pinned_report_and_bound_native_hash(tmp_path):
+    from server import audit_checks
+    native='a'*64
+    path=tmp_path/'audit.json';path.write_text(json.dumps({'finite_checks':'PASS','rows':[{'native_sha256':native}]}))
+    config={'audit_reports':[{'root':str(tmp_path),'path':'audit.json','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}]}
+    assert audit_checks(config)=={native:True}
+    path.write_text(json.dumps({'finite_checks':'FAIL','rows':[{'native_sha256':native}]}))
+    assert audit_checks(config)=={}
+
+
+def test_replay_authority_mutation_withholds_verified_zero(tmp_path):
+    raw=b'[]';answer=b'{}';h=hashlib.sha256(raw).hexdigest();case=tmp_path/'selection'
+    objects=case/'store/objects';objects.mkdir(parents=True);(objects/h).write_bytes(raw)
+    (case/'answer.json').write_bytes(answer)
+    state={'constraints':[]};state_path=case/'task-state.json';state_path.write_text(json.dumps(state))
+    state_root=hashlib.sha256(json.dumps(state,sort_keys=True,separators=(',',':')).encode()).hexdigest()
+    report={'classification':'Offline only','rows':[{'case':'selection','source_ref':{'sha256':h,'bytes':len(raw)},'answer_sha256':hashlib.sha256(answer).hexdigest(),'answer_bytes':len(answer),'model_calls':0,'elapsed_seconds':0.1,'checks':{},'state_root':state_root,'state_file_sha256':hashlib.sha256(state_path.read_bytes()).hexdigest()}]}
+    path=tmp_path/'result.json';path.write_text(json.dumps(report))
+    config={'engine_replays':[{'id':'r','root':str(tmp_path),'result':'result.json','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}]}
+    assert engine_replays(config)[0]['state']=='VERIFIED_ARTIFACTS'
+    state_path.write_text('{"constraints":["changed"]}')
+    assert engine_replays(config)[0]['state']=='UNVERIFIED'
 
 
 def test_command_counts_do_not_count_started_twice(tmp_path):

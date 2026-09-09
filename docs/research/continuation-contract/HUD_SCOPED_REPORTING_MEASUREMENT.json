@@ -1,0 +1,10 @@
+{
+  "classification": "Offline observer scan measurement; local wall time, not latency SLA",
+  "cold_scan_ms": 111.2677920027636,
+  "warm_scans": 10,
+  "warm_median_ms": 28.011020476697013,
+  "warm_max_ms": 29.413084033876657,
+  "warm_additional_logical_file_bytes": 0,
+  "native_calls": 0,
+  "prior_uncached_parse_warm_median_ms": 78.0382500088308
+}
