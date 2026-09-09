@@ -1,0 +1,152 @@
+{
+  "classification": "Three adaptive authorized development candidates; same original control reused",
+  "control_usage": {
+    "input_tokens": 1082542,
+    "output_tokens": 641,
+    "cached_input_tokens": 1035776,
+    "reasoning_output_tokens": 169,
+    "cache_write_input_tokens": 0
+  },
+  "rows": [
+    {
+      "version": 4,
+      "usage": {
+        "input_tokens": 18692,
+        "output_tokens": 172,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 132,
+        "cache_write_input_tokens": 0
+      },
+      "savings_percent": {
+        "input_tokens": 98.27332334449841,
+        "output_tokens": 73.16692667706708,
+        "uncached_input": 81.37963477740239
+      },
+      "exact_and_reason_checks": "PASS",
+      "native_segments": 1,
+      "native_sha256": "1bcc9f4f6e8bbd98345e8c8df47a9c9c38ebf9ef18827e2e52d766adc50c8628",
+      "manifest_sha256": "ea3778f391c2d3b35cc8dc4e03bca7cc2ea4c9cf99e3c3969b00be2a9d42b647",
+      "caller": {
+        "logical_read_bytes": 472012,
+        "logical_written_bytes": 35450,
+        "prep_seconds": 0.009993791987653822,
+        "projection_seconds": 2.3333006538450718e-05,
+        "projected_bytes": 1233,
+        "archive_bytes": 18118,
+        "projection_read_bytes": 18118,
+        "render_seconds": 0.0006172089488245547
+      },
+      "answer": {
+        "authorized": false,
+        "minimum_distinct_approvers": 2,
+        "approver_group": "violet",
+        "recovery_nonce": "6LZFFYRJQB62",
+        "latency_threshold_ms": "0.125",
+        "accounting_sequence": "9007199254740993",
+        "evidence_turns": [
+          1,
+          17,
+          31
+        ],
+        "explanation": "The requested single approver does not meet the policy minimum of 2 distinct approvers. The applicable group is violet; rejected records do not amend this requirement."
+      }
+    },
+    {
+      "version": 5,
+      "usage": {
+        "input_tokens": 18439,
+        "output_tokens": 160,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 124,
+        "cache_write_input_tokens": 0
+      },
+      "savings_percent": {
+        "input_tokens": 98.29669426220876,
+        "output_tokens": 75.0390015600624,
+        "uncached_input": 81.92062609588162
+      },
+      "exact_and_reason_checks": "PASS",
+      "native_segments": 1,
+      "native_sha256": "1df44aef7f22cdc76629495eeb3de4f9376481e7707c5e3da15551d189215f04",
+      "manifest_sha256": "6c623dc60362b9e8655287bbf62e223c05079f1fa597b0849a880ef3b1148782",
+      "caller": {
+        "logical_read_bytes": 472012,
+        "logical_written_bytes": 35450,
+        "prep_seconds": 0.009556082950439304,
+        "projection_seconds": 2.2082997020334005e-05,
+        "projected_bytes": 1233,
+        "archive_bytes": 18118,
+        "projection_read_bytes": 18118,
+        "render_seconds": 0.0006442079902626574
+      },
+      "answer": {
+        "authorized": false,
+        "minimum_distinct_approvers": 2,
+        "approver_group": "violet",
+        "recovery_nonce": "6LZFFYRJQB62",
+        "latency_threshold_ms": "0.125",
+        "accounting_sequence": "9007199254740993",
+        "evidence_turns": [
+          1,
+          17,
+          31
+        ],
+        "explanation": "The requested single approver does not meet the policy minimum of 2 distinct approvers. The applicable group is violet; rejected records do not amend this requirement."
+      }
+    },
+    {
+      "version": 6,
+      "usage": {
+        "input_tokens": 18526,
+        "output_tokens": 348,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 302,
+        "cache_write_input_tokens": 0
+      },
+      "savings_percent": {
+        "input_tokens": 98.2886576225218,
+        "output_tokens": 45.70982839313572,
+        "uncached_input": 81.73459350810418
+      },
+      "exact_and_reason_checks": "PASS",
+      "native_segments": 1,
+      "native_sha256": "1c8ffbb15088deb54a56d8ee7e0a4e034dcc190fc38e9911332bf579d3449681",
+      "manifest_sha256": "c0f15d2aee37d96f0f951c721e6bd6d95cbcae63679d2cecf5d316114a2d3a07",
+      "caller": {
+        "logical_read_bytes": 472012,
+        "logical_written_bytes": 35450,
+        "prep_seconds": 0.010028832999523729,
+        "projection_seconds": 2.8082984499633312e-05,
+        "projected_bytes": 1233,
+        "archive_bytes": 18118,
+        "projection_read_bytes": 18118,
+        "render_seconds": 0.0006285840063355863
+      },
+      "answer": {
+        "authorized": false,
+        "minimum_distinct_approvers": 2,
+        "approver_group": "violet",
+        "recovery_nonce": "6LZFFYRJQB62",
+        "latency_threshold_ms": "0.125",
+        "accounting_sequence": "9007199254740993",
+        "evidence_turns": [
+          1,
+          17,
+          31
+        ],
+        "explanation": "The requested single approver does not meet the policy minimum of 2 distinct approvers. The applicable group is violet; rejected records do not amend this requirement."
+      }
+    }
+  ],
+  "best_output_version": 5,
+  "80_output_pass": false,
+  "new_native_calls_by_audit": 0,
+  "limits": [
+    "No fresh paired replication or capability benchmark.",
+    "Subject-text filtering is fixture-specific; general late-relevance/authority coverage unqualified.",
+    "Full history remains available; storage is not proof of retrieval under a surprise.",
+    "V6 proposal selection before inference adds review work on this run; attribution not causally isolated.",
+    "Caller byte/time counters are partial, not complete effective-cost or monetary savings.",
+    "All failed and superseded attempts retained; no favorable-only accounting."
+  ]
+}

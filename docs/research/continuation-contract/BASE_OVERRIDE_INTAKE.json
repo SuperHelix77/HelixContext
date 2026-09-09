@@ -1,0 +1,74 @@
+{
+  "catalog": {
+    "gpt-6-astra": {
+      "base_bytes": 21269,
+      "base_proxy_tokens": 4110,
+      "use_responses_lite": true
+    },
+    "gpt-5.6-sol": {
+      "base_bytes": 17766,
+      "base_proxy_tokens": 3552,
+      "use_responses_lite": true
+    },
+    "gpt-5.6-luna": {
+      "base_bytes": 17766,
+      "base_proxy_tokens": 3552,
+      "use_responses_lite": true
+    }
+  },
+  "diagnostic": {
+    "gpt-6-astra-off": {
+      "sha256": "737beca03719f43d07b081b12a4f9de5a1dc3a0883974274c8a5948422ce66b8",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3087
+    },
+    "gpt-6-astra-on": {
+      "sha256": "147edb2660aa680bdee6a2e28d5807e151f19a8db581b8dcca46236e118bcfb8",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3087
+    },
+    "gpt-5.6-sol-off": {
+      "sha256": "53df72627c6434fec276cbdfc559b1478a144d3303ce6be85904a66a51a28fd2",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3193
+    },
+    "gpt-5.6-sol-on": {
+      "sha256": "e5ae2361e12ee422176334f48e90373ac1d1b4c145a028005b47a75319ff6487",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3193
+    },
+    "gpt-5.6-luna-off": {
+      "sha256": "5bc1c4bc4055d352e98f7695bb69762dd4f33d28047f8ce23d205b8c54b85c0f",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3193
+    },
+    "gpt-5.6-luna-on": {
+      "sha256": "7427fcfcbfd813b6d418631b93b452f4e6e0dc5dbe480b878bf6c579b055b2a4",
+      "marker_occurrences": 0,
+      "text_proxy_tokens": 3193
+    }
+  },
+  "native_calls": 0,
+  "global_config_modified": false,
+  "credit_estimates": {
+    "V3": {
+      "control_credit_equivalent": 0.770948,
+      "candidate_credit_equivalent": 0.076057,
+      "saving_percent": 90.13461348884749,
+      "included_quota_saving": "UNKNOWN"
+    },
+    "V5": {
+      "control_credit_equivalent": 0.770948,
+      "candidate_credit_equivalent": 0.052067,
+      "saving_percent": 93.24636681073171,
+      "included_quota_saving": "UNKNOWN"
+    }
+  },
+  "limits": [
+    "Debug input list omits marker in all arms; it cannot establish replacement or config nonapplication.",
+    "Upstream main source differs from installed binary unless independently matched.",
+    "Responses Lite additive semantics is an external issue report, not a verified service transcript from this local installation.",
+    "No kernel activated and no global overrides changed.",
+    "Credit-equivalent estimates exclude development/recovery/system costs and are not included-plan quota measurements."
+  ]
+}
