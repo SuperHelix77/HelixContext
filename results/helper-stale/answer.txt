@@ -1,0 +1,39 @@
+Case short
+
+1. 80.
+2. 4.
+3. A: 150 ms, "not authorized"; C: 220 ms, "timeout, completion unknown".
+4. No. Observed success rate: 60% (12/20); eight sampled requests failed, and the sample cannot guarantee future success.
+5.
+   ```python
+   def mean(xs):
+       return sum(xs) / len(xs) if xs else None
+   ```
+6. A 25% rise multiplies the price by 1.25. The subsequent 20% fall multiplies the increased price by 0.80. Since 1.25 × 0.80 = 1, the final price equals the original.
+
+Case records
+
+Total: 240 records. All failures:
+
+| Identifier | Duration | Retry permitted | Error |
+|---|---|---|---|
+| req-0019 | 119 ms | true | not authorized |
+| req-0137 | 237 ms | false | timeout; completion unknown |
+| req-0233 | 333 ms | true | invalid input |
+
+Case logs
+
+From the exhaustive snapshot:
+
+- Line 802: WARNING: dependency xyz is deprecated
+- Line 803: ERROR: test serialization failed: null was converted to zero
+- Line 804: Tests: 39 passed, 1 failed
+- Line 805: Process exit code: 1
+
+The earlier bootstrap PASS does not establish final success.
+
+Case code
+
+Fixed `stats.py`: unequal lengths and negative weights raise `ValueError`; empty inputs or zero total weight return `None`; otherwise returns the weighted mean. Preserved `weighted_mean` and the current file’s `USER_SENTINEL` after resolving the stale snapshot.
+
+`python3 -m unittest -v`: all 5 tests passed; exit code 0.

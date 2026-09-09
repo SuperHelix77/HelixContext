@@ -1,0 +1,25 @@
+case short
+
+1. 80
+2. 4
+3. {{sA}}; {{sC}}
+4. 60%; no—sample results cannot prove universal success.
+5. 
+```python
+def mean(xs):
+    return sum(xs) / len(xs) if xs else None
+```
+6. The rise multiplies by 1.25. The fall multiplies by 0.8. Their product is 1, restoring the original price.
+
+case records
+
+Total: 240 records.
+{{r19,137,233}}
+
+case logs
+
+{{l802:805}}
+
+case code
+
+5 tests passed; exit code 0.

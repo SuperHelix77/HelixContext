@@ -1,0 +1,293 @@
+{
+  "controls": [
+    {
+      "input_tokens": 190291,
+      "output_tokens": 1195,
+      "total_tokens": 191486
+    },
+    {
+      "input_tokens": 156531,
+      "output_tokens": 1068,
+      "total_tokens": 157599
+    }
+  ],
+  "mean_control": {
+    "input_tokens": 173411.0,
+    "output_tokens": 1131.5,
+    "total_tokens": 174542.5
+  },
+  "candidates": {
+    "compact": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 36738,
+        "cached_input_tokens": 29440,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 712,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 37450,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 78.81,
+        "output_tokens": 37.07,
+        "total_tokens": 78.54
+      }
+    },
+    "helper": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 32990,
+        "cached_input_tokens": 26624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 488,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 33478,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.98,
+        "output_tokens": 56.87,
+        "total_tokens": 80.82
+      }
+    },
+    "helper-repeat": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 33008,
+        "cached_input_tokens": 16128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 496,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 33504,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.97,
+        "output_tokens": 56.16,
+        "total_tokens": 80.8
+      }
+    },
+    "helper-stale": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true,
+        "concurrent_change_preserved": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 93762,
+        "cached_input_tokens": 85120,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 883,
+        "reasoning_output_tokens": 19
+      },
+      "total_tokens": 94645,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 45.93,
+        "output_tokens": 21.96,
+        "total_tokens": 45.78
+      }
+    },
+    "source-copy": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 33379,
+        "cached_input_tokens": 26880,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 413,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 33792,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.75,
+        "output_tokens": 63.5,
+        "total_tokens": 80.64
+      }
+    },
+    "source-copy-v2": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 33684,
+        "cached_input_tokens": 16512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 336,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 34020,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.58,
+        "output_tokens": 70.3,
+        "total_tokens": 80.51
+      }
+    },
+    "source-copy-v3": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 33857,
+        "cached_input_tokens": 27136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 271,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 34128,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.48,
+        "output_tokens": 76.05,
+        "total_tokens": 80.45
+      }
+    },
+    "source-copy-insert": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 34008,
+        "cached_input_tokens": 27136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 244,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 34252,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.39,
+        "output_tokens": 78.44,
+        "total_tokens": 80.38
+      }
+    },
+    "source-copy-final": {
+      "checks": {
+        "short_values": true,
+        "short_extraction": true,
+        "short_uncertainty": true,
+        "three_sentences": true,
+        "mean": true,
+        "exact_failure_set": true,
+        "records": true,
+        "record_types": true,
+        "logs": true,
+        "weighted_values": true,
+        "weighted_rejects": true,
+        "unittest_report": true
+      },
+      "passed": true,
+      "usage": {
+        "input_tokens": 34140,
+        "cached_input_tokens": 27264,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 246,
+        "reasoning_output_tokens": 0
+      },
+      "total_tokens": 34386,
+      "reduction_vs_average_control_pct": {
+        "input_tokens": 80.31,
+        "output_tokens": 78.26,
+        "total_tokens": 80.3
+      }
+    }
+  },
+  "limits": "Exploratory synthetic suite; controls and candidate not randomized concurrently. Recovery is reported separately, not excluded from its own task cost. No general intelligence-equivalence claim."
+}

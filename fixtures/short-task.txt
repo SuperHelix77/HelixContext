@@ -1,0 +1,7 @@
+Answer each numbered task. Do not use tools, read files or browse; all necessary data is here. These are independent test cases. Return numbered answers.
+1. A price of 80 rises 25%, then falls 20%. What is the final price?
+2. Compute the median of [9, 1, 4, 4].
+3. Records: A failed in 150 ms: "not authorized"; B passed in 80 ms; C failed in 220 ms: "timeout, completion unknown". List all failures with exact IDs, durations and errors.
+4. Observations: 12 of 20 sampled requests succeeded. Does this prove the service always succeeds? Give the observed success rate and limitation.
+5. Fix this Python function so an empty list returns None; otherwise return its arithmetic mean: def mean(xs): return sum(xs)/len(xs). Return valid Python code.
+6. Explain why a 25% price rise followed by a 20% fall cancels out. The user specifically requests exactly three explanatory sentences for this answer.

@@ -1,0 +1,33 @@
+Case short
+
+1. 80.
+2. 4.
+3. A: 150 ms, "not authorized"; C: 220 ms, "timeout, completion unknown".
+4. No. Observed success rate: 60% (12/20); the sample includes failures and cannot establish universal success.
+5.
+```python
+def mean(xs):
+    return sum(xs) / len(xs) if xs else None
+```
+6. A 25% rise multiplies the price by 1.25. The subsequent 20% fall multiplies the increased price by 0.8. Their product is 1, restoring the original price.
+
+Case records
+
+Total: 240 records. All failures:
+
+- req-0019: 119 ms; retry_permitted=true; "not authorized".
+- req-0137: 237 ms; retry_permitted=false; "timeout; completion unknown".
+- req-0233: 333 ms; retry_permitted=true; "invalid input".
+
+Case logs
+
+- Line 802: WARNING: dependency xyz is deprecated
+- Line 803: ERROR: test serialization failed: null was converted to zero
+- Line 804: Tests: 39 passed, 1 failed
+- Line 805: Process exit code: 1
+
+Case code
+
+Fixed `stats.py`: unequal lengths and negative weights raise `ValueError`; empty inputs or zero total weight return `None`; otherwise returns the weighted mean. Public name preserved.
+
+Existing unittest suite: 5 tests passed in 0.001s; exit code 0.

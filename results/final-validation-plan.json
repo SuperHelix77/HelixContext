@@ -1,0 +1,33 @@
+{
+  "trigger": "Freeze candidate and prespecified parity checks; no hard savings threshold prerequisite under revised objective",
+  "models": [
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "high"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "high"
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "high"
+    }
+  ],
+  "tasks_per_model": 3,
+  "conditions": [
+    "without skill",
+    "with skill"
+  ],
+  "minimum_native_runs": 18,
+  "requirements": [
+    "identical task requirements and starting state per pair",
+    "same model and high reasoning within each pair",
+    "preserve tools, permissions, verification and recovery",
+    "native whole-run input and output receipts, count workers and retries",
+    "behavioral acceptance and agentic checks; no universal intelligence equivalence inference",
+    "Capability and agentic/workflow parity first; maximize separate input/output savings, 95 percent aspirational",
+    "Adversarial 50-turn early-fact late-decision case; measure actual retrieval and correct use"
+  ],
+  "status": "pending candidate freeze and adversarial benchmark implementation"
+}

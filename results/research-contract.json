@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "objective": "Maximize empirical safe input/output compression frontier; capability, agentic execution and workflow preservation take priority",
+  "aspirational_savings_pct": 95,
+  "hard_savings_threshold": null,
+  "quality_gate": "No observed degradation on prespecified Q/A/W checks; quantify uncertainty and do not infer universal equivalence",
+  "metrics": [
+    "native input tokens",
+    "native output tokens",
+    "task correctness Q",
+    "agentic execution A",
+    "long-horizon state preservation W",
+    "recovery calls and usage",
+    "wall time",
+    "resident context size separate from cumulative input"
+  ],
+  "models": [
+    {
+      "model": "gpt-5.6-luna",
+      "effort": "high"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "high"
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "high"
+    }
+  ],
+  "tasks_per_model": 3,
+  "conditions": [
+    "skill off",
+    "skill on"
+  ],
+  "long_horizon_requirement": "At least one adversarial 50-turn case with a turn-1 fact becoming decisive at turn 50; frozen checks before candidate runs",
+  "architecture_hypothesis": [
+    "small resident state",
+    "exact evidence references",
+    "lossless source-copy",
+    "retrievable cold history",
+    "decision ledger"
+  ],
+  "rules": [
+    "Raw recoverability does not by itself establish successful retrieval or decision quality",
+    "Count all model calls, workers, retries and recovery",
+    "Preserve model reasoning settings, tool availability and permissions within pairs",
+    "Report input and output separately; do not equate token count with semantic information",
+    "Finite benchmark estimates an empirical frontier, not a global maximum"
+  ],
+  "status": "Benchmark redesign and implementation pending"
+}

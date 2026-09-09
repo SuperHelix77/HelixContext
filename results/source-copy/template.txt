@@ -1,0 +1,31 @@
+Case short
+
+1. 80.
+2. 4.
+3. A: 150 ms; "not authorized". C: 220 ms; "timeout, completion unknown".
+4. No. Observed success rate: 60% (12/20); the sample includes failures and cannot establish universal success.
+5. 
+```python
+def mean(xs):
+    return sum(xs) / len(xs) if xs else None
+```
+6. A 25% rise multiplies the price by 1.25. The subsequent 20% fall multiplies the increased price by 0.8. Since 1.25 × 0.8 = 1, the original price is restored.
+
+Case records
+
+Total: 240 records. All failures:
+
+{{r19}}
+{{r137}}
+{{r233}}
+
+Case logs
+
+{{l802}}
+{{l803}}
+{{l804}}
+{{l805}}
+
+Case code
+
+Fixed `stats.py`: preserves `weighted_mean`, rejects unequal lengths and negative weights with `ValueError`, returns `None` for empty inputs or zero total weight, otherwise computes the weighted mean. Existing unittest suite: 5 tests passed; exit code 0.
