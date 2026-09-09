@@ -49,3 +49,32 @@ def test_unicode_separator_uses_same_lines_as_exact_retrieval(tmp_path):
     assert verify(store,candidate)['verified']
     assert candidate['streams']['stdout']['diagnostics'][0]['line']==2
     assert store.retrieve(candidate['receipt'],start=2,end=2)['text']=='ERROR exact=000.100\n'
+
+
+@pytest.mark.parametrize('field,value', [('exit_code',False),('exit_code',0.0),('timed_out',0),('interrupted',0)])
+def test_metadata_types_cannot_be_coerced(tmp_path,field,value):
+    store,candidate=fixture(tmp_path)
+    candidate[field]=value
+    with pytest.raises(ValueError):verify(store,candidate)
+
+
+def test_nested_numeric_types_are_exact(tmp_path):
+    store,candidate=fixture(tmp_path)
+    candidate['streams']['stdout']['failure_section_index'][0]['start']=True
+    with pytest.raises(ValueError):verify(store,candidate)
+
+
+def test_boolean_omission_is_not_integer_count(tmp_path):
+    store,candidate=fixture(tmp_path)
+    candidate['streams']['stdout']['diagnostic_lines_omitted']=False
+    with pytest.raises(ValueError):verify(store,candidate)
+
+
+def test_type_corruption_preserves_accepted_state(tmp_path):
+    store,candidate=fixture(tmp_path)
+    first=publish(store,'latest',candidate,0)
+    invalid=copy.deepcopy(candidate);invalid['exit_code']=False
+    with pytest.raises(ValueError):publish(store,'latest',invalid,1)
+    with pytest.raises(ValueError):publish(store,'latest',candidate,True)
+    with sqlite3.connect(store.root/'accepted.sqlite3') as db:
+        assert db.execute('SELECT revision,object FROM accepted WHERE name=?',('latest',)).fetchone()==(1,first['packet_sha256'])
