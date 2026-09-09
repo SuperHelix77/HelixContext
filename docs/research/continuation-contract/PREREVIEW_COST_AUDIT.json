@@ -1,0 +1,275 @@
+{
+  "classification": "OBSERVED; conditional arithmetic separately labelled",
+  "arms": {
+    "on": {
+      "usage": {
+        "input_tokens": 85055,
+        "output_tokens": 1452,
+        "cached_input_tokens": 59136,
+        "reasoning_output_tokens": 96,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "totalTokens": 19619,
+          "inputTokens": 19524,
+          "cachedInputTokens": 11264,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 95,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19943,
+          "inputTokens": 19782,
+          "cachedInputTokens": 19328,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 161,
+          "reasoningOutputTokens": 34
+        },
+        {
+          "totalTokens": 23263,
+          "inputTokens": 22354,
+          "cachedInputTokens": 6400,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 909,
+          "reasoningOutputTokens": 62
+        },
+        {
+          "totalTokens": 23682,
+          "inputTokens": 23395,
+          "cachedInputTokens": 22144,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 287,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "source_hashes": {
+        "events.jsonl": "48d459dcea99b9f35dca1a62c6186a6deb02e391a1ca21d5b76a363207d1914d",
+        "native-events.jsonl": "653c6a43a367e2688981b4d53f156c00ab5f37b4cfacda9e04f8f8d43d2b2780"
+      },
+      "file_exposure": {
+        "proposal.py": {
+          "bytes": 360,
+          "sha256": "860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810",
+          "exact_in_text_prompt": true,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        "CONTRACT.md": {
+          "bytes": 2190,
+          "sha256": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+          "exact_in_text_prompt": true,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        ".agents/skills/helixcontext/SKILL.md": {
+          "bytes": 1819,
+          "sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        "check.py": {
+          "bytes": 3243,
+          "sha256": "d1f00ba60194616b15dff7d00ea4456e4f1ec44a8c678d552a4ccac9a44aaba8",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        "check_independence.py": {
+          "bytes": 1887,
+          "sha256": "1f9fe8344621529ba19d271cac17b617a75019e1cc15157d96ea039ddfc1471c",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": [
+            2
+          ]
+        }
+      },
+      "commands": [
+        {
+          "index": 1,
+          "command": "/bin/zsh -lc \"pwd; rg --files -g '\"'!__pycache__/**'\"' -g '\"'!'\"\\\\.git/**'\"",
+          "exit_code": 0,
+          "visible_output_bytes": 380
+        },
+        {
+          "index": 2,
+          "command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport hashlib\nfor name in ['.agents/skills/helixcontext/SKILL.md','proposal.py','queue_state.py','CONTRACT.md','check.py','check_independence.py']:\n    p=Path(name)\n    b=p.read_bytes()\n    print(f'FILE {name} SHA256 {hashlib.sha256(b).hexdigest()}\\\\n{b.decode()}')\nPY\"",
+          "exit_code": 0,
+          "visible_output_bytes": 10092
+        },
+        {
+          "index": 3,
+          "command": "/bin/zsh -lc \"python3 -B - <<'PY'\nfrom pathlib import Path\nimport hashlib\npaths=['proposal.py','queue_state.py','CONTRACT.md','check.py','check_independence.py']\nbefore={p:Path(p).read_bytes() for p in paths}\nns={};exec(compile(before['proposal.py'],'proposal.py','exec'),ns);Queue=ns['Queue'];checks=0\nfor stale in ('grown','shrunk'):\n    q=Queue();alias=q.items;q.append_batch([1,2,3])\n    alias[:]=[7,8,9,10] if stale=='grown' else []\n    entry=list(alias);cursor=q.cursor\n    def unchanged():assert q.items is alias and q.items==entry and q.cursor==cursor\n    class Observed:\n        def __init__(self):self.calls=0;self.n=0\n        def __iter__(self):\n            unchanged();self.calls+=1;assert self.calls==1;return self\n        def __next__(self):\n            unchanged()\n            if self.n==2:raise StopIteration\n            self.n+=1;return 10**100 if self.n==1 else 0\n        def __length_hint__(self):raise AssertionError('input length hint must not be needed')\n    it=Observed();assert q.append_batch(it)==len(entry)+2;assert it.calls==1\n    assert alias==entry+[10**100,0];checks+=1\n    for phase in ('enter','first','later'):\n        for error in (RuntimeError('sentinel'),BaseException('sentinel')):\n            entry=list(alias);cursor=q.cursor\n            class Broken:\n                n=0\n                def __iter__(self):\n                    unchanged()\n                    if phase=='enter':raise error\n                    return self\n                def __next__(self):\n                    unchanged();self.n+=1\n                    if phase=='first' or self.n==2:raise error\n                    return 4\n            try:q.append_batch(Broken())\n            except BaseException as caught:assert caught is error\n            else:raise AssertionError('missing exception')\n            unchanged();checks+=1\n    class HostileInt(int):\n        def __lt__(self,other):raise AssertionError('subclass comparison invoked')\n    for value in (True,False,HostileInt(1),-1,1.0,'1',None,object()):\n        entry=list(alias);cursor=q.cursor\n        try:q.append_batch(iter([0,value,2]))\n        except ValueError:pass\n        else:raise AssertionError('invalid accepted')\n        unchanged();checks+=1\n    assert q.append_batch([])==len(alias);assert q.cursor==len(alias);checks+=1\nq=Queue();q.items.extend([1,2]);alias=q.items\nassert q.append_batch(alias)==4 and alias==[1,2,1,2] and q.items is alias;checks+=1\nassert q.append_batch(iter(alias))==8 and alias==[1,2,1,2]*2;checks+=1\nentry=list(alias);cursor=q.cursor\nclass Sequence:\n    def __getitem__(self,i):\n        assert q.items is alias and alias==entry and q.cursor==cursor\n        if i==3:raise IndexError\n        return i\nassert q.append_batch(Sequence())==11 and alias==entry+[0,1,2];checks+=1\nfor p,data in before.items():assert Path(p).read_bytes()==data,p\nprint({'additional_semantic_cases_passed':checks,'protected_files_unchanged':True,'declared_checks_executed':False,'proposal_sha256':hashlib.sha256(before['proposal.py']).hexdigest()})\nPY\"",
+          "exit_code": 0,
+          "visible_output_bytes": 198
+        }
+      ]
+    },
+    "off": {
+      "usage": {
+        "input_tokens": 126477,
+        "output_tokens": 1606,
+        "cached_input_tokens": 113664,
+        "reasoning_output_tokens": 146,
+        "cache_write_input_tokens": 0
+      },
+      "segments": [
+        {
+          "totalTokens": 19134,
+          "inputTokens": 19055,
+          "cachedInputTokens": 11264,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 79,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19396,
+          "inputTokens": 19290,
+          "cachedInputTokens": 18816,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 106,
+          "reasoningOutputTokens": 16
+        },
+        {
+          "totalTokens": 21531,
+          "inputTokens": 21228,
+          "cachedInputTokens": 19072,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 303,
+          "reasoningOutputTokens": 75
+        },
+        {
+          "totalTokens": 21941,
+          "inputTokens": 21845,
+          "cachedInputTokens": 20992,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 96,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22858,
+          "inputTokens": 22071,
+          "cachedInputTokens": 21632,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 787,
+          "reasoningOutputTokens": 55
+        },
+        {
+          "totalTokens": 23223,
+          "inputTokens": 22988,
+          "cachedInputTokens": 21888,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 235,
+          "reasoningOutputTokens": 0
+        }
+      ],
+      "source_hashes": {
+        "events.jsonl": "62aad4d539a0a29006f44b5c61af95850f5f0aa030484408f2237df461238bb4",
+        "native-events.jsonl": "d8bee5328fac831c533843a8bc90ded99e1c84997548d807d6b9dd9b451bbe9e"
+      },
+      "file_exposure": {
+        "proposal.py": {
+          "bytes": 360,
+          "sha256": "860f4a62529ef66e3c0e715f271e6670926f06c6a62bf00887c93c2366b45810",
+          "exact_in_text_prompt": true,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        "CONTRACT.md": {
+          "bytes": 2190,
+          "sha256": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+          "exact_in_text_prompt": true,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        ".agents/skills/helixcontext/SKILL.md": {
+          "bytes": 1819,
+          "sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": []
+        },
+        "check.py": {
+          "bytes": 3243,
+          "sha256": "d1f00ba60194616b15dff7d00ea4456e4f1ec44a8c678d552a4ccac9a44aaba8",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": [
+            2
+          ]
+        },
+        "check_independence.py": {
+          "bytes": 1887,
+          "sha256": "1f9fe8344621529ba19d271cac17b617a75019e1cc15157d96ea039ddfc1471c",
+          "exact_in_text_prompt": false,
+          "exact_in_command_outputs": [
+            2
+          ]
+        }
+      },
+      "commands": [
+        {
+          "index": 1,
+          "command": "/bin/zsh -lc \"pwd; rg --files -g '\"'!**/__pycache__/**'\"' -g '\"'!**/.git/**'\"'\"",
+          "exit_code": 0,
+          "visible_output_bytes": 351
+        },
+        {
+          "index": 2,
+          "command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nfor name in ['proposal.py','queue_state.py','CONTRACT.md','check.py','check_independence.py']:\n    print('\\\\n--- '+name+' ---')\n    print(Path(name).read_text())\nPY\"",
+          "exit_code": 0,
+          "visible_output_bytes": 7818
+        },
+        {
+          "index": 3,
+          "command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport hashlib, shutil, tempfile, json\nroot=Path.cwd()\nnames=['proposal.py','queue_state.py','CONTRACT.md','check.py','check_independence.py']\nbefore={n:hashlib.sha256((root/n).read_bytes()).hexdigest() for n in names}\nreview=Path(tempfile.mkdtemp(prefix='.queue-review-',dir=root))\nfor n in ['CONTRACT.md','check.py','check_independence.py']:\n    shutil.copyfile(root/n,review/n)\nshutil.copyfile(root/'proposal.py',review/'queue_state.py')\n(review/'source_hashes.json').write_text(json.dumps(before,indent=2)+'\\\\n')\nassert (review/'queue_state.py').read_bytes()==(root/'proposal.py').read_bytes()\nprint(review)\nprint(json.dumps(before,sort_keys=True))\nPY\"",
+          "exit_code": 0,
+          "visible_output_bytes": 532
+        },
+        {
+          "index": 4,
+          "command": "/bin/zsh -lc 'python3 check_independence.py queue_state.py'",
+          "exit_code": 0,
+          "visible_output_bytes": 41
+        },
+        {
+          "index": 5,
+          "command": "/bin/zsh -lc 'python3 check.py queue_state.py'",
+          "exit_code": 0,
+          "visible_output_bytes": 39
+        },
+        {
+          "index": 6,
+          "command": "/bin/zsh -lc \"python3 - <<'PY'\nfrom pathlib import Path\nimport hashlib, json, sys\nns={}; exec(Path('queue_state.py').read_text(),ns); Queue=ns['Queue']\nq=Queue(); alias=q.items\nq.append_batch([1,2]); alias[:]=[8]\nentry=(list(alias),q.cursor)\ndef unchanged():\n    assert q.items is alias and (q.items,q.cursor)==entry\nclass Observed:\n    def __init__(self): self.enters=0; self.step=0\n    def __iter__(self):\n        unchanged(); self.enters+=1; assert self.enters==1; return self\n    def __next__(self):\n        unchanged(); self.step+=1\n        if self.step==3: raise StopIteration\n        return self.step\nobs=Observed(); assert q.append_batch(obs)==3 and alias==[8,1,2]\n# Queue-list inputs remain finite because commit happens after iteration.\nassert q.append_batch(alias)==6 and alias==[8,1,2,8,1,2]\nassert q.append_batch(iter(alias))==12\nclass Signal(BaseException): pass\nfor where in ['enter','next']:\n    alias.clear(); entry=([],q.cursor); signal=Signal(where)\n    class Broken:\n        def __iter__(self):\n            unchanged()\n            if where=='enter': raise signal\n            return self\n        def __next__(self): unchanged(); raise signal\n    try: q.append_batch(Broken())\n    except Signal as exc: assert exc is signal\n    else: raise AssertionError('missing exception')\n    unchanged(); assert q.append_batch([])==0\n# Sequence protocol, arbitrary-size exact ints, and rejected subclass hooks.\nclass Sequence:\n    def __getitem__(self,index):\n        if index==2: raise IndexError\n        return [0,10**1000][index]\nassert q.append_batch(Sequence())==2\nclass HostileInt(int):\n    def __lt__(self,other): raise AssertionError('subclass comparison invoked')\nfor value in [HostileInt(1),False,object(),-10**1000]:\n    entry=(list(alias),q.cursor)\n    try: q.append_batch([7,value])\n    except ValueError: pass\n    else: raise AssertionError('accepted invalid value')\n    unchanged()\nassert q.append_batch([9])==3\nroot=Path.cwd().parent\nbefore=json.loads(Path('source_hashes.json').read_text())\nassert all(hashlib.sha256((root/n).read_bytes()).hexdigest()==h for n,h in before.items())\nassert Path('queue_state.py').read_bytes()==(root/'proposal.py').read_bytes()\nfor n in ['CONTRACT.md','check.py','check_independence.py']:\n    assert Path(n).read_bytes()==(root/n).read_bytes()\nprint('PASS supplemental semantic cases; all five original files unchanged; staged copies exact')\nprint(sys.version)\nPY\"",
+          "exit_code": 0,
+          "visible_output_bytes": 176
+        }
+      ]
+    }
+  },
+  "conditional": {
+    "warning": "No safe-removal or unchanged-trajectory claim. These are accounting sensitivities, not measured counterfactuals or model lower bounds.",
+    "native_80_percent_budgets": {
+      "input_tokens": 25295.4,
+      "output_tokens": 321.20000000000005
+    },
+    "retain_only_semantic_probe_and_final_segments": {
+      "input_tokens": 45749,
+      "output_tokens": 1196
+    },
+    "two_times_observed_initial_input": 39048,
+    "probe_generating_segment_output": 909,
+    "output_above_budget_in_probe_segment": 587.8
+  },
+  "limits": [
+    "No hidden-reasoning attribution.",
+    "Attached skill serialization not visible in text prompt; do not infer absent skill or count its double injection exactly.",
+    "Native input includes runtime context; cannot attribute its entirety to Helix bootstrap.",
+    "No added native calls."
+  ]
+}
