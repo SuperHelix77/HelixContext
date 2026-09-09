@@ -1,0 +1,25 @@
+{
+  "status": "RESEARCH_ONLY_UNQUALIFIED",
+  "tokenizer": "o200k_base",
+  "native_savings": null,
+  "files": {
+    "sol-v1.md": {
+      "sha256": "3abd71c9c8301838bdad0ba202dc7e9eb4a7401665e94145bced47f1fc7af2d0",
+      "bytes": 6187,
+      "proxy_tokens": 1032,
+      "sources": {
+        "common-v1.md": "326ea4c334c7419898b098087f5bcb5060336c4e70a823e710260de08a867980",
+        "sol-v1.fragment.md": "abd84eab98f51ebfa11ad1e958dad29583ce451af5dfcb51177d659988543cb1"
+      }
+    },
+    "astra-v1.md": {
+      "sha256": "3693243a844437ec0cd511b4516fcdee23a79faa8b62e22e5b9f6bdce816b909",
+      "bytes": 6336,
+      "proxy_tokens": 1052,
+      "sources": {
+        "common-v1.md": "326ea4c334c7419898b098087f5bcb5060336c4e70a823e710260de08a867980",
+        "astra-v1.fragment.md": "5dafe12977cc9524f66787a3454d9fea35821758c96819a444d508da3a380f0a"
+      }
+    }
+  }
+}
