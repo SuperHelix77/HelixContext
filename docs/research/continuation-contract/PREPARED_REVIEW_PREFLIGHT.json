@@ -1,0 +1,41 @@
+{
+  "classification": "Offline research preflight; no native decisions or savings",
+  "native_calls": 0,
+  "results": {
+    "valid": {
+      "receipt_hash": "4f70505009f04eb93173f43b738110b4a00c94132624017b71f687c501dda234",
+      "mechanical_status": "READY",
+      "checks": {
+        "check.py": "PASS",
+        "check_independence.py": "PASS",
+        "supplemental.py": "PASS"
+      },
+      "independent_contract_witness_pass": true,
+      "cost": {
+        "limits": "Logical explicit reads/writes only; not total OS I/O, process memory, dollar cost or model tokens.",
+        "logical_source_bytes_read": 54390,
+        "prepare_seconds": 0.3019460000214167,
+        "raw_output_bytes": 278,
+        "snapshot_bytes_written": 33066
+      }
+    },
+    "known_uncovered_defect": {
+      "receipt_hash": "b35aa0926f67d9a9992ef76e5db46bc4d39f06f0a2db1756473f153795a13455",
+      "mechanical_status": "READY",
+      "checks": {
+        "check.py": "PASS",
+        "check_independence.py": "PASS",
+        "supplemental.py": "PASS"
+      },
+      "independent_contract_witness_pass": false,
+      "cost": {
+        "limits": "Logical explicit reads/writes only; not total OS I/O, process memory, dollar cost or model tokens.",
+        "logical_source_bytes_read": 54534,
+        "prepare_seconds": 0.29369633295573294,
+        "raw_output_bytes": 278,
+        "snapshot_bytes_written": 33174
+      }
+    }
+  },
+  "source_events_sha256": "48d459dcea99b9f35dca1a62c6186a6deb02e391a1ca21d5b76a363207d1914d"
+}
