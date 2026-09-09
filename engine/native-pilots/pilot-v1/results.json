@@ -1,0 +1,338 @@
+{
+  "version": "pilot-v1",
+  "quality_status": "invalid frozen primary_tests grader schema; preserve failures, no clean parity claim",
+  "rows": [
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "off",
+      "passed": false,
+      "usage": {
+        "input_tokens": 56651,
+        "cached_input_tokens": 48128,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1270,
+        "reasoning_output_tokens": 761
+      },
+      "elapsed_seconds": 35.66,
+      "events_sha256": "a6bae37d09eacb0607fe2c01892816579e880ab70b33299103df83a256c83777",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "expected": "cursor=0",
+            "observed": "cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "expected": "amount=\"000.100\"",
+            "observed": "amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "expected": "permit=false",
+            "observed": "permit=\"false\""
+          }
+        ]
+      }
+    },
+    {
+      "model": "gpt-5.6-luna",
+      "arm": "on",
+      "passed": false,
+      "usage": {
+        "input_tokens": 74621,
+        "cached_input_tokens": 61184,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1538,
+        "reasoning_output_tokens": 905
+      },
+      "elapsed_seconds": 41.855,
+      "events_sha256": "4cc58eeb2747f717a686929ac82da70efab651860d19c3b854eac38938aea925",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "object_bytes_read": 898938,
+        "object_bytes_written": 449469,
+        "object_bytes_hashed": 1348407,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 448928
+      },
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "expected": "cursor=0",
+            "observed": "cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "expected": "amount=\"000.100\"",
+            "observed": "amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "expected": "permit=false",
+            "observed": "permit=\"false\""
+          }
+        ]
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "on",
+      "passed": false,
+      "usage": {
+        "input_tokens": 29003,
+        "cached_input_tokens": 23424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 909,
+        "reasoning_output_tokens": 587
+      },
+      "elapsed_seconds": 39.877,
+      "events_sha256": "9e0f67bec61b5f0427175dac7cecf2b0a1cb7402d48e861633a7cbcd7a710e50",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "object_bytes_read": 898936,
+        "object_bytes_written": 449468,
+        "object_bytes_hashed": 1348404,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 448928
+      },
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "classification": "primary_failure",
+            "expected": {
+              "cursor": 0
+            },
+            "observed": {
+              "cursor": 17
+            },
+            "evidence": "E  expected cursor=0; observed cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "classification": "primary_failure_with_10_downstream_failures",
+            "expected": {
+              "amount": "000.100"
+            },
+            "observed": {
+              "amount": "0.1"
+            },
+            "evidence": "E  expected amount=\"000.100\"; observed amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "classification": "primary_failure",
+            "expected": {
+              "permit": false
+            },
+            "observed": {
+              "permit": "false"
+            },
+            "evidence": "E  expected permit=false; observed permit=\"false\""
+          }
+        ]
+      }
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "arm": "off",
+      "passed": false,
+      "usage": {
+        "input_tokens": 45794,
+        "cached_input_tokens": 36224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 957,
+        "reasoning_output_tokens": 598
+      },
+      "elapsed_seconds": 42.5,
+      "events_sha256": "408a00c8d68efa7518f2886ca0e0f1fe056f51e3e411ce5605861544bc5e1f9a",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "expected": "cursor=0",
+            "observed": "cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "expected": "amount=\"000.100\"",
+            "observed": "amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "expected": "permit=false",
+            "observed": "permit=\"false\""
+          }
+        ]
+      }
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "off",
+      "passed": false,
+      "usage": {
+        "input_tokens": 44137,
+        "cached_input_tokens": 24960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 427,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 26.165,
+      "events_sha256": "8b27c6165267a54b141fba388b5171915622421bc8b4603224ac3cbbb6648e87",
+      "source_unchanged": true,
+      "middleware_application_bytes": null,
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "expected": 0,
+            "observed": 17,
+            "evidence": "expected cursor=0; observed cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "expected": "000.100",
+            "observed": "0.1",
+            "evidence": "expected amount=\"000.100\"; observed amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "expected": false,
+            "observed": "false",
+            "evidence": "expected permit=false; observed permit=\"false\""
+          }
+        ]
+      }
+    },
+    {
+      "model": "gpt-6-astra",
+      "arm": "on",
+      "passed": false,
+      "usage": {
+        "input_tokens": 30201,
+        "cached_input_tokens": 14720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 312,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 22.478,
+      "events_sha256": "716ff67e70b1df3b49670b9a2091e0c00dcae7dcb48e3fdf86e620835f03cc93",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "object_bytes_read": 898940,
+        "object_bytes_written": 449470,
+        "object_bytes_hashed": 1348410,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 448928
+      },
+      "answer": {
+        "failed_count": 13,
+        "passed_count": 211,
+        "cursor_expected": 0,
+        "cursor_observed": 17,
+        "amount_expected": "000.100",
+        "permit_expected": false,
+        "permit_observed": "false",
+        "source_revision": "00917",
+        "retry_budget": "000.050",
+        "primary_tests": [
+          {
+            "name": "test_cursor",
+            "expected": 0,
+            "observed": 17,
+            "evidence": "E  expected cursor=0; observed cursor=17"
+          },
+          {
+            "name": "test_decimal",
+            "expected": "000.100",
+            "observed": "0.1",
+            "evidence": "E  expected amount=\"000.100\"; observed amount=\"0.1\""
+          },
+          {
+            "name": "test_permission",
+            "expected": false,
+            "observed": "false",
+            "evidence": "E  expected permit=false; observed permit=\"false\""
+          }
+        ]
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "gpt-5.6-luna",
+      "frozen_grader_pass_both": false,
+      "input_saving_fraction": -0.31720534500714903,
+      "output_saving_fraction": -0.21102362204724412
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "frozen_grader_pass_both": false,
+      "input_saving_fraction": 0.3666637550770844,
+      "output_saving_fraction": 0.050156739811912265
+    },
+    {
+      "model": "gpt-6-astra",
+      "frozen_grader_pass_both": false,
+      "input_saving_fraction": 0.3157441602283798,
+      "output_saving_fraction": 0.26932084309133486
+    }
+  ]
+}

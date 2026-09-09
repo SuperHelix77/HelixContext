@@ -1,0 +1,24 @@
+{
+  "files": {
+    "pilot.py": "6da2aca5c57a1c7217aeecfd535d9572bc5eb28ceb7aa57f5c2ea346592c16d9",
+    "../../helix-frontier/run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "../../helix-middleware/evidence.py": "9cb833c82855c3472f4c9e670a97a110060768da8f11057bf957442b688a918a",
+    "../../helix-middleware/verification.py": "85698a51637ee5c08349a89f799edb33ab96e1ff6c2c474304e1ceb1b4d15427"
+  },
+  "scope": "V2 diagnostic pilot fixes primary_tests schema ambiguity before execution and changes decisive values. One task per model, not three-task or long-horizon parity. V1 preserved as invalid-grader exploratory evidence.",
+  "grading": "Exact JSON equality, explicit scalar type checks and source integrity.",
+  "order": {
+    "luna": [
+      "off",
+      "on"
+    ],
+    "sol": [
+      "on",
+      "off"
+    ],
+    "astra": [
+      "off",
+      "on"
+    ]
+  }
+}

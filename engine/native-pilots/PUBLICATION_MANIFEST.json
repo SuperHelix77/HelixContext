@@ -1,0 +1,10 @@
+{
+  "ACCOUNTING.json": "0ddddfd5305c22df5bf6f7c0f0144f5fea188123cccf63a38ba127c10d09fa8e",
+  "README.md": "524c9d81a1331f70ba02149d54fad9afbf01eabea954245519b743b0444020e5",
+  "pilot-v1/MANIFEST.json": "cc56d8c53219c2288bbbb76de7860b5631fd5e623772d89d6bb4166055d29400",
+  "pilot-v1/pilot.py": "a3a184650af069651e19c1dd171039fb7b7ceb4b298b795acc7baf76e503cd67",
+  "pilot-v1/results.json": "5ffaffd4ec63b438497c05eedbebd28f50fc0c4abc5c5b9b46d85c650bd40c7f",
+  "pilot-v2/MANIFEST.json": "ece0dd2854594cceaf7ab9d459012d59f0fbddaca679382a0d2d6e9c8168366c",
+  "pilot-v2/pilot.py": "6da2aca5c57a1c7217aeecfd535d9572bc5eb28ceb7aa57f5c2ea346592c16d9",
+  "pilot-v2/results.json": "126e5e752b3d5584912f101ad1ec17c9307e4e76b88c3082fabe3029ff6363a1"
+}

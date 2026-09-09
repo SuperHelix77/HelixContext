@@ -1,0 +1,24 @@
+{
+  "files": {
+    "pilot.py": "a3a184650af069651e19c1dd171039fb7b7ceb4b298b795acc7baf76e503cd67",
+    "../../helix-frontier/run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "../../helix-middleware/evidence.py": "9cb833c82855c3472f4c9e670a97a110060768da8f11057bf957442b688a918a",
+    "../../helix-middleware/verification.py": "85698a51637ee5c08349a89f799edb33ab96e1ff6c2c474304e1ceb1b4d15427"
+  },
+  "scope": "One prospective diagnostic task, three models at High, same native tools, both arms given original file; on adds typed packet, not a complete middleware capability benchmark. All six calls and preprocessing counted. Does not test long-horizon or repair parity.",
+  "grading": "Exact JSON equality plus source integrity. No adaptive fixture changes after execution.",
+  "order": {
+    "luna": [
+      "off",
+      "on"
+    ],
+    "sol": [
+      "on",
+      "off"
+    ],
+    "astra": [
+      "off",
+      "on"
+    ]
+  }
+}

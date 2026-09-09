@@ -1,0 +1,52 @@
+{
+  "native_calls": 12,
+  "usage_including_invalid_v1": {
+    "input_tokens": 562261,
+    "output_tokens": 8873,
+    "cached_input_tokens": 432896,
+    "reasoning_output_tokens": 4282
+  },
+  "scope": "Both six-call pilots only; all native input/output included. Parent coordination, earlier research, remote compute and dollar costs excluded, not zero. Middleware application byte counters in each on receipt; preprocessing wall time and disk allocation incomplete. Cached input and reasoning output are subsets, not additional token categories.",
+  "comparisons": {
+    "pilot-v1": [
+      {
+        "model": "gpt-5.6-luna",
+        "frozen_grader_pass_both": false,
+        "input_saving_fraction": -0.31720534500714903,
+        "output_saving_fraction": -0.21102362204724412
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "frozen_grader_pass_both": false,
+        "input_saving_fraction": 0.3666637550770844,
+        "output_saving_fraction": 0.050156739811912265
+      },
+      {
+        "model": "gpt-6-astra",
+        "frozen_grader_pass_both": false,
+        "input_saving_fraction": 0.3157441602283798,
+        "output_saving_fraction": 0.26932084309133486
+      }
+    ],
+    "pilot-v2": [
+      {
+        "model": "gpt-5.6-luna",
+        "frozen_grader_pass_both": true,
+        "input_saving_fraction": -0.0687911696635215,
+        "output_saving_fraction": -0.761049723756906
+      },
+      {
+        "model": "gpt-5.6-sol",
+        "frozen_grader_pass_both": true,
+        "input_saving_fraction": 0.5389410595814237,
+        "output_saving_fraction": 0.18821603927986907
+      },
+      {
+        "model": "gpt-6-astra",
+        "frozen_grader_pass_both": true,
+        "input_saving_fraction": 0.3182721401797408,
+        "output_saving_fraction": 0.3380281690140845
+      }
+    ]
+  }
+}
