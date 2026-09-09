@@ -1,0 +1,113 @@
+{
+  "schema": "helix.research.receipt-challenge.v1",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "order": [
+    "helix_valid",
+    "native_valid",
+    "helix_wrong",
+    "helix_stale"
+  ],
+  "arms": {
+    "native_valid": {
+      "cwd": "native_valid/off",
+      "prompt_sha256": "7b18ec7a67cd65a5e9d48d1ba17c47c5e73f81d48a40d4cf6074d113031545c4",
+      "preflight": null,
+      "source_hashes": {
+        "CONTRACT.md": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "mechanical_checker.py": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1",
+        "proposed.py": "2009fc5089625039414a50c7a79173f0786959605f23de90950f495925b4f561"
+      }
+    },
+    "helix_valid": {
+      "cwd": "helix_valid/on",
+      "prompt_sha256": "cee88878f0a0f8dd738727044f49f6358705ce77964513fc940fff8c778cbc6a",
+      "preflight": {
+        "seconds": 0.06613570800982416,
+        "stdout_bytes": 57,
+        "stderr_bytes": 0,
+        "current_contract_root": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "bound_contract_root": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2"
+      },
+      "source_hashes": {
+        "CONTRACT.md": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "mechanical.stdout": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64",
+        "mechanical_checker.py": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1",
+        "proposed.py": "2009fc5089625039414a50c7a79173f0786959605f23de90950f495925b4f561",
+        "receipt.json": "9b6fb8cadca6ae8fa72847888fcf6e374daf481b1fdee42d6299258edcc40b64",
+        "mechanical.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "helix_wrong": {
+      "cwd": "helix_wrong/on",
+      "prompt_sha256": "9259058baf113b8756d13fc4ae7815faa7a8653e16b6ab8168d1dc728e6ed0cc",
+      "preflight": {
+        "seconds": 0.06352258299011737,
+        "stdout_bytes": 57,
+        "stderr_bytes": 0,
+        "current_contract_root": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "bound_contract_root": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2"
+      },
+      "source_hashes": {
+        "CONTRACT.md": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "mechanical.stdout": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64",
+        "mechanical_checker.py": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1",
+        "proposed.py": "1ac3821286c9e4257cf87cad9331d426b38c894728eee81f1d73e9ce0be69678",
+        "receipt.json": "fc5bed76bf7c27ae1724c929d7cf119cd59d923eee0ab09de607019725ba9c1d",
+        "mechanical.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "helix_stale": {
+      "cwd": "helix_stale/on",
+      "prompt_sha256": "b20e85f2585128ce2fcd97de626f56d6a96bb644650f3d3817069d2d80e387da",
+      "preflight": {
+        "seconds": 0.08418641600292176,
+        "stdout_bytes": 57,
+        "stderr_bytes": 0,
+        "current_contract_root": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "bound_contract_root": "438625a7c22f54bf7e022830fe008f47e3f5376d51d9e32e47da864b6dbb0655"
+      },
+      "source_hashes": {
+        "CONTRACT.md": "2cd093cd64dc2544029d3a5c97183761e6703710355cad156878b2b583ed93e2",
+        "mechanical.stdout": "6ce1311180462d6d4d91bb58acb1196d7a9f245acec1561487ae308d98856d64",
+        "mechanical_checker.py": "9073ce31b98722b81f022df115047dfb0de9b0d3461bdc7f4ba98525873923a1",
+        "proposed.py": "2009fc5089625039414a50c7a79173f0786959605f23de90950f495925b4f561",
+        "receipt.json": "995ca8df2f38c68487ba060508801c60d157f1a5fbda0ef01afd3d1abe1de1e8",
+        "mechanical.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "script_sha256": "2de7a45d04a3fb0ce0052cfcd95b04d4904f1e06f07f5befb6344731ec6af481",
+  "runner_sha256": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+  "fixture_sha256": "07dfcc245cfd8e4a362e046fe26b6b75fd03ad664862a5ce7588fe33d7029164",
+  "skill_sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+  "resource_limits": {
+    "max_initial_calls": 4,
+    "recovery_calls": 0,
+    "per_call_input": 150000,
+    "per_call_output": 4000,
+    "total_input": 300000,
+    "total_output": 12000
+  },
+  "expected": {
+    "native_valid": [
+      "ACCEPT",
+      null
+    ],
+    "helix_valid": [
+      "ACCEPT",
+      true
+    ],
+    "helix_wrong": [
+      "REJECT",
+      true
+    ],
+    "helix_stale": [
+      "ACCEPT",
+      false
+    ]
+  },
+  "classification": "Development receipt review pilot; no novel repair, holdout or long-horizon parity claim",
+  "stop": "Any budget/check/source-preservation failure stops launch of remaining arms. No retry or budget amendment.",
+  "economic_gate": "Fresh valid pair: reduce input without increasing output. Report both axes; 80/80 remains target. Adverse arms are not savings replicates."
+}
