@@ -20,6 +20,11 @@
 | `CONDITIONAL` | True only if stated assumptions hold; assumption is named |
 | `UNKNOWN` | Not measurable from available traces; deliberately not guessed |
 
+> **Read §22 before acting on §4, §7.1, §16 or §21.** §22 was written last, from per-turn trajectory
+> data rather than aggregates. It supersedes T1 on long-horizon tasks, withdraws my own T8 estimate
+> and T10 headline as over-claims, and identifies turn count — not compression — as the only
+> measured route to 80% input.
+
 **A note on what the repository is.** Every number in the repository that matters was recomputed
 from the raw receipt files, not from prose. Where prose and receipts disagree, the receipt wins and
 the disagreement is reported. Two things you asked me not to do — manufacture precision, and
@@ -1205,7 +1210,7 @@ Ranked by `leverage × orthogonality × falsifiability ÷ (implementation + benc
 
 ## 16. CONDITIONAL THEOREMS AND UPPER BOUNDS
 
-**T1 — Uncached-input ceiling.** `CONDITIONAL` on cached prefix being untouchable.
+**T1 — Uncached-input ceiling.** *(Superseded on long-horizon tasks by T11, §22. Retained for short tasks.)* `CONDITIONAL` on cached prefix being untouchable.
 For any baseline episode, `max_gross_input_saving ≤ (I − C)/I` where `I` = total input, `C` = cached.
 *Proof:* the saving can come only from tokens not served from cache, plus any induced reduction in
 `C`. If `C` is fixed, the bound is the uncached fraction. ∎
@@ -1255,7 +1260,11 @@ spread across three models). Therefore:
 long-horizon input. **Even perfect performance on every existing mechanism leaves 51–71% of the
 bill.**
 
-**T8 — Cache-locality theorem (new).** `CONDITIONAL` on the runner counting intra-invocation re-reads
+> **T8 — Cache-locality theorem (new).** *(The ~31-point magnitude estimate below is WITHDRAWN in
+> §22.5, Correction 1: it was computed against the control arm, but Helix's long-horizon arm is
+> already flat with a 389-token caller prompt, so there is no prefix variance left to stabilise.)*
+
+**T8 — Cache-locality theorem.** `CONDITIONAL` on the runner counting intra-invocation re-reads
 as cached.
 If the prefix presented at turn `t+1` differs from turn `t` at any position before the last cached
 boundary, all tokens after the divergence are billed at full rate.
@@ -1532,6 +1541,7 @@ M1 surface, reduces the skill body, and removes a maintenance sink. **Subtractio
 action available and it is free.**
 
 **Step 2 (4–10 h, zero native calls). Build the stable-prefix observation log — offline only.**
+*(DEMOTED by §22.5/§22.8: its ~31-point justification is withdrawn. Read Astra's turn-50 trace first.)*
 Deterministic, no inference. The contract: append-only, never rewritten, rendered identically each
 turn, exhaustive fallback always available, a miss is an explicit FAILED retrieval. Then run the
 **40-turn offline holdout** (a turn-1 fact needed at turn 40) and measure whether the log alone is
@@ -1670,3 +1680,224 @@ point estimate.**
 
 *No production code was changed. No native calls were launched. No skill was modified. Every
 recomputation is committed at `research/cache-adjusted-ledger/` and reproducible offline.*
+
+---
+
+# 22. ADDENDUM — THE FLAT-FLOOR THEOREM (added after per-turn trajectory analysis)
+
+This section was written after decomposing the **per-turn** receipt trajectories for W50 and L40
+rather than the aggregates. It **supersedes T1 for long-horizon tasks**, and it **corrects two of my
+own estimates in §7.1/T8 and §21 Step 2**. I am flagging my own errors explicitly rather than
+quietly editing them.
+
+## 22.1 The measurement
+
+For each model, task and arm, fit `input(t) = F + g·t` over turns 5…N−8 (robust median of consecutive
+slopes), where `t` is the sequential turn index.
+
+| Task | Model | Arm | **F** (per-turn floor) | **g** (growth/turn) | N | Total | Floor share |
+|---|---|---|---:|---:|---:|---:|---:|
+| W50 | Luna | off | 13,113 | **125.0** | 50 | 895,345 | 73.2% |
+| W50 | Luna | **on** | **13,324** | **0.0** | 50 | 710,887 | **93.7%** |
+| W50 | Sol | off | 14,678 | 125.0 | 50 | 926,028 | 79.3% |
+| W50 | Sol | **on** | **14,888** | **0.0** | 50 | 785,283 | **94.8%** |
+| W50 | Astra | off | 15,571 | 125.0 | 50 | 933,283 | 83.4% |
+| W50 | Astra | **on** | **15,782** | **0.0** | 50 | 842,482 | **93.7%** |
+| L40 | Luna | off | 17,044 | 95.0 | 41 | 852,087 | 82.0% |
+| L40 | Luna | **on** | **13,296** | **0.0** | 41 | 615,277 | 88.6% |
+| L40 | Sol | off | 18,580 | 95.0 | 41 | 880,810 | 86.5% |
+| L40 | Sol | **on** | **14,860** | **0.0** | 41 | 646,489 | 94.2% |
+| L40 | Astra | off | 19,488 | 95.0 | 41 | 898,279 | 88.9% |
+| L40 | Astra | **on** | **15,754** | **0.0** | 41 | 680,286 | 94.9% |
+
+**The Helix arm is perfectly flat.** Sol's W50 on-arm varies by **1 token** across turns 2–49
+(14,887 / 14,888 / 14,887…). `g = 0.0` in all six Helix arms, for all three models, on both
+long-horizon tasks.
+
+## 22.2 T11 — Flat-floor theorem (supersedes T1 on long-horizon)
+
+> On the long-horizon tasks, native input is `I(t) = F + g·t`. Helix drives `g → 0` **exactly** and
+> leaves `F` essentially unchanged (or slightly raised). Therefore
+> `Saving = g·N(N+1)/2 + (F_off − F_on)·N + Δ_endpoint`.
+
+**Decomposition of the observed saving:**
+
+| Task | Model | Saved | History term removed | Floor change | Endpoint Δ | History share |
+|---|---|---:|---:|---:|---:|---:|
+| W50 | Luna | 184,458 | 159,375 | −10,550 | +23,362 | 86.4% |
+| W50 | Sol | 140,745 | 159,375 | −10,500 | +6,794 | 113.2% |
+| W50 | Astra | 90,801 | 159,375 | −10,550 | **−50,516** | 175.5% |
+| L40 | Luna | 236,810 | 81,795 | **+153,668** | +12,923 | 34.5% |
+| L40 | Sol | 234,321 | 81,795 | **+152,520** | +22,162 | 34.9% |
+| L40 | Astra | 217,993 | 81,795 | **+153,094** | −10,110 | 37.5% |
+
+Two different regimes, both clean:
+
+- **W50:** the saving is *entirely* the history term (159,375 tokens), minus a small floor penalty.
+- **L40:** the saving is 35% history term and **65% floor reduction** — because L40's control floor
+  (17,044–19,488) is inflated by heavy per-turn event content, and Helix normalizes it to its own
+  content-independent floor (13,296–15,754).
+
+**Corollary (important): Helix's floor is task-independent.** Luna's Helix floor is 13,324 on W50 and
+13,296 on L40 — a 0.2% difference across two very different fixtures. The control's floor, by
+contrast, moves 13,113 → 17,044 (+30%). **Helix converts a content-scaling per-turn cost into a
+constant.**
+
+## 22.3 Where this leaves the research programme
+
+**(a) The history/memory line is CLOSED for long-horizon input.** `g` is already 0. There is no
+history replay left to remove. **No further memory, compaction, or summarization mechanism can
+improve long-horizon input.** This closes the largest single research thread in the project — as a
+success, not a failure.
+
+**(b) The residual is a per-turn floor of ~13,300–15,800 tokens that is 88.6–94.9% of the Helix
+arm's input.** Helix does not reduce it on W50. It *does* reduce it on L40, but only down to the
+same content-independent constant. **The floor is the host prefix plus the skill plus the current
+event. Helix controls only the skill.**
+
+**(c) Helix's overhead is now measured exactly, and it is tiny and uniform.**
+
+| Model | F_off | F_on | **Overhead/turn** | Per-turn breakeven | Cumulative breakeven | Overhead as share of Helix total |
+|---|---:|---:|---:|---:|---:|---:|
+| Luna | 13,113 | 13,324 | **+211** | turn 1.69 | **turn 3** | 1.48% |
+| Sol | 14,678 | 14,888 | **+210** | turn 1.68 | turn 3 | 1.34% |
+| Astra | 15,571 | 15,782 | **+211** | turn 1.69 | turn 3 | 1.25% |
+
+**+211 tokens/turn, identical across all three models, paying for itself by cumulative turn 3.**
+This is the cleanest overhead number in the project and it should be published as such. It also
+means the skill body's *input* cost is bounded at ~211 tokens/turn — so **skill-body compression is
+worth at most ~0.7% of long-horizon input and should not be pursued for input reasons.** (I had it
+as Step 3; see the correction in §22.5.)
+
+## 22.4 T12 — Internal-step re-reads dominate short tasks (new)
+
+On the single-invocation tasks, cached is **76.6–87.3%** of input:
+
+| Model | Task | Arm | Input | Cached | Cached % | Uncached |
+|---|---|---|---:|---:|---:|---:|
+| Luna | Q4 | off | 42,036 | 35,072 | 83.4% | 6,964 |
+| Luna | Q4 | on | 28,737 | 22,016 | 76.6% | 6,721 |
+| Luna | A | off | 102,914 | 85,248 | 82.8% | 17,666 |
+| Luna | A | on | 59,108 | 50,176 | 84.9% | **8,932** |
+| Astra | A | off | 74,279 | 64,128 | 86.3% | 10,151 |
+| Astra | A | on | 50,791 | 44,160 | 86.9% | **6,631** |
+
+Luna's task-A saving is 43,806 input tokens of which **37,740 is cached** (85,248 → 50,176) and only
+8,734 is uncached. **On short tasks Helix's win comes from making the model take fewer or cheaper
+internal steps, not from shrinking the evidence.** (Sol's Q4 is the exception that confirms it:
+cached barely moved 25,344 → 25,600, and the input saving was −1.9%.)
+
+> **T12:** on single-invocation multi-step tasks, `input ≈ K × context` where `K` is the number of
+> internal model steps. Helix's short-task saving is `ΔK × context − overhead`. The lever is **K**,
+> not the evidence size.
+
+## 22.5 Corrections to my own earlier estimates
+
+**Correction 1 — T8 (cache locality) does not apply to the current long-horizon arm.** In §7.1 and
+§16 I estimated prefix stabilisation at "~31 points of dollar saving on Luna W50." That estimate
+was computed against the **control** arm, which replays a growing history. But Helix's arm is
+already perfectly flat (`g = 0`) with a caller prompt of only 389–390 tokens/turn. **There is almost
+no prefix variance left to stabilise.** The residual uncached floor is *first-read* content — the
+current event and whatever the model reads inside the turn — which is uncachable by construction.
+**T8's ~31-point estimate is withdrawn.** The stable-prefix log remains valuable for a design that
+does per-turn retrieval injection (and for the Q4/A internal-step regime via T12), but it is **not**
+the ~31-point win I claimed for the current long-horizon arm. I over-claimed; the trajectory data
+does not support it.
+
+**Correction 2 — skill-body compression is not a meaningful input lever.** Bounded by the measured
++211 tokens/turn overhead: ≤1.5% of Helix's long-horizon total, and ≤0.7% realistically. It may
+still matter for *output behaviour* (which is where Sol and Astra need help), but my §21 Step 3
+justification was an input argument and it does not survive.
+
+**Correction 3 — T1's "uncached fraction" ceiling is the wrong bound for long-horizon.** T1 gives
+35.8% for Luna W50. The trajectory shows the *addressable* term is the history growth (17.8% of
+baseline), which Helix has already taken 100% of. T1 is retained only for short tasks; **T11
+supersedes it on long-horizon.**
+
+## 22.6 The corrected route to 80% input — and it is turn amortisation, precisely
+
+Holding Helix's measured flat floor `F_on` and its observed final-turn cost constant, and varying
+only `N` (the number of turns needed to do the same work):
+
+| Task | Model | Control | Helix @ N=50/41 | @ N=25 | @ N=10 | @ N=5 |
+|---|---|---:|---:|---:|---:|---:|
+| W50 | Luna | 895,345 | 19.1% | **56.3%** | **78.6%** | 86.1% |
+| W50 | Sol | 926,028 | 13.4% | **53.6%** | **77.8%** | 85.8% |
+| W50 | Astra | 933,283 | 7.7% | **50.0%** | **75.3%** | 83.8% |
+| L40 | Luna | 852,087 | 26.7% | **51.6%** | **75.0%** | 82.8% |
+| L40 | Sol | 880,810 | 24.7% | **51.7%** | **77.0%** | 85.4% |
+| L40 | Astra | 898,279 | 21.7% | **49.8%** | **76.1%** | 84.8% |
+
+**This is the finding that should redirect the project.** ≥80% gross input on long-horizon work is
+attainable — **not** by better compression, memory, or evidence selection (all of which are now at
+their measured limit), but **by reducing N**. Every mechanism that collapses turns — CodeAct-style
+single-invocation execution [15](https://devblogs.microsoft.com/agent-framework/codeact-with-hyperlight/),
+batched acknowledgement, macro-actions — attacks the only term that is still 89–95% of the bill.
+
+Note the benchmark caveat this exposes: **W50 and L40 require N=50 and N=41 by construction.** The
+benchmark cannot measure the only lever that matters. This is H14 (§17) in its sharpest form.
+
+## 22.7 Astra's long-horizon regression is one turn, and it is fixable
+
+| Model | Control turn 50 | Helix turn 50 | Δ | Saving excluding turn 50 | Saving including |
+|---|---:|---:|---:|---:|---:|
+| Luna | 81,365 | 58,003 | −23,362 | 19.8% | 20.6% |
+| Sol | 63,948 | 57,154 | −6,794 | 15.5% | 15.2% |
+| **Astra** | **21,819** | **72,335** | **+50,516** | **15.5%** | **9.7%** |
+
+**Excluding the single final turn, Astra's W50 saving is 15.5% — identical to Sol's.** Astra's
+apparent long-horizon weakness is not a phenotype; it is **one anomalous turn** in which the Helix
+arm spent 72,335 input tokens against the control's 21,819. Everything else is flat and well-behaved
+(F_on = 15,782, g = 0, overhead +211, same as the others).
+
+This is the highest-value unexploited fact in the corpus: **a single-turn fix is worth 5.8
+percentage points of Astra's long-horizon input saving and would move Astra's aggregate V3 input
+saving from 17.11% to roughly 21–22%, and its dollar saving from 32.0% to roughly 36–38%.**
+
+`HYPOTHESIS` (testable from the retained local trace at
+`outputs/helix-frontier/astra/W/on/turn-50/`): Astra performs an exhaustive re-verification sweep on
+the final substantive turn when it has been told all along that history is "recoverable but not
+resident" — it checks everything before committing. This is M3 (verification doubling) appearing
+exactly once, at the one turn where it is decisive. **If true, proof-carrying receipts (§7.3) are
+precisely the fix, and Astra is the model that most needs them.** That reframes §19 from "Astra is
+mysteriously expensive" to "Astra has one identifiable, addressable failure."
+
+**Cheapest possible test: read the retained turn-50 trace. Zero native calls.**
+
+## 22.8 Revised 48-hour plan
+
+Changes from §21, in priority order:
+
+1. **NEW, step 0 (0–2 h, zero native calls): read Astra's retained W50 turn-50 trace.** Classify
+   the 50,516-token anomaly. If it is a verification sweep, that is a 5.8-point input win available
+   for the cost of reading a file, and it validates the entire proof-carrying-receipt line before
+   spending a single token on it.
+2. **Step 1 unchanged (delete named plans).** T5 still holds.
+3. **Step 2 (stable-prefix log) DEMOTED.** The ~31-point T8 estimate is withdrawn. Keep the log only
+   as a *design property* for future per-turn-retrieval work and for the T12 short-task regime. Do
+   not spend the 4–10 h block on it expecting a long-horizon win.
+4. **Step 3 (skill compression) DEMOTED to output-only justification.** Bounded at ≤1.5% of input.
+5. **NEW, promoted to the top of the research queue: turn amortisation.** This is now the only
+   lever with a measured route to 80%. Because the current benchmark **cannot measure it**, the
+   first deliverable is **a new benchmark task family that permits variable N** — same logical
+   work, agent free to batch. That is a design task, not a spend, and it is the highest-value thing
+   the project can build this week.
+6. **Steps 4–5 (SOL-COMPOSE-1, ASTRA-RECEIPT-1) unchanged** — both still target real, unmeasured
+   mechanisms, and ASTRA-RECEIPT-1 now has a specific, quantified target (the verification sweep).
+
+## 22.9 What the addendum changes about the verdict
+
+The §1 verdict stands, with one strengthening and one softening:
+
+- **Strengthened:** the "≥80% gross input on long-horizon is impossible" conclusion is now
+  *proved structurally* rather than bounded loosely — and simultaneously shown to be **escapable**
+  through N, which T9 did not consider. §14.D's "multi-turn agent projects: maybe, via turn
+  amortisation" row should be upgraded from *maybe* to **the primary route**.
+- **Softened:** my claim that Helix has "22–24 points of headroom" on Astra's long-horizon tasks
+  (T10) is **wrong as stated**. The uncached fraction is not addressable headroom; the addressable
+  term is the history term, which is exhausted. Astra's real, identified, remaining win is the
+  **single final turn (5.8 points)** plus whatever turn amortisation delivers. I withdraw T10's
+  headline number for long-horizon; T10 remains valid for short tasks.
+
+**Net: Helix is closer to its long-horizon input ceiling than §16 suggested, and that ceiling is a
+turn count, not a compression ratio.**
