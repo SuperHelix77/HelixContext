@@ -27,6 +27,23 @@ class Store:
   if digest(b)!=key:raise ValueError('Evidence hash mismatch; do not trust the projection')
   return b
  def receipt(self,key):return json.loads(self.get(key))
+ def retrieve_many(self,key,ranges,stream='stdout'):
+  """Retrieve ordered inclusive spans from one freshly verified source snapshot."""
+  if stream not in ('stdout','stderr'):raise ValueError('Invalid evidence stream')
+  if not ranges:raise ValueError('At least one range is required')
+  for start,end in ranges:
+   if type(start) is not int or type(end) is not int or start<1 or end<start:raise ValueError('Invalid 1-based inclusive line range')
+  receipt=self.receipt(key);source=receipt[stream];raw=self.get(source['sha256'])
+  lines=raw.splitlines(keepends=True)
+  # Reject the entire batch if any requested span is outside this source.
+  if any(end>len(lines) for start,end in ranges):raise ValueError('Range exceeds evidence lines')
+  spans=[]
+  for start,end in ranges:
+   selected=b''.join(lines[start-1:end])
+   try:body={'text':selected.decode('utf-8')}
+   except UnicodeDecodeError:body={'base64':base64.b64encode(selected).decode('ascii')}
+   spans.append({'range_1based':[start,end],'bytes':len(selected),'sha256':digest(selected),**body})
+  return {'schema':'helix.evidence.ranges.v1','receipt':key,'stream':stream,'source':source,'spans':spans,'io':dict(self.metrics),'io_scope':'application object bytes; entire source verified once per call; output hashing, metadata, physical traffic and CPU unmeasured'}
  def retrieve(self,key,stream='stdout',start=None,end=None,index=None):
   receipt=self.receipt(key)
   if index is not None:
@@ -98,11 +115,13 @@ def main():
  a=argparse.ArgumentParser();a.add_argument('--store',required=True);sub=a.add_subparsers(dest='op',required=True)
  p=sub.add_parser('run');p.add_argument('--cwd',default='.');p.add_argument('--environment-id',default='unspecified');p.add_argument('--kind',choices=['generic','pytest','compiler'],default='generic');p.add_argument('--timeout',type=float);p.add_argument('--watch',action='append',default=[]);p.add_argument('argv',nargs=argparse.REMAINDER)
  p=sub.add_parser('get');p.add_argument('receipt');p.add_argument('--stream',choices=['stdout','stderr'],default='stdout');p.add_argument('--start',type=int);p.add_argument('--end',type=int);p.add_argument('--index')
+ p=sub.add_parser('get-many');p.add_argument('receipt');p.add_argument('--stream',choices=['stdout','stderr'],default='stdout');p.add_argument('--range',dest='ranges',nargs=2,type=int,action='append',required=True,metavar=('START','END'))
  a=a.parse_args();s=Store(a.store)
  if a.op=='run':
   argv=a.argv[1:] if a.argv[:1]==['--'] else a.argv
   if not argv:raise ValueError('A command argv is required')
   result=run(s,argv,a.cwd,a.environment_id,a.kind,a.timeout,a.watch)
+ elif a.op=='get-many':result=s.retrieve_many(a.receipt,a.ranges,a.stream)
  else:result=s.retrieve(a.receipt,a.stream,a.start,a.end,a.index)
  print(json.dumps(result,ensure_ascii=False,separators=(',',':')))
  if a.op=='run':

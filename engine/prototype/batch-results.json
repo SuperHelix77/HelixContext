@@ -1,0 +1,75 @@
+{
+  "scope": "Synthetic range retrieval only. No native token savings, reasoning parity, physical disk or CPU claim. Full source is still read and verified per batch. Setup excluded symmetrically; no persistent cache or index added.",
+  "source_bytes": 3400000,
+  "rows": [
+    {
+      "ranges": 1,
+      "exact": true,
+      "separate_io": {
+        "object_bytes_read": 3400108,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 3400108,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "batch_io": {
+        "object_bytes_read": 3400108,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 3400108,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "application_read_saving": 0.0
+    },
+    {
+      "ranges": 5,
+      "exact": true,
+      "separate_io": {
+        "object_bytes_read": 17000540,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 17000540,
+        "object_read_operations": 10,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "batch_io": {
+        "object_bytes_read": 3400108,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 3400108,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "application_read_saving": 0.8
+    },
+    {
+      "ranges": 20,
+      "exact": true,
+      "separate_io": {
+        "object_bytes_read": 68002160,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 68002160,
+        "object_read_operations": 40,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "batch_io": {
+        "object_bytes_read": 3400108,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 3400108,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "application_read_saving": 0.95
+    }
+  ]
+}
