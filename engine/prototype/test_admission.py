@@ -18,6 +18,7 @@ def test_production_and_unknown_dispatch_no_preparation_or_reads(tmp_path):
     def optimized(*args):raise AssertionError('must not prepare Helix')
     result,d=dispatch(request,payload,native=native,optimized=optimized,repo=tmp_path)
     assert result is payload and calls==['native'] and d['logical_bytes_read']==0 and d['savings_claim'] is None
+    assert d['engine_active'] is True and d['execution_policy']=='ordinary_model_execution'
 
 
 def test_exact_research_admits_and_failure_does_not_rerun(tmp_path):

@@ -27,10 +27,13 @@ def decide(request,*,qualification=None,repo=None):
     start=time.perf_counter();read_bytes=0;read_ops=0
     def receipt(route,reason):
         return {'schema':'helix.admission.v1','route':route,'reason':reason,
+                'engine_active':True,
+                'execution_policy':'qualified_optimization' if route=='optimized' else 'ordinary_model_execution',
                 'request':dict(vars(request)),'logical_bytes_read':read_bytes,'read_operations':read_ops,
                 'seconds':time.perf_counter()-start,'savings_claim':None,
                 'scope':'Admission only; not native token, billing, physical I/O or parity measurement.'}
-    # No file reads or optimization setup for unsupported/production requests.
+    # Engine always owns admission/dispatch. Ordinary execution skips only
+    # unqualified optimization preparation, not the Engine control boundary.
     if request.mode!='qualified_fixture_research':return receipt('native','No production qualification established')
     if not isinstance(qualification,dict):return receipt('native','No exact research qualification')
     if any(qualification.get(k)!=getattr(request,k) for k in ('model','effort','contract_hash')):
