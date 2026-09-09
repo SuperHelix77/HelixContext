@@ -1,0 +1,153 @@
+{
+  "classification": "OBSERVED native totals + tokenizer proxies + conditional unchanged-trajectory ceiling",
+  "native_usage": {
+    "input_tokens": 81365,
+    "output_tokens": 1377,
+    "cached_input_tokens": 51456,
+    "reasoning_output_tokens": 72,
+    "cache_write_input_tokens": 0
+  },
+  "segments": [
+    {
+      "inputTokens": 19397,
+      "outputTokens": 73,
+      "cachedInputTokens": 6400,
+      "reasoningOutputTokens": 0
+    },
+    {
+      "inputTokens": 19581,
+      "outputTokens": 114,
+      "cachedInputTokens": 6400,
+      "reasoningOutputTokens": 0
+    },
+    {
+      "inputTokens": 20668,
+      "outputTokens": 862,
+      "cachedInputTokens": 19456,
+      "reasoningOutputTokens": 72
+    },
+    {
+      "inputTokens": 21719,
+      "outputTokens": 328,
+      "cachedInputTokens": 19200,
+      "reasoningOutputTokens": 0
+    }
+  ],
+  "commands": [
+    {
+      "index": 1,
+      "classification": "task-directory discovery",
+      "command": {
+        "utf8_bytes": 46,
+        "o200k_proxy_tokens": 19
+      },
+      "recorded_output": {
+        "utf8_bytes": 188,
+        "o200k_proxy_tokens": 55
+      },
+      "exit_code": 0,
+      "command_sha256": "90179e2b9e7ee0b0301a73296c611f6c364b08d6d799d923dc7e0c4f62b7b7b8"
+    },
+    {
+      "index": 2,
+      "classification": "exact evidence re-read and hash display",
+      "command": {
+        "utf8_bytes": 316,
+        "o200k_proxy_tokens": 87
+      },
+      "recorded_output": {
+        "utf8_bytes": 2631,
+        "o200k_proxy_tokens": 847
+      },
+      "exit_code": 0,
+      "command_sha256": "be2094018dfcd906cade7aea0124bb053bc731d9652bd401d522bdb1bd0f24ec"
+    },
+    {
+      "index": 3,
+      "classification": "mixed receipt binding and NEW semantic tests",
+      "command": {
+        "utf8_bytes": 2796,
+        "o200k_proxy_tokens": 718
+      },
+      "recorded_output": {
+        "utf8_bytes": 559,
+        "o200k_proxy_tokens": 131
+      },
+      "exit_code": 0,
+      "command_sha256": "51440283d0f0413a089f7f4a2f76133d5013da6af465a5346b3eb3b6b2b0ba3a",
+      "mechanical_prefix": {
+        "utf8_bytes": 534,
+        "o200k_proxy_tokens": 127
+      },
+      "semantic_suffix": {
+        "utf8_bytes": 2247,
+        "o200k_proxy_tokens": 584
+      },
+      "partition_note": "String boundary only; wrapper included; tokenizer pieces not additive to native usage."
+    }
+  ],
+  "prompt": {
+    "utf8_bytes": 2725,
+    "o200k_proxy_tokens": 664
+  },
+  "supplied_files": {
+    "CONTRACT.md": {
+      "utf8_bytes": 451,
+      "o200k_proxy_tokens": 87
+    },
+    "proposed.py": {
+      "utf8_bytes": 405,
+      "o200k_proxy_tokens": 87
+    },
+    "mechanical_checker.py": {
+      "utf8_bytes": 422,
+      "o200k_proxy_tokens": 127
+    },
+    "receipt.json": {
+      "utf8_bytes": 715,
+      "o200k_proxy_tokens": 284
+    }
+  },
+  "exact_duplicate_content": {
+    "CONTRACT.md": {
+      "utf8_bytes": 451,
+      "o200k_proxy_tokens": 87,
+      "in_prompt": true,
+      "in_second_output": true
+    },
+    "proposed.py": {
+      "utf8_bytes": 405,
+      "o200k_proxy_tokens": 87,
+      "in_prompt": true,
+      "in_second_output": true
+    }
+  },
+  "instruction_sources": [
+    {
+      "name": "AGENTS.md",
+      "scope": "global",
+      "current_snapshot_sha256": "8aeab698b7ef733520f68349117df6eebf95e065e7fb14b1f2c5ec75fe5835c1",
+      "utf8_bytes": 2305,
+      "o200k_proxy_tokens": 465,
+      "historical_content_binding": "UNAVAILABLE; source path alone is not a historical content hash"
+    }
+  ],
+  "attached_skill": {
+    "utf8_bytes": 1819,
+    "o200k_proxy_tokens": 317,
+    "sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8"
+  },
+  "requested_catalog_cap_tokens": 512,
+  "conditional_catalog_only_ceiling_tokens": 2048,
+  "conditional_catalog_only_ceiling_percent": 2.517052786824802,
+  "full_rendered_prompt_available": false,
+  "platform_or_helix_residual_token_attribution": null,
+  "native_events_sha256": "9e77c9845c09a80d9dcf34f42bdaac43c6dd428cfdc65031bdbfc8c2eecbf48d",
+  "audit_script_sha256": "81fa1faf1f9242dc67c654ed9c2eef2b03ecf62a536138cef46406ed280a2874",
+  "limits": [
+    "Catalog cap applies only if installed runtime honors documented semantics; requested setting is observed, rendered catalog is not.",
+    "Unchanged-trajectory arithmetic is not a counterfactual model measurement.",
+    "No private reasoning content analyzed; reported subset counters only.",
+    "No new model call; no capability removal or runtime config change."
+  ]
+}
