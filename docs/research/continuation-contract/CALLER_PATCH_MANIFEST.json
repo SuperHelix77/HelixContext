@@ -1,0 +1,48 @@
+{
+  "schema": "helix.research.caller-patch.v1",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "arms": {
+    "off": {
+      "prompt_sha256": "0c8fd086737f5728ef0995f8273ef6e8dba8257e5c4fa94e6a5843a88f7ff0d8",
+      "source_hashes": {
+        "CONTRACT.md": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+        "queue_state.py": "29c1c6a637021f6329a5807affc31ffbd9f2f99eeb6cc191ee52bb8b23bf4684",
+        "check_contract.py": "d1f00ba60194616b15dff7d00ea4456e4f1ec44a8c678d552a4ccac9a44aaba8"
+      },
+      "preflight": null
+    },
+    "on": {
+      "prompt_sha256": "e95a33adde700912e90a5f28721517c69d6a3cedbde510272e79ef1447685516",
+      "source_hashes": {
+        "CONTRACT.md": "e0a88e9227882e3628be32d1b04c50afbd535c9a45e877f5f92cd5e5337dea72",
+        "queue_state.py": "29c1c6a637021f6329a5807affc31ffbd9f2f99eeb6cc191ee52bb8b23bf4684",
+        "check_contract.py": "d1f00ba60194616b15dff7d00ea4456e4f1ec44a8c678d552a4ccac9a44aaba8"
+      },
+      "preflight": {
+        "exit_code": 1,
+        "seconds": 0.04023029201198369,
+        "stdout_bytes": 55,
+        "stderr_bytes": 754,
+        "stdout_sha256": "85e5454bec3771d90f9d4912fdb894bec2ff9ad010d5bc9cb5d0d8cafe9208dd",
+        "stderr_sha256": "9595efa4d45ab0fb591f12d2320cc9eaa265185bfb569f3470893f248b2fa280"
+      }
+    }
+  },
+  "max_calls": 2,
+  "per_call_limits": {
+    "input_tokens": 150000,
+    "output_tokens": 4000
+  },
+  "recovery_calls": 0,
+  "classification": "Fresh development coding pair, not holdout or long-horizon model parity",
+  "script_sha256": "77e1bcd4e3e7a7c844c7c814a957932d3633dbf851ddb73fc3d4a522a1e0d888",
+  "runner_sha256": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+  "skill_sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+  "oracle_sha256": "998cc0ea839e123e68ffda95ec43f7f80bb4236d6e50e5009d8026dc9283c665",
+  "stop": "Gate/budget error stops remaining calls. No retry, alternative repair, or post-hoc budget change.",
+  "order": [
+    "off",
+    "on"
+  ]
+}
