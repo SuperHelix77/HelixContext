@@ -1,0 +1,61 @@
+{
+  "classification": "Fresh known-W50 development pair; no general capability certification",
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 1074689,
+        "output_tokens": 639,
+        "cached_input_tokens": 1028608,
+        "reasoning_output_tokens": 172,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 50,
+      "segments": 50,
+      "native_sha256": "0721c511039fd25d2fb863a285617e1ba6f4b400011dab6d76c523a6168f09c1",
+      "checks": "49 ACKs and frozen final grader PASS",
+      "elapsed_seconds": 102.50925183296204,
+      "engine_object_io": {}
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 18462,
+        "output_tokens": 228,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 192,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 1,
+      "segments": 1,
+      "native_sha256": "bf3a6d7edffd888b975e48080eea37c4e8461cd28b5991f8b0a8f1a82a664f1c",
+      "checks": "49 ACKs and frozen final grader PASS",
+      "elapsed_seconds": 6.46232999995118,
+      "engine_object_io": {
+        "object_bytes_read": 1182208,
+        "object_bytes_written": 59604,
+        "object_bytes_hashed": 1241812,
+        "object_read_operations": 2646,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 98.282107660914,
+    "output_tokens": 64.31924882629107
+  },
+  "uncached_input_savings_percent": 81.60196176298258,
+  "meets_75_75": false,
+  "meets_80_80": false,
+  "manifest_sha256": "0de7597b42b91503944753ce7c68fa12891a5682925a2ab68caa03cb695f6d40",
+  "general_release": false,
+  "limits": [
+    "N=1 continuation pair; median equals single observation",
+    "Coding/retrieval are separate unqualified families",
+    "Same default base; native skill attached only in candidate",
+    "Object I/O not full physical/SQLite/storage/research cost",
+    "Normal Codex app delivery not tested"
+  ]
+}
