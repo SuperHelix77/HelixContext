@@ -1,0 +1,55 @@
+{
+  "classification": "deterministic engineering falsifier; no native model parity or savings claim",
+  "events": 50,
+  "selected_after_freeze": [
+    41,
+    2,
+    25,
+    11,
+    48,
+    19,
+    40
+  ],
+  "old_indexed_retrieval_failed": true,
+  "epoch_exact_recovery_passed": true,
+  "freeze": {
+    "epoch_sha256": "2045f1d5b6ad2f05c8f7feec5162f6abcf881f2f5aa05be529c1c5773f4ca008",
+    "project": "P",
+    "count": 50,
+    "source_bytes": 5300,
+    "seconds": 0.0055031669908203185,
+    "store_io": {
+      "object_bytes_read": 45369,
+      "object_bytes_written": 11489,
+      "object_bytes_hashed": 56858,
+      "object_read_operations": 201,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "scope": "Logical store I/O; SQLite/physical traffic and inference costs unmeasured."
+  },
+  "recovery_store_io": {
+    "object_bytes_read": 13861,
+    "object_bytes_written": 0,
+    "object_bytes_hashed": 13861,
+    "object_read_operations": 15,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "useful_recovered_bytes": 742,
+  "logical_read_amplification": 18.68059299191375,
+  "limits": [
+    "50 events are not 50 native turns",
+    "Caller must retain trusted epoch root and raw store",
+    "Coverage is caller-declared; omitted pre-freeze history is not detected",
+    "SQLite traffic, physical I/O, inference and billing unmeasured",
+    "Experimental caller API; not enabled by default"
+  ],
+  "sources": {
+    "memory_epoch.py": "1294a13d650d641f9ef4b648d48d946c83633f89c4beef15f33703bee5ab448b",
+    "workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede"
+  }
+}
