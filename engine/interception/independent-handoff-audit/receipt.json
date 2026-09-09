@@ -1,0 +1,92 @@
+{
+  "scope": "Independent offline adjudication; no native model calls or hook registration",
+  "source_handler_sha256": "d45aab14e2b200a204bcd1a273d3834fa2eb882a1859add719b83f21feaccf12",
+  "offline_reproduction": {
+    "exit_code": 1,
+    "stdout_empty": true,
+    "attribute_error_confirmed": true
+  },
+  "raw": {
+    "bytes": 9200129,
+    "sha256": "b564919e7e3419d6b2ab423f3adcacfe8b79fbb656f02aa27fc422bd0fafb36b"
+  },
+  "arms": [
+    {
+      "arm": "baseline_large",
+      "trace_sha256": "53b0ddc0c82191d1973548b9587d15ddb23f1a12f893c5508ac57191873f2075",
+      "commands": [
+        {
+          "bytes": 1048607,
+          "sha256": "c30920fcb2a9bb3a7e8546b9d327c6723f87eda7644dfc71e59d4caa4ec1389e",
+          "middle_sentinel_found": false
+        }
+      ],
+      "hook_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "arm": "hook_observe_large",
+      "trace_sha256": "d00717c6e417424c62529ede27581896019976d423505ccb28e29aa8a022864f",
+      "commands": [
+        {
+          "bytes": 1048607,
+          "sha256": "c30920fcb2a9bb3a7e8546b9d327c6723f87eda7644dfc71e59d4caa4ec1389e",
+          "middle_sentinel_found": false
+        }
+      ],
+      "hook_statuses": [
+        "completed"
+      ]
+    },
+    {
+      "arm": "hook_compact_replace_large",
+      "trace_sha256": "66a010b3d2e3c37ac117773e2fd6d5b295673dd6ea10e0dfd4b08eb90e0f0b94",
+      "commands": [
+        {
+          "bytes": 1048607,
+          "sha256": "c30920fcb2a9bb3a7e8546b9d327c6723f87eda7644dfc71e59d4caa4ec1389e",
+          "middle_sentinel_found": false
+        }
+      ],
+      "hook_statuses": [
+        "failed"
+      ]
+    },
+    {
+      "arm": "hook_compact_allow_large",
+      "trace_sha256": "36f0fa87ef284beff9cb065b88f3ce43e408473e605cadb53c4d80f5bc543cb5",
+      "commands": [
+        {
+          "bytes": 1048607,
+          "sha256": "c30920fcb2a9bb3a7e8546b9d327c6723f87eda7644dfc71e59d4caa4ec1389e",
+          "middle_sentinel_found": false
+        }
+      ],
+      "hook_statuses": [
+        "failed"
+      ]
+    },
+    {
+      "arm": "hook_compact_fail_large",
+      "trace_sha256": "70c9c751bcf5c5067e4b4f5fe21f389e1e20c6bf31bb51fca10d1bc2832e23d4",
+      "commands": [
+        {
+          "bytes": 1048607,
+          "sha256": "c30920fcb2a9bb3a7e8546b9d327c6723f87eda7644dfc71e59d4caa4ec1389e",
+          "middle_sentinel_found": false
+        }
+      ],
+      "hook_statuses": [
+        "completed"
+      ]
+    }
+  ],
+  "adjudication": "OBSERVATION_CONFIRMED_REPLACEMENT_INCONCLUSIVE",
+  "reasons": [
+    "Replacement handler fails on the observed string envelope before emitting its packet.",
+    "Unchanged pre-hook commandExecution items do not alone establish unchanged subsequent model-facing tool messages.",
+    "Earlier main-lane correct stopReason emission also failed marker recognition; no working native replacement path is established.",
+    "Raw output truncation is verified and cannot be claimed as Helix lossless savings."
+  ]
+}
