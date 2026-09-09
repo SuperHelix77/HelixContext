@@ -1,0 +1,54 @@
+{
+  "classification": "Conditional arithmetic using measured counters; not a model capability theorem",
+  "assumption": "Native reasoning_output_tokens is included within output_tokens, consistent with documented OpenAI usage convention; native implementation mapping not independently traced here.",
+  "rows": [
+    {
+      "case": "memory_control",
+      "baseline_output": 1659,
+      "reported_output": 1659,
+      "reported_reasoning": 674,
+      "target_max_output_integer": 331,
+      "conditional_max_saving_with_reasoning_fixed_percent": 59.37311633514165,
+      "minimum_reasoning_reduction_even_if_all_other_output_eliminated": 343
+    },
+    {
+      "case": "memory_candidate",
+      "baseline_output": 1659,
+      "reported_output": 1908,
+      "reported_reasoning": 852,
+      "target_max_output_integer": 331,
+      "conditional_max_saving_with_reasoning_fixed_percent": 48.64376130198915,
+      "minimum_reasoning_reduction_even_if_all_other_output_eliminated": 521
+    },
+    {
+      "case": "query_v2_gpt-5.6-luna",
+      "baseline_output": 532,
+      "reported_reasoning": 289,
+      "target_max_output_integer": 106,
+      "conditional_max_saving_with_reasoning_fixed_percent": 45.6766917293233,
+      "minimum_reasoning_reduction_even_if_all_other_output_eliminated": 183
+    },
+    {
+      "case": "query_v2_gpt-5.6-sol",
+      "baseline_output": 820,
+      "reported_reasoning": 388,
+      "target_max_output_integer": 164,
+      "conditional_max_saving_with_reasoning_fixed_percent": 52.6829268292683,
+      "minimum_reasoning_reduction_even_if_all_other_output_eliminated": 224
+    },
+    {
+      "case": "query_v2_gpt-6-astra",
+      "baseline_output": 277,
+      "reported_reasoning": 0,
+      "target_max_output_integer": 55,
+      "conditional_max_saving_with_reasoning_fixed_percent": 100.0,
+      "minimum_reasoning_reduction_even_if_all_other_output_eliminated": 0
+    }
+  ],
+  "source_hashes": {
+    "engine/prototype/MEMORY_NATIVE_FOLLOWUP.json": "e0e1e594aa46470f7c55520f4992e49173d10892192454050cea4bc9d6bc1c80",
+    "engine/query-pilot-v2/results.json": "9d639d80a75eb727c558c10df9c99061f28230146a1110339ba5677ef1389a8e"
+  },
+  "policy": "Do not constrain reasoning tokens or lower High effort to meet these numbers. Change repeated procedural work and measure actual parity; no additional memory-only native sweeps are justified by this bound.",
+  "official_usage_reference": "https://help.openai.com/en/articles/4936856-what-are-tokens-and-how-to-count-them"
+}
