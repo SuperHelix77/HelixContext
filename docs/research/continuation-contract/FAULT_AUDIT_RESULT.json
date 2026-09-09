@@ -1,0 +1,70 @@
+{
+  "classification": "OFFLINE_FAILURE_BOUNDARY_AUDIT_WITH_GAPS",
+  "native_calls": 0,
+  "driver_sha256": "77e1bcd4e3e7a7c844c7c814a957932d3633dbf851ddb73fc3d4a522a1e0d888",
+  "stage_ast_sha256": "da9362e140848f81efa327bcbe5c0e54f4a020c12b1f49d00a2012159329ebcd",
+  "fault_audit_sha256": "c8c094eca2d4b684a44dc47bccc0bcdc6441a98cfa05b14b9ac37a8f48be78a0",
+  "results": {
+    "none": {
+      "error": null,
+      "reported_pass": true,
+      "injection_executed": false,
+      "source_equals_entry": false,
+      "source_equals_proposed": true,
+      "protected_contract_still_bound": true,
+      "check_exit": 0
+    },
+    "stale_before_apply": {
+      "error": "AssertionError: Caller binding invalidated",
+      "reported_pass": false,
+      "injection_executed": true,
+      "source_equals_entry": true,
+      "source_equals_proposed": false,
+      "protected_contract_still_bound": true,
+      "check_exit": null
+    },
+    "contract_changes_during_check": {
+      "error": null,
+      "reported_pass": true,
+      "injection_executed": true,
+      "source_equals_entry": false,
+      "source_equals_proposed": true,
+      "protected_contract_still_bound": false,
+      "check_exit": 0
+    },
+    "source_changes_before_replace": {
+      "error": null,
+      "reported_pass": true,
+      "injection_executed": true,
+      "source_equals_entry": false,
+      "source_equals_proposed": true,
+      "protected_contract_still_bound": true,
+      "check_exit": 0
+    },
+    "semantic_failure": {
+      "error": "ValueError: Contract check failed",
+      "reported_pass": false,
+      "injection_executed": false,
+      "source_equals_entry": false,
+      "source_equals_proposed": true,
+      "protected_contract_still_bound": true,
+      "check_exit": 1
+    },
+    "checker_exception": {
+      "error": "OSError: injected checker unavailable",
+      "reported_pass": false,
+      "injection_executed": true,
+      "source_equals_entry": false,
+      "source_equals_proposed": true,
+      "protected_contract_still_bound": true,
+      "check_exit": null
+    }
+  },
+  "seconds": 0.9142485409975052,
+  "disposition": "V1 remains bounded single-writer development evidence; not production-safe concurrent publication or automatic recovery",
+  "limits": [
+    "Faults are deliberately injected, not observed in previous native trials",
+    "Actual frozen caller stage and real checker execute; no synthetic model token counters",
+    "No runtime or Engine implementation changed"
+  ]
+}
