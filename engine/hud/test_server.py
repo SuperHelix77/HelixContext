@@ -62,6 +62,17 @@ def test_observer_only_journals_changes(tmp_path):
     observer.scan();assert observer.revision==2 and len(journal.read_text().splitlines())==2
 
 
+def test_config_reload_preserves_last_snapshot_on_interrupted_write(tmp_path):
+    cfg=setup(tmp_path);path=tmp_path/'config.json';path.write_text(json.dumps(cfg))
+    observer=Observer(cfg,tmp_path/'journal.jsonl',path);observer.scan()
+    first=observer.current
+    path.write_text('{')
+    with pytest.raises(ValueError):observer.scan()
+    assert observer.current is first and observer.revision==1
+    updated={'experiments':[]};path.write_text(json.dumps(updated));observer.scan()
+    assert observer.config==updated and observer.current['runs']==[] and observer.revision==2
+
+
 def test_command_counts_do_not_count_started_twice(tmp_path):
     item={'type':'command_execution','command':'cat engine/evidence.py','aggregated_output':'abc','exit_code':0}
     path=tmp_path/'events.jsonl';path.write_text('\n'.join(json.dumps(e) for e in [

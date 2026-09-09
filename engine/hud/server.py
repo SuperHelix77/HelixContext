@@ -291,17 +291,24 @@ def snapshot(config):
 
 
 class Observer:
-    def __init__(self,config,journal):
+    def __init__(self,config,journal,config_path=None):
         self.config=config;self.journal=journal;self.condition=threading.Condition()
+        self.config_path=Path(config_path) if config_path else None
         self.current=None;self.revision=0;self.receipts={};self.last_scan=None
         self.error=None;self.digest=None;self.read_cycles=0
         self.observer_id=uuid.uuid4().hex
         self.prices=Prices()
 
     def scan(self):
-        data,receipts=snapshot(self.config)
+        candidate=self.config
+        if self.config_path:
+            candidate,_=read_json(self.config_path)
+            if not isinstance(candidate,dict) or not isinstance(candidate.get('experiments'),list):
+                raise ValueError('Invalid HUD configuration')
+        data,receipts=snapshot(candidate)
         digest=hashlib.sha256(json.dumps(data,sort_keys=True).encode()).hexdigest()
         with self.condition:
+            self.config=candidate
             self.last_scan=time.time();self.read_cycles+=1;self.receipts=receipts;self.error=None
             if digest!=self.digest:
                 self.revision+=1;data['revision']=self.revision;data['observed_at']=self.last_scan;data['observer_id']=self.observer_id
@@ -372,7 +379,7 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--config',required=True)
     parser.add_argument('--port',type=int,default=8769);parser.add_argument('--journal',required=True)
     args=parser.parse_args();config,_=read_json(Path(args.config))
-    observer=Observer(config,Path(args.journal));observer.scan()
+    observer=Observer(config,Path(args.journal),Path(args.config));observer.scan()
     server=ThreadingHTTPServer(('127.0.0.1',args.port),make_handler(observer));server.daemon_threads=True
     threading.Thread(target=observer.loop,daemon=True).start()
     threading.Thread(target=observer.prices.loop,daemon=True).start()

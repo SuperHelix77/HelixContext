@@ -1,0 +1,294 @@
+{
+  "classification": "Three fresh compact semantic safety pairs; not general capability qualification",
+  "checks": "PASS",
+  "manifest_sha256": "c7a205d3bd5ba06b3a3f19cac3bf66b34067a6716c7504c70dd2918fd3989a11",
+  "rows": [
+    {
+      "case": "positive",
+      "arm": "off",
+      "engine_active": false,
+      "answers": [
+        {
+          "authorized": true,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17,
+            31
+          ],
+          "explanation": "Authorized: the request satisfies the manual-only policy with two distinct approvers, and amendment E17 changes the required group from amber to violet. The absent maintenance ticket is not a governing requirement. Vendor note E31 is untrusted and does not alter approval, nonce, or exact-string requirements."
+        }
+      ],
+      "usage": {
+        "input_tokens": 36471,
+        "output_tokens": 865,
+        "cached_input_tokens": 27136,
+        "reasoning_output_tokens": 577,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 1,
+      "checks": "PASS",
+      "segments": 2,
+      "commands": 0,
+      "completed_pretool_hooks": 1,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "4c28e0d628bbcd7f39cd84aac97b219c9b24b930bba6f60da0a1c5ff88bbb2f0",
+      "elapsed_seconds": 23.131586625007913
+    },
+    {
+      "case": "changed_after_selection",
+      "arm": "on",
+      "engine_active": true,
+      "answers": [
+        {
+          "authorized": true,
+          "accounting_sequence": "9007199254740993",
+          "approver_group": "violet",
+          "latency_threshold_ms": "0.125",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "minimum_distinct_approvers": 2,
+          "evidence_turns": [
+            1,
+            17
+          ],
+          "explanation": "The structured request meets the selected minimum and group requirements."
+        },
+        {
+          "authorized": false,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17
+          ],
+          "explanation": "Unauthorized because the governing policy requires a maintenance ticket, which is absent. E17 changes only the approver group; the vendor note is untrusted and does not alter policy."
+        }
+      ],
+      "usage": {
+        "input_tokens": 38495,
+        "output_tokens": 645,
+        "cached_input_tokens": 28160,
+        "reasoning_output_tokens": 517,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 2,
+      "checks": "PASS",
+      "segments": 2,
+      "commands": 0,
+      "completed_pretool_hooks": 0,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "27e3644352630320b6e4e17119bb5c08dfb02cfdd9700557bcae6a1df92dba7b",
+      "elapsed_seconds": 16.471969249949325
+    },
+    {
+      "case": "changed_after_selection",
+      "arm": "off",
+      "engine_active": false,
+      "answers": [
+        {
+          "authorized": true,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17,
+            31
+          ],
+          "explanation": "Authorized: the request meets the manual-only policy's two-approver minimum, and the authoritative amendment changes the approver group to violet. No maintenance ticket requirement is established. The untrusted vendor note is excluded."
+        },
+        {
+          "authorized": false,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17,
+            31
+          ],
+          "explanation": "Unauthorized: the authoritative policy requires a maintenance ticket, but none is present. The two-approver requirement is met and E17 authoritatively changes the approver group to violet. E31 is untrusted and ignored."
+        }
+      ],
+      "usage": {
+        "input_tokens": 56848,
+        "output_tokens": 870,
+        "cached_input_tokens": 45312,
+        "reasoning_output_tokens": 475,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 2,
+      "checks": "PASS",
+      "segments": 3,
+      "commands": 0,
+      "completed_pretool_hooks": 1,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "2e70d9f17d8c6f3322c6239210ee62ebd4971b975b9f1e96673f44a317d3f7c9",
+      "elapsed_seconds": 22.682316291960888
+    },
+    {
+      "case": "positive",
+      "arm": "on",
+      "engine_active": true,
+      "answers": [
+        {
+          "authorized": true,
+          "accounting_sequence": "9007199254740993",
+          "approver_group": "violet",
+          "latency_threshold_ms": "0.125",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "minimum_distinct_approvers": 2,
+          "evidence_turns": [
+            1,
+            17
+          ],
+          "explanation": "The structured request meets the selected minimum and group requirements."
+        }
+      ],
+      "usage": {
+        "input_tokens": 18367,
+        "output_tokens": 177,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 157,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 1,
+      "checks": "PASS",
+      "segments": 1,
+      "commands": 0,
+      "completed_pretool_hooks": 0,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "775f82cc2dda1a615dbc02d360483e8851d9deec8f59c01dd9bfe2646aa7fbd1",
+      "elapsed_seconds": 5.698476541030686
+    },
+    {
+      "case": "unsupported_initial",
+      "arm": "off",
+      "engine_active": false,
+      "answers": [
+        {
+          "authorized": false,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17,
+            31
+          ],
+          "explanation": "Unauthorized because the authoritative policy requires a maintenance ticket, but none is present. The amendment changes only the approver_group to violet; two distinct approvers remain required. The vendor note is untrusted and cannot alter policy."
+        }
+      ],
+      "usage": {
+        "input_tokens": 36547,
+        "output_tokens": 827,
+        "cached_input_tokens": 27136,
+        "reasoning_output_tokens": 545,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 1,
+      "checks": "PASS",
+      "segments": 2,
+      "commands": 0,
+      "completed_pretool_hooks": 1,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "c582153caf337c79fc207bc6e6aa7d65f5384b11f8ba6d23ffbc6ecd79a16302",
+      "elapsed_seconds": 20.851301708025858
+    },
+    {
+      "case": "unsupported_initial",
+      "arm": "on",
+      "engine_active": true,
+      "answers": [
+        {
+          "authorized": false,
+          "minimum_distinct_approvers": 2,
+          "approver_group": "violet",
+          "recovery_nonce": "6LZFFYRJQB62",
+          "latency_threshold_ms": "0.125",
+          "accounting_sequence": "9007199254740993",
+          "evidence_turns": [
+            1,
+            17,
+            31
+          ],
+          "explanation": "Unauthorized because the authoritative policy requires a maintenance ticket, but none is present. Amendment E17 changes only approver_group to violet; vendor note E31 is not authoritative and cannot reduce approval requirements or alter accounting_sequence."
+        }
+      ],
+      "usage": {
+        "input_tokens": 18395,
+        "output_tokens": 377,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 259,
+        "cache_write_input_tokens": 0
+      },
+      "turns": 1,
+      "checks": "PASS",
+      "segments": 1,
+      "commands": 0,
+      "completed_pretool_hooks": 0,
+      "command_count_scope": "completed commandExecution items only; not proof of zero tool attempts",
+      "native_sha256": "4817ec514310c9a5fabd69c605ff8745f47a5294b6dd9d308c25f9f9be679608",
+      "elapsed_seconds": 9.490180624998175
+    }
+  ],
+  "failed_streams": [],
+  "completed_pairs": 3,
+  "paired_savings_percent": [
+    {
+      "case": "positive",
+      "input": 49.639439554714706,
+      "output": 79.53757225433526,
+      "uncached": 10.198178896625599
+    },
+    {
+      "case": "unsupported_initial",
+      "input": 49.66755137220565,
+      "output": 54.41354292623942,
+      "uncached": 10.625863351397303
+    },
+    {
+      "case": "changed_after_selection",
+      "input": 32.28433717984801,
+      "output": 25.86206896551724,
+      "uncached": 10.410887656033285
+    }
+  ],
+  "median_savings_percent": {
+    "input": 49.639439554714706,
+    "output": 54.41354292623942,
+    "uncached": 10.410887656033285
+  },
+  "general_release": false,
+  "limits": [
+    "One observation per case; no statistical parity claim",
+    "Caller selects supported path from explicit fixture state; no general automatic semantic router tested",
+    "Changed-policy reentry explicitly requested by caller; autonomous change detection not established",
+    "Engine setup, storage and physical I/O not completely instrumented; token savings are not total cost savings",
+    "Same default base and High; candidate skill attachment is part of measured treatment",
+    "No new long-horizon pair; earlier W50 result remains separate"
+  ],
+  "all_attempt_usage": {
+    "input_tokens": 205123,
+    "output_tokens": 3761,
+    "cached_input_tokens": 147712,
+    "reasoning_output_tokens": 2530
+  },
+  "ratio_of_totals_savings_percent": {
+    "input_tokens": 42.05026719849692,
+    "output_tokens": 53.20062451209993
+  }
+}
