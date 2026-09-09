@@ -1,0 +1,11 @@
+{
+  "classification": "Uninstalled skill candidate; structural validation and payload counts only",
+  "before_sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+  "after_sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+  "tokenizer": "o200k_base",
+  "before_tokens": 297,
+  "after_tokens": 317,
+  "installed_skill_unchanged": true,
+  "native_savings": null,
+  "behavioral_validation": "not run"
+}
