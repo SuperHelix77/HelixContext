@@ -1,0 +1,40 @@
+{
+  "classification": "Installed runtime inhibition and history insertion separately verified; composition not qualified",
+  "client": "Codex Desktop/0.153.4",
+  "hook_rows": [
+    {
+      "arm": "control",
+      "exit": 1,
+      "provider_requests": 1,
+      "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a0880e-b310-72d3-93d3-8444a9e5d8de\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"error\",\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Offline mock; no inference\\\"}}\"}\n{\"type\":\"turn.failed\",\"error\":{\"message\":\"{\\\"error\\\":{\\\"message\\\":\\\"Offline mock; no inference\\\"}}\"}}\n"
+    },
+    {
+      "arm": "blocked",
+      "exit": 0,
+      "provider_requests": 0,
+      "stdout": "{\"type\":\"thread.started\",\"thread_id\":\"01a0880e-b345-7c83-9b24-36e2438bbb18\"}\n{\"type\":\"turn.started\"}\n{\"type\":\"turn.completed\",\"usage\":{\"input_tokens\":0,\"cached_input_tokens\":0,\"cache_write_input_tokens\":0,\"output_tokens\":0,\"reasoning_output_tokens\":0}}\n"
+    }
+  ],
+  "hook_executed": true,
+  "hook_sha256": "fe5c1d15fb91965fdc98c665442f6414ffc83631fcd6a799758ef93e09491ca4",
+  "trust": "Exact hook reviewed with /hooks in isolated TUI; no bypass",
+  "injection_accepted": true,
+  "injection_provider_requests": [],
+  "injection_turn_start_sent": false,
+  "injection_read_turns": [],
+  "injected_record_persisted": true,
+  "native_model_calls": 0,
+  "production_config_changed": false,
+  "limits": [
+    "CLI blocking tested; desktop UI not tested",
+    "No assistant ACK in blocked turn",
+    "Injected record in durable rollout but thread/read turns empty",
+    "Unrelated unauthenticated plugin cache lookup attempted and returned401; no credentials copied",
+    "No economic or capability benchmark performed"
+  ],
+  "raw_hashes": {
+    "pre-submit-hook-probe-20260910/result.json": "a1454c5c48b0c5973aabab11a463f6c74b72b4eb2d8543532d72c58f46fff75e",
+    "preinference-history-probe-20260910/result.json": "f6920fc8dfe78dffad569c8f9f08d8fd8902ef5183aa8825e621a35843f7456c",
+    "preinference-history-probe-20260910/wire.json": "8858d6975880c425d594a61d158cbe618932209634cb5a6dbd338010d8dc574a"
+  }
+}
