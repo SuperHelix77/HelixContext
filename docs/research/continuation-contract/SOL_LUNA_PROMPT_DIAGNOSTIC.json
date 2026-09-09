@@ -1,0 +1,509 @@
+{
+  "classification": "OBSERVED local renderer/catalog metrics, not native billed-token anatomy",
+  "native_calls": 0,
+  "models": {
+    "gpt-5.6-sol": {
+      "base_instructions": {
+        "utf8_bytes": 17766,
+        "o200k_proxy_tokens": 3552,
+        "sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415"
+      },
+      "template": {
+        "utf8_bytes": 17766,
+        "o200k_proxy_tokens": 3552,
+        "sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415"
+      },
+      "base_equals_template": true,
+      "metadata": {
+        "tool_mode": "code_mode_only",
+        "shell_type": "unified_exec",
+        "include_skills_usage_instructions": false,
+        "include_plugin_usage_instructions": true,
+        "include_apps_usage_instructions": true,
+        "default_verbosity": "low",
+        "use_responses_lite": true,
+        "node_repl_disabled": false,
+        "experimental_supported_tools": []
+      }
+    },
+    "gpt-5.6-luna": {
+      "base_instructions": {
+        "utf8_bytes": 17766,
+        "o200k_proxy_tokens": 3552,
+        "sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415"
+      },
+      "template": {
+        "utf8_bytes": 17766,
+        "o200k_proxy_tokens": 3552,
+        "sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415"
+      },
+      "base_equals_template": true,
+      "metadata": {
+        "tool_mode": "code_mode_only",
+        "shell_type": "unified_exec",
+        "include_skills_usage_instructions": false,
+        "include_plugin_usage_instructions": true,
+        "include_apps_usage_instructions": true,
+        "default_verbosity": "low",
+        "use_responses_lite": true,
+        "node_repl_disabled": false,
+        "experimental_supported_tools": []
+      }
+    }
+  },
+  "diagnostics": {
+    "gpt-5.6-sol-off": {
+      "cwd": "/Users/mert/Documents/ChatGPT/Helix/research/sol-integrated-v3-20260909/tasks/off",
+      "fresh_reconstruction_no_thread_history": true,
+      "blocks": [
+        {
+          "message": 0,
+          "part": 0,
+          "role": "developer",
+          "utf8_bytes": 2548,
+          "o200k_proxy_tokens": 853,
+          "sha256": "7ce860fccbdda8feca93a29b111c34a789a3de859f710f8a229e080d17d037f1",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 1,
+          "role": "developer",
+          "utf8_bytes": 630,
+          "o200k_proxy_tokens": 145,
+          "sha256": "8d8bb09ae89f89cd9ec428e82fc3ae42930fd3f9f7a44976f2f13c19f514a246",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 2,
+          "role": "developer",
+          "utf8_bytes": 646,
+          "o200k_proxy_tokens": 146,
+          "sha256": "b4536c3dbcedfee06f46c2230eb1080dc225b45187715f41095289bacba3759a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 3,
+          "role": "developer",
+          "utf8_bytes": 1014,
+          "o200k_proxy_tokens": 209,
+          "sha256": "81d37acb6feff552b562f712b1e854339d90a0b19aa9f271047cca787f77a51a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 3315,
+          "o200k_proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 1,
+          "role": "user",
+          "utf8_bytes": 3087,
+          "o200k_proxy_tokens": 631,
+          "sha256": "1571d7b3a5af44171484388a860c5426cbb9e7bfc02de3c55a897e32a2a14331",
+          "global_agents_occurrences": 1,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 2,
+          "role": "user",
+          "utf8_bytes": 1180,
+          "o200k_proxy_tokens": 326,
+          "sha256": "93d62e67df701889a5d63d28f26fb4982077efcdd38ac82ec861699c9729a6ed",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 2,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 4686,
+          "o200k_proxy_tokens": 1141,
+          "sha256": "0c94c038542b21f4d57e3bb5582049ba4c19ab5204e718ed4f1ffdbe3e643dca",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 1,
+          "catalog_base_exact_occurrences": 0
+        }
+      ],
+      "sum_text_proxy_tokens": 4780,
+      "sum_text_bytes": 17106,
+      "raw_json_sha256": "baab5bc1c7a66276cc1e8d3dbc8d5918484205ae863c8cd578d55bb8bf9aec62"
+    },
+    "gpt-5.6-sol-on": {
+      "cwd": "/Users/mert/Documents/ChatGPT/Helix/research/sol-integrated-v3-20260909/tasks/on",
+      "fresh_reconstruction_no_thread_history": true,
+      "blocks": [
+        {
+          "message": 0,
+          "part": 0,
+          "role": "developer",
+          "utf8_bytes": 2551,
+          "o200k_proxy_tokens": 854,
+          "sha256": "44bc043723928822542ef110b3c8ead6091896fdfd69a57b0214c04cdc268266",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 1,
+          "role": "developer",
+          "utf8_bytes": 629,
+          "o200k_proxy_tokens": 145,
+          "sha256": "14ec833c54456022593d53ad951a65784cd7e8b5d1f354c9540c78f7670cc30a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 2,
+          "role": "developer",
+          "utf8_bytes": 646,
+          "o200k_proxy_tokens": 146,
+          "sha256": "b4536c3dbcedfee06f46c2230eb1080dc225b45187715f41095289bacba3759a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 3,
+          "role": "developer",
+          "utf8_bytes": 1014,
+          "o200k_proxy_tokens": 209,
+          "sha256": "81d37acb6feff552b562f712b1e854339d90a0b19aa9f271047cca787f77a51a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 3315,
+          "o200k_proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 1,
+          "role": "user",
+          "utf8_bytes": 3086,
+          "o200k_proxy_tokens": 631,
+          "sha256": "7af8f23e94bd12e7e10185178e3be73828e7a17d1b5b294ef9ad9426ee678aaf",
+          "global_agents_occurrences": 1,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 2,
+          "role": "user",
+          "utf8_bytes": 1174,
+          "o200k_proxy_tokens": 326,
+          "sha256": "7467d5246a32c9a8ef107d769fb562b3de53ef3f3ac8461e70f22b20e8529014",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 2,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 7022,
+          "o200k_proxy_tokens": 1879,
+          "sha256": "e8e295e070f61c0591192b378493437aa4a05845ac43f54e0320c70d750bb935",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 1,
+          "catalog_base_exact_occurrences": 0
+        }
+      ],
+      "sum_text_proxy_tokens": 5519,
+      "sum_text_bytes": 19437,
+      "raw_json_sha256": "fe60580c0ad7e26e376124477a9659d82043496638d304aa7a0a5b19a460fddf"
+    },
+    "gpt-5.6-luna-off": {
+      "cwd": "/Users/mert/Documents/ChatGPT/Helix/research/sol-integrated-v3-20260909/tasks/off",
+      "fresh_reconstruction_no_thread_history": true,
+      "blocks": [
+        {
+          "message": 0,
+          "part": 0,
+          "role": "developer",
+          "utf8_bytes": 2548,
+          "o200k_proxy_tokens": 853,
+          "sha256": "7ce860fccbdda8feca93a29b111c34a789a3de859f710f8a229e080d17d037f1",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 1,
+          "role": "developer",
+          "utf8_bytes": 630,
+          "o200k_proxy_tokens": 145,
+          "sha256": "8d8bb09ae89f89cd9ec428e82fc3ae42930fd3f9f7a44976f2f13c19f514a246",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 2,
+          "role": "developer",
+          "utf8_bytes": 646,
+          "o200k_proxy_tokens": 146,
+          "sha256": "b4536c3dbcedfee06f46c2230eb1080dc225b45187715f41095289bacba3759a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 3,
+          "role": "developer",
+          "utf8_bytes": 1014,
+          "o200k_proxy_tokens": 209,
+          "sha256": "81d37acb6feff552b562f712b1e854339d90a0b19aa9f271047cca787f77a51a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 3315,
+          "o200k_proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 1,
+          "role": "user",
+          "utf8_bytes": 3087,
+          "o200k_proxy_tokens": 631,
+          "sha256": "1571d7b3a5af44171484388a860c5426cbb9e7bfc02de3c55a897e32a2a14331",
+          "global_agents_occurrences": 1,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 2,
+          "role": "user",
+          "utf8_bytes": 1180,
+          "o200k_proxy_tokens": 326,
+          "sha256": "93d62e67df701889a5d63d28f26fb4982077efcdd38ac82ec861699c9729a6ed",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 2,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 4686,
+          "o200k_proxy_tokens": 1141,
+          "sha256": "0c94c038542b21f4d57e3bb5582049ba4c19ab5204e718ed4f1ffdbe3e643dca",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 1,
+          "catalog_base_exact_occurrences": 0
+        }
+      ],
+      "sum_text_proxy_tokens": 4780,
+      "sum_text_bytes": 17106,
+      "raw_json_sha256": "01cd7a3ebf55cbfdf86fa32927a79166fe4b2411310b4de2c873c857d37e25e0"
+    },
+    "gpt-5.6-luna-on": {
+      "cwd": "/Users/mert/Documents/ChatGPT/Helix/research/sol-integrated-v3-20260909/tasks/on",
+      "fresh_reconstruction_no_thread_history": true,
+      "blocks": [
+        {
+          "message": 0,
+          "part": 0,
+          "role": "developer",
+          "utf8_bytes": 2551,
+          "o200k_proxy_tokens": 854,
+          "sha256": "44bc043723928822542ef110b3c8ead6091896fdfd69a57b0214c04cdc268266",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 1,
+          "role": "developer",
+          "utf8_bytes": 629,
+          "o200k_proxy_tokens": 145,
+          "sha256": "14ec833c54456022593d53ad951a65784cd7e8b5d1f354c9540c78f7670cc30a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 2,
+          "role": "developer",
+          "utf8_bytes": 646,
+          "o200k_proxy_tokens": 146,
+          "sha256": "b4536c3dbcedfee06f46c2230eb1080dc225b45187715f41095289bacba3759a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 0,
+          "part": 3,
+          "role": "developer",
+          "utf8_bytes": 1014,
+          "o200k_proxy_tokens": 209,
+          "sha256": "81d37acb6feff552b562f712b1e854339d90a0b19aa9f271047cca787f77a51a",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 3315,
+          "o200k_proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 1,
+          "role": "user",
+          "utf8_bytes": 3086,
+          "o200k_proxy_tokens": 631,
+          "sha256": "7af8f23e94bd12e7e10185178e3be73828e7a17d1b5b294ef9ad9426ee678aaf",
+          "global_agents_occurrences": 1,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 1,
+          "part": 2,
+          "role": "user",
+          "utf8_bytes": 1174,
+          "o200k_proxy_tokens": 326,
+          "sha256": "7467d5246a32c9a8ef107d769fb562b3de53ef3f3ac8461e70f22b20e8529014",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 0,
+          "catalog_base_exact_occurrences": 0
+        },
+        {
+          "message": 2,
+          "part": 0,
+          "role": "user",
+          "utf8_bytes": 7022,
+          "o200k_proxy_tokens": 1879,
+          "sha256": "e8e295e070f61c0591192b378493437aa4a05845ac43f54e0320c70d750bb935",
+          "global_agents_occurrences": 0,
+          "helix_skill_exact_occurrences": 0,
+          "task_exact_occurrences": 1,
+          "catalog_base_exact_occurrences": 0
+        }
+      ],
+      "sum_text_proxy_tokens": 5519,
+      "sum_text_bytes": 19437,
+      "raw_json_sha256": "6532c608b501f0970d014e2e8e8dbdc13f02e84a40d77596eae25bf006e1f620"
+    }
+  },
+  "raw_local_root": "/Users/mert/Documents/ChatGPT/Helix/research/sol-luna-prompt-diagnostic-v1-20260909",
+  "standalone_controllable": {
+    "global_agents": {
+      "utf8_bytes": 2246,
+      "o200k_proxy_tokens": 462,
+      "sha256": "8cf6028e3a0de95df907c96453c296308f46de702b62adb69d3c500f3cab0884"
+    },
+    "helix_skill": {
+      "utf8_bytes": 1819,
+      "o200k_proxy_tokens": 317,
+      "sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8"
+    },
+    "task_off": {
+      "utf8_bytes": 4686,
+      "o200k_proxy_tokens": 1141,
+      "sha256": "0c94c038542b21f4d57e3bb5582049ba4c19ab5204e718ed4f1ffdbe3e643dca"
+    },
+    "task_on": {
+      "utf8_bytes": 7022,
+      "o200k_proxy_tokens": 1879,
+      "sha256": "e8e295e070f61c0591192b378493437aa4a05845ac43f54e0320c70d750bb935"
+    }
+  },
+  "models_share_exact_base": true,
+  "limits": [
+    "Debug input list is not the complete native transmitted request.",
+    "Catalog base/template measurements are not proof of their exact serialization or addition to input-list totals.",
+    "Explicit app-server skill input cannot be reproduced by this command; standalone skill bytes are not observed attachment cost.",
+    "Tool/schema definitions and platform remainder absent from this output remain UNKNOWN.",
+    "Same frozen Sol task and task directories used for both model diagnostics, to isolate renderer differences; no fresh execution or Luna transfer claim.",
+    "No platform/system instructions modified; raw instruction text stays local.",
+    "Proxy tokenizer is o200k_base, not authoritative native token counting."
+  ]
+}
