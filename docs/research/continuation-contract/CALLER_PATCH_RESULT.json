@@ -1,0 +1,85 @@
+{
+  "state": "DEVELOPMENT_PAIR_COMPLETE",
+  "rows": {
+    "off": {
+      "usage": {
+        "input_tokens": 101159,
+        "output_tokens": 1135,
+        "cached_input_tokens": 80640,
+        "reasoning_output_tokens": 48,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 53.36923345801188,
+      "events_sha256": "b4da54e0cc114f8d4f6ec75982bea5ba45c51ccc931b27942fcc11526680388e",
+      "native_events_sha256": "767dc1c18ae3f247d7630bd2950a9a48b72e8fac9aaa25a97543afab5dd403a5",
+      "checks": {
+        "exit_code": 0,
+        "seconds": 0.20958029199391603,
+        "stdout_bytes": 39,
+        "stderr_bytes": 0,
+        "stdout_sha256": "a4e5adef14c1a24cbdaaadf02df89472be849d3af7995b69094f31fc95b58ed0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "assessment": "Repaired queue_state.py to stage and validate input before public mutation, preserve list identity and failure state, propagate iteration exceptions unchanged, and synchronize cursor to actual length on success. Checker passed 2745 sequences / 8282 transitions; supplemental edge checks passed. CONTRACT.md and check_contract.py hashes remain unchanged. Semantic review found no remaining obligation within the stated domain; finite checks do not prove universal behavior.",
+      "artifact_sha256": "6fbb307f40a37225827553d10f0693252f9d5a922aa1292d8abb861631b95986",
+      "passed": true
+    },
+    "on": {
+      "usage": {
+        "input_tokens": 19940,
+        "output_tokens": 387,
+        "cached_input_tokens": 11264,
+        "reasoning_output_tokens": 124,
+        "cache_write_input_tokens": 0
+      },
+      "elapsed_seconds": 15.868769958033226,
+      "events_sha256": "9beab62cf534e632dbf63a4856c1c4b08b22185e61e01aeb5f92a2c2084ba6dd",
+      "native_events_sha256": "8eaad445a10e61250d917473c3f744b35156c589e7d20c8e85854539582f4c4a",
+      "caller_materialized_sha256": "db96c9b46c427d2974c023a8aeccad327d52b794f9bc5a6b28c4ede3dd266607",
+      "checks": {
+        "exit_code": 0,
+        "seconds": 0.21374462504172698,
+        "stdout_bytes": 39,
+        "stderr_bytes": 0,
+        "stdout_sha256": "a4e5adef14c1a24cbdaaadf02df89472be849d3af7995b69094f31fc95b58ed0",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "assessment": "The method consumes the input once, staging validated values without changing either public field. Iteration observers therefore see call-entry state. Invalid values raise ValueError; iteration exceptions propagate unchanged, including failures entering iteration. Either failure preserves list contents, identity and even a stale cursor. Success extends the existing list in order and records its actual length, including for empty batches and after permitted alias mutations. These properties also support repeated calls and recovery. This reasoning assumes the contract's finite synchronous domain and exclusions. No files were changed or post-repair checks run; the caller's required check remains pending. Finite checks and prior PASS receipts do not establish semantic completeness or transfer across changed identities.",
+      "artifact_sha256": "db96c9b46c427d2974c023a8aeccad327d52b794f9bc5a6b28c4ede3dd266607",
+      "passed": true
+    }
+  },
+  "manifest_sha256": "d6a8558f8b1042446343a62d13b60dd7454d2943856cc2ede12cfb68831391d6",
+  "savings_percent": {
+    "input_tokens": 80.28845678585196,
+    "output_tokens": 65.90308370044053
+  },
+  "parity": "NOT_ESTABLISHED",
+  "independent_audit": {
+    "raw_native_and_normalized_hashes_verified": true,
+    "protected_contract_checker_hashes_verified": true,
+    "candidate_exact_returned_bytes_verified": true,
+    "repairs_ast_equal_ignoring_locations": true,
+    "control_segments": 5,
+    "candidate_segments": 1,
+    "control_commands": 5,
+    "candidate_commands": 0,
+    "uncached_input_saving_percent": 57.71723768214825,
+    "source_proxy_tokens": 86,
+    "candidate_assessment_proxy_tokens": 135,
+    "native_assessment_proxy_tokens": 81,
+    "proxy_tokenizer": "o200k_base, not native attribution",
+    "output_target_budget_at_observed_control": 227,
+    "candidate_reported_reasoning": 124,
+    "candidate_preflight": {
+      "exit_code": 1,
+      "seconds": 0.04023029201198369,
+      "stdout_bytes": 55,
+      "stderr_bytes": 754,
+      "stdout_sha256": "85e5454bec3771d90f9d4912fdb894bec2ff9ad010d5bc9cb5d0d8cafe9208dd",
+      "stderr_sha256": "9595efa4d45ab0fb591f12d2320cc9eaa265185bfb569f3470893f248b2fa280"
+    },
+    "materialization_io_and_seconds": "UNMEASURED",
+    "full_research_cost": "UNMEASURED; includes preparation, coordinator, checker and recovery accounting gaps"
+  }
+}
