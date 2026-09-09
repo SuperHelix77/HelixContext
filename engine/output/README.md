@@ -11,6 +11,13 @@ assembly out of the model's tool loop. Offline replay preserves the artifact,
 but rejects numeric alias recoding after accounting for its input legend.
 Original IDs remain preferred. Native qualification is still pending.
 
+The subsequent [fresh Sol pair](SOL_CALLER_COMPLETION_RESULT.md) measured
+67.34% input and 71.90% output savings with exact artifacts. It misses the
+75/75 Sol freeze threshold; one integrated attempt is authorized next, with
+independently switchable Memory/Reducers/completion and cold plans off.
+
+The [live HUD](../hud/README.md) observes registered receipts without inference.
+
 ## Fresh Luna High cold-plan diagnostic
 
 One task, three batches, two fresh calls in fixed control/candidate order. Both

@@ -1,0 +1,214 @@
+{
+  "state": "REVIEWED_DEVELOPMENT_RESULT",
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 45393,
+        "output_tokens": 1427,
+        "cached_input_tokens": 26240,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 632
+      },
+      "elapsed_seconds": 61.179,
+      "artifact_exact": true,
+      "artifact_sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+      "source_unchanged": true,
+      "passed": true,
+      "completion": null,
+      "anatomy": {
+        "schema": "helix.observable_trace.v1",
+        "events_sha256": "56033bd9cd70064dec7e834d1055a864d46f64db2b81e9b8a05f50df5f4fe41f",
+        "native_usage": {
+          "input_tokens": 45393,
+          "output_tokens": 1427,
+          "cached_input_tokens": 26240,
+          "cache_write_input_tokens": 0,
+          "reasoning_output_tokens": 632
+        },
+        "completed_item_types": {
+          "agent_message": 1,
+          "command_execution": 2,
+          "error": 1
+        },
+        "commands": 2,
+        "command_text_bytes": 2068,
+        "recorded_terminal_bytes": 365,
+        "nonzero_command_exits": 0,
+        "missing_command_exits": 0,
+        "message_text_bytes": 4,
+        "limitations": [
+          "Bytes are not native tokens or disjoint native output categories.",
+          "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+          "File-change events need not contain generated patch text.",
+          "No private reasoning contents or causal model psychology are inferred.",
+          "Model/effort identity must be verified separately against the launch receipt."
+        ]
+      },
+      "events_sha256": "56033bd9cd70064dec7e834d1055a864d46f64db2b81e9b8a05f50df5f4fe41f",
+      "overrun": false
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 14824,
+        "output_tokens": 401,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 364
+      },
+      "elapsed_seconds": 24.826,
+      "artifact_exact": true,
+      "artifact_sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+      "source_unchanged": true,
+      "passed": true,
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 6102,
+        "sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+        "source_sha256": [
+          "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8"
+        ],
+        "operations": 6,
+        "io": {
+          "object_bytes_read": 77924,
+          "object_bytes_written": 41296,
+          "object_bytes_hashed": 119220,
+          "object_read_operations": 3,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 6102,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+        },
+        "selection_io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "eaf0760b71278c8431397e3012b26455a319351d36c7b95daa87c6bf87d98593",
+        "response_bytes": 49,
+        "semantic_success": null,
+        "caller_seconds": 0.0011393339955247939
+      },
+      "anatomy": {
+        "schema": "helix.observable_trace.v1",
+        "events_sha256": "91026b85679e6e5efbaef1e62a1ece2cc008c80c2edb2cb5886660d9846a82ab",
+        "native_usage": {
+          "input_tokens": 14824,
+          "output_tokens": 401,
+          "cached_input_tokens": 0,
+          "cache_write_input_tokens": 0,
+          "reasoning_output_tokens": 364
+        },
+        "completed_item_types": {
+          "agent_message": 1,
+          "error": 1
+        },
+        "commands": 0,
+        "command_text_bytes": 0,
+        "recorded_terminal_bytes": 0,
+        "nonzero_command_exits": 0,
+        "missing_command_exits": 0,
+        "message_text_bytes": 49,
+        "limitations": [
+          "Bytes are not native tokens or disjoint native output categories.",
+          "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+          "File-change events need not contain generated patch text.",
+          "No private reasoning contents or causal model psychology are inferred.",
+          "Model/effort identity must be verified separately against the launch receipt."
+        ]
+      },
+      "events_sha256": "91026b85679e6e5efbaef1e62a1ece2cc008c80c2edb2cb5886660d9846a82ab",
+      "overrun": false
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 67.34298239816712,
+    "output_tokens": 71.89908899789769
+  },
+  "combined_native_usage": {
+    "input_tokens": 60217,
+    "output_tokens": 1828,
+    "cached_input_tokens": 26240,
+    "cache_write_input_tokens": 0,
+    "reasoning_output_tokens": 996
+  },
+  "joint_80_numeric": false,
+  "capability_parity": "unestablished",
+  "manifest": {
+    "schema": "helix.caller_completion_pair.v1",
+    "model": "gpt-5.6-sol",
+    "effort": "high",
+    "classification": "One fresh development task, fixed off/on order; no warm reuse claim",
+    "max_calls": 2,
+    "timeout_seconds_per_call": 600,
+    "post_call_thresholds": {
+      "input_tokens": 150000,
+      "output_tokens": 6000
+    },
+    "stop": "After first execution/accounting/artifact failure or overrun; thresholds are not hard inference caps. No retries or expansion.",
+    "hypothesis": "Moving exact assembly and mechanical byte validation to the caller reduces generated code and tool round trips while preserving semantic selection.",
+    "comparison": "Both arms receive identical complete metadata; candidate additionally uses the skill and caller completion. Not an isolated skill-text ablation.",
+    "source_sha256": "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8",
+    "source_bytes": 36628,
+    "expected_sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+    "source_records": 36,
+    "prompts": {
+      "off": "15f8bf7f6dda559e1975df3a836cee51314d843291c51dcc1a8b538c7de4b0d6",
+      "on": "139fedbdf6b92ebf235110a5955a424643042a931a598ddadbe9451b7292597e"
+    },
+    "dependencies": {
+      "/private/tmp/helix-named-plans-20260909/engine/output/completion_pair.py": "aadf0d6963c374ba34d356a640b2d99fed5559a5727b406e37be71ff7d87d810",
+      "/private/tmp/helix-named-plans-20260909/engine/prototype/copy_handles.py": "4ef3523b164fb27878f46c45db75fe5c9af0ff887179398b586abd773886bc52",
+      "/private/tmp/helix-named-plans-20260909/engine/prototype/renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+      "/private/tmp/helix-named-plans-20260909/engine/prototype/evidence.py": "936e29154f49ac65a1b6d09af460d9931ad1998bd60f5852fbf1c98f0ee7cc57",
+      "/private/tmp/helix-named-plans-20260909/engine/prototype/native_usage.py": "a8cdf528f50f3e5edd322bd678a36ac561de523147320998db7a10adf72e4e4f",
+      "/Users/mert/Documents/Codex/2026-09-08/codex-read-x-com-sairahul1-stat/work/helix-frontier/run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50"
+    },
+    "caller_preparation_seconds": 0.004639792023226619,
+    "candidate_catalog_creation": {
+      "schema": "helix.copy_catalog.creation.v1",
+      "reference": {
+        "schema": "helix.copy_catalog.ref.v1",
+        "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+      },
+      "catalog_bytes": 4668,
+      "handles": 36,
+      "elapsed_seconds": 0.0005104580195620656,
+      "store_io": {
+        "object_bytes_read": 36628,
+        "object_bytes_written": 4668,
+        "object_bytes_hashed": 41296,
+        "object_read_operations": 1,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "limits": "Model setup/discovery, physical I/O and upstream ingestion excluded."
+    },
+    "accounting": "Native setup/reasoning/verification counted. Common fixture/index preparation shared; candidate source archive/catalog charged separately. Parent research, physical I/O and money unpriced.",
+    "limits": "One synthetic success-path pair does not establish workflow recovery, long-horizon parity, or a model-wide saving."
+  },
+  "manifest_sha256": "bfb6fdb8f71ae3bafd5429b02924d0309413b49604bb062de0c2fdc8fdaa3dec",
+  "review": {
+    "control": "Two command calls; source identification then efficient scripted selection, exact-copy and verification. No forced full-file dump.",
+    "candidate": "Zero tool calls. Sol returned exactly six correct record IDs. Caller assembled and verified exact bytes.",
+    "checks": "Both 6102-byte artifacts match independent expected source lines; sources unchanged; fixture distinguishes fallback, string booleans and inclusive expiry.",
+    "limits": "Single fresh development pair; candidate includes skill and caller interface, no isolated skill ablation. Recovery/long-horizon and universal parity not established.",
+    "next": "User accepts 75 percent in both categories for Sol qualification, then freeze and move to Astra then Luna. This pair reaches neither 75 threshold, so no promotion."
+  }
+}
