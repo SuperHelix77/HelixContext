@@ -1,0 +1,151 @@
+{
+  "rows": [
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-luna",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 60146,
+        "cached_input_tokens": 50176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1188,
+        "reasoning_output_tokens": 748
+      },
+      "elapsed_seconds": 35.117,
+      "events_sha256": "0c6f483fd285b4d8aacef0acfe20aba7b6d69f4527bf6771d760afc245fc2343",
+      "source_unchanged": true,
+      "middleware_application_bytes": null
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-luna",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 46709,
+        "cached_input_tokens": 36096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 871,
+        "reasoning_output_tokens": 460
+      },
+      "elapsed_seconds": 29.836,
+      "events_sha256": "93a9dff83737093533920239f1850a8654942e63b74fdd8b099a1029a04b84df",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.0097188749932684,
+        "view_bytes": 1258
+      }
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-sol",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 28037,
+        "cached_input_tokens": 23168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 349,
+        "reasoning_output_tokens": 108
+      },
+      "elapsed_seconds": 22.367,
+      "events_sha256": "a64add941c75398cfe92c8b5108913340a0d786264841da3fe7a970af9f69f1e",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.006509208993520588,
+        "view_bytes": 1258
+      }
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-5.6-sol",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 27400,
+        "cached_input_tokens": 19200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 445,
+        "reasoning_output_tokens": 194
+      },
+      "elapsed_seconds": 28.498,
+      "events_sha256": "a0bb4aa7660312cb8f5b10a6ea8ac208b86ef84e22e9d9a156c391aabcf8fcd2",
+      "source_unchanged": true,
+      "middleware_application_bytes": null
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-6-astra",
+      "arm": "off",
+      "passed": true,
+      "usage": {
+        "input_tokens": 44557,
+        "cached_input_tokens": 24576,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 278,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 25.129,
+      "events_sha256": "ea75b9c371561f24a6e3f6f22a284c5cfcb7354813237ea4a4f9bce3d4a6a3dd",
+      "source_unchanged": true,
+      "middleware_application_bytes": null
+    },
+    {
+      "answer": "{\"failed_count\":13,\"passed_count\":219,\"cursor_expected\":0,\"cursor_observed\":23,\"amount_expected\":\"000.250\",\"permit_expected\":false,\"permit_observed\":\"false\",\"source_revision\":\"00931\",\"retry_budget\":\"000.075\",\"primary_tests\":[\"test_cursor\",\"test_decimal\",\"test_permission\"]}",
+      "model": "gpt-6-astra",
+      "arm": "on",
+      "passed": true,
+      "usage": {
+        "input_tokens": 32706,
+        "cached_input_tokens": 27520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 181,
+        "reasoning_output_tokens": 25
+      },
+      "elapsed_seconds": 19.969,
+      "events_sha256": "8a9f6d5b621b3288a91ec02d09693306ad99f9092dab71306533a049a861dbd4",
+      "source_unchanged": true,
+      "middleware_application_bytes": {
+        "source_bytes_parsed": 448928,
+        "source_bytes_hashed": 448928,
+        "preprocessing_seconds": 0.008588541997596622,
+        "view_bytes": 1258
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "model": "luna",
+      "bounded_checks_pass_both": true,
+      "input_saving": 0.22340637781398598,
+      "output_saving": 0.26683501683501687
+    },
+    {
+      "model": "sol",
+      "bounded_checks_pass_both": true,
+      "input_saving": -0.02324817518248179,
+      "output_saving": 0.21573033707865163
+    },
+    {
+      "model": "astra",
+      "bounded_checks_pass_both": true,
+      "input_saving": 0.26597392104495365,
+      "output_saving": 0.34892086330935257
+    }
+  ],
+  "native_calls": 6,
+  "usage": {
+    "input_tokens": 239555,
+    "cached_input_tokens": 180736,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3312,
+    "reasoning_output_tokens": 1535
+  },
+  "config_fingerprint_unchanged_at_end": false,
+  "scope": "Development rerun of exposed V2 task; fresh controls and High models; caller query projection versus ordinary source access, not skill-only attribution. No independent holdout or general capability parity. Parent research costs, physical disk and remote compute unavailable; local preprocessing time and bytes reported. Native runner uses --ignore-user-config; endpoint fingerprint does not attest intermediate configuration or tool permission enforcement."
+}

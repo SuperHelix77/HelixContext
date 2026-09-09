@@ -1,0 +1,4 @@
+{
+  "native_runner_sha256": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+  "recorded": "after execution; direct candidate code hashes verified against pre-run manifest; transitive dependency closure not pre-frozen"
+}

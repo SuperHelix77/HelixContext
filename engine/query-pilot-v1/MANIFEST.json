@@ -1,0 +1,14 @@
+{
+  "files": {
+    "pilot.py": "ce963fc75aa941484212c5bc68d4ca7e58f5e72b8e45b5641659a876917aea2a",
+    "query.py": "042521d354471a577c6e7600b709451572fd790f7be545f4f1d46e16d28056ac"
+  },
+  "config_sha256_before": "772899b3c665007206e39e5765ca87d5c4de06411aca7e546dff0499ed33cdf6",
+  "classification": "development reuse of exposed V2 task; fresh controls; not independent holdout; configuration fingerprint detects endpoint drift, not intermediate edits",
+  "models": [
+    "gpt-5.6-luna",
+    "gpt-5.6-sol",
+    "gpt-6-astra"
+  ],
+  "effort": "high"
+}
