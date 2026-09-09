@@ -1,0 +1,5 @@
+{
+  "evidence": "V1 Luna W and L20 incurred redundant archive/ledger work; L20 passed exact retrieval but used 2.76x input and 5.27x output.",
+  "revision": "Replace unconditional ledger-recording instructions with explicit caller ownership and decision-driven updates; shorten redundant skill prose.",
+  "probe": "Five actual native turns per condition, same High model/tools. Exact acknowledgement, no caller-file mutation, native input/output and tool calls measured. Full long-horizon and latent follow-ups still required."
+}

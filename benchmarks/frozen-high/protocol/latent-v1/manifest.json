@@ -1,0 +1,14 @@
+{
+  "20": {
+    "fixture_sha256": "6773e345448e8288187d43a08c2f224d25a88e4960fc5b5c23d842c7a00ae5ed",
+    "gold_sha256": "b473192abf9af4ad142258bb579335f5c5bd546bb1a90d81d9be6de5f8391795",
+    "turns": 21,
+    "status": "frozen before model exposure"
+  },
+  "40": {
+    "fixture_sha256": "d798ebf0958c77a41671e525d033bae5f48b45df5028d4a4f90e74ad56652bcd",
+    "gold_sha256": "f709c83ced095918a10de14a9e64f0cdd7249a4a6d6f1f5dc769f63514206098",
+    "turns": 41,
+    "status": "frozen before model exposure"
+  }
+}

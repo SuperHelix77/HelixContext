@@ -11,15 +11,15 @@
     "break_even": "Only compute under explicit rates and positive per-task net benefit; unmetered setup costs prevent a complete break-even claim."
   },
   "this_frontier_snapshot": {
-    "native_calls_with_usage": 722,
+    "native_calls_with_usage": 897,
     "tokens": {
-      "input_tokens": 17461316,
-      "output_tokens": 148094,
-      "cached_input_tokens": 12529536,
-      "reasoning_output_tokens": 66297
+      "input_tokens": 20728819,
+      "output_tokens": 158659,
+      "cached_input_tokens": 14609152,
+      "reasoning_output_tokens": 71073
     },
     "failed_attempts_without_usage": 3,
-    "local_evidence_file_bytes": 11064297
+    "local_evidence_file_bytes": 13405742
   },
   "accounting_limits": [
     "All measured candidate attempts retained, including cost regressions; not a recurring-deployment aggregate",

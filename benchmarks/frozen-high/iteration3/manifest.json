@@ -1,0 +1,9 @@
+{
+  "files": {
+    "iteration3/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "iteration3/probe.json": "644885829311ec836ceab64fc5863ddf920c556dcd9bc6aa6249a7bc3be37029",
+    "run_probe3.py": "2ba6ff858a1de4fb1a27032b31be4adc28a4fb888fc066988be9bea63f446cf8"
+  },
+  "status": "frozen before probe model exposure",
+  "limits": "Diagnostic only; five-turn probe cannot establish long-horizon parity or general savings."
+}

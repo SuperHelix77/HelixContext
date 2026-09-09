@@ -1,0 +1,10 @@
+{
+  "files": {
+    "iteration2/SKILL.md": "a8db3b7354418e123b529e8603a271178d3363b29e46ef1a942ec8ae17ca83ed",
+    "iteration2/Q3.json": "f9d5928695772339dd6b3bf1700f535dbecf4029452a872827aec136fe6763e0",
+    "iteration2/A2.json": "9bcec4d837dc7e84dcda881a6d614bc8267ee8355d5f6d69f8d09a1f95406935",
+    "run_iteration2.py": "2ff72cd90d35a5f4c71f9c64cb6182f8ba873b2c38df602962183822cee69000",
+    "grade_iteration2.py": "612a1a794cc6b35264c637af76d3dc6cfac1483262222932e72f399b27cd4d0e"
+  },
+  "status": "frozen before model exposure; fresh tasks, parity-first and net-cost checks"
+}

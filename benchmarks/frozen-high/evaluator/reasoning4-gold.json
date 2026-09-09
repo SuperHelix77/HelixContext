@@ -1,0 +1,126 @@
+{
+  "total_count": 369,
+  "eligible": [
+    {
+      "id": "case:0018",
+      "amount_exact": "08599.45739800",
+      "duration_ms": 4009
+    },
+    {
+      "id": "case:0019",
+      "amount_exact": "88302.81472300",
+      "duration_ms": 3955
+    },
+    {
+      "id": "case:0041",
+      "amount_exact": "44304.55603800",
+      "duration_ms": 4169
+    },
+    {
+      "id": "case:0043",
+      "amount_exact": "59489.76306700",
+      "duration_ms": 1905
+    },
+    {
+      "id": "case:0054",
+      "amount_exact": "26339.75636000",
+      "duration_ms": 1142
+    },
+    {
+      "id": "case:0055",
+      "amount_exact": "21010.73514600",
+      "duration_ms": 4610
+    },
+    {
+      "id": "case:0082",
+      "amount_exact": "59281.88295200",
+      "duration_ms": 3371
+    },
+    {
+      "id": "case:0088",
+      "amount_exact": "74063.51932200",
+      "duration_ms": 1057
+    },
+    {
+      "id": "case:0118",
+      "amount_exact": "87156.39494300",
+      "duration_ms": 3577
+    },
+    {
+      "id": "case:0137",
+      "amount_exact": "75457.31988600",
+      "duration_ms": 3772
+    },
+    {
+      "id": "case:0166",
+      "amount_exact": "23651.58329000",
+      "duration_ms": 3413
+    },
+    {
+      "id": "case:0172",
+      "amount_exact": "60791.74169300",
+      "duration_ms": 4605
+    },
+    {
+      "id": "case:0195",
+      "amount_exact": "53468.43443000",
+      "duration_ms": 207
+    },
+    {
+      "id": "case:0201",
+      "amount_exact": "52739.64158000",
+      "duration_ms": 4676
+    },
+    {
+      "id": "case:0241",
+      "amount_exact": "80784.48034500",
+      "duration_ms": 83
+    },
+    {
+      "id": "case:0243",
+      "amount_exact": "49774.01346600",
+      "duration_ms": 838
+    },
+    {
+      "id": "case:0247",
+      "amount_exact": "85316.71269300",
+      "duration_ms": 1598
+    },
+    {
+      "id": "case:0255",
+      "amount_exact": "29011.65340300",
+      "duration_ms": 2171
+    },
+    {
+      "id": "case:0269",
+      "amount_exact": "15009.71954600",
+      "duration_ms": 1912
+    },
+    {
+      "id": "case:0293",
+      "amount_exact": "15235.15189700",
+      "duration_ms": 3546
+    },
+    {
+      "id": "case:0305",
+      "amount_exact": "98354.57936200",
+      "duration_ms": 586
+    },
+    {
+      "id": "case:0314",
+      "amount_exact": "89393.92292200",
+      "duration_ms": 229
+    },
+    {
+      "id": "case:0330",
+      "amount_exact": "93258.96986100",
+      "duration_ms": 1871
+    },
+    {
+      "id": "case:0353",
+      "amount_exact": "58502.23661800",
+      "duration_ms": 4053
+    }
+  ],
+  "target_eligible": false
+}

@@ -1,6 +1,6 @@
 {
-  "as_of_utc": "2026-09-09T10:06:43.720234+00:00",
-  "status": "Exploratory iterations; V3 long-horizon validation ongoing",
+  "as_of_utc": "2026-09-09T10:21:50.836740+00:00",
+  "status": "V3 finite evaluation complete; subsequent runtime/middleware extension pending separate validation",
   "scope": "Same-model High, skill plus caller policy, not installed slash-skill alone",
   "primary": {
     "luna": {
@@ -1225,7 +1225,135 @@
             "turns": 50
           },
           "on": {
-            "status": "pending"
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 710887,
+              "output_tokens": 3304,
+              "cached_input_tokens": 533248,
+              "reasoning_output_tokens": 2326
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 20.602,
+              "output_tokens": 51.24
+            }
+          }
+        }
+      },
+      "L40": {
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 852087,
+              "output_tokens": 3806,
+              "cached_input_tokens": 433152,
+              "reasoning_output_tokens": 2925
+            },
+            "resources": {
+              "model": "gpt-5.6-luna",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 589.601,
+              "caller_cpu_seconds": 1.327,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 50.25,
+              "local_client_max_rss_bytes": 207126528
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 615277,
+              "output_tokens": 2925,
+              "cached_input_tokens": 454400,
+              "reasoning_output_tokens": 1803
+            },
+            "resources": {
+              "model": "gpt-5.6-luna",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 545.603,
+              "caller_cpu_seconds": 1.119,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 56.62,
+              "local_client_max_rss_bytes": 221446144
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 27.792,
+              "output_tokens": 23.148
+            }
+          }
+        }
+      },
+      "Q4": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 42036,
+            "output_tokens": 1757,
+            "cached_input_tokens": 35072,
+            "reasoning_output_tokens": 612
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 28737,
+            "output_tokens": 1765,
+            "cached_input_tokens": 22016,
+            "reasoning_output_tokens": 747
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": 31.637,
+            "output_tokens": -0.455
           }
         }
       }
@@ -1333,7 +1461,135 @@
             "turns": 50
           },
           "on": {
-            "status": "pending"
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 785283,
+              "output_tokens": 1190,
+              "cached_input_tokens": 535936,
+              "reasoning_output_tokens": 243
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 15.199,
+              "output_tokens": -26.059
+            }
+          }
+        }
+      },
+      "L40": {
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 880810,
+              "output_tokens": 948,
+              "cached_input_tokens": 396160,
+              "reasoning_output_tokens": 167
+            },
+            "resources": {
+              "model": "gpt-5.6-sol",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 540.388,
+              "caller_cpu_seconds": 1.2,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 54.35,
+              "local_client_max_rss_bytes": 213008384
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 646489,
+              "output_tokens": 1013,
+              "cached_input_tokens": 447488,
+              "reasoning_output_tokens": 313
+            },
+            "resources": {
+              "model": "gpt-5.6-sol",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 576.263,
+              "caller_cpu_seconds": 1.222,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 50.67,
+              "local_client_max_rss_bytes": 211959808
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 26.603,
+              "output_tokens": -6.857
+            }
+          }
+        }
+      },
+      "Q4": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 30736,
+            "output_tokens": 978,
+            "cached_input_tokens": 25344,
+            "reasoning_output_tokens": 152
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 31327,
+            "output_tokens": 961,
+            "cached_input_tokens": 25600,
+            "reasoning_output_tokens": 90
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": -1.923,
+            "output_tokens": 1.738
           }
         }
       }
@@ -1441,7 +1697,135 @@
             "turns": 50
           },
           "on": {
-            "status": "pending"
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 842482,
+              "output_tokens": 859,
+              "cached_input_tokens": 613888,
+              "reasoning_output_tokens": 0
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 9.729,
+              "output_tokens": -5.788
+            }
+          }
+        }
+      },
+      "L40": {
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 898279,
+              "output_tokens": 622,
+              "cached_input_tokens": 466432,
+              "reasoning_output_tokens": 42
+            },
+            "resources": {
+              "model": "gpt-6-astra",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 608.635,
+              "caller_cpu_seconds": 1.498,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 53.48,
+              "local_client_max_rss_bytes": 214056960
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 680286,
+              "output_tokens": 642,
+              "cached_input_tokens": 457344,
+              "reasoning_output_tokens": 0
+            },
+            "resources": {
+              "model": "gpt-6-astra",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 537.028,
+              "caller_cpu_seconds": 1.049,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 55.68,
+              "local_client_max_rss_bytes": 223444992
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 24.268,
+              "output_tokens": -3.215
+            }
+          }
+        }
+      },
+      "Q4": {
+        "off": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 32493,
+            "output_tokens": 874,
+            "cached_input_tokens": 27136,
+            "reasoning_output_tokens": 0
+          }
+        },
+        "on": {
+          "status": "graded",
+          "checks": {
+            "source_preserved": true,
+            "exact_answer": true
+          },
+          "passed": true,
+          "usage": {
+            "input_tokens": 33057,
+            "output_tokens": 877,
+            "cached_input_tokens": 27392,
+            "reasoning_output_tokens": 0
+          }
+        },
+        "comparison": {
+          "observed_parity": true,
+          "reduction_pct": {
+            "input_tokens": -1.736,
+            "output_tokens": -0.343
           }
         }
       }

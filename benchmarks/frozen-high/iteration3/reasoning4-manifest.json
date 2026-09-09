@@ -1,0 +1,14 @@
+{
+  "description": "New explicit entity mapping, unchanged V3 policy, strong file-reference controls. Exploratory single pairs, not universal parity.",
+  "files": {
+    "iteration3/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "iteration3/Q4.json": "dea4b0465b34748330ab511affe5b6379efe18087398832369776c53bdf39e28",
+    "evaluator/reasoning4-gold.json": "6f6fcaf0ebe3a5409c3e85d187bd8a44e76d6c832aa7a35ada00299ca83be0a4",
+    "run_reasoning4.py": "6a8bebca3bec7127651d8f16ff267b181ed7d62b28d5bac91e22ee78ea8c2fe7",
+    "grade_reasoning4.py": "84941f68fafd0fed9e5b39d4468b4cd7a487e9a0488367a45fa5a159ef01aa7c",
+    "run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "run_validation3.py": "a62ebd5e58fba967a0a46cee5c591e5cf6ca66a8b2d1c9946e07a3d36e93d4ef",
+    "run_followups.py": "27096cfb2bdb973daa41f4fd669f3f96196ff0afeabe45c234fe2088a332984e",
+    "grade_benchmark.py": "1f239acf23f9d8ddba2b6c8373363819dcd9cc684e0a4d288bf75a047a0a46a4"
+  }
+}

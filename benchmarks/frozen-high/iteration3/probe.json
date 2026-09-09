@@ -1,0 +1,55 @@
+{
+  "events": [
+    {
+      "turn": 1,
+      "event_id": "P01",
+      "data": {
+        "sensor": "unit-1",
+        "reading": 38,
+        "unit": "count"
+      },
+      "request": "This event is already stored by the caller. Reply exactly ACK P01, without punctuation. No file writes, retrieval of older facts, or additional bookkeeping are requested."
+    },
+    {
+      "turn": 2,
+      "event_id": "P02",
+      "data": {
+        "sensor": "unit-2",
+        "reading": 39,
+        "unit": "count"
+      },
+      "request": "This event is already stored by the caller. Reply exactly ACK P02, without punctuation. No file writes, retrieval of older facts, or additional bookkeeping are requested."
+    },
+    {
+      "turn": 3,
+      "event_id": "P03",
+      "data": {
+        "sensor": "unit-3",
+        "reading": 40,
+        "unit": "count"
+      },
+      "request": "This event is already stored by the caller. Reply exactly ACK P03, without punctuation. No file writes, retrieval of older facts, or additional bookkeeping are requested."
+    },
+    {
+      "turn": 4,
+      "event_id": "P04",
+      "data": {
+        "sensor": "unit-4",
+        "reading": 41,
+        "unit": "count"
+      },
+      "request": "This event is already stored by the caller. Reply exactly ACK P04, without punctuation. No file writes, retrieval of older facts, or additional bookkeeping are requested."
+    },
+    {
+      "turn": 5,
+      "event_id": "P05",
+      "data": {
+        "sensor": "unit-5",
+        "reading": 42,
+        "unit": "count"
+      },
+      "request": "This event is already stored by the caller. Reply exactly ACK P05, without punctuation. No file writes, retrieval of older facts, or additional bookkeeping are requested."
+    }
+  ],
+  "purpose": "Short diagnostic of duplicate caller-owned bookkeeping; no long-horizon parity claim"
+}

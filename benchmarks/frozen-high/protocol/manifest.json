@@ -1,0 +1,15 @@
+{
+  "protocol_sha256": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e",
+  "gold_sha256": "afcb526681bd477a767cf6b6a27bd4ebb57988732c967a1fc86c006faaf49421",
+  "status": "fixtures, candidate, runner and grader frozen before model runs; runner unit tests passed",
+  "model_exposure": "Gold stays outside model task directories. Full future events must not be exposed before their turn.",
+  "tasks": {
+    "reasoning-v1.json": "9cf0dc9cec464a6088231df6e302be35fb878b6f0b502a50e43bee8614d8c44a",
+    "agentic-v1.json": "dc3493661aa3af275998a0a19df1cea738325ec147b30cdeceacf476895388fe",
+    "long-horizon-v1.json": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e"
+  },
+  "candidate_sha256": "ac9f85355e9056375e8a2e973a759def709576cd34b692e6b76b7b9bb9003da6",
+  "runner_sha256": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+  "grader_sha256": "1f239acf23f9d8ddba2b6c8373363819dcd9cc684e0a4d288bf75a047a0a46a4",
+  "cost_gate": "Net native savings after all recurring skill, retrieval and recovery tokens; local CPU, latency and physical file sizes reported; setup/research overhead separate and no unmeasured billing claim"
+}

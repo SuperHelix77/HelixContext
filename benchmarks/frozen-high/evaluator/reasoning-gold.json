@@ -1,0 +1,16 @@
+{
+  "total_count": 320,
+  "eligible": [
+    {
+      "id": "job-0017",
+      "amount_exact": "9007199254741010",
+      "duration_ms": 117
+    },
+    {
+      "id": "job-0088",
+      "amount_exact": "0.123456789012345678901234567890",
+      "duration_ms": 188
+    }
+  ],
+  "job_0177_eligible": false
+}

@@ -1,0 +1,16 @@
+{
+  "total_count": 311,
+  "eligible": [
+    {
+      "id": "work-0007",
+      "amount_exact": "9007199254742008",
+      "duration_ms": 508
+    },
+    {
+      "id": "work-0109",
+      "amount_exact": "0.000000000000000000000000000123",
+      "duration_ms": 610
+    }
+  ],
+  "work_0077_eligible": false
+}

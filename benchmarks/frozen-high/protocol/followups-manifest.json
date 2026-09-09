@@ -1,0 +1,12 @@
+{
+  "files": {
+    "protocol/reasoning-v2.json": "c95a7ab8a71d5b01550b8ea479063745187985c82abdf56f3949f7c448db9b97",
+    "protocol/latent-v1/delay-20.json": "6773e345448e8288187d43a08c2f224d25a88e4960fc5b5c23d842c7a00ae5ed",
+    "protocol/latent-v1/delay-40.json": "d798ebf0958c77a41671e525d033bae5f48b45df5028d4a4f90e74ad56652bcd",
+    "candidate/SKILL.md": "ac9f85355e9056375e8a2e973a759def709576cd34b692e6b76b7b9bb9003da6",
+    "run_followups.py": "27096cfb2bdb973daa41f4fd669f3f96196ff0afeabe45c234fe2088a332984e"
+  },
+  "status": "Frozen before followup model exposure",
+  "Q2_reason": "Clarify ambiguous total_count in original Q; retain original raw results, do not overwrite or reinterpret scores.",
+  "latent_reason": "Test mundane early facts whose future queried tag is not identified before the late task."
+}

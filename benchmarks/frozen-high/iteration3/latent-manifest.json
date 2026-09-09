@@ -1,0 +1,16 @@
+{
+  "description": "V3 held-out L40, no prior native executions; same ownership in both arms, progressive skill loading only on substantive request. Fixture previously frozen; causal prompt isolation, not OS-enforced filesystem isolation.",
+  "files": {
+    "iteration3/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "protocol/latent-v1/delay-40.json": "d798ebf0958c77a41671e525d033bae5f48b45df5028d4a4f90e74ad56652bcd",
+    "evaluator/latent-v1/delay-40.json": "f709c83ced095918a10de14a9e64f0cdd7249a4a6d6f1f5dc769f63514206098",
+    "run_latent3.py": "e758e98fdbf8b0b13f5f94189bdaa9045d7734be13dd8ddcc379942a011d9975",
+    "grade_latent3.py": "85981815c76cb01cb9d83fb28f8d6bb33bcc9269ac128c1a41f24ea7a6f02573",
+    "run_validation3.py": "a62ebd5e58fba967a0a46cee5c591e5cf6ca66a8b2d1c9946e07a3d36e93d4ef",
+    "run_followups.py": "27096cfb2bdb973daa41f4fd669f3f96196ff0afeabe45c234fe2088a332984e",
+    "run_benchmark.py": "ef3b32387ab7a42dbaafe9d5bec47f1448913d9403f2c9e9a39b956f9811ad50",
+    "grade_benchmark.py": "1f239acf23f9d8ddba2b6c8373363819dcd9cc684e0a4d288bf75a047a0a46a4",
+    "candidate/SKILL.md": "ac9f85355e9056375e8a2e973a759def709576cd34b692e6b76b7b9bb9003da6",
+    "test_latent3.py": "c56122e853163aa80761f2c9aaa8cf038aa13558769ac60cceb9b3aa0e299483"
+  }
+}

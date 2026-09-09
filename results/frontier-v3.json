@@ -1,0 +1,861 @@
+{
+  "as_of_utc": "2026-09-09T10:17:48.788275+00:00",
+  "candidate_sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+  "status": "COMPLETED FINITE V3 EVALUATION; universal no-loss and 95 percent unestablished",
+  "models": {
+    "luna": {
+      "all_scored_outcomes_pass": true,
+      "tasks": {
+        "Q4": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 42036,
+              "output_tokens": 1757,
+              "cached_input_tokens": 35072,
+              "reasoning_output_tokens": 612
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 28737,
+              "output_tokens": 1765,
+              "cached_input_tokens": 22016,
+              "reasoning_output_tokens": 747
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 31.637,
+              "output_tokens": -0.455
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 102914,
+              "output_tokens": 2561,
+              "cached_input_tokens": 85248,
+              "reasoning_output_tokens": 974
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 59108,
+              "output_tokens": 2000,
+              "cached_input_tokens": 50176,
+              "reasoning_output_tokens": 1141
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 42.566,
+              "output_tokens": 21.906
+            }
+          }
+        },
+        "W50": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 895345,
+              "output_tokens": 6776,
+              "cached_input_tokens": 574976,
+              "reasoning_output_tokens": 5527
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 710887,
+              "output_tokens": 3304,
+              "cached_input_tokens": 533248,
+              "reasoning_output_tokens": 2326
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 20.602,
+              "output_tokens": 51.24
+            }
+          }
+        },
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 852087,
+              "output_tokens": 3806,
+              "cached_input_tokens": 433152,
+              "reasoning_output_tokens": 2925
+            },
+            "resources": {
+              "model": "gpt-5.6-luna",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 589.601,
+              "caller_cpu_seconds": 1.327,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 50.25,
+              "local_client_max_rss_bytes": 207126528
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 615277,
+              "output_tokens": 2925,
+              "cached_input_tokens": 454400,
+              "reasoning_output_tokens": 1803
+            },
+            "resources": {
+              "model": "gpt-5.6-luna",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 545.603,
+              "caller_cpu_seconds": 1.119,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 56.62,
+              "local_client_max_rss_bytes": 221446144
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 27.792,
+              "output_tokens": 23.148
+            }
+          }
+        }
+      },
+      "aggregate_native_usage": {
+        "off": {
+          "input_tokens": 1892382,
+          "output_tokens": 14900,
+          "cached_input_tokens": 1128448,
+          "reasoning_output_tokens": 10038
+        },
+        "on": {
+          "input_tokens": 1414009,
+          "output_tokens": 9994,
+          "cached_input_tokens": 1059840,
+          "reasoning_output_tokens": 6017
+        }
+      },
+      "aggregate_reduction_pct": {
+        "input_tokens": 25.279,
+        "output_tokens": 32.926,
+        "input_plus_output_unweighted": 25.339
+      },
+      "resources": {
+        "Q4": {
+          "off": {
+            "task_wall_seconds": 51.407,
+            "caller_cpu_seconds": 0.544,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.09,
+            "local_client_max_rss_bytes": 225165312
+          },
+          "on": {
+            "task_wall_seconds": 49.82,
+            "caller_cpu_seconds": 0.073,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.22,
+            "local_client_max_rss_bytes": 215859200
+          }
+        },
+        "A": {
+          "off": {
+            "task_wall_seconds": 63.894,
+            "caller_cpu_seconds": 0.074,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.69,
+            "local_client_max_rss_bytes": 212959232
+          },
+          "on": {
+            "task_wall_seconds": 53.407,
+            "caller_cpu_seconds": 0.063,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.17,
+            "local_client_max_rss_bytes": 219807744
+          }
+        },
+        "W50": {
+          "off": {
+            "task_wall_seconds": 621.777,
+            "caller_cpu_seconds": 0.964,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 38.2,
+            "local_client_max_rss_bytes": 232407040
+          },
+          "on": {
+            "task_wall_seconds": 697.493,
+            "caller_cpu_seconds": 1.335,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 65.43,
+            "local_client_max_rss_bytes": 220053504
+          }
+        },
+        "L40": {
+          "off": {
+            "task_wall_seconds": 589.601,
+            "caller_cpu_seconds": 1.327,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 50.25,
+            "local_client_max_rss_bytes": 207126528
+          },
+          "on": {
+            "task_wall_seconds": 545.603,
+            "caller_cpu_seconds": 1.119,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 56.62,
+            "local_client_max_rss_bytes": 221446144
+          }
+        }
+      }
+    },
+    "sol": {
+      "all_scored_outcomes_pass": true,
+      "tasks": {
+        "Q4": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 30736,
+              "output_tokens": 978,
+              "cached_input_tokens": 25344,
+              "reasoning_output_tokens": 152
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 31327,
+              "output_tokens": 961,
+              "cached_input_tokens": 25600,
+              "reasoning_output_tokens": 90
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": -1.923,
+              "output_tokens": 1.738
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 96577,
+              "output_tokens": 2170,
+              "cached_input_tokens": 84352,
+              "reasoning_output_tokens": 750
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 65103,
+              "output_tokens": 1606,
+              "cached_input_tokens": 52736,
+              "reasoning_output_tokens": 537
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 32.59,
+              "output_tokens": 25.991
+            }
+          }
+        },
+        "W50": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 926028,
+              "output_tokens": 944,
+              "cached_input_tokens": 637568,
+              "reasoning_output_tokens": 150
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 785283,
+              "output_tokens": 1190,
+              "cached_input_tokens": 535936,
+              "reasoning_output_tokens": 243
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 15.199,
+              "output_tokens": -26.059
+            }
+          }
+        },
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 880810,
+              "output_tokens": 948,
+              "cached_input_tokens": 396160,
+              "reasoning_output_tokens": 167
+            },
+            "resources": {
+              "model": "gpt-5.6-sol",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 540.388,
+              "caller_cpu_seconds": 1.2,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 54.35,
+              "local_client_max_rss_bytes": 213008384
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 646489,
+              "output_tokens": 1013,
+              "cached_input_tokens": 447488,
+              "reasoning_output_tokens": 313
+            },
+            "resources": {
+              "model": "gpt-5.6-sol",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 576.263,
+              "caller_cpu_seconds": 1.222,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 50.67,
+              "local_client_max_rss_bytes": 211959808
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 26.603,
+              "output_tokens": -6.857
+            }
+          }
+        }
+      },
+      "aggregate_native_usage": {
+        "off": {
+          "input_tokens": 1934151,
+          "output_tokens": 5040,
+          "cached_input_tokens": 1143424,
+          "reasoning_output_tokens": 1219
+        },
+        "on": {
+          "input_tokens": 1528202,
+          "output_tokens": 4770,
+          "cached_input_tokens": 1061760,
+          "reasoning_output_tokens": 1183
+        }
+      },
+      "aggregate_reduction_pct": {
+        "input_tokens": 20.988,
+        "output_tokens": 5.357,
+        "input_plus_output_unweighted": 20.948
+      },
+      "resources": {
+        "Q4": {
+          "off": {
+            "task_wall_seconds": 49.732,
+            "caller_cpu_seconds": 0.069,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.3200000000000003,
+            "local_client_max_rss_bytes": 226885632
+          },
+          "on": {
+            "task_wall_seconds": 47.734,
+            "caller_cpu_seconds": 0.536,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.16,
+            "local_client_max_rss_bytes": 225230848
+          }
+        },
+        "A": {
+          "off": {
+            "task_wall_seconds": 93.571,
+            "caller_cpu_seconds": 0.097,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.65,
+            "local_client_max_rss_bytes": 226000896
+          },
+          "on": {
+            "task_wall_seconds": 69.437,
+            "caller_cpu_seconds": 0.079,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.8699999999999999,
+            "local_client_max_rss_bytes": 216334336
+          }
+        },
+        "W50": {
+          "off": {
+            "task_wall_seconds": 707.34,
+            "caller_cpu_seconds": 1.356,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 66.45,
+            "local_client_max_rss_bytes": 216285184
+          },
+          "on": {
+            "task_wall_seconds": 721.145,
+            "caller_cpu_seconds": 1.347,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 67.25,
+            "local_client_max_rss_bytes": 215744512
+          }
+        },
+        "L40": {
+          "off": {
+            "task_wall_seconds": 540.388,
+            "caller_cpu_seconds": 1.2,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 54.35,
+            "local_client_max_rss_bytes": 213008384
+          },
+          "on": {
+            "task_wall_seconds": 576.263,
+            "caller_cpu_seconds": 1.222,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 50.67,
+            "local_client_max_rss_bytes": 211959808
+          }
+        }
+      }
+    },
+    "astra": {
+      "all_scored_outcomes_pass": true,
+      "tasks": {
+        "Q4": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 32493,
+              "output_tokens": 874,
+              "cached_input_tokens": 27136,
+              "reasoning_output_tokens": 0
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "source_preserved": true,
+              "exact_answer": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 33057,
+              "output_tokens": 877,
+              "cached_input_tokens": 27392,
+              "reasoning_output_tokens": 0
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": -1.736,
+              "output_tokens": -0.343
+            }
+          }
+        },
+        "A": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 74279,
+              "output_tokens": 1139,
+              "cached_input_tokens": 64128,
+              "reasoning_output_tokens": 41
+            },
+            "turns": 1
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "unrelated_and_tests_preserved": true,
+              "allocation_semantics_116_cases": true,
+              "existing_suite_executed": true
+            },
+            "usage": {
+              "input_tokens": 50791,
+              "output_tokens": 1221,
+              "cached_input_tokens": 44160,
+              "reasoning_output_tokens": 55
+            },
+            "turns": 1
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 31.621,
+              "output_tokens": -7.199
+            }
+          }
+        },
+        "W50": {
+          "off": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true
+            },
+            "usage": {
+              "input_tokens": 933283,
+              "output_tokens": 812,
+              "cached_input_tokens": 634752,
+              "reasoning_output_tokens": 291
+            },
+            "turns": 50
+          },
+          "on": {
+            "status": "graded",
+            "passed": true,
+            "checks": {
+              "fifty_native_turns": true,
+              "all_acknowledgements": true,
+              "final_historical_facts": true,
+              "evidence_provenance": true,
+              "explanation_present": true,
+              "complete_history": true,
+              "caller_owned_state_preserved": true,
+              "actual_cold_retrieval": true
+            },
+            "usage": {
+              "input_tokens": 842482,
+              "output_tokens": 859,
+              "cached_input_tokens": 613888,
+              "reasoning_output_tokens": 0
+            },
+            "turns": 50
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 9.729,
+              "output_tokens": -5.788
+            }
+          }
+        },
+        "L40": {
+          "off": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 898279,
+              "output_tokens": 622,
+              "cached_input_tokens": 466432,
+              "reasoning_output_tokens": 42
+            },
+            "resources": {
+              "model": "gpt-6-astra",
+              "condition": "off",
+              "turns": 41,
+              "task_wall_seconds": 608.635,
+              "caller_cpu_seconds": 1.498,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 53.48,
+              "local_client_max_rss_bytes": 214056960
+            }
+          },
+          "on": {
+            "status": "graded",
+            "checks": {
+              "actual_sequential_turn_count": true,
+              "caller_owned_state_preserved": true,
+              "acknowledgements": true,
+              "late_exact_answer": true,
+              "complete_history": true,
+              "actual_cold_retrieval": true
+            },
+            "passed": true,
+            "usage": {
+              "input_tokens": 680286,
+              "output_tokens": 642,
+              "cached_input_tokens": 457344,
+              "reasoning_output_tokens": 0
+            },
+            "resources": {
+              "model": "gpt-6-astra",
+              "condition": "on",
+              "turns": 41,
+              "task_wall_seconds": 537.028,
+              "caller_cpu_seconds": 1.049,
+              "archive_write_bytes": 686926,
+              "local_client_cpu_seconds": 55.68,
+              "local_client_max_rss_bytes": 223444992
+            }
+          },
+          "comparison": {
+            "observed_parity": true,
+            "reduction_pct": {
+              "input_tokens": 24.268,
+              "output_tokens": -3.215
+            }
+          }
+        }
+      },
+      "aggregate_native_usage": {
+        "off": {
+          "input_tokens": 1938334,
+          "output_tokens": 3447,
+          "cached_input_tokens": 1192448,
+          "reasoning_output_tokens": 374
+        },
+        "on": {
+          "input_tokens": 1606616,
+          "output_tokens": 3599,
+          "cached_input_tokens": 1142784,
+          "reasoning_output_tokens": 55
+        }
+      },
+      "aggregate_reduction_pct": {
+        "input_tokens": 17.114,
+        "output_tokens": -4.41,
+        "input_plus_output_unweighted": 17.075
+      },
+      "resources": {
+        "Q4": {
+          "off": {
+            "task_wall_seconds": 64.601,
+            "caller_cpu_seconds": 0.575,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.08,
+            "local_client_max_rss_bytes": 209747968
+          },
+          "on": {
+            "task_wall_seconds": 44.431,
+            "caller_cpu_seconds": 0.061,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 2.37,
+            "local_client_max_rss_bytes": 207175680
+          }
+        },
+        "A": {
+          "off": {
+            "task_wall_seconds": 55.082,
+            "caller_cpu_seconds": 0.064,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.5,
+            "local_client_max_rss_bytes": 224772096
+          },
+          "on": {
+            "task_wall_seconds": 51.524,
+            "caller_cpu_seconds": 0.059,
+            "archive_write_bytes": 0,
+            "local_client_cpu_seconds": 1.33,
+            "local_client_max_rss_bytes": 209567744
+          }
+        },
+        "W50": {
+          "off": {
+            "task_wall_seconds": 563.479,
+            "caller_cpu_seconds": 0.849,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 33.339999999999996,
+            "local_client_max_rss_bytes": 214663168
+          },
+          "on": {
+            "task_wall_seconds": 701.693,
+            "caller_cpu_seconds": 1.369,
+            "archive_write_bytes": 538169,
+            "local_client_cpu_seconds": 66.33,
+            "local_client_max_rss_bytes": 215203840
+          }
+        },
+        "L40": {
+          "off": {
+            "task_wall_seconds": 608.635,
+            "caller_cpu_seconds": 1.498,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 53.48,
+            "local_client_max_rss_bytes": 214056960
+          },
+          "on": {
+            "task_wall_seconds": 537.028,
+            "caller_cpu_seconds": 1.049,
+            "archive_write_bytes": 686926,
+            "local_client_cpu_seconds": 55.68,
+            "local_client_max_rss_bytes": 223444992
+          }
+        }
+      }
+    }
+  },
+  "scope": [
+    "Q4 explicit identifier mapping with fresh file-reference controls",
+    "A code repair and W50 use original same-model High off controls; candidate repeated on development fixtures",
+    "L40 has newly executed same-ownership controls; query first released at turn41",
+    "Fresh ephemeral native invocation each turn; external caller plus skill, not desktop persistent-session skill benchmark",
+    "No model-call bypass; same High effort and tools within pairs",
+    "No OS-enforced evaluator filesystem isolation; no future question included in earlier prompts",
+    "Single paired episodes per task/model: no general intelligence-equivalence or zero-risk inference"
+  ],
+  "all_models_scored_parity": true,
+  "all_models_input_and_output_reduced": false
+}

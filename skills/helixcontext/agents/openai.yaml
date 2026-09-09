@@ -1,0 +1,4 @@
+interface:
+  display_name: "Helix Context"
+  short_description: "Preserve evidence and reduce recurring task costs"
+  default_prompt: "Use $helixcontext to complete this task efficiently while preserving correctness and workflow."

@@ -2,7 +2,7 @@
 
 **HELIX: Hierarchical Evidence Loading and Intelligent eXecution.**
 
-Research toward the **maximum empirically safe compression frontier**, with capability, agentic execution and long-horizon workflow preservation first. **95% input/output savings is aspirational, not an absolute requirement.** The earlier separate 80% target is retained below as historical benchmark context. The current highest output reduction is 78.44% on an adaptively developed synthetic suite, with 80.39% input reduction in that run. This is not a universal no-loss claim or a finished skill release.
+Research toward the **maximum empirically safe compression frontier**, with capability, agentic execution and long-horizon workflow preservation first. **95% input/output savings is aspirational, not an absolute requirement.** The earlier separate 80% target is retained below as historical benchmark context. The current highest output reduction is 78.44% on an adaptively developed synthetic suite, with 80.39% input reduction in that run. This is historical exploratory evidence. The completed High-model V3 evaluation and its limits are in [FRONTIER_REPORT.md](FRONTIER_REPORT.md).
 
 ## Benchmark results
 
@@ -30,7 +30,7 @@ All generated model output, including tool arguments, is counted by the native r
 - In source-copy experiments, the model selects references to exact source entries. A deterministic caller renders them into complete answers; no hidden model generates the copied text. Every source row is eligible, not just correct answers. Raw model templates and rendered answers are both published.
 - Later experiments support compact lists/ranges, insertion of new code without regenerating unchanged code, and a short entrypoint to the same helper.
 
-Source-copy rendering requires an external caller. It is **not** automatic behavior of a desktop slash skill. It reduces native generated tokens, not the amount of information delivered in the rendered answer. No new skill version has been installed from these experiments. The existing local Caveman Astra installation is unchanged; the requested finished skill name is Helix Context.
+Source-copy rendering requires an external caller. It is **not** automatic behavior of a desktop slash skill. It reduces native generated tokens, not the amount of information delivered in the rendered answer. The V3 prose skill is now packaged as `skills/helixcontext` and installed locally as **Helix Context**, invoked with `/helixcontext`. Caveman Astra remains available for compatibility. The prose skill does not itself install the experimental caller middleware or promise fixed savings.
 
 The per-run skill catalog budget was 512 tokens; the runtime reported retaining all skills with shorter descriptions. Skill-discovery equivalence was not evaluated. No global configuration or model reasoning setting was reduced. The filesystem guard is best effort, not atomic compare-and-swap against uncooperative writers.
 
@@ -66,8 +66,12 @@ The current objective is specified in `results/research-contract.json`. Resident
 
 All three models recovered the decisive early evidence on the first 50-turn task and the delayed 20-turn Unicode/whitespace task. That did not make the policy efficient. Luna's 50-turn candidate used 2.39 times the input and 5.89 times the output of its control, and failed the strict acknowledgement-format check. Its 20-turn latent case used 2.76 times the input and 5.27 times the output. Sol and Astra also increased output on these long-horizon tasks. This version is rejected as a general efficiency policy.
 
-V3 removes duplicate caller-owned bookkeeping and loads the full skill only for substantive decisions. Its five-turn diagnostic passed exact acknowledgements and caller-file integrity for every model and arm, but small-task costs remained mixed. Its reasoning and code-repair outcomes pass so far; the stronger file-reference reasoning control is sometimes cheaper than Helix. The full 50-turn V3 and held-out 40-turn latent checks are running. No universal no-loss or fixed-percentage claim follows.
+V3 removes duplicate caller-owned bookkeeping and loads the full skill only for substantive decisions. Its five-turn diagnostic passed exact acknowledgements and caller-file integrity for every model and arm, but small-task costs remained mixed. Its reasoning and code-repair outcomes pass so far; the stronger file-reference reasoning control is sometimes cheaper than Helix. The full 50-turn V3 and held-out 40-turn latent checks are complete and pass all scored checks for all three models. Aggregate native input savings across Q4/A/W50/L40 are 25.28% Luna, 20.99% Sol and 17.11% Astra; output savings are 32.93%, 5.36% and -4.41%, respectively. See [the completed report](FRONTIER_REPORT.md) and `results/frontier-v3.json`. No universal no-loss or fixed-percentage claim follows.
 
 The runner uses **a fresh native invocation for every turn**, reconstructing released context through an external caller. This evaluates caller plus skill, not a stock desktop persistent-session slash skill. No native calls are skipped. V3 A/W comparisons explicitly reuse original same-model, same-task controls; its Q and L40 controls are newly run. Future events are omitted from prompts, but there is no OS-enforced filesystem isolation from evaluator files.
 
 [LongMemEval](https://arxiv.org/abs/2410.10813) motivates testing updates, temporal reasoning and abstention in addition to extraction. [Anthropic's context-engineering guidance](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) motivates selective retrieval and context management. Neither source establishes Helix's savings or parity. These synthetic delayed-relevance tests remain narrower than sustained dependent-action workflows.
+
+## Next extension
+
+Durable active-skill restoration after compaction and event-driven peer status are being developed separately. The next middleware candidate will archive raw command evidence before emitting typed compact packets, with exact retrieval and measured overhead. These extensions are not included in V3 model-performance claims.

@@ -1,0 +1,9 @@
+{
+  "reason": "Observed extra decoder generation for original JSON files and an invalid Git diff in non-Git workspace.",
+  "changes": [
+    "Label original file format explicitly",
+    "Report verified Git availability in caller preflight",
+    "Small skill wording change supporting those distinctions"
+  ],
+  "test_design": "Fresh paired Q3 record values and A2 reverse-tie apportionment task; originals retained; no hard token cap or reasoning/tool reduction."
+}

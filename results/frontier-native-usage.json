@@ -6580,6 +6580,1041 @@
       "nonzero_command_count": 0
     },
     {
+      "path": "iteration3/astra/L40/off/turn-38/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 23112,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.934,
+      "resident_prompt_proxy_tokens": 7727,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.92,
+        "system_cpu_seconds": 0.66,
+        "max_rss_bytes": 176848896,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "270727e775377b0b5148abb20bc369763547bd6690a8324ae36280e5ba3fd0e4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/off/turn-39/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 23207,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 21.342,
+      "resident_prompt_proxy_tokens": 7822,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.99,
+        "system_cpu_seconds": 0.77,
+        "max_rss_bytes": 197378048,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "25295a5962eedd5e3058881bfd9ad68a009d43009c83d1832f9de7827e42ab7e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/off/turn-40/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 23302,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 21.172,
+      "resident_prompt_proxy_tokens": 7917,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.97,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 214056960,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8b936561b67ed95361e5d2179525042e486eae98dd702097232ecefd23293eac",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/off/turn-41/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 47239,
+        "cached_input_tokens": 34816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 342,
+        "reasoning_output_tokens": 42
+      },
+      "elapsed_seconds": 31.317,
+      "resident_prompt_proxy_tokens": 8032,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.12,
+        "system_cpu_seconds": 0.8,
+        "max_rss_bytes": 208781312,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6db36146a4597d0d6058a3fa85d81d95416ec30fb62474eec4c4252cf23f9c88",
+      "command_count": 1,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-01/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19717,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.004,
+      "resident_prompt_proxy_tokens": 4332,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.42,
+        "system_cpu_seconds": 0.3,
+        "max_rss_bytes": 166019072,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d66b4e368a830e879bdd4bfaa7e954d44eda427ed038408e60e2ad68bc097d77",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-02/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.429,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.66,
+        "system_cpu_seconds": 0.38,
+        "max_rss_bytes": 174866432,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "749facedb8d52e2ccc09e3fb90e11904182f68da4fddf2b6e152ed37ab43780a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-03/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.396,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 176177152,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "af7d00b5776f6b4efeba9798bd95da1ef4f43b5efb506877fdb46db7da176e24",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-04/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.794,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 165642240,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a99889d4fe6ab98d794490d59e7513c0189b1b11446483d7adbe41ec1b7942d0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-05/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.837,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 168542208,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a813a94054f2a3c7d72ba23ceca9af3a6e09a9d015a6e070b1f130f5cc1bbb48",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-06/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.74,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 168443904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cf7d64ebeb7eeb9959db3612ea4a38738036cc49455bad11d7c93e509d5330b8",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-07/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.982,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.56,
+        "max_rss_bytes": 171704320,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ca342db18317486f997bab47a11cceaec8736f150ba6bd0467baca1f0460a59e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-08/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.964,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.61,
+        "max_rss_bytes": 176668672,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "31dd530faa68d66af274ac2a36286df1d89af53d21e149f943ccc2eb4bde3576",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-09/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.769,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 163659776,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "0bb64201510013b85988f78093398d5c3268810d48be7b25ad241d890e9fac40",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-10/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.127,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 175816704,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "4975a305eebae2d2a8b993797412bbc91f3d7434d3d7a05fbb44758dcc344860",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-11/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.363,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 178061312,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "17a83997f8d5d07452e6278145b4a80346cd940452c52beaa0ca25db02cb9aa4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-12/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.216,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 170491904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "43b6264114203857967c06a06e15234fa8f2ba585b38c772dd01542497908ace",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-13/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.618,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.49,
+        "max_rss_bytes": 167329792,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "55f962c8f184a3b78f9f343175ab3428bf2f50563adeea3af8b3e2723067a3cd",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-14/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.485,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.73,
+        "system_cpu_seconds": 0.38,
+        "max_rss_bytes": 176078848,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cd44206f7f2a8deeccee50d05271190faeafda0a74f3312cd508f5b897ba238d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-15/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.222,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.48,
+        "system_cpu_seconds": 0.31,
+        "max_rss_bytes": 168148992,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "e80e71f7841c47e6ee170909887fd3506b371d9c0d0eee7626d558e00528f9f3",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-16/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.882,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.78,
+        "system_cpu_seconds": 0.47,
+        "max_rss_bytes": 169869312,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a556bdee098fa8d25c806d91f2f656920cdc165192628b26d808f9f1a7469576",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-17/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.756,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.76,
+        "system_cpu_seconds": 0.46,
+        "max_rss_bytes": 182648832,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3ea523a26ba258ca50b577544843e134b1c0a940c8bfcd59023bceced5f3c0d8",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-18/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 6400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.167,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.68,
+        "max_rss_bytes": 175603712,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2de4f8f7bb2dc607b832526bc2660322d15ee8ff78507a3584f7cffd7c668e5a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-19/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.345,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.92,
+        "system_cpu_seconds": 0.68,
+        "max_rss_bytes": 177618944,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "33e2201d53e6b35c7eaaf3ea41791e27aad2a479917491f4502f4423eb1cd96f",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-20/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.217,
+      "resident_prompt_proxy_tokens": 397,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.03,
+        "system_cpu_seconds": 0.69,
+        "max_rss_bytes": 177389568,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "dacdb09a49bc463709ef44b73a04d76e9ab805c083325ae65db2e527232d16a5",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-21/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.441,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.46,
+        "max_rss_bytes": 179224576,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a0af3406bc0048d5c6168659d47a551bd4492aecbaaf47c1fa65cb9ff3d98a65",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-22/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.132,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 167428096,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "587eaa8575500c18740fc8dd9bc87ed8b708742ab499273a9e90aa97ab2c927b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-23/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.835,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.64,
+        "max_rss_bytes": 177700864,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9867f5199a3fb6db6482853701995a2a28515df209f0dc27384c040272891b1b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-24/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.488,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.82,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 168083456,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ec1af5bb96c224dd98fc96425918da030fa0762ab4c31558877784e929fea72d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-25/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 10496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.772,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 177422336,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "26ebd3b1eca6723dff5736fb6312e8df91b437745dea39a9414192022ad2c852",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-26/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.278,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 178487296,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "1c73af3a253ca17992d42fe25be612c02b7a9ec99c4dd41468b9038b5a891e31",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-27/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 16.64,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.01,
+        "system_cpu_seconds": 0.71,
+        "max_rss_bytes": 177389568,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3968589f6ffcc1cb6391b5d5fab16e51ad8e2eeb0bb44d8cc8f052e519abdba4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-28/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 10496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 15.14,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.77,
+        "max_rss_bytes": 167755776,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3ee16eba9490f53ec3ebb9a7b28cad289baef29349a9282ac6d1085a59acb6e1",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-29/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 25.934,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 173146112,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "61c59748c3c426c382b84431d95b2bb0e59efffd46fd9d32159c778e784e5395",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-30/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14152,
+        "cached_input_tokens": 6400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 17.038,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.69,
+        "system_cpu_seconds": 0.38,
+        "max_rss_bytes": 172310528,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "00fdee275378633dd5e092e477bc6428ee1240352614902aa4a9c5c7202fe6b3",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-31/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.456,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.76,
+        "system_cpu_seconds": 0.48,
+        "max_rss_bytes": 171229184,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a5a7655c39ab67d06a4aab8bc111ae13021409a0fda77e280176a8088d42f328",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-32/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.708,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 168968192,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "54a57be20ef013c0574cf5529cf59380adf8163289221761e89733b3975ec224",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-33/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.499,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.75,
+        "system_cpu_seconds": 0.43,
+        "max_rss_bytes": 164986880,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a0aeb9761782b928656a74bda29ce9d87d75e1ffe3099885c61816d78ed58017",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-34/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.815,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.71,
+        "system_cpu_seconds": 0.41,
+        "max_rss_bytes": 178044928,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "60ce3d47d1c4fb44ac8a66e2fd34a211655e5a3488367d8d516144eb253368d0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-35/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.54,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.71,
+        "system_cpu_seconds": 0.67,
+        "max_rss_bytes": 169181184,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3879454f8e02eab2b293d5a91d01900169f37b1da7ce9ef57bea9b3b825e9976",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-36/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.97,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.66,
+        "max_rss_bytes": 174456832,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2baca8cb180dcd47f4401d7085ee0eb5f65a96158d6c01cb2e9920750870c85a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-37/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.076,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.48,
+        "max_rss_bytes": 174571520,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "306fb086a277be76cbbcc3e90ae7620fc47952e9c24d5effb5607bad2de1678a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-38/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.998,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.56,
+        "system_cpu_seconds": 0.37,
+        "max_rss_bytes": 165855232,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6abb2995c28fed313a4e527b7cf75a552faa5df8f6f1782e916ee8ef8da6a5ed",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-39/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.782,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.53,
+        "max_rss_bytes": 176078848,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "22863e38ca2f4c7749940b4b0209935ab14d0cbd9e59c4578aec5a13668721b9",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-40/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15754,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.727,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.77,
+        "system_cpu_seconds": 0.46,
+        "max_rss_bytes": 176160768,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "07a06d5b5e1ad1dabe5982482fa0605982ef382ea66b0c123bfdfe30cbbe3332",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/L40/on/turn-41/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 57349,
+        "cached_input_tokens": 43392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 362,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 30.16,
+      "resident_prompt_proxy_tokens": 669,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.03,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 223444992,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c28c1c1737fa16b8cab405d3f06bceae9b844dd525e023abcab3c91fb3f97bdb",
+      "command_count": 2,
+      "nonzero_command_count": 0
+    },
+    {
       "path": "iteration3/astra/Q/off/turn-01/status.json",
       "model": "gpt-6-astra",
       "effort": "high",
@@ -7474,6 +8509,351 @@
       },
       "original_events_sha256": "aa9c2168d350d919a8d55bb76571f77baeff4151288a4ba5724f0f1c8dd7cc2b",
       "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-36/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.081,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.66,
+        "max_rss_bytes": 176701440,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "0f60d4b4041f1182091fcb102398f5ef882e91a64e7311314cd96a507d5c6ce6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-37/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.377,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 175898624,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "7e1664a9781beb171fc750ae1acd8ecdef7f57cb8494c7a8480652d2df6e8481",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-38/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.604,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 176029696,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8729263d71c24255e27d091f870942ad8d70b4aeb3f288bf38a85d8f0ca2c86b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-39/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.845,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 177242112,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "eb762685067753862618529f613cdba0662eff75575f4abc7971a6117fb5cb1e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-40/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14180,
+        "cached_input_tokens": 10496,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.437,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.56,
+        "max_rss_bytes": 176914432,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "96134bfe255e8a827e2978a75e58951d719e8df9d16d5f9e1ee86e69db04e885",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-41/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.097,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.54,
+        "max_rss_bytes": 168345600,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "302097826c276b6dbd4d366f1df1cbecfe0661aa1a914ebf26f88ecc93fc94d3",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-42/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 18.141,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.77,
+        "system_cpu_seconds": 0.43,
+        "max_rss_bytes": 174456832,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "f821379aa9c5aeca3fe85de3059ac04de34ae97d56c8e2fd026ff585c94c3e07",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-43/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 15.322,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.42,
+        "system_cpu_seconds": 0.31,
+        "max_rss_bytes": 175702016,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "76f1f114e70da78e5eafb19ecfba21f76a981c3ce6513ec81ddd3f03ab381609",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-44/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15781,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.098,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 175194112,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cd2ef2ac59890a890385cc4ae15e922e09f570e07b2b57804361978d72bdf993",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-45/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15781,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.195,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.47,
+        "max_rss_bytes": 167919616,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d706c684c78583f16625ef929070b1928b4464445e4cd8336853767dd868ebf6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-46/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15781,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.468,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 167641088,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "7ef6a4292619a593206f3cdb0e858cd43f42d44061696da3e9cde7ee330152b4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-47/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.489,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.47,
+        "max_rss_bytes": 175063040,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3f6f717175658f4184c9b2b6ccb6d66bff3a1a20a3af55ee9c7c5ea023ee0d33",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-48/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15781,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.907,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 178962432,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3c1a7a94f0c34174311b255ba7c8c4203e3bd304e668521e493c0c46cbce3a56",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-49/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 15782,
+        "cached_input_tokens": 11520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.68,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 175276032,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6f5603dd986ab2b3fb1b9cd17e74fe0b8b6c5ccb8cfd3a9228b03e3963e628d0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/astra/W/on/turn-50/status.json",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 72335,
+        "cached_input_tokens": 55552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 516,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 37.837,
+      "resident_prompt_proxy_tokens": 661,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.33,
+        "system_cpu_seconds": 0.95,
+        "max_rss_bytes": 215203840,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c4532230cf1a1d38d1f7ef8f61db71c185e9a7c827d9088526f77385563eb41e",
+      "command_count": 3,
       "nonzero_command_count": 0
     },
     {
@@ -8627,6 +10007,995 @@
       "nonzero_command_count": 0
     },
     {
+      "path": "iteration3/luna/L40/off/turn-40/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20844,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38,
+        "reasoning_output_tokens": 29
+      },
+      "elapsed_seconds": 11.97,
+      "resident_prompt_proxy_tokens": 7917,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 176095232,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "50516a9b6481ece3f7f85c10b2520514969fe83e592cac54ed1eb5ae2a19abfd",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/off/turn-41/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 92611,
+        "cached_input_tokens": 74752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1633,
+        "reasoning_output_tokens": 1112
+      },
+      "elapsed_seconds": 49.353,
+      "resident_prompt_proxy_tokens": 8032,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.57,
+        "system_cpu_seconds": 1.02,
+        "max_rss_bytes": 207126528,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b7b837c2abc8abe161c0fb20e6650b24dda7b4e45b3edcfc9ade4215013ab61e",
+      "command_count": 3,
+      "nonzero_command_count": 1
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-01/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 17259,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 37
+      },
+      "elapsed_seconds": 14.348,
+      "resident_prompt_proxy_tokens": 4332,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.82,
+        "system_cpu_seconds": 0.51,
+        "max_rss_bytes": 167690240,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "30e5fa69562e61c08566a9f80db4331fe517ec269922a1eaef6a791de18a6f2d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-02/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 48,
+        "reasoning_output_tokens": 39
+      },
+      "elapsed_seconds": 12.203,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.44,
+        "system_cpu_seconds": 0.28,
+        "max_rss_bytes": 173015040,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2180155517589ac78c7e5484f9ac83a7664f285ca99cc9e870313038c798010a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-03/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29,
+        "reasoning_output_tokens": 20
+      },
+      "elapsed_seconds": 15.585,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.44,
+        "system_cpu_seconds": 0.35,
+        "max_rss_bytes": 178372608,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "df54d33305999cd7533bc9255abbfebbfb71139ca08e4fc4626b44da9a39106c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-04/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 39,
+        "reasoning_output_tokens": 30
+      },
+      "elapsed_seconds": 10.609,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 167198720,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "374714b8eab39ea0948becaf28fc687a26e7bb29881c144cf8d8b908cf6c4c50",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-05/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43,
+        "reasoning_output_tokens": 34
+      },
+      "elapsed_seconds": 15.169,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.91,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 176111616,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "327e24d8648c9e657e88d9967fd2fbb2024d619b0a9fc0e4f52fed62d63f30d5",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-06/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 12.099,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.61,
+        "max_rss_bytes": 162693120,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "f7e5efd81c3daec4c476de68e57ecae48b52667675a294dec033ee6f541a8945",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-07/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 42,
+        "reasoning_output_tokens": 33
+      },
+      "elapsed_seconds": 11.067,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 165789696,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cf78645fda62a9530c4a9829300bb2ca97935a854d3e0ab7c513978374224743",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-08/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63,
+        "reasoning_output_tokens": 54
+      },
+      "elapsed_seconds": 11.158,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 165347328,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "5e4fb09476631fea1456933764f7db6889492101f271dc497258d9e9e8232ba0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-09/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 60,
+        "reasoning_output_tokens": 51
+      },
+      "elapsed_seconds": 14.078,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 175882240,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "bd02ccb56afb968e484bcf392b31572ecae61b77f2ab92807cc8cb12cc148e90",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-10/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33,
+        "reasoning_output_tokens": 24
+      },
+      "elapsed_seconds": 14.093,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 176455680,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c2e5a843523d368faa11cebca394d68da48afc0825823be4ef9f575a05db6be0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-11/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45,
+        "reasoning_output_tokens": 36
+      },
+      "elapsed_seconds": 10.183,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 165920768,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "477d17d2de7f3630e34b5981c664d6c5b79529b884664abe0acffa8459e41a6f",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-12/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 9.87,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 176832512,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "f54ec95af69fa07d7f2ca5c00a2e6fd2f6ef9d503b3942ca04239821a86e9b82",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-13/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 37
+      },
+      "elapsed_seconds": 12.535,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 167444480,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9efa8f06ae4722eac03e9eed6b72b1b59e107a5046ccef10ecf50daa7b5c0d7e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-14/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 31
+      },
+      "elapsed_seconds": 10.349,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 173916160,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b7fdd5e725e9e6c64455708bed0f65b56dfa372d52571cc1d69b6083c0c90ff0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-15/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 11.501,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.57,
+        "system_cpu_seconds": 0.36,
+        "max_rss_bytes": 166395904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "f4ea848b0f8d69646ded38938ef3f0497fca2a9ee1eb5d84371cfa6e74ca37f4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-16/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 43
+      },
+      "elapsed_seconds": 9.124,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.46,
+        "system_cpu_seconds": 0.32,
+        "max_rss_bytes": 167231488,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "bccc41f87121d5495ad446657992fb5c3d7e839d2543814a6e552ae268648cbd",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-17/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13088,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 42,
+        "reasoning_output_tokens": 33
+      },
+      "elapsed_seconds": 10.859,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.62,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 175390720,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6f973e68f0f0e6d1b2ab5a449adb991d34ef64f456337d3a738389bae0f7b89b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-18/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43,
+        "reasoning_output_tokens": 34
+      },
+      "elapsed_seconds": 9.521,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.72,
+        "system_cpu_seconds": 0.46,
+        "max_rss_bytes": 168378368,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "dcf3fdfaa119f82e72e4f9679a788c869730daaf9d6a95440dd4da946c37a063",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-19/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 42,
+        "reasoning_output_tokens": 33
+      },
+      "elapsed_seconds": 10.5,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.76,
+        "system_cpu_seconds": 0.54,
+        "max_rss_bytes": 175702016,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2bcd25a391dd4189e9aff0ec095d4906c040d844a3c1506386e89a36582fe204",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-20/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 37
+      },
+      "elapsed_seconds": 13.933,
+      "resident_prompt_proxy_tokens": 397,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.94,
+        "system_cpu_seconds": 0.66,
+        "max_rss_bytes": 174587904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8304da993e5ca4c393d987e7cfb2e670456e6a0ab9d5413c55ebba5852247555",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-21/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 59,
+        "reasoning_output_tokens": 50
+      },
+      "elapsed_seconds": 10.595,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 175587328,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ea935be4a32f0105267fa7a3e50bc6733530168965c7c40f05c34ce89b2bf80d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-22/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 33,
+        "reasoning_output_tokens": 24
+      },
+      "elapsed_seconds": 13.154,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.93,
+        "system_cpu_seconds": 0.64,
+        "max_rss_bytes": 176259072,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a9c507dc7e8efede1fa76c8027cd96971611b1daa6a9ed1e8f326a898c1bfbc4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-23/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 57,
+        "reasoning_output_tokens": 48
+      },
+      "elapsed_seconds": 12.02,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 167559168,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "76ffc5f983a63f896f0092e7b9c9306f8300ee6025d1ad5decfa08fd85d314df",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-24/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 45,
+        "reasoning_output_tokens": 36
+      },
+      "elapsed_seconds": 11.986,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.64,
+        "max_rss_bytes": 175718400,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "bac4ecc45ff38345587577701456626642e9b163e6ac28ded0fda6f776668c69",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-25/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43,
+        "reasoning_output_tokens": 34
+      },
+      "elapsed_seconds": 11.958,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 174686208,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8cdc7c5aa0ba085cbd77746d53d11289ad941c0f88f8563ad7538e052978dc77",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-26/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 46,
+        "reasoning_output_tokens": 37
+      },
+      "elapsed_seconds": 12.37,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 175882240,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d508d67544d9b7a68ee7744ef0253589b94d08eccd7789fbbd323c6b5b3433b3",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-27/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50,
+        "reasoning_output_tokens": 41
+      },
+      "elapsed_seconds": 8.627,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.82,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 175063040,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d6b02a49f7d7ba4f0bb528e750cfffd6c2fd7c5f00c21bc207bb7d6e8ef6278b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-28/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 50,
+        "reasoning_output_tokens": 41
+      },
+      "elapsed_seconds": 11.812,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.68,
+        "max_rss_bytes": 172933120,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8482b6c881967d31d4b93aad79151c2ab9bed8c4755e0cc0318ae7d7ed6b63af",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-29/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13470,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 31
+      },
+      "elapsed_seconds": 22.72,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.98,
+        "system_cpu_seconds": 0.86,
+        "max_rss_bytes": 177799168,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6c43025ce46cf16509bc051587696dce8b242ab28720648e9f535191c3b17194",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-30/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 14.119,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.66,
+        "max_rss_bytes": 178274304,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9b8abaa7e7425ca47f7f6713e1cac3c069c1c172cb3262d081627a9a4ae97626",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-31/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49,
+        "reasoning_output_tokens": 40
+      },
+      "elapsed_seconds": 23.337,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 166789120,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "64b22a16c7cfbfcfca639bdefc4887d75a16421d690ec4b831b0c4647aaa403d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-32/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 60,
+        "reasoning_output_tokens": 51
+      },
+      "elapsed_seconds": 16.454,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 177373184,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9ecec2a1be256c24c9417a84cfb0596982dbbde2eec0c67b014f7b24590d4f08",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-33/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38,
+        "reasoning_output_tokens": 29
+      },
+      "elapsed_seconds": 12.386,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.52,
+        "max_rss_bytes": 169820160,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8fcbf68f4e1243a5259cd87ca231604e2092c804ae4fc9d05aa739b9995fd480",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-34/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29,
+        "reasoning_output_tokens": 20
+      },
+      "elapsed_seconds": 12.256,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 175505408,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "56e63429473525eb0eac05270b5f277ce5e45f93a208fbf24eeba35af1896c56",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-35/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36,
+        "reasoning_output_tokens": 27
+      },
+      "elapsed_seconds": 11.845,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.77,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 167116800,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "63190f6e3a5574a559e74c1166e865e1cb4e199b752cc16c98b61478026b854d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-36/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 47,
+        "reasoning_output_tokens": 38
+      },
+      "elapsed_seconds": 11.575,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.49,
+        "system_cpu_seconds": 0.36,
+        "max_rss_bytes": 175407104,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "5c86f76474cc006b45be84468685bfe7916d4189ae112d1b4ca215a7aaf2185d",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-37/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 48,
+        "reasoning_output_tokens": 39
+      },
+      "elapsed_seconds": 15.671,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.73,
+        "system_cpu_seconds": 0.37,
+        "max_rss_bytes": 169017344,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "0950746bc27506e8f537fd3017e3fdc110472223daa7f840b363ed2f1f1d48bb",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-38/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 8.932,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.53,
+        "max_rss_bytes": 175505408,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9f5281c2467f1903b0769324759170fdeaeb4b79cc9672652d320514dabc5881",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-39/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13088,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 40,
+        "reasoning_output_tokens": 31
+      },
+      "elapsed_seconds": 10.123,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.61,
+        "max_rss_bytes": 174735360,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "51a22e928e208038b6375bc2ad902b2d2c6aafa0d36b98353768c9a6df4e3aa0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-40/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13296,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 47,
+        "reasoning_output_tokens": 38
+      },
+      "elapsed_seconds": 14.772,
+      "resident_prompt_proxy_tokens": 369,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.8,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 174587904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "79aa8c7f64e4298b1b2f3d49563d28d9fc2cabaa0035ca5a5fa4ec67ffb8717e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/L40/on/turn-41/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 79688,
+        "cached_input_tokens": 63232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1129,
+        "reasoning_output_tokens": 367
+      },
+      "elapsed_seconds": 39.643,
+      "resident_prompt_proxy_tokens": 669,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.45,
+        "system_cpu_seconds": 0.88,
+        "max_rss_bytes": 221446144,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a20ae92ff942827a51931896e7bdf87fbf21814d62af8ba517be9be1f5d963d6",
+      "command_count": 4,
+      "nonzero_command_count": 1
+    },
+    {
       "path": "iteration3/luna/Q/off/turn-01/status.json",
       "model": "gpt-5.6-luna",
       "effort": "high",
@@ -9593,6 +11962,282 @@
       "nonzero_command_count": 0
     },
     {
+      "path": "iteration3/luna/W/on/turn-39/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26,
+        "reasoning_output_tokens": 17
+      },
+      "elapsed_seconds": 11.822,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.91,
+        "system_cpu_seconds": 0.64,
+        "max_rss_bytes": 171147264,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c72e4b41d61742c0c8a80db72e4dac45cde71fc1f12136b136cd6a5635fb4f7c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-40/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 35,
+        "reasoning_output_tokens": 26
+      },
+      "elapsed_seconds": 12.519,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.93,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 174702592,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2510ccc4ce027e9e5400053a18ea654e5e616ff4c133db120f540f026adfe7e7",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-41/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23,
+        "reasoning_output_tokens": 14
+      },
+      "elapsed_seconds": 14.211,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 166395904,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8cac9f546c529d43e5052990966d41b4641b7b054f04f7cf2a8d17bf826f4660",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-42/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 52,
+        "reasoning_output_tokens": 43
+      },
+      "elapsed_seconds": 14.521,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.91,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 180240384,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9bc9cfdf906e3054003a92b0fa715f304f48f060953939ee59f375bf109b16fa",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-43/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53,
+        "reasoning_output_tokens": 44
+      },
+      "elapsed_seconds": 14.121,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 168148992,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "e73cb7a3dfa92e7313e452a67af9fbdf8001d0cd53adade210854884891c06bc",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-44/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13323,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 51,
+        "reasoning_output_tokens": 42
+      },
+      "elapsed_seconds": 14.321,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.75,
+        "system_cpu_seconds": 0.46,
+        "max_rss_bytes": 174276608,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8c3fad7fa7de0987d82890dccd0836553ecfe46391ddd0d54e73658824a9f5ff",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-45/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13323,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 36,
+        "reasoning_output_tokens": 27
+      },
+      "elapsed_seconds": 13.022,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.47,
+        "system_cpu_seconds": 0.32,
+        "max_rss_bytes": 177438720,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b0abfa827e618726b32057f4555c1ea10b442a7a8ae5eab33d0e55649a18d54e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-46/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13323,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41,
+        "reasoning_output_tokens": 32
+      },
+      "elapsed_seconds": 13.251,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.62,
+        "system_cpu_seconds": 0.34,
+        "max_rss_bytes": 167591936,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b45e2d4bc06a1ac7ae58145a8705d4bfd7d90cbf3ab47d7854982d162cbdf08a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-47/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43,
+        "reasoning_output_tokens": 34
+      },
+      "elapsed_seconds": 12.726,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 177782784,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "fa17aa34f025779fa3ab3b8e52e3de28b391b153df6ce05ba88aeb6c0225b791",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-48/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13323,
+        "cached_input_tokens": 13056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 44,
+        "reasoning_output_tokens": 35
+      },
+      "elapsed_seconds": 11.122,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.82,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 175194112,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "66e30735ab9b2031e8eebc9ed0630ccf8199c18789e054a6c6ce0528e6221b3c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-49/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 13324,
+        "cached_input_tokens": 8960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 39,
+        "reasoning_output_tokens": 30
+      },
+      "elapsed_seconds": 11.04,
+      "resident_prompt_proxy_tokens": 390,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.64,
+        "max_rss_bytes": 172687360,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cd0725ce84bb1d646bad6ab62d3ede107e975da5a4c28f24bc2c115bf9505937",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/luna/W/on/turn-50/status.json",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 58003,
+        "cached_input_tokens": 45056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1260,
+        "reasoning_output_tokens": 723
+      },
+      "elapsed_seconds": 39.2,
+      "resident_prompt_proxy_tokens": 661,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.28,
+        "system_cpu_seconds": 0.89,
+        "max_rss_bytes": 220053504,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "899f8c1b05d5b8fa38ff20c1531b43334c67b0d4c8c681dfd876b6d7badc4597",
+      "command_count": 3,
+      "nonzero_command_count": 0
+    },
+    {
       "path": "iteration3/luna/probe/off/turn-01/status.json",
       "model": "gpt-5.6-luna",
       "effort": "high",
@@ -9842,6 +12487,949 @@
         "source": "macOS time -l; local native client and descendants, not server compute"
       },
       "original_events_sha256": "1be02dd932068e6288626d99fd059935354e59ab158b0090536650796b466756",
+      "command_count": 2,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-01/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18675,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.409,
+      "resident_prompt_proxy_tokens": 4183,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.79,
+        "system_cpu_seconds": 0.53,
+        "max_rss_bytes": 161398784,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "5af2d283defc392bfd8217f461bf3e1cc046ca6771fe294d64b03401055360cb",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-02/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18770,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.039,
+      "resident_prompt_proxy_tokens": 4278,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.47,
+        "max_rss_bytes": 175620096,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2b6a95468ac92bdb23c41b538c9aa52c482411e215e7dcae2b1613f59ef435b9",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-03/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18865,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 16.54,
+      "resident_prompt_proxy_tokens": 4373,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.48,
+        "system_cpu_seconds": 0.35,
+        "max_rss_bytes": 166789120,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d4eb3dfc7e321e731d5aa112ac1c4c4ab0c074160bf7e7303747c46bd7a89d20",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-04/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18960,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 15.307,
+      "resident_prompt_proxy_tokens": 4468,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.45,
+        "system_cpu_seconds": 0.35,
+        "max_rss_bytes": 174014464,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a9d2fd54de9f8cf56028dfb6d391ec0423bd83bd46b56a1cef1f0948ea5d703c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-05/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19055,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.926,
+      "resident_prompt_proxy_tokens": 4563,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.54,
+        "max_rss_bytes": 176095232,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c45ff43ae56aaf54dd585be4e572ff2970e808d4dd9062b19281130487b3f4d6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-06/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19150,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.018,
+      "resident_prompt_proxy_tokens": 4658,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 174981120,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3c7b480c9f5c211c616c4da219a2be58b905d57584e42df6d62461bbdebada8f",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-07/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19245,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.294,
+      "resident_prompt_proxy_tokens": 4753,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 167460864,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9755ce0d11f2ae47054c10c71e1cf997120e443c789dfed2b991c6b0322b9713",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-08/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19340,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.538,
+      "resident_prompt_proxy_tokens": 4848,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 167772160,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "1eb89042992ab636ad3901c84d52855096891ec34af3fcc4990c0f8a3331c592",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-09/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19435,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.349,
+      "resident_prompt_proxy_tokens": 4943,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 173391872,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "548cefcde21e51095151dad30f9fc5aa039149b0f3907fa154cbbbd63e29e03e",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-10/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19530,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.035,
+      "resident_prompt_proxy_tokens": 5038,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 176324608,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "75cb9d651c5021581e4bb175eed87c357f70b7a354dca212fdef88aa28904195",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-11/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19625,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.49,
+      "resident_prompt_proxy_tokens": 5133,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.57,
+        "max_rss_bytes": 176013312,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "4724d3d6708b62c097434f4ee7360e4d7727cd46f32d9733bf86595c4cc6e729",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-12/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19720,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.993,
+      "resident_prompt_proxy_tokens": 5228,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.53,
+        "max_rss_bytes": 177340416,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6ce675a79abe17b6913c0a6e563490428eee41f222fe00f37481934c55b080c0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-13/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19815,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.033,
+      "resident_prompt_proxy_tokens": 5323,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.76,
+        "system_cpu_seconds": 0.44,
+        "max_rss_bytes": 174227456,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "1d938da714aff3e8ac2e813cc757d13008108c3df7d023f2cd0e63d3c7324633",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-14/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19910,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.424,
+      "resident_prompt_proxy_tokens": 5418,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.61,
+        "max_rss_bytes": 175341568,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ea5825406efe2eaaa888574defd8ea9ca79283569c0351bce9a4b7f87db5e4c1",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-15/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18440,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.291,
+      "resident_prompt_proxy_tokens": 5513,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.55,
+        "max_rss_bytes": 175849472,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "fa559817c89c33fb08b914b1c7c2ff867432d849fe76cf8f5727b5354a3d3aca",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-16/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20100,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.047,
+      "resident_prompt_proxy_tokens": 5608,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.62,
+        "system_cpu_seconds": 0.51,
+        "max_rss_bytes": 174669824,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "2af3ee94a20da9db295ed9362d4e0e25a55fb2dfed41f5a28943cd148f261375",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-17/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20195,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.379,
+      "resident_prompt_proxy_tokens": 5703,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.74,
+        "system_cpu_seconds": 0.4,
+        "max_rss_bytes": 170868736,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "225dfef512eebaff5427464bc6edfd67f4b421e8870d57e38a3f6f88110834e1",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-18/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18725,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 8.343,
+      "resident_prompt_proxy_tokens": 5798,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.53,
+        "system_cpu_seconds": 0.34,
+        "max_rss_bytes": 178634752,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ef63588fbdb2beaa83c4980a456a1cc2ff267c176199ecb138f2d16a074566fc",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-19/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20385,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.007,
+      "resident_prompt_proxy_tokens": 5893,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.62,
+        "system_cpu_seconds": 0.35,
+        "max_rss_bytes": 168640512,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b79fe3aedd265f4600883aea92ed9e3c60d93647fb742834fcc3515ab26a72fe",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-20/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20508,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.019,
+      "resident_prompt_proxy_tokens": 6016,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 182255616,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8ce442bf655f7a0e35fab284e58459573b693e04c42bb3bd0e954940e75366a5",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-21/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20603,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.063,
+      "resident_prompt_proxy_tokens": 6111,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.8,
+        "system_cpu_seconds": 0.48,
+        "max_rss_bytes": 176750592,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "7bb4263e373fecab208bbb7be05836a231fdb6df07bb6bade73b76a1e772664b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-22/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20698,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.857,
+      "resident_prompt_proxy_tokens": 6206,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.92,
+        "system_cpu_seconds": 0.52,
+        "max_rss_bytes": 175996928,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "80b5ad181b5bbbe69be32cd58fe87e5d00262c47adf7c00a2177c37388784968",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-23/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20793,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.253,
+      "resident_prompt_proxy_tokens": 6301,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.95,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 173604864,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "80545ab0cc4964061cabe57811e935b0bb980c5ffb4b582b7259ec1d2adecaac",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-24/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.818,
+      "resident_prompt_proxy_tokens": 6396,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 177504256,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "ff86da7c9249aab5ad738ad346e8c76ced7badd1e7edc97bc9f1a6e760b8e273",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-25/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20983,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.92,
+      "resident_prompt_proxy_tokens": 6491,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.71,
+        "max_rss_bytes": 179273728,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "06cb501d09edaf2e82daa5d4adf1f1373924ecb5398fa58f0097393713c01730",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-26/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19513,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.477,
+      "resident_prompt_proxy_tokens": 6586,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 168050688,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "343adebb1943f73a23be59be1b913b5fcdf9e8efb6d168eab0f7ec679f877875",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-27/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 21173,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.639,
+      "resident_prompt_proxy_tokens": 6681,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.85,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 169279488,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "13263e98cc223e4861fe044320b271b3306027b769905060c55641ec92028739",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-28/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19703,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.135,
+      "resident_prompt_proxy_tokens": 6776,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.88,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 166150144,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "cf2b4c2abf3ff56a93fb2099ed36e8bd8f038e4375434a972b6e2581eb3a9e1c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-29/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 21363,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.622,
+      "resident_prompt_proxy_tokens": 6871,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.49,
+        "max_rss_bytes": 170737664,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "11451b304824de4691628898d907a2a8f1458f152a0e83eaf8f99d24cd93c4ee",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-30/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19893,
+        "cached_input_tokens": 9600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 17.472,
+      "resident_prompt_proxy_tokens": 6966,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.0,
+        "system_cpu_seconds": 0.77,
+        "max_rss_bytes": 177913856,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "e3e3d1791dfd8c172d5a7f4e2690c3e19fcc1f9447a69a6967ad036bce4dea30",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-31/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19988,
+        "cached_input_tokens": 6016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 17.152,
+      "resident_prompt_proxy_tokens": 7061,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.92,
+        "system_cpu_seconds": 0.71,
+        "max_rss_bytes": 168263680,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "8e4e1e638724923de825457860802563baaa9c3c9d96a28f00576750f8224dd0",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-32/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 19900,
+        "cached_input_tokens": 9600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 25.124,
+      "resident_prompt_proxy_tokens": 7156,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.91,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 176390144,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a5aef161501d3d584ed633e21e22321f6e57388a0142d0f291f618c25f3a7db2",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-33/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20178,
+        "cached_input_tokens": 9600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 16.899,
+      "resident_prompt_proxy_tokens": 7251,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.52,
+        "system_cpu_seconds": 0.39,
+        "max_rss_bytes": 169984000,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "a3567b365a3d15736de1f96cf52945c305bcbf2c0bfeb6264dd6bad6f52ceadf",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-34/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20273,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.5,
+      "resident_prompt_proxy_tokens": 7346,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.72,
+        "system_cpu_seconds": 0.38,
+        "max_rss_bytes": 175570944,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d2176e730bc022cc9412ea2db6b06e755aa9254b2f2a104d4a610565978a1188",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-35/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20368,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.919,
+      "resident_prompt_proxy_tokens": 7441,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.8,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 176373760,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "c53def364eea7dcb901905f13566d27b41647dbbba7e39f4938efa759aadf719",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-36/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 20463,
+        "cached_input_tokens": 9600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.908,
+      "resident_prompt_proxy_tokens": 7536,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.68,
+        "system_cpu_seconds": 0.44,
+        "max_rss_bytes": 166903808,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "79b972b659e79c680004fba6da2aaf625b9ddd3f137aa0704b7495cb7c44c5e6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-37/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 22123,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.655,
+      "resident_prompt_proxy_tokens": 7631,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.74,
+        "system_cpu_seconds": 0.42,
+        "max_rss_bytes": 169885696,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "0007f6453969bd859f8c7d00ebfcee8257fe1a52fcfdeeb05aeebe435c855a08",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-38/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 22218,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 15.115,
+      "resident_prompt_proxy_tokens": 7726,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.5,
+        "system_cpu_seconds": 0.33,
+        "max_rss_bytes": 176586752,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "93d4577489f0c3a2ecd208a7dc8916ee80b6de0c50029014b40767a1e606403a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-39/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 22313,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.09,
+      "resident_prompt_proxy_tokens": 7821,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 175013888,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b83b9beaba27cdc2009ebbc4b639d76a0da3a2312ba1fa450dd1176693390b81",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-40/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 22408,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 9.453,
+      "resident_prompt_proxy_tokens": 7916,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.69,
+        "system_cpu_seconds": 0.37,
+        "max_rss_bytes": 178143232,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "08ead50f03da08d407497e36c2e53b8fdf26eed54dbfa5a74bf62f4d70d7d8f7",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/off/turn-41/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 76520,
+        "cached_input_tokens": 43648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 668,
+        "reasoning_output_tokens": 167
+      },
+      "elapsed_seconds": 39.305,
+      "resident_prompt_proxy_tokens": 8031,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.14,
+        "system_cpu_seconds": 0.69,
+        "max_rss_bytes": 213008384,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6146ebc8fcb82dbb71e534707f24321ad1e5fb4b7be91d875f846c7db2b724d1",
       "command_count": 2,
       "nonzero_command_count": 0
     },
@@ -10743,6 +14331,52 @@
       "nonzero_command_count": 0
     },
     {
+      "path": "iteration3/sol/L40/on/turn-40/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14860,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.583,
+      "resident_prompt_proxy_tokens": 368,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.94,
+        "system_cpu_seconds": 0.69,
+        "max_rss_bytes": 175767552,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "544a3103614232aafc1a25f440bb5ddae53fdbf709a003ac1a51de75efe3f93b",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/L40/on/turn-41/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 54358,
+        "cached_input_tokens": 36224,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 733,
+        "reasoning_output_tokens": 313
+      },
+      "elapsed_seconds": 45.44,
+      "resident_prompt_proxy_tokens": 668,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.29,
+        "system_cpu_seconds": 0.95,
+        "max_rss_bytes": 211959808,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d7ccd40fa50f5911c1dcc4cd08374741dd9d88098b9dc053f2ec0c0bb10ee63c",
+      "command_count": 2,
+      "nonzero_command_count": 0
+    },
+    {
       "path": "iteration3/sol/Q/off/turn-01/status.json",
       "model": "gpt-5.6-sol",
       "effort": "high",
@@ -11591,6 +15225,397 @@
       },
       "original_events_sha256": "b6223986895f32ad4ce22290717e239cecf7c8f94105f90fc3a09f3e2e7aaa78",
       "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-34/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.029,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.65,
+        "max_rss_bytes": 168181760,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "5e222dc7ac24b6168b53b9fc0b9c9bd2c11f6fbc3cf09d2d0056e331358c68c4",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-35/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14887,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.835,
+      "resident_prompt_proxy_tokens": 388,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 174424064,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "fd3b1051d8bfd76ac0fc693e7495a4899428dc0d16f26c4ea90f1b2d0ed54be5",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-36/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.263,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 168411136,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "136817ac676d52d5cffedce267130e87f841e73b0e14edfcb30be8bf24d7780a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-37/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.889,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 176193536,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "d2834dbd5af268dd1e15e3268680a9539a67ea9cd8c1377421513cbdd4dca038",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-38/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.347,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.89,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 177111040,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "db6304daf965d1f5d98f5785206d4f92ac48cb5030b06b0972d1d3e5285328ad",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-39/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.318,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.81,
+        "system_cpu_seconds": 0.52,
+        "max_rss_bytes": 176390144,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "63ed70c5e6fd5360ccbba3fb9c9c478c4a3bf84e3469719dbb453c4fee774e40",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-40/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 14.511,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.5,
+        "system_cpu_seconds": 0.28,
+        "max_rss_bytes": 178536448,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "4087e2df6ab1fad250c1d687eda2165cdde4c58c85805f3aa66c3b1b94325ce6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-41/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.836,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.51,
+        "system_cpu_seconds": 0.33,
+        "max_rss_bytes": 168001536,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "03e158928b01d5d86d757f932270c28d3f88bbef2ca2784bb06fdeb08ac8a655",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-42/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.399,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.83,
+        "system_cpu_seconds": 0.54,
+        "max_rss_bytes": 174030848,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "4c61a2cc8a5744405a8d380f859c0d3e16570e6aebaf7520b38bdf5c96a2124c",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-43/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.81,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.54,
+        "max_rss_bytes": 167215104,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "6223916cc7986d7313f5aa013f78c576e8489de2e61aac753e1704147976d3f6",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-44/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14887,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 11.545,
+      "resident_prompt_proxy_tokens": 388,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.84,
+        "system_cpu_seconds": 0.6,
+        "max_rss_bytes": 164167680,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "965f6b5dd2349ec095835a2fe51d1dfb30355eb6e152a46732f0759b0b1e94aa",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-45/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14887,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.345,
+      "resident_prompt_proxy_tokens": 388,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.58,
+        "max_rss_bytes": 175915008,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "3a0e5a5524fe4726590387d7d38fd23e251db99a3493415226e9b19f05e156af",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-46/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14887,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 13.506,
+      "resident_prompt_proxy_tokens": 388,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.87,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 167641088,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "9b0baf4e451ceeedebd3569616a5f4a7557b937d0c56a90c895e451f3d888237",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-47/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.274,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.86,
+        "system_cpu_seconds": 0.62,
+        "max_rss_bytes": 166264832,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "b5db6e97342469c25288d9ad62146d45ebe6eb1ac1861fd6f28b7811097a1c92",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-48/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14887,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 12.455,
+      "resident_prompt_proxy_tokens": 388,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.91,
+        "system_cpu_seconds": 0.63,
+        "max_rss_bytes": 176455680,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "39445a2a5cbf99bd100ecec7a855386ffb8230e50551be3e5089ba9a0f41d9ed",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-49/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 14888,
+        "cached_input_tokens": 10624,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7,
+        "reasoning_output_tokens": 0
+      },
+      "elapsed_seconds": 10.725,
+      "resident_prompt_proxy_tokens": 389,
+      "local_process_metrics": {
+        "user_cpu_seconds": 0.9,
+        "system_cpu_seconds": 0.59,
+        "max_rss_bytes": 177668096,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "06e0cefe900bbbaf69ba54bccd01d2e53eb78c7776b72d86e7aed584a52db01a",
+      "command_count": 0,
+      "nonzero_command_count": 0
+    },
+    {
+      "path": "iteration3/sol/W/on/turn-50/status.json",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 57154,
+        "cached_input_tokens": 36608,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 847,
+        "reasoning_output_tokens": 243
+      },
+      "elapsed_seconds": 49.597,
+      "resident_prompt_proxy_tokens": 660,
+      "local_process_metrics": {
+        "user_cpu_seconds": 1.29,
+        "system_cpu_seconds": 0.85,
+        "max_rss_bytes": 215744512,
+        "source": "macOS time -l; local native client and descendants, not server compute"
+      },
+      "original_events_sha256": "0e2677b3439ac58ed2f7e87dde35efe991cb545cd1b3d4815458c932c6da966d",
+      "command_count": 3,
       "nonzero_command_count": 0
     },
     {

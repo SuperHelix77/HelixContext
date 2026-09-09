@@ -1,0 +1,12 @@
+{
+  "files": {
+    "iteration3/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "protocol/reasoning-v2.json": "c95a7ab8a71d5b01550b8ea479063745187985c82abdf56f3949f7c448db9b97",
+    "protocol/agentic-v1.json": "dc3493661aa3af275998a0a19df1cea738325ec147b30cdeceacf476895388fe",
+    "protocol/long-horizon-v1.json": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e",
+    "run_validation3.py": "a62ebd5e58fba967a0a46cee5c591e5cf6ca66a8b2d1c9946e07a3d36e93d4ef",
+    "grade_validation3.py": "3f9dee6a937a3c5a57d0f1461d199310d92bc521ef92ab283bfd60ba860d1b3b"
+  },
+  "scope": "3 logical tasks per model at High; Q stronger file-reference control; A/W frozen controls reused. Not concurrent repeat evidence.",
+  "status": "frozen before validation exposure; no model calls bypassed"
+}
