@@ -1,0 +1,107 @@
+{
+  "classification": "Posthoc development test-coverage audit, not native mutant verdicts or model intelligence comparison",
+  "provenance": {
+    "on": {
+      "native_events_sha256": "eafa8ff77afe797849ac61785edf1b4f760c8f1fb03f5fa73b032e8256a87c7a",
+      "command_sha256": "651827d40dc97f6daec53d9f4e6db194a6e88b28841ffa3a31e279fe4276b9d3",
+      "extraction": "Exact semantic slice ns={} through before binding=json.loads; import Path and local source path adaptation only",
+      "slice_sha256": "019fda3fc9872a804046c6406fd9806113a58d9de96ae58bcf5b59c885ad16f4",
+      "suite_sha256": "48980bd43aaee1da912552042f6142f12690389afec96e4e60cc23356c50cc16"
+    },
+    "off": {
+      "native_events_sha256": "df26510d80eb36a52f4cd26bdbd90fea0381cf9623d718d81e9dd0555bdc8f25",
+      "extraction": "Exact fileChange addition extra_checks.py",
+      "suite_sha256": "9b3f91c0cca3bab003fd2adf5c7dfadaaeb79b61f2cfbd98f2d9e37cb8683b55"
+    }
+  },
+  "results": {
+    "reference": {
+      "on": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "off": {
+        "exit_code": 0,
+        "stdout": "PASS supplementary checks: initialization, self-alias, observation boundaries,\nsynchronous BaseException identity, invalid-type short circuit, sequence protocol, recovery\n",
+        "stderr": ""
+      },
+      "declared": {
+        "exit_code": 0,
+        "stdout": "PASS 2745 sequences / 8282 transitions\n",
+        "stderr": ""
+      }
+    },
+    "shared_initial_list": {
+      "on": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "off": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-ll6wrqqg/probe.py\", line 16, in <module>\n    assert other.items is not q.items\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "declared": {
+        "exit_code": 0,
+        "stdout": "PASS 2745 sequences / 8282 transitions\n",
+        "stderr": ""
+      }
+    },
+    "stale_cursor": {
+      "on": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-19bd6ll9/probe.py\", line 4, in <module>\n    alias=q.items;alias.extend([0,10**100]);assert q.append_batch(alias)==4 and alias==[0,10**100]*2 and q.items is alias\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "off": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-19bd6ll9/probe.py\", line 20, in <module>\n    assert q.append_batch(q.items) == 6\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "declared": {
+        "exit_code": 1,
+        "stdout": "FAILED action sequence: ('append', 'alias_add', 'append')\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-19bd6ll9/probe.py\", line 62, in <module>\n    try:exercise(source,seq)\n        ~~~~~~~~^^^^^^^^^^^^\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-19bd6ll9/probe.py\", line 53, in exercise\n    assert result==len(expected)\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      }
+    },
+    "self_alias_noop": {
+      "on": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-we2lt9rq/probe.py\", line 4, in <module>\n    alias=q.items;alias.extend([0,10**100]);assert q.append_batch(alias)==4 and alias==[0,10**100]*2 and q.items is alias\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "off": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-we2lt9rq/probe.py\", line 20, in <module>\n    assert q.append_batch(q.items) == 6\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "declared": {
+        "exit_code": 0,
+        "stdout": "PASS 2745 sequences / 8282 transitions\n",
+        "stderr": ""
+      }
+    },
+    "bool_accepted": {
+      "on": {
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "off": {
+        "exit_code": 0,
+        "stdout": "PASS supplementary checks: initialization, self-alias, observation boundaries,\nsynchronous BaseException identity, invalid-type short circuit, sequence protocol, recovery\n",
+        "stderr": ""
+      },
+      "declared": {
+        "exit_code": 1,
+        "stdout": "FAILED action sequence: ('append', 'append', 'bool')\n",
+        "stderr": "Traceback (most recent call last):\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-5pu01hzh/probe.py\", line 62, in <module>\n    try:exercise(source,seq)\n        ~~~~~~~~^^^^^^^^^^^^\n  File \"/private/var/folders/xh/_rwygs614dbc6c4wnkvltz280000gn/T/helix-test-strength-5pu01hzh/probe.py\", line 51, in exercise\n    assert failure is None,'invalid input accepted'\n           ^^^^^^^^^^^^^^^\nAssertionError: invalid input accepted\n"
+      }
+    }
+  },
+  "shared_list_witness": "Construct a; append [7]; construct b; observed b.items=[7] rather than initially empty.",
+  "native_calls": 0,
+  "script_sha256": "446bdfba7110265cd0ce8e9e8026b4514554902ad48b4d4844f795fa69ab5370"
+}
