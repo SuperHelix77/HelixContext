@@ -1,0 +1,110 @@
+{
+  "off": {
+    "raw_sha256": "fc8d45ba46830b36a0e0aa783bda72891b3e4f94e79fdadc530f00b5bfc6f449",
+    "reported_segments": [
+      {
+        "input_tokens": 18575,
+        "output_tokens": 92,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 18764,
+        "output_tokens": 38,
+        "cached_input_tokens": 18432,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 19483,
+        "output_tokens": 35,
+        "cached_input_tokens": 18560,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 19993,
+        "output_tokens": 1208,
+        "cached_input_tokens": 19328,
+        "reasoning_output_tokens": 41,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21436,
+        "output_tokens": 91,
+        "cached_input_tokens": 19840,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      }
+    ],
+    "total": {
+      "input_tokens": 98251,
+      "output_tokens": 1464,
+      "cached_input_tokens": 76160,
+      "reasoning_output_tokens": 41,
+      "cache_write_input_tokens": 0
+    },
+    "scope": "Native reported usage segments, not a claim about hidden server calls or cognition."
+  },
+  "on": {
+    "raw_sha256": "613b5c71c2a088d47b45da67f44f70f4016fab0c4cd1e7c8a223c9e522c8d08a",
+    "reported_segments": [
+      {
+        "input_tokens": 19748,
+        "output_tokens": 120,
+        "cached_input_tokens": 11264,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 20801,
+        "output_tokens": 30,
+        "cached_input_tokens": 19584,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21014,
+        "output_tokens": 231,
+        "cached_input_tokens": 20608,
+        "reasoning_output_tokens": 22,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21269,
+        "output_tokens": 58,
+        "cached_input_tokens": 20864,
+        "reasoning_output_tokens": 23,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21761,
+        "output_tokens": 845,
+        "cached_input_tokens": 21120,
+        "reasoning_output_tokens": 16,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 22804,
+        "output_tokens": 87,
+        "cached_input_tokens": 21632,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      }
+    ],
+    "total": {
+      "input_tokens": 127397,
+      "output_tokens": 1371,
+      "cached_input_tokens": 115072,
+      "reasoning_output_tokens": 61,
+      "cache_write_input_tokens": 0
+    },
+    "scope": "Native reported usage segments, not a claim about hidden server calls or cognition."
+  },
+  "conditional_boundary": {
+    "input_allowance_at_80": 19650.2,
+    "observed_candidate_first_input": 19748,
+    "claim": "With the observed initial charge unchanged, removing every later input segment still misses 80 percent. This is not an irreducible model lower bound."
+  }
+}

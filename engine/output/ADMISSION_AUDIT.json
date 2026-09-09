@@ -1,0 +1,108 @@
+{
+  "classification": "Admission engineering probe only; no native execution, savings or parity measurement",
+  "decisions": {
+    "gpt-5.6-sol/production": {
+      "schema": "helix.admission.v1",
+      "route": "native",
+      "reason": "No production qualification established",
+      "request": {
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "production"
+      },
+      "logical_bytes_read": 0,
+      "read_operations": 0,
+      "seconds": 2.833025064319372e-06,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    },
+    "gpt-5.6-sol/qualified_fixture_research": {
+      "schema": "helix.admission.v1",
+      "route": "optimized",
+      "reason": "Exact frozen research qualification only; general parity remains open",
+      "request": {
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "qualified_fixture_research"
+      },
+      "logical_bytes_read": 120179,
+      "read_operations": 18,
+      "seconds": 0.0016673330101184547,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    },
+    "gpt-6-astra/production": {
+      "schema": "helix.admission.v1",
+      "route": "native",
+      "reason": "No production qualification established",
+      "request": {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "production"
+      },
+      "logical_bytes_read": 0,
+      "read_operations": 0,
+      "seconds": 9.170034900307655e-07,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    },
+    "gpt-6-astra/qualified_fixture_research": {
+      "schema": "helix.admission.v1",
+      "route": "native",
+      "reason": "Model, effort or exact task contract mismatch",
+      "request": {
+        "model": "gpt-6-astra",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "qualified_fixture_research"
+      },
+      "logical_bytes_read": 0,
+      "read_operations": 0,
+      "seconds": 2.9589864425361156e-06,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    },
+    "gpt-5.6-luna/production": {
+      "schema": "helix.admission.v1",
+      "route": "native",
+      "reason": "No production qualification established",
+      "request": {
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "production"
+      },
+      "logical_bytes_read": 0,
+      "read_operations": 0,
+      "seconds": 2.92027834802866e-07,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    },
+    "gpt-5.6-luna/qualified_fixture_research": {
+      "schema": "helix.admission.v1",
+      "route": "native",
+      "reason": "Model, effort or exact task contract mismatch",
+      "request": {
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+        "mode": "qualified_fixture_research"
+      },
+      "logical_bytes_read": 0,
+      "read_operations": 0,
+      "seconds": 7.500057108700275e-07,
+      "savings_claim": null,
+      "scope": "Admission only; not native token, billing, physical I/O or parity measurement."
+    }
+  },
+  "caller_obligation": "Request contract hash must describe the verified actual task, not a label supplied by model output.",
+  "remaining_limits": [
+    "No global platform hook installed",
+    "Gate validates before callback; concurrent file mutation during execution is not prevented",
+    "Qualified research input remains caller-owned and trusted",
+    "Production no-loss and net-economics qualification absent"
+  ]
+}

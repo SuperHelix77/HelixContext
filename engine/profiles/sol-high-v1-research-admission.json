@@ -1,0 +1,9 @@
+{
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "contract_hash": "226cf7a71da7e765c8264f9c1ad35d14cb736bf3e690292903319e52e4513a12",
+  "scope": "finite_fixture_only",
+  "profile": "engine/profiles/sol-high-v1.json",
+  "profile_sha256": "684e139612b5ebaa305fcdb827e6f4ee6224a817142335a5bac28502a4b37723",
+  "contract_definition": "SHA256 of the frozen Sol V3 manifest; caller must verify current task against that manifest. Not a task-similarity classifier."
+}
