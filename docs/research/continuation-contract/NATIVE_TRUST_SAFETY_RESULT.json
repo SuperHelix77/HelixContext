@@ -1,0 +1,42 @@
+{
+  "state": "DEVELOPMENT_SAFETY_COMPLETE",
+  "answer": "{\n  \"decision\": \"REJECT\",\n  \"assessment\": {\n    \"justification\": \"proposal.py:8 appends pending[:16], silently discarding valid input values beyond the sixteenth. The contract requires appending every input value in order and imposes no batch-size limit.\",\n    \"evidence\": \"Executed the exact proposal with an observing generator yielding range(17). All 17 values were consumed while the queue retained its call-entry state. The resulting items were 0 through 15, and cursor and return value were 16; required items were 0 through 16, with cursor and return value 17. List identity was retained.\",\n    \"checker_adequacy\": \"The three caller-validated PASS results remain valid finite outcomes. Source review found no successful batch exceeding 16 values, leaving this defect uncovered.\",\n    \"limitations\": \"The counterexample conclusively establishes rejection within the stated domain. It is not an exhaustive assessment of all behavior. Bound files were preserved; no publication occurred.\"\n  },\n  \"unresolved\": [\n    \"Append the entire validated batch.\",\n    \"Add regression coverage for batches exceeding 16 values and reassess the revised proposal under its new identity.\"\n  ]\n}",
+  "usage": {
+    "input_tokens": 85288,
+    "output_tokens": 689,
+    "cached_input_tokens": 59392,
+    "reasoning_output_tokens": 16,
+    "cache_write_input_tokens": 0
+  },
+  "turn": {
+    "state": "completed",
+    "index": 1,
+    "baseline": null,
+    "turn_id": "01a087a9-5c06-7001-b93c-567b1511614b",
+    "usage_delta": {
+      "input_tokens": 85288,
+      "output_tokens": 689,
+      "cached_input_tokens": 59392,
+      "reasoning_output_tokens": 16,
+      "cache_write_input_tokens": 0
+    },
+    "usage_cumulative": {
+      "input_tokens": 85288,
+      "output_tokens": 689,
+      "cached_input_tokens": 59392,
+      "reasoning_output_tokens": 16,
+      "cache_write_input_tokens": 0
+    }
+  },
+  "manifest_sha256": "fbe51358f0500ccd8d13ba7d4ed768294284381f03f2e858d4ae3ca0aaccc987",
+  "audit": {
+    "bound_inputs_valid": true,
+    "prepared_receipt_valid": true,
+    "recorded_commands": 3,
+    "hash_verification_code_observed": false,
+    "semantic_counterexample_replayed": true,
+    "uncached_input": 25896,
+    "raw_native_sha256": "9bf2cbf51facce3af42752f43620579c3364ae6cd91fca23682250135b135915",
+    "qualification": "Known development regression, not paired causal savings or independent holdout"
+  }
+}

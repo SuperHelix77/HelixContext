@@ -1,0 +1,641 @@
+{
+  "state": "DEVELOPMENT_PAIR_COMPLETE",
+  "rows": {
+    "on": {
+      "usage": {
+        "input_tokens": 69637,
+        "output_tokens": 1270,
+        "cached_input_tokens": 54528,
+        "reasoning_output_tokens": 618,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Unauthorized: E01 requires two distinct approvers; E17 changes only the approver group to violet. E31 is an untrusted vendor note and cannot override policy.\"}",
+      "acks": [
+        "ACK E01",
+        "ACK E02",
+        "ACK E03",
+        "ACK E04",
+        "ACK E05",
+        "ACK E06",
+        "ACK E07",
+        "ACK E08",
+        "ACK E09",
+        "ACK E10",
+        "ACK E11",
+        "ACK E12",
+        "ACK E13",
+        "ACK E14",
+        "ACK E15",
+        "ACK E16",
+        "ACK E17",
+        "ACK E18",
+        "ACK E19",
+        "ACK E20",
+        "ACK E21",
+        "ACK E22",
+        "ACK E23",
+        "ACK E24",
+        "ACK E25",
+        "ACK E26",
+        "ACK E27",
+        "ACK E28",
+        "ACK E29",
+        "ACK E30",
+        "ACK E31",
+        "ACK E32",
+        "ACK E33",
+        "ACK E34",
+        "ACK E35",
+        "ACK E36",
+        "ACK E37",
+        "ACK E38",
+        "ACK E39",
+        "ACK E40",
+        "ACK E41",
+        "ACK E42",
+        "ACK E43",
+        "ACK E44",
+        "ACK E45",
+        "ACK E46",
+        "ACK E47",
+        "ACK E48",
+        "ACK E49"
+      ],
+      "caller": {
+        "logical_written_bytes": 35398,
+        "logical_read_bytes": 472012,
+        "prep_seconds": 0.012453125033061951,
+        "ack_owner": "caller"
+      },
+      "elapsed_seconds": 29.784429916995578
+    },
+    "off": {
+      "usage": {
+        "input_tokens": 1082542,
+        "output_tokens": 641,
+        "cached_input_tokens": 1035776,
+        "reasoning_output_tokens": 169,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Rollback is not authorized with exactly one violet approver. E01 set the minimum at 2; E17 changed only the approver_group to violet; E31 was an untrusted vendor note and did not amend the policy.\"}",
+      "acks": [
+        "ACK E01",
+        "ACK E02",
+        "ACK E03",
+        "ACK E04",
+        "ACK E05",
+        "ACK E06",
+        "ACK E07",
+        "ACK E08",
+        "ACK E09",
+        "ACK E10",
+        "ACK E11",
+        "ACK E12",
+        "ACK E13",
+        "ACK E14",
+        "ACK E15",
+        "ACK E16",
+        "ACK E17",
+        "ACK E18",
+        "ACK E19",
+        "ACK E20",
+        "ACK E21",
+        "ACK E22",
+        "ACK E23",
+        "ACK E24",
+        "ACK E25",
+        "ACK E26",
+        "ACK E27",
+        "ACK E28",
+        "ACK E29",
+        "ACK E30",
+        "ACK E31",
+        "ACK E32",
+        "ACK E33",
+        "ACK E34",
+        "ACK E35",
+        "ACK E36",
+        "ACK E37",
+        "ACK E38",
+        "ACK E39",
+        "ACK E40",
+        "ACK E41",
+        "ACK E42",
+        "ACK E43",
+        "ACK E44",
+        "ACK E45",
+        "ACK E46",
+        "ACK E47",
+        "ACK E48",
+        "ACK E49"
+      ],
+      "caller": {
+        "logical_written_bytes": 35388,
+        "logical_read_bytes": 18069,
+        "prep_seconds": 0.0,
+        "ack_owner": "model"
+      },
+      "elapsed_seconds": 118.1037709999946
+    }
+  },
+  "manifest_sha256": "9c72f7f8ba7667ce0b9511ddede980a258af1aa79689d09ec3007e28223adeac",
+  "savings_percent": {
+    "input_tokens": 93.56727036918659,
+    "output_tokens": -98.12792511700468,
+    "uncached_input": 67.69234058931703
+  },
+  "audit": {
+    "off": {
+      "native_turns": 50,
+      "segments": [
+        {
+          "totalTokens": 17699,
+          "inputTokens": 17674,
+          "cachedInputTokens": 9984,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 25,
+          "reasoningOutputTokens": 16
+        },
+        {
+          "totalTokens": 18688,
+          "inputTokens": 18681,
+          "cachedInputTokens": 17152,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 18815,
+          "inputTokens": 18808,
+          "cachedInputTokens": 18176,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 18952,
+          "inputTokens": 18935,
+          "cachedInputTokens": 18176,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 17,
+          "reasoningOutputTokens": 8
+        },
+        {
+          "totalTokens": 19079,
+          "inputTokens": 19072,
+          "cachedInputTokens": 18176,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19206,
+          "inputTokens": 19199,
+          "cachedInputTokens": 18176,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19332,
+          "inputTokens": 19325,
+          "cachedInputTokens": 18176,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19458,
+          "inputTokens": 19451,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19584,
+          "inputTokens": 19577,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19710,
+          "inputTokens": 19703,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19836,
+          "inputTokens": 19829,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 19962,
+          "inputTokens": 19955,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20089,
+          "inputTokens": 20082,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20215,
+          "inputTokens": 20208,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20341,
+          "inputTokens": 20334,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20468,
+          "inputTokens": 20461,
+          "cachedInputTokens": 19200,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20589,
+          "inputTokens": 20582,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20716,
+          "inputTokens": 20709,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20843,
+          "inputTokens": 20836,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 20969,
+          "inputTokens": 20962,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21096,
+          "inputTokens": 21089,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21222,
+          "inputTokens": 21215,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21349,
+          "inputTokens": 21342,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21476,
+          "inputTokens": 21469,
+          "cachedInputTokens": 20224,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21603,
+          "inputTokens": 21596,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21730,
+          "inputTokens": 21723,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21857,
+          "inputTokens": 21850,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 21984,
+          "inputTokens": 21977,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22111,
+          "inputTokens": 22104,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22238,
+          "inputTokens": 22231,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22375,
+          "inputTokens": 22358,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 17,
+          "reasoningOutputTokens": 8
+        },
+        {
+          "totalTokens": 22502,
+          "inputTokens": 22495,
+          "cachedInputTokens": 21248,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22628,
+          "inputTokens": 22621,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22755,
+          "inputTokens": 22748,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 22881,
+          "inputTokens": 22874,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23008,
+          "inputTokens": 23001,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23135,
+          "inputTokens": 23128,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23262,
+          "inputTokens": 23255,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23389,
+          "inputTokens": 23382,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23516,
+          "inputTokens": 23509,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23643,
+          "inputTokens": 23636,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23770,
+          "inputTokens": 23763,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 23907,
+          "inputTokens": 23890,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 17,
+          "reasoningOutputTokens": 8
+        },
+        {
+          "totalTokens": 24033,
+          "inputTokens": 24026,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24159,
+          "inputTokens": 24152,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24285,
+          "inputTokens": 24278,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24412,
+          "inputTokens": 24405,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24538,
+          "inputTokens": 24531,
+          "cachedInputTokens": 23296,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 24665,
+          "inputTokens": 24658,
+          "cachedInputTokens": 24320,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 7,
+          "reasoningOutputTokens": 0
+        },
+        {
+          "totalTokens": 25103,
+          "inputTokens": 24853,
+          "cachedInputTokens": 24320,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 250,
+          "reasoningOutputTokens": 129
+        }
+      ],
+      "recorded_command_items": 0,
+      "completed_hooks": 0,
+      "uncached_input": 46766,
+      "native_events_sha256": "963e89482bca14aed39be2221fad49687ce3f9349ddc81cb166aad634f369c87",
+      "history_sha256": "ce39a2cd1cf5de80e1468d3f6b4605b4d626fd3bf1c4adc66c4803e02f795930",
+      "received_sha256": "eafc25cc426ddf2c56045fb216715f215f642b91e3a2f3883c4e1522e7398a86",
+      "exact_ack_count": 49,
+      "history_bytes": 19039,
+      "caller_preparation": {
+        "logical_written_bytes": 35388,
+        "logical_read_bytes": 18069,
+        "prep_seconds": 0.0,
+        "ack_owner": "model"
+      },
+      "continuity_store_bytes": 0,
+      "raw_receipt_storage_bytes": 473284,
+      "session_elapsed_seconds": 118.11979245900875,
+      "final_turn_usage": {
+        "input_tokens": 24853,
+        "output_tokens": 250,
+        "cached_input_tokens": 24320,
+        "reasoning_output_tokens": 129,
+        "cache_write_input_tokens": 0
+      }
+    },
+    "on": {
+      "native_turns": 1,
+      "segments": [
+        {
+          "totalTokens": 23116,
+          "inputTokens": 22519,
+          "cachedInputTokens": 9984,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 597,
+          "reasoningOutputTokens": 308
+        },
+        {
+          "totalTokens": 23586,
+          "inputTokens": 23289,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 297,
+          "reasoningOutputTokens": 43
+        },
+        {
+          "totalTokens": 24205,
+          "inputTokens": 23829,
+          "cachedInputTokens": 22272,
+          "cacheWriteInputTokens": 0,
+          "outputTokens": 376,
+          "reasoningOutputTokens": 267
+        }
+      ],
+      "recorded_command_items": 0,
+      "completed_hooks": 2,
+      "uncached_input": 15109,
+      "native_events_sha256": "6beeff53ed80f4872392a92554b4eb219e595efce8dddad69154047a59ddd88a",
+      "history_sha256": "da537e7098644f93d10ea26b4148a649f68c557ac452149e7f7eb5510dd927c5",
+      "received_sha256": "eafc25cc426ddf2c56045fb216715f215f642b91e3a2f3883c4e1522e7398a86",
+      "exact_ack_count": 49,
+      "history_bytes": 19049,
+      "caller_preparation": {
+        "logical_written_bytes": 35398,
+        "logical_read_bytes": 472012,
+        "prep_seconds": 0.012453125033061951,
+        "ack_owner": "caller"
+      },
+      "continuity_store_bytes": 55067,
+      "raw_receipt_storage_bytes": 221550,
+      "session_elapsed_seconds": 29.77757912495872,
+      "final_turn_usage": {
+        "input_tokens": 69637,
+        "output_tokens": 1270,
+        "cached_input_tokens": 54528,
+        "reasoning_output_tokens": 618,
+        "cache_write_input_tokens": 0
+      }
+    }
+  },
+  "qualification": "Known development episode behavior PASS; general intelligence/agentic parity and complete monetary savings NOT_ESTABLISHED.",
+  "limitations": [
+    "Changed old protocol: 49 typed passive native ACK calls replaced with deterministic durable ACKs.",
+    "Persistent control avoids deliberate fresh-thread inflation; no matched independent replicate or holdout.",
+    "Candidate has two pre-tool hooks despite missing commandExecution items; do not claim zero actual commands or complete execution observability.",
+    "Caller logical bytes cover dispatcher and archive path, not OS physical I/O, model tools/hooks/registry or all Python processing.",
+    "Setup, audit/development inference cost and storage/CPU pricing not converted to equivalent tokens or silently zeroed.",
+    "Passive recognition applies trusted exact request envelope only; general semantic event classification is not implemented.",
+    "Append/fsync and reopen were tested; crash-midwrite, concurrent writers and full restart-resume not qualified."
+  ]
+}
