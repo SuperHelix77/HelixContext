@@ -1,0 +1,28 @@
+{
+  "classification": "Offline assembled lifecycle with recorded V7 decision; not fresh native pair",
+  "exact_final_matches_v7": true,
+  "ack_records": 49,
+  "new_native_calls": 0,
+  "recorded_native_source_sha256": "f2442e88a4da2d9fda28426e4e60ce143df6854a6bd65beaff338627b17202fa",
+  "seconds": 0.116126874985639,
+  "object_io": {
+    "object_bytes_read": 1213344,
+    "object_bytes_written": 61587,
+    "object_bytes_hashed": 1274931,
+    "object_read_operations": 2646,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "source_hashes": {
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/assembled_w50_replay.py": "6b2e3a51336c220d4df2516204780c7218cf79962b31ec01eb8da91a2b300a8a",
+    "engine/prototype/passive_workflow.py": "d7bdde08096fd8493f6de6abaefd40e63a73438c9af618b5978a046b1f7b58c5",
+    "engine/prototype/completion_ledger.py": "f262fb69c3fe8e210972287feae996824f382e5eb152612118dd01c6e24ece75"
+  },
+  "limits": [
+    "No new model behavior evidence",
+    "Receipt offering not Codex UI delivery",
+    "Quadratic validation and exact-source duplication charged",
+    "Qualified passive contract only"
+  ]
+}

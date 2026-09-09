@@ -41,7 +41,7 @@ class CompletionLedger:
             root = record['parent']
         return rows
 
-    def ingest(self, scope, event, raw, *, expected_head):
+    def ingest(self, scope, event, raw, *, expected_head, sequence=None):
         """Persist exact completed-interaction data; never interpret it as authority.
 
         Retry may use original parent or current head. Conflicting reuse rejects.
@@ -51,6 +51,8 @@ class CompletionLedger:
         identity(scope, event, expected_head)
         if not isinstance(raw, bytes):
             raise ValueError('Exact bytes required')
+        if sequence is not None and (type(sequence) is not int or sequence<1):
+            raise ValueError('Invalid sequence')
         with self.memory.db() as db:
             db.execute('BEGIN IMMEDIATE')
             try:
@@ -64,6 +66,9 @@ class CompletionLedger:
                 if indexed != {e: k for e, (k, _) in by_event.items()}:
                     raise ValueError('Completion index mismatch')
                 prior = by_event.get(event)
+                if sequence is not None:
+                    ordinal=next((len(chain)-i for i,(_,r,_) in enumerate(chain) if r['event']==event),len(chain)+1)
+                    if sequence!=ordinal:raise ValueError('Sequence gap or conflicting replay ordinal')
                 if prior:
                     key, record = prior
                     if record['payload'] != hashlib.sha256(raw).hexdigest():
