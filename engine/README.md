@@ -23,6 +23,10 @@ and exceeded its post-call launch threshold; the candidate arm was not run.
 See the [measurement and admission summary](prototype/CHECKPOINT.md). No result
 here establishes 80% input/output savings or general capability/workflow parity.
 
+A separately declared [native memory follow-up](prototype/MEMORY_NATIVE_FOLLOWUP.md)
+reused the unchanged candidate and retained control: input decreased 39.73%, but
+output increased 15.01%. The joint target failed; this is exploratory evidence.
+
 ## Implemented
 
 - Command capture preserves separate stdout/stderr bytes, exit/signal status, timeout, timestamps, caller-supplied environment label and explicitly watched file changes.

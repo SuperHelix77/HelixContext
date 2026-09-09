@@ -30,10 +30,14 @@ documented bounded behaviors, not general semantic sufficiency.
 | Memory payload | Exact lookup 98.54% smaller; exhaustive recovery overhead reduced to 0.35% | Predeclared query, synthetic payload count |
 | Existing native query-V2 receipts | No model meets both 80% thresholds | Six development traces reverified |
 | Fresh memory native control | Correct answer; 194,759 input / 1,659 output; stopped before candidate | No pair or saving estimate |
+| Separate frozen-candidate follow-up | Input -39.73%, output +15.01% versus retained control | Exploratory historical comparison; joint target failed |
 
 Detailed reports: [plans](NAMED_PLAN_OVERHEAD.md), [release](NAMED_PLAN_RELEASE.md),
 [memory](MEMORY_PAYLOAD_RESULTS.md), [native receipt checks](NATIVE_BENCHMARK_GATE.md),
 [budget stop](MEMORY_NATIVE_CONTROL_STOP.md).
+
+The later [separately declared follow-up](MEMORY_NATIVE_FOLLOWUP.md) preserves the
+original budget stop and reports its changed budget and negative output result.
 
 ## Open gates
 

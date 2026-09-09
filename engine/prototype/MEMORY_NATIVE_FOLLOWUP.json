@@ -1,0 +1,97 @@
+{
+  "classification": "One exploratory follow-up candidate call; earlier budget-stopped experiment remains closed",
+  "usage": {
+    "input_tokens": 117385,
+    "output_tokens": 1908,
+    "cached_input_tokens": 95488,
+    "cache_write_input_tokens": 0,
+    "reasoning_output_tokens": 852
+  },
+  "control_usage": {
+    "input_tokens": 194759,
+    "output_tokens": 1659,
+    "cached_input_tokens": 167424,
+    "cache_write_input_tokens": 0,
+    "reasoning_output_tokens": 674
+  },
+  "savings_percent": {
+    "input_tokens": 39.7280741839915,
+    "output_tokens": -15.009041591320083
+  },
+  "actual": {
+    "code": "000.375",
+    "permitted": true,
+    "origin": "eu-north",
+    "revision": "00942"
+  },
+  "exact_answer_pass": true,
+  "source_unchanged": true,
+  "elapsed_seconds": 57.687,
+  "answer": "Completed and verified [answer.json](/Users/mert/Documents/ChatGPT/Helix/research/memory-native-pair-20260909/tasks/on/answer.json) with the exact required keys, values, and JSON types.",
+  "events_sha256": "1801829e332bdfff328377fe516412d7c59f052273510f3b6fbc41cceae4f033",
+  "overrun_flag": false,
+  "quality_scope": "Exact artifact and unchanged source only; no general intelligence or workflow parity.",
+  "joint_80": false,
+  "preprocessing": {
+    "seconds": 0.06862504198215902,
+    "store_io": {
+      "object_bytes_read": 4158,
+      "object_bytes_written": 87993,
+      "object_bytes_hashed": 92151,
+      "object_read_operations": 6,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "logical_retained_bytes": 268217
+  },
+  "trace_audit": {
+    "off": {
+      "events_sha256": "ba5bd9b2271c8263af2c734a5dd677720932e6a9d7646c5d0b394fbedbecac26",
+      "commands": 2,
+      "command_text_bytes": 1019,
+      "command_output_bytes": 578,
+      "file_changes": 1,
+      "agent_messages": 3,
+      "runtime_warnings": [
+        "Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."
+      ],
+      "native_usage": [
+        {
+          "input_tokens": 194759,
+          "cached_input_tokens": 167424,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1659,
+          "reasoning_output_tokens": 674
+        }
+      ]
+    },
+    "on": {
+      "events_sha256": "1801829e332bdfff328377fe516412d7c59f052273510f3b6fbc41cceae4f033",
+      "commands": 3,
+      "command_text_bytes": 698,
+      "command_output_bytes": 7471,
+      "file_changes": 1,
+      "agent_messages": 4,
+      "runtime_warnings": [
+        "Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."
+      ],
+      "native_usage": [
+        {
+          "input_tokens": 117385,
+          "cached_input_tokens": 95488,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1908,
+          "reasoning_output_tokens": 852
+        }
+      ]
+    }
+  },
+  "artifact_root": "/Users/mert/Documents/ChatGPT/Helix/research/memory-native-followup-20260909",
+  "manifest_sha256": "66e93d52b37b93638ec985f5cc5d45e64151d117874308e17f12d6280c571c32",
+  "total_native_research_usage": {
+    "input_tokens": 312144,
+    "output_tokens": 3567,
+    "cached_input_tokens": 262912
+  }
+}
