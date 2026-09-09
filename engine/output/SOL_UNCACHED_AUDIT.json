@@ -1,0 +1,118 @@
+{
+  "classification": "Transport engineering measurement; not a new native Sol result",
+  "prompt_proxy_tokens": {
+    "v3": 1879,
+    "table_candidate": 1416
+  },
+  "tokenizer": "o200k_base proxy, not native accounting",
+  "prompt_bytes": {
+    "v3": 7022,
+    "table_candidate": 4986
+  },
+  "source_sha256": "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8",
+  "variant_sha256": "9732aaea7da80842ffbeab3c6245e9fbf5f25218c9999b70ed4292b7bfd10412",
+  "preparation_store_io": {
+    "object_bytes_read": 73256,
+    "object_bytes_written": 40393,
+    "object_bytes_hashed": 113649,
+    "object_read_operations": 2,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "limits": [
+    "No native output/reasoning measurement",
+    "Model decoding cost can offset representation savings",
+    "Full metadata and types preserved; raw source still exact",
+    "Preparation includes source projection verification, not only table encoding"
+  ],
+  "off": {
+    "raw_sha256": "305579567ea0db0b66366f5bf12d7e6c33d24edb3b35e10280de31d88e9b5f9b",
+    "reported_segments": [
+      {
+        "input_tokens": 18751,
+        "output_tokens": 188,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 50,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 19003,
+        "output_tokens": 140,
+        "cached_input_tokens": 18560,
+        "reasoning_output_tokens": 30,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 19516,
+        "output_tokens": 376,
+        "cached_input_tokens": 18816,
+        "reasoning_output_tokens": 216,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 20643,
+        "output_tokens": 995,
+        "cached_input_tokens": 19328,
+        "reasoning_output_tokens": 566,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21662,
+        "output_tokens": 130,
+        "cached_input_tokens": 20480,
+        "reasoning_output_tokens": 9,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 21894,
+        "output_tokens": 718,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 142,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 22779,
+        "output_tokens": 68,
+        "cached_input_tokens": 21504,
+        "reasoning_output_tokens": 24,
+        "cache_write_input_tokens": 0
+      },
+      {
+        "input_tokens": 22871,
+        "output_tokens": 44,
+        "cached_input_tokens": 22656,
+        "reasoning_output_tokens": 37,
+        "cache_write_input_tokens": 0
+      }
+    ],
+    "total": {
+      "input_tokens": 167119,
+      "output_tokens": 2659,
+      "cached_input_tokens": 127360,
+      "reasoning_output_tokens": 1074,
+      "cache_write_input_tokens": 0
+    },
+    "scope": "Native reported usage segments, not a claim about hidden server calls or cognition."
+  },
+  "on": {
+    "raw_sha256": "63841561fbb5f1bd45f315d111dee655ad18db3df5070cafb83f883ebae381ae",
+    "reported_segments": [
+      {
+        "input_tokens": 19893,
+        "output_tokens": 293,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 256,
+        "cache_write_input_tokens": 0
+      }
+    ],
+    "total": {
+      "input_tokens": 19893,
+      "output_tokens": 293,
+      "cached_input_tokens": 6016,
+      "reasoning_output_tokens": 256,
+      "cache_write_input_tokens": 0
+    },
+    "scope": "Native reported usage segments, not a claim about hidden server calls or cognition."
+  }
+}

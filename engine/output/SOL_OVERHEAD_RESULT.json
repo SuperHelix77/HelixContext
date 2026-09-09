@@ -1,0 +1,304 @@
+{
+  "state": "COMPLETED",
+  "classification": "Counterbalanced development comparison of two Helix candidates; cache state uncontrolled and explicitly reported",
+  "rows": [
+    {
+      "number": 0,
+      "variant": "v3",
+      "usage": {
+        "input_tokens": 19868,
+        "output_tokens": 248,
+        "cached_input_tokens": 10368,
+        "reasoning_output_tokens": 211,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 9500,
+      "native_elapsed_seconds": 11.789740541018546,
+      "exact_artifact": true,
+      "source_unchanged": true,
+      "completion_seconds": 0.0024899999843910336,
+      "completion_store_io": {
+        "object_bytes_read": 41296,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 41296,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 6102,
+        "sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+        "source_sha256": [
+          "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8"
+        ],
+        "operations": 6,
+        "io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 6102,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+        },
+        "selection_io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "eaf0760b71278c8431397e3012b26455a319351d36c7b95daa87c6bf87d98593",
+        "response_bytes": 49,
+        "semantic_success": null
+      },
+      "native_events_sha256": "e87c2268b8767f630b4494b3300621da429e56a49e0b8d86bffa860b77ce311a",
+      "reported_usage_segments": 1,
+      "commands": 0
+    },
+    {
+      "number": 1,
+      "variant": "table",
+      "usage": {
+        "input_tokens": 19405,
+        "output_tokens": 311,
+        "cached_input_tokens": 10368,
+        "reasoning_output_tokens": 274,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 9037,
+      "native_elapsed_seconds": 14.146059709019028,
+      "exact_artifact": true,
+      "source_unchanged": true,
+      "completion_seconds": 0.0024265419924631715,
+      "completion_store_io": {
+        "object_bytes_read": 41296,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 41296,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 6102,
+        "sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+        "source_sha256": [
+          "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8"
+        ],
+        "operations": 6,
+        "io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 6102,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+        },
+        "selection_io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "eaf0760b71278c8431397e3012b26455a319351d36c7b95daa87c6bf87d98593",
+        "response_bytes": 49,
+        "semantic_success": null
+      },
+      "native_events_sha256": "22a26c55ccd86373d63fea334b21d23206a3172b9f3c3f36a14733c21d2d9659",
+      "reported_usage_segments": 1,
+      "commands": 0
+    },
+    {
+      "number": 2,
+      "variant": "table",
+      "usage": {
+        "input_tokens": 19405,
+        "output_tokens": 281,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 244,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 13389,
+      "native_elapsed_seconds": 14.501022084034048,
+      "exact_artifact": true,
+      "source_unchanged": true,
+      "completion_seconds": 0.0026116660446859896,
+      "completion_store_io": {
+        "object_bytes_read": 41296,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 41296,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 6102,
+        "sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+        "source_sha256": [
+          "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8"
+        ],
+        "operations": 6,
+        "io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 6102,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+        },
+        "selection_io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "eaf0760b71278c8431397e3012b26455a319351d36c7b95daa87c6bf87d98593",
+        "response_bytes": 49,
+        "semantic_success": null
+      },
+      "native_events_sha256": "da6d95bc542207cd164de20cebf5d01e745b5bc6b83fc346fdf5e47ab00e2c0b",
+      "reported_usage_segments": 1,
+      "commands": 0
+    },
+    {
+      "number": 3,
+      "variant": "v3",
+      "usage": {
+        "input_tokens": 19868,
+        "output_tokens": 250,
+        "cached_input_tokens": 6016,
+        "reasoning_output_tokens": 213,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 13852,
+      "native_elapsed_seconds": 11.958352874964476,
+      "exact_artifact": true,
+      "source_unchanged": true,
+      "completion_seconds": 0.002348458976484835,
+      "completion_store_io": {
+        "object_bytes_read": 41296,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 41296,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "completion": {
+        "schema": "helix.copy.receipt.v1",
+        "bytes": 6102,
+        "sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+        "source_sha256": [
+          "d20364de125f23e3031b087a8b394139eb8f5fd0727551db82446f062594e9e8"
+        ],
+        "operations": 6,
+        "io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs",
+        "publication_io": {
+          "prior_destination_bytes_read": 0,
+          "destination_bytes_written": 6102,
+          "metadata_and_physical_disk_unmeasured": true
+        },
+        "publication": "atomic replacement; cooperative advisory lock; parent directory fsync and hostile concurrent writers are outside guarantee",
+        "catalog": {
+          "schema": "helix.copy_catalog.ref.v1",
+          "sha256": "2795ed5cc96732a774e0c30acb36a4b76d81672d1e92e3aa673f532c5585640f"
+        },
+        "selection_io": {
+          "object_bytes_read": 41296,
+          "object_bytes_written": 0,
+          "object_bytes_hashed": 41296,
+          "object_read_operations": 2,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "response_sha256": "eaf0760b71278c8431397e3012b26455a319351d36c7b95daa87c6bf87d98593",
+        "response_bytes": 49,
+        "semantic_success": null
+      },
+      "native_events_sha256": "de0de77d4dec0a90af06f02f6241931690835c1c00db00741b8141eb5c3fe883",
+      "reported_usage_segments": 1,
+      "commands": 0
+    }
+  ],
+  "sums": {
+    "v3": {
+      "input_tokens": 39736,
+      "output_tokens": 498,
+      "cached_input_tokens": 16384,
+      "uncached_input": 23352
+    },
+    "table": {
+      "input_tokens": 38810,
+      "output_tokens": 592,
+      "cached_input_tokens": 16384,
+      "uncached_input": 22426
+    }
+  },
+  "savings_vs_v3_percent": {
+    "input_tokens": 2.330380511375074,
+    "output_tokens": -18.875502008032118,
+    "uncached_input": 3.965399109284007
+  },
+  "limits": "Two repetitions each; not native-off/on, no general parity or guaranteed cache/billing effect.",
+  "research_root": "/Users/mert/Documents/ChatGPT/Helix/research/sol-overhead-native-20260909",
+  "decision": "Do not replace frozen V3: modest uncached reduction accompanies higher native output; retain as unpromoted development evidence."
+}
