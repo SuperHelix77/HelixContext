@@ -1,0 +1,65 @@
+{
+  "classification": "Fresh known coding pair; same default base/High; frozen V3 composite candidate; not holdout",
+  "manifest_sha256": "35315cb7aa15aecb66afe6157d7236a9df9eb740b01d00f87045fe828a191cc4",
+  "order": [
+    "on",
+    "off"
+  ],
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 181635,
+        "output_tokens": 3871,
+        "cached_input_tokens": 163584,
+        "reasoning_output_tokens": 1844,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 9,
+      "turns": 1,
+      "raw_tool_calls": 8,
+      "unmatched_raw_calls": [],
+      "source_sha256": "50ff5ea4bf353f12d3234a0a807c397f5f0a1b129dfe209234c24fd46dc03cb6",
+      "native_sha256": "3350bf96236dd947e2244435ba807fce08142b8fc25d249cbb9cf44192e660ca",
+      "raw_capture_sha256": "a5e6b505a3c2f2c38206b375cb70de2fd96d2ebd5f78b6624a120ade3a3a9725",
+      "raw_capture_bytes": 150420,
+      "elapsed_seconds": 83.19397750002099
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 19186,
+        "output_tokens": 1371,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 1152,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 1,
+      "turns": 1,
+      "raw_tool_calls": 0,
+      "unmatched_raw_calls": [],
+      "source_sha256": "95d14dedc87a045e036cb4afe45ad5367834376d18c3c9db52dcc676bcda1340",
+      "native_sha256": "1ce225c46bd7b1b978f8a52e3192b69e8db4a6dd1b9da39b873c1c15a18b45cc",
+      "raw_capture_sha256": "9abcdec40f060399531d7acb77c3d683f53c02e1a2944533730da6a596f98212",
+      "raw_capture_bytes": 85967,
+      "elapsed_seconds": 26.77447270799894
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 89.43705783576954,
+    "output_tokens": 64.5827951433738
+  },
+  "uncached_savings_percent": 49.02221483574317,
+  "meets_80_80": false,
+  "meets_75_75": false,
+  "finite_checks": "PASS",
+  "general_release": false,
+  "N": 1,
+  "median_scope": "One paired coding task; median equals this observation, variability unknown",
+  "limits": [
+    "Known fixture, no holdout or general capability proof",
+    "Composite product comparison: supplied source, source-only output, caller memory and checks; not mechanism isolation",
+    "Same default base/High/tools/sandbox; candidate has extra local preflight instruction",
+    "Full physical/SQLite/research costs unmetered; native token economics only"
+  ]
+}
