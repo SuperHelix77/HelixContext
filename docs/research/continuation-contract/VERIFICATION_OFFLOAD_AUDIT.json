@@ -1,0 +1,34 @@
+{
+  "classification": "Observed extraction/replay and tokenizer proxies; conditional trajectory arithmetic, not native counterfactual",
+  "native_calls": 0,
+  "events_sha256": "f50f629cd17b3faa440bff750ebf19cfa9c538aa01533022888c7f51981283cf",
+  "original_command_sha256": "584a04f48c0efaa41f8673646380580f8143fe18f2ee2149481e2f6c4c6dd63e",
+  "semantic_slice_sha256": "a51fe2de6ad8f3897bab949db4b57babf62db09a0e4412bbf447e35f784dae21",
+  "semantic_slice_cases_passed": 11,
+  "proxy_o200k_tokens": {
+    "full_python_body": 752,
+    "retained_standalone_semantic_code": 386,
+    "removed_byte_regions": 380,
+    "warning": "Not native token attribution; separately tokenized regions need not add; native segment includes reasoning/other output."
+  },
+  "conditional": {
+    "warning": "Assume surviving segment costs unchanged. Safe removal and unchanged costs unproven. Not a lower bound.",
+    "native_80_budgets": {
+      "input": 26084.4,
+      "output": 411.0
+    },
+    "remove_entire_combined_verification_and_semantic_segment": {
+      "input": 66169,
+      "output": 642
+    },
+    "retain_final_segment_only": {
+      "totalTokens": 26817,
+      "inputTokens": 26469,
+      "cachedInputTokens": 25216,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 348,
+      "reasoningOutputTokens": 0
+    }
+  },
+  "decision": "Do not launch hash-verification-only 80/80 benchmark. It cannot remove needed semantic probes or repeated task context by itself."
+}
