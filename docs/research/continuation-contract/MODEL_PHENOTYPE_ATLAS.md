@@ -27,7 +27,7 @@ may be summed. Unknown hidden activity persists even when a segment has a visibl
 | Sol |IntegratedV3control8segments versus candidate1; caller registration/completion leaves semantic output |Decide/delegate hypothesis strengthened on assembly tasks. No claim it transfers to general coding. Preserve exact mechanics and minimal familiar decisions.|
 | Astra |Prepared valid candidate4segments:19,560/20,140/25,374/26,469input; final2contain novel-probe/judgment work. Trust safety still discovers/reads/tests but omits regenerated hash verification |Evidence/assurance hypothesis survives, but semantic adequacy must stay model-owned. Test resident checker evidence before more authority wording.|
 
-Astra has62mixed segments by this annotation scheme, so treating all verification
+Astra has55mixed segments by this annotation scheme, so treating all verification
 or acquisition-associated tokens as removable would exaggerate savings. Luna's
 aggregate is dominated by one deliberately passive episode; it cannot be compared
 to Astra's active coding/safety mix as an intrinsic model property. Sol's smaller
