@@ -1,0 +1,11 @@
+{
+  "decision": "REJECT",
+  "receipt_current": true,
+  "explanation": {
+    "receipt": "The local contract, proposal, checker, stdout, and stderr SHA-256 hashes match the supplied receipt. The receipt records exit status 0. Its mechanical execution was reused for ordinary-int order, empty batch, and negative rollback; those checks do not establish full semantic adequacy.",
+    "contract_violation": "The method returns an independently maintained cursor rather than the cumulative number of items in the existing public list. The contract does not require that list to be populated exclusively through append_batch or that cursor initially equal len(items).",
+    "verified_counterexample": "q = Queue(); alias = q.items; alias.extend([10, 20]); result = q.append_batch([30]). The list retains its identity and becomes [10, 20, 30], but result is 1 instead of the required cumulative item count 3. A subsequent empty batch also returns 1 instead of 3.",
+    "additional_verification": "Independent checks passed for rejection of bool, int subclasses, negative ints, floats, strings, and None; rollback and recovery after invalid values; unchanged exception identity and state after __iter__ and midstream __next__ failures; single consumption; append order; list identity; and ordinary empty batches.",
+    "limitations": "The additional checks are representative, not exhaustive. Resource exhaustion, iterables that mutate the queue themselves, and reentrant calls were not tested. Concurrency is explicitly out of scope. No files were edited."
+  }
+}

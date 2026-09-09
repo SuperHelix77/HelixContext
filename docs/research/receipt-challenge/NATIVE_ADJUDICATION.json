@@ -1,0 +1,104 @@
+{
+  "counterexample": {
+    "items": [
+      10,
+      20,
+      30
+    ],
+    "returned": 1,
+    "item_count": 3,
+    "identity_retained": true,
+    "empty_batch_return": 1
+  },
+  "native_updates": [
+    {
+      "total": {
+        "totalTokens": 19470,
+        "inputTokens": 19397,
+        "cachedInputTokens": 6400,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 73,
+        "reasoningOutputTokens": 0
+      },
+      "last": {
+        "totalTokens": 19470,
+        "inputTokens": 19397,
+        "cachedInputTokens": 6400,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 73,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "total": {
+        "totalTokens": 39165,
+        "inputTokens": 38978,
+        "cachedInputTokens": 12800,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 187,
+        "reasoningOutputTokens": 0
+      },
+      "last": {
+        "totalTokens": 19695,
+        "inputTokens": 19581,
+        "cachedInputTokens": 6400,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 114,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "total": {
+        "totalTokens": 60695,
+        "inputTokens": 59646,
+        "cachedInputTokens": 32256,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 1049,
+        "reasoningOutputTokens": 72
+      },
+      "last": {
+        "totalTokens": 21530,
+        "inputTokens": 20668,
+        "cachedInputTokens": 19456,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 862,
+        "reasoningOutputTokens": 72
+      }
+    },
+    {
+      "total": {
+        "totalTokens": 82742,
+        "inputTokens": 81365,
+        "cachedInputTokens": 51456,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 1377,
+        "reasoningOutputTokens": 72
+      },
+      "last": {
+        "totalTokens": 22047,
+        "inputTokens": 21719,
+        "cachedInputTokens": 19200,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 328,
+        "reasoningOutputTokens": 0
+      }
+    }
+  ],
+  "classification": "STOPPED_EVALUATOR_CONTRACT_AMBIGUITY",
+  "paired_savings": null,
+  "intelligence_regression": null,
+  "format_gate_note": "Frozen prompt required explanation but did not require a string; driver rejected object-valued explanations. This is a second evaluator specificity defect.",
+  "original_gate_status": "STOPPED_GATE_OR_BUDGET",
+  "usage": {
+    "input_tokens": 81365,
+    "output_tokens": 1377,
+    "cached_input_tokens": 51456,
+    "reasoning_output_tokens": 72,
+    "cache_write_input_tokens": 0
+  },
+  "elapsed_seconds": 59.82826770900283,
+  "manifest_sha256": "38a1a958b0ce4e550579a9b98ebd659bdc94a823b825a89bbcb67452387fcc00",
+  "raw_native_sha256": "9e77c9845c09a80d9dcf34f42bdaac43c6dd428cfdc65031bdbfc8c2eecbf48d",
+  "native_calls": 1,
+  "remaining_calls_launched": 0
+}
