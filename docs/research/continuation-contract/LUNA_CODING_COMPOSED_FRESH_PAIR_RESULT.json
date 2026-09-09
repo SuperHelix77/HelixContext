@@ -1,0 +1,69 @@
+{
+  "classification": "Fresh known coding pair; native default base vs frozen V7-base/V3-caller composition; same High/tools; not holdout",
+  "manifest_sha256": "004256e20eb7ba68530d7da52b5777d6661a77e749a4689566f0371527ce312e",
+  "order": [
+    "off",
+    "on"
+  ],
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 120350,
+        "output_tokens": 3630,
+        "cached_input_tokens": 94720,
+        "reasoning_output_tokens": 1621,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 6,
+      "turns": 1,
+      "raw_tool_calls": 5,
+      "unmatched_raw_calls": [],
+      "base_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+      "base_bytes": 17766,
+      "source_sha256": "97fcb467af999e65f5727791d46c1f2b8a6c55c58013312a316de2c81170346a",
+      "native_sha256": "3759dbe35695903dee4a11ed476ec24760bee67b2fdd7f1a93d062411b96304c",
+      "raw_capture_sha256": "ef6273bc472f20348938a213134a3e81880cae137f54458cbd93534fc191ab2d",
+      "raw_capture_bytes": 128264,
+      "elapsed_seconds": 77.29477962502278
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16642,
+        "output_tokens": 760,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 516,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 1,
+      "turns": 1,
+      "raw_tool_calls": 0,
+      "unmatched_raw_calls": [],
+      "base_sha256": "8ec56d80df8b5b9cd609e4f2251c1e26b29aa50bbc76de0c01bbfd85a2231106",
+      "base_bytes": 6187,
+      "source_sha256": "b7003ee5a968006324437d7160be2eb670adb1c64766e9f525095b7eb51d3352",
+      "native_sha256": "9ca59c21ac8ff65a3ae4dec5ec86c86b77aef7de8bc2544b0bbd94f614ad1b40",
+      "raw_capture_sha256": "a7b717fdc4ad4bf276412389e89de9f6914eab5a64c4dfdabd2876594deaa231",
+      "raw_capture_bytes": 66636,
+      "elapsed_seconds": 15.888337582990061
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 86.17199833818032,
+    "output_tokens": 79.06336088154269
+  },
+  "uncached_savings_percent": 62.036675770581354,
+  "meets_80_80": false,
+  "meets_75_75": true,
+  "finite_checks": "PASS",
+  "general_release": false,
+  "N": 1,
+  "median_scope": "One paired coding task; median equals this observation, variability unknown",
+  "limits": [
+    "Known fixture, no holdout or general capability proof",
+    "Composite product comparison: supplied source, source-only output, caller memory and checks; not mechanism isolation",
+    "Native default base vs exact V7 kernel; same High/tools/sandbox; candidate has bound caller preflight instruction",
+    "Full physical/SQLite/research costs unmetered; native token economics only"
+  ]
+}

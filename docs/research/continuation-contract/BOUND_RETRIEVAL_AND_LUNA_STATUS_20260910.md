@@ -1,5 +1,9 @@
 # Bound retrieval and Luna release status
 
+Newer evidence: the kernel-plus-caller [fresh coding composition](LUNA_CODING_COMPOSITION_RESULT.md)
+cleared the accepted 75/75 candidate threshold at 86.17% / 79.06%. The older
+default-base coding result below remains unchanged; no general release is claimed.
+
 **OBSERVED:** Two fully specified retrieval requests execute without inference,
 preserving the original native-input bytes. **CONDITIONAL:** This is a strict
 request-language implementation, not general natural-language or model parity.

@@ -1,0 +1,39 @@
+{
+  "classification": "Offline client-base anatomy; proxy tokenizer is not native token attribution",
+  "tokenizer": "o200k_base",
+  "rows": [
+    {
+      "label": "default-base",
+      "base_bytes": 17766,
+      "base_proxy_tokens": 3552,
+      "base_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+      "native_usage": {
+        "input_tokens": 19186,
+        "output_tokens": 1371,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 1152,
+        "cache_write_input_tokens": 0
+      }
+    },
+    {
+      "label": "composed",
+      "base_bytes": 6187,
+      "base_proxy_tokens": 1033,
+      "base_sha256": "8ec56d80df8b5b9cd609e4f2251c1e26b29aa50bbc76de0c01bbfd85a2231106",
+      "native_usage": {
+        "input_tokens": 16623,
+        "output_tokens": 632,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 410,
+        "cache_write_input_tokens": 0
+      }
+    }
+  ],
+  "base_proxy_delta": 2519,
+  "observed_native_input_delta": 2563,
+  "limits": [
+    "Separate candidate streams; history/cache/model sampling effects not causally isolated",
+    "No hidden reasoning attribution",
+    "Server-side context unknown"
+  ]
+}

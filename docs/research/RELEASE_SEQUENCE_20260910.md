@@ -4,7 +4,10 @@ Latest instruction: releasable 75% input and 75% output profiles, capability and
 agentic/workflow preservation first. Original 80/80 remains an aspiration; do not
 mislabel 75/75 as 80/80. Keep actual paired counters and failures visible.
 
-1. Luna: finish qualification and packaging. W50 is a bounded candidate; general
+1. Luna: finish qualification and packaging. A fresh known coding pair now clears
+   75/75 at 86.17% input / 79.06% output, with a portable kernel/contract candidate
+   [frozen here](continuation-contract/LUNA_CODING_V1_75_FREEZE.json). W50 remains
+   a separate bounded candidate; general
    coding is not qualified. Unsupported cells retain ordinary model execution
    inside the active Engine; do not disable Engine for those tasks. A profile
    cannot inherit W50 savings on unrelated tasks. Native no-loss and full lifecycle

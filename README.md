@@ -2,7 +2,15 @@
 
 **HELIX: Hierarchical Evidence Loading and Intelligent eXecution.**
 
-Research toward the **maximum empirically safe compression frontier**, with capability, agentic execution and long-horizon workflow preservation first. **95% input/output savings is aspirational, not an absolute requirement.** The earlier separate 80% target is retained below as historical benchmark context. The current highest output reduction is 78.44% on an adaptively developed synthetic suite, with 80.39% input reduction in that run. This is historical exploratory evidence. The completed High-model V3 evaluation and its limits are in [FRONTIER_REPORT.md](FRONTIER_REPORT.md).
+Research toward the **maximum empirically safe compression frontier**, with capability, agentic execution and long-horizon workflow preservation first. Separate **80% input/output savings** remains the research objective; 95% is a stretch target. The user permits bounded candidate freezes at 75/75, which must not be described as 80/80 or general model parity.
+
+## Current Engine milestone — 2026-09-10
+
+A fresh Luna High coding pair with the frozen delegation kernel plus caller-owned preparation/checks/publication measured **86.17% input / 79.06% output / 62.04% uncached-input savings**. Both arms passed the original tests and finite independent oracle. This freezes a **bounded 75/75 development candidate**, not a general Luna release; 80/80 still fails on output. The exact portable kernel and caller requirements are [packaged here](engine/profiles/luna-coding-v1-75/README.md), and [receipts, failed earlier candidates, costs and limits are documented](docs/research/continuation-contract/LUNA_CODING_COMPOSITION_RESULT.md).
+
+The live HUD now separates model/task-family medians from Engine-only exact retrieval, deduplicates reused receipts, and refreshes official tariff scenarios. Routine monitoring invokes no model. Broader Luna qualification, Sol/Astra qualification, normal Codex-app delivery and the full 80/80 objective remain open.
+
+The static-skill experiment below is historical exploratory evidence, not the latest Engine result. Its source-copy fixture achieved 80.39% input / 78.44% output reduction; the earlier High-model evaluation is in [FRONTIER_REPORT.md](FRONTIER_REPORT.md).
 
 ## Benchmark results
 

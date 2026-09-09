@@ -1,0 +1,66 @@
+{
+  "profile_id": "LUNA_CODING_V1_75_CANDIDATE",
+  "status": "FROZEN_BOUNDED_DEVELOPMENT_CANDIDATE",
+  "model": "gpt-5.6-luna",
+  "effort": "high",
+  "engine_active": true,
+  "scope": "Known allocation coding fixture; source-only semantic result, caller memory/checks/publication, V7 client base",
+  "savings_percent": {
+    "input_tokens": 86.17199833818032,
+    "output_tokens": 79.06336088154269
+  },
+  "uncached_savings_percent": 62.036675770581354,
+  "meets_75_75": true,
+  "meets_80_80": false,
+  "fresh_pairs": 1,
+  "general_release": false,
+  "codex_app_integration": false,
+  "new_mechanisms_in_candidate": false,
+  "model_tool_access": "ordinary",
+  "semantic_reentry": "actual checker failure; unsupported semantics stop instead of false success",
+  "base_file_sha256": "f07e19dbe57d410b23524332acf30c0f19650ab631f9e654897cbf440c61c4c0",
+  "manifest_sha256": "004256e20eb7ba68530d7da52b5777d6661a77e749a4689566f0371527ce312e",
+  "evidence_sha256": {
+    "luna_coding_composed_v1.py": "00c1e618bc0183653d02d1192eb3c7773e636e177596a5a8f920cc5a1ba0957f",
+    "luna_coding_composed_fresh_pair.py": "d8f17cd5197880afe0b15a0d69ba85f4548937dca7157db634a0d98eb784db99",
+    "luna_coding_composed_fresh_audit.py": "425e0d2e9917dd5954f1cfb0cd0076495c796308ee01697c6b4cbe479ead101f",
+    "LUNA_CODING_COMPOSED_FRESH_PAIR_RESULT.json": "c4ea90eff1b0179f048f94fa5aae665239cba22ebabb094df3051aa83f3426e7",
+    "LUNA_CODING_DOMAIN_AUDIT.json": "24d2c576d21eaf2f084f47161499dbbaa87db53e3cc1b2fdde9f035e44cdfcc3"
+  },
+  "overhead": {
+    "caller_checks_seconds": 0.06811766600003466,
+    "memory_preflight": {
+      "elapsed_seconds": 0.18006458296440542,
+      "raw_bytes": 13080,
+      "stderr_bytes": 0,
+      "excluded_other_scope_count": 8
+    },
+    "raw_capture": [
+      {
+        "arm": "off",
+        "raw_capture_bytes": 128264,
+        "elapsed_seconds": 77.29477962502278
+      },
+      {
+        "arm": "on",
+        "raw_capture_bytes": 66636,
+        "elapsed_seconds": 15.888337582990061
+      }
+    ],
+    "new_native_attempt_totals": {
+      "input_tokens": 153615,
+      "output_tokens": 5022,
+      "cached_input_tokens": 108544,
+      "reasoning_output_tokens": 2547
+    },
+    "scope": "One adaptive candidate plus one fresh pair; excludes coordinator/implementation/physical I/O"
+  },
+  "remaining": [
+    "Prospective varied-task capability/workflow qualification",
+    "Representative cross-family medians before broad Luna claim",
+    "Portable production caller and Codex-app delivery integration",
+    "Full 80/80 objective remains open",
+    "Concurrent-writer isolation across check/publication boundary",
+    "Economics under normal desktop permissions; caller/model sandbox boundaries differ"
+  ]
+}

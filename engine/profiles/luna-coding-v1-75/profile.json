@@ -1,0 +1,31 @@
+{
+  "id": "luna-coding-v1-75",
+  "status": "FROZEN_BOUNDED_DEVELOPMENT_CANDIDATE",
+  "model": "gpt-5.6-luna",
+  "effort": "high",
+  "base_file": "base.md",
+  "base_sha256": "f07e19dbe57d410b23524332acf30c0f19650ab631f9e654897cbf440c61c4c0",
+  "base_bytes": 6188,
+  "automatic_activation": false,
+  "engine_active_on_all_routes": true,
+  "tested_scope": "One known single-module allocation repair with public tests and independent oracle",
+  "required_caller_contract": [
+    "Actual task-bound memory preflight and registration before inference",
+    "Relevant exact source and test evidence supplied",
+    "Model retains semantic judgment, ordinary tools and needed probes",
+    "Caller stages exact replacement bytes and runs authorized checks",
+    "Protected inputs stay bound; publish only after checks pass",
+    "Unexpected checks or unresolved semantics retain semantic re-entry",
+    "Unsupported operations retain ordinary execution inside Engine"
+  ],
+  "evidence": "../../../docs/research/continuation-contract/LUNA_CODING_V1_75_FREEZE.json",
+  "new_user_interface_required": false,
+  "normal_codex_app_integration_verified": false,
+  "standalone_production_caller_included": false,
+  "forbidden_claims": [
+    "Universal 75/75 or 80/80",
+    "Included-plan quota saving from raw input ratio",
+    "General coding capability or workflow certification",
+    "Skill-only equivalence to caller-prepared execution"
+  ]
+}

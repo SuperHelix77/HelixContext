@@ -1,0 +1,29 @@
+{
+  "classification": "Post-hoc independent rational-arithmetic and Python edge-case audit; not holdout or model inference",
+  "seed": 910271,
+  "rows": [
+    {
+      "arm": "off",
+      "checks": "PASS",
+      "large_integer_and_container_cases": 1213,
+      "invalid_cases": 18,
+      "source_sha256": "97fcb467af999e65f5727791d46c1f2b8a6c55c58013312a316de2c81170346a",
+      "evaluation_seconds": 0.031591457955073565
+    },
+    {
+      "arm": "on",
+      "checks": "PASS",
+      "large_integer_and_container_cases": 1213,
+      "invalid_cases": 18,
+      "source_sha256": "b7003ee5a968006324437d7160be2eb670adb1c64766e9f525095b7eb51d3352",
+      "evaluation_seconds": 0.03334587498102337
+    }
+  ],
+  "new_model_calls": 0,
+  "auditor_sha256": "dfc9142b70e737ed0eb03eb126b9665bfb9d6154c48207459fd71725e142cfc3",
+  "limits": [
+    "Finite ordinary-int/container domain; arbitrary overloaded Python objects and resource exhaustion unproved",
+    "Generated cases after seeing source shape; not prospective model qualification",
+    "No native output or prompt changed"
+  ]
+}
