@@ -20,10 +20,11 @@
 | `CONDITIONAL` | True only if stated assumptions hold; assumption is named |
 | `UNKNOWN` | Not measurable from available traces; deliberately not guessed |
 
-> **Read §22 before acting on §4, §7.1, §16 or §21.** §22 was written last, from per-turn trajectory
-> data rather than aggregates. It supersedes T1 on long-horizon tasks, withdraws my own T8 estimate
-> and T10 headline as over-claims, and identifies turn count — not compression — as the only
-> measured route to 80% input.
+> **Read §22 and §23 before acting on §4, §7.1, §14.B, §16 or §21.** §22 and §23 were written last, from per-turn
+> trajectory data and from all 33 paired comparisons rather than aggregates. §22 supersedes T1 on
+> long-horizon tasks and withdraws my own T8/T10 estimates as over-claims. §23 reports a previously
+> undocumented V3 regression on short evidence tasks for Sol and Astra, and shows that a task router
+> cannot be validated here because policy version dominates task and model as a source of variance.
 
 **A note on what the repository is.** Every number in the repository that matters was recomputed
 from the raw receipt files, not from prose. Where prose and receipts disagree, the receipt wins and
@@ -1901,3 +1902,141 @@ The §1 verdict stands, with one strengthening and one softening:
 
 **Net: Helix is closer to its long-horizon input ceiling than §16 suggested, and that ceiling is a
 turn count, not a compression ratio.**
+
+---
+
+# 23. ADDENDUM 2 — ROUTER VALIDATION AND A V3 REGRESSION
+
+All 33 complete off/on pairs ever run were extracted from `results/frontier-native-usage.json` across
+four cohorts (V1V2, V2iter, FUP, V3) and evaluated on a **price-weighted** objective
+(`$ = uncached×1.25 + cached×0.125 + output×10`). This section answers §21 Step 6 — "build the bypass
+router by replay" — and the answer is more interesting than expected.
+
+## 23.1 A V3 regression that the aggregate hides
+
+**Input saving on the EVIDENCE task family, by cohort:**
+
+| Model | V1V2 `Q` | V2iter `Q3` | FUP `Q2` | **V3 `Q`** | **V3 `Q4`** |
+|---|---:|---:|---:|---:|---:|
+| Luna | +88.8% | +35.0% | +51.0% | +50.6% | +31.6% |
+| **Sol** | **+77.4%** | **+67.2%** | **+84.2%** | **−13.9%** | **−1.9%** |
+| **Astra** | **+48.7%** | **+49.7%** | **+50.6%** | **−13.0%** | **−1.7%** |
+
+`OBSERVED` across four cohorts. **Sol and Astra earned +48% to +84% input savings on short
+evidence-over-corpus tasks under three successive policies. Under V3 they are negative on both
+fresh fixtures.** Luna is unaffected (still +31.6% to +50.6%).
+
+**The signature is in the uncached channel, and it is the same signature as §22.7:**
+
+| Model | Task | Uncached off | Uncached on | Δ |
+|---|---|---:|---:|---:|
+| Astra | V3 Q | 5,682 | **11,720** | **+6,038** |
+| Sol | V3 Q | 8,850 | **11,357** | **+2,507** |
+| Astra | V3 Q4 | 5,357 | 5,665 | +308 |
+| Sol | V3 Q4 | 5,392 | 5,727 | +335 |
+
+`OBSERVED`. The regression is **extra work inside the turn**, not extra prompt. This is the same
+phenomenon as Astra's W50 turn-50 anomaly (+50,516) and Luna's memory-followup behaviour
+(terminal bytes 578 → 7,471 while command bytes fell). **One mechanism, three appearances:**
+
+> **M2′ — when Helix supplies compressed-but-not-resident evidence to Sol or Astra, they spend more
+> tokens reconstructing/verifying inside the turn than the compression saved.** The effect is
+> model-specific (Luna does not show it), task-shape-specific (appears on evidence tasks, not
+> long-horizon), and policy-version-specific (absent before V3).
+
+**Value of fixing it:** Sol + Astra were previously at +48–84% on this class. Recovering even the
+lower bound is a larger win than any new mechanism in §15. **This outranks everything except the
+Astra turn-50 anomaly.**
+
+## 23.2 The router: fitted well, validated badly
+
+**Leave-one-cohort-out (the honest test).** Policy fitted on three cohorts, applied to the held-out
+fourth:
+
+| Held-out cohort | n | always-OFF | always-ON | router | vs always-ON | vs always-OFF |
+|---|---:|---:|---:|---:|---:|---:|
+| FUP | 6 | $0.961 | $1.166 | $0.755 | **+35.2%** | +21.4% |
+| V1V2 | 9 | $1.763 | $2.080 | $1.582 | **+24.0%** | +10.3% |
+| V2iter | 6 | $0.301 | $0.225 | $0.245 | −8.9% | +18.7% |
+| **V3** | **12** | $2.163 | **$1.219** | $1.547 | **−27.0%** | +28.5% |
+| **Total** | 33 | $5.188 | $4.689 | $4.129 | **+12.0%** | +20.4% |
+
+`INFERRED`.
+
+**The router beats both constant baselines in aggregate (+12.0% vs always-ON) and fails badly on the
+most recent cohort (−27.0%).** It works on the past and not on the present.
+
+## 23.3 Why: the dominant variance is the policy version, not the task
+
+Per-cell gain signs across cohorts (`+` = Helix cheaper):
+
+| Model | Family | n | signs | gains (%) |
+|---|---|---:|---|---|
+| Luna | EVIDENCE | 5 | `+++++` | +36.6, +73.5, +29.7, +52.2, +6.1 |
+| Sol | LH | 3 | `+++` | +23.2, +11.8, +52.6 |
+| Astra | LH | 3 | `+++` | +24.6, +6.2, +43.4 |
+| **Luna** | **LH** | **3** | **`--+`** | **−133.7, −94.4, +53.4** |
+| Sol | EVIDENCE | 5 | `+++--` | +71.5, +75.5, +43.7, −15.1, −1.4 |
+| Astra | EVIDENCE | 5 | `+++--` | +55.2, +58.5, +58.0, −38.3, −2.4 |
+| Sol | AGENTIC | 2 | `-+` | −25.1, +22.2 |
+| Astra | AGENTIC | 2 | `+-` | +36.2, −37.6 |
+| Luna | AGENTIC | 2 | `-+` | −18.0, +13.9 |
+
+**Luna's long-horizon gain swings 187 percentage points on the same task family** (−133.7% under
+V1/V2, −94.4% under FUP, +53.4% under V3). That single swing is larger than every task-level and
+model-level effect combined.
+
+> **T13 — Policy-version dominance.** In this corpus, `Var(gain | policy version)` exceeds
+> `Var(gain | model)` and `Var(gain | task family)`. Therefore a router keyed on (model, task family)
+> is fitting a *policy-version* signal through a *task* proxy, and is invalidated by the next policy
+> change. Leave-one-cohort-out confirms: −27.0% on the held-out newest cohort.
+>
+> **Consequence: do not ship a task router. Ship a policy-version gate.** Each Helix release needs
+> its own measured per-(model, family) table, and the table from the previous release must be treated
+> as expired, not as prior.
+
+## 23.4 What is reliable enough to act on
+
+Only cells with **unanimous sign across all observed cohorts**:
+
+| Rule | Support | Range |
+|---|---|---|
+| **Luna + evidence tasks → Helix ON** | 5/5, four cohorts, four fixtures | +6.1% to +73.5% |
+| **Sol + long-horizon → Helix ON** | 3/3, three cohorts | +11.8% to +52.6% |
+| **Astra + long-horizon → Helix ON** | 3/3, three cohorts | +6.2% to +43.4% |
+| **Sol/Astra + short evidence tasks under V3 → Helix OFF** | 2/2 within V3 (but contradicts 3 earlier cohorts — treat as V3-specific) | −1.4% to −15.1% |
+| Luna + long-horizon → **no reliable rule** | signs split by policy version | −133.7% to +53.4% |
+| Any + agentic tasks → **no reliable rule** | n=2, signs split in all three cells | −37.6% to +36.2% |
+
+**Luna + evidence tasks is the single most reliable result in the project: 5/5 across four policy
+versions and four independent fixtures.** If anything is ready to freeze, it is that cell — not Sol
+caller-completion (n=1, §13.6).
+
+## 23.5 Revised priorities (superseding §21 Step 6 and §22.8 item 5)
+
+| # | Action | Native cost | Why it moved |
+|---|---|---|---|
+| **1** | Read Astra's retained W50 turn-50 trace | **0 calls** | §22.7 — 5.8 pts from one file read |
+| **2** | **Diff V3's evidence-task handling against V2iter/FUP for Sol and Astra** | **0 calls** | §23.1 — recovering +48–84% on a class where V3 now loses 14%. The earlier arms' prompts and fixtures are all in-repo. This is a code-reading task, not an experiment. |
+| **3** | Delete named plans | 0 calls | T5 |
+| **4** | Re-measure Luna + evidence tasks once more on a fresh fixture | 2 calls | §23.4 — the only 5/5 cell; cheap to convert from "reliable" to "frozen" |
+| **5** | Build a **policy-version gate** (per-release measured table), not a task router | 0 calls | T13 |
+| 6 | SOL-COMPOSE-1 (§18) | 4 calls | unchanged |
+| 7 | ASTRA-RECEIPT-1 (§19) | 6 calls | now has two quantified targets: the turn-50 sweep and the V3 evidence regression |
+| 8 | Turn-amortisation benchmark family | 0 calls to design | §22.6 — the only route to 80%, and the current benchmark cannot see it |
+
+**Total: 12 native calls, and the two highest-value items both cost zero.**
+
+## 23.6 What this addendum changes
+
+- **§14.B's router** and **§21 Step 6** are **downgraded**. A (model, task-family) router is not
+  shippable: LOCO shows −27.0% on the newest cohort. Replace with a per-release measurement gate
+  (T13).
+- **§12.5's claim that "Luna needs a router"** survives, but the reason sharpens: Luna's LH variance
+  is *policy* variance. Once a policy version is fixed and measured, Luna's LH is decidable — and
+  V3 measured +53.4%.
+- **A new regression is reported** (§23.1) that is absent from every existing repository document:
+  V3 costs Sol and Astra 50–98 percentage points on short evidence tasks relative to three prior
+  policy versions. **The repository's V3 aggregate (Sol 20.99%, Astra 17.11%) conceals that V3 is
+  net-negative on two of the four V3 task families for those two models.** That should be stated
+  plainly in `FRONTIER_REPORT.md`.
