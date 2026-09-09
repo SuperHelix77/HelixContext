@@ -1,0 +1,42 @@
+"""Offline Engine execution against retained retrieval/cold fixtures and graders.
+
+No model is run. Historical native controls are provenance, not a fresh pair.
+"""
+import json,sys,time
+from pathlib import Path
+import luna_capability_pair as cap
+import resolved_retrieval as resolved
+from evidence import Store
+
+
+def run(root,prior):
+    root=Path(root).resolve();prior=Path(prior).resolve();root.mkdir(parents=True,exist_ok=False)
+    rows=[]
+    for case in ('selection','cold'):
+        spec=json.loads((prior/(case+'-source.json')).read_text())
+        data=spec['records'] if case=='selection' else spec['events'][:-1]
+        task=spec['task'] if case=='selection' else spec['events'][-1]['request']
+        raw=json.dumps(data,ensure_ascii=False,separators=(',',':')).encode()
+        case_dir=root/case;case_dir.mkdir();store=Store(case_dir/'store');started=time.perf_counter()
+        ref=store.put(raw)
+        # Reopen the store before retrieval; the source remains cold by hash.
+        reopened=Store(case_dir/'store')
+        def no_semantic_call(*args):raise AssertionError('Recognized task unexpectedly needs inference')
+        result=resolved.dispatch(task,reopened,ref,no_semantic_call)
+        assert result['state']=='RESOLVED' and result['model_calls']==0
+        answer=json.dumps(result['answer'],ensure_ascii=False,separators=(',',':'))
+        checks=cap.grade(prior,case,prior/case/'default',answer)
+        (case_dir/'answer.json').write_text(answer+'\n')
+        s=json.loads((prior/(case+'-default-run')/'status.json').read_text())
+        native=prior/(case+'-default-run')/'native-events.jsonl'
+        assert cap.kd.sha(native)==s['native_events_sha256'] and s['state']=='closed'
+        payload=sum(len(x.encode()) for x in result['answer'].values() if isinstance(x,str))
+        row={'case':case,'execution':'Engine-only recognized request; no model invocation','checks':checks,'engine_active':True,'model_calls':0,'model_input_tokens':0,'model_output_tokens':0,'source_ref':ref,'answer_sha256':cap.kd.sha(case_dir/'answer.json'),'answer_bytes':len((answer+'\n').encode()),'elapsed_seconds':time.perf_counter()-started,'ingest_store_io':store.metrics,'recovery_store_io':reopened.metrics,'retained_control_usage':s['usage'],'retained_control_native_sha256':s['native_events_sha256'],'task_sha256':resolved.hashlib.sha256(task.encode()).hexdigest()}
+        rows.append(row)
+    report={'classification':'Offline deterministic execution replay, not a native paired model benchmark','model_capability_replication':False,'production_codex_app_integration':False,'rows':rows,'mechanism_sha256':cap.kd.sha(Path(resolved.__file__)),'runner_sha256':cap.kd.sha(Path(__file__)),'limits':['Only two exact parameterized request grammars; unrecognized forms need semantic execution','Zero inference is observed for these compiled tasks, not a universal model saving','Research implementation and full physical/system I/O costs are unmetered','Cold task is a history snapshot, not forty live turns']}
+    cap.kd.save(root/'result.json',report)
+    Path(__file__).with_name('RESOLVED_RETRIEVAL_REPLAY_RESULT.json').write_text(json.dumps(report,indent=2)+'\n')
+    print(json.dumps([{k:r[k] for k in ('case','model_calls','checks','elapsed_seconds','answer_bytes')} for r in rows]))
+
+
+if __name__=='__main__':run(*sys.argv[1:])
