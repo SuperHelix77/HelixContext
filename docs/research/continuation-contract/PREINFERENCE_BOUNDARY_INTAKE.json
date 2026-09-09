@@ -1,0 +1,62 @@
+{
+  "classification": "Installed schema and official documentation audit; runtime composition untested",
+  "version": "codex-cli 0.153.4",
+  "schema_sha256": {
+    "ClientRequest.json": "05c82ead1a820c765c23d3a1d262e4ae54889785276ee1acf7c494141fd94d70",
+    "ServerRequest.json": "38bb1c9dbb1dda2a688a7c8712b04319fe6ee2ed28b54acd2f5fd341d25567ff",
+    "v2/TurnStartParams.json": "b36fb37326b1cf69f75c8b306f1f886d53a57c4b1b985e08e298e2407ea2ad02",
+    "v2/HooksListResponse.json": "891dd10ef7f78e59631fce05fff2becddb8004b3c0338dbbbd6b4f17ef1fa64f"
+  },
+  "inject_items": {
+    "description": "Append raw Responses API items to the thread history without starting a user turn.",
+    "properties": {
+      "id": {
+        "$ref": "#/definitions/RequestId"
+      },
+      "method": {
+        "enum": [
+          "thread/inject_items"
+        ],
+        "title": "Thread/injectItemsRequestMethod",
+        "type": "string"
+      },
+      "params": {
+        "$ref": "#/definitions/ThreadInjectItemsParams"
+      }
+    },
+    "required": [
+      "id",
+      "method",
+      "params"
+    ],
+    "title": "Thread/injectItemsRequest",
+    "type": "object"
+  },
+  "inject_params": {
+    "properties": {
+      "items": {
+        "description": "Raw Responses API items to append to the thread's model-visible history.",
+        "items": true,
+        "type": "array"
+      },
+      "threadId": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "items",
+      "threadId"
+    ],
+    "type": "object"
+  },
+  "hooks_document_sha256": "6b4c549c4f1df78e802f289151e54f7677128b8a9929912afb7e8ecd975d2ce9",
+  "official_hooks": "https://learn.chatgpt.com/docs/hooks",
+  "official_app_server": "https://learn.chatgpt.com/docs/app-server",
+  "native_calls": 0,
+  "production_config_changed": false,
+  "limits": [
+    "Presence of schema is not runtime or normal-app delivery proof",
+    "Blocking prompt is not successful completion",
+    "Current-time docs may postdate prior integration audits"
+  ]
+}
