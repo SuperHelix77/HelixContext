@@ -1,0 +1,64 @@
+{
+  "classification": "Adaptive known coding candidate; source-only output; retained earlier control; not fresh pair",
+  "checks": "Public suite and 4433-case oracle PASS; exact publication and protected files PASS",
+  "control_usage": {
+    "input_tokens": 134764,
+    "output_tokens": 3525,
+    "cached_input_tokens": 109824,
+    "reasoning_output_tokens": 2114,
+    "cache_write_input_tokens": 0
+  },
+  "candidate_usage": {
+    "input_tokens": 38562,
+    "output_tokens": 1226,
+    "cached_input_tokens": 28160,
+    "reasoning_output_tokens": 857,
+    "cache_write_input_tokens": 0
+  },
+  "savings_percent": {
+    "input_tokens": 71.38553322845864,
+    "output_tokens": 65.21985815602838
+  },
+  "uncached_savings_percent": 58.291900561347234,
+  "native_sha256": "8e814d78c874986f2940e9d2211a070c536217b15eff2553ec57e54325d984d5",
+  "source_sha256": "c1b01c5426447d9779d4b3781326cc8bcffb5618dc17398739cdb17db39b1d9c",
+  "manifest_sha256": "412a929ec4e8b8c22987fb4fb5f493706a406eb4ce07d61665dbb74255d49f8b",
+  "turns": 1,
+  "segments": 2,
+  "segment_usage": [
+    {
+      "totalTokens": 19420,
+      "inputTokens": 18969,
+      "cachedInputTokens": 9984,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 451,
+      "reasoningOutputTokens": 341
+    },
+    {
+      "totalTokens": 20368,
+      "inputTokens": 19593,
+      "cachedInputTokens": 18176,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 775,
+      "reasoningOutputTokens": 516
+    }
+  ],
+  "raw_capture": {
+    "sha256": "827d5e241b79dd0eeaafba31f8e9f77836747bae1a15f973275abd0073d61eef",
+    "bytes": 84523,
+    "calls": 1,
+    "outputs": 1,
+    "unmatched_calls": [],
+    "logical_capture_read_bytes": 84523,
+    "logical_capture_write_bytes": 84523
+  },
+  "caller_seconds": 0.0712683749734424,
+  "engine_active": true,
+  "general_release": false,
+  "limits": [
+    "N=1 adaptive candidate, reused control; no general parity inference",
+    "Candidate durable raw capture differs from ephemeral control",
+    "Exact physical I/O and complete preprocessing/research costs not measured",
+    "Current-state checks are not hostile concurrent-writer isolation"
+  ]
+}
