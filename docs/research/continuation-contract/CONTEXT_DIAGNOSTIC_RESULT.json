@@ -1,0 +1,168 @@
+{
+  "classification": "Current local CLI reconstruction, not historic native request capture; no inference turn requested",
+  "diagnostic": "codex debug prompt-input, same model/effort/skill limit/approval/sandbox/cwd/task text as pair; explicit skill input-item injection not reproduced by this CLI interface",
+  "inputs": {
+    "off": {
+      "input_list_sha256": "5c00d97fb905acc4030afa3de521a991d0453d8cf477d9f1dd4b8418eb264730",
+      "parts": [
+        {
+          "role": "developer",
+          "bytes": 2548,
+          "proxy_tokens": 853,
+          "sha256": "142d6091caab5ad91b0d9a262ae8b65f4f6b94e6b5cbf8c3a6b1e7768f3095b5"
+        },
+        {
+          "role": "developer",
+          "bytes": 630,
+          "proxy_tokens": 145,
+          "sha256": "f56f2af3c0ff268c6082f1a220610eef316dd900b519b8884a484bbaba2ed697"
+        },
+        {
+          "role": "developer",
+          "bytes": 1328,
+          "proxy_tokens": 249,
+          "sha256": "d4a43ed616564dc0173826b5cdc0b92261da2e33fd5b5ceeeefb9d7aa6fc3350"
+        },
+        {
+          "role": "user",
+          "bytes": 3315,
+          "proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb"
+        },
+        {
+          "role": "user",
+          "bytes": 2361,
+          "proxy_tokens": 479,
+          "sha256": "20519513558df32a0055357ccf7949a8d422f5b99c05f0f1d61248345251e2d5"
+        },
+        {
+          "role": "user",
+          "bytes": 1180,
+          "proxy_tokens": 326,
+          "sha256": "7ed3c5339d28f5f1ef65c33132af18af278d75199702e3997abfea9801d8904c"
+        },
+        {
+          "role": "user",
+          "bytes": 3575,
+          "proxy_tokens": 694,
+          "sha256": "2c8b99415269351dc1983170ccc6f528174d7d78ceeeafc5dc89ac88bda5b9d7"
+        }
+      ],
+      "text_proxy_total": 4075
+    },
+    "on": {
+      "input_list_sha256": "169135242e3b316344edd1331fcb81dfbc350f4aa60f935436d5f45e09408ad3",
+      "parts": [
+        {
+          "role": "developer",
+          "bytes": 2549,
+          "proxy_tokens": 854,
+          "sha256": "fe6b3d4c505a6e6a7ee2f0fbc8e02d7ac5ac463f908a5d5c373596159f74ac2b"
+        },
+        {
+          "role": "developer",
+          "bytes": 639,
+          "proxy_tokens": 147,
+          "sha256": "748903112c7ca6cfa285262da2266578db0ec96b24d71807151c9f318b84c678"
+        },
+        {
+          "role": "developer",
+          "bytes": 1328,
+          "proxy_tokens": 249,
+          "sha256": "d4a43ed616564dc0173826b5cdc0b92261da2e33fd5b5ceeeefb9d7aa6fc3350"
+        },
+        {
+          "role": "user",
+          "bytes": 3315,
+          "proxy_tokens": 1329,
+          "sha256": "10538b421675920f265d5e2c503f40da45ae33879f94a6602632e1d5666aefcb"
+        },
+        {
+          "role": "user",
+          "bytes": 2361,
+          "proxy_tokens": 479,
+          "sha256": "20519513558df32a0055357ccf7949a8d422f5b99c05f0f1d61248345251e2d5"
+        },
+        {
+          "role": "user",
+          "bytes": 1234,
+          "proxy_tokens": 338,
+          "sha256": "e43a3a9f95e7711caf7b546b722d8715d176ea571306cf1dbe8a5a8a6dc2a516"
+        },
+        {
+          "role": "user",
+          "bytes": 4044,
+          "proxy_tokens": 854,
+          "sha256": "e50d3967487e156a381e068c3a056f5a3b56a7c1da9c23cba41f22b2210aec5c"
+        }
+      ],
+      "text_proxy_total": 4250
+    }
+  },
+  "catalog_base_template": {
+    "bytes": 21269,
+    "proxy_tokens": 4110,
+    "sha256": "152dfaeeb552876190962be1c12c93d426840ff12691f648261554a7675a6698",
+    "duplicate_instructions_template": true,
+    "warning": "Do not count duplicate fields twice or assert catalogue fields were all injected."
+  },
+  "limits": [
+    "Input-list diagnostic does not expose full native tool-schema serialization or token accounting",
+    "Raw diagnostic and model catalogue remain private local artifacts",
+    "No mandatory or irreducible context floor established"
+  ],
+  "agents_optimization": {
+    "classification": "Static instruction-preservation audit; not native capability certification",
+    "target": "/Users/mert/.codex/AGENTS.md",
+    "backup": "/Users/mert/Documents/ChatGPT/Helix/research/agents-md-optimization-v1-20260909/AGENTS.before.md",
+    "before": {
+      "bytes": 2305,
+      "proxy_tokens": 465,
+      "sha256": "8aeab698b7ef733520f68349117df6eebf95e065e7fb14b1f2c5ec75fe5835c1"
+    },
+    "after": {
+      "bytes": 1790,
+      "proxy_tokens": 383,
+      "sha256": "b28c89029d969860edb062536575ec68a944437d1788fd01867326bf9895bdc3"
+    },
+    "proxy_token_saving_percent": 17.634408602150543,
+    "obligations": {
+      "memory ordering and scope": true,
+      "recall command preserved": true,
+      "relevant verified memory": true,
+      "ignore irrelevant": true,
+      "verify changeable facts": true,
+      "user and repo authority": true,
+      "memory failure does not block": true,
+      "remember after verified work": true,
+      "one reusable result and why": true,
+      "remember fields": true,
+      "forbidden memory content": true,
+      "actual activation only": true,
+      "once per session": true,
+      "activation command": true,
+      "session fallback no guess": true,
+      "mode changes and retirement": true,
+      "restore before dependent work": true,
+      "user overrides metadata": true,
+      "board": true,
+      "material evidence status": true,
+      "dependency checks": true,
+      "ack batching": true,
+      "event preference": true,
+      "liveness caveats": true,
+      "child skill scope": true
+    },
+    "limits": [
+      "o200k proxy not actual native token reduction",
+      "25 static checks plus manual semantic review; no general behavioral parity claim",
+      "Future native pairs must bind and share this new global instruction version"
+    ],
+    "renderer_verification": {
+      "new_body_present": true,
+      "before_rendered_text_proxy": 4250,
+      "after_rendered_text_proxy": 4168,
+      "warning": "Fresh CLI diagnostic reconstruction, not native billed request; no native inference invoked."
+    }
+  }
+}
