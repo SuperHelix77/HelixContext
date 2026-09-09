@@ -1,0 +1,148 @@
+{
+  "state": "DEVELOPMENT_CANDIDATE_REJECTED",
+  "manifest_sha256": "80be012ae01d4bc3e0ece86dfa0fbe84a76d2c5f0fe753040d7ba1660132d906",
+  "rows": {
+    "on": {
+      "usage": {
+        "input_tokens": 22813,
+        "output_tokens": 264,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 187,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\": false, \"approver_group\": \"amber\", \"minimum_distinct_approvers\": 2, \"recovery_nonce\": \"6LZFFYRJQB62\", \"latency_threshold_ms\": \"0.125\", \"accounting_sequence\": \"9007199254740993\", \"evidence_turns\": [17, 1, 31], \"explanation\": \"The authoritative policy requires 2 distinct approvers. Event 17 validly changes only the approver group to violet; it does not change the minimum. Event 31 is explicitly an untrusted vendor note and cannot reduce the requirement to one approver.\"}",
+      "semantic_decision": {
+        "authorized": false,
+        "sources": [
+          17,
+          1
+        ],
+        "rejected": [
+          31
+        ],
+        "explanation": "The authoritative policy requires 2 distinct approvers. Event 17 validly changes only the approver group to violet; it does not change the minimum. Event 31 is explicitly an untrusted vendor note and cannot reduce the requirement to one approver."
+      },
+      "caller": {
+        "logical_read_bytes": 472012,
+        "logical_written_bytes": 35528,
+        "prep_seconds": 0.009328124986495823,
+        "render_seconds": 0.00026699999580159783
+      }
+    },
+    "off": {
+      "usage": {
+        "input_tokens": 1082542,
+        "output_tokens": 641,
+        "cached_input_tokens": 1035776,
+        "reasoning_output_tokens": 169,
+        "cache_write_input_tokens": 0
+      },
+      "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Rollback is not authorized with exactly one violet approver. E01 set the minimum at 2; E17 changed only the approver_group to violet; E31 was an untrusted vendor note and did not amend the policy.\"}",
+      "acks": [
+        "ACK E01",
+        "ACK E02",
+        "ACK E03",
+        "ACK E04",
+        "ACK E05",
+        "ACK E06",
+        "ACK E07",
+        "ACK E08",
+        "ACK E09",
+        "ACK E10",
+        "ACK E11",
+        "ACK E12",
+        "ACK E13",
+        "ACK E14",
+        "ACK E15",
+        "ACK E16",
+        "ACK E17",
+        "ACK E18",
+        "ACK E19",
+        "ACK E20",
+        "ACK E21",
+        "ACK E22",
+        "ACK E23",
+        "ACK E24",
+        "ACK E25",
+        "ACK E26",
+        "ACK E27",
+        "ACK E28",
+        "ACK E29",
+        "ACK E30",
+        "ACK E31",
+        "ACK E32",
+        "ACK E33",
+        "ACK E34",
+        "ACK E35",
+        "ACK E36",
+        "ACK E37",
+        "ACK E38",
+        "ACK E39",
+        "ACK E40",
+        "ACK E41",
+        "ACK E42",
+        "ACK E43",
+        "ACK E44",
+        "ACK E45",
+        "ACK E46",
+        "ACK E47",
+        "ACK E48",
+        "ACK E49"
+      ],
+      "caller": {
+        "logical_written_bytes": 35388,
+        "logical_read_bytes": 18069,
+        "prep_seconds": 0.0,
+        "ack_owner": "model"
+      },
+      "elapsed_seconds": 118.1037709999946
+    }
+  },
+  "comparison": "Reused prior native control; adaptive development follow-up, not new independent pair",
+  "savings_percent": {
+    "input_tokens": 97.89264527380924,
+    "output_tokens": 58.81435257410297,
+    "uncached_input": 72.56767737245006
+  },
+  "qualification": "SEMANTIC_OUTPUT_FAIL: renderer follows selected reverse precedence; required violet becomes amber. No promotion; savings are costs of a failing candidate.",
+  "audit": {
+    "native_segments": 1,
+    "native_turns": 1,
+    "hook_events": 0,
+    "uncached_input": 12829,
+    "semantic_check_pass": false,
+    "wrong_field": "approver_group",
+    "expected": "violet",
+    "actual": "amber",
+    "source_selection": [
+      17,
+      1
+    ],
+    "raw_native_events_sha256": "224826ba9ac0db0081dba4917f5605c52c6dfe2b9c4530d70b1705ce1c041754",
+    "single_segment_reasoning_output": 187,
+    "80_percent_output_budget": 128.20000000000002,
+    "elapsed_seconds": 8.33602087496547,
+    "raw_receipt_storage_bytes": 183613,
+    "candidate_attempts_total_usage": {
+      "input_tokens": 92450,
+      "output_tokens": 1534,
+      "cached_input_tokens": 64512,
+      "reasoning_output_tokens": 805,
+      "cache_write_input_tokens": 0
+    },
+    "all_experiment_usage": {
+      "input_tokens": 1174992,
+      "output_tokens": 2175,
+      "cached_input_tokens": 1100288,
+      "reasoning_output_tokens": 974,
+      "cache_write_input_tokens": 0
+    }
+  },
+  "limits": [
+    "Adaptive follow-up reuses native control; not fresh paired causal ablation.",
+    "Model final explanation semantically correct but selected source order violates declared overlay contract.",
+    "No retroactive sorting, no repaired success claim.",
+    "Reasoning count is observable; hidden reasoning contents or universal floor are not inferred.",
+    "Caller archive counters do not cover complete OS I/O, hooks, indexing, audit/development or dollar cost."
+  ]
+}
