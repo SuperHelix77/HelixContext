@@ -1,10 +1,11 @@
 {
   "BRIDGE_NATIVE_RESULT.json": "7a5480547d98652daea0faf5e8bed3e56ae32890e2b40be2f991a42d3111e58a",
+  "BRIDGE_NATIVE_V2_RESULT.json": "8687f8cfac41dcca1b6fdc8d7250707eece717d53a3ae1f971502bd67a17471d",
   "BRIDGE_REPLAY_RESULT.json": "6c9058124554a6c6a28873fed5bb363a0521518fdc61676ade3123ea90c3512e",
-  "README.md": "9685276081413e9bcd32b679f606396d8bfef2c676766c659989c4896546150a",
+  "README.md": "c35d7cf9472be87fc3f4da3d38de0c33e9c36abacd685fa6c16c6567368cbff3",
   "fixture-result.json": "1967bb8849392ab8f0e6e8b7cd26d133c4758198456d0d155656e828a2f05d5a",
-  "metadata_bridge.py": "8b34f80816d8d5ba0b2e06ce0fbd208c75872a938e839e7fdb2e4d4aabd325d7",
-  "post_tool.py": "66cdc3f69e4be2f41d7057a149c6d605a916eb6d95fba5efcaa448c90df44843",
-  "test_metadata_bridge.py": "dc3c52a44b25bd3af54f642498be78506155417f3808737864f8d43e133d30b7",
+  "metadata_bridge.py": "381aabb6858c3c708dbacf555c83ba05bd582b4b9669d9bedf9e92df12ba6b9c",
+  "post_tool.py": "cf149e0595a28df84919103fdcc9efe8b99f88edf3b2cde76fda2c0583220a55",
+  "test_metadata_bridge.py": "084e6cac4d9babbd63ea1488a2bd41dd09e6558a57e9d29cd81072f80cc7c267",
   "test_post_tool.py": "9151f1931f0ee8bee8eab29d5310c83f4b24612ef44281f71247c52aff153838"
 }

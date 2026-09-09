@@ -1,0 +1,60 @@
+{
+  "scope": "One native Sol High truncation-aware bridge probe; two command results",
+  "hook_emitted_packets": [
+    {
+      "exit_code": 0,
+      "upstream_truncated": true,
+      "full_source_bytes": 25622,
+      "full_source_verified": true,
+      "hook_archive_verified": true,
+      "replacement_text_bytes": 2028,
+      "hook_duration_ms": 45,
+      "bridge_io": {
+        "receipt_bytes_written": 0,
+        "receipt_bytes_read": 632,
+        "output_bytes_hashed": 33727,
+        "source_bytes_written": 0,
+        "source_bytes_read": 25622
+      }
+    },
+    {
+      "exit_code": 7,
+      "upstream_truncated": true,
+      "full_source_bytes": 25622,
+      "full_source_verified": true,
+      "hook_archive_verified": true,
+      "replacement_text_bytes": 2025,
+      "hook_duration_ms": 45,
+      "bridge_io": {
+        "receipt_bytes_written": 0,
+        "receipt_bytes_read": 629,
+        "output_bytes_hashed": 33727,
+        "source_bytes_written": 0,
+        "source_bytes_read": 25622
+      }
+    }
+  ],
+  "model_answer": {
+    "exit_codes": [
+      0,
+      7
+    ],
+    "schemas": [
+      null,
+      null
+    ]
+  },
+  "model_packet_recognition_gate_pass": false,
+  "native_usage": {
+    "totalTokens": 69253,
+    "inputTokens": 68941,
+    "cachedInputTokens": 34816,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 312,
+    "reasoningOutputTokens": 109
+  },
+  "configuration_values_restored": true,
+  "temporary_hook_removed": true,
+  "native_trace_sha256": "257b01e020d45c100cc9fab8877e9e3771f41de9d70e686fce1a1f83d9b4a7de",
+  "limits": "Hook emission and exact archives succeeded, but model reported null schemas. Packet delivery/interpretation remains unresolved. No end-to-end parity or savings claim; no paired ordinary control in this probe. Ephemeral hook transcript_path was null, so raw model-facing messages were unavailable through that surface."
+}

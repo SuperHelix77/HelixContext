@@ -40,3 +40,13 @@ A subsequent native Sol High replacement attempt **did not pass** (`BRIDGE_NATIV
 The native attempt consumed 64,517 input tokens and 393 output tokens. The temporary hook was removed and original configuration values restored. A pre-existing passive observer was left unchanged and contributes latency to this run.
 
 This result changes the accounting baseline: raw terminal-event bytes can substantially exceed the output already delivered by Codex. Future work must preserve the raw event separately, handle upstream truncation explicitly, and compare actual native token usage rather than advertising raw-to-packet size reduction as savings. Exact event ordering, nested code-mode compatibility and end-to-end quality remain open.
+
+## Truncation-aware bridge V2
+
+The bridge now archives complete app-server output text and the exact hook-input wire separately. It accepts the observed native truncation framing only when its head, tail and line count match the complete source. Unknown rewrites still pass through untouched. Numeric truncation labels receive sanity checks, not an independent tokenizer attestation. This is a narrow observed-format adapter, not support for all future native formats.
+
+**14 tests pass.** Full native event text remains retrievable, but it is not a claim to recover original binary stdout before any runtime decoding. Source/receipt I/O counters now include full-output storage and reads. Hashes detect corruption; same-user malicious writers remain outside the trust guarantee.
+
+In a subsequent native Sol High test, the hook emitted two compact packets, preserved exit codes 0 and 7 and verified both full source archives. However, the model returned null schema fields. The end-to-end packet-recognition gate therefore **failed**. Hook emission alone is not model-visible delivery evidence; delivery or interpretation must be isolated before benchmarking savings. Ephemeral transcript paths were null.
+
+`BRIDGE_NATIVE_V2_RESULT.json` records packet sizes, hook durations, storage/read counters and native usage: 68,941 input and 312 output tokens. No paired control or token-saving claim is made. Temporary configuration was removed and original settings restored. Previous failed probes remain intact.
