@@ -1,0 +1,103 @@
+{
+  "scope": "Evaluator mutation testing, not model capability evidence",
+  "source_sha256": "1b4c69fdd4823067e6fdb0bd1ac90aa6525d26b79786618dad867db02fb13238",
+  "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+  "positive_control": {
+    "source_bound": true,
+    "artifact_exact": true,
+    "source_unchanged": true,
+    "accepted": true,
+    "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+    "observed_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15"
+  },
+  "mutations": {
+    "filter_before_latest": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "bb5164ec793b932b5e67b10fe03ab0425446ebf8d7401aff7bbb0af956488b9a"
+    },
+    "truthy_published": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "615de145423f1ca702f0ca605c8c9a9cfca5532f642659af39d4fa77416df6f2"
+    },
+    "equal_published": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "f9a26b46e6d28f8aa01ccc06f82b4e6a3c54a106466304ebd80da29b83d827bb"
+    },
+    "truthy_approved": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "2075bef7ddc3957fbccf972274e389815b56a1f376322e480550d40dd1f03c09"
+    },
+    "equal_approved": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "0b1531423a1924f7ad49498041aeacaf22f618c7eec417ef5bfc538dfe309d94"
+    },
+    "exclusive_expiry": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "f9235cd4c1eff35454030ed07dddfbe6168d1f1b3d70183d7985a70b09bde72d"
+    },
+    "reverse_order": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "644c392c268d2275680e9dfa63e1c1c930640cbec768746768530a544476872a"
+    },
+    "reserialize": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "e1199c05df27bf677fbafbb8a619dfcce4af824c008d28e6361bc0f1a6bf7105"
+    },
+    "normalize_newlines": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "cc3e8ea334c9aee8768243271060d00176e21a25ee622b767c5c27a50f498c34"
+    },
+    "drop_final_newline": {
+      "source_bound": true,
+      "artifact_exact": false,
+      "source_unchanged": true,
+      "accepted": false,
+      "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+      "observed_sha256": "b2e85fa9ce7132967e377cf49d26fecbcb819051a24bab8d9175ea646181d9eb"
+    }
+  },
+  "source_mutation": {
+    "source_bound": true,
+    "artifact_exact": true,
+    "source_unchanged": false,
+    "accepted": false,
+    "expected_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15",
+    "observed_sha256": "14bced7205c5e93e498a4eed95812a143da9e1cbe3fe15afff63fa106cfd5f15"
+  }
+}
