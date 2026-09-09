@@ -27,9 +27,15 @@ class Store:
   if digest(b)!=key:raise ValueError('Evidence hash mismatch; do not trust the projection')
   return b
  def receipt(self,key):return json.loads(self.get(key))
- def retrieve(self,key,stream='stdout',start=None,end=None):
-  receipt=self.receipt(key);raw=self.get(receipt[stream]['sha256']);lines=raw.splitlines(keepends=True)
-  if start is not None:
+ def retrieve(self,key,stream='stdout',start=None,end=None,index=None):
+  receipt=self.receipt(key)
+  if index is not None:
+   from line_index import retrieve as indexed_retrieve
+   raw,_=indexed_retrieve(self,index,receipt[stream]['sha256'],1 if start is None else start,end)
+  else:
+   raw=self.get(receipt[stream]['sha256'])
+  lines=raw.splitlines(keepends=True)
+  if start is not None and index is None:
    if start<1 or end is not None and end<start:raise ValueError('Invalid 1-based inclusive line range')
    raw=b''.join(lines[start-1:end])
   try:body={'text':raw.decode('utf-8')}
@@ -39,7 +45,7 @@ class Store:
 ANSI=re.compile(r'\x1b\[[0-?]*[ -/]*[@-~]')
 def reduce_stream(raw,kind,limit=8):
  # Lossy decoding is never presented as exact evidence; retrieve supplies exact bytes.
- lines=raw.decode('utf-8',errors='replace').splitlines();view=[ANSI.sub('',x) for x in lines]
+ lines=[line.decode('utf-8',errors='replace') for line in raw.splitlines()];view=[ANSI.sub('',x) for x in lines]
  result={'lines':len(lines),'projection_only':True};diagnostics=[];counts=[];sections=[]
  for i,line in enumerate(view,1):
   if kind=='pytest':
@@ -91,13 +97,13 @@ def run(store,argv,cwd,environment_id,kind='generic',timeout=None,watch=()):
 def main():
  a=argparse.ArgumentParser();a.add_argument('--store',required=True);sub=a.add_subparsers(dest='op',required=True)
  p=sub.add_parser('run');p.add_argument('--cwd',default='.');p.add_argument('--environment-id',default='unspecified');p.add_argument('--kind',choices=['generic','pytest','compiler'],default='generic');p.add_argument('--timeout',type=float);p.add_argument('--watch',action='append',default=[]);p.add_argument('argv',nargs=argparse.REMAINDER)
- p=sub.add_parser('get');p.add_argument('receipt');p.add_argument('--stream',choices=['stdout','stderr'],default='stdout');p.add_argument('--start',type=int);p.add_argument('--end',type=int)
+ p=sub.add_parser('get');p.add_argument('receipt');p.add_argument('--stream',choices=['stdout','stderr'],default='stdout');p.add_argument('--start',type=int);p.add_argument('--end',type=int);p.add_argument('--index')
  a=a.parse_args();s=Store(a.store)
  if a.op=='run':
   argv=a.argv[1:] if a.argv[:1]==['--'] else a.argv
   if not argv:raise ValueError('A command argv is required')
   result=run(s,argv,a.cwd,a.environment_id,a.kind,a.timeout,a.watch)
- else:result=s.retrieve(a.receipt,a.stream,a.start,a.end)
+ else:result=s.retrieve(a.receipt,a.stream,a.start,a.end,a.index)
  print(json.dumps(result,ensure_ascii=False,separators=(',',':')))
  if a.op=='run':
   code=result['exit_code'];sys.exit(124 if result['timed_out'] else 128-code if code<0 else code)

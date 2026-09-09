@@ -31,7 +31,7 @@ def verify(store, candidate):
         if len(raw) != receipt[stream]['bytes']:
             raise ValueError('Raw byte length mismatch')
         # Separate implementation: no reducer invocation or trust in reducer counts.
-        lines = raw.decode('utf-8', errors='replace').splitlines()
+        lines = [line.decode('utf-8', errors='replace') for line in raw.splitlines()]
         lines = [re.sub(r'\x1b\[[0-?]*[ -/]*[@-~]', '', line) for line in lines]
         projection = candidate['streams'][stream]
         if projection.get('lines') != len(lines):

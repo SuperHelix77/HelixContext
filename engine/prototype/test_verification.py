@@ -40,3 +40,12 @@ def test_explicit_omission_is_not_claimed_complete(tmp_path):
     assert verify(store, candidate)['verified']
     candidate.pop('retrieval_required')
     with pytest.raises(ValueError): verify(store, candidate)
+
+
+def test_unicode_separator_uses_same_lines_as_exact_retrieval(tmp_path):
+    store = Store(tmp_path/'store')
+    text = 'note\u2028still same source line\nERROR exact=000.100'
+    candidate = run(store, [sys.executable, '-c', f'print({text!r})'], tmp_path, 'fixture')
+    assert verify(store,candidate)['verified']
+    assert candidate['streams']['stdout']['diagnostics'][0]['line']==2
+    assert store.retrieve(candidate['receipt'],start=2,end=2)['text']=='ERROR exact=000.100\n'
