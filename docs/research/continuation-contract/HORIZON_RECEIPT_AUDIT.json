@@ -1,0 +1,374 @@
+{
+  "classification": "Historical release receipt reconciliation; conditional call-elimination sensitivity is NOT a new benchmark",
+  "source_sha256": {
+    "native_receipts": "f295f3debe7a302035c1dd466463662eb07df949fee887dbd4f0bcd5075fdc81",
+    "frontier": "28eaa787b8040259265d9f8e02c0b74439109b4495afc7941a9f38c2533991da"
+  },
+  "cells": {
+    "luna/W50": {
+      "arms": {
+        "off": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 895345,
+            "output_tokens": 6776,
+            "cached_input_tokens": 574976,
+            "reasoning_output_tokens": 5527
+          },
+          "passive": {
+            "input_tokens": 813980,
+            "output_tokens": 5231,
+            "cached_input_tokens": 518656,
+            "reasoning_output_tokens": 4617
+          },
+          "final_semantic": {
+            "input_tokens": 81365,
+            "output_tokens": 1545,
+            "cached_input_tokens": 56320,
+            "reasoning_output_tokens": 910
+          },
+          "raw_final_events_sha256": "351c164a992672ed2a828451edfcef6a594079943f48b89b4e36d8ddc1f15ed3",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 710887,
+            "output_tokens": 3304,
+            "cached_input_tokens": 533248,
+            "reasoning_output_tokens": 2326
+          },
+          "passive": {
+            "input_tokens": 652884,
+            "output_tokens": 2044,
+            "cached_input_tokens": 488192,
+            "reasoning_output_tokens": 1603
+          },
+          "final_semantic": {
+            "input_tokens": 58003,
+            "output_tokens": 1260,
+            "cached_input_tokens": 45056,
+            "reasoning_output_tokens": 723
+          },
+          "raw_final_events_sha256": "899f8c1b05d5b8fa38ff20c1531b43334c67b0d4c8c681dfd876b6d7badc4597",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 20.601890891220698,
+        "output_tokens": 51.23966942148761
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 93.52171509306469,
+        "output_tokens": 81.40495867768595
+      },
+      "final_only_clears_80_both": true
+    },
+    "luna/L40": {
+      "arms": {
+        "off": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 852087,
+            "output_tokens": 3806,
+            "cached_input_tokens": 433152,
+            "reasoning_output_tokens": 2925
+          },
+          "passive": {
+            "input_tokens": 759476,
+            "output_tokens": 2173,
+            "cached_input_tokens": 358400,
+            "reasoning_output_tokens": 1813
+          },
+          "final_semantic": {
+            "input_tokens": 92611,
+            "output_tokens": 1633,
+            "cached_input_tokens": 74752,
+            "reasoning_output_tokens": 1112
+          },
+          "raw_final_events_sha256": "b7b837c2abc8abe161c0fb20e6650b24dda7b4e45b3edcfc9ade4215013ab61e",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 615277,
+            "output_tokens": 2925,
+            "cached_input_tokens": 454400,
+            "reasoning_output_tokens": 1803
+          },
+          "passive": {
+            "input_tokens": 535589,
+            "output_tokens": 1796,
+            "cached_input_tokens": 391168,
+            "reasoning_output_tokens": 1436
+          },
+          "final_semantic": {
+            "input_tokens": 79688,
+            "output_tokens": 1129,
+            "cached_input_tokens": 63232,
+            "reasoning_output_tokens": 367
+          },
+          "raw_final_events_sha256": "a20ae92ff942827a51931896e7bdf87fbf21814d62af8ba517be9be1f5d963d6",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 27.791763047670017,
+        "output_tokens": 23.14766158696795
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 90.6479033244258,
+        "output_tokens": 70.33631108775617
+      },
+      "final_only_clears_80_both": false
+    },
+    "sol/W50": {
+      "arms": {
+        "off": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 926028,
+            "output_tokens": 944,
+            "cached_input_tokens": 637568,
+            "reasoning_output_tokens": 150
+          },
+          "passive": {
+            "input_tokens": 862080,
+            "output_tokens": 390,
+            "cached_input_tokens": 576384,
+            "reasoning_output_tokens": 41
+          },
+          "final_semantic": {
+            "input_tokens": 63948,
+            "output_tokens": 554,
+            "cached_input_tokens": 61184,
+            "reasoning_output_tokens": 109
+          },
+          "raw_final_events_sha256": "c0f45ad28fce00d58a3fb233d53937d5b572ca3231f0c69f18b8b5578bff8dfb",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 785283,
+            "output_tokens": 1190,
+            "cached_input_tokens": 535936,
+            "reasoning_output_tokens": 243
+          },
+          "passive": {
+            "input_tokens": 728129,
+            "output_tokens": 343,
+            "cached_input_tokens": 499328,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 57154,
+            "output_tokens": 847,
+            "cached_input_tokens": 36608,
+            "reasoning_output_tokens": 243
+          },
+          "raw_final_events_sha256": "0e2677b3439ac58ed2f7e87dde35efe991cb545cd1b3d4815458c932c6da966d",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 15.198784485998262,
+        "output_tokens": -26.05932203389831
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 93.82804839594483,
+        "output_tokens": 10.27542372881356
+      },
+      "final_only_clears_80_both": false
+    },
+    "sol/L40": {
+      "arms": {
+        "off": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 880810,
+            "output_tokens": 948,
+            "cached_input_tokens": 396160,
+            "reasoning_output_tokens": 167
+          },
+          "passive": {
+            "input_tokens": 804290,
+            "output_tokens": 280,
+            "cached_input_tokens": 352512,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 76520,
+            "output_tokens": 668,
+            "cached_input_tokens": 43648,
+            "reasoning_output_tokens": 167
+          },
+          "raw_final_events_sha256": "6146ebc8fcb82dbb71e534707f24321ad1e5fb4b7be91d875f846c7db2b724d1",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 646489,
+            "output_tokens": 1013,
+            "cached_input_tokens": 447488,
+            "reasoning_output_tokens": 313
+          },
+          "passive": {
+            "input_tokens": 592131,
+            "output_tokens": 280,
+            "cached_input_tokens": 411264,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 54358,
+            "output_tokens": 733,
+            "cached_input_tokens": 36224,
+            "reasoning_output_tokens": 313
+          },
+          "raw_final_events_sha256": "d7ccd40fa50f5911c1dcc4cd08374741dd9d88098b9dc053f2ec0c0bb10ee63c",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 26.6028996037738,
+        "output_tokens": -6.856540084388185
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 93.82863500641456,
+        "output_tokens": 22.679324894514764
+      },
+      "final_only_clears_80_both": false
+    },
+    "astra/W50": {
+      "arms": {
+        "off": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 933283,
+            "output_tokens": 812,
+            "cached_input_tokens": 634752,
+            "reasoning_output_tokens": 291
+          },
+          "passive": {
+            "input_tokens": 911464,
+            "output_tokens": 604,
+            "cached_input_tokens": 623232,
+            "reasoning_output_tokens": 227
+          },
+          "final_semantic": {
+            "input_tokens": 21819,
+            "output_tokens": 208,
+            "cached_input_tokens": 11520,
+            "reasoning_output_tokens": 64
+          },
+          "raw_final_events_sha256": "1b43053da6cb9daa13d892c166b1d1b5869d25827ab883235e12ace41723ee5d",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 50,
+          "total": {
+            "input_tokens": 842482,
+            "output_tokens": 859,
+            "cached_input_tokens": 613888,
+            "reasoning_output_tokens": 0
+          },
+          "passive": {
+            "input_tokens": 770147,
+            "output_tokens": 343,
+            "cached_input_tokens": 558336,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 72335,
+            "output_tokens": 516,
+            "cached_input_tokens": 55552,
+            "reasoning_output_tokens": 0
+          },
+          "raw_final_events_sha256": "c4532230cf1a1d38d1f7ef8f61db71c185e9a7c827d9088526f77385563eb41e",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 9.729203253461172,
+        "output_tokens": -5.788177339901468
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 92.24940344997177,
+        "output_tokens": 36.45320197044335
+      },
+      "final_only_clears_80_both": false
+    },
+    "astra/L40": {
+      "arms": {
+        "off": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 898279,
+            "output_tokens": 622,
+            "cached_input_tokens": 466432,
+            "reasoning_output_tokens": 42
+          },
+          "passive": {
+            "input_tokens": 851040,
+            "output_tokens": 280,
+            "cached_input_tokens": 431616,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 47239,
+            "output_tokens": 342,
+            "cached_input_tokens": 34816,
+            "reasoning_output_tokens": 42
+          },
+          "raw_final_events_sha256": "6db36146a4597d0d6058a3fa85d81d95416ec30fb62474eec4c4252cf23f9c88",
+          "historical_grade_pass": true
+        },
+        "on": {
+          "turns": 41,
+          "total": {
+            "input_tokens": 680286,
+            "output_tokens": 642,
+            "cached_input_tokens": 457344,
+            "reasoning_output_tokens": 0
+          },
+          "passive": {
+            "input_tokens": 622937,
+            "output_tokens": 280,
+            "cached_input_tokens": 413952,
+            "reasoning_output_tokens": 0
+          },
+          "final_semantic": {
+            "input_tokens": 57349,
+            "output_tokens": 362,
+            "cached_input_tokens": 43392,
+            "reasoning_output_tokens": 0
+          },
+          "raw_final_events_sha256": "c28c1c1737fa16b8cab405d3f06bceae9b844dd525e023abcab3c91fb3f97bdb",
+          "historical_grade_pass": true
+        }
+      },
+      "observed_savings_percent": {
+        "input_tokens": 24.26784996643582,
+        "output_tokens": -3.2154340836012762
+      },
+      "conditional_final_only_savings_percent": {
+        "input_tokens": 93.61568065155703,
+        "output_tokens": 41.80064308681673
+      },
+      "final_only_clears_80_both": false
+    }
+  },
+  "verified_raw_receipts": 546,
+  "verified_passive_answers": 534,
+  "native_calls_launched": 0,
+  "limits": [
+    "Original episodes use fresh CLI invocation per event, not persistent-session compaction.",
+    "Final historical grades reconciled, not independently rerun here.",
+    "Final-only arithmetic deletes required native ACK calls and assumes final behavior/cost unchanged; original no-call-elimination contract would change.",
+    "Caller persistence/retrieval/creation/recovery cost cannot be assigned zero.",
+    "No assertion current release inherits prior finite parity.",
+    "Known fixtures and answers are development evidence, not fresh holdout."
+  ]
+}
