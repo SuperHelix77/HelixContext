@@ -1,0 +1,46 @@
+{
+  "classification": "Offline replay of exposed native fixture; not new model evidence",
+  "source_bytes": 78905,
+  "source_hash": "306068c0c7f82ed8257f0302a4a5e3efbf1580dc2b8b7c69b7569325b2369bbb",
+  "packet_bytes": 679,
+  "packet": {
+    "schema": "helix.jsonl_lines.v1",
+    "source": {
+      "sha256": "306068c0c7f82ed8257f0302a4a5e3efbf1580dc2b8b7c69b7569325b2369bbb",
+      "bytes": 78905
+    },
+    "coverage": "partial literal matches in decoded text; other fields/lines remain in exact raw source",
+    "status": "PROJECTED",
+    "records": 50,
+    "query": "Release envelope",
+    "matching_lines": 2,
+    "omitted_matching_lines": 0,
+    "matches": [
+      {
+        "record_line": 1,
+        "event_id": "1",
+        "text_line": 23,
+        "text": "Release envelope initialized: code=\"000.250\", permitted=false, origin=\"eu-north\", revision=\"00931\"."
+      },
+      {
+        "record_line": 37,
+        "event_id": "37",
+        "text_line": 23,
+        "text": "Release envelope update: code=\"000.375\", permitted=true, revision=\"00942\". The origin is unchanged."
+      }
+    ]
+  },
+  "seconds_including_archive_extract_verify": 0.00148154201451689,
+  "store_io": {
+    "object_bytes_read": 78905,
+    "object_bytes_written": 78905,
+    "object_bytes_hashed": 157810,
+    "object_read_operations": 1,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "source_code_sha256": "689333630b892988898947dd7fc6e703ae4e64341d267fefcebc7aa1f003b937",
+  "original_candidate_terminal_bytes": 7471,
+  "comparison_limit": "7471 includes all prior candidate terminal operations, while this packet covers one extraction only. Do not compute whole-task savings from these values."
+}
