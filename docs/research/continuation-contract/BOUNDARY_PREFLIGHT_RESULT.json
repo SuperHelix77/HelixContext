@@ -1,0 +1,63 @@
+{
+  "classification": "OFFLINE_ONLY_NOT_NATIVE_PARITY",
+  "cases": {
+    "valid": {
+      "declared_checks_passed": true,
+      "no_publication_before_review": true,
+      "offline_semantic_check_passed": true,
+      "terminal_status": "ACCEPTED",
+      "candidate_root": "4d85ec8e31ca872a58ff088c9ccb464294b7f23ce4a67235fb12b5eb31fd4ba7",
+      "check_evidence": "7baf880f0f32b0c6281ae7f9bd13d9dd3b92b2158fd1ab9bfbe4bdb17c5ef826",
+      "review_evidence": "6219d6ec8e25db76e03e779e6749ba27bbab5d4ee3ae031df6829e78f184b69d",
+      "logical_store_counters": {
+        "object_bytes_read": 19774,
+        "object_bytes_written": 6733,
+        "object_bytes_hashed": 29233,
+        "object_read_operations": 29,
+        "staging_bytes_read": 66,
+        "staging_bytes_written": 427,
+        "projection_bytes_parsed": 66
+      }
+    },
+    "semantic_defect": {
+      "declared_checks_passed": true,
+      "no_publication_before_review": true,
+      "offline_semantic_check_passed": false,
+      "terminal_status": "REJECTED",
+      "candidate_root": "c0d8bc5f9540330ab532b3042dd77aa13065a2920a55b9bef56a82e532deb581",
+      "check_evidence": "9b3712cd5f109b655380f21b469d4ce3c24d060f5abbb80be1edb8001b876789",
+      "review_evidence": "d776755d519ae0a484b9938ef7764b106358adaf2e028189b54daf29d823ae74",
+      "logical_store_counters": {
+        "object_bytes_read": 16330,
+        "object_bytes_written": 6743,
+        "object_bytes_hashed": 25799,
+        "object_read_operations": 24,
+        "staging_bytes_read": 66,
+        "staging_bytes_written": 436,
+        "projection_bytes_parsed": 66
+      }
+    },
+    "stale_after_check": {
+      "declared_checks_passed": true,
+      "no_publication_before_review": true,
+      "offline_semantic_check_passed": true,
+      "terminal_status": "CONFLICT",
+      "candidate_root": "4d85ec8e31ca872a58ff088c9ccb464294b7f23ce4a67235fb12b5eb31fd4ba7",
+      "check_evidence": "8f1d2a302e13c59698b6e15e87f71e64141f58a5db084c840f9eec5318bf81c5",
+      "review_evidence": "6219d6ec8e25db76e03e779e6749ba27bbab5d4ee3ae031df6829e78f184b69d",
+      "logical_store_counters": {
+        "object_bytes_read": 23166,
+        "object_bytes_written": 9360,
+        "object_bytes_hashed": 35806,
+        "object_read_operations": 37,
+        "staging_bytes_read": 66,
+        "staging_bytes_written": 439,
+        "projection_bytes_parsed": 66
+      }
+    }
+  },
+  "native_calls": 0,
+  "seconds": 0.1515584170119837,
+  "source_sha256": "4e0c89cf175f798fe9713ec72151e4b4c40c0a9dd161c53e9694cda583915e8f",
+  "scope": "Exact Engine-owned artifact references only. No model behavior, deployed working tree, environment closure or full physical-cost claim."
+}
