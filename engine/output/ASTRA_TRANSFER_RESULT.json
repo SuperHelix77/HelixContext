@@ -1,0 +1,181 @@
+{
+  "schema": "helix.astra_transfer.adjudication.v1",
+  "state": "ASTRA_BELOW_80_TARGET",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "rows": [
+    {
+      "arm": "off",
+      "usage": {
+        "input_tokens": 63449,
+        "output_tokens": 751,
+        "cached_input_tokens": 40832,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "anatomy": {
+        "schema": "helix.observable_trace.v1",
+        "events_sha256": "adcc99babdfe580727749df39a2868dada0337afa4df4c3abd4e7988f464d390",
+        "native_usage": {
+          "input_tokens": 63449,
+          "output_tokens": 751,
+          "cached_input_tokens": 40832,
+          "cache_write_input_tokens": 0,
+          "reasoning_output_tokens": 0
+        },
+        "completed_item_types": {
+          "agent_message": 2,
+          "command_execution": 2,
+          "userMessage": 1
+        },
+        "commands": 2,
+        "command_text_bytes": 2322,
+        "recorded_terminal_bytes": 4865,
+        "nonzero_command_exits": 0,
+        "missing_command_exits": 0,
+        "message_text_bytes": 142,
+        "limitations": [
+          "Bytes are not native tokens or disjoint native output categories.",
+          "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+          "File-change events need not contain generated patch text.",
+          "No private reasoning contents or causal model psychology are inferred.",
+          "Model/effort identity must be verified separately against the launch receipt."
+        ]
+      },
+      "passed": true,
+      "artifact_exact": true,
+      "artifact_sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+      "source_unchanged": true,
+      "elapsed_seconds": 36.90546437498415,
+      "overrun": false,
+      "engine_accounting": {
+        "store_io": {
+          "object_bytes_read": 4318,
+          "object_bytes_written": 4318,
+          "object_bytes_hashed": 8636,
+          "object_read_operations": 3,
+          "staging_bytes_read": 3490,
+          "staging_bytes_written": 3846,
+          "projection_bytes_parsed": 0
+        },
+        "capture_receipt": "7581662645a3742d72fa712dc319a348ac3173bd14ff83f231050dc9c55f94c9"
+      },
+      "events_sha256": "adcc99babdfe580727749df39a2868dada0337afa4df4c3abd4e7988f464d390",
+      "native_events_sha256": "8b01cc21fc6332a8d2cc7f9be4400fe13ca6b04e5a2f1e48c8081e56361e0724",
+      "stderr_sha256": "87592eb2c0d8cbefa0742ca16ae9f64074ae6b0890c0bd5b27d39354a2cd80cc",
+      "native_usage_updates": 3,
+      "uncached_input_tokens": 22617,
+      "native_error_notifications": 0,
+      "sandbox_denials": 0
+    },
+    {
+      "arm": "on",
+      "usage": {
+        "input_tokens": 20716,
+        "output_tokens": 257,
+        "cached_input_tokens": 11264,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 198
+      },
+      "anatomy": {
+        "schema": "helix.observable_trace.v1",
+        "events_sha256": "5fd3e2e5cbe2fac94ec5ccc625632b9d7ea2184b52677dcfd2f13b1fb326dcdc",
+        "native_usage": {
+          "input_tokens": 20716,
+          "output_tokens": 257,
+          "cached_input_tokens": 11264,
+          "cache_write_input_tokens": 0,
+          "reasoning_output_tokens": 198
+        },
+        "completed_item_types": {
+          "agent_message": 2,
+          "reasoning": 2,
+          "userMessage": 1
+        },
+        "commands": 0,
+        "command_text_bytes": 0,
+        "recorded_terminal_bytes": 0,
+        "nonzero_command_exits": 0,
+        "missing_command_exits": 0,
+        "message_text_bytes": 132,
+        "limitations": [
+          "Bytes are not native tokens or disjoint native output categories.",
+          "Recorded terminal text may already be truncated; raw subprocess bytes may differ.",
+          "File-change events need not contain generated patch text.",
+          "No private reasoning contents or causal model psychology are inferred.",
+          "Model/effort identity must be verified separately against the launch receipt."
+        ]
+      },
+      "passed": true,
+      "artifact_exact": true,
+      "artifact_sha256": "a2b5f688b5d0b620759e0501d1554c113bf2e7ca74018a71c052296a088a305b",
+      "source_unchanged": true,
+      "elapsed_seconds": 14.427005957986694,
+      "overrun": false,
+      "engine_accounting": {
+        "store_logical_io": {
+          "object_bytes_read": 186455,
+          "object_bytes_written": 61622,
+          "object_bytes_hashed": 285622,
+          "object_read_operations": 63,
+          "staging_bytes_read": 3489,
+          "staging_bytes_written": 3844,
+          "projection_bytes_parsed": 3489
+        },
+        "memory": {
+          "index_input_bytes": 0,
+          "index_seconds": 0.0,
+          "index_validation_bytes": 546,
+          "index_validation_seconds": 0.00032475002808496356
+        },
+        "retained_file_bytes": 115801,
+        "files": 36,
+        "unmeasured": [
+          "physical I/O",
+          "SQLite I/O traffic",
+          "money",
+          "parent research tokens"
+        ],
+        "note": "Retained bytes are physical file lengths, not allocated disk blocks; model tokens are separate native receipts."
+      },
+      "events_sha256": "5fd3e2e5cbe2fac94ec5ccc625632b9d7ea2184b52677dcfd2f13b1fb326dcdc",
+      "native_events_sha256": "f764e10b7f30d00a1bb7c0c04a131c4af0f5486e0d31db2b77b1a3c595b96373",
+      "stderr_sha256": "18eeba1fd0152bd992e0cb08c4c73efc3008a5fa728a7494caf4d4f6d5b5a6e5",
+      "native_usage_updates": 1,
+      "uncached_input_tokens": 9452,
+      "native_error_notifications": 0,
+      "sandbox_denials": 0
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 67.35015524279342,
+    "output_tokens": 65.77896138482025
+  },
+  "combined_native_usage": {
+    "input_tokens": 84165,
+    "output_tokens": 1008,
+    "cached_input_tokens": 52096,
+    "cache_write_input_tokens": 0,
+    "reasoning_output_tokens": 198
+  },
+  "manifest_sha256": "317d5c53c6b43e437e16fcc15a80a9be777d7006474b79aa6faa9b01dcbf649c",
+  "result_sha256": "e6b05fb06ee5a7b5c8db82d1332f89c6109afde08d12456443de4b921737fb96",
+  "classification": "One fresh prospective app-server pair on reused development task; bounded exact checks only",
+  "native_calls": 2,
+  "retries_by_experiment": 0,
+  "capability_parity": "unestablished beyond exact artifact/source checks",
+  "residual": {
+    "candidate_commands": 0,
+    "input_allowance_at_80": 12689.800000000001,
+    "output_allowance_at_80": 150.20000000000002,
+    "candidate_reported_reasoning": 198,
+    "interpretation": "No post-tool surface remains in this candidate. Its reported reasoning exceeds this baseline 80-percent output allowance if held fixed; not an irreducible reasoning lower bound."
+  },
+  "next_action": "Audit pre-inference admission and legitimate task-family economics. Do not lower High, hide verification, inflate control, or add post-tool mechanisms.",
+  "remaining_required_gates": [
+    "Representative three-task model matrix",
+    "Native latent future relevance",
+    "Failure/recovery workflow",
+    "Cost-weighted accounting"
+  ]
+}

@@ -16,7 +16,21 @@
   "evidence_sha256": "e806b0c0d6b6a155dfe2b4135db5820c67aa8647929d8e39c8875b3db722fcaa",
   "source_hashes": {
     "engine/output/v3_budget_followup.py": "bcd5f5f686b00b7f1493b87b7e396cf3cc73ed026d0bbba3569251ae2a0b39cc",
-    "engine/output/trace_profile.py": "f3fc4a8eb3d7bc51c2c76961a4a4e0ea82e215844369ea0bbbe5bbddbe3410c3"
+    "engine/output/trace_profile.py": "f3fc4a8eb3d7bc51c2c76961a4a4e0ea82e215844369ea0bbbe5bbddbe3410c3",
+    "engine/output/integrated_pair.py": "d2b5e8afbb520edf9744ad25d5d70e69ba68255a73fbf71f588e61c8c18a6300",
+    "engine/output/completion_pair.py": "aadf0d6963c374ba34d356a640b2d99fed5559a5727b406e37be71ff7d87d810",
+    "engine/prototype/native_usage.py": "a8cdf528f50f3e5edd322bd678a36ac561de523147320998db7a10adf72e4e4f",
+    "engine/prototype/integrated_runtime.py": "34f67c0a0101fdedd103f2cdb513581459c5b97624413adeffd44acd2bb384bb",
+    "engine/prototype/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "engine/prototype/reducer_runtime.py": "893b631e85f38dff11a625b91940635911171b821d09cb67bc6f7608c4233acc",
+    "engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "engine/prototype/verification.py": "18afa524f87be008090645b45dc353ee1ad1749827b4e50fe05cdbf404efdb80",
+    "engine/prototype/copy_handles.py": "4ef3523b164fb27878f46c45db75fe5c9af0ff887179398b586abd773886bc52",
+    "engine/prototype/renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+    "engine/output/integrated_v2.py": "233955dac47a468b65f599b96bbf6411ab2368d8b7e1c4f0e461a51483e0f948",
+    "engine/prototype/decision_packet.py": "9636d7d72782794dfca6d789c57f9c2aa674ca061661ed01ef2596fdc0ea71e7",
+    "engine/output/integrated_v3.py": "dffe1714ed8d236db3e44aa49fe586b0cd8e8b59505fe6aff9568d58f0669414",
+    "engine/output/app_server_native.py": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7"
   },
   "budget_amended": true,
   "quality_scope": "Exact finite artifacts, not universal intelligence/workflow parity",
@@ -24,5 +38,5 @@
     "input_tokens": 88.09650608249213,
     "output_tokens": 88.98081985708913
   },
-  "source_binding_note": "Freeze binds current verified code; original preregistration dependencies remain in the raw manifest. Followup driver is bound by the separate budget amendment."
+  "source_binding_note": "Freeze binds current verified code; original preregistration dependencies remain in the raw manifest. Followup driver is bound by the separate budget amendment. Canonical filesystem paths resolve macOS /tmp alias before containment checks."
 }
