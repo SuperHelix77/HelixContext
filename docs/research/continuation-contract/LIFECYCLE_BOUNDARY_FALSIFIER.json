@@ -1,0 +1,31 @@
+{
+  "classification": "Offline existing-code falsifier; no native calls",
+  "source_sha256": "af431f7d1ef88a60257d83d1ee25833c59bd172301c494064b6cc155f65357e7",
+  "fixture_sha256": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e",
+  "cases": [
+    {
+      "case": "49_exact_events_and_final_semantic_route",
+      "result": "PASS"
+    },
+    {
+      "case": "changed_request_no_mechanical_effect",
+      "result": "PASS"
+    },
+    {
+      "case": "duplicate_delivery",
+      "result": "SAFE_STOP_NOT_IDEMPOTENT_RESUME"
+    },
+    {
+      "case": "prior_valid_json_tampering",
+      "result": "FAIL_CLOSED_STATE_BINDING_ABSENT",
+      "observed": "Next ACK accepted after prior policy bytes changed"
+    },
+    {
+      "case": "interrupted_append_reopen",
+      "result": "SAFE_STOP_NO_AUTOMATIC_RECOVERY"
+    }
+  ],
+  "native_calls": 0,
+  "production_qualification": false,
+  "scope": "No changed original benchmark data; no concurrency, physical crash or semantic parity proof."
+}
