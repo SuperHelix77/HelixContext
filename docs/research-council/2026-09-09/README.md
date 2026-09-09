@@ -18,7 +18,8 @@ This branch is a **frozen research-intake lane** created from `Helix-Output` so 
 | `KIMI_K3_DEEP_RESEARCH_DOSSIER.md` | **FROZEN** | Repository-grounded mechanism discovery, cost bounds, architecture transfer |
 | Kimi clean-room / second Kimi dossier | PENDING | Independent mechanism discovery / cross-disciplinary transfer |
 | Arena dossier(s) | PENDING | Hostile falsification, counterexamples, mechanism tournament |
-| Astra Medium tournament findings | PENDING | Parallel bounded research cells |
+| `ASTRA_MEDIUM_01_RESEARCH_DOSSIER.md` | **FROZEN** | Independent mechanism cell: computation placement, semantic IR, certified receipts, prepared cognition/deltas, model-specific ABI |
+| Additional Astra Medium tournament findings | PENDING | Parallel bounded research cells |
 | Astra adjudication | PENDING | Disagreement matrix and experiment selection |
 | Final Helix synthesis | PENDING | Cross-dossier adjudication only after all inputs are frozen |
 
