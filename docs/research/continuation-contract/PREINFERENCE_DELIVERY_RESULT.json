@@ -1,0 +1,127 @@
+{
+  "classification": "Raw injection does not populate normal item API in tested paths",
+  "rows": [
+    {
+      "run": "preinference-history-probe-v2-20260910",
+      "wire_sha256": "5d4854c617cb01adf19dfb6ad8b7599cbb04a0c314d9b8efc6bf1d80feab6f8f",
+      "result_sha256": "38f6bc6a574aa1c8937d256ffb4997412bcea7ff74fa5da7ffef9e46c8079707",
+      "turn_completed_seen": false,
+      "provider_requests": [],
+      "items": {
+        "id": 5,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "turns": {
+        "id": 6,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "after_resume": {
+        "id": 10,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "persisted_marker_count": 2,
+      "limits": "No desktop UI or cross-process restart tested"
+    },
+    {
+      "run": "preinference-history-composition-20260910",
+      "wire_sha256": "5e8dd42ba3e94cfc7c44deffb30bc7e9991b6d79f96efb0d7b4512234058271d",
+      "result_sha256": "a157e50cf6de93c83a81a25785a36eaba08e430f8dac19dd1e515de0df8acf65",
+      "turn_completed_seen": false,
+      "provider_requests": [],
+      "items": {
+        "id": 7,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "turns": {
+        "id": 8,
+        "result": {
+          "data": [
+            {
+              "id": "01a08811-8bda-7b73-8520-98e8661317fd",
+              "items": [],
+              "itemsView": "summary",
+              "status": "inProgress",
+              "error": null,
+              "startedAt": 1788989246,
+              "completedAt": null,
+              "durationMs": null
+            }
+          ],
+          "nextCursor": null,
+          "backwardsCursor": "{\"requestedThreadId\":\"01a08811-8bcf-7052-a43d-9e02ed567573\",\"rolloutOrdinal\":1,\"includeAnchor\":true,\"scope\":{\"kind\":\"turns\"}}"
+        }
+      },
+      "after_resume": {
+        "id": 12,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "persisted_marker_count": 0,
+      "limits": "First composition attempt terminated early on idle snapshot; excluded from completion conclusions"
+    },
+    {
+      "run": "preinference-history-composition-v2-20260910",
+      "wire_sha256": "12a9d17d63f0ab06d3bc41151bdc63a3a684cd80d2a6e004c73f9b07fd3e740a",
+      "result_sha256": "2f1c6d4635ecd9e3585dae845f81a1491ce32c2d2265c09265f5657f9d2ac7be",
+      "turn_completed_seen": true,
+      "provider_requests": [],
+      "items": {
+        "id": 8,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "turns": {
+        "id": 9,
+        "result": {
+          "data": [
+            {
+              "id": "01a08812-10c3-72a0-9d2e-635cf43e234e",
+              "items": [],
+              "itemsView": "summary",
+              "status": "completed",
+              "error": null,
+              "startedAt": 1788989280,
+              "completedAt": 1788989280,
+              "durationMs": 42
+            }
+          ],
+          "nextCursor": null,
+          "backwardsCursor": "{\"requestedThreadId\":\"01a08812-10a2-7130-bd0a-89018a7d0e2d\",\"rolloutOrdinal\":1,\"includeAnchor\":true,\"scope\":{\"kind\":\"turns\"}}"
+        }
+      },
+      "after_resume": {
+        "id": 13,
+        "result": {
+          "data": [],
+          "nextCursor": null,
+          "backwardsCursor": null
+        }
+      },
+      "persisted_marker_count": 2,
+      "limits": "No desktop UI or cross-process restart tested"
+    }
+  ],
+  "native_calls": 0
+}

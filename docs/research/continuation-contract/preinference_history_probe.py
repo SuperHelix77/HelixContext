@@ -12,9 +12,16 @@ from pathlib import Path
 CLI='/Applications/ChatGPT.app/Contents/Resources/codex'
 
 
-def run(root):
+def run(root, trusted_home=None):
     root=Path(root).resolve();root.mkdir(parents=True,exist_ok=False)
     home=root/'isolated-home';home.mkdir();workspace=root/'workspace';workspace.mkdir()
+    if trusted_home is not None:
+        home=Path(trusted_home).resolve()
+        # Only this previously reviewed disposable home is permitted, not the
+        # production home or an arbitrary credential-bearing profile.
+        allowed=Path('/Users/mert/Documents/ChatGPT/Helix/research/pre-submit-hook-probe-20260910/isolated-home')
+        if home!=allowed or (home/'auth.json').exists():raise ValueError('Not isolated hook home')
+        workspace=Path('/tmp/helix-hook-review-workspace-20260910')
     catalog=Path('/Users/mert/Documents/ChatGPT/Helix/research/sol-luna-prompt-diagnostic-v1-20260909/catalog.json')
     (root/'catalog.json').write_bytes(catalog.read_bytes())
     hits=[]
@@ -59,9 +66,24 @@ def run(root):
         start=call('thread/start',{'model':'gpt-5.6-luna','modelProvider':'capture','cwd':str(workspace),'approvalPolicy':'never','sandbox':'read-only'})
         result['start']=start
         thread=start['result']['thread']['id']
+        if trusted_home is not None:
+            result['blocked_start']=call('turn/start',{'threadId':thread,'input':[{'type':'text','text':'HELIX OFFLINE SYNTHETIC E01: no real user task.'}]})
+            deadline=time.monotonic()+20
+            while time.monotonic()<deadline:
+                state=call('thread/read',{'threadId':thread,'includeTurns':True})
+                if any(e.get('received',{}).get('method')=='turn/completed' for e in wire):break
+                time.sleep(.05)
+            else:raise TimeoutError('No authoritative turn/completed notification')
+            result['blocked_read']=state
         item={'type':'message','role':'user','content':[{'type':'input_text','text':'HELIX ENGINE RECEIPT: synthetic completion E01; no model authored this record.'}]}
         result['inject']=call('thread/inject_items',{'threadId':thread,'items':[item]})
         result['read']=call('thread/read',{'threadId':thread,'includeTurns':True})
+        result['items']=call('thread/items/list',{'threadId':thread,'limit':100})
+        result['turns']=call('thread/turns/list',{'threadId':thread,'limit':100})
+        result['duplicate_inject']=call('thread/inject_items',{'threadId':thread,'items':[item]})
+        result['items_after_duplicate']=call('thread/items/list',{'threadId':thread,'limit':100})
+        result['resume']=call('thread/resume',{'threadId':thread,'excludeTurns':True})
+        result['items_after_resume']=call('thread/items/list',{'threadId':thread,'limit':100})
         result['provider_requests']=hits
         result['turn_start_sent']=any(x.get('sent',{}).get('method')=='turn/start' for x in wire)
     except Exception as exc:result['error']=repr(exc)
@@ -75,4 +97,4 @@ def run(root):
     print(json.dumps(result,indent=2))
 
 
-if __name__=='__main__':run(sys.argv[1])
+if __name__=='__main__':run(*sys.argv[1:])
