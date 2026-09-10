@@ -1,0 +1,285 @@
+{
+  "classification": "Fresh-data paired task execution: native model control vs active Engine closed-request route; not a model-reasoning comparison",
+  "model_control": "gpt-5.6-luna",
+  "effort_control": "high",
+  "manifest_sha256": "6e7699b760a0829ed601c989558d00d507079b2dfd8084cebf96a7929101f51b",
+  "result_sha256": "be5142aef3b286028f4ef6c9373acbc52231ab1bbec032608604a70a422505e3",
+  "auditor_sha256": "76a478d08bc2e322902f5c1b16557bfba390c30a337eae56aeeb55c3fccc393c",
+  "rows": [
+    {
+      "case": "selection",
+      "arm": "on",
+      "engine_active": true,
+      "semantic_workflows": 0,
+      "native": null,
+      "native_usage": null,
+      "model_tokens": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "counter_source": "no semantic callback and no model invocation; Engine execution audit",
+      "checks": "PASS",
+      "answer_sha256": "be9dfffdb48e9172f198cc6edaa7153495aefd1d1da637495268e1123fd375ea",
+      "answer_bytes": 2996,
+      "elapsed_seconds": 0.0007514160242862999,
+      "engine": {
+        "schema": "helix.resolved-retrieval.v1",
+        "engine_active": true,
+        "model_calls": 0,
+        "task_sha256": "bc7eda1b919b47b04bdb163156e201c55dd048f839b2847758205afb1515ff70",
+        "state": "RESOLVED",
+        "source_sha256": "366c1d4723bdd24a02bbb8cc872ef262e240ea9afe80a4bcc0d44365a6cec791",
+        "source_bytes": 83967,
+        "operation": "filter_records",
+        "elapsed_seconds": 0.0004377500154078007,
+        "authority": "Deterministic execution of recognized user request; source contents confer no new authority",
+        "state_root": "347994e6fddd071af7e4deb86ad4f4fe74ca9ec7abaed1a762752419c66c25a9",
+        "gate_version": "helix.bound-retrieval.v1",
+        "checked_predicates": [
+          "bound request",
+          "bound source",
+          "no inherited constraints",
+          "unchanged task state"
+        ],
+        "unchecked_obligations": [
+          "Caller supplied all applicable authority",
+          "Delivery must compare-and-swap the same state root"
+        ]
+      },
+      "recovery_store_io": {
+        "object_bytes_read": 83967,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 83967,
+        "object_read_operations": 1,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "case": "selection",
+      "arm": "off",
+      "engine_active": false,
+      "semantic_workflows": 1,
+      "native": {
+        "thread_id": "01a088e7-1a02-7062-a5c1-c629c7c04537",
+        "native_sha256": "5485dfbe30f435b80ec12963486b5b050ad3ae77b7f7eabe9d9f7c82068f9e2c",
+        "raw_sha256": "dfdab2a18f2e4a5f673b3b5c956c6769933427839749e1533910adceb314b5a1",
+        "raw_tool_calls": 11,
+        "segments": 12,
+        "status_sha256": "198ebdcab430c476acb1c52b113879b0a8bb54b57e4cf8967d8b38f75b6b2735"
+      },
+      "native_usage": {
+        "input_tokens": 404874,
+        "output_tokens": 2411,
+        "cached_input_tokens": 335872,
+        "reasoning_output_tokens": 499,
+        "cache_write_input_tokens": 0
+      },
+      "model_tokens": {
+        "input_tokens": 404874,
+        "output_tokens": 2411,
+        "cached_input_tokens": 335872,
+        "reasoning_output_tokens": 499,
+        "cache_write_input_tokens": 0
+      },
+      "counter_source": "native receipt",
+      "checks": "PASS",
+      "answer_sha256": "be9dfffdb48e9172f198cc6edaa7153495aefd1d1da637495268e1123fd375ea",
+      "answer_bytes": 2996,
+      "elapsed_seconds": 67.74730033398373,
+      "engine": null,
+      "recovery_store_io": null
+    },
+    {
+      "case": "cold",
+      "arm": "off",
+      "engine_active": false,
+      "semantic_workflows": 1,
+      "native": {
+        "thread_id": "01a088e8-22c2-7d90-9c7e-9758e201d5c1",
+        "native_sha256": "357eaf81639830e374bfeb677f108a308d231b6697b2bf0504edaa109602bc8d",
+        "raw_sha256": "879077249015a1f507ee46e1d93ead983f04b415c0eae320ea7b2af50d7e2193",
+        "raw_tool_calls": 4,
+        "segments": 5,
+        "status_sha256": "6fbd3cce39d96a3a63fde1585b61fd45365e6ef9f006af7e351e22e3745170ea"
+      },
+      "native_usage": {
+        "input_tokens": 120216,
+        "output_tokens": 1297,
+        "cached_input_tokens": 100096,
+        "reasoning_output_tokens": 577,
+        "cache_write_input_tokens": 0
+      },
+      "model_tokens": {
+        "input_tokens": 120216,
+        "output_tokens": 1297,
+        "cached_input_tokens": 100096,
+        "reasoning_output_tokens": 577,
+        "cache_write_input_tokens": 0
+      },
+      "counter_source": "native receipt",
+      "checks": "PASS",
+      "answer_sha256": "f12e601dad42e1a1ad303c301dae064c2b25c24911dc0d45f19539da7db7d5fe",
+      "answer_bytes": 208,
+      "elapsed_seconds": 37.182212250016164,
+      "engine": null,
+      "recovery_store_io": null
+    },
+    {
+      "case": "cold",
+      "arm": "on",
+      "engine_active": true,
+      "semantic_workflows": 0,
+      "native": null,
+      "native_usage": null,
+      "model_tokens": {
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 0
+      },
+      "counter_source": "no semantic callback and no model invocation; Engine execution audit",
+      "checks": "PASS",
+      "answer_sha256": "f12e601dad42e1a1ad303c301dae064c2b25c24911dc0d45f19539da7db7d5fe",
+      "answer_bytes": 208,
+      "elapsed_seconds": 0.0006539580062963068,
+      "engine": {
+        "schema": "helix.resolved-retrieval.v1",
+        "engine_active": true,
+        "model_calls": 0,
+        "task_sha256": "01d7707a753ebb40ba94b1cf8ac385d7b83a2c78057162ebaf81e55234a3cd0a",
+        "state": "RESOLVED",
+        "source_sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+        "source_bytes": 25794,
+        "operation": "lookup_note",
+        "elapsed_seconds": 0.00023545802105218172,
+        "authority": "Deterministic execution of recognized user request; source contents confer no new authority",
+        "state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+        "gate_version": "helix.bound-retrieval.v1",
+        "checked_predicates": [
+          "bound request",
+          "bound source",
+          "no inherited constraints",
+          "unchanged task state"
+        ],
+        "unchecked_obligations": [
+          "Caller supplied all applicable authority",
+          "Delivery must compare-and-swap the same state root"
+        ]
+      },
+      "recovery_store_io": {
+        "object_bytes_read": 25794,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 25794,
+        "object_read_operations": 1,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "case": "selection",
+      "savings_percent": {
+        "input_tokens": 100.0,
+        "output_tokens": 100.0
+      },
+      "checks": "PASS",
+      "scope": "Model-token savings on a recognized mechanically closed request; Engine/setup costs separate"
+    },
+    {
+      "case": "cold",
+      "savings_percent": {
+        "input_tokens": 100.0,
+        "output_tokens": 100.0
+      },
+      "checks": "PASS",
+      "scope": "Model-token savings on a recognized mechanically closed request; Engine/setup costs separate"
+    }
+  ],
+  "all_native_usage": {
+    "input_tokens": 525090,
+    "output_tokens": 3708,
+    "cached_input_tokens": 435968,
+    "reasoning_output_tokens": 1076
+  },
+  "prepare_seconds": 1.9152286660391837,
+  "preflight": {
+    "selection/off": {
+      "memory_seconds": 0.16228270798455924,
+      "memory_raw_bytes": 27815,
+      "registration_seconds": 0.1571322499657981,
+      "registration_model_turns": 0
+    },
+    "selection/on": {
+      "memory_seconds": 0.14170583395753056,
+      "memory_raw_bytes": 27817,
+      "registration_seconds": 0.15138374996604398,
+      "registration_model_turns": 0
+    },
+    "cold/off": {
+      "memory_seconds": 0.14698258403223008,
+      "memory_raw_bytes": 49945,
+      "registration_seconds": 0.15407916699768975,
+      "registration_model_turns": 0
+    },
+    "cold/on": {
+      "memory_seconds": 0.14557575003709644,
+      "memory_raw_bytes": 49944,
+      "registration_seconds": 0.14003966696327552,
+      "registration_model_turns": 0
+    }
+  },
+  "archive": {
+    "selection": {
+      "source_ref": {
+        "sha256": "366c1d4723bdd24a02bbb8cc872ef262e240ea9afe80a4bcc0d44365a6cec791",
+        "bytes": 83967
+      },
+      "state_root": "347994e6fddd071af7e4deb86ad4f4fe74ca9ec7abaed1a762752419c66c25a9",
+      "seconds": 0.0006463330355472863,
+      "store_io": {
+        "object_bytes_read": 0,
+        "object_bytes_written": 83967,
+        "object_bytes_hashed": 83967,
+        "object_read_operations": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    "cold": {
+      "source_ref": {
+        "sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+        "bytes": 25794
+      },
+      "state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+      "seconds": 0.0007665000157430768,
+      "store_io": {
+        "object_bytes_read": 0,
+        "object_bytes_written": 25794,
+        "object_bytes_hashed": 25794,
+        "object_read_operations": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  },
+  "N_pairs": 2,
+  "general_model_parity": "NOT_ESTABLISHED",
+  "coding_75_75_qualification": "STILL_FAILED",
+  "normal_codex_app_integration": false,
+  "limits": [
+    "Two exact parameterized request grammars, already known to the executor",
+    "Cold-history snapshot, not forty live model turns",
+    "Inherited/unknown semantics retain model execution; no semantic inference proof from these resolved cases",
+    "Research caller, not normal Codex app deployment",
+    "No physical I/O, included-quota, parent/R&D or whole-project net-cost claim",
+    "Read-only publication uses repeated state checks, not isolation from an uncooperative writer"
+  ]
+}

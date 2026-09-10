@@ -1,0 +1,68 @@
+{
+  "classification": "Fresh-data paired task execution: native model control vs active Engine closed-request route; not a model-reasoning comparison; native control and no-inference Engine receipts separate; not coding/general-model qualification",
+  "audit_sha256": "aeb8761990d7e6b45c241db21cbbe6e2141d43326f6172f2197f77e0faaa050b",
+  "rows": [
+    {
+      "case": "selection",
+      "source_ref": {
+        "sha256": "366c1d4723bdd24a02bbb8cc872ef262e240ea9afe80a4bcc0d44365a6cec791",
+        "bytes": 83967
+      },
+      "answer_path": "selection/on-answer.json",
+      "answer_sha256": "be9dfffdb48e9172f198cc6edaa7153495aefd1d1da637495268e1123fd375ea",
+      "answer_bytes": 2996,
+      "model_calls": 0,
+      "elapsed_seconds": 0.0007514160242862999,
+      "checks": {
+        "exact_answer": "PASS",
+        "unchanged_authority": "PASS"
+      },
+      "state_root": "347994e6fddd071af7e4deb86ad4f4fe74ca9ec7abaed1a762752419c66c25a9",
+      "state_file_sha256": "031b840056eea0836564b8461ffa9b54fe11a86119ca8aa09dea962e7843d2e1",
+      "matched_native_control": {
+        "run_id": "luna-resolved-v1-selection-off",
+        "native_sha256": "5485dfbe30f435b80ec12963486b5b050ad3ae77b7f7eabe9d9f7c82068f9e2c",
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "usage": {
+          "input_tokens": 404874,
+          "output_tokens": 2411,
+          "cached_input_tokens": 335872,
+          "reasoning_output_tokens": 499,
+          "cache_write_input_tokens": 0
+        }
+      }
+    },
+    {
+      "case": "cold",
+      "source_ref": {
+        "sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+        "bytes": 25794
+      },
+      "answer_path": "cold/on-answer.json",
+      "answer_sha256": "f12e601dad42e1a1ad303c301dae064c2b25c24911dc0d45f19539da7db7d5fe",
+      "answer_bytes": 208,
+      "model_calls": 0,
+      "elapsed_seconds": 0.0006539580062963068,
+      "checks": {
+        "exact_answer": "PASS",
+        "unchanged_authority": "PASS"
+      },
+      "state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+      "state_file_sha256": "ccb889744f16f649f5442de12d9a095370540cb640e7c385df08728ba1531fa6",
+      "matched_native_control": {
+        "run_id": "luna-resolved-v1-cold-off",
+        "native_sha256": "357eaf81639830e374bfeb677f108a308d231b6697b2bf0504edaa109602bc8d",
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "usage": {
+          "input_tokens": 120216,
+          "output_tokens": 1297,
+          "cached_input_tokens": 100096,
+          "reasoning_output_tokens": 577,
+          "cache_write_input_tokens": 0
+        }
+      }
+    }
+  ]
+}

@@ -119,6 +119,33 @@ def test_replay_authority_mutation_withholds_verified_zero(tmp_path):
     assert engine_replays(config)[0]['state']=='UNVERIFIED'
 
 
+def test_engine_model_tokens_need_bound_completed_native_control(tmp_path):
+    raw=b'[]';answer=b'{}';h=hashlib.sha256(raw).hexdigest();case=tmp_path/'selection'
+    objects=case/'store/objects';objects.mkdir(parents=True);(objects/h).write_bytes(raw)
+    (case/'answer.json').write_bytes(answer)
+    counters={'input_tokens':100,'output_tokens':20,'cached_input_tokens':40,'reasoning_output_tokens':10,'cache_write_input_tokens':0}
+    expected={'run_id':'control','native_sha256':'a'*64,'model':'gpt-5.6-luna','effort':'high','usage':counters}
+    report={'classification':'Finite closed request only','rows':[{'case':'selection','source_ref':{'sha256':h,'bytes':2},'answer_sha256':hashlib.sha256(answer).hexdigest(),'answer_bytes':2,'model_calls':0,'elapsed_seconds':0.1,'checks':{'exact':'PASS'},'matched_native_control':expected}]}
+    path=tmp_path/'result.json';path.write_text(json.dumps(report))
+    cfg={'engine_replays':[{'id':'r','root':str(tmp_path),'result':'result.json','sha256':hashlib.sha256(path.read_bytes()).hexdigest()}]}
+    control={'id':'control','native_sha256':'a'*64,'model':'gpt-5.6-luna','effort':'high','usage':counters,'state':'CLOSED','artifact_check':True,'usage_source':'Native app-server cumulative update'}
+    result=engine_replays(cfg,[control])[0]
+    assert result['model_token_savings_percent']=={'input_tokens':100,'output_tokens':100}
+    for change in [{'state':'RUNNING'},{'native_sha256':'b'*64},{'effort':'low'},{'artifact_check':None},{'usage_source':'estimated'},{'usage':{**counters,'input_tokens':101}}]:
+        result=engine_replays(cfg,[{**control,**change}])[0]
+        assert result['comparison_state']=='UNVERIFIED_COMPARISON' and 'model_token_savings_percent' not in result
+    for change in [{'checks':{'exact':'FAIL'}},{'checks':{}},{'checks':None},{'model_calls':False},{'model_calls':1}]:
+        altered={**report,'rows':[{**report['rows'][0],**change}]}
+        path.write_text(json.dumps(altered))
+        cfg['engine_replays'][0]['sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+        result=engine_replays(cfg,[control])[0]
+        assert result['comparison_state']=='UNVERIFIED_COMPARISON' and 'model_token_savings_percent' not in result
+    path.write_text(json.dumps(report))
+    cfg['engine_replays'][0]['sha256']=hashlib.sha256(path.read_bytes()).hexdigest()
+    (case/'answer.json').write_bytes(b'changed')
+    assert engine_replays(cfg,[control])[0]['state']=='UNVERIFIED'
+
+
 def test_command_counts_do_not_count_started_twice(tmp_path):
     item={'type':'command_execution','command':'cat engine/evidence.py','aggregated_output':'abc','exit_code':0}
     path=tmp_path/'events.jsonl';path.write_text('\n'.join(json.dumps(e) for e in [

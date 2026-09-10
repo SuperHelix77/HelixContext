@@ -221,7 +221,7 @@ def measured_check(report,arm):
     return None
 
 
-def engine_replays(config):
+def engine_replays(config,runs=()):
     rows=[]
     for spec in config.get('engine_replays',[]):
         root=Path(spec['root']).resolve()
@@ -230,7 +230,7 @@ def engine_replays(config):
             if digest!=spec['sha256']:raise ValueError('Replay report changed')
             for row in report['rows']:
                 case=row['case']
-                answer=cached_bytes(safe_path(root,case+'/answer.json'),4_000_000)
+                answer=cached_bytes(safe_path(root,row.get('answer_path',case+'/answer.json')),4_000_000)
                 source=cached_bytes(safe_path(root,case+'/store/objects/'+row['source_ref']['sha256']),4_000_000)
                 if hashlib.sha256(answer).hexdigest()!=row['answer_sha256'] or hashlib.sha256(source).hexdigest()!=row['source_ref']['sha256']:
                     raise ValueError('Replay artifact changed')
@@ -241,7 +241,24 @@ def engine_replays(config):
                     state_root=hashlib.sha256(json.dumps(state,sort_keys=True,ensure_ascii=False,separators=(',',':'),allow_nan=False).encode()).hexdigest()
                     if state_digest!=row['state_file_sha256'] or state_root!=row['state_root']:
                         raise ValueError('Replay authority state changed')
-            rows.extend({'case':r['case'],'state':'VERIFIED_ARTIFACTS','model_calls':r['model_calls'],'source_bytes':r['source_ref']['bytes'],'answer_bytes':r['answer_bytes'],'elapsed_seconds':r['elapsed_seconds'],'checks':r['checks'],'scope':report['classification']} for r in report['rows'])
+            for r in report['rows']:
+                view={'case':r['case'],'state':'VERIFIED_ARTIFACTS','model_calls':r['model_calls'],'source_bytes':r['source_ref']['bytes'],'answer_bytes':r['answer_bytes'],'elapsed_seconds':r['elapsed_seconds'],'checks':r['checks'],'scope':report['classification']}
+                comparison=r.get('matched_native_control')
+                if comparison:
+                    control=next((v for v in runs if v['id']==comparison['run_id']),{})
+                    view['comparison_state']='UNVERIFIED_COMPARISON'
+                    u=control.get('usage') or {}
+                    checks=r['checks']
+                    candidate_pass=checks=='PASS' or (isinstance(checks,dict) and bool(checks) and all(v=='PASS' for v in checks.values()))
+                    if (control.get('state') in ('CLOSED','COMPLETED') and control.get('artifact_check') is True
+                        and control.get('usage_source')=='Native app-server cumulative update'
+                        and control.get('native_sha256')==comparison['native_sha256']
+                        and control.get('model')==comparison['model'] and control.get('effort')==comparison['effort']
+                        and u==comparison['usage'] and type(r['model_calls']) is int and r['model_calls']==0 and candidate_pass):
+                        view.update(comparison_state='MATCHED_NATIVE_AND_ENGINE_RECEIPTS',
+                            native_control={'model':control['model'],'effort':control['effort'],'usage':u},
+                            model_token_savings_percent={k:100.0 if u.get(k,0)>0 else None for k in ('input_tokens','output_tokens')})
+                rows.append(view)
         except (OSError,ValueError,KeyError,TypeError):
             rows.append({'case':spec['id'],'state':'UNVERIFIED','model_calls':None,'scope':'Replay receipt or artifact missing/changed'})
     return rows
@@ -379,7 +396,7 @@ def snapshot(config):
             'off':off['id'] if off else None,'on':on['id'] if on else None,'savings':savings,
             'artifact_check':True if off and on and off['artifact_check'] is True and on['artifact_check'] is True else
                 False if any(r['artifact_check'] is False for r in current) else None})
-    return {'schema':'helix.hud.v1','runs':runs,'pairs':pairs,'problems':problems,'engine_replays':engine_replays(config),
+    return {'schema':'helix.hud.v1','runs':runs,'pairs':pairs,'problems':problems,'engine_replays':engine_replays(config,runs),
         'cohorts':summarize(config.get('cohorts',[]),pairs,runs),
         'observed_totals':{m:unique_usage([r for r in runs if m=='all' or r.get('model')==m]) for m in ['all']+sorted({r['model'] for r in runs if r.get('model')})},
         'scope':'Registered native benchmark runs only. Parent chat and unregistered agents are not instrumented.',

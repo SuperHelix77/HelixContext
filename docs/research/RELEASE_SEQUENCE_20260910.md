@@ -7,8 +7,11 @@ mislabel 75/75 as 80/80. Keep actual paired counters and failures visible.
 1. Luna: finish qualification and packaging. A fresh known coding pair now clears
    75/75 at 86.17% input / 79.06% output, with a portable kernel/contract candidate
    [frozen here](continuation-contract/LUNA_CODING_V1_75_FREEZE.json). W50 remains
-   a separate bounded candidate; general
-   coding is not qualified. The subsequent corrected three-task continuation has
+   a bounded candidate. Two fresh closed-request retrieval pairs now avoid all
+   model calls with exact answers, but this is a separate, grammar-limited
+   Engine execution result with nonzero setup costs; see the
+   [retrieval report](continuation-contract/LUNA_RESOLVED_RETRIEVAL_RESULT.md).
+   General coding is not qualified. The corrected three-task continuation has
    median 86.29% input / 64.04% output savings, all finite checks passing; one of
    three pairs meets 75/75. See the [qualification report](continuation-contract/LUNA_VARIED_CODING_REPORT_20260910.md).
    Unsupported cells retain ordinary model execution

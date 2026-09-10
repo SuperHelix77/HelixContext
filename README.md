@@ -6,6 +6,13 @@ Research toward the **maximum empirically safe compression frontier**, with capa
 
 ## Current Engine milestone — 2026-09-10
 
+**Fresh closed-retrieval pairs:** the existing Engine completed selection and
+exact cold recovery with zero model calls and the same complete answers as
+native Luna High. Controls used 404,874 / 2,411 and 120,216 / 1,297 input / output
+tokens. This is **100/100 model-token avoidance for two recognized request
+grammars**, with nonzero setup/Engine costs; semantic/coding qualification stays
+separate. [Receipts, artifacts and accounting](docs/research/continuation-contract/LUNA_RESOLVED_RETRIEVAL_RESULT.md).
+
 **Latest broader Luna coding qualification: output target failed.** The corrected
 three-task paired continuation measured median **86.29% input / 64.04% output /
 60.07% uncached-input savings**, with all finite checks passing. Only one pair

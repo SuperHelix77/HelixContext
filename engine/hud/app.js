@@ -55,10 +55,14 @@ function renderEngineReplays(){
  const body=$('engine-replays');body.replaceChildren();
  for(const row of state.engine_replays||[]){
   const tr=element('tr');
-  for(const value of [row.case,row.state,row.model_calls??'Unknown',row.source_bytes??'—',row.answer_bytes??'—',row.elapsed_seconds!=null?(row.elapsed_seconds*1000).toFixed(2)+' ms':'—',row.scope])tr.append(element('td',String(value)));
+  const control=row.native_control;
+  const native=control?shortModel(control.model)+' '+control.effort+' · '+control.usage.input_tokens.toLocaleString()+' / '+control.usage.output_tokens.toLocaleString():'No verified matched control';
+  const saving=row.model_token_savings_percent;
+  const avoided=saving?[saving.input_tokens,saving.output_tokens].map(v=>v==null?'—':v.toFixed(1)+'%').join(' / '):'—';
+  for(const value of [row.case,row.state,row.model_calls??'Unknown',row.source_bytes??'—',row.answer_bytes??'—',row.elapsed_seconds!=null?(row.elapsed_seconds*1000).toFixed(2)+' ms':'—',native,avoided,row.scope])tr.append(element('td',String(value)));
   body.append(tr);
  }
- if(!body.children.length){const tr=element('tr'),td=element('td','No verified Engine replay registered.');td.colSpan=7;tr.append(td);body.append(tr);}
+ if(!body.children.length){const tr=element('tr'),td=element('td','No verified Engine execution registered.');td.colSpan=9;tr.append(td);body.append(tr);}
 }
 // Expire visible prices even if the observer connection has stopped delivering events.
 setInterval(()=>{if(state){renderCosts();renderCohorts();}},1000);
