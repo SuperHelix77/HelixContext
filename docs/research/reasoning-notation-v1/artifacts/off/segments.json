@@ -1,0 +1,26 @@
+[
+  {
+    "totalTokens": 21426,
+    "inputTokens": 21316,
+    "cachedInputTokens": 11904,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 110,
+    "reasoningOutputTokens": 0
+  },
+  {
+    "totalTokens": 25848,
+    "inputTokens": 23457,
+    "cachedInputTokens": 21120,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 2391,
+    "reasoningOutputTokens": 456
+  },
+  {
+    "totalTokens": 26885,
+    "inputTokens": 26012,
+    "cachedInputTokens": 23296,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 873,
+    "reasoningOutputTokens": 345
+  }
+]

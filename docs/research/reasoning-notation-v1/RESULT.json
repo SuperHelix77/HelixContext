@@ -1,0 +1,129 @@
+{
+  "classification": "N=1 synthetic two-proposal review, reasoning-style diagnostic; not release/parity evidence",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "manifest_sha256": "40c809cb907aaae36dc3fe40e500cf9400380f82828f3748bdbfc48031e4a6e1",
+  "prereg_commit": "0afc80c",
+  "rows": [
+    {
+      "arm": "on",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "thread_id": "01a08b82-fdc4-7bc2-a3d4-ec0e93698a80",
+      "usage": {
+        "input_tokens": 122167,
+        "output_tokens": 4477,
+        "cached_input_tokens": 100864,
+        "reasoning_output_tokens": 1360,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 21303,
+      "other_output": 3117,
+      "segments": 5,
+      "model_turns": 1,
+      "shell_commands": 4,
+      "nonzero_command_exits": 1,
+      "tool_return_bytes": 8846,
+      "elapsed_seconds": 149.40720416704426,
+      "native_events_sha256": "b718b3ad9f020957f5b25ba98b05e84cf203caf5f89fb4193007a23d45346052",
+      "raw_sha256": "8d215d1709ed66aac142651c627dbcbe245b20b65d41e86e49300ef4c0100ba8",
+      "raw_bytes": 179693,
+      "final_sha256": "6b01eeb42a114bf0211d90ac53fa5b395954a762d4c8e00de021692bf401bc08",
+      "native_final_after_tools": true,
+      "base_config_effort_source_unchanged": true,
+      "extra_python_files": [
+        "review_probes/test_cache_contract.py"
+      ],
+      "memory_seconds": 0.15346858400152996,
+      "memory_raw_bytes": 52293
+    },
+    {
+      "arm": "off",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "thread_id": "01a08b85-45f4-77c3-9983-6ad3e7ca7e21",
+      "usage": {
+        "input_tokens": 70785,
+        "output_tokens": 3374,
+        "cached_input_tokens": 56320,
+        "reasoning_output_tokens": 801,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input": 14465,
+      "other_output": 2573,
+      "segments": 3,
+      "model_turns": 1,
+      "shell_commands": 3,
+      "nonzero_command_exits": 0,
+      "tool_return_bytes": 6002,
+      "elapsed_seconds": 116.52522354095709,
+      "native_events_sha256": "5b252bc5e363a469ffef7cdff89e8ed2c0d7ce82bfffe197c4d47d1cf86b7f5b",
+      "raw_sha256": "38d8676f17215616ce023284256b08ae6c029d56f0d7adacae96e27646556bd1",
+      "raw_bytes": 156708,
+      "final_sha256": "082502ac8680f46fcb932f7d449d9417224c48bc91ffdbab9cadf63633af29a3",
+      "native_final_after_tools": true,
+      "base_config_effort_source_unchanged": true,
+      "extra_python_files": [],
+      "memory_seconds": 0.1586110829957761,
+      "memory_raw_bytes": 52293
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": -72.58882531609805,
+    "output_tokens": -32.691167753408415,
+    "cached_input_tokens": -79.0909090909091,
+    "reasoning_output_tokens": -69.78776529338326,
+    "uncached_input": -47.272727272727266,
+    "other_output": -21.142635056354454
+  },
+  "native_input_only_style_changed": true,
+  "all_attempts_usage": {
+    "input_tokens": 192952,
+    "output_tokens": 7851,
+    "cached_input_tokens": 157184,
+    "reasoning_output_tokens": 2161
+  },
+  "successful_preparation_seconds": 2.9711166670313105,
+  "offline_preparation_attempts": 2,
+  "included_quota_saving": null,
+  "complete_physical_io": null,
+  "semantic_review": "FINITE_PILOT_CHECKS_PASS",
+  "deployment": false,
+  "full_goal_achieved": false,
+  "pricing": {
+    "source": "https://developers.openai.com/api/docs/pricing.md",
+    "checked_at": "2026-09-10T13:39:09.784750+00:00",
+    "sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "rates": {
+      "short": [
+        10.0,
+        1.0,
+        12.5,
+        50.0
+      ],
+      "long": [
+        20.0,
+        2.0,
+        25.0,
+        75.0
+      ]
+    },
+    "api_equivalent_cost": {
+      "on": {
+        "short": 0.537744,
+        "long": 0.963563
+      },
+      "off": {
+        "short": 0.36967,
+        "long": 0.65499
+      }
+    },
+    "saving_percent": {
+      "short": -45.46595612302864,
+      "long": -47.11110093283868
+    },
+    "not_included_quota_or_complete_roi": true
+  },
+  "screen_verdict": "REJECTED_ECONOMIC_REGRESSION",
+  "scope": "Preserved finite review behavior on this synthetic pair; not broad intelligence/workflow parity."
+}

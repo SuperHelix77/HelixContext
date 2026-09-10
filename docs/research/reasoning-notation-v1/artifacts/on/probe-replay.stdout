@@ -1,0 +1,28 @@
+FF..F.................                                                   [100%]
+=================================== FAILURES ===================================
+_____________________ test_expiry_boundary[proposal_k-get] _____________________
+review_probes/test_cache_contract.py:27: in test_expiry_boundary
+    assert read(15) == (["miss"] if batch else "miss")
+E   AssertionError: assert 'value' == 'miss'
+E     
+E     - miss
+E     + value
+__________________ test_expiry_boundary[proposal_k-get_many] ___________________
+review_probes/test_cache_contract.py:27: in test_expiry_boundary
+    assert read(15) == (["miss"] if batch else "miss")
+E   AssertionError: assert ['value'] == ['miss']
+E     
+E     At index 0 diff: 'value' != 'miss'
+E     Use -v to get more diff
+__________________ test_repeated_hits_and_misses[proposal_k] ___________________
+review_probes/test_cache_contract.py:35: in test_repeated_hits_and_misses
+    assert cache.get_many(keys, now=1, default=-1) == [7, -1, 7, -1]
+E   assert [7, -1] == [7, -1, 7, -1]
+E     
+E     Right contains 2 more items, first extra item: 7
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED review_probes/test_cache_contract.py::test_expiry_boundary[proposal_k-get]
+FAILED review_probes/test_cache_contract.py::test_expiry_boundary[proposal_k-get_many]
+FAILED review_probes/test_cache_contract.py::test_repeated_hits_and_misses[proposal_k]
+3 failed, 19 passed in 0.03s

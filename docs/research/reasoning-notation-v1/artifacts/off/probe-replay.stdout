@@ -1,0 +1,8 @@
+proposal_k: FAIL ordinary_expiry: ['value', 'value', 'miss']
+proposal_k: FAIL batch_expiry: [['value'], ['value'], ['miss']]
+proposal_k: FAIL repeated_positions: [7, -1]
+proposal_k: 6/9 supplemental check groups passed
+proposal_r: 9/9 supplemental check groups passed
+proposal_k: changed legacy functions = ['Cache.get']
+proposal_r: changed legacy functions = []
+before: ordinary expiry boundary probe passed

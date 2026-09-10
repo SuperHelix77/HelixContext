@@ -1,0 +1,48 @@
+{
+  "classification": "EXPLICIT_SOURCE_FINAL_AND_EXECUTION_REVIEW",
+  "rows": [
+    {
+      "arm": "off",
+      "gates": {
+        "expiry_equality_defect_correctly_identified": "PASS",
+        "batch_multiplicity_defect_correctly_identified": "PASS",
+        "valid_extension_not_falsely_rejected": "PASS",
+        "supplied_regression_receipt_correctly_reported": "PASS",
+        "additional_execution_counts_match_independent_replay": "PASS",
+        "normal_model_written_prose_after_evidence": "PASS",
+        "protected_files_unchanged": "PASS",
+        "original_base_tools_and_xhigh_preserved": "PASS"
+      },
+      "final_sha256": "082502ac8680f46fcb932f7d449d9417224c48bc91ffdbab9cadf63633af29a3",
+      "native_events_sha256": "5b252bc5e363a469ffef7cdff89e8ed2c0d7ce82bfffe197c4d47d1cf86b7f5b",
+      "native_probe_replay": {
+        "valid": "9/9 groups",
+        "defective": "6/9 groups",
+        "exit_code": 0
+      }
+    },
+    {
+      "arm": "on",
+      "gates": {
+        "expiry_equality_defect_correctly_identified": "PASS",
+        "batch_multiplicity_defect_correctly_identified": "PASS",
+        "valid_extension_not_falsely_rejected": "PASS",
+        "supplied_regression_receipt_correctly_reported": "PASS",
+        "additional_execution_counts_match_independent_replay": "PASS",
+        "normal_model_written_prose_after_evidence": "PASS",
+        "protected_files_unchanged": "PASS",
+        "original_base_tools_and_xhigh_preserved": "PASS"
+      },
+      "final_sha256": "6b01eeb42a114bf0211d90ac53fa5b395954a762d4c8e00de021692bf401bc08",
+      "native_events_sha256": "b718b3ad9f020957f5b25ba98b05e84cf203caf5f89fb4193007a23d45346052",
+      "native_probe_replay": {
+        "valid": "11/11 cases",
+        "defective": "8/11 cases",
+        "exit_code": 1
+      }
+    }
+  ],
+  "universal_parity_established": false,
+  "native_calls_in_review": 0,
+  "replay_files_unchanged": true
+}
