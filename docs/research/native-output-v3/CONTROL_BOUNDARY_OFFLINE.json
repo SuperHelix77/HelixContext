@@ -1,0 +1,41 @@
+{
+  "classification": "Offline client instruction-isolation evidence; no native economics or capability inference",
+  "rows": [
+    {
+      "arm": "shared_helix_instructions",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "known_user_owned_activation_instruction_present": true,
+      "ordinary_memory_instruction_present": true,
+      "agents_bytes": 2246,
+      "input_text_bytes": 23619,
+      "tool_count": 0,
+      "request_sha256": "28451f494cb24f529abaef9b7f6baa664370addd02cf8a64ba53080d79205b4c",
+      "authorization_header_present": false,
+      "model_calls": 0
+    },
+    {
+      "arm": "memory_only_baseline",
+      "process_exit": 1,
+      "captured_requests": 1,
+      "known_user_owned_activation_instruction_present": false,
+      "ordinary_memory_instruction_present": true,
+      "agents_bytes": 851,
+      "input_text_bytes": 22218,
+      "tool_count": 0,
+      "request_sha256": "33c9969abf8f6e04f8b0570ca2cbaf0a55dd1880ed0889877c48170296211791",
+      "authorization_header_present": false,
+      "model_calls": 0
+    }
+  ],
+  "native_model_calls": 0,
+  "global_agents_sha256": "8cf6028e3a0de95df907c96453c296308f46de702b62adb69d3c500f3cab0884",
+  "cli_sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "catalog_sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+  "production_config_and_agents_unchanged": true,
+  "limits": [
+    "Synthetic no-auth loopback CLI; not authenticated app-server or desktop integration.",
+    "Other skill catalogs, tools, hooks, provider context and effective config require prospective binding.",
+    "No served model response, native token saving, cache effect or semantic parity measured."
+  ]
+}

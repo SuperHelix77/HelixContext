@@ -1,0 +1,25 @@
+{
+  "classification": "Native diff receipt bound and independently applied; capability/economics separate",
+  "native_sha256": "8b1aa42a34b46d54c0b332ec0508a3e63bcb9c431c795e4cacf162848093e850",
+  "receipt_native_identity": "PASS",
+  "diff_reconstructs_actual_source": "PASS",
+  "failed_calls_preserved": 1,
+  "actual_scope_evidence": "PASS",
+  "diff_bytes": 1115,
+  "receipt_bytes": 2114,
+  "post_audit_logical_store_io": {
+    "object_bytes_read": 14309,
+    "object_bytes_written": 0,
+    "object_bytes_hashed": 14309,
+    "object_read_operations": 9,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "native_inference_calls": 0,
+  "model_written_ordinary_final": "PASS",
+  "final_claims_match_checks_and_source": "PASS_EXPLICIT_REVIEW",
+  "local_file_link_contract": "FAIL_FILE_URI",
+  "answer_sha256": "a89682cdb2952249d8f331e91a909e24f0c63628675b33d0feb6893d9790f724",
+  "release_qualification": false
+}

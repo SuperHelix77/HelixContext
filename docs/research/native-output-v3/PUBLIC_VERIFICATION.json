@@ -1,0 +1,93 @@
+{
+  "classification": "Offline cross-replay of finite behavioral checks; no universal capability claim",
+  "artifacts": 2,
+  "public_tests_each": 23,
+  "independent_cases_each": 94,
+  "semantic_probe_programs_each": 4,
+  "current_native_probe_programs": 0,
+  "prior_observed_probe_programs": 4,
+  "all_replayed_semantic_probes_pass_on_all_artifacts": true,
+  "native_model_calls": 0,
+  "rows": [
+    {
+      "model": "sol-high",
+      "arm": "on",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.16s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.022865295817609876, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.051267828908748925}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v2/artifacts/sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "focused search-mode checks passed\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "model": "sol-high",
+      "arm": "off",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.16s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.023711874964646995, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.05125100468285382}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v1/artifacts/sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        },
+        {
+          "probe": "native-output-v2/artifacts/sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "focused search-mode checks passed\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ]
+}

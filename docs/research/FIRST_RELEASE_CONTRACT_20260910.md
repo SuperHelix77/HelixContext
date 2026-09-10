@@ -65,3 +65,13 @@ INFERENCE. Its explicit-effort and publication-lock engineering checks remain
 useful. Next implement a small internal native tool that returns mechanics to the
 model, then lets the model write its ordinary final answer. Count its schema and
 extra continuation cost; historical selector economics do not automatically transfer.
+
+Native-final V1/V2/V3 maintenance pilots are now audited. V3 removes Sol's shell
+inspection detours but saves only66.02% input/47.99% output, increases uncached
+input140.49%, and costs5.21% more in its dated short API-equivalent scenario.
+Both artifacts pass finite checks; a staged repair, final local-link defect and
+shared Helix continuity instructions in the control remain visible. See the
+[V3 adjudication](native-output-v3/RESULT.md). No profile is economically admitted
+from these pilots; seven-cell release medians remain incomplete. Before another
+native cohort, bind and describe the control's instruction/continuity boundary;
+an installed-configuration comparator must not be called pristine Codex.

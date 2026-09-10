@@ -1,0 +1,112 @@
+[
+  {
+    "method": "item/tool/call",
+    "id": 0,
+    "params": {
+      "threadId": "01a08a03-4568-7ec1-9941-89e717222d53",
+      "turnId": "01a08a03-45f3-73a3-b613-fa9cf28bd8b5",
+      "callId": "exec-09a5df9b-c014-4679-b01f-fa6cc279f427",
+      "namespace": null,
+      "tool": "helix_apply_edits",
+      "arguments": {
+        "expected_version": 0,
+        "edits": [
+          {
+            "start_line": 79,
+            "delete_lines": 8,
+            "insert": "    def search(self,project,query,limit=10,match_mode='all'):\n        identity(project)\n        if (not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100\n                or not isinstance(match_mode,str) or match_mode not in ('all','any')):\n            raise ValueError('Invalid search request')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n        if not words:return []\n        # Literal tokens only: a caller cannot inject FTS operators via query.\n        joiner=' AND ' if match_mode=='all' else ' OR '\n        match=joiner.join('\"'+word+'\"' for word in words)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "item": {
+        "type": "dynamicToolCall",
+        "id": "exec-09a5df9b-c014-4679-b01f-fa6cc279f427",
+        "namespace": null,
+        "tool": "helix_apply_edits",
+        "arguments": {
+          "expected_version": 0,
+          "edits": [
+            {
+              "start_line": 79,
+              "delete_lines": 8,
+              "insert": "    def search(self,project,query,limit=10,match_mode='all'):\n        identity(project)\n        if (not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100\n                or not isinstance(match_mode,str) or match_mode not in ('all','any')):\n            raise ValueError('Invalid search request')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n        if not words:return []\n        # Literal tokens only: a caller cannot inject FTS operators via query.\n        joiner=' AND ' if match_mode=='all' else ' OR '\n        match=joiner.join('\"'+word+'\"' for word in words)"
+            }
+          ]
+        },
+        "status": "failed",
+        "contentItems": [
+          {
+            "type": "inputText",
+            "text": "{\"status\":\"CHECKS_FAILED\",\"version\":0,\"checks\":{\"checks\":\"FAIL\",\"rows\":[{\"check\":\"public\",\"exit_code\":2,\"stdout\":\"\\n==================================== ERRORS ====================================\\n_________________ ERROR collecting test_search_mode_public.py __________________\\n/Users/mert/Library/Python/3.14/lib/python/site-packages/_pytest/python.py:507: in importtestmodule\\n    mod = import_path(\\n/Users/mert/Library/Python/3.14/lib/python/site-packages/_pytest/pathlib.py:587: in import_path\\n    importlib.import_module(module_name)\\n/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/importlib/__init__.py:88: in import_module\\n    return _bootstrap._gcd_import(name[level:], package, level)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n<frozen importlib._bootstrap>:1398: in _gcd_import\\n    ???\\n<frozen importlib._bootstrap>:1371: in _find_and_load\\n    ???\\n<frozen importlib._bootstrap>:1342: in _find_and_load_unlocked\\n    ???\\n<frozen importlib._bootstrap>:938: in _load_unlocked\\n    ???\\n/Users/mert/Library/Python/3.14/lib/python/site-packages/_pytest/assertion/rewrite.py:197: in exec_module\\n    exec(co, module.__dict__)\\ntest_search_mode_public.py:3: in <module>\\n    from workflow_memory import Memory\\nE     File \\\"/Users/mert/Documents/ChatGPT/Helix/research/native-output-indexed-v3-sol-high-20260910/on-tool/b67b4704c08a0b3f5a1bd2c80adc55d7c082a258fcb1ea15ce1a6936511df06b/stage/workflow_memory.py\\\", line 88\\nE       match=joiner.join('\\\"'+word+'\\\"' for word in words)        with self.db() as db:\\nE                                                                ^^^^\\nE   SyntaxError: invalid syntax\\n=========================== short test summary info ============================\\nERROR test_search_mode_public.py\\n!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\\n1 error in 0.09s\\n\",\"stderr\":\"\",\"stdout_sha256\":\"526ebe138a1351abf159456dcb49603a5b56622f33af3881c584dc2353510f43\",\"stderr_sha256\":\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"},{\"check\":\"oracle\",\"exit_code\":1,\"stdout\":\"\",\"stderr\":\"Traceback (most recent call last):\\n  File \\\"/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/oracle.py\\\", line 63, in <module>\\n    print(json.dumps(check(sys.argv[1])))\\n                     ~~~~~^^^^^^^^^^^^^\\n  File \\\"/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/oracle.py\\\", line 12, in check\\n    from workflow_memory import Memory\\n  File \\\"/Users/mert/Documents/ChatGPT/Helix/research/native-output-indexed-v3-sol-high-20260910/on-tool/b67b4704c08a0b3f5a1bd2c80adc55d7c082a258fcb1ea15ce1a6936511df06b/stage/workflow_memory.py\\\", line 88\\n    match=joiner.join('\\\"'+word+'\\\"' for word in words)        with self.db() as db:\\n                                                             ^^^^\\nSyntaxError: invalid syntax\\n\",\"stdout_sha256\":\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\",\"stderr_sha256\":\"6fc160aca568223f91cded032e03b32e35ae87daebf9db8319f62ceb8ca8ec2e\"}],\"source_sha256\":\"d722df820bfcd2c19fef8aadebaa09998a8529a8e2920bad7345c7e9de54b7a6\",\"seconds\":0.41945087496424094}}"
+          }
+        ],
+        "success": false,
+        "durationMs": 712
+      },
+      "threadId": "01a08a03-4568-7ec1-9941-89e717222d53",
+      "turnId": "01a08a03-45f3-73a3-b613-fa9cf28bd8b5",
+      "completedAtMs": 1789021892910
+    },
+    "emittedAtMs": 1789021892911
+  },
+  {
+    "method": "item/tool/call",
+    "id": 1,
+    "params": {
+      "threadId": "01a08a03-4568-7ec1-9941-89e717222d53",
+      "turnId": "01a08a03-45f3-73a3-b613-fa9cf28bd8b5",
+      "callId": "exec-f1804ad2-b5fc-48c0-b2c4-f1549cc90647",
+      "namespace": null,
+      "tool": "helix_apply_edits",
+      "arguments": {
+        "expected_version": 0,
+        "edits": [
+          {
+            "start_line": 79,
+            "delete_lines": 8,
+            "insert": "    def search(self,project,query,limit=10,match_mode='all'):\n        identity(project)\n        if (not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100\n                or not isinstance(match_mode,str) or match_mode not in ('all','any')):\n            raise ValueError('Invalid search request')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n        if not words:return []\n        # Literal tokens only: a caller cannot inject FTS operators via query.\n        joiner=' AND ' if match_mode=='all' else ' OR '\n        match=joiner.join('\"'+word+'\"' for word in words)\n"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "item": {
+        "type": "dynamicToolCall",
+        "id": "exec-f1804ad2-b5fc-48c0-b2c4-f1549cc90647",
+        "namespace": null,
+        "tool": "helix_apply_edits",
+        "arguments": {
+          "expected_version": 0,
+          "edits": [
+            {
+              "start_line": 79,
+              "delete_lines": 8,
+              "insert": "    def search(self,project,query,limit=10,match_mode='all'):\n        identity(project)\n        if (not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100\n                or not isinstance(match_mode,str) or match_mode not in ('all','any')):\n            raise ValueError('Invalid search request')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n        if not words:return []\n        # Literal tokens only: a caller cannot inject FTS operators via query.\n        joiner=' AND ' if match_mode=='all' else ' OR '\n        match=joiner.join('\"'+word+'\"' for word in words)\n"
+            }
+          ]
+        },
+        "status": "completed",
+        "contentItems": [
+          {
+            "type": "inputText",
+            "text": "{\"artifact\":\"workflow_memory.py\",\"checks\":\"23 public/regression tests and 94 independent finite cases passed\",\"evidence_ref\":\"319b03c6c752b1ccdd68a2794e296dfd57941539a071b4b210e1ddad28b98291\",\"semantic_adequacy\":\"Model responsibility\",\"source_sha256\":\"52422bad02c86da6c889085ee1e4d284fabe3a72aa3801e8d286d41f4eb52bb2\",\"status\":\"APPLIED\",\"version\":1,\"review\":{\"schema\":\"helix.review.v3\",\"prior_source_sha256\":\"84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d\",\"diff_sha256\":\"2d3ea23023b5982e3b5c6e3355e4e9c302ad5241a1a1e7c714d5a0cf19d66de8\",\"diff_bytes\":1115,\"diff_complete\":true,\"exact_diff\":\"--- before/workflow_memory.py\\n+++ after/workflow_memory.py\\n@@ -76,14 +76,16 @@\\n             raise ValueError('Index/reference identity mismatch')\\n         return {**record,'record_hash':ref,'ordinal':ordinal}\\n \\n-    def search(self,project,query,limit=10):\\n+    def search(self,project,query,limit=10,match_mode='all'):\\n         identity(project)\\n-        if not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100:\\n+        if (not isinstance(query,str) or type(limit) is not int or not 1<=limit<=100\\n+                or not isinstance(match_mode,str) or match_mode not in ('all','any')):\\n             raise ValueError('Invalid search request')\\n         words=re.findall(r'\\\\w+',query,flags=re.UNICODE)\\n         if not words:return []\\n         # Literal tokens only: a caller cannot inject FTS operators via query.\\n-        match=' AND '.join('\\\"'+word+'\\\"' for word in words)\\n+        joiner=' AND ' if match_mode=='all' else ' OR '\\n+        match=joiner.join('\\\"'+word+'\\\"' for word in words)\\n         with self.db() as db:\\n             db.execute('BEGIN')\\n             self._check_index(db,project)\\n\"},\"scope\":{\"head\":\"22610b25c9568403257eef25d15450e89d64b26a\",\"status_z\":\" M workflow_memory.py\\u0000\",\"diff_check_exit\":0,\"source_bound\":true,\"caller_declared_protected_scope_rechecked\":true,\"evidence_ref\":\"d7fb378ca4140e08a9aadd9b8b878140c48b80914d56e0ba4596f1e528ef5a91\",\"limit\":\"Observed local state; no exclusive workspace custody or semantic completeness\"}}"
+          }
+        ],
+        "success": true,
+        "durationMs": 1434
+      },
+      "threadId": "01a08a03-4568-7ec1-9941-89e717222d53",
+      "turnId": "01a08a03-45f3-73a3-b613-fa9cf28bd8b5",
+      "completedAtMs": 1789021909496
+    },
+    "emittedAtMs": 1789021909496
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "classification": "Task-only derivatives of fresh known development pilots; not population parity",
+  "reports": {
+    "SOL_HIGH_RESULT.json": "3a72f70d20380ed149dd3f268fb762193e299171761acea8771da8d2be0c9d3a"
+  },
+  "files": {
+    "COST.json": "e96015bc9762871e8a7186e2a982f6f6d1350e10d8bd41076b1fd1f8bbdd0f47",
+    "pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "ANATOMY.json": "79cf86fa7d0705ed4ead4cc59ba035c66c9326d8efb7a2e67e72f458074835c7",
+    "sol-high/on/probe-provenance.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/on/workflow_memory.py": "52422bad02c86da6c889085ee1e4d284fabe3a72aa3801e8d286d41f4eb52bb2",
+    "sol-high/on/internal-calls.json": "5478cc0e3f321a343ce6140c0c604c412af27731203455b43915240ab6e6ca8f",
+    "sol-high/on/usage.jsonl": "4aa98a39a7ec80a5663af0f8b3a17d472e4c35818af81c1d0546cd5a401de7ff",
+    "sol-high/on/final-answer.md": "a89682cdb2952249d8f331e91a909e24f0c63628675b33d0feb6893d9790f724",
+    "sol-high/off/probe-provenance.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/off/workflow_memory.py": "a38780f8d75c356396a37458c91c12d1e60f2aa633a037add14f972aef3b71bb",
+    "sol-high/off/internal-calls.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/off/usage.jsonl": "562f135cb77d89dc9f24e3fe0fcd1da867dc5bc7bebae63e4e819f4978f264f9",
+    "sol-high/off/final-answer.md": "babf21c5f250e7ea71958cf4372dc1e3a049ab7cfbebb586e8821dbaeb520d20"
+  },
+  "shared_files": {
+    "maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "maintenance-copy-v1/baseline/test_workflow_memory.py": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+    "maintenance-copy-v1/test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed",
+    "maintenance-copy-v1/oracle.py": "87ea62c59a8f7885124c21b2324f0ac43dc7f3c104ceb0fb2e641324d04a72a7",
+    "native-output-v1/artifacts/astra-xhigh/off/probe-1.py": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1",
+    "native-output-v1/artifacts/astra-xhigh/on/probe-1.py": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009",
+    "native-output-v1/artifacts/sol-high/off/probe-1.py": "72953856cc226f3eebb581d290a3b8010d3fbeecff3c6812142080bee0ce96d2",
+    "native-output-v2/artifacts/sol-high/off/probe-1.py": "bde400634a0168cbeb4a3549249579477d883f5060414c34c61b8672c9aa0b0e"
+  },
+  "created_at": "2026-09-10T06:38:11.025067+00:00",
+  "prior_probe_files": [
+    "native-output-v1/artifacts/astra-xhigh/off/probe-1.py",
+    "native-output-v1/artifacts/astra-xhigh/on/probe-1.py",
+    "native-output-v1/artifacts/sol-high/off/probe-1.py",
+    "native-output-v2/artifacts/sol-high/off/probe-1.py"
+  ]
+}

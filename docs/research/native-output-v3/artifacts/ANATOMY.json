@@ -1,0 +1,201 @@
+{
+  "sol-high": [
+    {
+      "arm": "on",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 20287,
+            "inputTokens": 19699,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 588,
+            "reasoningOutputTokens": 281
+          },
+          "observable_operations": [
+            {
+              "kind": "internal_edit",
+              "event": 53
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 21632,
+            "inputTokens": 21262,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 370,
+            "reasoningOutputTokens": 48
+          },
+          "observable_operations": [
+            {
+              "kind": "internal_edit",
+              "event": 104
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 22949,
+            "inputTokens": 22327,
+            "cachedInputTokens": 21120,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 622,
+            "reasoningOutputTokens": 418
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 737,
+      "probes": 0,
+      "native_sha256": "8b1aa42a34b46d54c0b332ec0508a3e63bcb9c431c795e4cacf162848093e850",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    },
+    {
+      "arm": "off",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 18744,
+            "inputTokens": 18524,
+            "cachedInputTokens": 10880,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 220,
+            "reasoningOutputTokens": 68
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 74,
+              "command": "/bin/zsh -lc \"sed -n '1,240p' /Users/mert/.codex/skills/codexworkflow/SKILL.md\"",
+              "output_bytes": 2772,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 19793,
+            "inputTokens": 19334,
+            "cachedInputTokens": 18304,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 459,
+            "reasoningOutputTokens": 180
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 82,
+              "command": "/bin/zsh -lc 'if [ -n \"$CODEX_THREAD_ID\" ]; then python3 /Users/mert/.codex/helix-context/bin/runtime-b09051d7f65fa98b.py activate --session \"$CODEX_THREAD_ID\" --skill \"/Users/mert/.codex/skills/codexworkflow/SKILL.md\" --mode \"bounded maintenance\"; else echo '\"'CODEX_THREAD_ID unavailable; activation skipped'; fi\npwd\nsed -n '1,240p' AGENTS.md\nif [ -f CODEX_WORKFLOW.md ]; then sed -n '1,260p' CODEX_WORKFLOW.md; fi\nif [ -f .codex/config.toml ]; then sed -n '1,220p' .codex/config.toml; fi\nrg --files -g 'workflow_memory.py' -g 'test*.py' -g 'pyproject.toml' -g 'pytest.ini' -g 'conftest.py' -g '\"'!*.pyc'\"'\"",
+              "output_bytes": 1456,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 20411,
+            "inputTokens": 20172,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 239,
+            "reasoningOutputTokens": 49
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 157,
+              "command": "/bin/zsh -lc \"git status --short\nsed -n '1,320p' workflow_memory.py\nsed -n '1,320p' test_workflow_memory.py\nsed -n '1,260p' test_search_mode_public.py\"",
+              "output_bytes": 16505,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 24939,
+            "inputTokens": 24325,
+            "cachedInputTokens": 19968,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 614,
+            "reasoningOutputTokens": 323
+          },
+          "observable_operations": []
+        },
+        {
+          "usage": {
+            "totalTokens": 25144,
+            "inputTokens": 24963,
+            "cachedInputTokens": 24192,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 181,
+            "reasoningOutputTokens": 40
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 263,
+              "command": "/bin/zsh -lc 'python3 -m pytest'",
+              "output_bytes": 675,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 25947,
+            "inputTokens": 25332,
+            "cachedInputTokens": 24832,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 615,
+            "reasoningOutputTokens": 516
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 272,
+              "command": "/bin/zsh -lc 'git diff --check\ngit status --short\ngit diff -- workflow_memory.py\npython3 -m py_compile workflow_memory.py'",
+              "output_bytes": 1229,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 26802,
+            "inputTokens": 26277,
+            "cachedInputTokens": 25216,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 525,
+            "reasoningOutputTokens": 382
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 327,
+              "command": "/bin/zsh -lc \"nl -ba workflow_memory.py | sed -n '72,102p'\ngit status --short\"",
+              "output_bytes": 1996,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27496,
+            "inputTokens": 27311,
+            "cachedInputTokens": 26112,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 185,
+            "reasoningOutputTokens": 28
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 602,
+      "probes": 0,
+      "native_sha256": "124e10a940445d1402838120a9596aadde455b1d48be5aacf6fb9ff1fbab0776",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    }
+  ]
+}
