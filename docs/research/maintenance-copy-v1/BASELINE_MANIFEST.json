@@ -1,0 +1,18 @@
+{
+  "source_commit": "e578dcdc68a56dcdc41ba19222d3421e1c7900f8",
+  "origin": "Existing working Helix Memory implementation; frozen before this new feature test. No benchmark solution included.",
+  "files": {
+    "workflow_memory.py": {
+      "sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "bytes": 10027
+    },
+    "evidence.py": {
+      "sha256": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+      "bytes": 11194
+    },
+    "test_workflow_memory.py": {
+      "sha256": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+      "bytes": 5101
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "frozen_at_utc": "2026-09-10T04:13:37.328383+00:00",
+  "manifest_sha256": "d6d16686ce678041b14532627667a322fb28e3110ada07f6e2f5efa38fe2f5cc",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "order": [
+    "off",
+    "on"
+  ],
+  "max_semantic_turns_per_arm": 2,
+  "native_calls_so_far": 0,
+  "preparation_seconds": 1.0685976250097156,
+  "inputs": {
+    "workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "test_workflow_memory.py": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+    "test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed"
+  },
+  "default_base_sha256": "152dfaeeb552876190962be1c12c93d426840ff12691f648261554a7675a6698",
+  "repo_sources": {
+    "docs/research/maintenance-copy-v1/runner.py": "aa608d538237239b46a563861998f8c1348a2514f1d74e2d3a99f66d2f7fa49c",
+    "docs/research/maintenance-copy-v1/audit.py": "0d1999a0448cb43b1305c8a554405fad631ee5355328b6f71c3942786a6a35ff",
+    "docs/research/maintenance-copy-v1/test_runner.py": "57c9815178b3a26477d7280fee23ce315679b825b18e7958e2e784937bbb3373",
+    "docs/research/maintenance-copy-v1/PREREG.md": "228251fd8949c11aa16d7b82818d14804bb0b6698cb999346276bb24698df957",
+    "docs/research/maintenance-copy-v1/TASK.md": "c827db4ca2733959ec621faa8c5411716086174fccfa978f72cb973afff4f507",
+    "docs/research/maintenance-copy-v1/oracle.py": "87ea62c59a8f7885124c21b2324f0ac43dc7f3c104ceb0fb2e641324d04a72a7",
+    "docs/research/maintenance-copy-v1/OFFLINE_CALIBRATION.json": "6c77b9e982a63e60570d8a3eed769208be40b09e04c9d91e9d1c255ee1dd774c",
+    "docs/research/maintenance-copy-v1/BASELINE_MANIFEST.json": "febe8a30f56b3927e4549838d9a4b2bba865a45715ac6b816636109d0ac69218",
+    "engine/profiles/astra-coding-transfer-v1/base.md": "274fd47df17f76c5573d05224c59df9ef43013c38dd2daad6aea83e2987509ff",
+    "engine/output/observed_session.py": "fff1210aaf2f3d21b92cc276b9365a5608d3a67609136d8b698127ee6d690fd0",
+    "engine/output/config_bound_session.py": "caed4a681f9823d2dcdcc031124da202ba32cf31f9d1d71f455b82819e3a3ff7",
+    "engine/output/caller_memory_receipt.py": "ded6a454e23c156290e8ff53a8cc1a0b39d0134134dbfe4a10d0215f3ab4198d",
+    "engine/output/caller_registration.py": "f242f5583f1e2b34a16c0acbab0f3bbf4de1a96717dd216616c7ca700bb9e7e6",
+    "engine/output/project_registration_preflight.py": "f0147ded9814f9a81da4630af3d935b210343b8b98c730a9a8732cea8fc1b0bc",
+    "docs/research/continuation-contract/luna_varied_coding_v2.py": "7a9e5aec1aa4433b6ba915d48c07efee81523bd495e16dd5e9b943c7cc0ecc83",
+    "engine/prototype/renderer.py": "e5a9a7445674d31d7f07b1c112485d3f1a9d8ac426e4e87dd34eab1c9cc4f6c8",
+    "engine/prototype/literal_edits.py": "72524cab453ff20925c42345291f5679f64a9708fb109e6dce0df2b313b9a278",
+    "engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "engine/output/app_server_native.py": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+    "engine/output/raw_receipts.py": "802d90373771f3f76d9b605e29dc92c54bab258ab685522e0b6edfd9fb0b9fd1",
+    "docs/research/maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "docs/research/maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "docs/research/maintenance-copy-v1/baseline/test_workflow_memory.py": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+    "docs/research/maintenance-copy-v1/test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed"
+  },
+  "prompt_sha256": {
+    "off": "67d161e50e41b5042f0465837c4e64d940400002edccb687fb404dcbf3f204c9",
+    "on": "c7444cc813d89725699f412b67cd86fc0d306b4cdd125e6b72cc10d8cac77fd9"
+  },
+  "checks": "38 focused tests PASS; 23 public/regression and 94 independent reference cases PASS; original plus seven mutants rejected; no inference",
+  "private_receipts": "Task/cwd-bound memory, config, registration and native capture stay private; their hashes are in the original manifest."
+}

@@ -1,0 +1,159 @@
+{
+  "classification": "Offline correctness/representation gate only; no native economics or model capability claim",
+  "baseline_manifest_sha256": "febe8a30f56b3927e4549838d9a4b2bba865a45715ac6b816636109d0ac69218",
+  "rows": [
+    {
+      "variant": "baseline",
+      "exit_code": 1,
+      "source_sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "a18f60247017a315924880d503af2548df3684c5a3eee3cbcd421ca24d86dae7"
+    },
+    {
+      "variant": "reference",
+      "exit_code": 0,
+      "source_sha256": "9bce65152d2a8f77e7351b183d2ce5c982e2c4c3cf4bfdf1ef300419c54e48c3",
+      "expected_result": "PASS",
+      "stdout_sha256": "5e1948f7f508563e46c83a63afdb79c339c98a3633ccdb8392fc57449964d5af",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "oracle": {
+        "finite_cases": 94,
+        "store_io": {
+          "object_bytes_read": 414956,
+          "object_bytes_written": 7422,
+          "object_bytes_hashed": 422682,
+          "object_read_operations": 3290,
+          "staging_bytes_read": 0,
+          "staging_bytes_written": 0,
+          "projection_bytes_parsed": 0
+        },
+        "memory_metrics": {
+          "index_input_bytes": 458,
+          "index_seconds": 0.03173387877177447,
+          "index_validation_bytes": 12474,
+          "index_validation_seconds": 0.04993733618175611
+        }
+      }
+    },
+    {
+      "variant": "always_all",
+      "exit_code": 1,
+      "source_sha256": "73923eaf3a5d0e4654210f424d0f0f5b14eb86cff490be4543935cdc337c1b59",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "2d38fa88f831091a364336a1777e21644a128dc07841e53529b23e9d65f0a7aa"
+    },
+    {
+      "variant": "always_any",
+      "exit_code": 1,
+      "source_sha256": "f17bf2470c559b0bc39c340dcbe09184f1c44be68bd56bcfebb16956fafeff93",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "059cdd2954be7d24e57cf911b39aaa62d7272b3e8d26c84cfdfd90e8f4e6f11c"
+    },
+    {
+      "variant": "missing_mode_validation",
+      "exit_code": 1,
+      "source_sha256": "59ee7b42a068a13f478f3a9e55115562eb179c7110d8271e338cff588baa3243",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "0c9d1aaee18aa29e194b8f0b70011282ff8a3a5d5a4e6e4eb265ec2c8685a9bc"
+    },
+    {
+      "variant": "cross_project_leak",
+      "exit_code": 1,
+      "source_sha256": "80cf6d9d62b424852361f89dd3dd50e33b1e5f266e0b0187ae911d189c24cd24",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "17d87f417acd20fda42fceb098c152bc0b1c4472a2525a65742b89b120001de0"
+    },
+    {
+      "variant": "ascending",
+      "exit_code": 1,
+      "source_sha256": "b33da5864ff78f41db10f38ee101e4987a3b8dd3d3c141e276878c61f1a9d90c",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "17d87f417acd20fda42fceb098c152bc0b1c4472a2525a65742b89b120001de0"
+    },
+    {
+      "variant": "skip_integrity",
+      "exit_code": 1,
+      "source_sha256": "19e30bd23720a996b054f1af16e0359c9e594feedc7098b197facbd39f9087e0",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "bfc6060c174bcdf4e4b3b7ca27c17a18073f1bec34fd41b01b7751db84e88a11"
+    },
+    {
+      "variant": "raw_fts_operators",
+      "exit_code": 1,
+      "source_sha256": "64df826716501e50b8553dcc147f47fd71843a1563e276c65c1fa0e95ebb4fb9",
+      "expected_result": "REJECT",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "fc36c9468588fe9e774765299b5c79e3b8f9edfe30c3e5ed6cbd7b0b83d4d45b"
+    }
+  ],
+  "reference_tests": ".......................                                                  [100%]\n23 passed in 0.17s",
+  "exact_edit_assembly": {
+    "source_sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "source_bytes": 10027,
+    "edits": 3,
+    "copied_bytes": 9902,
+    "literal_bytes": 306,
+    "semantics": "Not checked by exact matching or assembly",
+    "response_bytes": 518,
+    "seconds": 0.0002589999930933118,
+    "assembly": {
+      "schema": "helix.copy.receipt.v1",
+      "bytes": 10208,
+      "sha256": "9bce65152d2a8f77e7351b183d2ce5c982e2c4c3cf4bfdf1ef300419c54e48c3",
+      "source_sha256": [
+        "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d"
+      ],
+      "operations": 7,
+      "io": {
+        "object_bytes_read": 20054,
+        "object_bytes_written": 10027,
+        "object_bytes_hashed": 30081,
+        "object_read_operations": 2,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "scope": "Exact byte assembly only; caller must validate semantic selection and count plan generation, retrieval and rendering costs"
+    },
+    "store_io": {
+      "object_bytes_read": 20054,
+      "object_bytes_written": 0,
+      "object_bytes_hashed": 20054,
+      "object_read_operations": 2,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    }
+  },
+  "representation": {
+    "whole_after_bytes": 10208,
+    "method_recipe_bytes": 1146,
+    "unique_literal_edits_bytes": 518,
+    "standard_unified_diff_bytes": 1042,
+    "method_recipe_vs_changed_literal_bytes": 2.212355212355212,
+    "scope": "Offline representation sizes, not native token savings or intelligence evidence",
+    "reference_sha256": "9bce65152d2a8f77e7351b183d2ce5c982e2c4c3cf4bfdf1ef300419c54e48c3"
+  },
+  "source_sha256": {
+    "docs/research/maintenance-copy-v1/calibrate.py": "223f3f9348851ea0d04d0263032aaf6a287d6b0f62dff86343ac67a78e34f56c",
+    "docs/research/maintenance-copy-v1/oracle.py": "87ea62c59a8f7885124c21b2324f0ac43dc7f3c104ceb0fb2e641324d04a72a7",
+    "docs/research/maintenance-copy-v1/TASK.md": "c827db4ca2733959ec621faa8c5411716086174fccfa978f72cb973afff4f507",
+    "docs/research/maintenance-copy-v1/test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed",
+    "engine/prototype/literal_edits.py": "72524cab453ff20925c42345291f5679f64a9708fb109e6dce0df2b313b9a278"
+  },
+  "elapsed_seconds": 1.5777907919837162,
+  "native_model_calls": 0,
+  "limits": [
+    "Investigator-authored requirement and finite oracle; not a population holdout.",
+    "Private reference and mutations are calibration artifacts and must not enter model workspaces.",
+    "Native control may already produce smaller edits; byte savings do not predict token savings.",
+    "Model integration/reasoning, full setup, SQLite/physical I/O and research costs need separate accounting."
+  ]
+}
