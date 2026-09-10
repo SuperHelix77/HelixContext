@@ -1,0 +1,566 @@
+{
+  "schema": "helix.release-readiness-audit.v1",
+  "checked_at": "2026-09-10T08:37:11.938205+00:00",
+  "registry_sha256": "6a48e5d52acbce9ab091504e2e9f6557d52feb466ff36fc55cf3eb769e8bc20d",
+  "source_commit": "804a5f6",
+  "model_final_contract": "Ordinary complete model-written final after relevant execution evidence; internal tools allowed. Historical selector or source-only paths cannot fill missing cells.",
+  "new_model_calls": 0,
+  "new_offline_benchmarks": 0,
+  "frozen_models": [],
+  "cohorts": [
+    {
+      "id": "release-native-v3-sol-high",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "first_release_target_percent": 75,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 1,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v3-sol-high-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-maintenance",
+          "paired_native_evidence": true,
+          "state": "COMPLETED_PAIR_NOT_MODEL_QUALIFICATION",
+          "arms": {
+            "off": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 186238,
+                "output_tokens": 3038,
+                "cached_input_tokens": 168704,
+                "reasoning_output_tokens": 1586,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "124e10a940445d1402838120a9596aadde455b1d48be5aacf6fb9ff1fbab0776",
+              "status_sha256": "66a3ba32ab215460893ad3dd6672193c971a4962ec6fc880c8b9d412feb7a73f",
+              "task_checks": "Not inferred from lifecycle state"
+            },
+            "on": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 63288,
+                "output_tokens": 1580,
+                "cached_input_tokens": 21120,
+                "reasoning_output_tokens": 747,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "8b1aa42a34b46d54c0b332ec0508a3e63bcb9c431c795e4cacf162848093e850",
+              "status_sha256": "842c01bf208e0acf87479f78cb00abd5aed15f982de86870a8a059f0aa23bc48",
+              "task_checks": "Not inferred from lifecycle state"
+            }
+          },
+          "savings_percent": {
+            "input": 66.01767630666137,
+            "output": 47.99210006583279,
+            "uncached_input": -140.49275692939435
+          },
+          "classification": "V3 NOT ADMITTED: input66.02%, output47.99%, uncached -140.49%; short API-equivalent cost5.21% higher.0 shell inspections; staged LF repair charged.23+94 and4 prior probe programs PASS; file-URI final link defect. Shared global Helix continuity affects control; not vanilla. No model/cohort freeze."
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v3-sol-high-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-v2-sol-high",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "first_release_target_percent": 75,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 1,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v2-sol-high-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-maintenance",
+          "paired_native_evidence": true,
+          "state": "COMPLETED_PAIR_NOT_MODEL_QUALIFICATION",
+          "arms": {
+            "off": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 182276,
+                "output_tokens": 2385,
+                "cached_input_tokens": 152320,
+                "reasoning_output_tokens": 873,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "82dac5c7a3c9893920d86189a4e13d53a7b471a75e20f9ba70f603d8e7d9ed03",
+              "status_sha256": "678b9e0b1eb8bec4481e974973610859609b854ca4c256773592f26add014eef",
+              "task_checks": "Not inferred from lifecycle state"
+            },
+            "on": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 100637,
+                "output_tokens": 2151,
+                "cached_input_tokens": 73216,
+                "reasoning_output_tokens": 1046,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "71a1725c0be1606f7b5817bae9e600a69fcbfe6db45b11b94ebc8061c31883ba",
+              "status_sha256": "064c39565afda4b5e49c719ebd30f6f5aee6796c9ce9ab86507a7180a77eb5d1",
+              "task_checks": "Not inferred from lifecycle state"
+            }
+          },
+          "savings_percent": {
+            "input": 44.7886721235928,
+            "output": 9.811320754716979,
+            "uncached_input": 8.462411536920822
+          },
+          "classification": "V2 NOT ADMITTED: finite task/probe checks PASS; normal model-written final, but file-URI link defect. Input44.79%, output9.81%, uncached8.46%. Extra review command persisted; no cohort/model freeze."
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v2-sol-high-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-v1-luna-high",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "first_release_target_percent": 75,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 0,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v1-luna-high-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-maintenance",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-luna-high-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-v1-astra-high",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "first_release_target_percent": 65,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 0,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v1-astra-high-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-maintenance",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-high-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-v1-sol-high",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "first_release_target_percent": 75,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 1,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v1-sol-high-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-maintenance",
+          "paired_native_evidence": true,
+          "state": "COMPLETED_PAIR_NOT_MODEL_QUALIFICATION",
+          "arms": {
+            "off": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 190261,
+                "output_tokens": 3663,
+                "cached_input_tokens": 157056,
+                "reasoning_output_tokens": 1675,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "df7cca0a594f4b9d2297acc8bb11e4e728d819c7ab93df352e566805d3f901d9",
+              "status_sha256": "4fd73ef29c29e2ad8c34b4a980309cad50d6c3034f5dbd40b48e5570df6ae824",
+              "task_checks": "Not inferred from lifecycle state"
+            },
+            "on": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 101255,
+                "output_tokens": 1858,
+                "cached_input_tokens": 74112,
+                "reasoning_output_tokens": 764,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "88ade111e443a681c731d7b55e06a05e393fba66736aabe25a18ed90e0e0df55",
+              "status_sha256": "e1629956fee267b9e50fddebafa72b85cad66f0f1c81f221c78658ad9bc7fa8e",
+              "task_checks": "Not inferred from lifecycle state"
+            }
+          },
+          "savings_percent": {
+            "input": 46.78100083569413,
+            "output": 49.276549276549275,
+            "uncached_input": 18.256286703809664
+          },
+          "classification": "Fresh native model-written final answers; internal Helix tool. Both task artifacts and all observed semantic probes pass. One of seven cohort cells; median/capability release qualification pending. Frozen 6a57243."
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-sol-high-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-v1-astra-xhigh",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "first_release_target_percent": 65,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 1,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "native-output-v1-astra-xhigh-intervals",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-dependencies",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-transactions",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-maintenance",
+          "paired_native_evidence": true,
+          "state": "COMPLETED_PAIR_NOT_MODEL_QUALIFICATION",
+          "arms": {
+            "off": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 153042,
+                "output_tokens": 1943,
+                "cached_input_tokens": 119040,
+                "reasoning_output_tokens": 156,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "835011e292e57381b81427dafcd8c3401b693318da52b0532a037312e4e8a77a",
+              "status_sha256": "6d7cce7e78948d676983884493717b2e931ec0f9a056e894d2c9dd0c8e9f9f99",
+              "task_checks": "Not inferred from lifecycle state"
+            },
+            "on": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 103615,
+                "output_tokens": 1952,
+                "cached_input_tokens": 75520,
+                "reasoning_output_tokens": 828,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "47c5330b6b728cde1afd550078381d823c53af33c8890d185a03c301d9d86744",
+              "status_sha256": "1a439cff307cef917c94a1cfc0330e2933ac10939aaefa004baf96014f8237c2",
+              "task_checks": "Not inferred from lifecycle state"
+            }
+          },
+          "savings_percent": {
+            "input": 32.29636308987075,
+            "output": -0.46320123520329215,
+            "uncached_input": 17.372507499558854
+          },
+          "classification": "Fresh native model-written final answers; internal Helix tool. Both task artifacts and all observed semantic probes pass. One of seven cohort cells; median/capability release qualification pending. Frozen 6a57243."
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-selection",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-cold",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "native-output-v1-astra-xhigh-w50",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        }
+      ]
+    },
+    {
+      "id": "release-native-full-astra-high-v1",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "first_release_target_percent": 65,
+      "persistent_goal_target_percent": 80,
+      "fixed_cells": 7,
+      "complete_native_pairs": 0,
+      "median_savings_percent": null,
+      "capability_parity_qualified": false,
+      "release_qualified": false,
+      "cells": [
+        {
+          "pair_id": "astra-high-intervals-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-dependencies-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-transactions-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-maintenance-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-selection-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-cold-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "NOT_RUN_OR_NOT_REGISTERED",
+          "arms": {}
+        },
+        {
+          "pair_id": "astra-high-w50-native-final-v1",
+          "paired_native_evidence": false,
+          "state": "INCOMPLETE_OR_STOPPED_PAIR",
+          "arms": {
+            "off": {
+              "native_lifecycle": "closed",
+              "usage": {
+                "input_tokens": 40413,
+                "output_tokens": 15,
+                "cached_input_tokens": 31488,
+                "reasoning_output_tokens": 0,
+                "cache_write_input_tokens": 0
+              },
+              "native_sha256": "c070601d3b2997cb808289b922196b6f3e4d999678a3bff36b4b3dba8443fb81",
+              "status_sha256": "64b0e1018c35dc935567bb988153d521c03991e14ed7c36836e6bea16f6449a7",
+              "task_checks": "Not inferred from lifecycle state"
+            }
+          },
+          "classification": "STOPPED control after2 ACKs: second response included terminal period.40413 input/15 output charged; candidate never ran. Exact grader retained. User requested research before further experiments; unlaunched V2 paused. No savings or release claim."
+        }
+      ]
+    }
+  ],
+  "distinct_native_attempts_in_these_cohorts": 9,
+  "total_native_usage_in_these_cohorts": {
+    "input_tokens": 1121025,
+    "output_tokens": 18585,
+    "cached_input_tokens": 872576,
+    "reasoning_output_tokens": 7675,
+    "cache_write_input_tokens": 0
+  },
+  "cost_scope": "Includes eight completed arm streams and stopped W50 control. Not all project attempts, total research cost, quota, or billing. No-inference preflight excluded from completed tasks.",
+  "scope_limits": [
+    "Policy versions are separate. Sol maintenance across V1/V2/V3 remains one task family, not three cells.",
+    "Astra High and XHigh stay separate. Two-case reuse review is diagnostic, not a release cohort.",
+    "Closed native lifecycle does not establish task PASS. W50 control exact ACK failed.",
+    "No full seven-cell median is observable in these registered native-final cohorts."
+  ]
+}

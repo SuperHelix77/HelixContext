@@ -1,0 +1,16 @@
+{
+  "schema": "helix.release-readiness-closure.v1",
+  "checked_at": "2026-09-10T08:39:01.536161+00:00",
+  "native_model_effort_identities_verified": 9,
+  "local_links_checked": 6,
+  "new_native_benchmarks": 0,
+  "new_offline_experiments": 0,
+  "all_cohort_medians_unqualified": true,
+  "files": {
+    "docs/research/RELEASE_READINESS_20260910.md": "fc70178d78fba1954b5855ce0c711f2c6fe1961b727673c1012d268474cac395",
+    "docs/research/RELEASE_READINESS_20260910.json": "dfe22f6704ef03ac98e3d9c437e13da6c1f1a4792a255aedf785900315f72e83",
+    "engine/prototype/semantic_execution.py": "9d76331aec856e52361734e75bebce8945ce9f7aff3ec9e4765b8696351da016",
+    "engine/prototype/copy_handles.py": "4ef3523b164fb27878f46c45db75fe5c9af0ff887179398b586abd773886bc52",
+    "engine/output/dynamic_tool_rpc.py": "c070dde4d93da6220d806b09c333831ea1c97b7e90540e1f1eaeef2d63081ce0"
+  }
+}
