@@ -1,0 +1,148 @@
+{
+  "classification": "Fresh N=1 known maintenance task, model/effort release cell; not earlier coding qualification",
+  "N": 1,
+  "manifest_sha256": "a135590270cf9adc0ea7c78ea4a0ab6f564ce170f494fe7f8f018803418eca81",
+  "rows": [
+    {
+      "arm": "on",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "thread_id": "01a08b9c-54b7-7e42-9c3f-af3e758ea7aa",
+      "usage": {
+        "input_tokens": 161167,
+        "output_tokens": 3574,
+        "cached_input_tokens": 128768,
+        "reasoning_output_tokens": 2033,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 6,
+      "turns": 1,
+      "raw_tool_calls": 5,
+      "engine_tool_calls": 1,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "1fe64bb9322d7948099f8419750a5413111686d20177b8a7d6a5aca705f6362b",
+      "raw_bytes": 211931,
+      "native_sha256": "9c28d3b1f63994232ca47ecf4bb2d8a340f682db9d3337ec2d97f295ea8864f1",
+      "source_sha256": "52422bad02c86da6c889085ee1e4d284fabe3a72aa3801e8d286d41f4eb52bb2",
+      "checks": "PASS",
+      "elapsed_seconds": 86.65609466697788,
+      "caller_check_seconds": 0.5105789999943227,
+      "store_io": {
+        "object_bytes_read": 42870,
+        "object_bytes_written": 25440,
+        "object_bytes_hashed": 68310,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": {
+        "object_bytes_read": 24412,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 24412,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "post_audit_check_seconds": 0.5207650829688646,
+      "memory_seconds": 0.15132274996722117,
+      "memory_raw_bytes": 36015,
+      "prompt_bytes": 31131,
+      "base_bytes": 6187,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "final_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "arm": "off",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "thread_id": "01a08b9d-a74d-71d3-95c3-1c47a2dfb3c2",
+      "usage": {
+        "input_tokens": 157828,
+        "output_tokens": 1878,
+        "cached_input_tokens": 126208,
+        "reasoning_output_tokens": 766,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 7,
+      "turns": 1,
+      "raw_tool_calls": 6,
+      "engine_tool_calls": 0,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "3093b852f60033791e53adc2b93c1abe06ea91849e280a352e506475c634aeb6",
+      "raw_bytes": 188479,
+      "native_sha256": "ca6f4daa1baba7aee27d578daa07455e06b6024f7a6664d5bff1f15d3fcb1f12",
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "checks": "PASS",
+      "elapsed_seconds": 51.88346758298576,
+      "caller_check_seconds": 0.5085462080314755,
+      "store_io": {},
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": null,
+      "post_audit_check_seconds": 0.5268951249890961,
+      "memory_seconds": 0.1484775409917347,
+      "memory_raw_bytes": 36016,
+      "prompt_bytes": 1873,
+      "base_bytes": 17766,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "final_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": -2.1155941911447984,
+    "output_tokens": -90.30883919062833,
+    "uncached_input_tokens": -2.463630613535739
+  },
+  "finite_checks": "PASS",
+  "meets_75_75": false,
+  "meets_80_80": false,
+  "preparation_seconds": 0.982230374997016,
+  "general_release": false,
+  "reused_controls": false,
+  "normal_codex_app_integration": false,
+  "cohort_complete": false,
+  "release_qualification": false,
+  "model": "gpt-5.6-luna",
+  "effort": "high",
+  "release_threshold": 75,
+  "meets_requested_economic_gate": false,
+  "native_usage_all_attempts": {
+    "input_tokens": 318995,
+    "output_tokens": 5452,
+    "cached_input_tokens": 254976,
+    "reasoning_output_tokens": 2799,
+    "cache_write_input_tokens": 0
+  },
+  "limits": [
+    "Composite kernel/skill/internal-tool test with model-written final answer; no isolated mechanism attribution",
+    "One known development maintenance task; not population parity or prior coding qualification",
+    "Setup, caller checks, storage and private evidence capture cost nonzero",
+    "Execution is a research caller; production delivery and hostile-host atomicity unproven"
+  ]
+}

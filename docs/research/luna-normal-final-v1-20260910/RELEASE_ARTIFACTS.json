@@ -1,0 +1,189 @@
+{
+  "schema": "helix.luna.normal-final.qualification-result.v1",
+  "classification": "LUNA_HIGH_MAINTENANCE_PAIR_FINITE_PASS_ECONOMIC_FAIL_NOT_QUALIFIED",
+  "native_pair": "Fresh matched Luna High maintenance pair; candidate control and engine tool routes are versioned; one maintenance cell only.",
+  "manifest_sha256": "a135590270cf9adc0ea7c78ea4a0ab6f564ce170f494fe7f8f018803418eca81",
+  "run_root": "/private/tmp/luna-normal-final-v1-run-20260910",
+  "rows": [
+    {
+      "arm": "candidate",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "thread_id": "01a08b9c-54b7-7e42-9c3f-af3e758ea7aa",
+      "usage": {
+        "input_tokens": 161167,
+        "output_tokens": 3574,
+        "cached_input_tokens": 128768,
+        "reasoning_output_tokens": 2033,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 32399,
+      "other_output_tokens": 1541,
+      "segments": 6,
+      "turns": 1,
+      "raw_tool_calls": 5,
+      "engine_tool_calls": 1,
+      "failed_command_executions": 0,
+      "completed_command_executions": 0,
+      "dynamic_tool_calls": 1,
+      "native_events_sha256": "9c28d3b1f63994232ca47ecf4bb2d8a340f682db9d3337ec2d97f295ea8864f1",
+      "raw_rollout_sha256": "1fe64bb9322d7948099f8419750a5413111686d20177b8a7d6a5aca705f6362b",
+      "raw_rollout_bytes": 211931,
+      "source_sha256": "52422bad02c86da6c889085ee1e4d284fabe3a72aa3801e8d286d41f4eb52bb2",
+      "final_sha256": "8a32f6d2e32188d6c75f374d46b83cc755bd4fe8e5253c5643ded4da587aeb99",
+      "elapsed_seconds": 86.65609466697788,
+      "caller_check_seconds": 0.5105789999943227,
+      "memory_seconds": 0.15132274996722117,
+      "memory_raw_bytes": 36015,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "final_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "native_overrides_verified": true
+      },
+      "finite_checks": "PASS",
+      "final_review": {
+        "normal_model_written_final": "PASS",
+        "after_actual_execution": "PASS",
+        "requested_change_explained": "PASS",
+        "truthful_test_and_scope_claims": "PASS",
+        "caller_rendered_final": "NO"
+      }
+    },
+    {
+      "arm": "control",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "thread_id": "01a08b9d-a74d-71d3-95c3-1c47a2dfb3c2",
+      "usage": {
+        "input_tokens": 157828,
+        "output_tokens": 1878,
+        "cached_input_tokens": 126208,
+        "reasoning_output_tokens": 766,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 31620,
+      "other_output_tokens": 1112,
+      "segments": 7,
+      "turns": 1,
+      "raw_tool_calls": 6,
+      "engine_tool_calls": 0,
+      "failed_command_executions": 0,
+      "completed_command_executions": 0,
+      "dynamic_tool_calls": 0,
+      "native_events_sha256": "ca6f4daa1baba7aee27d578daa07455e06b6024f7a6664d5bff1f15d3fcb1f12",
+      "raw_rollout_sha256": "3093b852f60033791e53adc2b93c1abe06ea91849e280a352e506475c634aeb6",
+      "raw_rollout_bytes": 188479,
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "final_sha256": "9265ecbc28e319d0ee6b2ed3c715f8cd02ebe73b49f79011ee1a35f48fcaf6a6",
+      "elapsed_seconds": 51.88346758298576,
+      "caller_check_seconds": 0.5085462080314755,
+      "memory_seconds": 0.1484775409917347,
+      "memory_raw_bytes": 36016,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "final_sha256": "d391a69ded5bad21b191e424d6770c5e6821b047689256c7394595db6f5a16f0",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-luna",
+        "effort": "high",
+        "native_overrides_verified": true
+      },
+      "finite_checks": "PASS",
+      "final_review": {
+        "normal_model_written_final": "PASS",
+        "after_actual_execution": "PASS",
+        "requested_change_explained": "PASS",
+        "truthful_test_and_scope_claims": "PASS",
+        "caller_rendered_final": "NO"
+      }
+    }
+  ],
+  "pair_savings_percent": {
+    "input_tokens": -2.1155941911447984,
+    "output_tokens": -90.30883919062833,
+    "uncached_input_tokens": -2.463630613535739
+  },
+  "pair_savings_definition": "100*(1-candidate/control); output includes reported reasoning; uncached input is total input minus cached input.",
+  "finite_checks": "PASS",
+  "normal_final_authorship": "PASS on both artifacts",
+  "semantic_probe_replay": {
+    "source_probe_count": 3,
+    "fresh_artifacts": 2,
+    "all_pass": true,
+    "receipt_sha256": "b1c90695e4c2d82e9908201334f36956a9bcb55de96878e451ee719ffd86afcd"
+  },
+  "failed_work_preserved": {
+    "candidate_failed_command_executions": 0,
+    "control_failed_command_executions": 0,
+    "note": "Candidate's failed semantic probe and subsequent recovery remain in private native receipt; no retry was hidden."
+  },
+  "candidate_switches": {
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "frozen_base": "engine/profiles/luna-coding-v1-75/base.md",
+    "bound_edit_tool": "existing native-output-v1 interface",
+    "reasoning_style": "none-new; no notation/language intervention",
+    "caller_preparation": "task-local memory preflight, registration and attached skill",
+    "final_renderer": null
+  },
+  "cohort": {
+    "fixed_cells": [
+      "intervals",
+      "dependencies",
+      "transactions",
+      "maintenance",
+      "selection",
+      "cold_recovery",
+      "W50"
+    ],
+    "completed_native_cells": [
+      "maintenance"
+    ],
+    "missing_cells": [
+      "intervals",
+      "dependencies",
+      "transactions",
+      "selection",
+      "cold_recovery",
+      "W50"
+    ],
+    "seven_cell_median": null,
+    "W50_stratum_separate": true
+  },
+  "qualification": {
+    "meets_75_75": false,
+    "meets_80_80": false,
+    "economic_gate": false,
+    "cohort_complete": false,
+    "general_release": false,
+    "full_capability_parity": "UNCONFIRMED"
+  },
+  "limits": [
+    "N=1 exposed development maintenance task, not holdout evidence",
+    "Finite checks and three observed probe replays are bounded behavioral evidence, not universal intelligence parity",
+    "Candidate combines frozen Luna base, caller preparation, attached skill and bound edit tool; mechanism effects are not isolated",
+    "Included-plan quota, physical I/O and complete research/coordinator costs are unknown",
+    "Missing six fixed cells prevent a seven-cell median or model-wide release"
+  ],
+  "artifact_manifest": {
+    "candidate_source": "artifacts/candidate-workflow_memory.py",
+    "control_source": "artifacts/control-workflow_memory.py",
+    "candidate_final": "artifacts/candidate-final.md",
+    "control_final": "artifacts/control-final.md",
+    "probe_replay": "PROBE_REPLAY.json"
+  }
+}
