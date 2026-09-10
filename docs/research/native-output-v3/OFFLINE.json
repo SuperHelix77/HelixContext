@@ -1,0 +1,75 @@
+{
+  "classification": "Offline engineering and conditional trace arithmetic; no model evidence",
+  "native_calls": 0,
+  "solved_edits_used_only_for_offline_replay": true,
+  "observed_v2_artifact_reproduced": true,
+  "source_sha256": "8c76cd854aa1c4c75169d001c2ddaf272ded5381cbc8efcde50416c63240f131",
+  "finite_checks": "23 public/regression tests +94 independent cases PASS",
+  "independent_diff_application": "PASS",
+  "scope": {
+    "head": "a4cc3935312c0854a4085bf87306184378f95d49",
+    "status_z": " M workflow_memory.py\u0000",
+    "diff_check_exit": 0,
+    "source_bound": true,
+    "caller_declared_protected_scope_rechecked": true,
+    "evidence_ref": "b51778d0d1c4d919c8da25edadc7fcf814a621cb0e2179683110f112adc9504e",
+    "limit": "Observed local state; no exclusive workspace custody or semantic completeness"
+  },
+  "prior_edit_argument_bytes": 2061,
+  "indexed_argument_bytes": 534,
+  "prior_hot_view_bytes": 28482,
+  "indexed_hot_view_bytes": 11556,
+  "cold_bytes": 17672,
+  "source_manifest": [
+    {
+      "file": "evidence.py",
+      "sha256": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+      "bytes": 11194,
+      "lines": 135,
+      "hot": false
+    },
+    {
+      "file": "test_search_mode_public.py",
+      "sha256": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed",
+      "bytes": 1377,
+      "lines": 37,
+      "hot": false
+    },
+    {
+      "file": "test_workflow_memory.py",
+      "sha256": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+      "bytes": 5101,
+      "lines": 114,
+      "hot": false
+    },
+    {
+      "file": "workflow_memory.py",
+      "sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "bytes": 10027,
+      "lines": 188,
+      "hot": true
+    }
+  ],
+  "receipt_bytes": 2120,
+  "store_io_including_constructor": {
+    "object_bytes_read": 63119,
+    "object_bytes_written": 28900,
+    "object_bytes_hashed": 92019,
+    "object_read_operations": 8,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "elapsed_seconds": 0.8450169999850914,
+  "scope_observation_commands_per_snapshot": 3,
+  "whole_physical_io": "UNKNOWN",
+  "retained_segments_2_and_4": {
+    "inputTokens": 51175,
+    "outputTokens": 1033
+  },
+  "conditional_saving_if_segments_1_and_3_disappeared": {
+    "inputTokens": 71.92444424938006,
+    "outputTokens": 56.68763102725367
+  },
+  "counterfactual_limit": "Deleting entire observed segments is optimistic and unproven, not a model lower bound or measured saving"
+}

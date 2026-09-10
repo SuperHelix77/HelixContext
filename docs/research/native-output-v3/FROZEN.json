@@ -1,0 +1,31 @@
+{
+  "schema": "helix.native-final-v3.freeze.v1",
+  "state": "FROZEN_BEFORE_NATIVE",
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "task": "known maintenance",
+  "output_contract": "model-authored normal final answer; internal tools allowed",
+  "switches": {
+    "source": "complete_target_indexed_v1",
+    "edits": "indexed_lines_v1",
+    "receipt": "bound_diff_and_scope_v1"
+  },
+  "tests": "40 passed;23 regression+94 independent replay cases PASS",
+  "native_calls_before_freeze": 0,
+  "sha256": {
+    "docs/research/native-output-v3/pilot.py": "3b7e79b4e22e1a7f429a09e6b76cafb0b11a972cc565011d59e44edb09818a52",
+    "docs/research/native-output-v3/test_indexed_tool.py": "f3ed100338a3c3f0fbdc26cb598091b7fd878a20cfd60fb9d7d23a126ea57fee",
+    "docs/research/native-output-v3/offline.py": "a7387f4e22dfb03af9173c5aa0b39b9d22052330dbcd935bab0b92b58a597adc",
+    "docs/research/native-output-v3/audit_native.py": "bb6a3f589f1a2e110319282595e453c9962ad51cb5aa62cca81367523263255c",
+    "docs/research/native-output-v3/indexed_tool.py": "13eeb54689fd5d91d19136c721c4b8916d155778cef7f0c61b796a8e28a284d8",
+    "docs/research/native-output-v3/checked_tool.py": "68a20881fdcef19df97d4caa90c3beecc4514088e467fda27f457f4bd9dc1e07",
+    "docs/research/native-output-v3/PREREG.md": "077503cb84670fe2050f606cddf116dad14d1d423571b86a4cdfeab20cc9064c",
+    "docs/research/native-output-v3/OFFLINE.json": "4d42e06660a42bbb7f43d3fa533f20ad5e6d8c47e4a0eb3bb427cdb889422198",
+    "engine/prototype/indexed_edits.py": "dfcd3cfd0127243384e1ed1ebb3eb895454909f92196ac0bf25556f633247294",
+    "engine/prototype/indexed_source.py": "1cf1e97e0952fcb36c2318be1a23e772fe174ab63e539a066cf975611b18e3a1",
+    "engine/prototype/test_indexed_edits.py": "fb221615171276195257a0823f963b41f89b3920e8bd2fe7be2d12d4e716e56b",
+    "engine/prototype/test_indexed_source.py": "ec4077e13cb5a7bb29afae57c40cd57fda50c3c35c24a77dfa85136a0cf3f86c"
+  },
+  "prior_evidence": "V2 rejected as economic policy; unchanged variant will not rerun",
+  "release_qualification": false
+}
