@@ -1,0 +1,23 @@
+{
+  "classification": "Offline engineering and prompt-boundary gates, not model capability evidence",
+  "checked_at": "2026-09-10T08:41:18.979323+00:00",
+  "command": "python3 -m pytest -q docs/research/w50-native-final-v2/test_ack_literal.py docs/research/w50-native-final-v1/test_contract.py engine/prototype/test_passive_workflow.py engine/prototype/test_completion_ledger.py",
+  "exit_code": 0,
+  "passed": 11,
+  "reported_seconds": 0.28,
+  "scope": [
+    "all49 trusted ACK trailers with event preservation",
+    "final semantic request unchanged",
+    "complete final schema and exact data gates",
+    "restart and exact history recovery",
+    "duplicate/conflict/stale/tampered authority",
+    "failed append and semantic escalation"
+  ],
+  "model_calls": 0,
+  "test_bindings": {
+    "docs/research/w50-native-final-v2/test_ack_literal.py": "d30e4f95f5c007ad23e3a0dafc6a5213c442cb06507ea17f1977138696318efb",
+    "docs/research/w50-native-final-v1/test_contract.py": "85a955adc64fedb6771583ac9ad4caafedd7cc7550d98796adb6e00c1a366f72",
+    "engine/prototype/test_passive_workflow.py": "ba0ca19a43e8331995b5536cbd9610ab5c8c6dc5a4fd1fb8fcae542b9ccdc963",
+    "engine/prototype/test_completion_ledger.py": "9c881b9bd31b3e2624de1c34ecb3e9f33708a41b78d9c1af04bf0ede51aec3a4"
+  }
+}
