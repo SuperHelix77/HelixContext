@@ -1,0 +1,118 @@
+{
+  "schema": "helix.readonly-research-audit.v1",
+  "created_at": "2026-09-10T08:18:01.140578+00:00",
+  "repository_commit": "68316574928d711463d57bab3ecaf6235adb1bde",
+  "native_experiments_launched_in_this_research": 0,
+  "offline_benchmark_executions": 0,
+  "implementation_changed": false,
+  "public_bound_files_verified": 20,
+  "native_and_raw_streams_verified": 4,
+  "rows": [
+    {
+      "case": "sample_a",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 75848,
+        "output_tokens": 1089,
+        "cached_input_tokens": 49408,
+        "reasoning_output_tokens": 558,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 3,
+      "commands": 5,
+      "thread_starts": 1,
+      "user_turn_starts": 1,
+      "native_sha256": "2c44d20aaf0e18310cd05cdadae690c7998cac4076f3d23ae76640af07154ab0",
+      "raw_sha256": "88f065342c7f9d77be8029297f93fb7bd308d80cea27b2eebcbbbdb85cce8040",
+      "answer_sha256": "5d8857ad8c68b5f290ca3eed1dcf4751daab6df1989c74099bb6dff36f8bb513",
+      "public_artifact": "docs/research/astra-reuse-v1/artifacts/sample_a-on"
+    },
+    {
+      "case": "sample_a",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 133760,
+        "output_tokens": 1679,
+        "cached_input_tokens": 108032,
+        "reasoning_output_tokens": 760,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 5,
+      "commands": 10,
+      "thread_starts": 1,
+      "user_turn_starts": 1,
+      "native_sha256": "0e6da902ea5a4f96400c8f3ee3e1fbe0c84504c6ddc40688ab575dd517d8b185",
+      "raw_sha256": "7d3b69c3c2ce5a20a46e767a889bc03ee5355d854abf4d3f3c1d0cd8e7aea003",
+      "answer_sha256": "62763653c5035e22ba682b52f94d33948f0caea8e3435ce50142659061420e44",
+      "public_artifact": "docs/research/astra-reuse-v1/artifacts/sample_a-off"
+    },
+    {
+      "case": "sample_b",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 168328,
+        "output_tokens": 1619,
+        "cached_input_tokens": 146304,
+        "reasoning_output_tokens": 296,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 6,
+      "commands": 11,
+      "thread_starts": 1,
+      "user_turn_starts": 1,
+      "native_sha256": "06c84f838e94f858c016c4a12bd4c2dcbe7efdc442637c447f8c74547cc441ff",
+      "raw_sha256": "a7cc210c88489ade9bfa26c8a9df879cbd26e49e6ee6298a6750336ddca27415",
+      "answer_sha256": "68cec4a6b5fa374f7f22608a6d11161a591befc56209f95e9843715dbd831637",
+      "public_artifact": "docs/research/astra-reuse-v1/artifacts/sample_b-off"
+    },
+    {
+      "case": "sample_b",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 120480,
+        "output_tokens": 1526,
+        "cached_input_tokens": 92288,
+        "reasoning_output_tokens": 532,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "commands": 6,
+      "thread_starts": 1,
+      "user_turn_starts": 1,
+      "native_sha256": "d7de3959f1c9e5d062b0a8bd84fb9115fee7e8e8c8d20b21a8b7644e39887372",
+      "raw_sha256": "6ce7668f95efb6602945013123ec3018e4b22910361df03df38564425f47dec6",
+      "answer_sha256": "eba3a91ab2b479176054cc1f7418814bb99a2b9c3d9ca2cbc75f9521c06ef958",
+      "public_artifact": "docs/research/astra-reuse-v1/artifacts/sample_b-on"
+    }
+  ],
+  "fixed_trajectory_reasoning_erasure": [
+    {
+      "case": "sample_a",
+      "control_output": 1679,
+      "candidate_output": 1089,
+      "candidate_reasoning_subset": 558,
+      "candidate_other_output": 531,
+      "zero_candidate_reasoning_fixed_other_output_saving_percent": 68.3740321620012
+    },
+    {
+      "case": "sample_b",
+      "control_output": 1619,
+      "candidate_output": 1526,
+      "candidate_reasoning_subset": 532,
+      "candidate_other_output": 994,
+      "zero_candidate_reasoning_fixed_other_output_saving_percent": 38.604076590487956
+    }
+  ],
+  "fixed_trajectory_median_output_saving_percent": 53.48905437624458,
+  "arithmetic_scope": "Hypothetical deletion of reported reasoning tokens only; all other output fixed. Not a feasible intervention, causal estimate, or model lower bound. Input effects not inferred.",
+  "gate": "HOLD_NO_SEMANTIC_EMULATION_IMPLEMENTATION_OR_BENCHMARK",
+  "source_bindings": {
+    "docs/research/astra-reuse-v1/RESULT.json": "07e848577f5dd72ff2e6032383be3c99b869c160dcf51de0b1cbee4ebbf0d15c",
+    "docs/research/astra-reuse-v1/SEMANTIC_REVIEW.json": "06d8fb4f8d4c9c91160563e29ec0fb5af2c1551ddcae0a3ef7ce0efcdeb23be3",
+    "docs/research/astra-reuse-v1/PUBLIC_VERIFICATION.json": "ba2a097d7bd33a16d1b805ed30305bd9fc2db75a451fee77c4d2953458d821b0",
+    "docs/research/astra-reuse-v1/artifacts/MANIFEST.json": "c1a720af5c9ccd4b08789520ae1be44859daa218fdb00ac60f28f793f5bc6842",
+    "engine/output/effort_session.py": "a6a7e3fbbfd254f7f682b6a3c33378a9a937bb525b0e28c9f5002669ada9cb59",
+    "docs/research/continuation-contract/BASE_KERNEL_PAIR_RESULT.json": "47ef0321f459fc116e74d860fa24e61555b02275fc50e88ab5a06ff0570efbfa",
+    "docs/research/w50-native-final-v1/STOPPED.json": "51383e33f959b0e820199d6b482a4e84fd289b8d39bdb1d00f00414aeb5649c4"
+  }
+}

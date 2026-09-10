@@ -1,0 +1,18 @@
+{
+  "schema": "helix.research-document-closure.v1",
+  "classification": "Read-only literature and existing-receipt audit; no new model or offline benchmark",
+  "local_links_checked": 11,
+  "source_bindings_checked": 7,
+  "verified_streams": 4,
+  "native_benchmark_calls": 0,
+  "new_offline_benchmarks": 0,
+  "release_qualification": false,
+  "self_deployment": false,
+  "files": {
+    "docs/research/SEMANTIC_EMULATION_AUDIT_20260910.md": "54c5bb80264c653ac1be5423d5ed90d7c129d77b3e995f1c26d1359beb93b197",
+    "docs/research/semantic-emulation-20260910/OBSERVATIONS.json": "8474f564dd5225d939b3ef5c9120571ab80475fa18c2a3bc4ff01a3bb2a84c83",
+    "docs/research/semantic-emulation-20260910/SOURCE_INDEX.json": "74d7962c8e220649a5df2a9d5232cbf0202506634b8ad2711ef3b5f3e02bd521",
+    "docs/research/w50-native-final-v1/STOPPED.json": "51383e33f959b0e820199d6b482a4e84fd289b8d39bdb1d00f00414aeb5649c4",
+    "docs/research/w50-native-final-v2/HOLD.md": "47a1bbdb848e1fd0158f25b80b2c146d6b62f8104388538c604a68036d0a6483"
+  }
+}

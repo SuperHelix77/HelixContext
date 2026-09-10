@@ -1,0 +1,28 @@
+{
+  "classification": "Stopped control before candidate; explicit ACK format failure with ambiguous caller punctuation",
+  "state": "CLOSED_FAILED_ATTEMPT",
+  "native_turns": 2,
+  "candidate_turns": 0,
+  "usage": {
+    "input_tokens": 40413,
+    "output_tokens": 15,
+    "cached_input_tokens": 31488,
+    "reasoning_output_tokens": 0,
+    "cache_write_input_tokens": 0
+  },
+  "answers": [
+    "ACK E01",
+    "ACK E02."
+  ],
+  "expected": [
+    "ACK E01",
+    "ACK E02"
+  ],
+  "native_sha256": "c070601d3b2997cb808289b922196b6f3e4d999678a3bff36b4b3dba8443fb81",
+  "raw_sha256": "b0ac39da45da1d085f6a7cc5cab14aa49c87f24b3c7be1ba2868c64162496078",
+  "manifest_sha256": "89bedc87983c2cdf202223283e2c69d6c34ad5b3c3e470d740a2903e0582358c",
+  "retries": 0,
+  "savings_percent": null,
+  "causal_limit": "Observed copied terminal period; attribution to wording is plausible, not experimentally isolated",
+  "next": "Prospectively quote the exact target string; retain the strict grader and original stopped evidence."
+}

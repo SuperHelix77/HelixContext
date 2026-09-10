@@ -1,0 +1,79 @@
+{
+  "schema": "helix.research-source-index.v1",
+  "checked_at": "2026-09-10T08:21:36.537366+00:00",
+  "source_type": "Primary research papers and official documentation",
+  "capture_scope": "Version/section/URL references to sources read via web tools; remote page bytes were not archived or cryptographically pinned. Local evidence is separately hash-bound.",
+  "external_not_helix_replication": true,
+  "sources": [
+    {
+      "id": "coconut",
+      "url": "https://arxiv.org/html/2412.06769v3",
+      "version": "arXiv 2412.06769v3",
+      "inspected": "Sections 4-5, Table 1, Appendix C",
+      "relevance": "Training/embedding access required; math result does not preserve baseline accuracy."
+    },
+    {
+      "id": "huginn",
+      "url": "https://arxiv.org/html/2502.05171v1",
+      "version": "arXiv 2502.05171v1",
+      "inspected": "Architecture, training, evaluations",
+      "relevance": "Recurrent internal computation changes the model architecture; internal steps still cost compute."
+    },
+    {
+      "id": "latent-rl",
+      "url": "https://arxiv.org/html/2512.11816v1",
+      "version": "arXiv 2512.11816v1",
+      "inspected": "Abstract and Section 6",
+      "relevance": "Scoped mathematical accuracy and training stability limitations."
+    },
+    {
+      "id": "chain-of-draft",
+      "url": "https://arxiv.org/html/2502.18600v2",
+      "version": "arXiv 2502.18600v2",
+      "inspected": "Methods and Table 1",
+      "relevance": "Short drafts reduce text but reported GSM8K accuracy decreases against CoT."
+    },
+    {
+      "id": "self-discover",
+      "url": "https://arxiv.org/html/2402.03620v1",
+      "version": "arXiv 2402.03620v1",
+      "inspected": "Sections 2-3",
+      "relevance": "Task-level preparation and per-instance inference; comparator is not ordinary Astra."
+    },
+    {
+      "id": "pal",
+      "url": "https://proceedings.mlr.press/v202/gao23f.html",
+      "version": "ICML 2023 PMLR 202:10764-10799",
+      "inspected": "Primary proceedings abstract",
+      "relevance": "Model translates problem into code; interpreter solves the specified program."
+    },
+    {
+      "id": "speculative-decoding",
+      "url": "https://proceedings.mlr.press/v202/leviathan23a/leviathan23a.pdf",
+      "version": "ICML 2023 PMLR 202:19274-19286",
+      "inspected": "Section 2 and Algorithm 1",
+      "relevance": "Exact target distribution requires draft/target probability correction, not informal answer approval."
+    },
+    {
+      "id": "self-adjusting",
+      "url": "https://csd.cmu.edu/academics/doctoral/degrees-conferred/umut-a-acar",
+      "version": "CMU doctoral thesis record, May 2005",
+      "inspected": "Primary abstract",
+      "relevance": "Dependency tracking and change propagation; not evidence for semantic dependency completeness."
+    },
+    {
+      "id": "astra-guidance",
+      "url": "https://developers.openai.com/api/docs/guides/latest-model",
+      "version": "Live official documentation checked 2026-09-10",
+      "inspected": "Astra limitations, migration, persisted reasoning",
+      "relevance": "No none reasoning effort; listed log-probability controls unsupported; no hidden-state control demonstrated."
+    },
+    {
+      "id": "reasoning-guide",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning",
+      "version": "Live official documentation checked 2026-09-10",
+      "inspected": "Reasoning billing, context modes, stored/stateless continuity",
+      "relevance": "Reasoning tokens billed as output; opaque continuity; earlier-turn context is separate from current-turn segments."
+    }
+  ]
+}
