@@ -1,0 +1,25 @@
+{
+  "schema": "helix.luna.normal-final.offline-gate.v1",
+  "native_calls": 0,
+  "candidate_switches": {
+    "reasoning_style": "concise-English-familiar-notation-v1",
+    "language_arm": null,
+    "caller_preparation": "task-local-memory-profile-skill-registration-v1",
+    "effort": "high",
+    "final_renderer": null
+  },
+  "exact_recovery": {
+    "records": 2,
+    "sha256": "8980084c9df797f3b647dc357d34a8d2d92bfc022fdbfb171437a735ca1361ce"
+  },
+  "hostile_workflow": {
+    "duplicate_delivery": "same receipt",
+    "stale_authority": "withhold"
+  },
+  "hostile_semantics": {
+    "untrusted_content": "not authority",
+    "normalization": "rejected"
+  },
+  "final_authorship_gate": "PASS",
+  "state": "OFFLINE_ADMITTED_BEFORE_NATIVE"
+}

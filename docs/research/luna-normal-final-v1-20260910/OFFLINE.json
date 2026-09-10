@@ -1,0 +1,36 @@
+{
+  "schema": "helix.luna.normal-final-maintenance.offline.v1",
+  "state": "OFFLINE_VALIDATED_NO_NATIVE_CALLS",
+  "native_calls": 0,
+  "candidate": {
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "base_sha256": "f07e19dbe57d410b23524332acf30c0f19650ab631f9e654897cbf440c61c4c0",
+    "final_renderer": null
+  },
+  "derivative": {
+    "pilot_sha256": "ed9fdbaa6d20545e62eb0897d49756a1aad05bd8907175b384ec7badce6472eb",
+    "audit_sha256": "c7333026cb6ba7a9681f9bbd11fd853b36835b7aed78ea6acec0c9d4a2578f82",
+    "tool_sha256": "15cededa71a62c0014f35713ec1dfd69ae63ec6fd19ef098689cff09a27dc6c5",
+    "prereg_sha256": "dc7a3df8716b2564b970e74b9cc222a9ed1470a21ac3ca38eb25ae77dacad2d2"
+  },
+  "actual_tests": {
+    "exit_code": 0,
+    "stdout": "..............                                                           [100%]\n14 passed in 0.18s\n",
+    "stderr": "",
+    "test_files": [
+      "/private/tmp/helix-luna-qualification-20260910/docs/research/luna-normal-final-v1-20260910/test_bound_edit_tool.py",
+      "/private/tmp/helix-luna-qualification-20260910/engine/prototype/test_completion_ledger.py",
+      "/private/tmp/helix-luna-qualification-20260910/engine/prototype/test_passive_workflow.py"
+    ]
+  },
+  "mechanical_scope": [
+    "failed checks preserve source",
+    "stale authority rejects",
+    "duplicate call is idempotent",
+    "restart recovery does not rerun checks",
+    "lost publication acknowledgement reconciles without re-execution",
+    "model final remains separate from tool receipt"
+  ],
+  "semantic_limit": "Offline tests validate caller mechanics only; native model final authorship and task capability remain unobserved."
+}
