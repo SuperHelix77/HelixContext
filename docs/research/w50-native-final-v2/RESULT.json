@@ -1,0 +1,83 @@
+{
+  "state": "AUDITED_SCOPED_RESULT",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "cohort": "release-native-full-astra-high-v2",
+  "pair_id": "astra-high-w50-native-final-v2",
+  "classification": "Finite known W50 task; complete model final. Not coding/general parity or Codex-app deployment.",
+  "savings_percent": {
+    "input_tokens": 98.31553381377928,
+    "output_tokens": 49.621212121212125,
+    "cached_input_tokens": 99.38533750558784,
+    "reasoning_output_tokens": -105.88235294117645,
+    "cache_write_input_tokens": null,
+    "uncached_input_tokens": 72.71017491066391
+  },
+  "finite_checks": "PASS",
+  "model_written_final_preserved": true,
+  "api_equivalent": {
+    "pricing_checked_at": "2026-09-10T08:50:20.276467+00:00",
+    "source": "https://developers.openai.com/api/docs/pricing.md",
+    "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "cost_usd": {
+      "on": {
+        "short": 0.15093,
+        "long": 0.29521
+      },
+      "off": {
+        "short": 1.650274,
+        "long": 3.287348
+      }
+    },
+    "savings_percent": {
+      "short": 90.85424602217572,
+      "long": 91.01981293127469
+    },
+    "scope": "Dated Standard API tariff scenarios, not observed included-plan quota, invoice or full system ROI."
+  },
+  "native_pair_total_usage": {
+    "input_tokens": 1213296,
+    "output_tokens": 794,
+    "cached_input_tokens": 1152384,
+    "reasoning_output_tokens": 104,
+    "cache_write_input_tokens": 0
+  },
+  "prior_failed_v1": {
+    "input_tokens": 40413,
+    "output_tokens": 15,
+    "cached_input_tokens": 31488,
+    "candidate_ran": false,
+    "savings_result": null,
+    "receipt": "../w50-native-final-v1/STOPPED.json"
+  },
+  "output_diagnosis": {
+    "control_ack_output_tokens": 343,
+    "control_final_output_tokens": 185,
+    "candidate_final_output_tokens": 266,
+    "control_final_reported_reasoning_tokens": 34,
+    "candidate_reported_reasoning_tokens": 70,
+    "candidate_nonreasoning_output_tokens": 196,
+    "output_budget_80_percent": 105.6,
+    "output_budget_65_percent": 184.8,
+    "free_reported_reasoning_fixed_trajectory_saving_percent": 62.878787878787875,
+    "hypothetical_same_as_control_final_saving_percent": 64.96212121212122,
+    "qualification": "Counter arithmetic only; no causal attribution, irreducible bound or safe deletion policy."
+  },
+  "decision": {
+    "80_80": "NOT_MET",
+    "astra_65_65_single_cell": "NOT_MET_ON_OUTPUT",
+    "seven_cell_median": null,
+    "cohort_completed_pairs": 1,
+    "cohort_expected_pairs": 7,
+    "model_frozen": false,
+    "xhigh_followup": "NOT_LAUNCHED: High did not pass output economic gate; no new mechanism justified. XHigh is unknown, not inferred from High.",
+    "production_deployment": false
+  },
+  "limits": [
+    "Known/exposed fixture, one pair, no independent replication.",
+    "Engine active in both arms; off is ordinary continuation, not pristine Codex.",
+    "Full physical I/O, coordinator/research cost, total project ROI and actual quota unmeasured.",
+    "Completion prefix verification remains quadratic over event count; not optimized away.",
+    "No new semantic simulation mode or reduced effort."
+  ]
+}

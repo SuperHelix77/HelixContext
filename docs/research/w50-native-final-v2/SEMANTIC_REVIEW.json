@@ -1,0 +1,35 @@
+{
+  "classification": "Explicit finite W50 final-answer review against E01,E17,E31,E50; no general intelligence, coding, latent-future-relevance or app-integration qualification.",
+  "rows": [
+    {
+      "arm": "on",
+      "native_sha256": "d0cba4a21c9acd317849175fd14a89eba3e7ba369e97e62a672b10940b29cf73",
+      "answer_sha256": "8bcd480ed8637503e5d0a1f0d7ff16b842ea7901c31bfa3f98d21a0b57228cd2",
+      "checks": "PASS",
+      "complete_model_written_final": "PASS",
+      "authority_selection": "PASS",
+      "amendment_scope": "PASS",
+      "vendor_override_rejected": "PASS",
+      "exact_numeric_strings": "PASS",
+      "all49events_recovered": "PASS",
+      "judgment": "One violet approver is insufficient: E01 requires2, E17 changes only group, E31 has no authority. All original string values remain exact.",
+      "delivery_limit": "49 unique receipts offered; external consumer acknowledgement not established."
+    },
+    {
+      "arm": "off",
+      "native_sha256": "2dfe904e5bf40ab517a91ee23d54d6e48b92a3319450b000767bb9faedf5ba84",
+      "answer_sha256": "0202c2a7c1ee11dadd4cbbad036c20dce8c66a18a7766ab590c95058f5735380",
+      "checks": "PASS",
+      "complete_model_written_final": "PASS",
+      "authority_selection": "PASS",
+      "amendment_scope": "PASS",
+      "vendor_override_rejected": "PASS",
+      "exact_numeric_strings": "PASS",
+      "all49events_recovered": "PASS",
+      "judgment": "One violet approver is insufficient: E01 requires2, E17 changes only group, E31 has no authority. All original string values remain exact.",
+      "delivery_limit": "49 unique receipts offered; external consumer acknowledgement not established."
+    }
+  ],
+  "release_qualified": false,
+  "kernel_or_production_config_changed": false
+}

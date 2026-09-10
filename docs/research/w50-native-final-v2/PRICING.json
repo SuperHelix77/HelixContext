@@ -1,0 +1,64 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing.md",
+  "checked_at": "2026-09-10T08:50:20.276467+00:00",
+  "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "rates": {
+    "gpt-6-astra": {
+      "short": [
+        10.0,
+        1.0,
+        12.5,
+        50.0
+      ],
+      "long": [
+        20.0,
+        2.0,
+        25.0,
+        75.0
+      ]
+    },
+    "gpt-5.6-sol": {
+      "short": [
+        4.0,
+        0.4,
+        5.0,
+        20.0
+      ],
+      "long": [
+        8.0,
+        0.8,
+        10.0,
+        30.0
+      ]
+    },
+    "gpt-5.6-terra": {
+      "short": [
+        2.0,
+        0.2,
+        2.5,
+        12.0
+      ],
+      "long": [
+        4.0,
+        0.4,
+        5.0,
+        18.0
+      ]
+    },
+    "gpt-5.6-luna": {
+      "short": [
+        0.2,
+        0.02,
+        0.25,
+        1.2
+      ],
+      "long": [
+        0.4,
+        0.04,
+        0.5,
+        1.8
+      ]
+    }
+  },
+  "unit": "USD per million tokens, Standard API tariff scenarios; not measured Codex quota or bill"
+}

@@ -1,0 +1,14 @@
+{
+  "manifest_sha256": "a88bcbb368ab81920218f26ff2e1f67b2f09202a5453456ebf3a0bc4c19493e2",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "state": "PASS",
+  "submitted_model_turns": 0,
+  "session_closed": true,
+  "source_config_bindings_unchanged": true,
+  "raw_capture": {
+    "state": "NO_MODEL_TURN_NO_ROLLOUT",
+    "captured": false,
+    "scope": "Thread setup only; no turn/start or completed task claimed"
+  }
+}

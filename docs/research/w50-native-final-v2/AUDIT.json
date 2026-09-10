@@ -1,0 +1,507 @@
+{
+  "classification": "Finite known W50 task; complete model final. Not coding/general parity or Codex-app deployment.",
+  "manifest_sha256": "a88bcbb368ab81920218f26ff2e1f67b2f09202a5453456ebf3a0bc4c19493e2",
+  "bindings_verified": 35,
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "rows": [
+    {
+      "arm": "on",
+      "checks": "PASS",
+      "native_sha256": "d0cba4a21c9acd317849175fd14a89eba3e7ba369e97e62a672b10940b29cf73",
+      "raw_sha256": "05c543a97c058c032e210ae76093599fb486aebbd937f27f191e87291e396eea",
+      "answer_sha256": "8bcd480ed8637503e5d0a1f0d7ff16b842ea7901c31bfa3f98d21a0b57228cd2",
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "usage": {
+        "input_tokens": 20099,
+        "output_tokens": 266,
+        "cached_input_tokens": 7040,
+        "reasoning_output_tokens": 70,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 13059,
+      "model_turns": 1,
+      "segments": 1,
+      "segment_usage": [
+        {
+          "input_tokens": 20099,
+          "output_tokens": 266,
+          "cached_input_tokens": 7040,
+          "reasoning_output_tokens": 70,
+          "cache_write_input_tokens": 0
+        }
+      ],
+      "completed_item_types": {
+        "userMessage": 1,
+        "reasoning": 1,
+        "agentMessage": 2
+      },
+      "model_tool_calls": 0,
+      "ack_count": 49,
+      "exact_restart_recovery": "PASS",
+      "delivery_scope": "offered; consumer acknowledgement not established",
+      "complete_model_final_unchanged": "PASS",
+      "mechanical_final_grade": "PASS",
+      "engine_object_io": {
+        "object_bytes_read": 1182208,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1242297,
+        "object_read_operations": 2646,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "history_io": {
+        "history_bytes_written": 453894,
+        "history_guard_bytes_read": 36236
+      },
+      "raw_capture_io": {
+        "logical_capture_read_bytes": 79196,
+        "logical_capture_write_bytes": 79196
+      },
+      "post_run_audit_object_io_separate": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "arm_elapsed_seconds": 11.858287665992975,
+      "preparation_seconds": 0.34627912496216595,
+      "native_session_elapsed_seconds": 11.37957466696389,
+      "memory_recall_seconds": 0.37788979202741757,
+      "memory_recall_raw_bytes": 44063,
+      "memory_scope": "No matched prior task memories injected; out-of-scope recall retained cold"
+    },
+    {
+      "arm": "off",
+      "checks": "PASS",
+      "native_sha256": "2dfe904e5bf40ab517a91ee23d54d6e48b92a3319450b000767bb9faedf5ba84",
+      "raw_sha256": "ac4093c026ae94111d8321fcfe73db4c1a60f99908570ab8ea3065c5f042b52f",
+      "answer_sha256": "0202c2a7c1ee11dadd4cbbad036c20dce8c66a18a7766ab590c95058f5735380",
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "usage": {
+        "input_tokens": 1193197,
+        "output_tokens": 528,
+        "cached_input_tokens": 1145344,
+        "reasoning_output_tokens": 34,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 47853,
+      "model_turns": 50,
+      "segments": 50,
+      "segment_usage": [
+        {
+          "input_tokens": 19727,
+          "output_tokens": 7,
+          "cached_input_tokens": 7808,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 20719,
+          "output_tokens": 7,
+          "cached_input_tokens": 19584,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 20854,
+          "output_tokens": 7,
+          "cached_input_tokens": 20480,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 20989,
+          "output_tokens": 7,
+          "cached_input_tokens": 20736,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21124,
+          "output_tokens": 7,
+          "cached_input_tokens": 20864,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21259,
+          "output_tokens": 7,
+          "cached_input_tokens": 20992,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21393,
+          "output_tokens": 7,
+          "cached_input_tokens": 21120,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21527,
+          "output_tokens": 7,
+          "cached_input_tokens": 21248,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21661,
+          "output_tokens": 7,
+          "cached_input_tokens": 21376,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21795,
+          "output_tokens": 7,
+          "cached_input_tokens": 21504,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 21929,
+          "output_tokens": 7,
+          "cached_input_tokens": 21632,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22063,
+          "output_tokens": 7,
+          "cached_input_tokens": 21760,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22198,
+          "output_tokens": 7,
+          "cached_input_tokens": 21888,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22332,
+          "output_tokens": 7,
+          "cached_input_tokens": 22016,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22466,
+          "output_tokens": 7,
+          "cached_input_tokens": 7040,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22601,
+          "output_tokens": 7,
+          "cached_input_tokens": 22272,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22730,
+          "output_tokens": 7,
+          "cached_input_tokens": 22400,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 22865,
+          "output_tokens": 7,
+          "cached_input_tokens": 22144,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23000,
+          "output_tokens": 7,
+          "cached_input_tokens": 22656,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23134,
+          "output_tokens": 7,
+          "cached_input_tokens": 22784,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23269,
+          "output_tokens": 7,
+          "cached_input_tokens": 22912,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23403,
+          "output_tokens": 7,
+          "cached_input_tokens": 22528,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23538,
+          "output_tokens": 7,
+          "cached_input_tokens": 23040,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23673,
+          "output_tokens": 7,
+          "cached_input_tokens": 23296,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23808,
+          "output_tokens": 7,
+          "cached_input_tokens": 23552,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 23943,
+          "output_tokens": 7,
+          "cached_input_tokens": 23168,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24078,
+          "output_tokens": 7,
+          "cached_input_tokens": 23680,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24213,
+          "output_tokens": 7,
+          "cached_input_tokens": 23808,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24348,
+          "output_tokens": 7,
+          "cached_input_tokens": 23936,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24483,
+          "output_tokens": 7,
+          "cached_input_tokens": 24192,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24618,
+          "output_tokens": 7,
+          "cached_input_tokens": 24320,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24753,
+          "output_tokens": 7,
+          "cached_input_tokens": 24064,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 24887,
+          "output_tokens": 7,
+          "cached_input_tokens": 24448,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25022,
+          "output_tokens": 7,
+          "cached_input_tokens": 24704,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25156,
+          "output_tokens": 7,
+          "cached_input_tokens": 24832,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25291,
+          "output_tokens": 7,
+          "cached_input_tokens": 24960,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25426,
+          "output_tokens": 7,
+          "cached_input_tokens": 24576,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25561,
+          "output_tokens": 7,
+          "cached_input_tokens": 25216,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25696,
+          "output_tokens": 7,
+          "cached_input_tokens": 25344,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25831,
+          "output_tokens": 7,
+          "cached_input_tokens": 25472,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 25966,
+          "output_tokens": 7,
+          "cached_input_tokens": 25600,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26101,
+          "output_tokens": 7,
+          "cached_input_tokens": 25728,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26236,
+          "output_tokens": 7,
+          "cached_input_tokens": 25984,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26370,
+          "output_tokens": 7,
+          "cached_input_tokens": 25088,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26504,
+          "output_tokens": 7,
+          "cached_input_tokens": 26240,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26638,
+          "output_tokens": 7,
+          "cached_input_tokens": 26112,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26773,
+          "output_tokens": 7,
+          "cached_input_tokens": 26496,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26907,
+          "output_tokens": 7,
+          "cached_input_tokens": 26624,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 27042,
+          "output_tokens": 7,
+          "cached_input_tokens": 26752,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 27297,
+          "output_tokens": 185,
+          "cached_input_tokens": 26368,
+          "reasoning_output_tokens": 34,
+          "cache_write_input_tokens": 0
+        }
+      ],
+      "completed_item_types": {
+        "userMessage": 50,
+        "agentMessage": 50,
+        "reasoning": 1
+      },
+      "model_tool_calls": 0,
+      "ack_count": 49,
+      "exact_restart_recovery": "PASS",
+      "delivery_scope": "offered; consumer acknowledgement not established",
+      "complete_model_final_unchanged": "PASS",
+      "mechanical_final_grade": "PASS",
+      "engine_object_io": {
+        "object_bytes_read": 1198072,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1274025,
+        "object_read_operations": 2695,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "history_io": {
+        "history_bytes_written": 453894,
+        "history_guard_bytes_read": 907788
+      },
+      "raw_capture_io": {
+        "logical_capture_read_bytes": 541058,
+        "logical_capture_write_bytes": 541058
+      },
+      "post_run_audit_object_io_separate": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "arm_elapsed_seconds": 175.22670999995898,
+      "preparation_seconds": 0.1667437079595402,
+      "native_session_elapsed_seconds": 174.92193366697757,
+      "memory_recall_seconds": 0.3930536239640787,
+      "memory_recall_raw_bytes": 44065,
+      "memory_scope": "No matched prior task memories injected; out-of-scope recall retained cold"
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 98.31553381377928,
+    "output_tokens": 49.621212121212125,
+    "cached_input_tokens": 99.38533750558784,
+    "reasoning_output_tokens": -105.88235294117645,
+    "cache_write_input_tokens": null,
+    "uncached_input_tokens": 72.71017491066391
+  },
+  "same_history_and_ledger_root": true,
+  "manifest_preparation_seconds": 0.14259166701231152,
+  "full_physical_io_and_total_project_cost": "UNMEASURED",
+  "semantic_review": "Separate explicit review required; hashes do not establish semantic adequacy",
+  "release_qualified": false
+}

@@ -1,0 +1,18 @@
+{
+  "usage": {
+    "input_tokens": 20099,
+    "output_tokens": 266,
+    "cached_input_tokens": 7040,
+    "reasoning_output_tokens": 70,
+    "cache_write_input_tokens": 0
+  },
+  "segments": [
+    {
+      "input_tokens": 20099,
+      "output_tokens": 266,
+      "cached_input_tokens": 7040,
+      "reasoning_output_tokens": 70,
+      "cache_write_input_tokens": 0
+    }
+  ]
+}
