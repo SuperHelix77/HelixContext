@@ -29,6 +29,12 @@ mislabel 75/75 as 80/80. Keep actual paired counters and failures visible.
    [Results](continuation-contract/SOL_VARIED_CODING_V1_RESULT.md) remain separate
    from the frozen assembly candidate. No unchanged retry is justified.
 4. Astra: independently qualify its profile; preserve semantic review and probes.
+   The fresh three-contract transfer now passes finite behavior but fails 75/75
+   on all three pairs: median 83.07% input / 60.02% output, uncached 27.60%.
+   Every candidate used one segment and zero commands. See the
+   [audited result](continuation-contract/ASTRA_VARIED_CODING_V1_RESULT.md).
+   The next coding attack must address work within that remaining call; another
+   command reducer or unchanged retry has no demonstrated residual to remove.
 
 All releases must remain integratable with the normal Codex app later. Keep Engine
 independent of the research caller through a small versioned adapter interface for

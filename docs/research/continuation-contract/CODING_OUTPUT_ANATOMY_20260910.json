@@ -1,0 +1,398 @@
+{
+  "schema": "helix.coding-output-anatomy.v1",
+  "source_audits": {
+    "LUNA_VARIED_CODING_CONTINUATION_RESULT.json": "4e746816325181518cfe9c5f0903e4e2537d494bad1f4b9c7cbd24483672ed9d",
+    "SOL_VARIED_CODING_V1_RESULT.json": "eaf47978afc2832ce6f98a3069d6a413f14baabdd628878a455cd5fc1f02ca8b",
+    "ASTRA_VARIED_CODING_V1_RESULT.json": "7e0dd5fcb4e1ab0266cae07d8d7ef976ba366311b89c529a562f0c900fc10d6c"
+  },
+  "cohorts": [
+    {
+      "model": "luna",
+      "N": 3,
+      "median_savings_percent": {
+        "input_tokens": 86.28650677108827,
+        "output_tokens": 64.04494382022472,
+        "uncached_input_tokens": 60.069388413748584
+      },
+      "pairs_meeting75": 1,
+      "pairs_meeting80": 0
+    },
+    {
+      "model": "sol",
+      "N": 3,
+      "median_savings_percent": {
+        "input_tokens": 88.0176876617774,
+        "output_tokens": 62.90974405029187,
+        "uncached_input_tokens": 21.499148211243615
+      },
+      "pairs_meeting75": 1,
+      "pairs_meeting80": 0
+    },
+    {
+      "model": "astra",
+      "N": 3,
+      "median_savings_percent": {
+        "input_tokens": 83.07001347372623,
+        "output_tokens": 60.01796945193172,
+        "uncached_input_tokens": 27.59778166958552
+      },
+      "pairs_meeting75": 0,
+      "pairs_meeting80": 0
+    }
+  ],
+  "rows": [
+    {
+      "model": "luna",
+      "effort": "high",
+      "case": "intervals",
+      "control_usage": {
+        "input_tokens": 78165,
+        "output_tokens": 2047,
+        "cached_input_tokens": 65536,
+        "reasoning_output_tokens": 972,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16664,
+        "output_tokens": 736,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 516,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "3e5fb9259ef57e89b6c44daba5c8e41c7685db470cf0c3877966cee20d1b4a06",
+      "candidate_native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06",
+      "savings_percent": {
+        "input_tokens": 78.68099533039083,
+        "output_tokens": 64.04494382022472,
+        "uncached_input_tokens": 22.780901100641383
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 977,
+      "candidate_ast_nodes": 227,
+      "candidate_non_reasoning_output_tokens": 220,
+      "target75_output_budget": 511.75,
+      "non_reasoning_allowance_if_reasoning_fixed": -4.25,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": true,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 74.7923790913532,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "luna",
+      "effort": "high",
+      "case": "dependencies",
+      "control_usage": {
+        "input_tokens": 163727,
+        "output_tokens": 2907,
+        "cached_input_tokens": 136192,
+        "reasoning_output_tokens": 1057,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16639,
+        "output_tokens": 672,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 370,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "40961933826562ad08dc635b08789199494f3e93281b21a8b928ae3f7a20a798",
+      "candidate_native_sha256": "f90bb76541391ab660a3c7031c29a6bb43406361c8430e563a1538eb34ff5e9f",
+      "savings_percent": {
+        "input_tokens": 89.83735120047396,
+        "output_tokens": 76.88338493292053,
+        "uncached_input_tokens": 64.67405120755403
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1265,
+      "candidate_ast_nodes": 315,
+      "candidate_non_reasoning_output_tokens": 302,
+      "target75_output_budget": 726.75,
+      "non_reasoning_allowance_if_reasoning_fixed": 356.75,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": false,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 87.27210182318541,
+      "meets_75_75": true,
+      "meets_80_80": false
+    },
+    {
+      "model": "luna",
+      "effort": "high",
+      "case": "transactions",
+      "control_usage": {
+        "input_tokens": 122580,
+        "output_tokens": 3522,
+        "cached_input_tokens": 97792,
+        "reasoning_output_tokens": 1843,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16810,
+        "output_tokens": 1421,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 1034,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "97ae45d7a856070238ed2acdd63e251eeb37335154630522ada2b80be6d654a8",
+      "candidate_native_sha256": "317ec8c41aac818c5210d969b3708b7b7c682000acba4b064527acf108d84692",
+      "savings_percent": {
+        "input_tokens": 86.28650677108827,
+        "output_tokens": 59.65360590573538,
+        "uncached_input_tokens": 60.069388413748584
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1890,
+      "candidate_ast_nodes": 338,
+      "candidate_non_reasoning_output_tokens": 387,
+      "target75_output_budget": 880.5,
+      "non_reasoning_allowance_if_reasoning_fixed": -153.5,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": true,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 70.64168086314594,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "sol",
+      "effort": "high",
+      "case": "intervals",
+      "control_usage": {
+        "input_tokens": 139080,
+        "output_tokens": 2227,
+        "cached_input_tokens": 123264,
+        "reasoning_output_tokens": 869,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16665,
+        "output_tokens": 826,
+        "cached_input_tokens": 6528,
+        "reasoning_output_tokens": 578,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "82e1e5f8a11437ebf3304c24c20be03ca1e25754b3633c3857ba4b70431c2792",
+      "candidate_native_sha256": "3c9636c347ee79701dcef8f1eba6767adcefac8ea332bbd77a184901009065da",
+      "savings_percent": {
+        "input_tokens": 88.0176876617774,
+        "output_tokens": 62.90974405029187,
+        "uncached_input_tokens": 35.906676783004556
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1134,
+      "candidate_ast_nodes": 244,
+      "candidate_non_reasoning_output_tokens": 248,
+      "target75_output_budget": 556.75,
+      "non_reasoning_allowance_if_reasoning_fixed": -21.25,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": true,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 74.04580152671755,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "sol",
+      "effort": "high",
+      "case": "dependencies",
+      "control_usage": {
+        "input_tokens": 120796,
+        "output_tokens": 2073,
+        "cached_input_tokens": 109056,
+        "reasoning_output_tokens": 345,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16640,
+        "output_tokens": 512,
+        "cached_input_tokens": 7424,
+        "reasoning_output_tokens": 170,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "70219915fd5bc83bb23379c11de244b091f48411c151ab49218611ca679933f9",
+      "candidate_native_sha256": "6c294ba69744983a8aae6ba8fe4bc845adf683cb45fe7fba27d42d8821b9dbd2",
+      "savings_percent": {
+        "input_tokens": 86.22470942746449,
+        "output_tokens": 75.30149541726966,
+        "uncached_input_tokens": 21.499148211243615
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1593,
+      "candidate_ast_nodes": 328,
+      "candidate_non_reasoning_output_tokens": 342,
+      "target75_output_budget": 518.25,
+      "non_reasoning_allowance_if_reasoning_fixed": 348.25,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": false,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 91.79932465026532,
+      "meets_75_75": true,
+      "meets_80_80": false
+    },
+    {
+      "model": "sol",
+      "effort": "high",
+      "case": "transactions",
+      "control_usage": {
+        "input_tokens": 144163,
+        "output_tokens": 3110,
+        "cached_input_tokens": 126720,
+        "reasoning_output_tokens": 714,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16811,
+        "output_tokens": 1421,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1034,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "e13f805c6805100cbdac7271729885e1f6343a46a502eca47a2a4ff389ef7e29",
+      "candidate_native_sha256": "ba37b0b069fa64920c3fe1a0f59b5c63b944cf30524db21c40af85af6ed0ecd6",
+      "savings_percent": {
+        "input_tokens": 88.3388941684066,
+        "output_tokens": 54.30868167202571,
+        "uncached_input_tokens": 3.6232299489766695
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1857,
+      "candidate_ast_nodes": 340,
+      "candidate_non_reasoning_output_tokens": 387,
+      "target75_output_budget": 777.5,
+      "non_reasoning_allowance_if_reasoning_fixed": -256.5,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": true,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 66.7524115755627,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "astra",
+      "effort": "high",
+      "case": "intervals",
+      "control_usage": {
+        "input_tokens": 79368,
+        "output_tokens": 1113,
+        "cached_input_tokens": 65664,
+        "reasoning_output_tokens": 61,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16962,
+        "output_tokens": 445,
+        "cached_input_tokens": 7040,
+        "reasoning_output_tokens": 199,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "6a31faf95e85f7c6ece0475536db58c3497ee17daf900d394dee2fecaea4543f",
+      "candidate_native_sha256": "15635c23025e6c96afb584f8bd90ec9fdfdb96ec8748779c339f4fa34feeac01",
+      "savings_percent": {
+        "input_tokens": 78.62866646507408,
+        "output_tokens": 60.01796945193172,
+        "uncached_input_tokens": 27.59778166958552
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1110,
+      "candidate_ast_nodes": 228,
+      "candidate_non_reasoning_output_tokens": 246,
+      "target75_output_budget": 278.25,
+      "non_reasoning_allowance_if_reasoning_fixed": 79.25,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": false,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 82.1203953279425,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "astra",
+      "effort": "high",
+      "case": "dependencies",
+      "control_usage": {
+        "input_tokens": 100195,
+        "output_tokens": 1375,
+        "cached_input_tokens": 73472,
+        "reasoning_output_tokens": 45,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 16963,
+        "output_tokens": 479,
+        "cached_input_tokens": 7040,
+        "reasoning_output_tokens": 148,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "7de2733253eda9f7adf4ce6c7e8ef053b0222c95e3e4e67c1353c799be8536c3",
+      "candidate_native_sha256": "7c009e0e1501499defa822163d20b600c805bbfd13ee2f286c8cc86b8c2dfc3a",
+      "savings_percent": {
+        "input_tokens": 83.07001347372623,
+        "output_tokens": 65.16363636363636,
+        "uncached_input_tokens": 62.86719305467201
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1423,
+      "candidate_ast_nodes": 327,
+      "candidate_non_reasoning_output_tokens": 331,
+      "target75_output_budget": 343.75,
+      "non_reasoning_allowance_if_reasoning_fixed": 195.75,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": false,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 89.23636363636363,
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "model": "astra",
+      "effort": "high",
+      "case": "transactions",
+      "control_usage": {
+        "input_tokens": 101585,
+        "output_tokens": 1440,
+        "cached_input_tokens": 85888,
+        "reasoning_output_tokens": 64,
+        "cache_write_input_tokens": 0
+      },
+      "candidate_usage": {
+        "input_tokens": 17134,
+        "output_tokens": 699,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 316,
+        "cache_write_input_tokens": 0
+      },
+      "control_native_sha256": "f86ef13f9c1b3740005c2a0ff9b8612a1a803ad5c776e2faceae7ae4633f64d5",
+      "candidate_native_sha256": "95935e94b2c127000585e2384e0ba285df09226e82f1baef5eb50b114a43fa5f",
+      "savings_percent": {
+        "input_tokens": 83.13333661465767,
+        "output_tokens": 51.45833333333334,
+        "uncached_input_tokens": -9.154615531630238
+      },
+      "finite_checks": "PASS",
+      "candidate_segments": 1,
+      "candidate_raw_tool_calls": 0,
+      "candidate_source_bytes": 1774,
+      "candidate_ast_nodes": 320,
+      "candidate_non_reasoning_output_tokens": 383,
+      "target75_output_budget": 360.0,
+      "non_reasoning_allowance_if_reasoning_fixed": 44.0,
+      "formatting_only_cannot_reach75_if_reasoning_fixed": false,
+      "ceiling_if_all_non_reasoning_output_deleted_percent": 78.05555555555556,
+      "meets_75_75": false,
+      "meets_80_80": false
+    }
+  ],
+  "unique_native_streams": 18,
+  "new_model_calls": 0,
+  "general_capability_parity_established": false,
+  "interpretation": "Observed counters and conditional arithmetic only. Reasoning is a subset of output; its contents and causes are unknown.",
+  "limits": [
+    "Same exposed contracts, not independent task populations",
+    "Luna config-audit amendment and prior failed attempts remain in its original reports",
+    "No cross-model economic ranking or pooling with W50/retrieval/assembly",
+    "Fixed-reasoning ceilings are not irreducible limits or measured interventions",
+    "Source bytes and AST nodes are not native token allocations"
+  ]
+}

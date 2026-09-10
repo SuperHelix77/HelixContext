@@ -6,6 +6,18 @@ Research toward the **maximum empirically safe compression frontier**, with capa
 
 ## Current Engine milestone — 2026-09-10
 
+The [nine-pair coding anatomy](docs/research/continuation-contract/CODING_OUTPUT_ANATOMY_20260910.md)
+reconciles 18 distinct native streams across Luna, Sol and Astra. All candidates
+use one model segment and zero tool calls. Finite checks pass; none of the three
+coding suites is qualified at 75/75. The audit identifies which proposed output
+attacks have no remaining measured surface before spending more inference.
+
+**Astra coding transfer:** three fresh High pairs pass all finite checks with
+median **83.07% input / 60.02% output / 27.60% uncached savings**. None reaches
+75/75. Each candidate used one segment and no commands. The transaction pair
+increased uncached input despite its large total-input saving.
+[Audited results and exact artifacts](docs/research/continuation-contract/ASTRA_VARIED_CODING_V1_RESULT.md).
+
 **Sol coding transfer:** three fresh High pairs pass all finite checks but yield
 median **88.02% input / 62.91% output / 21.50% uncached savings**. Only dependencies
 meets 75/75; general coding is unqualified. Each candidate used one segment and
