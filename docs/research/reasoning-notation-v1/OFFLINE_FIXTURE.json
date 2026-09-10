@@ -1,0 +1,31 @@
+{
+  "native_calls": 0,
+  "public_exit": 0,
+  "public_argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+    "-B",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider"
+  ],
+  "public_stdout_sha256": "71288863ec9567395a647dd0c8fbf0e2048bee72283202612ad6f90a7a526ef3",
+  "public_stdout": "........                                                                 [100%]\n8 passed in 0.01s\n",
+  "witnesses": {
+    "proposal_k.py": {
+      "expiry_equality": false,
+      "batch_multiplicity": false,
+      "invalid_batch": true,
+      "read_no_mutation": true,
+      "live_falsey": true
+    },
+    "proposal_r.py": {
+      "expiry_equality": true,
+      "batch_multiplicity": true,
+      "invalid_batch": true,
+      "read_no_mutation": true,
+      "live_falsey": true
+    }
+  }
+}

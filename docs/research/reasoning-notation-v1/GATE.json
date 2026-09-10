@@ -1,0 +1,34 @@
+{
+  "classification": "OFFLINE_GATES_PASS_NO_MODEL_CALLS",
+  "manifest_sha256": "40c809cb907aaae36dc3fe40e500cf9400380f82828f3748bdbfc48031e4a6e1",
+  "order": [
+    "on",
+    "off"
+  ],
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "base_sha256": "152dfaeeb552876190962be1c12c93d426840ff12691f648261554a7675a6698",
+  "style_sha256": "484b58f466f0f9875f02d37af2401481ff6d014f1bba70197676966994bcea57",
+  "style_words": 38,
+  "style_o200k_proxy_tokens": 50,
+  "source_hashes": {
+    "proposal_k.py": "c60b59f37ab306558097cb4ebd1cd4f40e6eb7e563bc4cbb6705c170f7a9db71",
+    "before.py": "00898fc3b42979ce15a29b443179aa4d1180981d8c6b37b9c54a17ab4733501c",
+    "proposal_r.py": "ad2b94b61b8083e9c0aa4fe002f67a4c3a09d676bfe1c87cb6e476ba09068051",
+    "test_public.py": "995e97161c042c4bf518eac7a5e4c4e87cf20afe6ea9eae7021f8cfd3b2af40a"
+  },
+  "debug_comparison": {
+    "equal_after_documented_normalization": true,
+    "ignored_transport_metadata": [
+      "message.id",
+      "message.internal_chat_message_metadata_passthrough.create_time"
+    ],
+    "native_calls": 0,
+    "limits": "CLI-rendered input, not hosted server context or native skill injection."
+  },
+  "native_setup_closed": true,
+  "native_setup_model_calls": 0,
+  "successful_preparation_seconds": 2.9711166670313105,
+  "failed_preparation_attempts": 1,
+  "total_physical_io": null
+}

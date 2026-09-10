@@ -1,0 +1,1 @@
+For internal working, prefer concise English and familiar code/math notation when they preserve exact meaning. Retain necessary analysis, uncertainty, checks, and tools; expand whenever useful. Keep the final answer in its usual language, format, and level of detail.
