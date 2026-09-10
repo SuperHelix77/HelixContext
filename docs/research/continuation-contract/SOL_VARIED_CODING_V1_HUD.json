@@ -1,0 +1,30 @@
+{
+  "classification": "Native-hash-bound projection of completed Sol coding audit; finite checks only",
+  "source_audit_sha256": "eaf47978afc2832ce6f98a3069d6a413f14baabdd628878a455cd5fc1f02ca8b",
+  "rows": [
+    {
+      "native_sha256": "3c9636c347ee79701dcef8f1eba6767adcefac8ea332bbd77a184901009065da",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "82e1e5f8a11437ebf3304c24c20be03ca1e25754b3633c3857ba4b70431c2792",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "6c294ba69744983a8aae6ba8fe4bc845adf683cb45fe7fba27d42d8821b9dbd2",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "70219915fd5bc83bb23379c11de244b091f48411c151ab49218611ca679933f9",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "ba37b0b069fa64920c3fe1a0f59b5c63b944cf30524db21c40af85af6ed0ecd6",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "e13f805c6805100cbdac7271729885e1f6343a46a502eca47a2a4ff389ef7e29",
+      "checks": "PASS"
+    }
+  ]
+}

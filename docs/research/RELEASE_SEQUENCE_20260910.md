@@ -24,6 +24,10 @@ mislabel 75/75 as 80/80. Keep actual paired counters and failures visible.
    update latency, source freshness and dropped/duplicated event handling rather
    than calling a dashboard “fast” from appearance alone.
 3. Sol: qualify and package its own 75/75 profile with the same evidence rules.
+   The fresh three-contract coding transfer passed finite behavior but failed
+   output qualification: median 88.02% input / 62.91% output, uncached21.50%.
+   [Results](continuation-contract/SOL_VARIED_CODING_V1_RESULT.md) remain separate
+   from the frozen assembly candidate. No unchanged retry is justified.
 4. Astra: independently qualify its profile; preserve semantic review and probes.
 
 All releases must remain integratable with the normal Codex app later. Keep Engine

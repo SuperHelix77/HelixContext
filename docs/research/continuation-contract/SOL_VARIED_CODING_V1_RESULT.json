@@ -1,0 +1,451 @@
+{
+  "classification": "Three fresh Sol High pairs on previously exposed development coding contracts; source-only caller transfer; not a population holdout",
+  "manifest_sha256": "1d612c1450a23523b947c65fa2b1ea228a3b18c0046fa5b982a31f33dbe276a5",
+  "rows": [
+    {
+      "case": "intervals",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16665,
+        "output_tokens": 826,
+        "cached_input_tokens": 6528,
+        "reasoning_output_tokens": 578,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "3c9636c347ee79701dcef8f1eba6767adcefac8ea332bbd77a184901009065da",
+      "raw_sha256": "fffb4d7b86a172c94a71286e909d17de019ced0ae6d240fc426e6ae4ae7e11bc",
+      "raw_bytes": 69382,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "1ede39aa87694aec2e297f50b19e025b533e9dc1674979541719a9bba6ad54b2",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 30.743557541980408,
+      "memory_seconds": 0.14079645898891613,
+      "memory_raw_bytes": 37842,
+      "caller_check_seconds": 0.2662234589806758,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "case": "intervals",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 139080,
+        "output_tokens": 2227,
+        "cached_input_tokens": 123264,
+        "reasoning_output_tokens": 869,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "82e1e5f8a11437ebf3304c24c20be03ca1e25754b3633c3857ba4b70431c2792",
+      "raw_sha256": "d7667fd640777b1e2c7f4f8987a76a1ebc1a6242d2133e4bff5f707fa92cf1d4",
+      "raw_bytes": 121944,
+      "raw_tool_calls": 6,
+      "segments": 7,
+      "turns": 1,
+      "source_sha256": "0a3c30ec432a63b39b2e909b0d87cc901a0ab61926f7b7efb0b3e95805634d5a",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 88.24540129199158,
+      "memory_seconds": 0.17382587504107505,
+      "memory_raw_bytes": 37843,
+      "caller_check_seconds": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16640,
+        "output_tokens": 512,
+        "cached_input_tokens": 7424,
+        "reasoning_output_tokens": 170,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "6c294ba69744983a8aae6ba8fe4bc845adf683cb45fe7fba27d42d8821b9dbd2",
+      "raw_sha256": "42c180b21c36eb2c2f47741f8b1b221b075922aa1e3459f0e1251e6d7b604fc9",
+      "raw_bytes": 66284,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "e23eabe49675bb432fe6094c1502f5d47a9c1fce7884d935f2f1a0406da891d0",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 19.181953666033223,
+      "memory_seconds": 0.13120345899369568,
+      "memory_raw_bytes": 37851,
+      "caller_check_seconds": 0.2780654579983093,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 120796,
+        "output_tokens": 2073,
+        "cached_input_tokens": 109056,
+        "reasoning_output_tokens": 345,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "70219915fd5bc83bb23379c11de244b091f48411c151ab49218611ca679933f9",
+      "raw_sha256": "6bb8a0f1633681801ad0b2efd5ef0fb386abbc3ff23f6b7e0a61be0862133759",
+      "raw_bytes": 127058,
+      "raw_tool_calls": 5,
+      "segments": 6,
+      "turns": 1,
+      "source_sha256": "f0c18a24727c968146fd42cfb4cb6b5d2b257bcf2ad7f48f990698992f6243ee",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 79.55211779201636,
+      "memory_seconds": 0.135454542003572,
+      "memory_raw_bytes": 37852,
+      "caller_check_seconds": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16811,
+        "output_tokens": 1421,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 1034,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "ba37b0b069fa64920c3fe1a0f59b5c63b944cf30524db21c40af85af6ed0ecd6",
+      "raw_sha256": "2707bbd4494e6b8b8da57a42a6bf51480dbbee6c0c7b80aae982bfc31e979129",
+      "raw_bytes": 76356,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "b873c84d59b3920c9697211baf3ef533c06091eca01606ba373a866532b03ce0",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 48.52281370799756,
+      "memory_seconds": 0.13762991601834074,
+      "memory_raw_bytes": 37852,
+      "caller_check_seconds": 0.27258262503892183,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 144163,
+        "output_tokens": 3110,
+        "cached_input_tokens": 126720,
+        "reasoning_output_tokens": 714,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "e13f805c6805100cbdac7271729885e1f6343a46a502eca47a2a4ff389ef7e29",
+      "raw_sha256": "6ceb5f728c388cee9620fc98c4e853fe6ec4b4e732339c162dfc0a34c2c07583",
+      "raw_bytes": 150216,
+      "raw_tool_calls": 6,
+      "segments": 7,
+      "turns": 1,
+      "source_sha256": "773361201a15d24f94141e535abb24eebb64b5352b32f42ab5085c299a8f341a",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 116.24776279198704,
+      "memory_seconds": 0.12925420800456777,
+      "memory_raw_bytes": 37853,
+      "caller_check_seconds": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "final_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "case": "intervals",
+      "savings_percent": {
+        "input_tokens": 88.0176876617774,
+        "output_tokens": 62.90974405029187,
+        "uncached_input_tokens": 35.906676783004556
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "case": "dependencies",
+      "savings_percent": {
+        "input_tokens": 86.22470942746449,
+        "output_tokens": 75.30149541726966,
+        "uncached_input_tokens": 21.499148211243615
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": false
+    },
+    {
+      "case": "transactions",
+      "savings_percent": {
+        "input_tokens": 88.3388941684066,
+        "output_tokens": 54.30868167202571,
+        "uncached_input_tokens": 3.6232299489766695
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": false,
+      "meets_80_80": false
+    }
+  ],
+  "median_savings_percent": {
+    "input_tokens": 88.0176876617774,
+    "output_tokens": 62.90974405029187,
+    "uncached_input_tokens": 21.499148211243615
+  },
+  "native_usage_all_attempts": {
+    "input_tokens": 454155,
+    "output_tokens": 10169,
+    "cached_input_tokens": 372992,
+    "reasoning_output_tokens": 3710,
+    "cache_write_input_tokens": 0
+  },
+  "N": 3,
+  "finite_checks": "PASS",
+  "general_release": false,
+  "limits": [
+    "No general parity proof",
+    "Caller execution outside native workspace sandbox",
+    "One-file publication has no uncooperative-writer isolation",
+    "Two semantic turns is an experiment bound, not a product policy",
+    "Full physical I/O, research and parent-agent cost unmetered"
+  ],
+  "native_control": "Matched-memory-preflight default base with ordinary tools; not raw desktop economics",
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "preparation_seconds": 2.866857542016078,
+  "registration": {
+    "intervals/off": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/intervals/off",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "65d514454cf9b4993fba7f2bad11ae1e66614b5f81cf89c7d2d8b115c9cad611",
+      "after_sha256": "b0c9d1b86d32618a2160982390580260fa8d59b3fdce320e88c04272fd883c91",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.18126329203369096,
+      "requests_sha256": "c275e9c5b3830af8bb2b1443cc13274e23f96d37e2bbd937b6b3628d9d82e759"
+    },
+    "intervals/on": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/intervals/on",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "b0c9d1b86d32618a2160982390580260fa8d59b3fdce320e88c04272fd883c91",
+      "after_sha256": "4652b736d0b30b890e342e845d3cb95e5a7dba6b11535dd03f5b5b977afa379e",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.1471311670029536,
+      "requests_sha256": "f1d5ff5b1f2b85cd2402374ea48e434073a9a38f2904a362e914b8d624018161"
+    },
+    "dependencies/off": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/dependencies/off",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "4652b736d0b30b890e342e845d3cb95e5a7dba6b11535dd03f5b5b977afa379e",
+      "after_sha256": "937b7386645c7e1f93d83631f8fd3e20c64cebcbf74b30c7f5f3f2281982657f",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.1421204159851186,
+      "requests_sha256": "2d78180c6cee19eb63b6591147b1a27aec155a416071882f8a73b5653ca1512f"
+    },
+    "dependencies/on": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/dependencies/on",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "937b7386645c7e1f93d83631f8fd3e20c64cebcbf74b30c7f5f3f2281982657f",
+      "after_sha256": "44d413c8bda882ad0309b3261495f012a2badad6be91ebb131bee3dd7bf95184",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.1547244589892216,
+      "requests_sha256": "d7ec74c6db3edabf898851dc63d90517400172e3b005d59373e3ee3fce99df20"
+    },
+    "transactions/off": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/transactions/off",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "44d413c8bda882ad0309b3261495f012a2badad6be91ebb131bee3dd7bf95184",
+      "after_sha256": "ecafacbbed3bb3463b69b6cc18d752e3d0c6b2465db4926802191acbde602140",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.1436902079731226,
+      "requests_sha256": "c9b82f5d5b3dbab91cd0e64bad22bb14d911266c35d9ca2532fa0106e77ed1ac"
+    },
+    "transactions/on": {
+      "schema": "helix.project-registration.v1",
+      "project": "/Users/mert/Documents/ChatGPT/Helix/research/sol-varied-coding-v1-20260910/transactions/on",
+      "added_trusted_marker": true,
+      "no_project_codex_layers": true,
+      "other_effective_settings_unchanged": true,
+      "model_defaults_changed": [],
+      "before_sha256": "ecafacbbed3bb3463b69b6cc18d752e3d0c6b2465db4926802191acbde602140",
+      "after_sha256": "b66988a0ef4ebba056fbf52449e109d8bb4772af4e2337ce7849e3790b5357b4",
+      "trust_present": true,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "turn_start_requests": 0,
+      "elapsed_seconds": 0.1460197499836795,
+      "requests_sha256": "06aa7a8455e4aa2ce41b958c6a9bfa2f8c40b9da9ef04a254e1116abca834151"
+    }
+  },
+  "normal_codex_app_integration": false,
+  "reused_native_controls": false,
+  "prior_luna_results_not_overwritten": true,
+  "boundary": "Composite source-only caller/kernel/skill transfer; not isolated effect of a single mechanism"
+}

@@ -6,6 +6,11 @@ Research toward the **maximum empirically safe compression frontier**, with capa
 
 ## Current Engine milestone — 2026-09-10
 
+**Sol coding transfer:** three fresh High pairs pass all finite checks but yield
+median **88.02% input / 62.91% output / 21.50% uncached savings**. Only dependencies
+meets 75/75; general coding is unqualified. Each candidate used one segment and
+no commands. [Exact artifacts, counters and residual bounds](docs/research/continuation-contract/SOL_VARIED_CODING_V1_RESULT.md).
+
 **Fresh closed-retrieval pairs:** the existing Engine completed selection and
 exact cold recovery with zero model calls and the same complete answers as
 native Luna High. Controls used 404,874 / 2,411 and 120,216 / 1,297 input / output

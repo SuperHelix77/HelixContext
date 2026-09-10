@@ -1,0 +1,8 @@
+{
+  "task": "Repair solution.py's schedule(graph). graph must be a dict mapping nonempty string node IDs to lists or tuples of nonempty string dependency IDs. Return every key and referenced node exactly once in dependency-before-dependent order. Among all valid orders, return the lexicographically smallest full sequence using ordinary Python string ordering. Repeated dependency IDs are ignored; referenced IDs missing as keys have no dependencies. Reject invalid types/IDs or any cycle (including self cycles) with ValueError. Empty graph returns []. Do not mutate input. Preserve the signature and protected test_solution.py/settings.json. Standard library only.",
+  "files": {
+    "solution.py": "def schedule(graph):\n    return sorted(graph)\n",
+    "test_solution.py": "import unittest\nimport solution as s\n\nclass Public(unittest.TestCase):\n    def test_order(self):\n        self.assertEqual(s.schedule({'a':['z'],'b':[]}), ['b','z','a'])\n    def test_duplicate_dependency(self):\n        self.assertEqual(s.schedule({'b':['a','a']}), ['a','b'])\n    def test_empty(self):\n        self.assertEqual(s.schedule({}), [])\n    def test_cycle(self):\n        with self.assertRaises(ValueError): s.schedule({'a':['b'],'b':['a']})\n    def test_invalid(self):\n        for x in [None, {'a':'b'}, {'':[]}, {'a':[False]}]:\n            with self.assertRaises(ValueError): s.schedule(x)\n",
+    "settings.json": "{\"version\":1,\"protected\":true}\n"
+  }
+}

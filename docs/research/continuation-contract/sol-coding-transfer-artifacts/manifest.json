@@ -1,0 +1,67 @@
+{
+  "schema": "helix.varied-coding.artifacts.v1",
+  "classification": "Three fresh Sol High pairs on previously exposed development coding contracts; source-only caller transfer; not a population holdout",
+  "files": {
+    "dependencies/source.json": "70499cc9e47dec19f87941eb05a24fe2797063a4dfa1977cf38e6627b658897d",
+    "intervals/source.json": "b70c449ab9f26de59681ffee185ea8964e5e11c149664d2f224c5c38717487d8",
+    "transactions/source.json": "113e6a6f2bccf50caeb2e2b463d910db802230b91d83d89f515a9dbd97a55acb",
+    "transactions/on/test_solution.py": "16429007dddb839ff3d4fb721511247d62098da4bf18ba8f3ac9b95ddb561225",
+    "transactions/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "transactions/on/solution.py": "b873c84d59b3920c9697211baf3ef533c06091eca01606ba373a866532b03ce0",
+    "transactions/off/test_solution.py": "16429007dddb839ff3d4fb721511247d62098da4bf18ba8f3ac9b95ddb561225",
+    "transactions/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "transactions/off/solution.py": "773361201a15d24f94141e535abb24eebb64b5352b32f42ab5085c299a8f341a",
+    "intervals/on/test_solution.py": "2cacc1807b2da05d41bd8ce483e82822186574d0df5fa90e89c7b592d223fa6d",
+    "intervals/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "intervals/on/solution.py": "1ede39aa87694aec2e297f50b19e025b533e9dc1674979541719a9bba6ad54b2",
+    "intervals/off/test_solution.py": "2cacc1807b2da05d41bd8ce483e82822186574d0df5fa90e89c7b592d223fa6d",
+    "intervals/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "intervals/off/solution.py": "0a3c30ec432a63b39b2e909b0d87cc901a0ab61926f7b7efb0b3e95805634d5a",
+    "dependencies/on/test_solution.py": "b24983774b891a04e7b45e3f77978c4a62339e1c3766732da3254c5409e42c7b",
+    "dependencies/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "dependencies/on/solution.py": "e23eabe49675bb432fe6094c1502f5d47a9c1fce7884d935f2f1a0406da891d0",
+    "dependencies/off/test_solution.py": "b24983774b891a04e7b45e3f77978c4a62339e1c3766732da3254c5409e42c7b",
+    "dependencies/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "dependencies/off/solution.py": "f0c18a24727c968146fd42cfb4cb6b5d2b257bcf2ad7f48f990698992f6243ee"
+  },
+  "grader_sha256": "524cf17a7ac31255ff25059fba4b2d919059a2a4d6174175b80164fa56404c20",
+  "paired_audit_sha256": "eaf47978afc2832ce6f98a3069d6a413f14baabdd628878a455cd5fc1f02ca8b",
+  "native_sources": [
+    {
+      "case": "intervals",
+      "arm": "on",
+      "source_sha256": "1ede39aa87694aec2e297f50b19e025b533e9dc1674979541719a9bba6ad54b2",
+      "native_sha256": "3c9636c347ee79701dcef8f1eba6767adcefac8ea332bbd77a184901009065da"
+    },
+    {
+      "case": "intervals",
+      "arm": "off",
+      "source_sha256": "0a3c30ec432a63b39b2e909b0d87cc901a0ab61926f7b7efb0b3e95805634d5a",
+      "native_sha256": "82e1e5f8a11437ebf3304c24c20be03ca1e25754b3633c3857ba4b70431c2792"
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "source_sha256": "e23eabe49675bb432fe6094c1502f5d47a9c1fce7884d935f2f1a0406da891d0",
+      "native_sha256": "6c294ba69744983a8aae6ba8fe4bc845adf683cb45fe7fba27d42d8821b9dbd2"
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "source_sha256": "f0c18a24727c968146fd42cfb4cb6b5d2b257bcf2ad7f48f990698992f6243ee",
+      "native_sha256": "70219915fd5bc83bb23379c11de244b091f48411c151ab49218611ca679933f9"
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "source_sha256": "b873c84d59b3920c9697211baf3ef533c06091eca01606ba373a866532b03ce0",
+      "native_sha256": "ba37b0b069fa64920c3fe1a0f59b5c63b944cf30524db21c40af85af6ed0ecd6"
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "source_sha256": "773361201a15d24f94141e535abb24eebb64b5352b32f42ab5085c299a8f341a",
+      "native_sha256": "e13f805c6805100cbdac7271729885e1f6343a46a502eca47a2a4ff389ef7e29"
+    }
+  ]
+}
