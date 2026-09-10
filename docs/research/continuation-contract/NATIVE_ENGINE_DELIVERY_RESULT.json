@@ -1,0 +1,65 @@
+{
+  "classification": "OBSERVED offline native execution history and restart; no model capability/economics evidence",
+  "result_sha256": "4f50db68d7c380318ddc50f30c227454a81a94aa936cf0003b1bfe935cf0cb4f",
+  "wire_sha256": {
+    "first-wire.json": "a2672e4255ab70062604df50e672aa1e4343f255bd7b725014067a5dd56f7e98",
+    "restart-wire.json": "c1fe7764546a849cdc44f03790b41f997a5c422eedeade45467cf610db4d9299"
+  },
+  "probe_sha256": "aa0b44869908db128465a8aa433574ff3539da9407d1b0fd73f5abcbd2e46715",
+  "auditor_sha256": "6eeb135e08b18e2515c5976d221cc110225383ce03ec7ade6fabb441c193fd4e",
+  "cli_sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "catalog_sha256": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+  "model_turn_start_calls": 0,
+  "loopback_provider_requests": 0,
+  "reported_model_usage": null,
+  "production_config_unchanged": true,
+  "credential_files_copied": false,
+  "experiment_seconds": 0.3702190840267576,
+  "rows": [
+    {
+      "operation": "attributed_ack",
+      "thread_id": "01a088da-aa84-7873-bbac-df5b2b2e6947",
+      "turn_id": "01a088da-aaaf-72b3-ba44-93b65ae408f3",
+      "item_id": "65cd66a3-e877-4855-a1e2-32771b91def8",
+      "item_type": "commandExecution",
+      "source": "userShell",
+      "turn_status": "completed",
+      "item_status": "completed",
+      "exit_code": 0,
+      "output": "HELIX ENGINE / synthetic E01 / durable receipt probe; no model authored this record.\n",
+      "output_sha256": "a2b561ba51cade7b116086125d794d81f207573082fc04ec75595bea9def15cd",
+      "same_exact_item_after_restart": true,
+      "native_turn_duration_ms": 43
+    },
+    {
+      "operation": "intentional_failure",
+      "thread_id": "01a088da-aa84-7873-bbac-df5b2b2e6947",
+      "turn_id": "01a088da-aade-7a83-99c4-4660b8dd162f",
+      "item_id": "fb2ccc6f-90ea-41ca-91b0-33684dc7bbc6",
+      "item_type": "commandExecution",
+      "source": "userShell",
+      "turn_status": "completed",
+      "item_status": "failed",
+      "exit_code": 1,
+      "output": "",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "same_exact_item_after_restart": true,
+      "native_turn_duration_ms": 14
+    }
+  ],
+  "checks": {
+    "exact_ack": "PASS",
+    "native_item_history": "PASS",
+    "process_restart": "PASS",
+    "failure_visible": "PASS",
+    "turn_completion_not_execution_success": "PASS"
+  },
+  "limits": [
+    "Two fixed harmless user-authorized commands only",
+    "thread/shellCommand runs unsandboxed and requires explicit user-command authority",
+    "No automatic hook routing or idempotent delivery qualification",
+    "No normal desktop rendering verified",
+    "No provider usage counter arrived; zero requests is a loopback observation",
+    "Not a 75/75 model benchmark or a Luna production release"
+  ]
+}

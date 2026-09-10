@@ -34,6 +34,11 @@ CLI; history insertion persists exact records without inference. Their compositi
 with visible completed ACKs and reliable restart is not yet verified. See
 [runtime result](continuation-contract/PREINFERENCE_RUNTIME_RESULT.md).
 
+Later offline evidence: an explicit user-command path creates durable Engine
+execution items without a model call and retains success/failure across server
+restart. Its unsandboxed authority boundary prevents treating it as an automatic
+replacement for ordinary chat; [delivery qualification remains open](continuation-contract/NATIVE_ENGINE_DELIVERY_RESULT.md).
+
 HUD must distinguish benchmark qualification, packaging and Codex integration
 status. Expose input/output/cached/uncached separately, failed attempts, Engine
 overhead, integrity/recovery errors, active policy and native bypass. Unknown costs

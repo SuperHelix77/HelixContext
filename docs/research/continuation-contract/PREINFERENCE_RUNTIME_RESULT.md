@@ -1,5 +1,10 @@
 # Pre-inference runtime result: inhibition works, completion still open
 
+Later evidence: [native Engine command delivery](NATIVE_ENGINE_DELIVERY_RESULT.md)
+now demonstrates exact execution items surviving process restart with zero
+loopback provider requests. Automatic hook composition, idempotent delivery and
+normal desktop rendering remain unverified; the original results below stand.
+
 2026-09-10, installed Codex Desktop CLI 0.153.4. Separate disposable homes,
 no production configuration edits, no copied credentials and no hosted model calls.
 Public [receipt](PREINFERENCE_RUNTIME_RESULT.json) retains raw evidence hashes.
