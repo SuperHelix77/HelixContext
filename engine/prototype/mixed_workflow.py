@@ -116,7 +116,9 @@ class MixedWorkflow:
         # effect-level CAS are separate; this is not a concurrent-host guarantee.
         receipt = self.ledger.ingest(self.scope,e['event_id'],payload,
                                      expected_head=expected_head,sequence=e['turn'])
-        current_state = packets[-1]['after_state'] if receipt['replayed'] else after
+        # A crash retry may carry the original parent, even EMPTY. The ledger
+        # returns the live head; the caller must not restore a stale prefix state.
+        current_state = self.recover(receipt['head'])[-1]['after_state'] if receipt['replayed'] else after
         return {**receipt, 'engine_active':True, 'answer':answer, 'answer_owner':owner,
                 'checkpoint_after_state':after, 'current_state':current_state,
                 'status':'CHECKPOINT_RECORDED', 'model_calls_added':0}

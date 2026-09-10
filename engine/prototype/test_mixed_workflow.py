@@ -76,6 +76,14 @@ def test_mixed_gap_and_conflict_are_still_rejected(tmp_path):
     assert len(f.recover(two['head']))==2
 
 
+def test_original_parent_retry_after_later_checkpoint_keeps_latest_state(tmp_path):
+    f=make(tmp_path);one=record(f,1,EMPTY);two=record(f,2,one['head'])
+    retry=record(f,1,EMPTY)
+    assert retry['replayed'] and retry['head']==two['head']
+    assert retry['current_state']==two['current_state']
+    assert retry['checkpoint_after_state']==one['checkpoint_after_state']
+
+
 @pytest.mark.parametrize('change',['failed','duplicate','incomplete','post_final_tool'])
 def test_unqualified_native_answer_cannot_commit(tmp_path,change):
     f=make(tmp_path)

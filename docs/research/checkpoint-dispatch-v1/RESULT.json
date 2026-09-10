@@ -1,0 +1,89 @@
+{
+  "classification": "OFFLINE_WIRE_REPLAY_PLUS_READ_ONLY_NATIVE_RECOVERY; no new model benchmark",
+  "new_native_calls": 0,
+  "rows": [
+    {
+      "arm": "off",
+      "wire_sha256": "d2e77ab72da6e709eaaefef93c40a8a808d12c8e9f865bbd51524a21fdad6f90",
+      "request_parameters_unchanged": "PASS",
+      "native_sha256": "386127fb48cdcbf90b693ce6986356750d425462927aab51c8527a8151cf4799",
+      "final_sha256": "e926e2c56e178521cf984e241844c2f556c769d246c7b23ecfde8d8df87e3244",
+      "real_rpc_call_replay": "PASS",
+      "exact_final_after_restart": "PASS",
+      "duplicate_send_blocked": "PASS",
+      "new_native_calls": 0,
+      "seconds": 0.006681041035335511,
+      "journal_bytes": 5634,
+      "store_io": {
+        "object_bytes_read": 401228,
+        "object_bytes_written": 100617,
+        "object_bytes_hashed": 599725,
+        "object_read_operations": 16,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "ticket": {
+        "key": "a2049421df04d5c343124094dd45dcfb56a5414ebf2bf8a428558a96f6d18c63",
+        "sha256": "df91444b025ce4b875c63da479368fda7e6d508ccd7ce69b33e1a427cf835fd7"
+      }
+    },
+    {
+      "arm": "on",
+      "wire_sha256": "87cd6c83e8c6765f2e213cd0e21029354aa5b3f3aa87d9b6bd73f77f52438fdf",
+      "request_parameters_unchanged": "PASS",
+      "native_sha256": "633c57b7adc9efe1c4f11bd7fd4f4207c95f08f9cdb4deec9f3540d75df3ae19",
+      "final_sha256": "07f70b72d231296c7a1ab3475a965bcffa14f91e4e798f7e7e9f8f030273f0df",
+      "real_rpc_call_replay": "PASS",
+      "exact_final_after_restart": "PASS",
+      "duplicate_send_blocked": "PASS",
+      "new_native_calls": 0,
+      "seconds": 0.006974374991841614,
+      "journal_bytes": 8280,
+      "store_io": {
+        "object_bytes_read": 276328,
+        "object_bytes_written": 69388,
+        "object_bytes_hashed": 412383,
+        "object_read_operations": 16,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "ticket": {
+        "key": "1a47e95aa088fb1da80576dbe4c77a0103e052f9a11d60e1f01129c8c673f75c",
+        "sha256": "89980867436047230c9edba1bb93cf90fcdaf864ad8be60921a0423eb7c26262"
+      }
+    }
+  ],
+  "persisted_thread_readback": {
+    "state": "PASS",
+    "thread_id": "01a08ad9-379e-7d43-9a00-e1b0bff64139",
+    "turn_id": "01a08ad9-3884-7e51-a226-80fa79ea35f3",
+    "final_sha256": "07f70b72d231296c7a1ab3475a965bcffa14f91e4e798f7e7e9f8f030273f0df",
+    "methods": [
+      "initialize",
+      "initialized",
+      "thread/read",
+      "thread/turns/list",
+      "thread/items/list"
+    ],
+    "seconds": 0.04349837504560128,
+    "native_wire_bytes": 8780,
+    "global_config_unchanged": true
+  },
+  "seconds": 0.07099337503314018,
+  "source_bindings": {
+    "docs/research/checkpoint-dispatch-v1/calibrate.py": "3ffb2d99a4e90fd9a21fcf3902921efe0756d872215fab87f8ed6e80178448c7",
+    "engine/output/checkpoint_dispatch.py": "23fc38616e821f5f9de461cf6a9a31abd15babb5b4cd81913d832162468261c8",
+    "engine/output/test_checkpoint_dispatch.py": "ee7ce1399e87122207a45d365ab5a96e8deca25315218ba0891c0e9ebbfad19d",
+    "engine/output/app_server_native.py": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+    "engine/prototype/mixed_workflow.py": "30d20f4c8462738fa46fde5704498aa51301d1f43714346f5bbd1167d96716cc",
+    "engine/prototype/test_mixed_workflow.py": "2e5bc01be463848bf5ac8b46fdc342e8520c60d8948106c48884054a34b2372b"
+  },
+  "limits": [
+    "Readback used a completed known thread, not a hosted crash injection or ambiguous live request reconciliation.",
+    "Single-writer caller and retained external ticket/head references required; no hostile-host deletion guarantee.",
+    "Replay used constant binding callbacks; live input binding and physical I/O costs additional.",
+    "No new capability, token saving, median or Codex-app interception claim."
+  ]
+}
