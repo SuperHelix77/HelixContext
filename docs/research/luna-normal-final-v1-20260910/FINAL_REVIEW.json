@@ -1,0 +1,30 @@
+{
+  "schema": "helix.luna.normal-final.independent-review.v1",
+  "scope": "Manual review of the two fresh model-authored maintenance finals; no model calls",
+  "native_calls": 0,
+  "rows": [
+    {
+      "arm": "candidate",
+      "native_sha256": "9c28d3b1f63994232ca47ecf4bb2d8a340f682db9d3337ec2d97f295ea8864f1",
+      "final_sha256": "8a32f6d2e32188d6c75f374d46b83cc755bd4fe8e5253c5643ded4da587aeb99",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "content_and_test_claims": "PASS",
+      "local_link_format": "FAIL",
+      "normal_final_contract": "FAIL",
+      "finding": "Final contains file:///private/tmp/... Markdown target; configured local-file link form requires an absolute filesystem target without file:///. Original final preserved."
+    },
+    {
+      "arm": "control",
+      "native_sha256": "ca6f4daa1baba7aee27d578daa07455e06b6024f7a6664d5bff1f15d3fcb1f12",
+      "final_sha256": "9265ecbc28e319d0ee6b2ed3c715f8cd02ebe73b49f79011ee1a35f48fcaf6a6",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "content_and_test_claims": "PASS",
+      "local_link_format": "PASS",
+      "normal_final_contract": "PASS",
+      "finding": "No final-contract formatting defect found."
+    }
+  ],
+  "overall": "Candidate final contract FAIL; authorship and finite content remain bounded PASS; no automatic rewrite or rerun."
+}

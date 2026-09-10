@@ -55,7 +55,9 @@
         "after_actual_execution": "PASS",
         "requested_change_explained": "PASS",
         "truthful_test_and_scope_claims": "PASS",
-        "caller_rendered_final": "NO"
+        "caller_rendered_final": "NO",
+        "local_link_format": "FAIL",
+        "normal_final_contract": "FAIL"
       }
     },
     {
@@ -108,7 +110,9 @@
         "after_actual_execution": "PASS",
         "requested_change_explained": "PASS",
         "truthful_test_and_scope_claims": "PASS",
-        "caller_rendered_final": "NO"
+        "caller_rendered_final": "NO",
+        "local_link_format": "PASS",
+        "normal_final_contract": "PASS"
       }
     }
   ],
@@ -120,6 +124,7 @@
   "pair_savings_definition": "100*(1-candidate/control); output includes reported reasoning; uncached input is total input minus cached input.",
   "finite_checks": "PASS",
   "normal_final_authorship": "PASS on both artifacts",
+  "normal_final_contract": "FAIL for candidate local-link formatting; control PASS",
   "semantic_probe_replay": {
     "source_probe_count": 3,
     "fresh_artifacts": 2,
@@ -184,6 +189,7 @@
     "control_source": "artifacts/control-workflow_memory.py",
     "candidate_final": "artifacts/candidate-final.md",
     "control_final": "artifacts/control-final.md",
-    "probe_replay": "PROBE_REPLAY.json"
+    "probe_replay": "PROBE_REPLAY.json",
+    "final_review": "FINAL_REVIEW.json"
   }
 }
