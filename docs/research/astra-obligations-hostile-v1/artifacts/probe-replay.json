@@ -1,0 +1,25 @@
+{
+  "native_inference_calls": 0,
+  "program_sha256": "752282cfa7f354e98a11ceec540965a46f6706411f030990135d02809f7f7693",
+  "rows": [
+    {
+      "variant": "observed_defect",
+      "source_sha256": "cbc584f1dd2cc72974134245e56c2ddc0de04500900509b274ee5ef6ace89811",
+      "exit": 0,
+      "seconds": 0.08871658297721297,
+      "contract_failures": 9,
+      "controls_passed": 9,
+      "stdout_sha256": "b06778cd110cf7026c85774014399564d97753d3482e9fc10dda3a46085313f7"
+    },
+    {
+      "variant": "valid_previous_candidate",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "exit": 0,
+      "seconds": 0.07917204202385619,
+      "contract_failures": 0,
+      "controls_passed": 9,
+      "stdout_sha256": "8a85e6f35fb8b02b229f72f988dd7c8d3bff13d1c564ab26d75e197305333a72"
+    }
+  ],
+  "scope": "Exact model-authored witness replay on two exposed sources; not independent model replication"
+}

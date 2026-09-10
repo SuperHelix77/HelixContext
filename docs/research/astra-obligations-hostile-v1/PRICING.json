@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-09-10T09:35:50.762191+00:00",
+  "source": "https://developers.openai.com/api/docs/pricing.md",
+  "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "rates": {
+    "short": [
+      10.0,
+      1.0,
+      12.5,
+      50.0
+    ],
+    "long": [
+      20.0,
+      2.0,
+      25.0,
+      75.0
+    ]
+  },
+  "api_equivalent": {
+    "short": 0.541556,
+    "long": 1.024537
+  },
+  "scope": "Dated API tariff scenarios only; not included-plan quota, bill or total ROI"
+}

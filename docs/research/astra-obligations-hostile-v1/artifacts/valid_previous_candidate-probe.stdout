@@ -1,0 +1,130 @@
+{
+  "targeted_results": [
+    {
+      "scenario": "matching_evidence",
+      "mode": "default",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "matching_evidence",
+      "mode": "all",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "matching_evidence",
+      "mode": "any",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "default",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "all",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "any",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "default",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "all",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "contract_holds": true
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "any",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "contract_holds": true
+    }
+  ],
+  "contract_failures": 0,
+  "control_comparisons": 9,
+  "control_passes": 9
+}

@@ -1,0 +1,118 @@
+{
+  "targeted_results": [
+    {
+      "scenario": "matching_evidence",
+      "mode": "default",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "matching_evidence",
+      "mode": "all",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "matching_evidence",
+      "mode": "any",
+      "expected": {
+        "event_ids": [
+          "target"
+        ]
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "default",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "all",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "missing_nonmatching_index_row",
+      "mode": "any",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "default",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "all",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    },
+    {
+      "scenario": "corrupt_nonmatching_source",
+      "mode": "any",
+      "expected": {
+        "exception": "ValueError",
+        "message": "Evidence hash mismatch; do not trust the projection"
+      },
+      "actual": {
+        "event_ids": []
+      },
+      "contract_holds": false
+    }
+  ],
+  "contract_failures": 9,
+  "control_comparisons": 9,
+  "control_passes": 9
+}

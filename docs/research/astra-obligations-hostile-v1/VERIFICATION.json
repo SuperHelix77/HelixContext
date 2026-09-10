@@ -1,0 +1,8 @@
+{
+  "state": "PASS",
+  "public_bindings": 29,
+  "comparison_cases": 612,
+  "native_inference_calls": 0,
+  "scope": "Retained evidence consistency; semantic review is separately recorded",
+  "private_native_and_bound_inputs": "PASS"
+}

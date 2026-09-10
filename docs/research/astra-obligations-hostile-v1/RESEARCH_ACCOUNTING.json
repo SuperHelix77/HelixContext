@@ -1,0 +1,8 @@
+{
+  "counter": "goal tool cumulative coordinator tokensUsed, coarse observation window only",
+  "start": 8642413,
+  "end": 8708226,
+  "delta": 65813,
+  "native_candidate_usage_separately_recorded": "142319 input,2343 output",
+  "scope": "Not a tokenizer/billing/quota equivalence or a complete-turn total; excludes subsequent closure work. Preparation, replays, comparison I/O and pricing are separately reported."
+}
