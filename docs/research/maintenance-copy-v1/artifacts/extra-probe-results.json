@@ -1,0 +1,14 @@
+[
+  {
+    "arm": "off",
+    "exit_code": 0,
+    "stdout": "Supplemental checks passed: literal operators, Unicode, empty queries, validation, exact references, and nonmatching corruption with limit=1.\n",
+    "stderr": ""
+  },
+  {
+    "arm": "on",
+    "exit_code": 0,
+    "stdout": "Supplemental checks passed: literal operators, Unicode, empty queries, validation, exact references, and nonmatching corruption with limit=1.\n",
+    "stderr": ""
+  }
+]

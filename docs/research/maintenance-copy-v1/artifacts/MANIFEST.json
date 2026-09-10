@@ -1,0 +1,19 @@
+{
+  "files": {
+    "control-semantic-probes.py": "ee62b17abfd777f1c36514f64c4949f30fea02e36256c76e5d6e943559feead7",
+    "COST.json": "226174623dcd877d2bb3647ce131d8c768cecc5df1ffccec98d023f8eb5b7c99",
+    "pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "off-usage.jsonl": "44b8f10e3c9473ff3a9aa25e7a2e68698d3194ce07db2c1ddb810fda4b639430",
+    "on-answer.json": "b268fa6575b5b7a401292edd4c2c2d0d1907b3e6760138457edb05b8c9ad6cea",
+    "on-usage.jsonl": "62470dcad8b5e932adf060352097a61ce94d0e15cf532cb2605b23157cc98aba",
+    "off-workflow_memory.py": "7eb4c45dce00d7b9c6a659074d2e6393a00e7c5355f4cfb9dce3a2a30be6fc8b",
+    "extra-probe-results.json": "9db7dabb6000acaabc23522e9e682108e016006c70fca890f3b74e6276654e1f",
+    "on-workflow_memory.py": "236cfbdc2849ebc434f558d28944c37faf772f5f6f3cf693ab587aa90138e760",
+    "verify.py": "93cad35f0caed802d77f271097b1a1035f9206b81c22ec0d84269418cf20b082",
+    "pricing-snapshot.json": "244c4cf524e7a27e7c7f211d9852f153fe8ae33885130767ca80cc85a11a7714"
+  },
+  "report_sha256": "ab8a44d268f6de568dea911e92574f7b1eed42fe15ec70853fddc71ec87af61a",
+  "manifest_sha256": "d6d16686ce678041b14532627667a322fb28e3110ada07f6e2f5efa38fe2f5cc",
+  "frozen_commit": "edc77d5",
+  "scope": "Public derivative hashes; private native originals separately audited. No raw memory/config/history published."
+}

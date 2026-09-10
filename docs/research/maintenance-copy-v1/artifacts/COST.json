@@ -1,0 +1,25 @@
+{
+  "classification": "Frozen API Standard tariff scenarios; not included-plan quota or total system ROI",
+  "pricing_source": "https://developers.openai.com/api/docs/pricing.md",
+  "pricing_checked_at_utc": "2026-09-10T04:17:55.628875+00:00",
+  "pricing_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "per_arm": {
+    "off": {
+      "short": 0.341754,
+      "long": 0.653808
+    },
+    "on": {
+      "short": 0.1945,
+      "long": 0.38185
+    }
+  },
+  "saving_percent": {
+    "short": 43.087718066211366,
+    "long": 41.59600371974646
+  },
+  "all_native_attempts": {
+    "short": 0.536254,
+    "long": 1.035658
+  },
+  "research_cost_not_amortized": "Coordinator development, failed offline checks, calibration, reconciliation and public audit are outside paired model-token denominator; HUD coordinator ledger remains separate."
+}
