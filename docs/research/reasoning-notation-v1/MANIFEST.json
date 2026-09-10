@@ -28,6 +28,7 @@
     "artifacts/off/commands.json": "d32891f03db1de49278eb357e6f22ca79c79cd7880344da96e5376e9323bb60e",
     "artifacts/off/segments.json": "73e87d2c8b161fa559c3dfa11f2b6569a0b04af1637b9d792d1b7da886158ec5",
     "artifacts/off/final-answer.md": "082502ac8680f46fcb932f7d449d9417224c48bc91ffdbab9cadf63633af29a3",
-    "artifacts/on/review_probes/test_cache_contract.py": "12d909b23564a3a06ead380cdf539f19eab8f708baca2ed18985ffec9fff0d75"
+    "artifacts/on/review_probes/test_cache_contract.py": "12d909b23564a3a06ead380cdf539f19eab8f708baca2ed18985ffec9fff0d75",
+    "HUD_GATE.json": "570a0fe199b6cd706e13b4b59c1429628f07b9c2f1c08550650fb995f29f3b50"
   }
 }

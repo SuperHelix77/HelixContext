@@ -1,0 +1,34 @@
+{
+  "classification": "Finite review checks only; economic policy rejected; no model qualification",
+  "semantic_review_sha256": "f19465840d4b755f1fc9eaa624aa8ae36681684d2805f622fa817349e0bcd6d8",
+  "rows": [
+    {
+      "arm": "off",
+      "native_sha256": "5b252bc5e363a469ffef7cdff89e8ed2c0d7ce82bfffe197c4d47d1cf86b7f5b",
+      "checks": {
+        "expiry_equality_defect_correctly_identified": "PASS",
+        "batch_multiplicity_defect_correctly_identified": "PASS",
+        "valid_extension_not_falsely_rejected": "PASS",
+        "supplied_regression_receipt_correctly_reported": "PASS",
+        "additional_execution_counts_match_independent_replay": "PASS",
+        "normal_model_written_prose_after_evidence": "PASS",
+        "protected_files_unchanged": "PASS",
+        "original_base_tools_and_xhigh_preserved": "PASS"
+      }
+    },
+    {
+      "arm": "on",
+      "native_sha256": "b718b3ad9f020957f5b25ba98b05e84cf203caf5f89fb4193007a23d45346052",
+      "checks": {
+        "expiry_equality_defect_correctly_identified": "PASS",
+        "batch_multiplicity_defect_correctly_identified": "PASS",
+        "valid_extension_not_falsely_rejected": "PASS",
+        "supplied_regression_receipt_correctly_reported": "PASS",
+        "additional_execution_counts_match_independent_replay": "PASS",
+        "normal_model_written_prose_after_evidence": "PASS",
+        "protected_files_unchanged": "PASS",
+        "original_base_tools_and_xhigh_preserved": "PASS"
+      }
+    }
+  ]
+}
