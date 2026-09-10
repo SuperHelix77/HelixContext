@@ -1,0 +1,10 @@
+{
+  "checked_at_utc": "2026-09-10T10:56:32.063321+00:00",
+  "public_integrity": "PASS",
+  "bound_files": 9,
+  "focused_tests_passed": 34,
+  "zero_native_requests": true,
+  "native_format_replay_count": 2,
+  "native_economic_pair": "NOT_LAUNCHED",
+  "release": "NOT_QUALIFIED"
+}

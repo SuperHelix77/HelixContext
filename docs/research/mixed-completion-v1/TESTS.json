@@ -1,0 +1,13 @@
+{
+  "test_command": "python3 -B -m pytest -q -p no:cacheprovider engine/prototype/test_mixed_workflow.py engine/prototype/test_passive_workflow.py engine/prototype/test_completion_ledger.py engine/prototype/test_semantic_execution.py",
+  "passed": 34,
+  "seconds": 0.44,
+  "hostile_pre_fix_failures": 2,
+  "hostile_findings": [
+    "Old task-state reference corrupted, next ACK incorrectly committed",
+    "Old native-capture reference corrupted, next ACK incorrectly committed"
+  ],
+  "corrected": "Both attacks reject without head advancement; full focused suite passes",
+  "scope": "Offline engineering only; scripted responses are not model capability evidence",
+  "publication_accounting_check": "Initial public verification detected a44byte initialization read absent from per-event deltas. Corrected the accounting equality and report scope; no benchmark data or implementation changed."
+}

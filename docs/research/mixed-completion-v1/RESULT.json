@@ -1,0 +1,785 @@
+{
+  "version": "helix.mixed-completion.v1",
+  "classification": "OFFLINE_LIFECYCLE_CANDIDATE; not an economic/capability release",
+  "new_native_calls": 0,
+  "scripted_events": 50,
+  "scripted_semantic_checkpoints": 4,
+  "caller_owned_acks": 46,
+  "exact_order_answer_state_recovery": "PASS",
+  "late_replay_does_not_roll_back_state": "PASS",
+  "latent_old_field_exact_recovery": "PASS; retrieval only, no new model reasoning about late relevance",
+  "append_io": {
+    "object_bytes_read": 3113166,
+    "object_bytes_written": 61949,
+    "object_bytes_hashed": 3175115,
+    "object_read_operations": 6359,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "restart_io": {
+    "object_bytes_read": 65303,
+    "object_bytes_written": 0,
+    "object_bytes_hashed": 65303,
+    "object_read_operations": 155,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "per_append": [
+    {
+      "event": 1,
+      "owner": "engine",
+      "seconds": 0.0010248330072499812,
+      "store_delta": {
+        "object_bytes_read": 1228,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 2412,
+        "object_read_operations": 3,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 2,
+      "owner": "engine",
+      "seconds": 0.0014273750130087137,
+      "store_delta": {
+        "object_bytes_read": 3640,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 4824,
+        "object_read_operations": 8,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 3,
+      "owner": "engine",
+      "seconds": 0.0013475000159814954,
+      "store_delta": {
+        "object_bytes_read": 6052,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 7236,
+        "object_read_operations": 13,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 4,
+      "owner": "engine",
+      "seconds": 0.0017253750120289624,
+      "store_delta": {
+        "object_bytes_read": 8464,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 9648,
+        "object_read_operations": 18,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 5,
+      "owner": "engine",
+      "seconds": 0.0017321669729426503,
+      "store_delta": {
+        "object_bytes_read": 10876,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 12060,
+        "object_read_operations": 23,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 6,
+      "owner": "engine",
+      "seconds": 0.0017911249888129532,
+      "store_delta": {
+        "object_bytes_read": 13288,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 14472,
+        "object_read_operations": 28,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 7,
+      "owner": "engine",
+      "seconds": 0.0016817499999888241,
+      "store_delta": {
+        "object_bytes_read": 15700,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 16884,
+        "object_read_operations": 33,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 8,
+      "owner": "engine",
+      "seconds": 0.0019984999671578407,
+      "store_delta": {
+        "object_bytes_read": 18112,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 19296,
+        "object_read_operations": 38,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 9,
+      "owner": "engine",
+      "seconds": 0.001924959011375904,
+      "store_delta": {
+        "object_bytes_read": 20524,
+        "object_bytes_written": 1184,
+        "object_bytes_hashed": 21708,
+        "object_read_operations": 43,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 10,
+      "owner": "engine",
+      "seconds": 0.0020604580058716238,
+      "store_delta": {
+        "object_bytes_read": 22937,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 24122,
+        "object_read_operations": 48,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 11,
+      "owner": "engine",
+      "seconds": 0.0022252080379985273,
+      "store_delta": {
+        "object_bytes_read": 25351,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 26536,
+        "object_read_operations": 53,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 12,
+      "owner": "model",
+      "seconds": 0.002908749971538782,
+      "store_delta": {
+        "object_bytes_read": 28431,
+        "object_bytes_written": 1851,
+        "object_bytes_hashed": 30282,
+        "object_read_operations": 60,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 13,
+      "owner": "engine",
+      "seconds": 0.0022150420118123293,
+      "store_delta": {
+        "object_bytes_read": 31096,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 32281,
+        "object_read_operations": 64,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 14,
+      "owner": "engine",
+      "seconds": 0.0024230420240201056,
+      "store_delta": {
+        "object_bytes_read": 33548,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 34733,
+        "object_read_operations": 69,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 15,
+      "owner": "engine",
+      "seconds": 0.0026196250109933317,
+      "store_delta": {
+        "object_bytes_read": 36000,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 37185,
+        "object_read_operations": 74,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 16,
+      "owner": "engine",
+      "seconds": 0.002734708017669618,
+      "store_delta": {
+        "object_bytes_read": 38452,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 39637,
+        "object_read_operations": 79,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 17,
+      "owner": "engine",
+      "seconds": 0.0029385410016402602,
+      "store_delta": {
+        "object_bytes_read": 40904,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 42089,
+        "object_read_operations": 84,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 18,
+      "owner": "engine",
+      "seconds": 0.009313124988693744,
+      "store_delta": {
+        "object_bytes_read": 43356,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 44541,
+        "object_read_operations": 89,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 19,
+      "owner": "engine",
+      "seconds": 0.0034893330303020775,
+      "store_delta": {
+        "object_bytes_read": 45808,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 46993,
+        "object_read_operations": 94,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 20,
+      "owner": "engine",
+      "seconds": 0.003462374967057258,
+      "store_delta": {
+        "object_bytes_read": 48260,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 49445,
+        "object_read_operations": 99,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 21,
+      "owner": "engine",
+      "seconds": 0.003368917037732899,
+      "store_delta": {
+        "object_bytes_read": 50712,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 51897,
+        "object_read_operations": 104,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 22,
+      "owner": "engine",
+      "seconds": 0.003661292023025453,
+      "store_delta": {
+        "object_bytes_read": 53164,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 54349,
+        "object_read_operations": 109,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 23,
+      "owner": "engine",
+      "seconds": 0.003941625007428229,
+      "store_delta": {
+        "object_bytes_read": 55616,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 56801,
+        "object_read_operations": 114,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 24,
+      "owner": "engine",
+      "seconds": 0.003792000003159046,
+      "store_delta": {
+        "object_bytes_read": 58068,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 59253,
+        "object_read_operations": 119,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 25,
+      "owner": "model",
+      "seconds": 0.004684749990701675,
+      "store_delta": {
+        "object_bytes_read": 61186,
+        "object_bytes_written": 1851,
+        "object_bytes_hashed": 63037,
+        "object_read_operations": 126,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 26,
+      "owner": "engine",
+      "seconds": 0.0040985000086948276,
+      "store_delta": {
+        "object_bytes_read": 63813,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 64998,
+        "object_read_operations": 130,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 27,
+      "owner": "engine",
+      "seconds": 0.004424125014338642,
+      "store_delta": {
+        "object_bytes_read": 66265,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 67450,
+        "object_read_operations": 135,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 28,
+      "owner": "engine",
+      "seconds": 0.004187042010016739,
+      "store_delta": {
+        "object_bytes_read": 68717,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 69902,
+        "object_read_operations": 140,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 29,
+      "owner": "engine",
+      "seconds": 0.004426291969139129,
+      "store_delta": {
+        "object_bytes_read": 71169,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 72354,
+        "object_read_operations": 145,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 30,
+      "owner": "engine",
+      "seconds": 0.00479300000006333,
+      "store_delta": {
+        "object_bytes_read": 73621,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 74806,
+        "object_read_operations": 150,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 31,
+      "owner": "engine",
+      "seconds": 0.004933624994009733,
+      "store_delta": {
+        "object_bytes_read": 76073,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 77258,
+        "object_read_operations": 155,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 32,
+      "owner": "engine",
+      "seconds": 0.00524891703389585,
+      "store_delta": {
+        "object_bytes_read": 78525,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 79710,
+        "object_read_operations": 160,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 33,
+      "owner": "engine",
+      "seconds": 0.005372165993321687,
+      "store_delta": {
+        "object_bytes_read": 80977,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 82162,
+        "object_read_operations": 165,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 34,
+      "owner": "engine",
+      "seconds": 0.005774541990831494,
+      "store_delta": {
+        "object_bytes_read": 83429,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 84614,
+        "object_read_operations": 170,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 35,
+      "owner": "engine",
+      "seconds": 0.009045708982739598,
+      "store_delta": {
+        "object_bytes_read": 85881,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 87066,
+        "object_read_operations": 175,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 36,
+      "owner": "engine",
+      "seconds": 0.006011000019498169,
+      "store_delta": {
+        "object_bytes_read": 88333,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 89518,
+        "object_read_operations": 180,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 37,
+      "owner": "engine",
+      "seconds": 0.005945458018686622,
+      "store_delta": {
+        "object_bytes_read": 90785,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 91970,
+        "object_read_operations": 185,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 38,
+      "owner": "model",
+      "seconds": 0.0069007499841973186,
+      "store_delta": {
+        "object_bytes_read": 93903,
+        "object_bytes_written": 1851,
+        "object_bytes_hashed": 95754,
+        "object_read_operations": 192,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 39,
+      "owner": "engine",
+      "seconds": 0.00674762501148507,
+      "store_delta": {
+        "object_bytes_read": 96530,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 97715,
+        "object_read_operations": 196,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 40,
+      "owner": "engine",
+      "seconds": 0.006854208011645824,
+      "store_delta": {
+        "object_bytes_read": 98982,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 100167,
+        "object_read_operations": 201,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 41,
+      "owner": "engine",
+      "seconds": 0.006891582976095378,
+      "store_delta": {
+        "object_bytes_read": 101434,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 102619,
+        "object_read_operations": 206,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 42,
+      "owner": "engine",
+      "seconds": 0.005938666989095509,
+      "store_delta": {
+        "object_bytes_read": 103886,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 105071,
+        "object_read_operations": 211,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 43,
+      "owner": "engine",
+      "seconds": 0.005477458005771041,
+      "store_delta": {
+        "object_bytes_read": 106338,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 107523,
+        "object_read_operations": 216,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 44,
+      "owner": "engine",
+      "seconds": 0.006290707970038056,
+      "store_delta": {
+        "object_bytes_read": 108790,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 109975,
+        "object_read_operations": 221,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 45,
+      "owner": "engine",
+      "seconds": 0.006074915989302099,
+      "store_delta": {
+        "object_bytes_read": 111242,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 112427,
+        "object_read_operations": 226,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 46,
+      "owner": "engine",
+      "seconds": 0.006660290993750095,
+      "store_delta": {
+        "object_bytes_read": 113694,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 114879,
+        "object_read_operations": 231,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 47,
+      "owner": "engine",
+      "seconds": 0.006361333013046533,
+      "store_delta": {
+        "object_bytes_read": 116146,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 117331,
+        "object_read_operations": 236,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 48,
+      "owner": "engine",
+      "seconds": 0.007630250009242445,
+      "store_delta": {
+        "object_bytes_read": 118598,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 119783,
+        "object_read_operations": 241,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 49,
+      "owner": "engine",
+      "seconds": 0.007058541988953948,
+      "store_delta": {
+        "object_bytes_read": 121050,
+        "object_bytes_written": 1185,
+        "object_bytes_hashed": 122235,
+        "object_read_operations": 246,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    },
+    {
+      "event": 50,
+      "owner": "model",
+      "seconds": 0.007848875015042722,
+      "store_delta": {
+        "object_bytes_read": 124168,
+        "object_bytes_written": 1851,
+        "object_bytes_hashed": 126019,
+        "object_read_operations": 253,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      }
+    }
+  ],
+  "native_format_replays": [
+    {
+      "arm": "off",
+      "native_sha256": "386127fb48cdcbf90b693ce6986356750d425462927aab51c8527a8151cf4799",
+      "final_sha256": "e926e2c56e178521cf984e241844c2f556c769d246c7b23ecfde8d8df87e3244",
+      "unchanged_native_final": "PASS",
+      "head": "3b17614c37f80b195ac5407c4832da7ec45922e07e3579199b668c0f3c147de3",
+      "store_io": {
+        "object_bytes_read": 202176,
+        "object_bytes_written": 100589,
+        "object_bytes_hashed": 302765,
+        "object_read_operations": 10,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "scope": "Replay of prior audited native stream; no new task or inference; task-state metadata is caller evidence, not semantic certification"
+    },
+    {
+      "arm": "on",
+      "native_sha256": "633c57b7adc9efe1c4f11bd7fd4f4207c95f08f9cdb4deec9f3540d75df3ae19",
+      "final_sha256": "07f70b72d231296c7a1ab3475a965bcffa14f91e4e798f7e7e9f8f030273f0df",
+      "unchanged_native_final": "PASS",
+      "head": "87ef4fcb55dc6d7234556b045d32ee7925e01e3a778e1e06ad7eb1021a0919ec",
+      "store_io": {
+        "object_bytes_read": 139718,
+        "object_bytes_written": 69360,
+        "object_bytes_hashed": 209078,
+        "object_read_operations": 10,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "scope": "Replay of prior audited native stream; no new task or inference; task-state metadata is caller evidence, not semantic certification"
+    }
+  ],
+  "seconds": 0.2462085000006482,
+  "source_bindings": {
+    "docs/research/mixed-completion-v1/calibrate.py": "0ebf01773d285c6d2577a71676b7880d52839517e7f02d316205b3847c06616f",
+    "engine/prototype/mixed_workflow.py": "4fe31e88141e6b5fd5b9a094a32bc9b60a5919b06a66d584bbfa1d15155295e9",
+    "engine/prototype/test_mixed_workflow.py": "645cf23aaf307c2cc3deecfc5dccb46ea031331419194f141cf13beb61983a59",
+    "engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "engine/prototype/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "engine/prototype/completion_ledger.py": "f262fb69c3fe8e210972287feae996824f382e5eb152612118dd01c6e24ece75",
+    "engine/prototype/passive_workflow.py": "d7bdde08096fd8493f6de6abaefd40e63a73438c9af618b5978a046b1f7b58c5",
+    "engine/prototype/semantic_execution.py": "9d76331aec856e52361734e75bebce8945ce9f7aff3ec9e4765b8696351da016"
+  },
+  "cost_limits": "Logical instrumented Store bytes and wall time; other Python/SQLite reads, metadata, physical I/O and full CPU energy unmeasured. Current ledger revalidates the prefix; quadratic long-run cost retained.",
+  "release_gaps": [
+    "Caller must bind event/state to actual native request and persist in-flight handle before invoking; completion adapter alone does not do this.",
+    "No exactly-once external effects or consumer acknowledgement implementation.",
+    "No Codex app pre-inference hook activated.",
+    "No mixed semantic task suite, semantic grader or native economic pair qualified."
+  ]
+}

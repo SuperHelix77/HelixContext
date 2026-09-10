@@ -1,0 +1,16 @@
+{
+  "status": "OFFLINE_INTEGRATION_CANDIDATE_NOT_NATIVE_ADMITTED",
+  "files": {
+    "docs/research/mixed-completion-v1/RESULT.md": "6fd85cbdcf00d76b3ceac56eae7e9e806a6580c2ee9b235a689d011dbbfd606a",
+    "docs/research/mixed-completion-v1/TESTS.json": "7b5cc01f19981cb2925c6a46af66998d99d59d8c51e681a00bbc61668b4fe91c",
+    "docs/research/mixed-completion-v1/RESULT.json": "cf3d7cf4e726a7aa03e23838f313c473f628ef3fae8864ea711b22d91ef469e1",
+    "docs/research/mixed-completion-v1/calibrate.py": "0ebf01773d285c6d2577a71676b7880d52839517e7f02d316205b3847c06616f",
+    "docs/research/mixed-completion-v1/verify.py": "2cfbf615167eb16669cd501aacaeed07e9ab36d948930ae3b6ca1460fa72bf8a",
+    "docs/research/mixed-completion-v1/SUPERSEDED_CALIBRATION.json": "5b8bd76b7e303da46d8c067d47445e108c463f014d980da5527d95c78b10e019",
+    "docs/research/mixed-completion-v1/RESEARCH_ACCOUNTING.json": "910807b89b4ad76015e6e373372a293c6180f27e8a674f5b0c91c9886e6f5c9a",
+    "engine/prototype/mixed_workflow.py": "4fe31e88141e6b5fd5b9a094a32bc9b60a5919b06a66d584bbfa1d15155295e9",
+    "engine/prototype/test_mixed_workflow.py": "645cf23aaf307c2cc3deecfc5dccb46ea031331419194f141cf13beb61983a59"
+  },
+  "created_at_utc": "2026-09-10T10:55:05.409320+00:00",
+  "native_economics": "No new paired result; cold pair remains separate"
+}

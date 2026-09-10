@@ -1,0 +1,10 @@
+{
+  "coordinator_goal_counter_start": 9030554,
+  "coordinator_goal_counter_observed": 9077174,
+  "coordinator_observed_interval": 46620,
+  "scope": "Partial coarse coordinator counter interval, excludes subsequent reference-closure fix/calibration/publication; not native axes, quota or complete research cost",
+  "new_native_model_calls": 0,
+  "prior_native_streams_replayed": 2,
+  "superseded_calibration_retained": true,
+  "physical_io": "UNKNOWN"
+}
