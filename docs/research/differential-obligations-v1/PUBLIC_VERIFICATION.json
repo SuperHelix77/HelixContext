@@ -1,0 +1,9 @@
+{
+  "state": "PUBLIC_VERIFICATION_PASS",
+  "artifact_bindings": 31,
+  "exact_archived_case_outcomes": 4896,
+  "old_changed_task_admission": "REPRODUCED",
+  "new_changed_task_rejection": "PASS",
+  "model_calls": 0,
+  "scope": "Receipt integrity, enumerated comparisons and admission repair; not general semantic parity"
+}

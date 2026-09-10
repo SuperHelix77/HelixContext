@@ -1,0 +1,432 @@
+{
+  "elapsed_seconds": 7.682902458996978,
+  "known_and_constructed_variants_detected": 6,
+  "known_coverage_hole_retained": true,
+  "manifest_sha256": "5e9356b73638cb61c3c89ecce869b7d3f13fb34fed35ee58e9faf0c96fc4438e",
+  "model_calls": 0,
+  "model_capability_parity": "UNESTABLISHED",
+  "native_economics": "UNMEASURED",
+  "production_admission": false,
+  "rows": [
+    {
+      "case": "valid",
+      "cases": 612,
+      "difference_count": 0,
+      "expected_difference": false,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 0
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 0
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "valid-outcomes.json.gz",
+        "sha256": "8f46800ce9dc64ede2bda5fe5bd581520ac6a070ce34f00ae1624a877b5598c8",
+        "bytes": 730461
+      },
+      "receipt_sha256": "b14974c531943e80b6322f04832d127ef937b9c06b29d0c80ef1c0eb65569653",
+      "seconds": 0.995844625052996,
+      "state": "NO_DIFFERENCE_IN_ENUMERATED_CASES",
+      "store_io": {
+        "object_bytes_hashed": 2994748,
+        "object_bytes_read": 2954298,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22596,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "known_default_limit",
+      "cases": 612,
+      "difference_count": 20,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 4
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 4
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 12
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "known_default_limit-outcomes.json.gz",
+        "sha256": "00611c2e8d6d17b3145b7fa31c66cb97a83323694b49da3fca2ed9b14c936f7e",
+        "bytes": 724081
+      },
+      "receipt_sha256": "2353db6a2039030372453eef80fa3e28c57d90007351cf03073dc7a650befe2b",
+      "seconds": 1.0238314589951187,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 2990228,
+        "object_bytes_read": 2949778,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22576,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "reverse_order",
+      "cases": 612,
+      "difference_count": 112,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 20
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 20
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 72
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "reverse_order-outcomes.json.gz",
+        "sha256": "ba233cda3337789f90e2cead8f3a6703c3d921b23ef516601d1e09e89766dbe9",
+        "bytes": 729978
+      },
+      "receipt_sha256": "9c0bb39fe98b5b8c29e8097d4ea7e211181293e711f4dc2d79beb07d1c582f29",
+      "seconds": 0.947516500018537,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 2994297,
+        "object_bytes_read": 2953847,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22596,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "wrong_default_mode",
+      "cases": 612,
+      "difference_count": 54,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 54
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 0
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "wrong_default_mode-outcomes.json.gz",
+        "sha256": "2f8cc73eb2e74eed4116855bb7841e0b64bec316cd7f9034b6b1b5ae22e96a86",
+        "bytes": 831577
+      },
+      "receipt_sha256": "f5c6569f5a3b66eb3381c6082d5ef1277062c7cd2bed7c54a62225af1b509325",
+      "seconds": 0.9815785420360044,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 3066162,
+        "object_bytes_read": 3025712,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22910,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "missing_integrity",
+      "cases": 612,
+      "difference_count": 18,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 0
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 0
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 18
+        }
+      },
+      "outcomes": {
+        "archive": "missing_integrity-outcomes.json.gz",
+        "sha256": "ad80cbf10359b155ee241166d5ebcb8cdf68aaca71505a134b5018ad68ac834d",
+        "bytes": 734307
+      },
+      "receipt_sha256": "0f6871e9aa21d71e7a74247cbe4ed7d13286ebeb073c918ba35d4615c404d463",
+      "seconds": 0.7651706659817137,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 1850044,
+        "object_bytes_read": 1809594,
+        "object_bytes_written": 39590,
+        "object_read_operations": 12918,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "any_wrong_limit",
+      "cases": 612,
+      "difference_count": 24,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 0
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 24
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "any_wrong_limit-outcomes.json.gz",
+        "sha256": "39670643277177a6db27a32d8f54ced8d192e432ae163c80ea44dd59e30a4cc6",
+        "bytes": 722805
+      },
+      "receipt_sha256": "4ad2a042a38be2a0016567ae6f913a7a58ffe1949cc3b8f3f01527e965135872",
+      "seconds": 0.9873121670098044,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 2989324,
+        "object_bytes_read": 2948874,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22572,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "late_mode_validation",
+      "cases": 612,
+      "difference_count": 24,
+      "expected_difference": true,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 24
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 0
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 0
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "late_mode_validation-outcomes.json.gz",
+        "sha256": "4e2e3fadc53391b3ed7fb627465271917b7f6cf517f4659ff0221ece6cf136bc",
+        "bytes": 729261
+      },
+      "receipt_sha256": "3c58336eb179fdfe5c9fc0a53760958797b367df8bac79b260bab83bdf76918d",
+      "seconds": 0.9804804590530694,
+      "state": "DIFFERENCES_OBSERVED",
+      "store_io": {
+        "object_bytes_hashed": 2994748,
+        "object_bytes_read": 2954298,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22596,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    },
+    {
+      "case": "uncovered_query",
+      "cases": 612,
+      "difference_count": 0,
+      "expected_difference": false,
+      "families": {
+        "explicit_all": {
+          "cases": 168,
+          "differences": 0
+        },
+        "invalid_legacy": {
+          "cases": 42,
+          "differences": 0
+        },
+        "invalid_mode": {
+          "cases": 48,
+          "differences": 0
+        },
+        "legacy": {
+          "cases": 168,
+          "differences": 0
+        },
+        "literal_union_any": {
+          "cases": 168,
+          "differences": 0
+        },
+        "nonmatching_corruption": {
+          "cases": 18,
+          "differences": 0
+        }
+      },
+      "outcomes": {
+        "archive": "uncovered_query-outcomes.json.gz",
+        "sha256": "8f46800ce9dc64ede2bda5fe5bd581520ac6a070ce34f00ae1624a877b5598c8",
+        "bytes": 730461
+      },
+      "receipt_sha256": "aca58b1fa2bf3f3fa41c2536851c4ce9ce03dbce5607427b5e758c6ed54503c1",
+      "seconds": 0.9790956249926239,
+      "state": "NO_DIFFERENCE_IN_ENUMERATED_CASES",
+      "store_io": {
+        "object_bytes_hashed": 2994748,
+        "object_bytes_read": 2954298,
+        "object_bytes_written": 39590,
+        "object_read_operations": 22596,
+        "projection_bytes_parsed": 0,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0
+      }
+    }
+  ],
+  "semantic_equivalence": "UNESTABLISHED",
+  "state": "OFFLINE_CALIBRATION_COMPLETE",
+  "first_calibration_elapsed_seconds": 7.468365500040818,
+  "boundary_tests": {
+    "initial": {
+      "passed": 4
+    },
+    "hostile_contract_falsifier": {
+      "failed": 1,
+      "reason": "Freshly hashed changed task was admitted to old compiled relations"
+    },
+    "final": {
+      "passed": 6,
+      "seconds": 1.03
+    }
+  },
+  "qualification_repair": {
+    "task": "Pinned exact previously adjudicated TASK.md hash",
+    "reference": "Pinned exact pre-change source and evidence implementation",
+    "task_changed": "Requires new semantic qualification; cannot self-authorize from a fresh hash"
+  },
+  "research_counter": {
+    "start": 8440549,
+    "observed_later": 8565050,
+    "observed_delta": 124501,
+    "scope": "Coarse active-goal counter interval, not native paired counters, invoice, model-specific split or complete current-turn total"
+  },
+  "end_to_end_80_80": false
+}

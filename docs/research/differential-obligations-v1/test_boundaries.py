@@ -1,0 +1,63 @@
+import importlib.util
+from pathlib import Path
+import pytest
+
+HERE = Path(__file__).resolve().parent
+spec = importlib.util.spec_from_file_location('obligation_calibration', HERE / 'calibrate.py')
+m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
+c = m.c
+
+
+def test_stale_and_omitted_bindings_reject_before_execution(tmp_path, monkeypatch):
+    source = tmp_path / 'candidate.py'; source.write_bytes(m.VALID.read_bytes())
+    bound = c.binding(m.BEFORE, source)
+    source.write_bytes(source.read_bytes() + b'\n# changed\n')
+    monkeypatch.setattr(c, 'load', lambda *a: pytest.fail('executed stale source'))
+    with pytest.raises(ValueError, match='binding changed'):
+        c.compare(m.BEFORE, source, tmp_path / 'stale', bound)
+    assert not (tmp_path / 'stale').exists()
+    bound = c.binding(m.BEFORE, source); del bound['files'][str(source.resolve())]
+    with pytest.raises(ValueError, match='Incomplete'):
+        c.compare(m.BEFORE, source, tmp_path / 'missing', bound)
+    assert not (tmp_path / 'missing').exists()
+
+
+def test_wrong_candidate_cannot_borrow_another_binding(tmp_path):
+    a = tmp_path / 'a.py'; b = tmp_path / 'b.py'
+    a.write_bytes(m.VALID.read_bytes()); b.write_bytes(m.VALID.read_bytes())
+    with pytest.raises(ValueError, match='Incomplete'):
+        c.compare(m.BEFORE, b, tmp_path / 'out', c.binding(m.BEFORE, a))
+
+
+def test_unknown_observation_is_not_equal_exception():
+    with pytest.raises(TypeError):
+        c.outcome(lambda: object())
+    assert c.encode({'return': True}) != c.encode({'return': 1})
+
+
+def test_fresh_hash_does_not_authorize_changed_relation_contract(tmp_path, monkeypatch):
+    base = tmp_path / 'changed-task'; (base / 'baseline').mkdir(parents=True)
+    (base / 'TASK.md').write_text('New request: change the default limit to9. Old default compatibility is no longer required.')
+    (base / 'baseline/evidence.py').write_bytes((c.BASE / 'baseline/evidence.py').read_bytes())
+    monkeypatch.setattr(c, 'BASE', base)
+    with pytest.raises(ValueError, match='Unqualified relation contract'):
+        c.binding(m.BEFORE, m.VALID)
+
+
+def test_changed_reference_requires_new_relation_qualification(tmp_path):
+    before = tmp_path / 'before.py'; before.write_bytes(m.BEFORE.read_bytes().replace(b'limit=10', b'limit=9'))
+    with pytest.raises(ValueError, match='Unqualified relation contract'):
+        c.binding(before, m.VALID)
+
+
+def test_drift_during_execution_never_publishes_success(tmp_path, monkeypatch):
+    source = tmp_path / 'candidate.py'; source.write_bytes(m.VALID.read_bytes())
+    bound = c.binding(m.BEFORE, source); original = c.guard; calls = []
+    def guard(b):
+        calls.append(1)
+        if len(calls) == 2: source.write_bytes(source.read_bytes() + b'\n# drift\n')
+        original(b)
+    monkeypatch.setattr(c, 'guard', guard)
+    with pytest.raises(ValueError, match='binding changed'):
+        c.compare(m.BEFORE, source, tmp_path / 'run', bound)
+    assert not (tmp_path / 'run/receipt.json').exists()

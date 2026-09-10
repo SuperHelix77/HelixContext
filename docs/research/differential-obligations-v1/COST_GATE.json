@@ -1,0 +1,56 @@
+{
+  "classification": "Optimistic fixed-trajectory arithmetic only; no new native run, causal effect, safe segment deletion or lower bound",
+  "bound_usage_files": {
+    "docs/research/astra-reuse-v1/artifacts/sample_a-off/usage.json": "2f96d3b21a51fe2acf6da55046a0aa13d27b117974e3cfb0e8cbf0f633b8220d",
+    "docs/research/astra-reuse-v1/artifacts/sample_a-on/usage.json": "f817f953f595c122bd4d213f7ef1212069b08548243079c21308e5581889b338",
+    "docs/research/astra-reuse-v1/artifacts/sample_b-off/usage.json": "89aa8fcaec8670fece2d5d8871de02eb2681271b64e74c555aaee6f74f5d0147",
+    "docs/research/astra-reuse-v1/artifacts/sample_b-on/usage.json": "5a61fc4a22de7acdd5d87ac89b13ed5642fbb7611b234f37e208ea57b1341d43"
+  },
+  "rows": [
+    {
+      "case": "sample_a",
+      "control": {
+        "inputTokens": 133760,
+        "outputTokens": 1679
+      },
+      "candidate": {
+        "inputTokens": 75848,
+        "outputTokens": 1089
+      },
+      "optimistically_removed_segment": null,
+      "retained": {
+        "inputTokens": 75848,
+        "outputTokens": 1089
+      },
+      "hypothetical_savings_percent": {
+        "inputTokens": 43.29545454545455,
+        "outputTokens": 35.13996426444312
+      }
+    },
+    {
+      "case": "sample_b",
+      "control": {
+        "inputTokens": 168328,
+        "outputTokens": 1619
+      },
+      "candidate": {
+        "inputTokens": 120480,
+        "outputTokens": 1526
+      },
+      "optimistically_removed_segment": 3,
+      "retained": {
+        "inputTokens": 86412,
+        "outputTokens": 1041
+      },
+      "hypothetical_savings_percent": {
+        "inputTokens": 48.66451214295898,
+        "outputTokens": 35.701050030883266
+      }
+    }
+  ],
+  "median_hypothetical_savings_percent": {
+    "inputTokens": 45.979983344206765,
+    "outputTokens": 35.420507147663194
+  },
+  "decision": "No native admission from coverage improvement alone; this isolated surface cannot support80/80 under retained observed costs."
+}
