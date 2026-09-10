@@ -1,0 +1,73 @@
+{
+  "classification": "Post-hoc exact registration-delta audit and deterministic recovery; not an untouched preregistration or fresh savings pair",
+  "original_state": "STOPPED_PENDING_AUDIT",
+  "original_status_sha256": "0461edb9eb7ec000adbe975d3981464c1c455a1810ec8ceb8457a15d3b91160e",
+  "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06",
+  "raw_sha256": "b7bd349d9808b1fee75be8e5d8d99a277e0263d1c7d68522689f4f72f76572a5",
+  "usage": {
+    "input_tokens": 16664,
+    "output_tokens": 736,
+    "cached_input_tokens": 6912,
+    "reasoning_output_tokens": 516,
+    "cache_write_input_tokens": 0
+  },
+  "model": "gpt-5.6-luna",
+  "effort": "high",
+  "source_sha256": "91ba4ca89733f834336d68eabc3b061d973f0f8c7941ddef9671c3c42e097219",
+  "registration_delta": {
+    "schema": "helix.project-registration.v1",
+    "project": "/Users/mert/Documents/ChatGPT/Helix/research/luna-varied-coding-v3-20260910/intervals/on",
+    "added_trusted_marker": true,
+    "no_project_codex_layers": true,
+    "other_effective_settings_unchanged": true,
+    "model_defaults_changed": [],
+    "before_sha256": "7c1ad2c5efe5b710e1a1efb6c727e6c39ff2343da495377a168a3bc7093870bb",
+    "after_sha256": "e55ee4b570169b8373f3451f3845b9523522dd5ba9fc0414de2a534b8fe5d156",
+    "trust_present": true
+  },
+  "completion": {
+    "exit_code": 0,
+    "stdout": "{\"public_tests\": 4, \"independent_checks\": {\"valid_cases\": 602, \"invalid_cases\": 9}, \"finite_checks\": \"PASS\"}\n",
+    "stderr": "....\n----------------------------------------------------------------------\nRan 4 tests in 0.000s\n\nOK\n",
+    "caller_seconds": 0.05282862501917407,
+    "checks": {
+      "public_tests": 4,
+      "independent_checks": {
+        "valid_cases": 602,
+        "invalid_cases": 9
+      },
+      "finite_checks": "PASS"
+    },
+    "source_sha256": "91ba4ca89733f834336d68eabc3b061d973f0f8c7941ddef9671c3c42e097219",
+    "published": true,
+    "completion_seconds": 0.05693187500583008
+  },
+  "model_calls_added": 0,
+  "remaining_native_arms": [
+    [
+      "intervals",
+      "off"
+    ],
+    [
+      "dependencies",
+      "on"
+    ],
+    [
+      "dependencies",
+      "off"
+    ],
+    [
+      "transactions",
+      "off"
+    ],
+    [
+      "transactions",
+      "on"
+    ]
+  ],
+  "limits": [
+    "Project .codex absence inferred from known generated workspace, zero raw model tool calls and current absence; not hostile-host proof",
+    "Original failed status/results preserved",
+    "No paired savings denominator yet"
+  ]
+}
