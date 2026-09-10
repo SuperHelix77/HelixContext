@@ -1,5 +1,13 @@
 # Helix telemetry HUD v0
 
+Live native streams validate the exact JSONL prefix pinned by the last status
+receipt, then expose later monotonic native counters as **provisional** while the
+matching app-server PID and working directory are live. A growing stream is not a
+completed receipt. Closed/dead writers, mutated prefixes or mismatched sealed
+counters do not receive this exception. Final receipts still require the full
+native hash. Live rows never inherit finite artifact PASS or enter completed-pair
+medians. Runtime observation is local; it does not authenticate a hostile host.
+
 ## Scoped statistics and Engine-only execution
 
 `cohorts` declares exact experiment membership, model, effort and evidence scope.

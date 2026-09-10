@@ -1,0 +1,30 @@
+{
+  "classification": "V1 finite checks passed; inherited Git boundary confounded clean qualification",
+  "source_audit_sha256": "6376694af6eaf7800747671414823112559faf581c13aa2122277ef25fccbefd",
+  "rows": [
+    {
+      "native_sha256": "66f0746eb814f672acf17eca495a98d9e1ced187ced74b6a7e1f40e9b51a97ac",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "f5a14ae909f615cba20fad48086d5f55625755f64c47fee9caec805e0f99bf0d",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "63805fa45ea0c28d161b7d151fa2483fa62aebfca5b878ac46a2ee803c3303ba",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "47d8baea7f6b72a94d5b148e2c3b91ef004c57e24c58ea94f3fa27aa86db583f",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "54a805dd399b4e2c034edd515376e5202b920b184b2055e1b6b6ee3c29e2045b",
+      "checks": "PASS"
+    },
+    {
+      "native_sha256": "920fdf6438b79e57e00e4db640c531846438f0f1bcf2fb3168c39c5f72af380e",
+      "checks": "PASS"
+    }
+  ]
+}

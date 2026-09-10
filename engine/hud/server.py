@@ -124,10 +124,7 @@ def native_tool_coverage(path,thread_id):
 
 
 NATIVE_USAGE_CACHE={}
-def native_cumulative(path,thread_id):
-    raw=cached_bytes(path,16_000_000);digest=hashlib.sha256(raw).hexdigest()
-    key=(str(path),thread_id);prior=NATIVE_USAGE_CACHE.get(key)
-    if prior and prior[0]==digest:return prior[1],digest
+def native_totals(raw,thread_id):
     latest=None
     for line in raw.splitlines():
         try:event=json.loads(line)
@@ -144,8 +141,37 @@ def native_cumulative(path,thread_id):
         if latest and any(value[k]<latest[k] for k in value):raise ValueError('Cumulative native counters decreased')
         value['cache_write_input_tokens']=total.get('cacheWriteInputTokens')
         latest=value
+    return latest
+
+
+def native_cumulative(path,thread_id):
+    raw=cached_bytes(path,16_000_000);digest=hashlib.sha256(raw).hexdigest()
+    key=(str(path),thread_id);prior=NATIVE_USAGE_CACHE.get(key)
+    if prior and prior[0]==digest:return prior[1],digest
+    latest=native_totals(raw,thread_id)
     NATIVE_USAGE_CACHE[key]=(digest,latest)
     return latest,digest
+
+
+def native_live_prefix(path,thread_id,sealed_hash,current_hash,sealed_usage):
+    """Accept only append after an exact status-bound JSONL prefix.
+
+    Live counters remain provisional and cannot inherit completed artifact PASS.
+    Modified prefixes, stale processes and final hash mismatches still fail closed.
+    This is a local observation boundary, not authentication against a hostile host.
+    """
+    raw=cached_bytes(path,16_000_000)
+    if hashlib.sha256(raw).hexdigest()!=current_hash:raise ValueError('Native wire advanced during scan')
+    h=hashlib.sha256();end=0;found=h.hexdigest()==sealed_hash
+    if not found:
+        for line in raw.splitlines(keepends=True):
+            h.update(line);end+=len(line)
+            if line.endswith(b'\n') and h.hexdigest()==sealed_hash:found=True;break
+    if not found:return False
+    prior=native_totals(raw[:end],thread_id)
+    if prior is None:return sealed_usage is None
+    expected=usage(sealed_usage)
+    return expected is not None and all(expected[k]==prior[k] for k in prior)
 
 
 def usage(value):
@@ -170,7 +196,7 @@ def live_process(status,cwd):
     try:
         result=subprocess.run(['ps','-p',str(pid),'-o','command='],capture_output=True,text=True,timeout=1)
         command=result.stdout
-        if status.get('runner')=='app-server':
+        if status.get('runner')=='app-server' or re.search(r'\bapp-server\b',command):
             if result.returncode!=0 or 'app-server' not in command or status.get('model','<unknown>') not in command:return False
             location=subprocess.run(['lsof','-a','-p',str(pid),'-d','cwd','-Fn'],capture_output=True,text=True,timeout=2)
             paths=[line[1:] for line in location.stdout.splitlines() if line.startswith('n')]
@@ -292,24 +318,31 @@ def snapshot(config):
                     if events.exists():
                         size=events.stat().st_size;row['trace_bytes']=size
                         row.update(trace_view(events))
-                        if row.get('trace_usage'):
+                        if row.get('trace_usage') and row['state']!='RUNNING':
                             if row['usage'] and any(row['usage'].get(k)!=row['trace_usage'].get(k) for k in ['input_tokens','output_tokens']):
                                 row['usage']=None;row['artifact_check']=None
                                 problems.append({'run':rid,'message':'Native usage disagrees with trace; tokens withheld.'})
                             elif row['usage'] is None and status.get('usage') is None and status.get('events_sha256')==row['trace_sha256']:
                                 row['usage']=row['trace_usage']
-                        if status.get('events_sha256') and row['trace_sha256']!=status['events_sha256']:
+                        if row['state']!='RUNNING' and status.get('events_sha256') and row['trace_sha256']!=status['events_sha256']:
                             row['artifact_check']=None
                             problems.append({'run':rid,'message':'Trace hash differs from status receipt; checks unverified.'})
                 if spec.get('native_events') and status.get('thread_id'):
-                    native_tokens,native_hash=native_cumulative(safe_path(root,spec['native_events']),status['thread_id'])
-                    if status.get('native_events_sha256') and native_hash!=status['native_events_sha256']:raise ValueError('Raw native wire hash mismatch')
+                    native_path=safe_path(root,spec['native_events'])
+                    native_tokens,native_hash=native_cumulative(native_path,status['thread_id'])
+                    extended=False;sealed=status.get('native_events_sha256')
+                    if sealed and native_hash!=sealed:
+                        extended=row['state']=='RUNNING' and native_live_prefix(native_path,status['thread_id'],sealed,native_hash,status.get('usage'))
+                        if not extended:raise ValueError('Raw native wire hash mismatch')
                     row['native_sha256']=native_hash
+                    row['usage_receipt_state']='LIVE_PREFIX_VALIDATED_UNSEALED' if extended else 'SEALED' if sealed else 'UNSEALED'
                     row.update(native_tool_coverage(safe_path(root,spec['native_events']),status['thread_id']))
                     if row['unmatched_pretool_hooks']:
                         problems.append({'run':rid,'message':'Command pre-tool hooks lack matching command receipts; zero recorded commands does not mean zero tool work.'})
                     if native_tokens:
-                        if row['usage'] and any(row['usage'].get(k)!=native_tokens[k] for k in native_tokens):raise ValueError('Raw native usage mismatch')
+                        if row['usage'] and any(row['usage'].get(k)!=native_tokens[k] for k in native_tokens):
+                            if not extended or any(row['usage'].get(k) is not None and native_tokens[k] is not None and native_tokens[k]<row['usage'][k] for k in native_tokens):
+                                raise ValueError('Raw native usage mismatch')
                         row['usage']=native_tokens;row['usage_source']='Native app-server cumulative update'
                         row['usage_live']=row['state']=='RUNNING'
                 bound=bool(status.get('events_sha256')) and report_row.get('events_sha256')==status.get('events_sha256')
@@ -320,6 +353,7 @@ def snapshot(config):
                     row['mechanisms']['exact_copy']='not observed'
                 if row.get('usage_source')=='Native app-server cumulative update' and row.get('native_sha256') in audited:
                     row['artifact_check']=audited[row['native_sha256']]
+                if row.get('usage_receipt_state')=='LIVE_PREFIX_VALIDATED_UNSEALED':row['artifact_check']=None
             except (OSError,ValueError,TypeError) as exc:
                 row.update(state='UNAVAILABLE',usage=None,error=type(exc).__name__)
                 problems.append({'run':rid,'message':'Receipt unavailable or invalid; measurements are unknown.'})

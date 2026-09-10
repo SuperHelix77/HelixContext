@@ -1,0 +1,30 @@
+{
+  "classification": "Interrupted isolated V2 control: shared config changed, not a paired savings denominator",
+  "native_usage": {
+    "input_tokens": 80153,
+    "output_tokens": 2256,
+    "cached_input_tokens": 67584,
+    "reasoning_output_tokens": 948,
+    "cache_write_input_tokens": 0
+  },
+  "native_sha256": "a2aa2590ca66a98020b5258f292d0e1fef510d3533b0af0d930a23f5b82766a7",
+  "raw_capture_sha256": "16272722badf2344e0546caa56f2ca37a9fe137d1eea5fda8ea9475023fd1f62",
+  "raw_capture_bytes": 121430,
+  "raw_tool_calls": 3,
+  "finite_checks": {
+    "public_tests": 4,
+    "independent_checks": {
+      "valid_cases": 602,
+      "invalid_cases": 9
+    },
+    "finite_checks": "PASS"
+  },
+  "source_sha256": "b926d665ded81c3d6d930c15caaddbe0d88e647e403b966afead9238eb306408",
+  "model_reported": "gpt-5.6-luna",
+  "effort_reported": "high",
+  "configuration_unchanged": false,
+  "configuration_change_cause": "UNKNOWN; original config bytes were not retained",
+  "recovered_with_model_calls": 0,
+  "remaining_arms_launched": false,
+  "no_retry": true
+}

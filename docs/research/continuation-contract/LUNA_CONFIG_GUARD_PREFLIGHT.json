@@ -1,0 +1,26 @@
+{
+  "classification": "Native thread setup/close only; no inference",
+  "turn_start_requests": 0,
+  "usage": null,
+  "state": "closed",
+  "config_binding": {
+    "schema": "helix.effective-config.v1",
+    "initial_sha256": "7c1ad2c5efe5b710e1a1efb6c727e6c39ff2343da495377a168a3bc7093870bb",
+    "final_sha256": "7c1ad2c5efe5b710e1a1efb6c727e6c39ff2343da495377a168a3bc7093870bb",
+    "changed_top_level_keys": [],
+    "overridden_fields": [
+      "model",
+      "model_reasoning_effort"
+    ],
+    "other_parsed_settings_unchanged": true,
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "native_overrides_verified": true
+  },
+  "raw_capture": {
+    "state": "NO_MODEL_TURN_NO_ROLLOUT",
+    "captured": false,
+    "scope": "Thread setup only; no turn/start or completed task claimed"
+  },
+  "prior_offline_failure": "V1 required a rollout before any model turn; zero-inference edge case corrected; prior failed setup retained"
+}

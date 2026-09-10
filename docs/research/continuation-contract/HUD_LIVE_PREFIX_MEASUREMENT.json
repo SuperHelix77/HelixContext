@@ -1,0 +1,22 @@
+{
+  "classification": "Local HTTP state-read latency after live-prefix fix; ten sequential requests, not end-to-end update SLA",
+  "samples_ms": [
+    10.241459007374942,
+    4.128500004298985,
+    3.9933749940246344,
+    3.938541980460286,
+    3.8912500021979213,
+    3.592125023715198,
+    3.80441703600809,
+    3.5268329665996134,
+    3.6874169600196183,
+    3.654791973531246
+  ],
+  "median_ms": 3.8478335191030055,
+  "max_ms": 10.241459007374942,
+  "observer_poll_seconds": 2,
+  "observer_last_scan_seconds": 0.06187008396955207,
+  "registered_runs": 109,
+  "routine_inference_calls": 0,
+  "prices_fresh": true
+}
