@@ -1,0 +1,14 @@
+{
+  "classification": "Offline semantic-context handoff contract; no native model benchmark",
+  "tests": 29,
+  "new_tests": 8,
+  "native_calls": 0,
+  "frozen_benchmark_code_modified": false,
+  "general_model_parity": "NOT_ESTABLISHED",
+  "normal_codex_app_integration": false,
+  "sha256": {
+    "engine/prototype/context_bound_retrieval.py": "4211992f8283a2dca09e7ab9ed99cc68a8a57775b2449ff04e3904c7e7df96c8",
+    "engine/prototype/test_context_bound_retrieval.py": "3c30a51be40fad02317f89b987c4ca3195be09aea6d1a2d840b2f4d65b04df7a",
+    "engine/prototype/bound_retrieval.py": "e86795c19f1efcb214ba4746a67d56657413930701771f9f69e245b958eccd6b"
+  }
+}
