@@ -1,0 +1,11 @@
+{
+  "native_turns": 0,
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "original_base": true,
+  "global_config_unchanged": true,
+  "skill_sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+  "offline_test_count": 9,
+  "offline_tests": "PASS",
+  "manifest_sha256": "89bedc87983c2cdf202223283e2c69d6c34ad5b3c3e470d740a2903e0582358c"
+}
