@@ -1,0 +1,40 @@
+{
+  "local_kimi": {
+    "bytes": 2677,
+    "o200k_proxy_tokens": 588,
+    "sha256": "85578caeb61ebb2236a872a708a4135f2f9d529a34df372bd879e144923d5912"
+  },
+  "upstream_skill": {
+    "bytes": 6637,
+    "o200k_proxy_tokens": 1610,
+    "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2"
+  },
+  "upstream_agents": {
+    "bytes": 2593,
+    "o200k_proxy_tokens": 569,
+    "sha256": "b57f736a83ddab7111d752008c3e131a157e646a6b47c9eb223f076c494685a8"
+  },
+  "helixcontext": {
+    "bytes": 1695,
+    "o200k_proxy_tokens": 297,
+    "sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5"
+  },
+  "cavemanmax": {
+    "bytes": 3781,
+    "o200k_proxy_tokens": 703,
+    "sha256": "9fa9bec2d1909d859afdb7ae02b9450733a0eb3a017f91276cf858aab2d3e753"
+  },
+  "static_full_hook_content": {
+    "bytes": 5252,
+    "o200k_proxy_tokens": 1264,
+    "note": "Static reconstruction of audited instruction builder, not native serialized input or execution."
+  },
+  "published_rounded_LOC_table": {
+    "baseline_total": 2217,
+    "ponytail_total": 1015,
+    "reduction_ratio_of_totals": 0.5421741091565178,
+    "mean_task_reduction": 0.3544799745963484,
+    "median_task_reduction": 0.2662547808178876
+  },
+  "tokenizer": "tiktoken o200k_base; proxy only, not native billing"
+}

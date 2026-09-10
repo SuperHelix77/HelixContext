@@ -1,0 +1,129 @@
+{
+  "evidence_commit": "4be5e8b",
+  "classification": "OBSERVED counters with manual visible-activity annotation; not causal token attribution",
+  "stream_sha256": "8ff96c0b8c9bf8555ea33ee564961a77a3ec686eb6151c21bb4f90924a6866f2",
+  "visible_sha256": "99d616c0baef9f3f0ba226203bed7b7a00e4b12fb790ad9cc801c6e959e5c7a9",
+  "deduplication": "Identical cumulative tokenUsage.total objects counted once; ordered first appearances",
+  "segments": [
+    {
+      "segment": 1,
+      "turn_id": "01a08b25-84f2-7502-906b-3b0343943378",
+      "input": 19974,
+      "output": 306,
+      "visible_activity_label": "clarification_and_finals"
+    },
+    {
+      "segment": 2,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 21788,
+      "output": 91,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 3,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 21979,
+      "output": 35,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 4,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 22417,
+      "output": 180,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 5,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 22818,
+      "output": 449,
+      "visible_activity_label": "patch_containing"
+    },
+    {
+      "segment": 6,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 23327,
+      "output": 1330,
+      "visible_activity_label": "test_construction_containing"
+    },
+    {
+      "segment": 7,
+      "turn_id": "01a08b26-68e0-7221-9972-9de0e0b36b26",
+      "input": 24855,
+      "output": 151,
+      "visible_activity_label": "clarification_and_finals"
+    },
+    {
+      "segment": 8,
+      "turn_id": "01a08b27-b863-7351-9b6a-05fe2bea98f9",
+      "input": 26113,
+      "output": 183,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 9,
+      "turn_id": "01a08b27-b863-7351-9b6a-05fe2bea98f9",
+      "input": 27256,
+      "output": 663,
+      "visible_activity_label": "patch_containing"
+    },
+    {
+      "segment": 10,
+      "turn_id": "01a08b27-b863-7351-9b6a-05fe2bea98f9",
+      "input": 27990,
+      "output": 1269,
+      "visible_activity_label": "test_construction_containing"
+    },
+    {
+      "segment": 11,
+      "turn_id": "01a08b27-b863-7351-9b6a-05fe2bea98f9",
+      "input": 29485,
+      "output": 127,
+      "visible_activity_label": "clarification_and_finals"
+    },
+    {
+      "segment": 12,
+      "turn_id": "01a08b28-f9ba-77c3-99fc-4149ec239b37",
+      "input": 30667,
+      "output": 78,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 13,
+      "turn_id": "01a08b28-f9ba-77c3-99fc-4149ec239b37",
+      "input": 31652,
+      "output": 682,
+      "visible_activity_label": "patch_containing"
+    },
+    {
+      "segment": 14,
+      "turn_id": "01a08b28-f9ba-77c3-99fc-4149ec239b37",
+      "input": 32471,
+      "output": 1922,
+      "visible_activity_label": "test_construction_containing"
+    },
+    {
+      "segment": 15,
+      "turn_id": "01a08b28-f9ba-77c3-99fc-4149ec239b37",
+      "input": 34664,
+      "output": 243,
+      "visible_activity_label": "acquisition_or_hash"
+    },
+    {
+      "segment": 16,
+      "turn_id": "01a08b28-f9ba-77c3-99fc-4149ec239b37",
+      "input": 34941,
+      "output": 88,
+      "visible_activity_label": "clarification_and_finals"
+    }
+  ],
+  "output_by_bucket": {
+    "clarification_and_finals": 672,
+    "acquisition_or_hash": 810,
+    "patch_containing": 1794,
+    "test_construction_containing": 4521
+  },
+  "output_total": 7797,
+  "new_model_calls": 0
+}

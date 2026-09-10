@@ -1,0 +1,95 @@
+{
+  "commit": "356918eba965ee1eac64bd3a7f0dd02108350de5",
+  "files": [
+    {
+      "path": "skills/ponytail/SKILL.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/skills/ponytail/SKILL.md",
+      "bytes": 6637,
+      "sha256": "1316a2f3f95741d2300b116fe0c2d81ce4a9568656ed0a62643f54aaf09957f2"
+    },
+    {
+      "path": "AGENTS.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/AGENTS.md",
+      "bytes": 2593,
+      "sha256": "b57f736a83ddab7111d752008c3e131a157e646a6b47c9eb223f076c494685a8"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/LICENSE",
+      "bytes": 1071,
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab"
+    },
+    {
+      "path": "hooks/ponytail-instructions.js",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/hooks/ponytail-instructions.js",
+      "bytes": 5487,
+      "sha256": "23c050103f28dbe6bad953ae21d98cd06d720a20f33d4716e9de419f947d495e"
+    },
+    {
+      "path": "hooks/ponytail-activate.js",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/hooks/ponytail-activate.js",
+      "bytes": 3957,
+      "sha256": "1c428c4ee9687c2f4321924109ee92e8f8b06fd6600cb6be9ec5b59633cafab1"
+    },
+    {
+      "path": "hooks/ponytail-mode-tracker.js",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/hooks/ponytail-mode-tracker.js",
+      "bytes": 5318,
+      "sha256": "5d1a960ff01b73f651ec0242052a8cf1e064cb88147806bf6e13f92798aca251"
+    },
+    {
+      "path": "hooks/claude-codex-hooks.json",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/hooks/claude-codex-hooks.json",
+      "bytes": 966,
+      "sha256": "25f1af0c65db50fcc3b7c7e7535144a3ce2303d79c1a83feedf31bc4ce8673b1"
+    },
+    {
+      "path": "benchmarks/agentic/README.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/agentic/README.md",
+      "bytes": 10164,
+      "sha256": "1df410888cf4785e1180d12ca78c3ea419671990e1aeded14d329a4a655f5b3b"
+    },
+    {
+      "path": "benchmarks/agentic/run.py",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/agentic/run.py",
+      "bytes": 26677,
+      "sha256": "88c105299b38850c6d944a11faac7b0e18de2f5c9a3e5f4ae1f6b641d6853811"
+    },
+    {
+      "path": "benchmarks/agentic/tasks.py",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/agentic/tasks.py",
+      "bytes": 50646,
+      "sha256": "68f473557695f69a036cd6fdb5d8e9ec51aef407183416545b29823c1e3190a2"
+    },
+    {
+      "path": "benchmarks/results/2026-06-18-agentic.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/results/2026-06-18-agentic.md",
+      "bytes": 12226,
+      "sha256": "fe274964a4f2b9801e67ba956eef3a029c472aa5693b7e0643c83bd406f9ee6f"
+    },
+    {
+      "path": "benchmarks/results/2026-06-12-v4-hardening-vs-caveman.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/results/2026-06-12-v4-hardening-vs-caveman.md",
+      "bytes": 6758,
+      "sha256": "d7792afb3d61ae7ca33113782263a208095895af8e2e9499031a2647a031cd22"
+    },
+    {
+      "path": "benchmarks/results/2026-06-22-issue-245-217-comprehension.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/results/2026-06-22-issue-245-217-comprehension.md",
+      "bytes": 5566,
+      "sha256": "0ae799564d9a63576701e1b875682b482d8644c2eb713e8ff68602d99d55e86f"
+    },
+    {
+      "path": "benchmarks/results/2026-06-17-cost-verification.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/results/2026-06-17-cost-verification.md",
+      "bytes": 4849,
+      "sha256": "bb32d42e5879bd0eace8169136814fe1fed0cbfb517698e6c845cb22229b0c21"
+    },
+    {
+      "path": "benchmarks/README.md",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/356918eba965ee1eac64bd3a7f0dd02108350de5/benchmarks/README.md",
+      "bytes": 6202,
+      "sha256": "f7ae92ac949199060a09d44a68211d375725cbb85c8c5ecdb23af114d48aec23"
+    }
+  ]
+}
