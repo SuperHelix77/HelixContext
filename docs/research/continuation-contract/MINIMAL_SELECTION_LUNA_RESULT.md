@@ -43,3 +43,12 @@ Current candidate elapsed time was 4.11 seconds, a single local observation.
 This experiment uses the separately authorized caller-owned ACK contract. It does
 not satisfy the original fixture's historical requirement for 50 model turns in
 both arms; eliminating those calls is the intervention, not protocol replication.
+
+Receipt closure on 2026-09-10: the [structured native audit](MINIMAL_SELECTION_LUNA_RECEIPT_AUDIT.json)
+now supplies explicit finite PASS values bound to both native-stream hashes for
+the HUD. `audit_luna_selector_receipts.py` reconciles original control ACKs,
+cumulative/per-segment counters, exact inherited history, candidate selection,
+version-bound realization and the unchanged grader. It spends zero inference.
+The older run directories do not contain separate raw-rollout captures; this
+receipt-only audit does not repeat historical base/config or recovery qualification.
+The adaptive comparison and prior failed-candidate/setup costs remain unchanged.

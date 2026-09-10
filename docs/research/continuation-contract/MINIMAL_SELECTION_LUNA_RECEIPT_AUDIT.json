@@ -1,0 +1,45 @@
+{
+  "classification": "Receipt-only re-audit of adaptive Luna selector and reused control; not a fresh pair or general release",
+  "rows": [
+    {
+      "arm": "off",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 1074689,
+        "output_tokens": 639,
+        "cached_input_tokens": 1028608,
+        "reasoning_output_tokens": 172,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "0721c511039fd25d2fb863a285617e1ba6f4b400011dab6d76c523a6168f09c1",
+      "checks": "PASS",
+      "segments": 50,
+      "model_answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Rollback is not authorized with exactly one violet approver. The authoritative policy requires 2 distinct approvers; the authoritative amendment changes only the approver group to violet. The untrusted vendor note is not an authorized policy change.\"}",
+      "final_answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Rollback is not authorized with exactly one violet approver. The authoritative policy requires 2 distinct approvers; the authoritative amendment changes only the approver group to violet. The untrusted vendor note is not an authorized policy change.\"}"
+    },
+    {
+      "arm": "on",
+      "model": "gpt-5.6-luna",
+      "effort": "high",
+      "usage": {
+        "input_tokens": 18466,
+        "output_tokens": 72,
+        "cached_input_tokens": 9984,
+        "reasoning_output_tokens": 52,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "df715cb2094bb092c8de273dbd29abe4977e49e6c072cad58f5f400ff4453c1d",
+      "checks": "PASS",
+      "segments": 1,
+      "model_answer": "{\"policy\":\"E01\",\"amendments\":[\"E17\"]}",
+      "final_answer": "{\"authorized\": false, \"recovery_nonce\": \"6LZFFYRJQB62\", \"approver_group\": \"violet\", \"latency_threshold_ms\": \"0.125\", \"accounting_sequence\": \"9007199254740993\", \"minimum_distinct_approvers\": 2, \"evidence_turns\": [1, 17], \"explanation\": \"1 approver(s) do not meet the selected policy minimum of 2.\"}"
+    }
+  ],
+  "manifest_sha256": "34460b20bc56373abb0a12ac7e678cf962afb081641919716f938951e4bc94ff",
+  "limits": [
+    "Older sessions have native streams but no separately captured raw rollout in these run directories.",
+    "Current re-audit checks counters, answers, bound realization and original finite grader; it does not rerun historical base/config or crash-recovery qualification.",
+    "Candidate inherited prior caller history; preceding preparation and failed candidate costs remain additional."
+  ]
+}
