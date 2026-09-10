@@ -1,0 +1,250 @@
+{
+  "classification": "Three prospective researcher-authored single-module repairs; frozen profile; matched caller memory preflight; development, not population holdout",
+  "manifest_sha256": "725a6fd2e3e23d69f30418c6a5250fbdb119e95b91cac78c5751e0c130b12677",
+  "rows": [
+    {
+      "case": "intervals",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 158889,
+        "output_tokens": 3687,
+        "cached_input_tokens": 127232,
+        "reasoning_output_tokens": 1936,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "66f0746eb814f672acf17eca495a98d9e1ced187ced74b6a7e1f40e9b51a97ac",
+      "raw_sha256": "64cdeef76e6c7d641d95d9594dc9958c6a35a4271ffe97a18f6d5f99e18836fb",
+      "raw_bytes": 953645,
+      "raw_tool_calls": 6,
+      "segments": 7,
+      "turns": 1,
+      "source_sha256": "c0e86bcf4a9666986ded6123d726b242a14d1c7e01ba18de7d30e5eedd9dbcf8",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 78.03549154195935,
+      "memory_seconds": 0.20061283401446417,
+      "memory_raw_bytes": 37691,
+      "caller_check_seconds": 0
+    },
+    {
+      "case": "intervals",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16664,
+        "output_tokens": 700,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 473,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "f5a14ae909f615cba20fad48086d5f55625755f64c47fee9caec805e0f99bf0d",
+      "raw_sha256": "fb6268e89b23af6d80547ff9f829146665a87eb0652a41527be9c42772ae8cf8",
+      "raw_bytes": 66145,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "69205d507637b79e62d0a071298737f7f5cadbaa6f72ecfa2ddb441b7c6fbbe9",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 15.480380917026196,
+      "memory_seconds": 0.13294541696086526,
+      "memory_raw_bytes": 37690,
+      "caller_check_seconds": 0.07471945899305865
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16639,
+        "output_tokens": 775,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 436,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "63805fa45ea0c28d161b7d151fa2483fa62aebfca5b878ac46a2ee803c3303ba",
+      "raw_sha256": "e5e3c97114eef209653bb3a66de592695ee291d9f9fc185fe74900435b7bb6f4",
+      "raw_bytes": 67598,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "5ea05ae8d11123634c33f7bb9964673b873eef45b00b6a8eebe127e6008a1a5b",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 17.32988012500573,
+      "memory_seconds": 0.1358372499817051,
+      "memory_raw_bytes": 37699,
+      "caller_check_seconds": 0.07218550000106916
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 168283,
+        "output_tokens": 3472,
+        "cached_input_tokens": 130304,
+        "reasoning_output_tokens": 1262,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "47d8baea7f6b72a94d5b148e2c3b91ef004c57e24c58ea94f3fa27aa86db583f",
+      "raw_sha256": "fe53b7712ceaf6bf8bab9e559782132b8adb3b43882486a5d6a041788a6d04e5",
+      "raw_bytes": 941602,
+      "raw_tool_calls": 6,
+      "segments": 7,
+      "turns": 1,
+      "source_sha256": "134d8be23270335cb36bcab3519d21ea08d6e8a2d3b6098171d5f618331f9162",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 75.39885216701077,
+      "memory_seconds": 0.13898804102791473,
+      "memory_raw_bytes": 37699,
+      "caller_check_seconds": 0
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 146679,
+        "output_tokens": 4571,
+        "cached_input_tokens": 129280,
+        "reasoning_output_tokens": 2114,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "54a805dd399b4e2c034edd515376e5202b920b184b2055e1b6b6ee3c29e2045b",
+      "raw_sha256": "34e6d8d72c2fd7192840ced86ca638904eae54bdea589e093f110a4e5c131924",
+      "raw_bytes": 152008,
+      "raw_tool_calls": 6,
+      "segments": 7,
+      "turns": 1,
+      "source_sha256": "d29d054f923e2c0d2cd354bba3338b799174fe28d725fb56ac0438ddaf9ae5fb",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 96.75421487499261,
+      "memory_seconds": 0.13964587496593595,
+      "memory_raw_bytes": 37700,
+      "caller_check_seconds": 0
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16810,
+        "output_tokens": 898,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 516,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "920fdf6438b79e57e00e4db640c531846438f0f1bcf2fb3168c39c5f72af380e",
+      "raw_sha256": "8253bb0f3a07dc6d46ab7f1ff51e52e9efbeaefe7d0e6446d2b48d53918d141f",
+      "raw_bytes": 70520,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "4e58b20b8e57f81fd6dd971a4c0a2e3f4609df7164b899f6605b02ad40cf540b",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "finite_checks": "PASS",
+      "elapsed_seconds": 18.321583834011108,
+      "memory_seconds": 0.1425247499719262,
+      "memory_raw_bytes": 37699,
+      "caller_check_seconds": 0.07727900001918897
+    }
+  ],
+  "pairs": [
+    {
+      "case": "intervals",
+      "savings_percent": {
+        "input_tokens": 89.51217516631107,
+        "output_tokens": 81.0143748304855,
+        "uncached_input_tokens": 69.19480683577093
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": true
+    },
+    {
+      "case": "dependencies",
+      "savings_percent": {
+        "input_tokens": 90.1124890808935,
+        "output_tokens": 77.67857142857143,
+        "uncached_input_tokens": 74.3884778430185
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": false
+    },
+    {
+      "case": "transactions",
+      "savings_percent": {
+        "input_tokens": 88.53960007908425,
+        "output_tokens": 80.35440822577117,
+        "uncached_input_tokens": 43.11167308466004
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": true
+    }
+  ],
+  "median_savings_percent": {
+    "input_tokens": 89.51217516631107,
+    "output_tokens": 80.35440822577117,
+    "uncached_input_tokens": 69.19480683577093
+  },
+  "native_usage_all_attempts": {
+    "input_tokens": 523964,
+    "output_tokens": 14103,
+    "cached_input_tokens": 407552,
+    "reasoning_output_tokens": 6737,
+    "cache_write_input_tokens": 0
+  },
+  "N": 3,
+  "finite_checks": "PASS",
+  "general_release": false,
+  "limits": [
+    "No general parity proof",
+    "Caller execution outside native workspace sandbox",
+    "One-file publication has no uncooperative-writer isolation",
+    "Two semantic turns is an experiment bound, not a product policy",
+    "Full physical I/O, research and parent-agent cost unmetered"
+  ],
+  "native_control": "Matched-memory-preflight default base with ordinary tools; not raw desktop economics"
+}
