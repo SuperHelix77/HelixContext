@@ -1,0 +1,7 @@
+The examples conflict on **touching windows**: the first ends exactly where the second begins. A merges them; B keeps them separate. Both cannot be the default for the same call.
+
+The signature `merge_touching=False` suggests B, but the examples contradict that.
+
+Should the default merge touching windows (A), or keep them separate and merge them only when `merge_touching=True` (B)?
+
+`planner.py` remains unchanged.

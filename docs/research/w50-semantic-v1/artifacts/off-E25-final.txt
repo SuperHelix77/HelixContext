@@ -1,0 +1,3 @@
+Implemented `merge_windows` in `planner.py` with strict validation, transitive overlap merging, optional adjacency merging, exact integer preservation, and no input mutation. Other APIs remain unchanged.
+
+Verification passed: all supplied stage25 checks, 1,144 reference comparisons, 28 invalid-input cases, and checks for large integers, default adjacency, and output independence.

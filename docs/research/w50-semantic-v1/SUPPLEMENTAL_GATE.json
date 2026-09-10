@@ -1,0 +1,54 @@
+{
+  "classification": "Post-run hostile evidence, native candidate remains failed; corrected copy is only a local cause demonstration",
+  "rows": {
+    "off": {
+      "cases": 12,
+      "failures": [],
+      "verdict": "PASS"
+    },
+    "on": {
+      "cases": 12,
+      "failures": [
+        {
+          "value_repr": "'\\ud800'",
+          "existing_destination": false,
+          "exception": "UnicodeEncodeError"
+        },
+        {
+          "value_repr": "'\\ud800'",
+          "existing_destination": true,
+          "exception": "UnicodeEncodeError"
+        },
+        {
+          "value_repr": "'\\udfff'",
+          "existing_destination": false,
+          "exception": "UnicodeEncodeError"
+        },
+        {
+          "value_repr": "'\\udfff'",
+          "existing_destination": true,
+          "exception": "UnicodeEncodeError"
+        },
+        {
+          "value_repr": "'x\\ud800y'",
+          "existing_destination": false,
+          "exception": "UnicodeEncodeError"
+        },
+        {
+          "value_repr": "'x\\ud800y'",
+          "existing_destination": true,
+          "exception": "UnicodeEncodeError"
+        }
+      ],
+      "verdict": "FAIL"
+    },
+    "offline_correction_not_a_native_candidate": {
+      "cases": 12,
+      "failures": [],
+      "verdict": "PASS"
+    }
+  },
+  "original_on_sha256": "c38d06d79ea6eb493a856e5b10e6ff63c32ac2182946a1cc70d47245e6ecd7ee",
+  "offline_corrected_sha256": "9b47b79cd593d15435eda08c0c60ad86d2dd4c38eded46440fc972ccd3b5e83a",
+  "new_model_calls": 0
+}

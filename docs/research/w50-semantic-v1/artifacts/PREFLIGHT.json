@@ -1,0 +1,14 @@
+{
+  "state": "PASS",
+  "native_turns": 0,
+  "manifest_sha256": "fb5dca214624f0bb90130256af1fb9c1783fb1ad392bfcc3092a05b199179ea6",
+  "metrics": {
+    "binding_bytes_read": 220927838,
+    "binding_stat_operations": 28,
+    "preparation_seconds": 0.0,
+    "review_wait_seconds": 0.0,
+    "native_capture_bytes_read": 0,
+    "history_write_bytes": 0
+  },
+  "seconds": 0.46931762498570606
+}

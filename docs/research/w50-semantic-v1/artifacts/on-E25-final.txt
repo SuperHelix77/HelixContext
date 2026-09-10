@@ -1,0 +1,6 @@
+Implemented `merge_windows` per E13: overlaps merge transitively; adjacency merges only with `merge_touching=True`. Added strict validation raising `ValueError`, preserved exact integers and caller inputs, and returned sorted tuple pairs. Other APIs remain unchanged.
+
+Verification passed:
+
+- Supplied `public_checks.py`: all 3 assertions.
+- 5 additional tests covering validation, precision, empty inputs, and immutability, including 2,222 cases against an independent overlap-graph oracle.

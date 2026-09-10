@@ -1,0 +1,34 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing.md",
+  "checked_at_unix": 1789041718.629374,
+  "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "rates": {
+    "short": [
+      10.0,
+      1.0,
+      12.5,
+      50.0
+    ],
+    "long": [
+      20.0,
+      2.0,
+      25.0,
+      75.0
+    ]
+  },
+  "api_equivalent_scenarios": {
+    "on": {
+      "short": 1.1599,
+      "long": 2.124875
+    },
+    "off": {
+      "short": 2.359346,
+      "long": 4.568467
+    }
+  },
+  "savings_percent": {
+    "short": 50.838071228213245,
+    "long": 53.48822701356932
+  },
+  "scope": "Dated API-equivalent, not included-plan quota or complete project ROI"
+}

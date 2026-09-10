@@ -1,0 +1,349 @@
+{
+  "schema": "helix.mixed-w50-native.v1",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "order": [
+    "on",
+    "off"
+  ],
+  "events": 50,
+  "semantic_checkpoints": [
+    12,
+    25,
+    38,
+    50
+  ],
+  "bindings": {
+    "/Applications/ChatGPT.app/Contents/Resources/codex": {
+      "sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+      "stat": [
+        16777232,
+        84331423,
+        220585024,
+        1788689520593882993,
+        1788689525902065286
+      ],
+      "bytes": 220585024
+    },
+    "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14": {
+      "sha256": "50298e5fa54e018a9950794d4625a82ba7f2b04a6ef272dc4d26f89a2176072b",
+      "stat": [
+        16777232,
+        634678,
+        135696,
+        1759840783000000000,
+        1762359778398878776
+      ],
+      "bytes": 135696
+    },
+    "/Users/mert/.codex/AGENTS.md": {
+      "sha256": "8cf6028e3a0de95df907c96453c296308f46de702b62adb69d3c500f3cab0884",
+      "stat": [
+        16777232,
+        85246596,
+        2246,
+        1788982200461758105,
+        1788982200461866523
+      ],
+      "bytes": 2246
+    },
+    "/Users/mert/.codex/config.toml": {
+      "sha256": "591a3e2f7eaec2ea0b54260735e103a1641edc51d2eede77e7d029583d2c5fba",
+      "stat": [
+        16777232,
+        85882922,
+        33172,
+        1789021823413639060,
+        1789021823413711518
+      ],
+      "bytes": 33172
+    },
+    "/Users/mert/.codex/helix-context/bin/runtime-b09051d7f65fa98b.py": {
+      "sha256": "b09051d7f65fa98bc34cba10084241b117e4facf11738550322f91906b0daddb",
+      "stat": [
+        16777232,
+        84731637,
+        13850,
+        1788950215376170705,
+        1788950299956598258
+      ],
+      "bytes": 13850
+    },
+    "/Users/mert/.codex/skills/helixcontext/SKILL.md": {
+      "sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+      "stat": [
+        16777232,
+        84709767,
+        1695,
+        1788946764487502736,
+        1788949139884147805
+      ],
+      "bytes": 1695
+    },
+    "/Users/mert/.codex/skills/longflow/scripts/codex_mem.py": {
+      "sha256": "5ef0d01d37d355e941d7710adc0fd170df3e609a465f1f5954fb2e6f6751398c",
+      "stat": [
+        16777232,
+        63507611,
+        7278,
+        1784622602946881267,
+        1784622602946881267
+      ],
+      "bytes": 7278
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/PREREG.md": {
+      "sha256": "b528a77bac5a67b98464c959fd58157edf1923c597156de25b11cffecf8d80ef",
+      "stat": [
+        16777232,
+        86330840,
+        6464,
+        1789040838308330058,
+        1789040838308330058
+      ],
+      "bytes": 6464
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/checks.py": {
+      "sha256": "6bd39fa0b1a43b72f53ca6339276a42177264329c22f2b93da8455ac2d247a88",
+      "stat": [
+        16777232,
+        86329982,
+        6175,
+        1789039607731884936,
+        1789039607731884936
+      ],
+      "bytes": 6175
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/driver.py": {
+      "sha256": "eeb583af5b0056798ee64b9b65574397350ff6ba1f4d89568f6c11e6d41a9e60",
+      "stat": [
+        16777232,
+        86341079,
+        15986,
+        1789040838308069809,
+        1789040838308069809
+      ],
+      "bytes": 15986
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/fixture.json": {
+      "sha256": "fae192cd4c271eb7e3bbb93c4aedc0a12e28fad629f03b472347b19c8cb0cf2f",
+      "stat": [
+        16777232,
+        86330874,
+        18133,
+        1789039779503929551,
+        1789039779503929551
+      ],
+      "bytes": 18133
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/planner.py": {
+      "sha256": "3fb8ff8e276e1f6eaf0a9141a4f9e69f00b8f4d308f7577c3b5f5e6ae22cb791",
+      "stat": [
+        16777232,
+        86329980,
+        619,
+        1789039363416870197,
+        1789039363416870197
+      ],
+      "bytes": 619
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/protocol.py": {
+      "sha256": "4ad0fdeed216ffedb107b4d997ff1d44d056123e36a388845cfde7e81249c38b",
+      "stat": [
+        16777232,
+        86329981,
+        4767,
+        1789039607731472105,
+        1789039607731472105
+      ],
+      "bytes": 4767
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/public_checks.py": {
+      "sha256": "034c2731da5725f93e2d7611c725c48a0ea2d63f8d74a6a9075a086e1b89b6dd",
+      "stat": [
+        16777232,
+        86330839,
+        1188,
+        1789039778880134448,
+        1789039778880134448
+      ],
+      "bytes": 1188
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/reference.py": {
+      "sha256": "7e4120f5c148366188eede4a8198c5948115487d745e90f1992b7809e233f841",
+      "stat": [
+        16777232,
+        86330329,
+        1680,
+        1789039607732159475,
+        1789039607732159475
+      ],
+      "bytes": 1680
+    },
+    "/private/tmp/helix-named-plans-20260909/docs/research/w50-semantic-v1/test_driver.py": {
+      "sha256": "ad20e589e6a220c0ad6755664c435923d777232570133182e9b1d66948c06bcf",
+      "stat": [
+        16777232,
+        86341194,
+        5839,
+        1789040772261729397,
+        1789040772261729397
+      ],
+      "bytes": 5839
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/app_server_native.py": {
+      "sha256": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+      "stat": [
+        16777232,
+        84938842,
+        9946,
+        1788967420114117579,
+        1788967420114117579
+      ],
+      "bytes": 9946
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/caller_memory_receipt.py": {
+      "sha256": "ded6a454e23c156290e8ff53a8cc1a0b39d0134134dbfe4a10d0215f3ab4198d",
+      "stat": [
+        16777232,
+        85572713,
+        3691,
+        1788992527853409720,
+        1788992527853409720
+      ],
+      "bytes": 3691
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/caller_registration.py": {
+      "sha256": "f242f5583f1e2b34a16c0acbab0f3bbf4de1a96717dd216616c7ca700bb9e7e6",
+      "stat": [
+        16777232,
+        85402647,
+        1455,
+        1788987019528992287,
+        1788987019528992287
+      ],
+      "bytes": 1455
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/checkpoint_dispatch.py": {
+      "sha256": "23fc38616e821f5f9de461cf6a9a31abd15babb5b4cd81913d832162468261c8",
+      "stat": [
+        16777232,
+        86315113,
+        9919,
+        1789038626944964047,
+        1789038626944964047
+      ],
+      "bytes": 9919
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/config_bound_session.py": {
+      "sha256": "caed4a681f9823d2dcdcc031124da202ba32cf31f9d1d71f455b82819e3a3ff7",
+      "stat": [
+        16777232,
+        85646766,
+        4634,
+        1789000066474242058,
+        1789000066474242058
+      ],
+      "bytes": 4634
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/effort_session.py": {
+      "sha256": "a6a7e3fbbfd254f7f682b6a3c33378a9a937bb525b0e28c9f5002669ada9cb59",
+      "stat": [
+        16777232,
+        85766788,
+        10437,
+        1789014336960580853,
+        1789014336960580853
+      ],
+      "bytes": 10437
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/observed_session.py": {
+      "sha256": "fff1210aaf2f3d21b92cc276b9365a5608d3a67609136d8b698127ee6d690fd0",
+      "stat": [
+        16777232,
+        85557828,
+        8186,
+        1788991876229632372,
+        1788991876229632372
+      ],
+      "bytes": 8186
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/output/raw_receipts.py": {
+      "sha256": "802d90373771f3f76d9b605e29dc92c54bab258ab685522e0b6edfd9fb0b9fd1",
+      "stat": [
+        16777232,
+        85557757,
+        2411,
+        1788991834365919649,
+        1788991834365919649
+      ],
+      "bytes": 2411
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/completion_ledger.py": {
+      "sha256": "f262fb69c3fe8e210972287feae996824f382e5eb152612118dd01c6e24ece75",
+      "stat": [
+        16777232,
+        85444828,
+        5670,
+        1788989818000205637,
+        1788989818000205637
+      ],
+      "bytes": 5670
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/evidence.py": {
+      "sha256": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+      "stat": [
+        16777232,
+        84775861,
+        11194,
+        1788965336618107912,
+        1788965336618107912
+      ],
+      "bytes": 11194
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/mixed_workflow.py": {
+      "sha256": "30d20f4c8462738fa46fde5704498aa51301d1f43714346f5bbd1167d96716cc",
+      "stat": [
+        16777232,
+        86287777,
+        10456,
+        1789038451568614216,
+        1789038451568614216
+      ],
+      "bytes": 10456
+    },
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/workflow_memory.py": {
+      "sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "stat": [
+        16777232,
+        84798835,
+        10027,
+        1788961436911500148,
+        1788961436911500148
+      ],
+      "bytes": 10027
+    }
+  },
+  "initial_source_sha256": "3fb8ff8e276e1f6eaf0a9141a4f9e69f00b8f4d308f7577c3b5f5e6ae22cb791",
+  "initial_protected": {
+    "on": {
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/on/AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/on/.agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/on/history.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/on/answers.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    "off": {
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/off/AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/off/.agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/off/history.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/off/answers.json": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  },
+  "preparation_seconds": 0.1211541669908911,
+  "initial_binding_bytes": 220927838,
+  "limits": [
+    "Large executable contents fully hash-checked at admission and closure; per-event stat identity guard assumes a non-hostile single-writer host.",
+    "Persistent native sessions and exact event delivery; research caller, not pre-inference Codex-app interception.",
+    "Explicit requested source preparation differs by arm; full original source/evidence/tools available in both.",
+    "Mixed W50 is separate from the frozen seven-cell cohort; one pair does not establish general intelligence parity."
+  ]
+}

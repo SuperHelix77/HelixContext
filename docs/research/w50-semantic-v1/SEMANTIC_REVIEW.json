@@ -1,0 +1,34 @@
+{
+  "classification": "OBSERVED finite capability parity FAIL; valid native cost counters do not qualify a failed artifact",
+  "arms": {
+    "off": {
+      "verdict": "PASS",
+      "behavior": "All preregistered checkpoints and both arms native probes pass; independently probes lone-surrogate JSON publication and uses escaped serialization."
+    },
+    "on": {
+      "verdict": "FAIL",
+      "behavior": "Preregistered gates and own tests pass, but control native publication probe fails for lone surrogate strings with absent and existing destinations. UTF-8 write uses ensure_ascii=False; the accepted string cannot be encoded."
+    }
+  },
+  "output_contract": "Four complete normal model-written semantic finals per arm retained unchanged after execution. Candidate46 ACKs caller-owned; control46 ACKs model-written.",
+  "causal_limit": "One matched development pair establishes this artifact/coverage failure, not a general loss of model intelligence or proof that ACK removal caused the missed edge case.",
+  "probe_transfer": "6 original native probe programs x2 stage-matched artifacts:11/12 process runs pass; off-E50 probe on candidate fails2 subcases. Supplemental12-case gate:control12/12;candidate6/12.",
+  "original_grader_gap": "All-string publication domain insufficiently covered. The offline reference also used literal Unicode serialization. Original frozen graders/receipts remain unchanged; supplemental gate is explicitly post-run evidence.",
+  "repair": "Separate private copy with ensure_ascii=True passes supplemental gate. Original measured artifact remains unchanged and FAIL. Zero new inference; no repaired candidate economics claimed.",
+  "economics_gate": "80/80 and capability parity NOT MET. Raw input74.3253% savings/output29.7554% increase; uncached9.9015% saving. Dated short API-equivalent50.8381% lower, but not a qualified capability-preserving saving or quota ratio.",
+  "self_application": "Not admitted. Global config, base instructions, active skill and live semantic execution unchanged. Existing Engine remains active; caller ACK route is scoped to explicit resolved record-only events. No Codex-app interception claim.",
+  "new_native_user_turns": 54,
+  "native_retries": 0,
+  "rows": [
+    {
+      "arm": "on",
+      "native_sha256": "a64e12832cdc0c5a4cc5df9b40001f4874c6f285445bdc0975d74ce28233806a",
+      "checks": "FAIL"
+    },
+    {
+      "arm": "off",
+      "native_sha256": "83245e2579b949d3bc3aa7948c296974f161adbe45b6db2c82a7d99b485083c7",
+      "checks": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "classification": "Exact original native probe programs rerun on both stage-matched artifacts; no new model calls; publication cross-arm failure retained",
+  "rows": [
+    {
+      "origin": "on",
+      "stage": 25,
+      "program": "on-E25-probe.py",
+      "sha256": "f7cd67de5897bb76e2a2b4775b4e2bda17e9d0847d8f835289f592f1ade333ec",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "on-E25-on-off.txt",
+      "source_sha256": "e470c32b8630199afc4ded523e5008fcc2cfcfcf18ec6c3487ae29fcdd35ec51"
+    },
+    {
+      "origin": "on",
+      "stage": 25,
+      "program": "on-E25-probe.py",
+      "sha256": "f7cd67de5897bb76e2a2b4775b4e2bda17e9d0847d8f835289f592f1ade333ec",
+      "tested_arm": "on",
+      "exit_code": 0,
+      "output_file": "on-E25-on-on.txt",
+      "source_sha256": "b083676ba8793b92ca141e06e48234992657d8c60e3a05349424c9bcd72959e7"
+    },
+    {
+      "origin": "on",
+      "stage": 38,
+      "program": "on-E38-probe.py",
+      "sha256": "1f604f434395a956e368960df8dacf27dbdec19d73dadf7cb42fbdddda2ad65c",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "on-E38-on-off.txt",
+      "source_sha256": "423066ddcfa0a8a562cac42cee1cd0b8be07ad053fc26bd85fe4ffdb985147ec"
+    },
+    {
+      "origin": "on",
+      "stage": 38,
+      "program": "on-E38-probe.py",
+      "sha256": "1f604f434395a956e368960df8dacf27dbdec19d73dadf7cb42fbdddda2ad65c",
+      "tested_arm": "on",
+      "exit_code": 0,
+      "output_file": "on-E38-on-on.txt",
+      "source_sha256": "705e2c276143aa3e97b37db4496948d97bbd634e6c31c8bb8e80b82125c4a7c8"
+    },
+    {
+      "origin": "off",
+      "stage": 25,
+      "program": "off-E25-probe.py",
+      "sha256": "3d6e47eef3b01cddfa0e6ce4d812635676c2753d8ca8fbc4d3c7a517f6cd2c60",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "off-E25-on-off.txt",
+      "source_sha256": "e470c32b8630199afc4ded523e5008fcc2cfcfcf18ec6c3487ae29fcdd35ec51"
+    },
+    {
+      "origin": "off",
+      "stage": 25,
+      "program": "off-E25-probe.py",
+      "sha256": "3d6e47eef3b01cddfa0e6ce4d812635676c2753d8ca8fbc4d3c7a517f6cd2c60",
+      "tested_arm": "on",
+      "exit_code": 0,
+      "output_file": "off-E25-on-on.txt",
+      "source_sha256": "b083676ba8793b92ca141e06e48234992657d8c60e3a05349424c9bcd72959e7"
+    },
+    {
+      "origin": "off",
+      "stage": 38,
+      "program": "off-E38-probe.py",
+      "sha256": "4fb1d9e13960be9c8b95e3d0fe5fc89065a388086d915df893887a6525338a98",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "off-E38-on-off.txt",
+      "source_sha256": "423066ddcfa0a8a562cac42cee1cd0b8be07ad053fc26bd85fe4ffdb985147ec"
+    },
+    {
+      "origin": "off",
+      "stage": 38,
+      "program": "off-E38-probe.py",
+      "sha256": "4fb1d9e13960be9c8b95e3d0fe5fc89065a388086d915df893887a6525338a98",
+      "tested_arm": "on",
+      "exit_code": 0,
+      "output_file": "off-E38-on-on.txt",
+      "source_sha256": "705e2c276143aa3e97b37db4496948d97bbd634e6c31c8bb8e80b82125c4a7c8"
+    },
+    {
+      "origin": "on",
+      "stage": 50,
+      "program": "on-E50-probe.py",
+      "sha256": "ef492fbf7429e4f0d70726197ff704c5896a13a4ae48df4fd0c3b49ec0f6ef6b",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "on-E50-on-off.txt",
+      "source_sha256": "248a17b3a6aa306bd265f3895d60f3e4057be642fba491dbab16e6d69e76dcf8"
+    },
+    {
+      "origin": "on",
+      "stage": 50,
+      "program": "on-E50-probe.py",
+      "sha256": "ef492fbf7429e4f0d70726197ff704c5896a13a4ae48df4fd0c3b49ec0f6ef6b",
+      "tested_arm": "on",
+      "exit_code": 0,
+      "output_file": "on-E50-on-on.txt",
+      "source_sha256": "c38d06d79ea6eb493a856e5b10e6ff63c32ac2182946a1cc70d47245e6ecd7ee"
+    },
+    {
+      "origin": "off",
+      "stage": 50,
+      "program": "off-E50-probe.py",
+      "sha256": "2aabe30bffe22a46d712a3029b48668d09c61a77780334b166b3ed4642f62806",
+      "tested_arm": "off",
+      "exit_code": 0,
+      "output_file": "off-E50-on-off.txt",
+      "source_sha256": "248a17b3a6aa306bd265f3895d60f3e4057be642fba491dbab16e6d69e76dcf8"
+    },
+    {
+      "origin": "off",
+      "stage": 50,
+      "program": "off-E50-probe.py",
+      "sha256": "2aabe30bffe22a46d712a3029b48668d09c61a77780334b166b3ed4642f62806",
+      "tested_arm": "on",
+      "exit_code": 1,
+      "output_file": "off-E50-on-on.txt",
+      "source_sha256": "c38d06d79ea6eb493a856e5b10e6ff63c32ac2182946a1cc70d47245e6ecd7ee"
+    }
+  ]
+}

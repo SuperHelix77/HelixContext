@@ -1,0 +1,1 @@
+Additional checks passed: 1144 exhaustive graph-reference cases; 28 invalid-input cases; exact large integers, default adjacency, and output independence.

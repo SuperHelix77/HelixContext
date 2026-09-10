@@ -1,0 +1,11 @@
+Independent oracle: 2222 cases passed
+test_e13_and_transitive_overlap (__main__.MergeWindowsChecks.test_e13_and_transitive_overlap) ... ok
+test_exact_integers_and_empty (__main__.MergeWindowsChecks.test_exact_integers_and_empty) ... ok
+test_exhaustive_against_connected_components (__main__.MergeWindowsChecks.test_exhaustive_against_connected_components) ... ok
+test_input_preservation_and_output_types (__main__.MergeWindowsChecks.test_input_preservation_and_output_types) ... ok
+test_validation (__main__.MergeWindowsChecks.test_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.005s
+
+OK

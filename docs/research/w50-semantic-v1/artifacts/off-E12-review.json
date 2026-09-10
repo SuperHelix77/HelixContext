@@ -1,0 +1,6 @@
+{
+  "answer_sha256": "f6bb9d93fa2b2842585b78ee2cece5c3cfe310d7af980ae597bd8e8eb841f035",
+  "verdict": "PASS",
+  "rationale": "Identifies the incompatible default behavior for adjacent windows and asks which rule applies without choosing one. Source identity gate confirms no premature edit. Same frozen rubric as candidate.",
+  "reviewer": "coordinator visible final and frozen E12 rubric; not hidden reasoning"
+}

@@ -1,0 +1,12 @@
+test_delivered_plan_against_history (__main__.IntegrationChecks.test_delivered_plan_against_history) ... ok
+test_empty_inputs (__main__.IntegrationChecks.test_empty_inputs) ... ok
+test_exact_strings_order_keys_and_no_mutation (__main__.IntegrationChecks.test_exact_strings_order_keys_and_no_mutation) ... ok
+test_invalid_rows_and_missing_fields (__main__.IntegrationChecks.test_invalid_rows_and_missing_fields) ... ok
+test_invalid_windows_and_failure_preserves_inputs (__main__.IntegrationChecks.test_invalid_windows_and_failure_preserves_inputs) ... ok
+test_merge_delegation (__main__.IntegrationChecks.test_merge_delegation) ... ok
+test_merge_regression (__main__.IntegrationChecks.test_merge_regression) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.001s
+
+OK

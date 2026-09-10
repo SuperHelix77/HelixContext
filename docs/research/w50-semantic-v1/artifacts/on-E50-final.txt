@@ -1,0 +1,5 @@
+Implemented transactional `write_plan`: validates first, writes and syncs a sibling temporary file, then atomically replaces the destination. Failures propagate and temporary files are cleaned up. Merge/build behavior is unchanged.
+
+All supplied checks and 7 additional tests passed, covering invalid batches, exact values, unchanged inputs, atomic replacement, and injected I/O failures.
+
+Limits: power-loss durability and concurrent-writer coordination are not guaranteed.

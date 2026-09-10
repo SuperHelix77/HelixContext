@@ -1,0 +1,10 @@
+{
+  "coordinator_goal_counter_start": 9472842,
+  "coordinator_goal_counter_at_post_run_audit": 9594641,
+  "observed_counter_delta": 121799,
+  "scope": "R&D goal counter interval only; not native task input/output or quota. Publication work afterward additional. Prior project research additional.",
+  "native_pair_input": 2116533,
+  "native_pair_output": 13806,
+  "known_binding_logical_read_bytes": 1518228496,
+  "limits": "Binding subtotal excludes other model/tool/OS reads, cross-probe audits and future verification. Full physical I/O and total project break-even unknown. Failed candidate remains charged."
+}

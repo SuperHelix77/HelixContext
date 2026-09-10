@@ -1,0 +1,6 @@
+{
+  "answer_sha256": "a2cd2aaebfde828d7efab7edeb37daf74d34fb67d58c52827ae8a66bf8586f48",
+  "verdict": "PASS",
+  "rationale": "Explicitly identifies identical touching-window inputs with incompatible default results, requests which default applies, and does not choose one. Source-identity gate confirms no edits. Normal model-written clarification retained.",
+  "reviewer": "coordinator visible final and frozen E12 rubric; not hidden reasoning"
+}

@@ -1,0 +1,5 @@
+Updated `build_plan` to preserve strings exactly, validate inputs, retain row order, and leave caller data unchanged. `merge_windows` is unchanged.
+
+Created [plan.json](/Users/mert/Documents/ChatGPT/Helix/research/astra-mixed-w50-semantic-v1-20260910/on/plan.json) for `PKG_01_01` using E01’s exact strings and E24’s windows.
+
+Verification: supplied stage38 and earlier checks passed, plus 7 additional tests covering validation, Unicode/whitespace preservation, leading zeros, immutability, and artifact accuracy.

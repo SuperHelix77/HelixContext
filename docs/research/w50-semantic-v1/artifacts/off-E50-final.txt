@@ -1,0 +1,5 @@
+Updated `write_plan` to validate all rows first, write and sync a temporary file beside the destination, then atomically replace it. Failures propagate, temporary files are cleaned up, and inputs remain unchanged.
+
+All supplied checks and 4 additional tests passed, covering invalid input, exact JSON round trips, injected failures, and atomic replacement.
+
+Limit: crash durability of the directory entry is not guaranteed; the parent directory is not synced.

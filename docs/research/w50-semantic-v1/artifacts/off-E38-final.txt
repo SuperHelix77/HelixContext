@@ -1,0 +1,5 @@
+Updated `build_plan` to preserve exact strings, validate rows with `ValueError`, maintain row order, and avoid input mutation. `merge_windows` remains unchanged.
+
+Created `plan.json` for `PKG_01_01` using its exact E01 strings and E24 windows.
+
+Passed supplied stage38 and earlier checks, 4 additional valid cases, 42 invalid cases, and exact-source verification of `plan.json`.

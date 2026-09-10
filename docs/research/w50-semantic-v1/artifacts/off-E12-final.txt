@@ -1,0 +1,3 @@
+The examples conflict on whether touching windows merge: A merges intervals that share an endpoint; B keeps them separate. Both cannot be the default.
+
+Should `merge_windows` merge touching intervals (A), or merge only strictly overlapping intervals (B)?
