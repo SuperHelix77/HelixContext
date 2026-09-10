@@ -1,0 +1,15 @@
+{
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "native_effective_effort": "xhigh",
+  "turn_start_requests": 0,
+  "model_calls": 0,
+  "dynamic_tool_registration": "accepted by native thread/start",
+  "tool_execution": "UNTESTED_NATIVE",
+  "state": "closed",
+  "native_thread_id": "01a089bc-f668-7332-bc54-eb48af135d41",
+  "config_unchanged": true,
+  "requests_sha256": "8a121a179cc4928d0fb346b465859c4f788c76215fbb9552f8cb51b844ba83f0",
+  "reply_sha256": "58e83e92ed12a807bf16c570984ca36dda3eaa08deee1230e7ee20e7abe146fd",
+  "scope": "Protocol registration only; no economic/capability or production claim"
+}

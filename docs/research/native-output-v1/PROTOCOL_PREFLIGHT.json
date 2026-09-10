@@ -1,0 +1,12 @@
+{
+  "source": "Installed codex app-server generate-json-schema --experimental; no model call",
+  "official_docs": "https://learn.chatgpt.com/docs/app-server",
+  "schemas": {
+    "DynamicToolCallParams.json": "401bba20cfbd95762bef0467d840430c46be53369093ad9f26425ba757e34efc",
+    "DynamicToolCallResponse.json": "abb082cad67f11fcc98ba75f2eff75d7d1723af0c657655329b83ff160451a02",
+    "v2/ThreadStartParams.json": "25f490368ec6df52a2a3b82a5469d2413307eb93439121b309f415b5648eee7a"
+  },
+  "cli_sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "offline_checks": "16 passed: effort, mismatch, native-tool binding/duplicate/approval rejection, and publication scope",
+  "status": "Native xhigh/tool registration accepted; actual model tool invocation not yet tested"
+}

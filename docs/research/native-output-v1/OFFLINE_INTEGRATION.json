@@ -1,0 +1,17 @@
+{
+  "actual_fixture_tool_execution": "PASS",
+  "public_tests": 23,
+  "independent_cases": 94,
+  "publication_scope": "PASS",
+  "reference_byte_exact": true,
+  "model_calls": 0,
+  "store_io": {
+    "object_bytes_read": 42782,
+    "object_bytes_written": 24631,
+    "object_bytes_hashed": 67413,
+    "object_read_operations": 6,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  }
+}
