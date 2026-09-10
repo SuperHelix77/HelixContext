@@ -1,0 +1,131 @@
+{
+  "classification": "Static syntax census, not a safe transformation or native-token allocation. Imports may themselves be required. Concatenated token counts are not strictly additive across original boundaries.",
+  "encoding": "o200k_base",
+  "sources": [
+    {
+      "file": "off-E25-probe.py",
+      "sha256": "3d6e47eef3b01cddfa0e6ce4d812635676c2753d8ca8fbc4d3c7a517f6cd2c60",
+      "full_source_proxy_tokens": 739,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 20,
+      "selected_source_lines": [
+        "from copy import deepcopy",
+        "from itertools import combinations, combinations_with_replacement",
+        "from planner import merge_windows"
+      ],
+      "test_methods": 0,
+      "assert_method_call_sites": 0
+    },
+    {
+      "file": "off-E38-probe.py",
+      "sha256": "4fb1d9e13960be9c8b95e3d0fe5fc89065a388086d915df893887a6525338a98",
+      "full_source_proxy_tokens": 606,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 13,
+      "selected_source_lines": [
+        "from copy import deepcopy",
+        "from planner import build_plan, merge_windows"
+      ],
+      "test_methods": 0,
+      "assert_method_call_sites": 0
+    },
+    {
+      "file": "off-E50-probe.py",
+      "sha256": "2aabe30bffe22a46d712a3029b48668d09c61a77780334b166b3ed4642f62806",
+      "full_source_proxy_tokens": 980,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 93,
+      "selected_source_lines": [
+        "import json",
+        "import os",
+        "import tempfile",
+        "import unittest",
+        "from copy import deepcopy",
+        "from pathlib import Path",
+        "from unittest.mock import patch",
+        "import planner",
+        "if __name__ == '__main__':\n    unittest.main()",
+        "class WritePlanTests(unittest.TestCase):",
+        "    def test_invalid_batches_preserve_destination(self):",
+        "    def test_success_round_trip(self):",
+        "    def test_failures_propagate_and_clean_up(self):",
+        "    def test_complete_same_directory_atomic_replacement(self):"
+      ],
+      "test_methods": 4,
+      "assert_method_call_sites": 20
+    },
+    {
+      "file": "on-E25-probe.py",
+      "sha256": "f7cd67de5897bb76e2a2b4775b4e2bda17e9d0847d8f835289f592f1ade333ec",
+      "full_source_proxy_tokens": 981,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 82,
+      "selected_source_lines": [
+        "import copy",
+        "import itertools",
+        "import unittest",
+        "from planner import merge_windows",
+        "unittest.main(verbosity=2)",
+        "class MergeWindowsChecks(unittest.TestCase):",
+        "    def test_e13_and_transitive_overlap(self):",
+        "    def test_validation(self):",
+        "    def test_exact_integers_and_empty(self):",
+        "    def test_input_preservation_and_output_types(self):",
+        "    def test_exhaustive_against_connected_components(self):"
+      ],
+      "test_methods": 5,
+      "assert_method_call_sites": 18
+    },
+    {
+      "file": "on-E38-probe.py",
+      "sha256": "1f604f434395a956e368960df8dacf27dbdec19d73dadf7cb42fbdddda2ad65c",
+      "full_source_proxy_tokens": 1099,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 114,
+      "selected_source_lines": [
+        "import copy",
+        "import json",
+        "import unittest",
+        "from pathlib import Path",
+        "from unittest.mock import patch",
+        "from planner import build_plan, merge_windows",
+        "unittest.main(verbosity=2)",
+        "class IntegrationChecks(unittest.TestCase):",
+        "    def test_exact_strings_order_keys_and_no_mutation(self):",
+        "    def test_empty_inputs(self):",
+        "    def test_invalid_rows_and_missing_fields(self):",
+        "    def test_invalid_windows_and_failure_preserves_inputs(self):",
+        "    def test_merge_delegation(self):",
+        "    def test_merge_regression(self):",
+        "    def test_delivered_plan_against_history(self):"
+      ],
+      "test_methods": 7,
+      "assert_method_call_sites": 28
+    },
+    {
+      "file": "on-E50-probe.py",
+      "sha256": "ef492fbf7429e4f0d70726197ff704c5896a13a4ae48df4fd0c3b49ec0f6ef6b",
+      "full_source_proxy_tokens": 1257,
+      "all_imports_test_headers_entrypoint_proxy_tokens": 130,
+      "selected_source_lines": [
+        "import copy",
+        "import json",
+        "import os",
+        "from pathlib import Path",
+        "import tempfile",
+        "import unittest",
+        "from unittest.mock import patch",
+        "import planner",
+        "if __name__ == '__main__':\n    unittest.main()",
+        "class WritePlanTests(unittest.TestCase):",
+        "    def test_invalid_batches_preserve_existing_and_absent_destinations(self):",
+        "    def test_success_preserves_exact_values_and_inputs(self):",
+        "    def test_empty_plan(self):",
+        "    def test_publication_uses_complete_closed_sibling_file(self):",
+        "    def test_io_failures_propagate_and_clean_up(self):",
+        "    def test_real_replace_failure_preserves_directory(self):",
+        "    def test_missing_parent_failure(self):"
+      ],
+      "test_methods": 7,
+      "assert_method_call_sites": 27
+    }
+  ],
+  "candidate_source_tokens": 3337,
+  "candidate_selected_syntax_tokens": 326,
+  "new_model_calls": 0
+}

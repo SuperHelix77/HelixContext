@@ -1,0 +1,30 @@
+{
+  "local_skill": {
+    "path": "~/.codex/skills/nellavio/SKILL.md",
+    "sha256": "fb73e3328442056168c651752ee63f88b63921ba675a911b40e64692e03c25c7",
+    "bytes": 2296,
+    "o200k_proxy_tokens": 546
+  },
+  "native_evidence": {
+    "off": {
+      "sha256": "da6226d1614df293f5f211bc4a48666573290bbbca9e8130e62fb216eee2dc5f",
+      "input": 1684136,
+      "output": 6009,
+      "reported_reasoning": 612
+    },
+    "on": {
+      "sha256": "8ff96c0b8c9bf8555ea33ee564961a77a3ec686eb6151c21bb4f90924a6866f2",
+      "input": 432397,
+      "output": 7797,
+      "reported_reasoning": 1137
+    }
+  },
+  "conditional_counterfactual": {
+    "assumption": "Remove all candidate reported reasoning tokens for free, hold every other output token and control cost fixed; not feasible or capability-preserving claim.",
+    "candidate_remaining_output": 6660,
+    "saving_vs_control": -0.10833749375936086,
+    "reported_reasoning_fraction": 0.1458253174297807,
+    "eighty_percent_output_budget": 1201.8
+  },
+  "new_native_calls": 0
+}

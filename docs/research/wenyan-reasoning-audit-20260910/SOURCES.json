@@ -1,0 +1,41 @@
+{
+  "upstream_commit": "15581d14007fd01fb3f132016741962f34936ca2",
+  "sources": [
+    {
+      "path": "skills/caveman/SKILL.md",
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/15581d14007fd01fb3f132016741962f34936ca2/skills/caveman/SKILL.md",
+      "bytes": 7022,
+      "sha256": "c4d7354b4b063d54601fcdd5097a5b1713d1a1a2e386ac39efa438aa1ffef8ce"
+    },
+    {
+      "path": "benchmarks/run.py",
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/15581d14007fd01fb3f132016741962f34936ca2/benchmarks/run.py",
+      "bytes": 13091,
+      "sha256": "33fe5b6a2968d1e7615ebb80936a06002f6c8cd9f599661a42c81349fbbe27a3"
+    },
+    {
+      "path": "benchmarks/prompts.json",
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/15581d14007fd01fb3f132016741962f34936ca2/benchmarks/prompts.json",
+      "bytes": 2676,
+      "sha256": "773e557f9187363c44e7e5aae2d27268720bcd8772865e119825078b06da93d7"
+    },
+    {
+      "path": "docs/technical/testing-and-benchmarks.md",
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/15581d14007fd01fb3f132016741962f34936ca2/docs/technical/testing-and-benchmarks.md",
+      "bytes": 4552,
+      "sha256": "eddce0ab4ee0b332c7d6227560f4fe5974e09597312ab9172a7724bbbd057d45"
+    },
+    {
+      "path": "proxy/providers/openai/reasoning_effort.go",
+      "url": "https://raw.githubusercontent.com/JuliusBrussee/caveman/15581d14007fd01fb3f132016741962f34936ca2/proxy/providers/openai/reasoning_effort.go",
+      "bytes": 8013,
+      "sha256": "0df41ab7e874b010fe967f261e23c79d7f28ad41d2fc1d3e41bdbfd5c1e7a8c9"
+    },
+    {
+      "path": "official/reasoning.md",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning.md",
+      "bytes": 70155,
+      "sha256": "24fea701de256cde7aa544bd0aac5b387bae06d6f8e68b5b6ed168a01a6d49bd"
+    }
+  ]
+}

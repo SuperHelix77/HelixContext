@@ -1,0 +1,94 @@
+{
+  "classification": "OBSERVED offline tokenizer counts of public examples; no native reasoning measurement or proven semantic equivalence",
+  "encoding": "o200k_base",
+  "examples": [
+    {
+      "topic": "Why React component re-render?",
+      "mode": "lite",
+      "text": "Your component re-renders because you create a new object reference each render. Wrap it in `useMemo`.",
+      "characters": 102,
+      "bytes": 102,
+      "o200k_proxy_tokens": 22
+    },
+    {
+      "topic": "Why React component re-render?",
+      "mode": "full",
+      "text": "New object ref each render. Inline object prop = new ref = re-render. Wrap in `useMemo`.",
+      "characters": 88,
+      "bytes": 88,
+      "o200k_proxy_tokens": 22
+    },
+    {
+      "topic": "Why React component re-render?",
+      "mode": "ultra",
+      "text": "Inline obj prop, new ref, re-render. `useMemo`.",
+      "characters": 47,
+      "bytes": 47,
+      "o200k_proxy_tokens": 14
+    },
+    {
+      "topic": "Why React component re-render?",
+      "mode": "wenyan-lite",
+      "text": "組件頻重繪，以每繪新生對象參照故。以 useMemo 包之。",
+      "characters": 30,
+      "bytes": 72,
+      "o200k_proxy_tokens": 24
+    },
+    {
+      "topic": "Why React component re-render?",
+      "mode": "wenyan-full",
+      "text": "每繪新生對象參照，故重繪；以 useMemo 包之則免。",
+      "characters": 28,
+      "bytes": 66,
+      "o200k_proxy_tokens": 23
+    },
+    {
+      "topic": "Why React component re-render?",
+      "mode": "wenyan-ultra",
+      "text": "新參照則重繪。useMemo 包之。",
+      "characters": 18,
+      "bytes": 38,
+      "o200k_proxy_tokens": 13
+    },
+    {
+      "topic": "Explain database connection pooling.",
+      "mode": "lite",
+      "text": "Connection pooling reuses open connections instead of creating new ones per request. Avoids repeated handshake overhead.",
+      "characters": 120,
+      "bytes": 120,
+      "o200k_proxy_tokens": 20
+    },
+    {
+      "topic": "Explain database connection pooling.",
+      "mode": "full",
+      "text": "Pool reuse open DB connections. No new connection per request. Skip handshake overhead.",
+      "characters": 87,
+      "bytes": 87,
+      "o200k_proxy_tokens": 16
+    },
+    {
+      "topic": "Explain database connection pooling.",
+      "mode": "ultra",
+      "text": "Pool reuse open DB connections. No per-request handshake.",
+      "characters": 57,
+      "bytes": 57,
+      "o200k_proxy_tokens": 11
+    },
+    {
+      "topic": "Explain database connection pooling.",
+      "mode": "wenyan-full",
+      "text": "池蓄已開之連，不逐請而新開，省握手之費。",
+      "characters": 20,
+      "bytes": 60,
+      "o200k_proxy_tokens": 20
+    },
+    {
+      "topic": "Explain database connection pooling.",
+      "mode": "wenyan-ultra",
+      "text": "池蓄連，免逐請新開，省握手。",
+      "characters": 14,
+      "bytes": 42,
+      "o200k_proxy_tokens": 15
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_sha256": "e5f798fd1343c539f01fedea0e8a84a43c080fcca4615c80eb04a5edab4f7d0a",
+  "inspected_fields": {
+    "TurnStartParams": [
+      "additionalContext",
+      "approvalPolicy",
+      "approvalsReviewer",
+      "clientUserMessageId",
+      "collaborationMode",
+      "cwd",
+      "cyberAccessProgram",
+      "effort",
+      "environments",
+      "input",
+      "model",
+      "multiAgentMode",
+      "outputSchema",
+      "permissions",
+      "personality",
+      "responsesapiClientMetadata",
+      "runtimeWorkspaceRoots",
+      "sandboxPolicy",
+      "serviceTier",
+      "serviceTierForTurn",
+      "summary",
+      "threadId",
+      "toolOutput",
+      "turnTrigger"
+    ],
+    "ThreadSettingsUpdateParams": [
+      "approvalPolicy",
+      "approvalsReviewer",
+      "collaborationMode",
+      "cwd",
+      "effort",
+      "model",
+      "multiAgentMode",
+      "permissions",
+      "personality",
+      "sandboxPolicy",
+      "serviceTier",
+      "summary",
+      "threadId"
+    ],
+    "TurnSettingsUpdateParams": [
+      "approvalsReviewer",
+      "effort",
+      "model",
+      "serviceTier",
+      "summary",
+      "threadId",
+      "turnId"
+    ]
+  },
+  "scope": "Inspected installed-client schema snapshot, no claim about all possible server capabilities.",
+  "reasoning_effort_schema": {
+    "description": "A non-empty reasoning effort value advertised by the model.",
+    "minLength": 1,
+    "type": "string"
+  }
+}
