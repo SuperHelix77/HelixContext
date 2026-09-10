@@ -1,0 +1,33 @@
+{
+  "item": {
+    "aggregatedOutput": "HELIX ENGINE / delivery 0c11bd0dd32f368336560b63771062808c627f9b1688238f27a7400200b6e90f\nACK E01\n",
+    "command": "/bin/zsh -lc \"/usr/bin/printf '%s' 'HELIX ENGINE / delivery 0c11bd0dd32f368336560b63771062808c627f9b1688238f27a7400200b6e90f\nACK E01\n'\"",
+    "commandActions": [
+      {
+        "command": "/usr/bin/printf '%s' 'HELIX ENGINE / delivery 0c11bd0dd32f368336560b63771062808c627f9b1688238f27a7400200b6e90f\nACK E01\n'",
+        "type": "unknown"
+      }
+    ],
+    "cwd": "/Users/mert/Documents/ChatGPT/Helix/research/display-outbox-v1-20260910/workspace",
+    "durationMs": 10,
+    "exitCode": 0,
+    "id": "66c8509a-ff86-414b-a922-f9996b68524b",
+    "pluginId": null,
+    "processId": null,
+    "scriptPath": null,
+    "source": "userShell",
+    "status": "completed",
+    "type": "commandExecution"
+  },
+  "native_shell": [
+    "/bin/zsh",
+    "-lc"
+  ],
+  "phase": "DELIVERED",
+  "readback_version": "helix.codex-display-readback.v2",
+  "request_hash": "8aa1f4e9d32e78c66cacafa69ccf814dac130a942f39274089e418e5e09925f3",
+  "schema": "helix.display-outbox.v1",
+  "scope": "Native Engine display; task completion and semantic correctness are separate",
+  "thread_id": "01a0895c-1e21-79d1-a6a5-e76636a178f9",
+  "turn_id": "01a0895c-1e4a-76d1-9753-f29a882b3400"
+}

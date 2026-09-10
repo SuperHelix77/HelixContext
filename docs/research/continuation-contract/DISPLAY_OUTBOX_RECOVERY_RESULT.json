@@ -1,0 +1,73 @@
+{
+  "classification": "OBSERVED real native delivery/process restart plus offline recovery; not model performance or automatic app integration",
+  "initial_trial": "FAILED_RETAINED: exact readback rejected the unbound native shell wrapper",
+  "initial_result_sha256": "94bfbf863f2e958658fc9bace89aa969c8aa1d8514c779fa0fad0c2d76f077ba",
+  "initial_seconds": 0.5009953330154531,
+  "initial_object_io": {
+    "object_bytes_read": 1467,
+    "object_bytes_written": 489,
+    "object_bytes_hashed": 1956,
+    "object_read_operations": 3,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "native_shell_submissions": 1,
+  "native_turn_start_calls": 0,
+  "loopback_provider_requests": 0,
+  "reported_model_tokens": null,
+  "original_artifacts_mutated": false,
+  "additional_native_submissions_for_recovery": 0,
+  "native_cli_sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "native_wire_sha256": {
+    "first-wire.json": "4a7ca9fbe366c0eb3b503532bd5a8ad9d3e4210463be013ef7d88b185d96aad5",
+    "restart-wire.json": "872754f50874c686d80b772898cd7132f0979a5f2536ccbbc44da1421fe01e1f"
+  },
+  "readback_shell_binding": [
+    "/bin/zsh",
+    "-lc"
+  ],
+  "delivery": {
+    "state": "DELIVERED",
+    "submit": false,
+    "evidence": "ca3500bea99ec2c5bfb466e3de13702ea8641e8744466736566aafa37cc66d7d"
+  },
+  "recovery_object_io": {
+    "object_bytes_read": 6552,
+    "object_bytes_written": 1149,
+    "object_bytes_hashed": 7701,
+    "object_read_operations": 8,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "recovery_copy_logical_bytes": 49641,
+  "recovery_seconds": 0.008510249957907945,
+  "checks": {
+    "one_native_command": "PASS",
+    "lost_local_ack_no_resubmit": "PASS",
+    "process_restart": "PASS",
+    "exact_native_readback": "PASS",
+    "duplicate_after_recovery_no_resubmit": "PASS",
+    "zero_model_requests": "PASS",
+    "production_config_unchanged": "PASS"
+  },
+  "source_after_sha256": "8850d56b13024330a83ce68219b7c7b058b2fbe7af4bcb05ee4f369296089bbb",
+  "source_before_sha256": "445c3fa391862d16d703f03fcd7e609c9bf4fb5c8bcdbc1bedfbc5e8aabd8953",
+  "auditor_sha256": "46038f9467fc559103bcb7d531fba7517148b8a48267b2509f9b7daa238d665c",
+  "artifacts": {
+    "request.json": "8aa1f4e9d32e78c66cacafa69ccf814dac130a942f39274089e418e5e09925f3",
+    "before_delivery_outbox.py": "445c3fa391862d16d703f03fcd7e609c9bf4fb5c8bcdbc1bedfbc5e8aabd8953",
+    "reconciled-receipt.json": "9cbe9ad858ddac720cd20220bae0323964409d733236f38f0ac17656b2bf2ae3",
+    "native-readback.json": "7cba65696336140a4655a5e22e62839fb400c6edbca7854dd20aefcd60cb6421"
+  },
+  "limits": [
+    "Lost local acknowledgement simulated after the real command completed; server process actually restarted.",
+    "The initial failed trial is retained; recovery used a cloned store and no live app-server.",
+    "SQLite outbox integrity and truthful caller permission/current-state assertions are assumed; no hostile-host or rollback guarantee.",
+    "Missing ambiguous native delivery is not automatically retried; an idempotent target or explicit reconciliation is required.",
+    "Idle and authority preflight are not an atomic desktop submission lock.",
+    "Display evidence is not semantic correctness, successful task effects or assistant authorship.",
+    "Physical I/O, energy and complete parent research costs remain separately unmeasured."
+  ]
+}
