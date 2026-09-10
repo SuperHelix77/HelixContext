@@ -1,0 +1,190 @@
+{
+  "source": "http://127.0.0.1:8769/api/state",
+  "cohort": {
+    "id": "luna-varied-coding-v3",
+    "name": "Luna / corrected coding: 75/75 NOT qualified",
+    "model": "gpt-5.6-luna",
+    "effort": "high",
+    "pairs": [
+      "luna-varied-coding-v3-intervals",
+      "luna-varied-coding-v3-dependencies",
+      "luna-varied-coding-v3-transactions"
+    ],
+    "classification": "N=3 known tasks; configuration-audit amendment; recovered original turn, five new arms. 1/3 meets 75/75; 0/3 meets 80/80.",
+    "n_pairs": 3,
+    "registered_pairs": 3,
+    "median_savings_percent": {
+      "input_tokens": 86.28650677108827,
+      "output_tokens": 64.04494382022472,
+      "uncached_input_tokens": 60.069388413748584
+    },
+    "ratio_of_totals_savings_percent": {
+      "input_tokens": 86.25052130204789,
+      "output_tokens": 66.62340726757905,
+      "uncached_input_tokens": 54.77121566695406
+    },
+    "finite_check_passes": 3,
+    "finite_check_failures": 0,
+    "finite_check_unknown": 0,
+    "samples": [
+      {
+        "id": "luna-varied-coding-v3-intervals",
+        "control": {
+          "input_tokens": 78165,
+          "output_tokens": 2047,
+          "uncached_input_tokens": 12629
+        },
+        "candidate": {
+          "input_tokens": 16664,
+          "output_tokens": 736,
+          "uncached_input_tokens": 9752
+        },
+        "savings_percent": {
+          "input_tokens": 78.68099533039083,
+          "output_tokens": 64.04494382022472,
+          "uncached_input_tokens": 22.780901100641383
+        },
+        "finite_checks": true
+      },
+      {
+        "id": "luna-varied-coding-v3-dependencies",
+        "control": {
+          "input_tokens": 163727,
+          "output_tokens": 2907,
+          "uncached_input_tokens": 27535
+        },
+        "candidate": {
+          "input_tokens": 16639,
+          "output_tokens": 672,
+          "uncached_input_tokens": 9727
+        },
+        "savings_percent": {
+          "input_tokens": 89.83735120047396,
+          "output_tokens": 76.88338493292053,
+          "uncached_input_tokens": 64.67405120755403
+        },
+        "finite_checks": true
+      },
+      {
+        "id": "luna-varied-coding-v3-transactions",
+        "control": {
+          "input_tokens": 122580,
+          "output_tokens": 3522,
+          "uncached_input_tokens": 24788
+        },
+        "candidate": {
+          "input_tokens": 16810,
+          "output_tokens": 1421,
+          "uncached_input_tokens": 9898
+        },
+        "savings_percent": {
+          "input_tokens": 86.28650677108827,
+          "output_tokens": 59.65360590573538,
+          "uncached_input_tokens": 60.069388413748584
+        },
+        "finite_checks": true
+      }
+    ],
+    "excluded": [],
+    "release_qualification": "NOT_ESTABLISHED",
+    "uncertainty": "Descriptive cohort; no confidence interval or universal parity claim",
+    "tariff_median_savings_percent": {
+      "short": 65.68137423876824,
+      "long": 66.31301050059307
+    }
+  },
+  "recovered_thread_states": [
+    {
+      "id": "luna-varied-coding-v3-intervals-on",
+      "state": "COMPLETED",
+      "source_hash": "870f31a1834977a7d07d541a623b9e3dc5216dc8b7fb2f8d409a4809eeaa0f5c",
+      "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06"
+    },
+    {
+      "id": "luna-varied-coding-v3-original-guard-stop-on",
+      "state": "FAILED",
+      "source_hash": "0461edb9eb7ec000adbe975d3981464c1c455a1810ec8ceb8457a15d3b91160e",
+      "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06"
+    }
+  ],
+  "registered_totals": {
+    "unique_threads": 77,
+    "aliases_removed": 14,
+    "conflicting_threads": 0,
+    "usage": {
+      "input_tokens": 6979544,
+      "output_tokens": 97816,
+      "uncached_input_tokens": 1200728
+    },
+    "scope": "Registered, verified native threads counted once; parent chat and absent receipts excluded"
+  },
+  "routine_inference": 0,
+  "pricing_snapshot": {
+    "source": "https://developers.openai.com/api/docs/pricing.md",
+    "checked_at": 1789002156.658983,
+    "expires_at": 1789002456.658983,
+    "sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "fresh": true,
+    "rates": {
+      "gpt-6-astra": {
+        "short": [
+          10.0,
+          1.0,
+          12.5,
+          50.0
+        ],
+        "long": [
+          20.0,
+          2.0,
+          25.0,
+          75.0
+        ]
+      },
+      "gpt-5.6-sol": {
+        "short": [
+          4.0,
+          0.4,
+          5.0,
+          20.0
+        ],
+        "long": [
+          8.0,
+          0.8,
+          10.0,
+          30.0
+        ]
+      },
+      "gpt-5.6-terra": {
+        "short": [
+          2.0,
+          0.2,
+          2.5,
+          12.0
+        ],
+        "long": [
+          4.0,
+          0.4,
+          5.0,
+          18.0
+        ]
+      },
+      "gpt-5.6-luna": {
+        "short": [
+          0.2,
+          0.02,
+          0.25,
+          1.2
+        ],
+        "long": [
+          0.4,
+          0.04,
+          0.5,
+          1.8
+        ]
+      }
+    },
+    "error": null,
+    "refresh_seconds": 120,
+    "ttl_seconds": 300
+  }
+}

@@ -6,6 +6,13 @@ Research toward the **maximum empirically safe compression frontier**, with capa
 
 ## Current Engine milestone — 2026-09-10
 
+**Latest broader Luna coding qualification: output target failed.** The corrected
+three-task paired continuation measured median **86.29% input / 64.04% output /
+60.07% uncached-input savings**, with all finite checks passing. Only one pair
+clears 75/75. Earlier higher suite medians were confounded by ancestor Git scope;
+all attempts remain charged. The [report and exact reproducible artifacts](docs/research/continuation-contract/LUNA_VARIED_CODING_REPORT_20260910.md)
+describe the configuration-audit amendment and release limits.
+
 A fresh Luna High coding pair with the frozen delegation kernel plus caller-owned preparation/checks/publication measured **86.17% input / 79.06% output / 62.04% uncached-input savings**. Both arms passed the original tests and finite independent oracle. This freezes a **bounded 75/75 development candidate**, not a general Luna release; 80/80 still fails on output. The exact portable kernel and caller requirements are [packaged here](engine/profiles/luna-coding-v1-75/README.md), and [receipts, failed earlier candidates, costs and limits are documented](docs/research/continuation-contract/LUNA_CODING_COMPOSITION_RESULT.md).
 
 The live HUD now separates model/task-family medians from Engine-only exact retrieval, deduplicates reused receipts, and refreshes official tariff scenarios. Routine monitoring invokes no model. Broader Luna qualification, Sol/Astra qualification, normal Codex-app delivery and the full 80/80 objective remain open.

@@ -1,0 +1,44 @@
+{
+  "classification": "Same planned three pairs with explicit configuration-audit amendment; first candidate preserved, five new arms; not untouched preregistration",
+  "source_audit_sha256": "4e746816325181518cfe9c5f0903e4e2537d494bad1f4b9c7cbd24483672ed9d",
+  "original_status_sha256": "0461edb9eb7ec000adbe975d3981464c1c455a1810ec8ceb8457a15d3b91160e",
+  "derived_status_sha256": "870f31a1834977a7d07d541a623b9e3dc5216dc8b7fb2f8d409a4809eeaa0f5c",
+  "rows": [
+    {
+      "case": "intervals",
+      "arm": "on",
+      "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06",
+      "checks": "PASS"
+    },
+    {
+      "case": "intervals",
+      "arm": "off",
+      "native_sha256": "3e5fb9259ef57e89b6c44daba5c8e41c7685db470cf0c3877966cee20d1b4a06",
+      "checks": "PASS"
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "native_sha256": "f90bb76541391ab660a3c7031c29a6bb43406361c8430e563a1538eb34ff5e9f",
+      "checks": "PASS"
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "native_sha256": "40961933826562ad08dc635b08789199494f3e93281b21a8b928ae3f7a20a798",
+      "checks": "PASS"
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "native_sha256": "97ae45d7a856070238ed2acdd63e251eeb37335154630522ada2b80be6d654a8",
+      "checks": "PASS"
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "native_sha256": "317ec8c41aac818c5210d969b3708b7b7c682000acba4b064527acf108d84692",
+      "checks": "PASS"
+    }
+  ]
+}

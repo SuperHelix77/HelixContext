@@ -1,0 +1,67 @@
+{
+  "schema": "helix.varied-coding.artifacts.v1",
+  "files": {
+    "dependencies/source.json": "70499cc9e47dec19f87941eb05a24fe2797063a4dfa1977cf38e6627b658897d",
+    "intervals/source.json": "b70c449ab9f26de59681ffee185ea8964e5e11c149664d2f224c5c38717487d8",
+    "transactions/source.json": "113e6a6f2bccf50caeb2e2b463d910db802230b91d83d89f515a9dbd97a55acb",
+    "transactions/on/test_solution.py": "16429007dddb839ff3d4fb721511247d62098da4bf18ba8f3ac9b95ddb561225",
+    "transactions/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "transactions/on/solution.py": "c99e8926dbc687cdf50c255a064fc9d134a600c9e1c3171074ff269d87ca5e30",
+    "transactions/off/test_solution.py": "16429007dddb839ff3d4fb721511247d62098da4bf18ba8f3ac9b95ddb561225",
+    "transactions/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "transactions/off/solution.py": "ab5e4d2d15360d6db7dfff1cf11e4ff39bfb004e67912fcd8af92ed3df0b62ea",
+    "intervals/on/test_solution.py": "2cacc1807b2da05d41bd8ce483e82822186574d0df5fa90e89c7b592d223fa6d",
+    "intervals/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "intervals/on/solution.py": "91ba4ca89733f834336d68eabc3b061d973f0f8c7941ddef9671c3c42e097219",
+    "intervals/off/test_solution.py": "2cacc1807b2da05d41bd8ce483e82822186574d0df5fa90e89c7b592d223fa6d",
+    "intervals/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "intervals/off/solution.py": "ff55032c5eaf362a08eb7f0c8f1c0418dd6f447e4752dc12df22a4197ebe50c7",
+    "dependencies/on/test_solution.py": "b24983774b891a04e7b45e3f77978c4a62339e1c3766732da3254c5409e42c7b",
+    "dependencies/on/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "dependencies/on/solution.py": "0aa49496ede2494290424c2c939aafdc9433a6f2e9cd540c2e58e9b98b0ab49c",
+    "dependencies/off/test_solution.py": "b24983774b891a04e7b45e3f77978c4a62339e1c3766732da3254c5409e42c7b",
+    "dependencies/off/settings.json": "cb6f29ce9b66eeb097cc5b2784a1add3f847d1c030ba5d8b558587d6a0ab5054",
+    "dependencies/off/solution.py": "95653cec2f575ed8d4183c1c16afcb2f79030de9f8b31c9c18bacd4ec88a2829"
+  },
+  "grader_sha256": "524cf17a7ac31255ff25059fba4b2d919059a2a4d6174175b80164fa56404c20",
+  "paired_audit_sha256": "4e746816325181518cfe9c5f0903e4e2537d494bad1f4b9c7cbd24483672ed9d",
+  "classification": "Same planned three pairs with explicit configuration-audit amendment; first candidate preserved, five new arms; not untouched preregistration",
+  "native_sources": [
+    {
+      "case": "intervals",
+      "arm": "on",
+      "source_sha256": "91ba4ca89733f834336d68eabc3b061d973f0f8c7941ddef9671c3c42e097219",
+      "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06"
+    },
+    {
+      "case": "intervals",
+      "arm": "off",
+      "source_sha256": "ff55032c5eaf362a08eb7f0c8f1c0418dd6f447e4752dc12df22a4197ebe50c7",
+      "native_sha256": "3e5fb9259ef57e89b6c44daba5c8e41c7685db470cf0c3877966cee20d1b4a06"
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "source_sha256": "0aa49496ede2494290424c2c939aafdc9433a6f2e9cd540c2e58e9b98b0ab49c",
+      "native_sha256": "f90bb76541391ab660a3c7031c29a6bb43406361c8430e563a1538eb34ff5e9f"
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "source_sha256": "95653cec2f575ed8d4183c1c16afcb2f79030de9f8b31c9c18bacd4ec88a2829",
+      "native_sha256": "40961933826562ad08dc635b08789199494f3e93281b21a8b928ae3f7a20a798"
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "source_sha256": "ab5e4d2d15360d6db7dfff1cf11e4ff39bfb004e67912fcd8af92ed3df0b62ea",
+      "native_sha256": "97ae45d7a856070238ed2acdd63e251eeb37335154630522ada2b80be6d654a8"
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "source_sha256": "c99e8926dbc687cdf50c255a064fc9d134a600c9e1c3171074ff269d87ca5e30",
+      "native_sha256": "317ec8c41aac818c5210d969b3708b7b7c682000acba4b064527acf108d84692"
+    }
+  ]
+}

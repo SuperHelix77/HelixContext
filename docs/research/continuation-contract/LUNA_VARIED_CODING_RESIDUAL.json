@@ -1,0 +1,49 @@
+{
+  "classification": "Zero-new-call residual diagnosis; ceilings conditional on observed reasoning counts, not universal lower bounds",
+  "rows": [
+    {
+      "case": "intervals",
+      "control_output": 2047,
+      "candidate_output": 736,
+      "candidate_reported_reasoning": 516,
+      "candidate_other_output": 220,
+      "output_budget_75": 511.75,
+      "max_output_saving_if_recorded_reasoning_unchanged_and_other_output_zero_percent": 74.7923790913532,
+      "candidate_segments": 1,
+      "candidate_raw_tools": 0
+    },
+    {
+      "case": "dependencies",
+      "control_output": 2907,
+      "candidate_output": 672,
+      "candidate_reported_reasoning": 370,
+      "candidate_other_output": 302,
+      "output_budget_75": 726.75,
+      "max_output_saving_if_recorded_reasoning_unchanged_and_other_output_zero_percent": 87.27210182318541,
+      "candidate_segments": 1,
+      "candidate_raw_tools": 0
+    },
+    {
+      "case": "transactions",
+      "control_output": 3522,
+      "candidate_output": 1421,
+      "candidate_reported_reasoning": 1034,
+      "candidate_other_output": 387,
+      "output_budget_75": 880.5,
+      "max_output_saving_if_recorded_reasoning_unchanged_and_other_output_zero_percent": 70.64168086314594,
+      "candidate_segments": 1,
+      "candidate_raw_tools": 0
+    }
+  ],
+  "distinct_new_native_streams": 13,
+  "all_attempt_native_usage": {
+    "input_tokens": 1018702,
+    "output_tokens": 27664,
+    "cached_input_tokens": 795392,
+    "reasoning_output_tokens": 13477,
+    "cache_write_input_tokens": 0
+  },
+  "recovery_and_registration_model_calls": 0,
+  "hidden_reasoning_contents_inferred": false,
+  "global_effective_cost": "UNKNOWN: parent research, full physical I/O and local cost conversion excluded"
+}

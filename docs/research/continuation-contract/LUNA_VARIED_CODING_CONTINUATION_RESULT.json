@@ -1,0 +1,238 @@
+{
+  "classification": "Same planned three pairs with explicit configuration-audit amendment; first candidate preserved, five new arms; not untouched preregistration",
+  "manifest_sha256": "3d6d1b400308d1c4fbad4888afc597b2c6d9c6c7088dbce099fcddfe30de4013",
+  "rows": [
+    {
+      "case": "intervals",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16664,
+        "output_tokens": 736,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 516,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "c28b99034ca78f068a71e41a3234e280b2c87f661ca77441bd0c755d09b0bd06",
+      "raw_sha256": "b7bd349d9808b1fee75be8e5d8d99a277e0263d1c7d68522689f4f72f76572a5",
+      "raw_bytes": 66465,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "91ba4ca89733f834336d68eabc3b061d973f0f8c7941ddef9671c3c42e097219",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 15.8180945829954,
+      "original_wrapper_state": "failed",
+      "configuration_audit_amended": true
+    },
+    {
+      "case": "intervals",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 78165,
+        "output_tokens": 2047,
+        "cached_input_tokens": 65536,
+        "reasoning_output_tokens": 972,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "3e5fb9259ef57e89b6c44daba5c8e41c7685db470cf0c3877966cee20d1b4a06",
+      "raw_sha256": "65e96737c74cff6c88fa4f461ccf369b4e26dd0574cf0c3177de397200e80856",
+      "raw_bytes": 108976,
+      "raw_tool_calls": 3,
+      "segments": 4,
+      "turns": 1,
+      "source_sha256": "ff55032c5eaf362a08eb7f0c8f1c0418dd6f447e4752dc12df22a4197ebe50c7",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 602,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 43.38244062499143,
+      "original_wrapper_state": "closed",
+      "configuration_audit_amended": false
+    },
+    {
+      "case": "dependencies",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16639,
+        "output_tokens": 672,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 370,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "f90bb76541391ab660a3c7031c29a6bb43406361c8430e563a1538eb34ff5e9f",
+      "raw_sha256": "e2a5395438c37b6c285df29b7222392655947e10c2c31b740e8877c07616fa68",
+      "raw_bytes": 66619,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "0aa49496ede2494290424c2c939aafdc9433a6f2e9cd540c2e58e9b98b0ab49c",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 14.278223291039467,
+      "original_wrapper_state": "closed",
+      "configuration_audit_amended": false
+    },
+    {
+      "case": "dependencies",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 163727,
+        "output_tokens": 2907,
+        "cached_input_tokens": 136192,
+        "reasoning_output_tokens": 1057,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "40961933826562ad08dc635b08789199494f3e93281b21a8b928ae3f7a20a798",
+      "raw_sha256": "76bf25b9d34b0c4998218c974cf7358869fe36a171e6f275cbeba6a3ba9a051e",
+      "raw_bytes": 151754,
+      "raw_tool_calls": 7,
+      "segments": 8,
+      "turns": 1,
+      "source_sha256": "95653cec2f575ed8d4183c1c16afcb2f79030de9f8b31c9c18bacd4ec88a2829",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 5,
+        "independent_checks": {
+          "valid_or_cycle_cases": 353,
+          "invalid_cases": 9
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 62.75696579203941,
+      "original_wrapper_state": "closed",
+      "configuration_audit_amended": false
+    },
+    {
+      "case": "transactions",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 122580,
+        "output_tokens": 3522,
+        "cached_input_tokens": 97792,
+        "reasoning_output_tokens": 1843,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "97ae45d7a856070238ed2acdd63e251eeb37335154630522ada2b80be6d654a8",
+      "raw_sha256": "a46ff70fa3b590af5fab2e6ec62948ad7e1c08b39743b6ab83c900a4b61ea591",
+      "raw_bytes": 139106,
+      "raw_tool_calls": 5,
+      "segments": 6,
+      "turns": 1,
+      "source_sha256": "ab5e4d2d15360d6db7dfff1cf11e4ff39bfb004e67912fcd8af92ed3df0b62ea",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 73.26024558296194,
+      "original_wrapper_state": "closed",
+      "configuration_audit_amended": false
+    },
+    {
+      "case": "transactions",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 16810,
+        "output_tokens": 1421,
+        "cached_input_tokens": 6912,
+        "reasoning_output_tokens": 1034,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "317ec8c41aac818c5210d969b3708b7b7c682000acba4b064527acf108d84692",
+      "raw_sha256": "84d0ba9c3840a52528f05099c380efa17f99e3c1005335c8d0f904de1df1b672",
+      "raw_bytes": 76145,
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "source_sha256": "c99e8926dbc687cdf50c255a064fc9d134a600c9e1c3171074ff269d87ca5e30",
+      "finite_checks": "PASS",
+      "checks": {
+        "public_tests": 4,
+        "independent_checks": {
+          "valid_cases": 401,
+          "invalid_cases": 15
+        },
+        "finite_checks": "PASS"
+      },
+      "elapsed_seconds": 28.58236854104325,
+      "original_wrapper_state": "closed",
+      "configuration_audit_amended": false
+    }
+  ],
+  "pairs": [
+    {
+      "case": "intervals",
+      "savings_percent": {
+        "input_tokens": 78.68099533039083,
+        "output_tokens": 64.04494382022472,
+        "uncached_input_tokens": 22.780901100641383
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": false,
+      "meets_80_80": false
+    },
+    {
+      "case": "dependencies",
+      "savings_percent": {
+        "input_tokens": 89.83735120047396,
+        "output_tokens": 76.88338493292053,
+        "uncached_input_tokens": 64.67405120755403
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": false
+    },
+    {
+      "case": "transactions",
+      "savings_percent": {
+        "input_tokens": 86.28650677108827,
+        "output_tokens": 59.65360590573538,
+        "uncached_input_tokens": 60.069388413748584
+      },
+      "finite_checks": "PASS",
+      "meets_75_75": false,
+      "meets_80_80": false
+    }
+  ],
+  "median_savings_percent": {
+    "input_tokens": 86.28650677108827,
+    "output_tokens": 64.04494382022472,
+    "uncached_input_tokens": 60.069388413748584
+  },
+  "N": 3,
+  "finite_checks": "PASS",
+  "general_release": false,
+  "limits": [
+    "No general parity proof",
+    "Caller execution outside native workspace sandbox",
+    "One-file publication has no uncooperative-writer isolation",
+    "Two semantic turns is an experiment bound, not a product policy",
+    "Full physical I/O, research and parent-agent cost unmetered",
+    "First candidate has explicit post-hoc registration audit; not untouched preregistration",
+    "V1 scope-confounded results and V2 interruption remain separately charged"
+  ]
+}
