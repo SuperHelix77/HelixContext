@@ -1,25 +1,34 @@
 {
-  "schema": "helix.luna.normal-final.offline-gate.v1",
+  "schema": "helix.luna.normal-final.offline-gate.v2",
   "native_calls": 0,
-  "candidate_switches": {
+  "candidate_binding": {
+    "candidate_base_sha256": "c476dae967c31055bffb26eb1be2c0aeb719634ba80b36407cff65460bc91414",
+    "frozen_profile_base_sha256": "f07e19dbe57d410b23524332acf30c0f19650ab631f9e654897cbf440c61c4c0",
+    "config_sha256": "24a82471b8f1b1b079ead9b4feef8bb3c2869a34998b26882b96d759f27ef47c",
+    "native_model": "gpt-5.6-luna",
+    "effort": "high"
+  },
+  "switches": {
     "reasoning_style": "concise-English-familiar-notation-v1",
     "language_arm": null,
     "caller_preparation": "task-local-memory-profile-skill-registration-v1",
-    "effort": "high",
     "final_renderer": null
   },
-  "exact_recovery": {
-    "records": 2,
-    "sha256": "8980084c9df797f3b647dc357d34a8d2d92bfc022fdbfb171437a735ca1361ce"
+  "serialization": {
+    "wire_bytes": 257,
+    "wire_sha256": "6a2e85060e4e6ffc4a72ebe0e5e61786fb8d97803e9c720975cd069063bc11f6"
   },
-  "hostile_workflow": {
-    "duplicate_delivery": "same receipt",
-    "stale_authority": "withhold"
+  "engine": {
+    "completion_recorded": 1,
+    "duplicate_replay": "same receipt",
+    "hostile_route": "semantic_required",
+    "stale_state": "withhold"
   },
-  "hostile_semantics": {
-    "untrusted_content": "not authority",
-    "normalization": "rejected"
+  "existing_tests": {
+    "exit_code": 0,
+    "stdout": ".......                                                                  [100%]\n7 passed in 0.15s\n",
+    "stderr": ""
   },
-  "final_authorship_gate": "PASS",
-  "state": "OFFLINE_ADMITTED_BEFORE_NATIVE"
+  "final_contract_checker_fixture": "PASS",
+  "state": "OFFLINE_GATE_VALIDATED_NO_NATIVE_CALLS"
 }
