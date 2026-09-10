@@ -75,3 +75,12 @@ shared Helix continuity instructions in the control remain visible. See the
 from these pilots; seven-cell release medians remain incomplete. Before another
 native cohort, bind and describe the control's instruction/continuity boundary;
 an installed-configuration comparator must not be called pristine Codex.
+
+User priority then moved to Astra. A separate two-case XHigh review diagnostic
+kept the original base/tools/skill and compared Engine ordinary execution with
+caller-prepared regression evidence. Both arms accepted the valid implementation
+and caught a default-limit defect missed by supplied tests. Median savings were
+35.86% input/20.44% output, but uncached input increased15.39% and dated short
+API-equivalent median savings were only8.68%. It misses its20% weighted admission
+gate. These review cases are outside the seven-task release denominator; no Astra
+profile/kernel is deployed or frozen. See [Astra reuse adjudication](astra-reuse-v1/RESULT.md).

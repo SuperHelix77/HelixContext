@@ -16,5 +16,8 @@ uses exact evidence reuse and targeted reads. No experimental base, reasoning
 setting or global hook was changed. Own end-to-end savings and universal no-loss
 are unmeasured. A new policy will not be deployed based on fixture PASS alone.
 
-Initial state: offline gates and no-inference native preflight PASS; prospective
-native results pending. This diagnostic is separate from release medians.
+Native state: all four streams CLOSED and audited. Two-case medians are35.86%
+input/20.44% output, but only8.68% short API-equivalent savings and uncached input
+increases15.39%. Both semantic outcomes and new defect probes survive. The20%
+weighted-cost admission gate fails; no new model profile or kernel deployment.
+See RESULT.md. This diagnostic remains separate from release medians.

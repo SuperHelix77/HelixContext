@@ -1,0 +1,17 @@
+{
+  "state": "CLOSED_SCOPED_DIAGNOSTIC",
+  "native_streams": 4,
+  "all_native_jobs_closed": true,
+  "finite_semantic_review": "PASS",
+  "economic_admission": "FAIL",
+  "new_astra_profile_deployed": false,
+  "own_helix_context_active": true,
+  "own_model_or_reasoning_config_changed": false,
+  "own_quantified_saving": null,
+  "global_config_sha256": "591a3e2f7eaec2ea0b54260735e103a1641edc51d2eede77e7d029583d2c5fba",
+  "evidence": {
+    "RESULT.json": "07e848577f5dd72ff2e6032383be3c99b869c160dcf51de0b1cbee4ebbf0d15c",
+    "SEMANTIC_REVIEW.json": "06d8fb4f8d4c9c91160563e29ec0fb5af2c1551ddcae0a3ef7ce0efcdeb23be3",
+    "PUBLIC_VERIFICATION.json": "ba2a097d7bd33a16d1b805ed30305bd9fc2db75a451fee77c4d2953458d821b0"
+  }
+}

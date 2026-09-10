@@ -1,0 +1,42 @@
+[
+  {
+    "totalTokens": 19996,
+    "inputTokens": 19884,
+    "cachedInputTokens": 7040,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 112,
+    "reasoningOutputTokens": 0
+  },
+  {
+    "totalTokens": 20322,
+    "inputTokens": 20124,
+    "cachedInputTokens": 19712,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 198,
+    "reasoningOutputTokens": 57
+  },
+  {
+    "totalTokens": 30991,
+    "inputTokens": 30393,
+    "cachedInputTokens": 19968,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 598,
+    "reasoningOutputTokens": 301
+  },
+  {
+    "totalTokens": 31938,
+    "inputTokens": 31346,
+    "cachedInputTokens": 30208,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 592,
+    "reasoningOutputTokens": 402
+  },
+  {
+    "totalTokens": 32192,
+    "inputTokens": 32013,
+    "cachedInputTokens": 31104,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 179,
+    "reasoningOutputTokens": 0
+  }
+]

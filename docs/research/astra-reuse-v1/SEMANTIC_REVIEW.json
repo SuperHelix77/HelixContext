@@ -1,0 +1,65 @@
+{
+  "classification": "Explicit final-answer/source/execution review; PASS means review-task expectations met, not approval of the defective source",
+  "rows": [
+    {
+      "case": "sample_a",
+      "arm": "on",
+      "native_sha256": "2c44d20aaf0e18310cd05cdadae690c7998cac4076f3d23ae76640af07154ab0",
+      "answer_sha256": "5d8857ad8c68b5f290ca3eed1dcf4751daab6df1989c74099bb6dff36f8bb513",
+      "checks": "PASS",
+      "judgment": "No actionable defects",
+      "normal_model_written_final": "PASS",
+      "actual_check_claims": "PASS",
+      "protected_source_unchanged": "PASS",
+      "semantic_review_scope": "Two explicit code-review variants only; no universal intelligence or full agentic parity claim",
+      "new_semantic_probe": "Not required to discover a known defect on valid case"
+    },
+    {
+      "case": "sample_a",
+      "arm": "off",
+      "native_sha256": "0e6da902ea5a4f96400c8f3ee3e1fbe0c84504c6ddc40688ab575dd517d8b185",
+      "answer_sha256": "62763653c5035e22ba682b52f94d33948f0caea8e3435ce50142659061420e44",
+      "checks": "PASS",
+      "judgment": "No actionable defects",
+      "normal_model_written_final": "PASS",
+      "actual_check_claims": "PASS",
+      "protected_source_unchanged": "PASS",
+      "semantic_review_scope": "Two explicit code-review variants only; no universal intelligence or full agentic parity claim",
+      "new_semantic_probe": "Not required to discover a known defect on valid case"
+    },
+    {
+      "case": "sample_b",
+      "arm": "off",
+      "native_sha256": "06c84f838e94f858c016c4a12bd4c2dcbe7efdc442637c447f8c74547cc441ff",
+      "answer_sha256": "68cec4a6b5fa374f7f22608a6d11161a591befc56209f95e9843715dbd831637",
+      "checks": "PASS",
+      "judgment": "Reject: default limit 9 violates unchanged API default 10",
+      "normal_model_written_final": "PASS",
+      "actual_check_claims": "PASS",
+      "protected_source_unchanged": "PASS",
+      "semantic_review_scope": "Two explicit code-review variants only; no universal intelligence or full agentic parity claim",
+      "new_semantic_probe": "Preserved and executed; independent cross-replay follows"
+    },
+    {
+      "case": "sample_b",
+      "arm": "on",
+      "native_sha256": "d7de3959f1c9e5d062b0a8bd84fb9115fee7e8e8c8d20b21a8b7644e39887372",
+      "answer_sha256": "eba3a91ab2b479176054cc1f7418814bb99a2b9c3d9ca2cbc75f9521c06ef958",
+      "checks": "PASS",
+      "judgment": "Reject: default limit 9 violates unchanged API default 10",
+      "normal_model_written_final": "PASS",
+      "actual_check_claims": "PASS",
+      "protected_source_unchanged": "PASS",
+      "semantic_review_scope": "Two explicit code-review variants only; no universal intelligence or full agentic parity claim",
+      "new_semantic_probe": "Preserved and executed; independent cross-replay follows"
+    }
+  ],
+  "semantic_checks_preserved_in_both_cases": true,
+  "economic_admission": "REJECTED_FOR_THIS_POLICY: median weighted saving below preregistered20%",
+  "median_api_equivalent_saving_percent": {
+    "short": 8.678465128882657,
+    "long": 8.107247675108509
+  },
+  "new_astra_kernel_deployed": false,
+  "release_qualification": false
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "event_index": 66,
+    "command": "/bin/zsh -lc \"pwd; rg --files -g '\"'!__pycache__/**'\"' -g '\"'!*.pyc'\"' -g '\"'!.*'\"'\"",
+    "exit_status": 0,
+    "output_bytes": 240,
+    "output_sha256": "a03e1950351d80853d2a96c98ec9e99dffcb5010fcc3f2e415360d4753f8e52c"
+  },
+  {
+    "event_index": 81,
+    "command": "/bin/zsh -lc 'diff -u before.py workflow_memory.py'",
+    "exit_status": 1,
+    "output_bytes": 1075,
+    "output_sha256": "8c1310f036707259786436ccc6267c1c195277ec1331293271b3f43c051fe7b0"
+  },
+  {
+    "event_index": 82,
+    "command": "/bin/zsh -lc 'cat test_search_mode_public.py test_workflow_memory.py semantic_native.py semantic_helix.py evidence.py'",
+    "exit_status": 0,
+    "output_bytes": 22992,
+    "output_sha256": "517798e9c8ae4cae00bb6c38ffe646a92b8613a9e0a38b699a3a21d604d727cd"
+  },
+  {
+    "event_index": 84,
+    "command": "/bin/zsh -lc 'cat TASK.md AGENTS.md'",
+    "exit_status": 0,
+    "output_bytes": 1722,
+    "output_sha256": "fd4371baaba38f6ddd86c25bfbfeb6d32c6e8dbdc84c125cb30501bb825fe73b"
+  },
+  {
+    "event_index": 86,
+    "command": "/bin/zsh -lc 'nl -ba workflow_memory.py'",
+    "exit_status": 0,
+    "output_bytes": 11544,
+    "output_sha256": "e12b8f493da09842c847d875d16679256df3759dd9016e67d2f05351f3819041"
+  },
+  {
+    "event_index": 149,
+    "command": "/bin/zsh -lc 'shasum -a 256 TASK.md AGENTS.md before.py workflow_memory.py evidence.py test_search_mode_public.py test_workflow_memory.py semantic_native.py semantic_helix.py'",
+    "exit_status": 0,
+    "output_bytes": 741,
+    "output_sha256": "2ed1c176803eccebf2d1de29bc48b646b9ef4d0d1e90fc4f5acd385a39218e2e"
+  },
+  {
+    "event_index": 161,
+    "command": "/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 semantic_helix.py'",
+    "exit_status": 0,
+    "output_bytes": 182,
+    "output_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e"
+  },
+  {
+    "event_index": 163,
+    "command": "/bin/zsh -lc \"PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nimport inspect\nfrom tempfile import TemporaryDirectory\nfrom pathlib import Path\nfrom evidence import Store\nfrom before import Memory as Baseline\nfrom workflow_memory import Memory as Proposed\n\nprint('baseline signature:', inspect.signature(Baseline.search))\nprint('proposed signature:', inspect.signature(Proposed.search))\nwith TemporaryDirectory(prefix='search-default-review-') as tmp:\n    for name, cls in [('baseline', Baseline), ('proposed', Proposed)]:\n        memory = cls(Store(Path(tmp) / name))\n        for i in range(12):\n            memory.record('p', 's', str(i), b'alpha beta')\n        default = memory.search('p', 'alpha beta')\n        explicit = memory.search('p', 'alpha beta', 10)\n        print(name, 'omitted limit:', len(default), [r['event_id'] for r in default])\n        print(name, 'explicit limit=10:', len(explicit), [r['event_id'] for r in explicit])\n        assert len(explicit) == 10\n        if name == 'baseline':\n            assert len(default) == 10\n        else:\n            assert len(default) == 9\n            for mode in ('all', 'any'):\n                assert len(memory.search('p', 'alpha beta', match_mode=mode)) == 9\n                print(name, mode, 'omitted limit:', len(memory.search('p', 'alpha beta', match_mode=mode)))\nprint('Confirmed: unchanged two-argument calls lose the tenth result; explicit limits still work.')\nPY\"",
+    "exit_status": 0,
+    "output_bytes": 596,
+    "output_sha256": "6390456d4dede93e01e6bd1cccd9e92b2780c4059947e57f6c02a9651bf7aeda"
+  },
+  {
+    "event_index": 167,
+    "command": "/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 semantic_native.py'",
+    "exit_status": 0,
+    "output_bytes": 166,
+    "output_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24"
+  },
+  {
+    "event_index": 193,
+    "command": "/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -q -p no:cacheprovider test_workflow_memory.py test_search_mode_public.py'",
+    "exit_status": 0,
+    "output_bytes": 99,
+    "output_sha256": "7a0a45177ee5390597831aff588f41e6992754df77fa7aaccedfb4b6bc13d64f"
+  },
+  {
+    "event_index": 201,
+    "command": "/bin/zsh -lc 'shasum -a 256 TASK.md AGENTS.md before.py workflow_memory.py evidence.py test_search_mode_public.py test_workflow_memory.py semantic_native.py semantic_helix.py'",
+    "exit_status": 0,
+    "output_bytes": 741,
+    "output_sha256": "2ed1c176803eccebf2d1de29bc48b646b9ef4d0d1e90fc4f5acd385a39218e2e"
+  }
+]

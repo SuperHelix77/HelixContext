@@ -1,0 +1,26 @@
+{
+  "report_sha256": "07e848577f5dd72ff2e6032383be3c99b869c160dcf51de0b1cbee4ebbf0d15c",
+  "files": {
+    "pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "sample_b-on/usage.json": "5a61fc4a22de7acdd5d87ac89b13ed5642fbb7611b234f37e208ea57b1341d43",
+    "sample_b-on/new-semantic-probe.py": "a0f91a567ead40a0cbd655b9a3e2cf25b717c12c39d9467a1f00a6cee2bcfa23",
+    "sample_b-on/commands.json": "98a60432831abfd466214e9f33e47089cec81e7b593579d9c8b1d40ea229c4e0",
+    "sample_b-on/workflow_memory.py": "676f0328b2b9390dfa3111b18d324295b5a0728bf0da0ef29df5e8492c9e390b",
+    "sample_b-on/final-answer.md": "eba3a91ab2b479176054cc1f7418814bb99a2b9c3d9ca2cbc75f9521c06ef958",
+    "sample_a-on/usage.json": "f817f953f595c122bd4d213f7ef1212069b08548243079c21308e5581889b338",
+    "sample_a-on/commands.json": "58bffdbbe2efe2be715ca6c21b72d3f3ff1158e737339be19b327ba2dbccd01c",
+    "sample_a-on/workflow_memory.py": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+    "sample_a-on/final-answer.md": "5d8857ad8c68b5f290ca3eed1dcf4751daab6df1989c74099bb6dff36f8bb513",
+    "sample_b-off/usage.json": "89aa8fcaec8670fece2d5d8871de02eb2681271b64e74c555aaee6f74f5d0147",
+    "sample_b-off/new-semantic-probe.py": "d4aeee118144af44512e7944c8900b702adce0c6737cf4ef49812a3690da53f8",
+    "sample_b-off/commands.json": "c86ac5ea982d4793cb38d9ade9390f6824af6b60d5b278310b2709806f038cbf",
+    "sample_b-off/final-answer.md": "68cec4a6b5fa374f7f22608a6d11161a591befc56209f95e9843715dbd831637",
+    "sample_a-off/usage.json": "2f96d3b21a51fe2acf6da55046a0aa13d27b117974e3cfb0e8cbf0f633b8220d",
+    "sample_a-off/commands.json": "307a3d01b0fa6909339cf6a0f2bbf0de7bf8eaa058b98850bd98c8308af5af5a",
+    "sample_a-off/final-answer.md": "62763653c5035e22ba682b52f94d33948f0caea8e3435ce50142659061420e44"
+  },
+  "shared_files": {
+    "maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "totalTokens": 19984,
+    "inputTokens": 19884,
+    "cachedInputTokens": 11904,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 100,
+    "reasoningOutputTokens": 0
+  },
+  {
+    "totalTokens": 20295,
+    "inputTokens": 20110,
+    "cachedInputTokens": 19712,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 185,
+    "reasoningOutputTokens": 41
+  },
+  {
+    "totalTokens": 31227,
+    "inputTokens": 30952,
+    "cachedInputTokens": 19968,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 275,
+    "reasoningOutputTokens": 135
+  },
+  {
+    "totalTokens": 32216,
+    "inputTokens": 31668,
+    "cachedInputTokens": 30720,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 548,
+    "reasoningOutputTokens": 0
+  },
+  {
+    "totalTokens": 32944,
+    "inputTokens": 32732,
+    "cachedInputTokens": 31488,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 212,
+    "reasoningOutputTokens": 120
+  },
+  {
+    "totalTokens": 33281,
+    "inputTokens": 32982,
+    "cachedInputTokens": 32512,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 299,
+    "reasoningOutputTokens": 0
+  }
+]

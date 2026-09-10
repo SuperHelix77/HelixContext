@@ -1,0 +1,34 @@
+[
+  {
+    "totalTokens": 21473,
+    "inputTokens": 21257,
+    "cachedInputTokens": 7040,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 216,
+    "reasoningOutputTokens": 0
+  },
+  {
+    "totalTokens": 30662,
+    "inputTokens": 30365,
+    "cachedInputTokens": 21120,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 297,
+    "reasoningOutputTokens": 195
+  },
+  {
+    "totalTokens": 34553,
+    "inputTokens": 34068,
+    "cachedInputTokens": 30208,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 485,
+    "reasoningOutputTokens": 122
+  },
+  {
+    "totalTokens": 35318,
+    "inputTokens": 34790,
+    "cachedInputTokens": 33920,
+    "cacheWriteInputTokens": 0,
+    "outputTokens": 528,
+    "reasoningOutputTokens": 215
+  }
+]

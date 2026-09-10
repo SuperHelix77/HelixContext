@@ -1,0 +1,44 @@
+[
+  {
+    "event_index": 60,
+    "command": "/bin/zsh -lc pwd",
+    "exit_status": 0,
+    "output_bytes": 92,
+    "output_sha256": "e95c052dbb40f9b0ca8a77ba44ee06932125627e21f49d295f51fe02ceb4996e"
+  },
+  {
+    "event_index": 68,
+    "command": "/bin/zsh -lc 'nl -ba TASK.md; nl -ba .agents/skills/helixcontext/SKILL.md'",
+    "exit_status": 0,
+    "output_bytes": 3157,
+    "output_sha256": "e09f77b88631808c4613a84ecb96fe2ff6bd5d32d8a72b2430cd9d6ff911e2cf"
+  },
+  {
+    "event_index": 71,
+    "command": "/bin/zsh -lc 'nl -ba workflow_memory.py; diff -u before.py workflow_memory.py'",
+    "exit_status": 1,
+    "output_bytes": 12619,
+    "output_sha256": "6c38af72c9965851c58eeeacefcf46245012862e6a8a554e61fd5c94b5fcacd6"
+  },
+  {
+    "event_index": 72,
+    "command": "/bin/zsh -lc 'nl -ba test_workflow_memory.py; nl -ba test_search_mode_public.py; nl -ba semantic_native.py; nl -ba semantic_helix.py'",
+    "exit_status": 0,
+    "output_bytes": 13541,
+    "output_sha256": "2b718e7ad6ce361a03a2e531085e4c85030dfa7bac6575640ed714ff189ed108"
+  },
+  {
+    "event_index": 140,
+    "command": "/bin/zsh -lc 'nl -ba evidence.py'",
+    "exit_status": 0,
+    "output_bytes": 12139,
+    "output_sha256": "4e75c005d9d343d34273c5b88e154c67f9276fb61fa3d8e4813eb102c63613a6"
+  },
+  {
+    "event_index": 148,
+    "command": "/bin/zsh -lc \"/Library/Frameworks/Python.framework/Versions/3.14/bin/python3 -B - <<'PY'\nfrom tempfile import TemporaryDirectory\nfrom evidence import Store\nfrom before import Memory as BeforeMemory\nfrom workflow_memory import Memory\n\nwith TemporaryDirectory(prefix='memory-api-review-', dir='/private/tmp') as root:\n    store = Store(root)\n    before = BeforeMemory(store)\n    current = Memory(store)\n    for n in range(12):\n        current.record('p', 's', str(n), b'alpha beta')\n    original = before.search('p', 'alpha beta')\n    proposed = current.search('p', 'alpha beta')\n    explicit = current.search('p', 'alpha beta', 10)\n    assert explicit == original\n    assert current.search('p', 'alpha beta', 10, 'all') == original\n    assert current.search('p', 'alpha beta', 10, 'any') == original\n    print('Explicit limit=10 matches before.py exactly in both modes.', flush=True)\n    for label, rows in [('before default', original), ('proposed default', proposed),\n                        ('proposed any default', current.search('p', 'alpha beta', match_mode='any'))]:\n        print(f'{label}: count={len(rows)}, event_ids={[r[\\\"event_id\\\"] for r in rows]}', flush=True)\n    assert proposed == original, 'Existing two-argument search lost the tenth result: default limit changed from 10 to 9'\nPY\"",
+    "exit_status": 1,
+    "output_bytes": 499,
+    "output_sha256": "3b780da91a7791ac0110ab1e117d9fc3842f79f2076943274cb949d5523658c5"
+  }
+]

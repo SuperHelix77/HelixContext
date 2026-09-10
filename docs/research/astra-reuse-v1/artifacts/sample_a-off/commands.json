@@ -1,0 +1,72 @@
+[
+  {
+    "event_index": 70,
+    "command": "/bin/zsh -lc \"pwd; rg --files -g '\"'!__pycache__'\"' -g '\"'!*.pyc'\"' -g '\"'!'\"\\\\.git/**' -g '\"'!'\"\\\\.codex/**'\"",
+    "exit_status": 0,
+    "output_bytes": 240,
+    "output_sha256": "2198032959acb52d1f68735905a98f05817791a2f7ea23af388b7f6cf8814c72"
+  },
+  {
+    "event_index": 84,
+    "command": "/bin/zsh -lc 'cat test_search_mode_public.py test_workflow_memory.py'",
+    "exit_status": 0,
+    "output_bytes": 6478,
+    "output_sha256": "ef41b671c858190ff80e53ba7eb27ca968bb758f8ec9a71ef116ed07055fcfc7"
+  },
+  {
+    "event_index": 86,
+    "command": "/bin/zsh -lc 'cat before.py'",
+    "exit_status": 0,
+    "output_bytes": 10027,
+    "output_sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d"
+  },
+  {
+    "event_index": 89,
+    "command": "/bin/zsh -lc 'cat TASK.md; diff -u before.py workflow_memory.py'",
+    "exit_status": 1,
+    "output_bytes": 2279,
+    "output_sha256": "53bdc01a5c68911db7e90929ebf41d26e7a72a13a1cf0c6bd43fc3d7c9791052"
+  },
+  {
+    "event_index": 90,
+    "command": "/bin/zsh -lc 'cat semantic_native.py semantic_helix.py evidence.py .agents/skills/helixcontext/SKILL.md'",
+    "exit_status": 0,
+    "output_bytes": 18209,
+    "output_sha256": "3098d848cc667be168dd6319c4cd3c676d1e27cddd39dae3b886f3f40f0a73b9"
+  },
+  {
+    "event_index": 98,
+    "command": "/bin/zsh -lc \"python3 -B - <<'PY'\nfrom pathlib import Path\nimport hashlib, json\npaths = sorted(p for p in Path('.').rglob('*') if p.is_file() and not any(part in ('.git', '__pycache__', '.pytest_cache') for part in p.parts))\nprint(json.dumps({str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}, sort_keys=True))\nPY\"",
+    "exit_status": 0,
+    "output_bytes": 1160,
+    "output_sha256": "cb3a4753b0cdd9569d62ceaead5da35f6375b0d09b8d5e8d20e40c99b8e9f3fb"
+  },
+  {
+    "event_index": 106,
+    "command": "/bin/zsh -lc 'python3 -B semantic_helix.py'",
+    "exit_status": 0,
+    "output_bytes": 182,
+    "output_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e"
+  },
+  {
+    "event_index": 110,
+    "command": "/bin/zsh -lc 'python3 -B semantic_native.py'",
+    "exit_status": 0,
+    "output_bytes": 166,
+    "output_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24"
+  },
+  {
+    "event_index": 136,
+    "command": "/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 -m pytest -q -p no:cacheprovider -c /dev/null --rootdir=. test_workflow_memory.py test_search_mode_public.py'",
+    "exit_status": 0,
+    "output_bytes": 99,
+    "output_sha256": "f45d543b12d2c6cff965f73c61374f00ccd4d88266b4483358289f228f6eebcc"
+  },
+  {
+    "event_index": 144,
+    "command": "/bin/zsh -lc \"python3 -B - <<'PY'\nfrom pathlib import Path\nimport hashlib, json\npaths = sorted(p for p in Path('.').rglob('*') if p.is_file() and not any(part in ('.git', '__pycache__', '.pytest_cache') for part in p.parts))\nprint(json.dumps({str(p): hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}, sort_keys=True))\nPY\"",
+    "exit_status": 0,
+    "output_bytes": 1160,
+    "output_sha256": "cb3a4753b0cdd9569d62ceaead5da35f6375b0d09b8d5e8d20e40c99b8e9f3fb"
+  }
+]
