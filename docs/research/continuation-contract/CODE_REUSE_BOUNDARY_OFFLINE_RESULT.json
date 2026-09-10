@@ -1,0 +1,38 @@
+{
+  "classification": "OFFLINE engineering conformance; no native model savings or general semantic equivalence",
+  "before_source_sha256": "ab6c78cd8d59f556ef9da13a1ab0ec9ddaa44fda0bb4d6c2708caa6470226a5e",
+  "after_source_sha256": "9d76331aec856e52361734e75bebce8945ce9f7aff3ec9e4765b8696351da016",
+  "new_model_calls": 0,
+  "runs": [
+    {
+      "phase": "before",
+      "junit_sha256": "9021e7f1aa69c07691c84eb852d300e82aa0522f9d8ef9310f98093b005909fe",
+      "tests": 10,
+      "failed": 3,
+      "failures": [
+        "test_final_step_authority_change_is_not_success",
+        "test_binding_failure_after_effect_preserves_receipt_without_retry",
+        "test_binding_failure_between_steps_preserves_receipt"
+      ]
+    },
+    {
+      "phase": "after",
+      "junit_sha256": "523c0a4d910af22f4dc7bd5394049d9f771e412e6b1c3556f72e52a250ebe591",
+      "tests": 38,
+      "failed": 0,
+      "failures": []
+    }
+  ],
+  "limits": [
+    "Dependency completeness remains caller/model responsibility",
+    "Postcheck detects observed drift; not atomic publication or rollback",
+    "Callbacks own external transactionality and persistence",
+    "Frozen native research runners do not automatically adopt this changed primitive",
+    "Binding bytes/physical I/O depend on caller and remain unmetered by this primitive"
+  ],
+  "combined_affected_suite": {
+    "tests": 77,
+    "failed": 0,
+    "junit_sha256": "b1dfc784c1969332f47ab87120865b165e858f4bac5db970e7143d3a4c13ed91"
+  }
+}

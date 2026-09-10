@@ -37,7 +37,7 @@ def test_change_between_steps_holds():
     def first(raw):binding[0]='changed';return {'passed':True}
     r=execute_decision(decision(),expected_binding='b',current_binding=lambda:binding[0],
        steps=(Step('test',first),Step('publish',lambda x:pytest.fail('published'))))
-    assert r['state']=='HOLD'
+    assert r['state']=='RECONCILE' and len(r['receipts'])==1
 
 
 def test_effect_then_error_is_not_retried():

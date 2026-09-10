@@ -32,6 +32,20 @@ def test_exact_pair_and_unknown_optional_categories(tmp_path):
     assert data['capability_parity']=='Not established'
 
 
+def test_coordinator_usage_never_changes_benchmark_denominators(tmp_path):
+    cfg=setup(tmp_path);before,_=snapshot(cfg)
+    values={'input_tokens':1000,'cached_input_tokens':900,'cache_write_input_tokens':0,
+            'output_tokens':100,'reasoning_output_tokens':50,'total_tokens':1100}
+    trace=tmp_path/'coordinator.jsonl'
+    trace.write_text(json.dumps({'type':'event_msg','payload':{'type':'token_count',
+        'info':{'total_token_usage':values,'last_token_usage':values}}})+'\n')
+    cfg['research_usage']=[{'id':'coordinator','name':'Research','path':str(trace)}]
+    after,_=snapshot(cfg)
+    assert after['pairs']==before['pairs'] and after['observed_totals']==before['observed_totals']
+    assert after['research_usage'][0]['usage']['uncached_input_tokens']==100
+    assert after['inference_calls_by_hud']==0
+
+
 def test_partial_missing_and_invalid_tokens_are_not_zero(tmp_path):
     cfg=setup(tmp_path)
     (tmp_path/'on.json').write_text('{')

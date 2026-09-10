@@ -28,6 +28,28 @@ summaries or agent polling. It observes explicitly registered native status,
 trace and result files every two seconds; unchanged file contents are cached.
 File I/O and local CPU are additional costs, not free. Physical I/O is unmetered.
 
+## Coordinator research overhead
+
+Optional `research_usage` entries contain caller-chosen `id`, `name` and absolute
+`path` to a native coordinator JSONL. They appear separately from experiments,
+savings denominators, cohort medians and tariff comparisons. No prompt or tool
+content is exported. Child runs remain in their own registered benchmark ledger;
+the coordinator thread can also include work before the active goal.
+
+The incremental reader consumes at most 16 MB per scan, then only appended bytes.
+Incomplete records wait; duplicate cumulative updates are ignored. Full decreases
+with total equal to last usage are interpreted as a new counter epoch. Both the
+latest reported counter and reconstructed epoch sum are exposed. This interpretation
+is not an independent provider billing attestation. Ambiguous decreases or invalid
+subsets withhold totals. Truncation/replacement rebuilds the projection without
+adding prior history twice. Already-read historical edits followed by appends
+require an explicit rescan; this reader does not authenticate a hostile writer.
+
+Startup/indexing, logical read bytes and native-update time stay visible. The
+observer counts these reads in its own overhead. Snapshot hashes bind observed
+prefixes, not future contents. Reconstruction does not price Codex quota or prove
+project ROI. See the [epoch accounting report](../../docs/research/continuation-contract/COORDINATOR_USAGE_ACCOUNTING_20260910.md).
+
 Run:
 
 ```sh

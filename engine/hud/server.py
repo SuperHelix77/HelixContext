@@ -15,11 +15,26 @@ import time
 import uuid
 from pricing import Prices, estimate
 from cohorts import summarize, unique_usage, tariff_medians
+from research_usage import Ledger
 from urllib.parse import urlsplit, parse_qs
 
 HERE=Path(__file__).resolve().parent
 FILE_CACHE={}
 READ_BYTES=0
+RESEARCH_LEDGERS={}
+
+
+def research_usage(config):
+    rows=[]
+    seen=set()
+    for spec in config.get('research_usage',[]):
+        path=Path(spec['path']).resolve()
+        if path in seen:raise ValueError('Duplicate coordinator usage source')
+        seen.add(path)
+        if path not in RESEARCH_LEDGERS:RESEARCH_LEDGERS[path]=Ledger(path)
+        ledger=RESEARCH_LEDGERS[path]
+        rows.append({'id':spec['id'],'name':spec['name'],**ledger.scan()})
+    return rows
 
 
 def cached_bytes(path,limit):
@@ -397,9 +412,10 @@ def snapshot(config):
             'artifact_check':True if off and on and off['artifact_check'] is True and on['artifact_check'] is True else
                 False if any(r['artifact_check'] is False for r in current) else None})
     return {'schema':'helix.hud.v1','runs':runs,'pairs':pairs,'problems':problems,'engine_replays':engine_replays(config,runs),
+        'research_usage':research_usage(config),
         'cohorts':summarize(config.get('cohorts',[]),pairs,runs),
         'observed_totals':{m:unique_usage([r for r in runs if m=='all' or r.get('model')==m]) for m in ['all']+sorted({r['model'] for r in runs if r.get('model')})},
-        'scope':'Registered native benchmark runs only. Parent chat and unregistered agents are not instrumented.',
+        'scope':'Registered native benchmarks. Coordinator usage is separate; unregistered agents remain unmetered.',
         'capability_parity':'Not established','inference_calls_by_hud':0},receipts
 
 
@@ -442,7 +458,8 @@ class Observer:
             data['costs']={r['id']:estimate(r.get('usage'),(price.get('rates') or {}).get(r.get('model'))) for r in data.get('runs',[]) if r.get('usage_source')=='Native app-server cumulative update' and r.get('usage') is not None}
             data['cohorts']=[{**c,'tariff_median_savings_percent':tariff_medians(c,data.get('pairs',[]),data['costs'])} for c in data.get('cohorts',[])]
             return {**data,'observer':{'last_scan':self.last_scan,'read_cycles':self.read_cycles,
-                'error':self.error,'journal':str(self.journal),'poll_seconds':2,'logical_file_bytes_read':READ_BYTES,
+                'error':self.error,'journal':str(self.journal),'poll_seconds':2,
+                'logical_file_bytes_read':READ_BYTES+sum(x.logical_bytes_read for x in RESEARCH_LEDGERS.values()),
                 'last_scan_seconds':self.last_scan_seconds,
                 'cost_scope':'File reads and local CPU; no inference. Exact physical I/O unmetered.'}}
 

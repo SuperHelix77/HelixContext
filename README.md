@@ -6,6 +6,14 @@ Research toward the **maximum empirically safe compression frontier**, with capa
 
 ## Current Engine milestone — 2026-09-10
 
+The shared execution boundary now rejects completion after observed final-step
+authority drift and preserves receipts when state becomes unavailable. The HUD
+also exposes coordinator research usage separately from benchmark savings,
+including detected counter epochs. The affected suite passes 77 tests; these
+are engineering/accounting improvements, not new model-economics results.
+[Lifecycle repair](docs/research/continuation-contract/CODE_REUSE_BOUNDARY_OFFLINE_RESULT.md)
+· [Research cost accounting](docs/research/continuation-contract/COORDINATOR_USAGE_ACCOUNTING_20260910.md).
+
 The [nine-pair coding anatomy](docs/research/continuation-contract/CODING_OUTPUT_ANATOMY_20260910.md)
 reconciles 18 distinct native streams across Luna, Sol and Astra. All candidates
 use one model segment and zero tool calls. Finite checks pass; none of the three

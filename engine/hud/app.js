@@ -15,7 +15,7 @@ function renderFocus(runs){if(!runs.some(r=>r.id===selected))selected=runs.find(
  $('timeline').replaceChildren(...[...(current.timeline||[]),...(current.engine_timeline||[])].map(event=>{const li=element('li');const stamp=event.execution_timestamp==null?'—':String(event.execution_timestamp);li.append(element('span',stamp,'event-time'),element('span','#'+event.sequence,'event-seq'),element('span',event.type+' '+event.detail),element('span',event.recorded_output_bytes==null?'':number(event.recorded_output_bytes)+' B recorded','event-value'));if(event.exit_code!=null)li.append(element('span','exit '+event.exit_code,event.exit_code===0?'good':'bad'));return li;}));$('timeline-note').textContent='Native events then Engine events, each in source order · observed '+time(state.observed_at)+' · missing execution timestamps shown as —';
 }
 function render(){if(!state||paused)return;const runs=state.runs.filter(r=>fits(r.model)), pairs=state.pairs.filter(p=>fits(p.model));
- $('scope').textContent=state.scope;renderFocus(runs);renderCosts();renderEngineReplays();renderCohorts();
+ $('scope').textContent=state.scope;renderFocus(runs);renderCosts();renderEngineReplays();renderCohorts();renderResearchUsage();
  $('active').textContent=runs.filter(r=>r.state==='RUNNING').length;
  $('active-note').textContent=`${runs.filter(r=>['STALE','RUNNING_UNVERIFIED'].includes(r.state)).length} stale / unverified process reports`;
  const totals=state.observed_totals?.[model==='all'?'all':Object.keys(state.observed_totals||{}).find(k=>k.includes(model))];
@@ -78,4 +78,14 @@ function renderCohorts(){
   body.append(tr);
  }
  if(!body.children.length){const tr=element('tr'),td=element('td','No matched task cohort registered.');td.colSpan=10;tr.append(td);body.append(tr);}
+}
+
+function renderResearchUsage(){
+ const body=$('research-usage');body.replaceChildren();
+ for(const r of state.research_usage||[]){
+  const u=r.usage,tr=element('tr');
+  const values=[r.name,r.state,number(u?.input_tokens),number(u?.cached_input_tokens),number(u?.uncached_input_tokens),number(u?.output_tokens),number(r.epochs),r.latest_usage_at||'—'];
+  values.forEach(v=>tr.append(element('td',v)));body.append(tr);
+ }
+ if(!body.children.length){const tr=element('tr'),td=element('td','No coordinator usage source registered; research cost is unknown.');td.colSpan=8;tr.append(td);body.append(tr);}
 }

@@ -1,0 +1,37 @@
+{
+  "state": "OBSERVED",
+  "usage": {
+    "input_tokens": 263166053,
+    "cached_input_tokens": 258009088,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1583779,
+    "reasoning_output_tokens": 617973,
+    "uncached_input_tokens": 5156965
+  },
+  "epochs": 3,
+  "latest_native_counter": {
+    "input_tokens": 245355304,
+    "cached_input_tokens": 240687488,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1493074,
+    "reasoning_output_tokens": 589850
+  },
+  "accounting_method": "Epoch reconstruction: full decreases with total equal to last usage are treated as new epochs; provider billing semantics are not attested.",
+  "usage_updates": 1962,
+  "duplicate_updates_ignored": 23,
+  "first_usage_at": "2026-09-08T17:13:04.699Z",
+  "latest_usage_at": "2026-09-10T02:44:27.567Z",
+  "models_observed": [
+    "gpt-6-astra"
+  ],
+  "error": null,
+  "source_prefix_bytes": 76177634,
+  "source_prefix_sha256": "e75b2f028afb8ddfb4be5f1a510d371dd52cf762a2e78687badc9449e4916937",
+  "pending_line_bytes": 0,
+  "logical_file_bytes_read": 76177634,
+  "scope": "Observed coordinator thread epochs, including pre-goal work; child runs excluded. Not a bill, quota ratio or benchmark denominator. Already-read history rewrites followed by append require explicit rescan.",
+  "classification": "Observed native counters plus inferred epoch reconstruction; not provider billing or complete project cost",
+  "reader_sha256": "1de44d2544742f4706d3492d8a613374e0b35c5c6dc7ba2a75f5906836bfec51",
+  "audit_seconds": 0.22589458303991705,
+  "scan_batches": 5
+}
