@@ -1,0 +1,70 @@
+{
+  "state": "PASS",
+  "model_calls": 0,
+  "manifest_sha256": "24f2bea20586f35eceaa8bec712679d8c28fe7adce06981300987e177b85b292",
+  "prompt_bytes": 59548,
+  "resident_files": [
+    {
+      "file": "TASK.md",
+      "bytes": 1203,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "workflow_memory.py",
+      "bytes": 10260,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "before.py",
+      "bytes": 10027,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "evidence.py",
+      "bytes": 11194,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "test_workflow_memory.py",
+      "bytes": 5101,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "test_search_mode_public.py",
+      "bytes": 1377,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "semantic_native.py",
+      "bytes": 3109,
+      "exact_occurrences": 1
+    },
+    {
+      "file": "semantic_helix.py",
+      "bytes": 2211,
+      "exact_occurrences": 1
+    }
+  ],
+  "comparison_cases": 612,
+  "comparison_bytes": 730461,
+  "comparison_seconds": 0.9268687079893425,
+  "regressions": [
+    {
+      "check": "public",
+      "exit": 0,
+      "stdout": ".......................                                                  [100%]\n23 passed in 0.17s\n"
+    },
+    {
+      "check": "prior_astra_native",
+      "exit": 0,
+      "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n"
+    },
+    {
+      "check": "prior_astra_helix",
+      "exit": 0,
+      "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n"
+    }
+  ],
+  "prompt_scope": "Full candidate source contains defect; wrapper reveals neither expected verdict nor calibration witness",
+  "bindings": 44
+}
