@@ -1,0 +1,31 @@
+{
+  "classification": "RESEARCH_OFFLINE_ONLY",
+  "new_native_calls": 0,
+  "files": [
+    {
+      "path": "AUDIT.json",
+      "sha256": "24a149c8bdf7e019d0a7f8a8e80380894ea76d5f42a1256d52677d37dc03955e",
+      "bytes": 13393
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "1ac0b20832b650c479e52ef109f24cdd00d6f361d9d968db02ef68cfc645c52e",
+      "bytes": 4037
+    },
+    {
+      "path": "RESULT.md",
+      "sha256": "69d1d67304b9fa76b9f6e871cbd5d4e2c4a8334eb01196f810908917e5334f9c",
+      "bytes": 10646
+    },
+    {
+      "path": "SOURCES.json",
+      "sha256": "f85dfb48ba8842776e9e1e9ad2dfd0459e769c4e4daf0015983a59c34a80eb72",
+      "bytes": 2294
+    },
+    {
+      "path": "audit.py",
+      "sha256": "8e16b8ee97b3ff5fc494006f82e1ca1d102aa6bf9f4f391753db7c426ac93700",
+      "bytes": 5525
+    }
+  ]
+}

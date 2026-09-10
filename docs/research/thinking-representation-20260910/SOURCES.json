@@ -1,0 +1,69 @@
+{
+  "read_date": "2026-09-10",
+  "repository_evidence_cut": "6113735",
+  "external_sources": [
+    {
+      "id": "efficientxlang",
+      "url": "https://aclanthology.org/2025.findings-emnlp.845.pdf",
+      "sha256": "a0ad5a607620df294e9629aeeca49a6eb231b989a5410920bbf415b40f5fae86",
+      "bytes": 478111,
+      "pages": 13
+    },
+    {
+      "id": "language-mixing",
+      "url": "https://aclanthology.org/2025.emnlp-main.132.pdf",
+      "sha256": "534ac5a2403c9cd92830fa94aba77c618fc3161add48dcdf70e0a92619384abc",
+      "bytes": 2104701,
+      "pages": 29
+    },
+    {
+      "id": "reasoning-skills",
+      "url": "https://aclanthology.org/2026.acl-industry.154.pdf",
+      "sha256": "3e4bb38a262f94e93836c69dcc14132f3b446af0b1bcca1e7c53ca4a83ebe998",
+      "bytes": 1300099,
+      "pages": 14
+    },
+    {
+      "id": "chain-of-draft",
+      "url": "https://arxiv.org/html/2502.18600v2",
+      "sha256": "1b27080286ada8bdd576c6ae1edac8c59bb39beb9f37f113f04bb8870ae23134",
+      "bytes": 111936
+    },
+    {
+      "id": "token-complexity",
+      "url": "https://arxiv.org/html/2503.01141v2",
+      "sha256": "c85b6ca56b71e31a914fd2bdad46812abcc2f997132b837f85693b71f80c7e64",
+      "bytes": 267097
+    },
+    {
+      "id": "coding-language",
+      "url": "https://arxiv.org/html/2604.14210",
+      "sha256": "73a2139331a46346f99beb0163eae94086b2555a04c91f2d1237a42543e8db2d",
+      "bytes": 113071
+    }
+  ],
+  "local_evidence": [
+    {
+      "path": "docs/research/wenyan-reasoning-audit-20260910/RESULT.md",
+      "sha256": "018056a47cd8fc4b0bf9d0e6396ff7f0dd8da4e27805d55a4b08f27746dfdd84",
+      "bytes": 6652
+    },
+    {
+      "path": "docs/research/wenyan-reasoning-audit-20260910/SCHEMA_AUDIT.json",
+      "sha256": "be8707f899d6b454871e5d2e0f4d5842d91c5536bda51dc33380cdcc025cf9ec",
+      "bytes": 1440
+    },
+    {
+      "path": "docs/research/wenyan-reasoning-audit-20260910/COST_BOUND.json",
+      "sha256": "3422c02b940b217b138bff07f387f97794f970360b916d8ef23bdb55443b5b82",
+      "bytes": 1023
+    },
+    {
+      "path": "docs/research/wenyan-reasoning-audit-20260910/TOKEN_EXAMPLES.json",
+      "sha256": "1913ed622f57bd75e19dd0edac34b2f0a2f4ac58519efbd57daebb50b77ee68c",
+      "bytes": 2979
+    }
+  ],
+  "external_results_replicated_here": false,
+  "new_native_calls": 0
+}

@@ -1,0 +1,455 @@
+{
+  "classification": "OBSERVED_OFFLINE_LEXICAL_AND_PUBLISHED_TABLE_ARITHMETIC",
+  "tiktoken_version": "0.13.0",
+  "native_model_calls": 0,
+  "native_thinking_token_savings": null,
+  "semantic_or_workflow_parity_established": false,
+  "limitations": [
+    "Illustrative manually authored strings; not representative language samples.",
+    "Translations and symbolic forms are not certified equivalents for every domain.",
+    "Tokenizer identities are proxies, not verified Astra/Sol/Luna internal tokenizers.",
+    "No model-internal language, reasoning trace, or native cost was observed.",
+    "Binary round-trip exactness does not establish model comprehension or economics.",
+    "Published table anomaly does not establish its cause without raw receipts."
+  ],
+  "notation_pairs": [
+    {
+      "label": "comparison",
+      "ordinary": {
+        "text": "x >= 0",
+        "characters": 6,
+        "utf8_bytes": 6,
+        "sha256": "1019e7d3084d6c058f5a84815f20f6d3511dc701ba863a5623fa8c027df62090",
+        "tokens": {
+          "o200k_base": 4,
+          "cl100k_base": 4
+        }
+      },
+      "alternative": {
+        "text": "x ≥ 0",
+        "characters": 5,
+        "utf8_bytes": 7,
+        "sha256": "9c520d485cf52b8290a963a9b5f80e42dfccb2b30ab16165e4ce9018c37ab579",
+        "tokens": {
+          "o200k_base": 4,
+          "cl100k_base": 4
+        }
+      }
+    },
+    {
+      "label": "inequality",
+      "ordinary": {
+        "text": "x != y",
+        "characters": 6,
+        "utf8_bytes": 6,
+        "sha256": "5910d0f5de2cdaf55d6c7b044a21034747ed48592f424db7291d86bd03479228",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      },
+      "alternative": {
+        "text": "x ≠ y",
+        "characters": 5,
+        "utf8_bytes": 7,
+        "sha256": "4e4bafb05d21fdbb0e6f930990c71a1ad4571c5562f4ff75ffcb12566d492ada",
+        "tokens": {
+          "o200k_base": 4,
+          "cl100k_base": 3
+        }
+      }
+    },
+    {
+      "label": "conjunction",
+      "ordinary": {
+        "text": "a and b",
+        "characters": 7,
+        "utf8_bytes": 7,
+        "sha256": "303c5e7ff1a6197d304c7b2bdcb3cf77c9fdbbcfea95bf226d3ff61c364c91fe",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      },
+      "alternative": {
+        "text": "a ∧ b",
+        "characters": 5,
+        "utf8_bytes": 7,
+        "sha256": "0634736ee6db6446b963ac072bef72d0b92892a436633ac98d2e30c162e99263",
+        "tokens": {
+          "o200k_base": 4,
+          "cl100k_base": 3
+        }
+      }
+    },
+    {
+      "label": "negation",
+      "ordinary": {
+        "text": "not p",
+        "characters": 5,
+        "utf8_bytes": 5,
+        "sha256": "5ee2cd23acb2be0f39849fda317a68005f5521f7dbf556725017241f6f8377db",
+        "tokens": {
+          "o200k_base": 2,
+          "cl100k_base": 2
+        }
+      },
+      "alternative": {
+        "text": "¬p",
+        "characters": 2,
+        "utf8_bytes": 3,
+        "sha256": "143c0bc5dcfe2da5f355756a6786e1175f4dba3d5eebaec988175626bb9f17ed",
+        "tokens": {
+          "o200k_base": 2,
+          "cl100k_base": 2
+        }
+      }
+    },
+    {
+      "label": "arrow",
+      "ordinary": {
+        "text": "x -> y",
+        "characters": 6,
+        "utf8_bytes": 6,
+        "sha256": "4784d08a8ba81e79a9dd30d4cd8a7ea09c5373c7c2022673a45be14f9448a2a4",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      },
+      "alternative": {
+        "text": "x → y",
+        "characters": 5,
+        "utf8_bytes": 7,
+        "sha256": "db694f696a6973e1538e91b65c8283460e3a7cbe4b4d1627f44e0077845d0737",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      }
+    },
+    {
+      "label": "equivalence",
+      "ordinary": {
+        "text": "x iff y",
+        "characters": 7,
+        "utf8_bytes": 7,
+        "sha256": "42bba038c5ee51da64dafc5e597a0786947d62cc6a677f06a8d67ed063a75f33",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      },
+      "alternative": {
+        "text": "x ⇔ y",
+        "characters": 5,
+        "utf8_bytes": 7,
+        "sha256": "4100f1c5bb4cfdbe3d3957c7e2a0ff22a22e129d208f08b5a69b9e475f25d226",
+        "tokens": {
+          "o200k_base": 4,
+          "cl100k_base": 4
+        }
+      }
+    },
+    {
+      "label": "math italic",
+      "ordinary": {
+        "text": "x",
+        "characters": 1,
+        "utf8_bytes": 1,
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+        "tokens": {
+          "o200k_base": 1,
+          "cl100k_base": 1
+        }
+      },
+      "alternative": {
+        "text": "𝑥",
+        "characters": 1,
+        "utf8_bytes": 4,
+        "sha256": "2e24c5bc6d14a05133a8e9db401bfb7c15b79ea1ff0a8780375661c71b6768f6",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 3
+        }
+      }
+    },
+    {
+      "label": "math script",
+      "ordinary": {
+        "text": "x",
+        "characters": 1,
+        "utf8_bytes": 1,
+        "sha256": "2d711642b726b04401627ca9fbac32f5c8530fb1903cc4db02258717921a4881",
+        "tokens": {
+          "o200k_base": 1,
+          "cl100k_base": 1
+        }
+      },
+      "alternative": {
+        "text": "𝓍",
+        "characters": 1,
+        "utf8_bytes": 4,
+        "sha256": "32874aa6cb0e114e666db14eecd182781b7c102be88256c8a306bdcc5a40361b",
+        "tokens": {
+          "o200k_base": 3,
+          "cl100k_base": 2
+        }
+      }
+    },
+    {
+      "label": "Greek name",
+      "ordinary": {
+        "text": "alpha",
+        "characters": 5,
+        "utf8_bytes": 5,
+        "sha256": "8ed3f6ad685b959ead7022518e1af76cd816f8e8ec7ccdda1ed4018e8f2223f8",
+        "tokens": {
+          "o200k_base": 1,
+          "cl100k_base": 1
+        }
+      },
+      "alternative": {
+        "text": "α",
+        "characters": 1,
+        "utf8_bytes": 2,
+        "sha256": "3e32da9648c78feedcc821d56e483c126dcd270e9fe49973c528e3a88912d557",
+        "tokens": {
+          "o200k_base": 1,
+          "cl100k_base": 1
+        }
+      }
+    }
+  ],
+  "contract_variants": {
+    "English prose": {
+      "text": "The value is not null and the count is at least 10.",
+      "characters": 51,
+      "utf8_bytes": 51,
+      "sha256": "cfa362e258d8a4eb43267ae5a2bc573eaa83a024bcce803da2a2b0492b11cbdd",
+      "tokens": {
+        "o200k_base": 14,
+        "cl100k_base": 14
+      }
+    },
+    "code notation": {
+      "text": "value != null and count >= 10",
+      "characters": 29,
+      "utf8_bytes": 29,
+      "sha256": "e58358b8f4e47b1e944b3646783a364be13457843cc83bf07f19c24d8644215b",
+      "tokens": {
+        "o200k_base": 8,
+        "cl100k_base": 8
+      }
+    },
+    "modern Chinese": {
+      "text": "值非空且数量至少为10。",
+      "characters": 12,
+      "utf8_bytes": 32,
+      "sha256": "09270bfc63198d0d18ea5722cbdf446c62bb697ca0f44d28f5afd7e4858a27d3",
+      "tokens": {
+        "o200k_base": 9,
+        "cl100k_base": 11
+      }
+    },
+    "Wenyan-like shorthand": {
+      "text": "值非空，数不少于十。",
+      "characters": 10,
+      "utf8_bytes": 30,
+      "sha256": "d3eb0492272fea0351b96526e89655d4a06aa49c319acbe3a903e01e01ebd0ac",
+      "tokens": {
+        "o200k_base": 9,
+        "cl100k_base": 10
+      }
+    },
+    "Russian": {
+      "text": "Значение не null, а количество не меньше 10.",
+      "characters": 44,
+      "utf8_bytes": 73,
+      "sha256": "e7687fbec06888500a896760eec164650b6dfe02c7c680ee5579fe54cbd8fda1",
+      "tokens": {
+        "o200k_base": 13,
+        "cl100k_base": 15
+      }
+    },
+    "Turkish": {
+      "text": "Değer null değil ve sayı en az 10.",
+      "characters": 34,
+      "utf8_bytes": 37,
+      "sha256": "8a37d8fc9c5a73499ebd9f0d3dae77c679bacede927249485858a3168bed77c4",
+      "tokens": {
+        "o200k_base": 11,
+        "cl100k_base": 13
+      }
+    }
+  },
+  "reversible_encodings": {
+    "original": {
+      "text": "The value is not null and the count is at least 10.",
+      "characters": 51,
+      "utf8_bytes": 51,
+      "sha256": "cfa362e258d8a4eb43267ae5a2bc573eaa83a024bcce803da2a2b0492b11cbdd",
+      "tokens": {
+        "o200k_base": 14,
+        "cl100k_base": 14
+      }
+    },
+    "base64": {
+      "text": "VGhlIHZhbHVlIGlzIG5vdCBudWxsIGFuZCB0aGUgY291bnQgaXMgYXQgbGVhc3QgMTAu",
+      "characters": 68,
+      "utf8_bytes": 68,
+      "sha256": "d15a8c99c89ca96bd1583304361df449d266388c27b8c75eb32103decc2e5c75",
+      "tokens": {
+        "o200k_base": 41,
+        "cl100k_base": 42
+      }
+    },
+    "zlib_base64": {
+      "text": "eJwLyUhVKEvMKU1VyCxWyMsvUcgrzclRSMxLUSgByiTnl+aVgGQSSxRyUhOLSxQMDfQA1XQRfQ==",
+      "characters": 76,
+      "utf8_bytes": 76,
+      "sha256": "dc9634ea52db0395ff3d829a68ed6a6614bb3d5eaacb9f06e7e071d066e276e0",
+      "tokens": {
+        "o200k_base": 51,
+        "cl100k_base": 52
+      }
+    }
+  },
+  "coding_language_table_source": "https://arxiv.org/html/2604.14210",
+  "coding_language_table_transcription": {
+    "MiniMax-2.7": {
+      "en": {
+        "n": 50,
+        "input": 298720,
+        "output": 61762,
+        "reasoning": 22368
+      },
+      "zh": {
+        "n": 39,
+        "input": 382974,
+        "output": 79182,
+        "reasoning": 28677
+      }
+    },
+    "GPT-5.4-mini": {
+      "en": {
+        "n": 50,
+        "input": 84347,
+        "output": 2695,
+        "reasoning": 0
+      },
+      "zh": {
+        "n": 46,
+        "input": 91681,
+        "output": 2929,
+        "reasoning": 0
+      }
+    },
+    "GLM-5": {
+      "en": {
+        "n": 48,
+        "input": 1417012,
+        "output": 112803,
+        "reasoning": 87474
+      },
+      "zh": {
+        "n": 49,
+        "input": 1388094,
+        "output": 110501,
+        "reasoning": 85688
+      }
+    }
+  },
+  "coding_language_table_audit": [
+    {
+      "model": "MiniMax-2.7",
+      "metric": "input",
+      "inferred_en_total_from_rounded_mean": 14936000,
+      "inferred_zh_total_from_rounded_mean": 14935986,
+      "absolute_total_difference": 14,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 1.2820500803427959,
+      "inverse_sample_count_ratio": 1.2820512820512822
+    },
+    {
+      "model": "MiniMax-2.7",
+      "metric": "output",
+      "inferred_en_total_from_rounded_mean": 3088100,
+      "inferred_zh_total_from_rounded_mean": 3088098,
+      "absolute_total_difference": 2,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 1.282050451734076,
+      "inverse_sample_count_ratio": 1.2820512820512822
+    },
+    {
+      "model": "MiniMax-2.7",
+      "metric": "reasoning",
+      "inferred_en_total_from_rounded_mean": 1118400,
+      "inferred_zh_total_from_rounded_mean": 1118403,
+      "absolute_total_difference": 3,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 1.2820547210300428,
+      "inverse_sample_count_ratio": 1.2820512820512822
+    },
+    {
+      "model": "GPT-5.4-mini",
+      "metric": "input",
+      "inferred_en_total_from_rounded_mean": 4217350,
+      "inferred_zh_total_from_rounded_mean": 4217326,
+      "absolute_total_difference": 24,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 1.0869503361115391,
+      "inverse_sample_count_ratio": 1.0869565217391304
+    },
+    {
+      "model": "GPT-5.4-mini",
+      "metric": "output",
+      "inferred_en_total_from_rounded_mean": 134750,
+      "inferred_zh_total_from_rounded_mean": 134734,
+      "absolute_total_difference": 16,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 1.0868274582560298,
+      "inverse_sample_count_ratio": 1.0869565217391304
+    },
+    {
+      "model": "GPT-5.4-mini",
+      "metric": "reasoning",
+      "inferred_en_total_from_rounded_mean": 0,
+      "inferred_zh_total_from_rounded_mean": 0,
+      "absolute_total_difference": 0,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": null,
+      "inverse_sample_count_ratio": 1.0869565217391304
+    },
+    {
+      "model": "GLM-5",
+      "metric": "input",
+      "inferred_en_total_from_rounded_mean": 68016576,
+      "inferred_zh_total_from_rounded_mean": 68016606,
+      "absolute_total_difference": 30,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 0.9795922688022402,
+      "inverse_sample_count_ratio": 0.9795918367346939
+    },
+    {
+      "model": "GLM-5",
+      "metric": "output",
+      "inferred_en_total_from_rounded_mean": 5414544,
+      "inferred_zh_total_from_rounded_mean": 5414549,
+      "absolute_total_difference": 5,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 0.9795927413278016,
+      "inverse_sample_count_ratio": 0.9795918367346939
+    },
+    {
+      "model": "GLM-5",
+      "metric": "reasoning",
+      "inferred_en_total_from_rounded_mean": 4198752,
+      "inferred_zh_total_from_rounded_mean": 4198712,
+      "absolute_total_difference": 40,
+      "same_total_possible_under_nearest_integer_rounding": true,
+      "reported_mean_ratio_zh_over_en": 0.9795825045156275,
+      "inverse_sample_count_ratio": 0.9795918367346939
+    }
+  ]
+}
