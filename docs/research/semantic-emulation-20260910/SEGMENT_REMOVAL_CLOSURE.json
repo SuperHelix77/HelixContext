@@ -1,0 +1,15 @@
+{
+  "schema": "helix.readonly-segment-closure.v1",
+  "native_streams": 4,
+  "segments_reconciled": 18,
+  "native_command_identities_verified": 32,
+  "links_checked": 5,
+  "new_native_benchmarks": 0,
+  "new_offline_benchmarks": 0,
+  "hidden_reasoning_inspected": false,
+  "new_model_qualification": false,
+  "files": {
+    "docs/research/semantic-emulation-20260910/SEGMENT_REMOVAL_AUDIT.md": "d79d5d85f034cfca9ee9e7efcf76701d7d2f1eb2551fcee3977814be5a8425b7",
+    "docs/research/semantic-emulation-20260910/SEGMENT_REMOVAL_AUDIT.json": "136733a731edc4ec2fd58d552a2199057817c194c03fed4f2533d125574532d9"
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "schema": "helix.segment-removal-audit.v1",
+  "created_at": "2026-09-10T08:28:23.647568+00:00",
+  "method": "Read existing raw native events and public command receipts; inspect visible commands/messages only. No benchmark or private reasoning inspection.",
+  "source_report_sha256": "07e848577f5dd72ff2e6032383be3c99b869c160dcf51de0b1cbee4ebbf0d15c",
+  "rows": [
+    {
+      "case": "sample_a",
+      "arm": "on",
+      "native_sha256": "2c44d20aaf0e18310cd05cdadae690c7998cac4076f3d23ae76640af07154ab0",
+      "public_commands_path": "docs/research/astra-reuse-v1/artifacts/sample_a-on/commands.json",
+      "public_commands_sha256": "58bffdbbe2efe2be715ca6c21b72d3f3ff1158e737339be19b327ba2dbccd01c",
+      "segments": [
+        {
+          "segment": 1,
+          "native_interval_exclusive_inclusive": [
+            -1,
+            64
+          ],
+          "usage": {
+            "totalTokens": 21345,
+            "inputTokens": 21254,
+            "cachedInputTokens": 7040,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 91,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "navigation",
+            "review introduction"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 63,
+              "command_sha256": "98fc5f0816757b4fafea7e82d563950ddb315472fe272fa6caa49b6e15de8394",
+              "exit_status": 0,
+              "output_bytes": 239,
+              "output_sha256": "298f66cb83a2545adcb5229d8ac5798556c72a3920f99501c03208b4a0125db5"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 59,
+              "phase": "commentary",
+              "text_sha256": "fd3e36d9f0743aecd582935278a09b87b8d58cec425df2d02970247bc648488f"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "native_interval_exclusive_inclusive": [
+            64,
+            84
+          ],
+          "usage": {
+            "totalTokens": 21680,
+            "inputTokens": 21475,
+            "cachedInputTokens": 21120,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 205,
+            "reasoningOutputTokens": 42
+          },
+          "visible_activity": [
+            "task/source/skill/coverage acquisition"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 77,
+              "command_sha256": "6c30a0c5285b59a401ac7f9f55dbd1e52c69f344466299bc2dab2243d76e7ff3",
+              "exit_status": 0,
+              "output_bytes": 3417,
+              "output_sha256": "87c340ceb61f1b36609cf0b501db9107d9b85bcaafdb71741bbd4d4c8c54a56a"
+            },
+            {
+              "native_index": 80,
+              "command_sha256": "06b077a549bf006e04f71aef2f2556b1d59c04a9e83230c6fa5a3f338495a1de",
+              "exit_status": 0,
+              "output_bytes": 7535,
+              "output_sha256": "685cb8a177a37621edba675c0ead99a9d13950a379f0c7ac8b8da68d9eb8f970"
+            },
+            {
+              "native_index": 81,
+              "command_sha256": "9d7b1dde46751902f63c60430b9cbd72535dc8f299ad513653941be554b92400",
+              "exit_status": 0,
+              "output_bytes": 24760,
+              "output_sha256": "350443f2fbb361407761b84747d4f7160ad0b3779e9db053fe79d7c1f6364747"
+            },
+            {
+              "native_index": 83,
+              "command_sha256": "b02cc74a18ccd46cfff731b25b41d4bdbdcafc6fc307df15c4db89cd18ef094d",
+              "exit_status": 0,
+              "output_bytes": 6006,
+              "output_sha256": "88492badc9d6cce3603a7b8b5c0dd8c7dea8851cbc5e612b65b722fbc19f0dd6"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 3,
+          "native_interval_exclusive_inclusive": [
+            84,
+            361
+          ],
+          "usage": {
+            "totalTokens": 33912,
+            "inputTokens": 33119,
+            "cachedInputTokens": 21248,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 793,
+            "reasoningOutputTokens": 516
+          },
+          "visible_activity": [
+            "semantic assessment",
+            "model-written final"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [],
+          "model_message_markers": [
+            {
+              "native_index": 360,
+              "phase": "final_answer",
+              "text_sha256": "5d8857ad8c68b5f290ca3eed1dcf4751daab6df1989c74099bb6dff36f8bb513"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "sample_a",
+      "arm": "off",
+      "native_sha256": "0e6da902ea5a4f96400c8f3ee3e1fbe0c84504c6ddc40688ab575dd517d8b185",
+      "public_commands_path": "docs/research/astra-reuse-v1/artifacts/sample_a-off/commands.json",
+      "public_commands_sha256": "307a3d01b0fa6909339cf6a0f2bbf0de7bf8eaa058b98850bd98c8308af5af5a",
+      "segments": [
+        {
+          "segment": 1,
+          "native_interval_exclusive_inclusive": [
+            -1,
+            71
+          ],
+          "usage": {
+            "totalTokens": 19996,
+            "inputTokens": 19884,
+            "cachedInputTokens": 7040,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 112,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "navigation",
+            "review introduction"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 70,
+              "command_sha256": "cd5da495ccbb6d0288d804ee30846aeb5e71ae91acfaba466f24c39b43c1b5d1",
+              "exit_status": 0,
+              "output_bytes": 240,
+              "output_sha256": "2198032959acb52d1f68735905a98f05817791a2f7ea23af388b7f6cf8814c72"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 66,
+              "phase": "commentary",
+              "text_sha256": "fd18cc9427f2977fd31a18dd2940c57628b2729ec62f6a5520c5a0cd95763627"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "native_interval_exclusive_inclusive": [
+            71,
+            91
+          ],
+          "usage": {
+            "totalTokens": 20322,
+            "inputTokens": 20124,
+            "cachedInputTokens": 19712,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 198,
+            "reasoningOutputTokens": 57
+          },
+          "visible_activity": [
+            "task/source/coverage acquisition"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 84,
+              "command_sha256": "82fcad088c57ebdcd59b65ee13c9f8254726fc059130e6e696027699d0a5f6ad",
+              "exit_status": 0,
+              "output_bytes": 6478,
+              "output_sha256": "ef41b671c858190ff80e53ba7eb27ca968bb758f8ec9a71ef116ed07055fcfc7"
+            },
+            {
+              "native_index": 86,
+              "command_sha256": "418de8b28c81750bc9b8aa6208606f5f8392d7fe2756baf6b46987eb690d859a",
+              "exit_status": 0,
+              "output_bytes": 10027,
+              "output_sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d"
+            },
+            {
+              "native_index": 89,
+              "command_sha256": "76975848d76787c623ac3bc7ec5b3590e175205cc3b2623d9043cb7bd501bbd2",
+              "exit_status": 1,
+              "output_bytes": 2279,
+              "output_sha256": "53bdc01a5c68911db7e90929ebf41d26e7a72a13a1cf0c6bd43fc3d7c9791052"
+            },
+            {
+              "native_index": 90,
+              "command_sha256": "6b20e84b60c708c8cd9b3d24d1e01e598b982e1deb70cfb53d815b0d66ed945b",
+              "exit_status": 0,
+              "output_bytes": 18209,
+              "output_sha256": "3098d848cc667be168dd6319c4cd3c676d1e27cddd39dae3b886f3f40f0a73b9"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 3,
+          "native_interval_exclusive_inclusive": [
+            91,
+            137
+          ],
+          "usage": {
+            "totalTokens": 30991,
+            "inputTokens": 30393,
+            "cachedInputTokens": 19968,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 598,
+            "reasoningOutputTokens": 301
+          },
+          "visible_activity": [
+            "hashing",
+            "existing tests"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 98,
+              "command_sha256": "1315dad9528a847ff692ccfb71555ec9890d2e66a6f3aacc25ed3ac213545f6e",
+              "exit_status": 0,
+              "output_bytes": 1160,
+              "output_sha256": "cb3a4753b0cdd9569d62ceaead5da35f6375b0d09b8d5e8d20e40c99b8e9f3fb"
+            },
+            {
+              "native_index": 106,
+              "command_sha256": "2c9996f0287767c4e53a90b94ed3e628b2aa1626e8615eaf74183931bfc11714",
+              "exit_status": 0,
+              "output_bytes": 182,
+              "output_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e"
+            },
+            {
+              "native_index": 110,
+              "command_sha256": "dc7b319e74b6a9813b0ec98d965d8cf954fde680837e5e95e5d2684c728af794",
+              "exit_status": 0,
+              "output_bytes": 166,
+              "output_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24"
+            },
+            {
+              "native_index": 136,
+              "command_sha256": "5fcef42d0d8f101e3b0d6971e9156e754109d18fc3b7b43d16d1a81112d2c65c",
+              "exit_status": 0,
+              "output_bytes": 99,
+              "output_sha256": "f45d543b12d2c6cff965f73c61374f00ccd4d88266b4483358289f228f6eebcc"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 4,
+          "native_interval_exclusive_inclusive": [
+            137,
+            145
+          ],
+          "usage": {
+            "totalTokens": 31938,
+            "inputTokens": 31346,
+            "cachedInputTokens": 30208,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 592,
+            "reasoningOutputTokens": 402
+          },
+          "visible_activity": [
+            "hashing"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 144,
+              "command_sha256": "1315dad9528a847ff692ccfb71555ec9890d2e66a6f3aacc25ed3ac213545f6e",
+              "exit_status": 0,
+              "output_bytes": 1160,
+              "output_sha256": "cb3a4753b0cdd9569d62ceaead5da35f6375b0d09b8d5e8d20e40c99b8e9f3fb"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 5,
+          "native_interval_exclusive_inclusive": [
+            145,
+            324
+          ],
+          "usage": {
+            "totalTokens": 32192,
+            "inputTokens": 32013,
+            "cachedInputTokens": 31104,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 179,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "semantic assessment",
+            "model-written final"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [],
+          "model_message_markers": [
+            {
+              "native_index": 323,
+              "phase": "final_answer",
+              "text_sha256": "62763653c5035e22ba682b52f94d33948f0caea8e3435ce50142659061420e44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "sample_b",
+      "arm": "off",
+      "native_sha256": "06c84f838e94f858c016c4a12bd4c2dcbe7efdc442637c447f8c74547cc441ff",
+      "public_commands_path": "docs/research/astra-reuse-v1/artifacts/sample_b-off/commands.json",
+      "public_commands_sha256": "c86ac5ea982d4793cb38d9ade9390f6824af6b60d5b278310b2709806f038cbf",
+      "segments": [
+        {
+          "segment": 1,
+          "native_interval_exclusive_inclusive": [
+            -1,
+            67
+          ],
+          "usage": {
+            "totalTokens": 19984,
+            "inputTokens": 19884,
+            "cachedInputTokens": 11904,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 100,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "navigation",
+            "review introduction"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 66,
+              "command_sha256": "f62fb5ba5f02537f20dc7fc886b7ea90dcb4ace09ce32d216f8d2a871018f344",
+              "exit_status": 0,
+              "output_bytes": 240,
+              "output_sha256": "a03e1950351d80853d2a96c98ec9e99dffcb5010fcc3f2e415360d4753f8e52c"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 62,
+              "phase": "commentary",
+              "text_sha256": "1d09d796d88c961fa7b400f070ce515aadb37e6f59bd456bf33f6aaea6265d66"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "native_interval_exclusive_inclusive": [
+            67,
+            87
+          ],
+          "usage": {
+            "totalTokens": 20295,
+            "inputTokens": 20110,
+            "cachedInputTokens": 19712,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 185,
+            "reasoningOutputTokens": 41
+          },
+          "visible_activity": [
+            "task/source/coverage acquisition"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 81,
+              "command_sha256": "7230d61d991d001d2be89ceddeb93c3e45cb119e6e03506ca5d5af492b1f9546",
+              "exit_status": 1,
+              "output_bytes": 1075,
+              "output_sha256": "8c1310f036707259786436ccc6267c1c195277ec1331293271b3f43c051fe7b0"
+            },
+            {
+              "native_index": 82,
+              "command_sha256": "ac969d5e733609cbe582c35eb2e5f2f970db864f0e645a809bc38326b3b2127d",
+              "exit_status": 0,
+              "output_bytes": 22992,
+              "output_sha256": "517798e9c8ae4cae00bb6c38ffe646a92b8613a9e0a38b699a3a21d604d727cd"
+            },
+            {
+              "native_index": 84,
+              "command_sha256": "c7cb06652f31aaf3ba0e78547503bcd58da5fd0e47ddf40d5bb9921a17bc5225",
+              "exit_status": 0,
+              "output_bytes": 1722,
+              "output_sha256": "fd4371baaba38f6ddd86c25bfbfeb6d32c6e8dbdc84c125cb30501bb825fe73b"
+            },
+            {
+              "native_index": 86,
+              "command_sha256": "9cd36ada866b5af95241c967c95089f9545c8addf571e9b18cb2ecd478ca47b1",
+              "exit_status": 0,
+              "output_bytes": 11544,
+              "output_sha256": "e12b8f493da09842c847d875d16679256df3759dd9016e67d2f05351f3819041"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 3,
+          "native_interval_exclusive_inclusive": [
+            87,
+            150
+          ],
+          "usage": {
+            "totalTokens": 31227,
+            "inputTokens": 30952,
+            "cachedInputTokens": 19968,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 275,
+            "reasoningOutputTokens": 135
+          },
+          "visible_activity": [
+            "explicit semantic defect diagnosis",
+            "hashing"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 149,
+              "command_sha256": "c79536beb6f6cc0875de94e53b0bd2bbdd874e01cb258774417104e45b3c2a67",
+              "exit_status": 0,
+              "output_bytes": 741,
+              "output_sha256": "2ed1c176803eccebf2d1de29bc48b646b9ef4d0d1e90fc4f5acd385a39218e2e"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 145,
+              "phase": "commentary",
+              "text_sha256": "52f307d664835aba4f49fd46ec11d4ecbcf3d6e8ff29ec33e6f316f8a4c2649d"
+            }
+          ]
+        },
+        {
+          "segment": 4,
+          "native_interval_exclusive_inclusive": [
+            150,
+            194
+          ],
+          "usage": {
+            "totalTokens": 32216,
+            "inputTokens": 31668,
+            "cachedInputTokens": 30720,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 548,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "existing tests",
+            "new semantic probe generation and execution"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 161,
+              "command_sha256": "b0156744c56e77d7b8dda068afabcc341c5b56fccb0c6c5262e9a4834fd428ff",
+              "exit_status": 0,
+              "output_bytes": 182,
+              "output_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e"
+            },
+            {
+              "native_index": 163,
+              "command_sha256": "50eab807cd43df0c6a38676ad7f6d5fe23e817ab13b5fcacda1f19f233a530e0",
+              "exit_status": 0,
+              "output_bytes": 596,
+              "output_sha256": "6390456d4dede93e01e6bd1cccd9e92b2780c4059947e57f6c02a9651bf7aeda"
+            },
+            {
+              "native_index": 167,
+              "command_sha256": "8ddcb4305a983fecdb1da311cf1ba70151c3d1fd38662b6395d74a15907ae8cf",
+              "exit_status": 0,
+              "output_bytes": 166,
+              "output_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24"
+            },
+            {
+              "native_index": 193,
+              "command_sha256": "2af79bcdcd10f8224de5e0280c2d39f4acdff2521008f45874adf579a28f70ba",
+              "exit_status": 0,
+              "output_bytes": 99,
+              "output_sha256": "7a0a45177ee5390597831aff588f41e6992754df77fa7aaccedfb4b6bc13d64f"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 5,
+          "native_interval_exclusive_inclusive": [
+            194,
+            202
+          ],
+          "usage": {
+            "totalTokens": 32944,
+            "inputTokens": 32732,
+            "cachedInputTokens": 31488,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 212,
+            "reasoningOutputTokens": 120
+          },
+          "visible_activity": [
+            "hashing"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 201,
+              "command_sha256": "c79536beb6f6cc0875de94e53b0bd2bbdd874e01cb258774417104e45b3c2a67",
+              "exit_status": 0,
+              "output_bytes": 741,
+              "output_sha256": "2ed1c176803eccebf2d1de29bc48b646b9ef4d0d1e90fc4f5acd385a39218e2e"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 6,
+          "native_interval_exclusive_inclusive": [
+            202,
+            501
+          ],
+          "usage": {
+            "totalTokens": 33281,
+            "inputTokens": 32982,
+            "cachedInputTokens": 32512,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 299,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "semantic assessment",
+            "model-written final"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [],
+          "model_message_markers": [
+            {
+              "native_index": 500,
+              "phase": "final_answer",
+              "text_sha256": "68cec4a6b5fa374f7f22608a6d11161a591befc56209f95e9843715dbd831637"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "case": "sample_b",
+      "arm": "on",
+      "native_sha256": "d7de3959f1c9e5d062b0a8bd84fb9115fee7e8e8c8d20b21a8b7644e39887372",
+      "public_commands_path": "docs/research/astra-reuse-v1/artifacts/sample_b-on/commands.json",
+      "public_commands_sha256": "98a60432831abfd466214e9f33e47089cec81e7b593579d9c8b1d40ea229c4e0",
+      "segments": [
+        {
+          "segment": 1,
+          "native_interval_exclusive_inclusive": [
+            -1,
+            73
+          ],
+          "usage": {
+            "totalTokens": 21473,
+            "inputTokens": 21257,
+            "cachedInputTokens": 7040,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 216,
+            "reasoningOutputTokens": 0
+          },
+          "visible_activity": [
+            "task/source/skill/coverage acquisition",
+            "review introduction"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 60,
+              "command_sha256": "47d0315b306ea8525186dd9db0e864afe4736ff9c09ad411b870d3692da2ea8e",
+              "exit_status": 0,
+              "output_bytes": 92,
+              "output_sha256": "e95c052dbb40f9b0ca8a77ba44ee06932125627e21f49d295f51fe02ceb4996e"
+            },
+            {
+              "native_index": 68,
+              "command_sha256": "6dbe98fcc8f4bf549716a8c07f81bde5d24b6927db1f4d2726568fc6727a21c9",
+              "exit_status": 0,
+              "output_bytes": 3157,
+              "output_sha256": "e09f77b88631808c4613a84ecb96fe2ff6bd5d32d8a72b2430cd9d6ff911e2cf"
+            },
+            {
+              "native_index": 71,
+              "command_sha256": "bd804b3d9b9708ba04a508b8ff6e8945fc270f04d498f8bf7b31d02256c5c1f3",
+              "exit_status": 1,
+              "output_bytes": 12619,
+              "output_sha256": "6c38af72c9965851c58eeeacefcf46245012862e6a8a554e61fd5c94b5fcacd6"
+            },
+            {
+              "native_index": 72,
+              "command_sha256": "054f76d70dc1daaef3b821ef655867e4ca859dfce5cb305d1f68d490993d4a52",
+              "exit_status": 0,
+              "output_bytes": 13541,
+              "output_sha256": "2b718e7ad6ce361a03a2e531085e4c85030dfa7bac6575640ed714ff189ed108"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 56,
+              "phase": "commentary",
+              "text_sha256": "4c50a9666584b06661fac399a21544b34695df5ff278208cc6dfd6a2094f233b"
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "native_interval_exclusive_inclusive": [
+            73,
+            141
+          ],
+          "usage": {
+            "totalTokens": 30662,
+            "inputTokens": 30365,
+            "cachedInputTokens": 21120,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 297,
+            "reasoningOutputTokens": 195
+          },
+          "visible_activity": [
+            "explicit semantic defect diagnosis",
+            "dependency acquisition"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 140,
+              "command_sha256": "93bcf39761cd779051a7a536f6a7c33e2e28642fd8e55c846877140e746a67eb",
+              "exit_status": 0,
+              "output_bytes": 12139,
+              "output_sha256": "4e75c005d9d343d34273c5b88e154c67f9276fb61fa3d8e4813eb102c63613a6"
+            }
+          ],
+          "model_message_markers": [
+            {
+              "native_index": 136,
+              "phase": "commentary",
+              "text_sha256": "91d5e2b62de05e350379293de7ba87d15dac1e673d534ddfb58fd618565bd943"
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "native_interval_exclusive_inclusive": [
+            141,
+            149
+          ],
+          "usage": {
+            "totalTokens": 34553,
+            "inputTokens": 34068,
+            "cachedInputTokens": 30208,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 485,
+            "reasoningOutputTokens": 122
+          },
+          "visible_activity": [
+            "new semantic probe generation and execution"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [
+            {
+              "native_index": 148,
+              "command_sha256": "364e0e656d8673436197ee2a5b18893da7f428ce80c6d86006f3c66dd45c1c76",
+              "exit_status": 1,
+              "output_bytes": 499,
+              "output_sha256": "3b780da91a7791ac0110ab1e117d9fc3842f79f2076943274cb949d5523658c5"
+            }
+          ],
+          "model_message_markers": []
+        },
+        {
+          "segment": 4,
+          "native_interval_exclusive_inclusive": [
+            149,
+            462
+          ],
+          "usage": {
+            "totalTokens": 35318,
+            "inputTokens": 34790,
+            "cachedInputTokens": 33920,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 528,
+            "reasoningOutputTokens": 215
+          },
+          "visible_activity": [
+            "semantic assessment",
+            "model-written final"
+          ],
+          "causal_token_allocation": null,
+          "semantic_removal_certified": false,
+          "commands": [],
+          "model_message_markers": [
+            {
+              "native_index": 461,
+              "phase": "final_answer",
+              "text_sha256": "eba3a91ab2b479176054cc1f7418814bb99a2b9c3d9ca2cbc75f9521c06ef958"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "zero_cost_evidence_prefix_relocation_scenarios": [
+    {
+      "case": "sample_a",
+      "hypothetically_retained_segments": [
+        3
+      ],
+      "retained_observed_usage": {
+        "inputTokens": 33119,
+        "outputTokens": 793,
+        "cachedInputTokens": 21248,
+        "reasoningOutputTokens": 516
+      },
+      "control_usage": {
+        "inputTokens": 133760,
+        "outputTokens": 1679,
+        "cachedInputTokens": 108032,
+        "reasoningOutputTokens": 760
+      },
+      "input_saving_percent": 75.23998205741627,
+      "output_saving_percent": 52.76950565812983,
+      "both_80": false
+    },
+    {
+      "case": "sample_b",
+      "hypothetically_retained_segments": [
+        2,
+        3,
+        4
+      ],
+      "retained_observed_usage": {
+        "inputTokens": 99223,
+        "outputTokens": 1310,
+        "cachedInputTokens": 85248,
+        "reasoningOutputTokens": 532
+      },
+      "control_usage": {
+        "inputTokens": 168328,
+        "outputTokens": 1619,
+        "cachedInputTokens": 146304,
+        "reasoningOutputTokens": 296
+      },
+      "input_saving_percent": 41.05377596121858,
+      "output_saving_percent": 19.085855466337243,
+      "both_80": false
+    }
+  ],
+  "scenario_limits": [
+    "Not a measured optimization, safe deletion permission, causal estimate or model lower bound.",
+    "All retained segment counters held fixed; omitted evidence is assumed perfectly supplied for zero additional cost.",
+    "Mixed diagnosis/probe/final segments retained. Surgical within-segment changes are not bounded by this arithmetic.",
+    "No cross-case pooling with seven-cell release cohort."
+  ],
+  "scenario_median_input_saving_percent": 58.14687900931742,
+  "scenario_median_output_saving_percent": 35.92768056223353,
+  "native_benchmark_calls": 0,
+  "implementation_changes": false,
+  "admission": "Preparation-only whole-segment removal cannot justify 65/65 or 80/80 from these fixed trajectories; no new launch."
+}
