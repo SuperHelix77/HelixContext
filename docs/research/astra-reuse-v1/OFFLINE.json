@@ -1,0 +1,392 @@
+{
+  "classification": "Offline probe-reuse and trace audit; not native-token savings or capability parity",
+  "native_model_calls": 0,
+  "prior_model": "gpt-6-astra",
+  "prior_effort": "xhigh",
+  "trace": [
+    {
+      "arm": "off",
+      "segments": [
+        {
+          "segment": 1,
+          "usage": {
+            "totalTokens": 19466,
+            "inputTokens": 19386,
+            "cachedInputTokens": 11904,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 80,
+            "reasoningOutputTokens": 0
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 47,
+              "command_sha256": "f2be115e4f520bdd6f2cb889e0b39e04ac011ec2497ca4725d998ca6b9ef9e79",
+              "command_bytes": 88,
+              "returned_bytes": 215
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "usage": {
+            "totalTokens": 19719,
+            "inputTokens": 19584,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 135,
+            "reasoningOutputTokens": 0
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 57,
+              "command_sha256": "1890a29580b44217772ac1b138b231d9855ffbaedbafaf067c1ca8f6b0d0d9d8",
+              "command_bytes": 66,
+              "returned_bytes": 10546
+            },
+            {
+              "kind": "command",
+              "event": 59,
+              "command_sha256": "eb6d1881795c561ebab9c4d5128df91716427e1aa478e5b8f8cdeba7f87cfe26",
+              "command_bytes": 107,
+              "returned_bytes": 17672
+            },
+            {
+              "kind": "command",
+              "event": 61,
+              "command_sha256": "62a522068e5a2d3f06897ae84dd08966b7b8f9c33fbf3ce0e8d4536a6f582b8b",
+              "command_bytes": 67,
+              "returned_bytes": 0
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "usage": {
+            "totalTokens": 27820,
+            "inputTokens": 27445,
+            "cachedInputTokens": 19456,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 375,
+            "reasoningOutputTokens": 107
+          },
+          "operations": []
+        },
+        {
+          "segment": 4,
+          "usage": {
+            "totalTokens": 29007,
+            "inputTokens": 27844,
+            "cachedInputTokens": 11904,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1163,
+            "reasoningOutputTokens": 19
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 134,
+              "command_sha256": "ed214cba3f25f47e6b2d18640f65560719b7aaf73c9c21f006b57e5ebe02513a",
+              "command_bytes": 3178,
+              "returned_bytes": 166
+            },
+            {
+              "kind": "command",
+              "event": 160,
+              "command_sha256": "6a0971137e873102acc73fb9330c8f0363d9e37f723abaf810c22fa31d1a4e00",
+              "command_bytes": 400,
+              "returned_bytes": 99
+            }
+          ]
+        },
+        {
+          "segment": 5,
+          "usage": {
+            "totalTokens": 29212,
+            "inputTokens": 29165,
+            "cachedInputTokens": 27648,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 47,
+            "reasoningOutputTokens": 0
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 167,
+              "command_sha256": "809a1dbc90b29ad0ba267d3c6828fbecf46f08810802dbb33a95fd92f1b6f4ac",
+              "command_bytes": 106,
+              "returned_bytes": 1248
+            }
+          ]
+        },
+        {
+          "segment": 6,
+          "usage": {
+            "totalTokens": 29761,
+            "inputTokens": 29618,
+            "cachedInputTokens": 28928,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 143,
+            "reasoningOutputTokens": 30
+          },
+          "operations": []
+        }
+      ]
+    },
+    {
+      "arm": "on",
+      "segments": [
+        {
+          "segment": 1,
+          "usage": {
+            "totalTokens": 24609,
+            "inputTokens": 24474,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 135,
+            "reasoningOutputTokens": 0
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 52,
+              "command_sha256": "116ac9e382d68473bc7885e8856f2f21bbe2a2991225afbb18c0a4602d4b7071",
+              "command_bytes": 210,
+              "returned_bytes": 3786
+            }
+          ]
+        },
+        {
+          "segment": 2,
+          "usage": {
+            "totalTokens": 25885,
+            "inputTokens": 25491,
+            "cachedInputTokens": 24320,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 394,
+            "reasoningOutputTokens": 198
+          },
+          "operations": [
+            {
+              "kind": "internal_edit",
+              "event": 60,
+              "command_sha256": null,
+              "command_bytes": 0,
+              "returned_bytes": null
+            }
+          ]
+        },
+        {
+          "segment": 3,
+          "usage": {
+            "totalTokens": 27219,
+            "inputTokens": 26032,
+            "cachedInputTokens": 25344,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1187,
+            "reasoningOutputTokens": 516
+          },
+          "operations": [
+            {
+              "kind": "command",
+              "event": 69,
+              "command_sha256": "721f70b750774ae549fec35215c6357a4c5eb6be210e424469e261106ec7d2b6",
+              "command_bytes": 2296,
+              "returned_bytes": 1488
+            }
+          ]
+        },
+        {
+          "segment": 4,
+          "usage": {
+            "totalTokens": 27854,
+            "inputTokens": 27618,
+            "cachedInputTokens": 25856,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 236,
+            "reasoningOutputTokens": 114
+          },
+          "operations": []
+        }
+      ]
+    }
+  ],
+  "delete_initial_reread_only": {
+    "inputTokens": {
+      "control": 153042,
+      "retained": 79141,
+      "conditional_saving_percent": 48.2880516459534
+    },
+    "outputTokens": {
+      "control": 1943,
+      "retained": 1817,
+      "conditional_saving_percent": 6.484817292846112
+    }
+  },
+  "mixed_probe_segment": {
+    "input_tokens": 26032,
+    "output_tokens": 1187,
+    "reported_reasoning_output_tokens": 516,
+    "causal_token_attribution": "UNKNOWN; code, interpretation and review mixed"
+  },
+  "probe_bytes_available_for_exact_reuse": 5320,
+  "cases": [
+    {
+      "case": "valid",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "executions": [
+        {
+          "name": "public",
+          "exit_status": 0,
+          "seconds": 0.506214958964847,
+          "stdout_bytes": 99,
+          "stderr_bytes": 0,
+          "stdout_sha256": "ea9786655e130105694a42b61733d673f90098974ba3b65dfb43b66927820b82",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": null
+        },
+        {
+          "name": "prior_astra_off",
+          "exit_status": 0,
+          "seconds": 0.13111933402251452,
+          "stdout_bytes": 166,
+          "stderr_bytes": 0,
+          "stdout_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1"
+        },
+        {
+          "name": "prior_astra_on",
+          "exit_status": 0,
+          "seconds": 0.06181708304211497,
+          "stdout_bytes": 182,
+          "stderr_bytes": 0,
+          "stdout_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009"
+        }
+      ]
+    },
+    {
+      "case": "original_missing_feature",
+      "source_sha256": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+      "executions": [
+        {
+          "name": "public",
+          "exit_status": 1,
+          "seconds": 0.396451500011608,
+          "stdout_bytes": 6598,
+          "stderr_bytes": 0,
+          "stdout_sha256": "9001a7780e131a2101b997891ad9699accfb5920b7584da954a2ca507881df45",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": null
+        },
+        {
+          "name": "prior_astra_off",
+          "exit_status": 1,
+          "seconds": 0.11544854094972834,
+          "stdout_bytes": 0,
+          "stderr_bytes": 188,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "e49e9857d42ca533c7fd71f5b2f722eeea50e69ef018cb890044a485672f81f5",
+          "exact_program_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1"
+        },
+        {
+          "name": "prior_astra_on",
+          "exit_status": 1,
+          "seconds": 0.07510399998864159,
+          "stdout_bytes": 0,
+          "stderr_bytes": 149,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "17af650cfac264550e0ac4f565fc9567011f1b529298a7a2305b79ff6bcc8e7d",
+          "exact_program_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009"
+        }
+      ]
+    },
+    {
+      "case": "raw_fts_all",
+      "source_sha256": "68d82515e241ebdf1599eb071ebfefd25dfafe8457f58867098114b446894dd8",
+      "executions": [
+        {
+          "name": "public",
+          "exit_status": 0,
+          "seconds": 0.38245337503030896,
+          "stdout_bytes": 99,
+          "stderr_bytes": 0,
+          "stdout_sha256": "000157e5dfe569bf3664c712195eeb1d4a9ed4bed7030ee7fa013c1240fa8b63",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": null
+        },
+        {
+          "name": "prior_astra_off",
+          "exit_status": 1,
+          "seconds": 0.1285984999849461,
+          "stdout_bytes": 0,
+          "stderr_bytes": 89,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "923e5b6b4550d666c9e907c8797442f5f78aee033b9e03df4c2b34f28810c91f",
+          "exact_program_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1"
+        },
+        {
+          "name": "prior_astra_on",
+          "exit_status": 1,
+          "seconds": 0.06752104201586917,
+          "stdout_bytes": 0,
+          "stderr_bytes": 125,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "03c1ea1159bd0b6947a5adac92999cc6cc6c73f478d7f001073b6185e926d285",
+          "exact_program_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009"
+        }
+      ]
+    },
+    {
+      "case": "ascii_tokenization",
+      "source_sha256": "f231ae642716a974f1eecbdead6cb6b0809c12fef14c2ff9a2c254b1923d3e99",
+      "executions": [
+        {
+          "name": "public",
+          "exit_status": 0,
+          "seconds": 0.3859129589982331,
+          "stdout_bytes": 99,
+          "stderr_bytes": 0,
+          "stdout_sha256": "0b2d60910038563d9c68f9904c6be07577cdfc7b0f66acf2a1c6887d1d8e0358",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "exact_program_sha256": null
+        },
+        {
+          "name": "prior_astra_off",
+          "exit_status": 1,
+          "seconds": 0.11906608403660357,
+          "stdout_bytes": 0,
+          "stderr_bytes": 89,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "d5d351cf37f28c7218e332e554dbe534057628b2961f5ab64647b3e186a26503",
+          "exact_program_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1"
+        },
+        {
+          "name": "prior_astra_on",
+          "exit_status": 1,
+          "seconds": 0.06804816599469632,
+          "stdout_bytes": 0,
+          "stderr_bytes": 125,
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stderr_sha256": "8b81a590bfc54221c520138e698aa012fac27e5d56a773eecf20e77a40f7d62b",
+          "exact_program_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009"
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 2.4468381670303643,
+  "exact_sources_unchanged_after_execution": true,
+  "storage_payload_bytes": 126713,
+  "total_io_bytes": null,
+  "model_cost_saving": null,
+  "limits": [
+    "Historical probes already exposed; not new independent model replication.",
+    "Both future arms must have equal access to reusable regression tests.",
+    "Passing old probes cannot establish adequate current coverage or exclude unseen defects.",
+    "No hidden reasoning classification, no whole-segment deletion of semantic probes.",
+    "Mutation checks cover only the explicit defects and do not certify arbitrary code."
+  ]
+}

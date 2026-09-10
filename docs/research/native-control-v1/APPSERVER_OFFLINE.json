@@ -1,0 +1,71 @@
+{
+  "classification": "Offline installed app-server lifecycle and instruction-boundary evidence, not model parity",
+  "rows": [
+    {
+      "arm": "shared_continuity",
+      "global_activation_in_input": true,
+      "memory_instruction_retained": true,
+      "skill_attached": false,
+      "skill_sha256": null,
+      "declared_hooks": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "local_provider_requests": 3,
+      "ordinary_shell_commands": 1,
+      "caller_callbacks": 1,
+      "synthetic_final_item": true,
+      "input_text_bytes": 24757,
+      "synthetic_usage_not_economic_evidence": true,
+      "native_model_calls": 0,
+      "native_events_sha256": "cc8f427e8f9db30f4a27583ed8f8fc7a95369d311453dddecf045bf85ab1d98f",
+      "config_sha256": "79e3441703522eb541d30135751151272b207ffa26cc1210b964c7803efa0bbe"
+    },
+    {
+      "arm": "ordinary_memory",
+      "global_activation_in_input": false,
+      "memory_instruction_retained": true,
+      "skill_attached": false,
+      "skill_sha256": null,
+      "declared_hooks": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "local_provider_requests": 3,
+      "ordinary_shell_commands": 1,
+      "caller_callbacks": 1,
+      "synthetic_final_item": true,
+      "input_text_bytes": 23345,
+      "synthetic_usage_not_economic_evidence": true,
+      "native_model_calls": 0,
+      "native_events_sha256": "b4e2bad82f12306e63c896e77b51c648a5e60203702bc300b133784f90081b8f",
+      "config_sha256": "faa43c468c0a46cd2bfab49294ea89bcf453348055beb419e9612f44f19a5a21"
+    },
+    {
+      "arm": "helix_attached",
+      "global_activation_in_input": false,
+      "memory_instruction_retained": true,
+      "skill_attached": true,
+      "skill_sha256": "97dd5d87e30b9e5d205a8bdb5fe4155ba053e43275b7e2a51371f76edb6089d8",
+      "declared_hooks": 0,
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "local_provider_requests": 3,
+      "ordinary_shell_commands": 1,
+      "caller_callbacks": 1,
+      "synthetic_final_item": true,
+      "input_text_bytes": 13804,
+      "synthetic_usage_not_economic_evidence": true,
+      "native_model_calls": 0,
+      "native_events_sha256": "3d3882deca0db402b8183c0253edc1650adfe642371a9b5da6b395a2b826eb59",
+      "config_sha256": "bdbc77a2fcebca8733034ce5209929ad1e6702cd21e991e4ffb23bcfeb546335"
+    }
+  ],
+  "hosted_model_calls": 0,
+  "global_config_and_agents_unchanged": true,
+  "cli_sha256": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+  "source_sha256": "fd7eb335d2206e14b37c5791c0591cbf349c39c0b4f6c4fd32b43f417b4f5d35",
+  "limits": [
+    "Loopback scripted responses and fake usage; not economic evidence or model-written answers.",
+    "One shell primitive and one callback do not certify every native tool or semantic capability.",
+    "Actual authenticated settings, skill/MCP catalogs, hooks and project trust still require separate binding."
+  ]
+}

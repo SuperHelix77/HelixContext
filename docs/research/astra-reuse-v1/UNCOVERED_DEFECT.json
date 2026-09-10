@@ -1,0 +1,29 @@
+{
+  "classification": "Offline counterexample to test-PASS implying semantic correctness",
+  "source_sha256": "676f0328b2b9390dfa3111b18d324295b5a0728bf0da0ef29df5e8492c9e390b",
+  "mutation": "Public search default limit 10 changed to 9",
+  "existing_checks": [
+    {
+      "check": "public",
+      "exit_status": 0,
+      "stdout_sha256": "0b2d60910038563d9c68f9904c6be07577cdfc7b0f66acf2a1c6887d1d8e0358",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "off",
+      "exit_status": 0,
+      "stdout_sha256": "93fc67b183732ac9ad4bfcfd466811ccbbf1b8b1a5c7e0acb82d49fe4a6b4d24",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "on",
+      "exit_status": 0,
+      "stdout_sha256": "e37345e1a59cc388fd915fd79d156aafc2600e302bd3f249c12225f72078120e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "independent_witness_exit": 1,
+  "actual_default_results": 9,
+  "required_default_results": 10,
+  "native_model_calls": 0
+}

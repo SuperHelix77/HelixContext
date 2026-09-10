@@ -1,0 +1,17 @@
+{
+  "classification": "Actual installed app-server preflight; no turn/start or inference",
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "global_config_unchanged": true,
+  "config_sha256": "591a3e2f7eaec2ea0b54260735e103a1641edc51d2eede77e7d029583d2c5fba",
+  "skill_sha256": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+  "skill_registration_bound": true,
+  "ordinary_base_override": false,
+  "tool_policy_override": false,
+  "calls": 0,
+  "capture_status": {
+    "state": "NO_MODEL_TURN_NO_ROLLOUT",
+    "captured": false,
+    "scope": "Thread setup only; no turn/start or completed task claimed"
+  }
+}

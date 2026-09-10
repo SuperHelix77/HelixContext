@@ -1,0 +1,13 @@
+{
+  "classification": "Offline prototype guard failure; no economic or model evidence",
+  "state": "FAILED_CONFIG_SCOPE_GUARD",
+  "cause": "Non-Git synthetic workspace resolved to its parent repository; native app-server added parent trust entry to isolated config. Global config unchanged.",
+  "script_sha256": "7394067cde9c56a15b16fdb0f6f9a3d54ca5100cd3ea6dbedc133d1ea930f5de",
+  "hosted_model_calls": 0,
+  "local_scripted_requests": 3,
+  "native_turn_status": "completed",
+  "ordinary_shell_command_passed": true,
+  "bound_callback_passed": true,
+  "normal_synthetic_completion_received": true,
+  "not_an_admitted_configuration": true
+}

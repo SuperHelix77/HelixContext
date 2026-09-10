@@ -1,0 +1,46 @@
+{
+  "schema": "helix.client-config-projection.v1",
+  "source_sha256": "591a3e2f7eaec2ea0b54260735e103a1641edc51d2eede77e7d029583d2c5fba",
+  "output_sha256": "30d575ee5647195c4b1c8ef0585680091b0c1ac51686ecf3a369e36171d3b55e",
+  "source_bytes": 33172,
+  "output_bytes": 29189,
+  "removed_hooks": [
+    {
+      "id": "/Users/mert/.codex/config.toml:session_start:0:0",
+      "command_sha256": "0f9eada7b046514b0b1947f225c4f244e51c4f291be4f635f624042b2cff0535"
+    },
+    {
+      "id": "/Users/mert/.codex/config.toml:subagent_start:0:0",
+      "command_sha256": "0f9eada7b046514b0b1947f225c4f244e51c4f291be4f635f624042b2cff0535"
+    },
+    {
+      "id": "/Users/mert/.codex/config.toml:subagent_stop:0:0",
+      "command_sha256": "0f9eada7b046514b0b1947f225c4f244e51c4f291be4f635f624042b2cff0535"
+    },
+    {
+      "id": "/Users/mert/.codex/config.toml:pre_tool_use:0:0",
+      "command_sha256": "0f9eada7b046514b0b1947f225c4f244e51c4f291be4f635f624042b2cff0535"
+    }
+  ],
+  "retained_hooks": [
+    {
+      "source_id": "/Users/mert/.codex/config.toml:interrupt:0:0",
+      "destination_id": "/Users/mert/Documents/ChatGPT/Helix/research/astra-config-projection-offline-v1-20260910/config.toml:interrupt:0:0",
+      "command_sha256": "b4dbcdce5d75e7e965f6d6fe4a9e13c4420e709aac832dbd02164f9dbf765403"
+    }
+  ],
+  "all_non_hook_settings_preserved": true,
+  "retained_hook_definitions_preserved": true,
+  "trust_values_preserved_without_fabrication": true,
+  "native_trust_revalidated": false,
+  "authentication_assets_copied": false,
+  "ordinary_tool_catalog_verified": false,
+  "remaining_hook_events": [
+    "Interrupt"
+  ],
+  "plugin_entries": 15,
+  "mcp_server_entries": 2,
+  "source_unchanged": true,
+  "launched": false,
+  "model_calls": 0
+}
