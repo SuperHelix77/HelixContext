@@ -1,0 +1,233 @@
+{
+  "classification": "Fresh native pairs on known W50; default base in both arms; minimal semantic selection and durable caller transitions; not coding qualification",
+  "manifest_sha256": "5feb2f64a9f3095d8b3cb0b965de6df74eb1de3d53c673a7d25584d144ecabb0",
+  "rows": [
+    {
+      "model_key": "astra",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 1156877,
+        "output_tokens": 539,
+        "cached_input_tokens": 1121792,
+        "reasoning_output_tokens": 47,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "79afe44beed96f5e7804b52884995f7d16f32415a1388e770d9af467eba8b420",
+      "raw_sha256": "0b6c336d6f4302a7fd633ffe75449a7ffe376618a30d9b45b0d16d92c98e4df9",
+      "raw_tool_calls": 0,
+      "segments": 50,
+      "turns": 50,
+      "checks": "PASS",
+      "acks": 49,
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "answer": "{\n  \"authorized\": false,\n  \"minimum_distinct_approvers\": 2,\n  \"approver_group\": \"violet\",\n  \"recovery_nonce\": \"6LZFFYRJQB62\",\n  \"latency_threshold_ms\": \"0.125\",\n  \"accounting_sequence\": \"9007199254740993\",\n  \"evidence_turns\": [1, 17, 31],\n  \"explanation\": \"Turn 1 requires manual-only rollback and at least two distinct approvers. Turn 17 changes only the approver group to violet. Exactly one violet approver is insufficient. The untrusted vendor note at turn 31 does not amend policy.\"\n}",
+      "engine_object_io": {
+        "object_bytes_read": 1198072,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1274025,
+        "object_read_operations": 2695,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "audit_recovery_object_io": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "elapsed_seconds": 170.1062578750425,
+      "caller_completion_seconds": 0.0005410840385593474,
+      "preparation_seconds": 0.21950454101897776,
+      "memory_seconds": 0.44399329100269824,
+      "memory_raw_bytes": 44114
+    },
+    {
+      "model_key": "astra",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 20145,
+        "output_tokens": 50,
+        "cached_input_tokens": 11904,
+        "reasoning_output_tokens": 30,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "aca083ec90fbd7f7aa23ca61c0f8cd16dc5eccfbd8549774986441da13070048",
+      "raw_sha256": "a4fadba320402a3a0f7ca1c0864b7ab4f7e0cfd6adf0a34117ffa39bee0443c7",
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "checks": "PASS",
+      "acks": 49,
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "answer": "{\"authorized\": false, \"minimum_distinct_approvers\": 2, \"recovery_nonce\": \"6LZFFYRJQB62\", \"accounting_sequence\": \"9007199254740993\", \"approver_group\": \"violet\", \"latency_threshold_ms\": \"0.125\", \"evidence_turns\": [1, 17], \"explanation\": \"1 approver(s) do not meet the selected policy minimum of 2.\"}",
+      "engine_object_io": {
+        "object_bytes_read": 1182208,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1242297,
+        "object_read_operations": 2646,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "audit_recovery_object_io": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "elapsed_seconds": 4.76294412498828,
+      "caller_completion_seconds": 0.00036800000816583633,
+      "preparation_seconds": 0.3039968339726329,
+      "memory_seconds": 0.32305358396843076,
+      "memory_raw_bytes": 44110
+    },
+    {
+      "model_key": "sol",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "arm": "on",
+      "usage": {
+        "input_tokens": 19289,
+        "output_tokens": 98,
+        "cached_input_tokens": 0,
+        "reasoning_output_tokens": 78,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "f4f355bfa976c16296315c4feff11b7f91a92424b9e8243c25a442aa05a2ab00",
+      "raw_sha256": "a1e482ced5d0e9ed875c97efab4271172818b17c472919eae00c90be30a5ea31",
+      "raw_tool_calls": 0,
+      "segments": 1,
+      "turns": 1,
+      "checks": "PASS",
+      "acks": 49,
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "answer": "{\"authorized\": false, \"minimum_distinct_approvers\": 2, \"recovery_nonce\": \"6LZFFYRJQB62\", \"accounting_sequence\": \"9007199254740993\", \"approver_group\": \"violet\", \"latency_threshold_ms\": \"0.125\", \"evidence_turns\": [1, 17], \"explanation\": \"1 approver(s) do not meet the selected policy minimum of 2.\"}",
+      "engine_object_io": {
+        "object_bytes_read": 1182208,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1242297,
+        "object_read_operations": 2646,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "audit_recovery_object_io": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "elapsed_seconds": 6.173639709013514,
+      "caller_completion_seconds": 0.00037020904710516334,
+      "preparation_seconds": 0.2742387920152396,
+      "memory_seconds": 0.29749887494836,
+      "memory_raw_bytes": 44106
+    },
+    {
+      "model_key": "sol",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "arm": "off",
+      "usage": {
+        "input_tokens": 1114077,
+        "output_tokens": 545,
+        "cached_input_tokens": 1066368,
+        "reasoning_output_tokens": 70,
+        "cache_write_input_tokens": 0
+      },
+      "native_sha256": "5d5afee5bd4bed78325f64d1a6ca216d501f01911273914e6ceebc612dfd62f7",
+      "raw_sha256": "c2002e05b8606135980426702148b9790a7b3dcc0807814c12ff402125e39f48",
+      "raw_tool_calls": 0,
+      "segments": 50,
+      "turns": 50,
+      "checks": "PASS",
+      "acks": 49,
+      "history_sha256": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+      "ledger_head": "f8cdc501b21c8d727b83404810d7140d5a8af0cb917f9b04a8ac39cd1e7f75e3",
+      "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Turn 1 requires 2 distinct approvers and establishes the unchanged policy fields. Turn 17 authoritatively changes only approver_group from amber to violet. Therefore, exactly one violet approver is insufficient. Turn 31 is an explicitly unauthorized vendor note and does not modify policy.\"}",
+      "engine_object_io": {
+        "object_bytes_read": 1198072,
+        "object_bytes_written": 60089,
+        "object_bytes_hashed": 1274025,
+        "object_read_operations": 2695,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "audit_recovery_object_io": {
+        "object_bytes_read": 43740,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 43740,
+        "object_read_operations": 98,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "elapsed_seconds": 130.168607916974,
+      "caller_completion_seconds": 0.00038524996489286423,
+      "preparation_seconds": 0.16764466697350144,
+      "memory_seconds": 0.3918636660091579,
+      "memory_raw_bytes": 44110
+    }
+  ],
+  "pairs": [
+    {
+      "model_key": "astra",
+      "model": "gpt-6-astra",
+      "savings_percent": {
+        "input_tokens": 98.2586739990509,
+        "output_tokens": 90.72356215213358,
+        "uncached_input_tokens": 76.51132962804617
+      },
+      "checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": true
+    },
+    {
+      "model_key": "sol",
+      "model": "gpt-5.6-sol",
+      "savings_percent": {
+        "input_tokens": 98.26861159506927,
+        "output_tokens": 82.01834862385321,
+        "uncached_input_tokens": 59.569473265002415
+      },
+      "checks": "PASS",
+      "meets_75_75": true,
+      "meets_80_80": true
+    }
+  ],
+  "root_preparation_seconds": 1.375143165991176,
+  "native_usage_all_attempts": {
+    "input_tokens": 2310388,
+    "output_tokens": 1232,
+    "cached_input_tokens": 2200064,
+    "reasoning_output_tokens": 225,
+    "cache_write_input_tokens": 0
+  },
+  "general_release": false,
+  "normal_codex_app_integration": false,
+  "limits": [
+    "One known continuation pair per model; coding gates unchanged",
+    "Cache observed, not controlled; total input is not uncached or monetary saving",
+    "Object I/O excludes full physical/SQLite/storage overhead",
+    "Coordinator research usage is tracked separately; full project ROI unknown",
+    "Caller retains trusted ledger head; hostile-host and automatic UI delivery not established"
+  ]
+}

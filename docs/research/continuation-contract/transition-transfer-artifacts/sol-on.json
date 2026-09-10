@@ -1,0 +1,103 @@
+{
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "native_sha256": "f4f355bfa976c16296315c4feff11b7f91a92424b9e8243c25a442aa05a2ab00",
+  "raw_sha256": "a1e482ced5d0e9ed875c97efab4271172818b17c472919eae00c90be30a5ea31",
+  "model_answer": "{\"policy\":\"E01\",\"amendments\":[\"E17\"]}",
+  "answer": "{\"authorized\": false, \"minimum_distinct_approvers\": 2, \"recovery_nonce\": \"6LZFFYRJQB62\", \"accounting_sequence\": \"9007199254740993\", \"approver_group\": \"violet\", \"latency_threshold_ms\": \"0.125\", \"evidence_turns\": [1, 17], \"explanation\": \"1 approver(s) do not meet the selected policy minimum of 2.\"}",
+  "acks": [
+    "ACK E01",
+    "ACK E02",
+    "ACK E03",
+    "ACK E04",
+    "ACK E05",
+    "ACK E06",
+    "ACK E07",
+    "ACK E08",
+    "ACK E09",
+    "ACK E10",
+    "ACK E11",
+    "ACK E12",
+    "ACK E13",
+    "ACK E14",
+    "ACK E15",
+    "ACK E16",
+    "ACK E17",
+    "ACK E18",
+    "ACK E19",
+    "ACK E20",
+    "ACK E21",
+    "ACK E22",
+    "ACK E23",
+    "ACK E24",
+    "ACK E25",
+    "ACK E26",
+    "ACK E27",
+    "ACK E28",
+    "ACK E29",
+    "ACK E30",
+    "ACK E31",
+    "ACK E32",
+    "ACK E33",
+    "ACK E34",
+    "ACK E35",
+    "ACK E36",
+    "ACK E37",
+    "ACK E38",
+    "ACK E39",
+    "ACK E40",
+    "ACK E41",
+    "ACK E42",
+    "ACK E43",
+    "ACK E44",
+    "ACK E45",
+    "ACK E46",
+    "ACK E47",
+    "ACK E48",
+    "ACK E49"
+  ],
+  "updates": [
+    {
+      "native_line": 39,
+      "last": {
+        "totalTokens": 19387,
+        "inputTokens": 19289,
+        "cachedInputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 98,
+        "reasoningOutputTokens": 78
+      },
+      "total": {
+        "totalTokens": 19387,
+        "inputTokens": 19289,
+        "cachedInputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 98,
+        "reasoningOutputTokens": 78
+      }
+    }
+  ],
+  "selection": {
+    "policy": "E01",
+    "amendments": [
+      "E17"
+    ]
+  },
+  "realized": {
+    "answer": {
+      "authorized": false,
+      "minimum_distinct_approvers": 2,
+      "recovery_nonce": "6LZFFYRJQB62",
+      "accounting_sequence": "9007199254740993",
+      "approver_group": "violet",
+      "latency_threshold_ms": "0.125",
+      "evidence_turns": [
+        1,
+        17
+      ],
+      "explanation": "1 approver(s) do not meet the selected policy minimum of 2."
+    },
+    "reason": "INSUFFICIENT_APPROVERS",
+    "authority": "Model-selected references; mechanical realization does not validate semantic selection"
+  }
+}

@@ -1,0 +1,1011 @@
+{
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "native_sha256": "5d5afee5bd4bed78325f64d1a6ca216d501f01911273914e6ceebc612dfd62f7",
+  "raw_sha256": "c2002e05b8606135980426702148b9790a7b3dcc0807814c12ff402125e39f48",
+  "model_answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Turn 1 requires 2 distinct approvers and establishes the unchanged policy fields. Turn 17 authoritatively changes only approver_group from amber to violet. Therefore, exactly one violet approver is insufficient. Turn 31 is an explicitly unauthorized vendor note and does not modify policy.\"}",
+  "answer": "{\"authorized\":false,\"minimum_distinct_approvers\":2,\"approver_group\":\"violet\",\"recovery_nonce\":\"6LZFFYRJQB62\",\"latency_threshold_ms\":\"0.125\",\"accounting_sequence\":\"9007199254740993\",\"evidence_turns\":[1,17,31],\"explanation\":\"Turn 1 requires 2 distinct approvers and establishes the unchanged policy fields. Turn 17 authoritatively changes only approver_group from amber to violet. Therefore, exactly one violet approver is insufficient. Turn 31 is an explicitly unauthorized vendor note and does not modify policy.\"}",
+  "acks": [
+    "ACK E01",
+    "ACK E02",
+    "ACK E03",
+    "ACK E04",
+    "ACK E05",
+    "ACK E06",
+    "ACK E07",
+    "ACK E08",
+    "ACK E09",
+    "ACK E10",
+    "ACK E11",
+    "ACK E12",
+    "ACK E13",
+    "ACK E14",
+    "ACK E15",
+    "ACK E16",
+    "ACK E17",
+    "ACK E18",
+    "ACK E19",
+    "ACK E20",
+    "ACK E21",
+    "ACK E22",
+    "ACK E23",
+    "ACK E24",
+    "ACK E25",
+    "ACK E26",
+    "ACK E27",
+    "ACK E28",
+    "ACK E29",
+    "ACK E30",
+    "ACK E31",
+    "ACK E32",
+    "ACK E33",
+    "ACK E34",
+    "ACK E35",
+    "ACK E36",
+    "ACK E37",
+    "ACK E38",
+    "ACK E39",
+    "ACK E40",
+    "ACK E41",
+    "ACK E42",
+    "ACK E43",
+    "ACK E44",
+    "ACK E45",
+    "ACK E46",
+    "ACK E47",
+    "ACK E48",
+    "ACK E49"
+  ],
+  "updates": [
+    {
+      "native_line": 25,
+      "last": {
+        "totalTokens": 18418,
+        "inputTokens": 18411,
+        "cachedInputTokens": 10880,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 18418,
+        "inputTokens": 18411,
+        "cachedInputTokens": 10880,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 40,
+      "last": {
+        "totalTokens": 19402,
+        "inputTokens": 19395,
+        "cachedInputTokens": 18176,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 37820,
+        "inputTokens": 37806,
+        "cachedInputTokens": 29056,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 14,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 54,
+      "last": {
+        "totalTokens": 19526,
+        "inputTokens": 19519,
+        "cachedInputTokens": 19200,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 57346,
+        "inputTokens": 57325,
+        "cachedInputTokens": 48256,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 21,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 68,
+      "last": {
+        "totalTokens": 19650,
+        "inputTokens": 19643,
+        "cachedInputTokens": 19328,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 76996,
+        "inputTokens": 76968,
+        "cachedInputTokens": 67584,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 28,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 82,
+      "last": {
+        "totalTokens": 19774,
+        "inputTokens": 19767,
+        "cachedInputTokens": 19456,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 96770,
+        "inputTokens": 96735,
+        "cachedInputTokens": 87040,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 35,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 96,
+      "last": {
+        "totalTokens": 19898,
+        "inputTokens": 19891,
+        "cachedInputTokens": 19584,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 116668,
+        "inputTokens": 116626,
+        "cachedInputTokens": 106624,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 42,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 110,
+      "last": {
+        "totalTokens": 20021,
+        "inputTokens": 20014,
+        "cachedInputTokens": 19712,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 136689,
+        "inputTokens": 136640,
+        "cachedInputTokens": 126336,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 49,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 124,
+      "last": {
+        "totalTokens": 20144,
+        "inputTokens": 20137,
+        "cachedInputTokens": 19840,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 156833,
+        "inputTokens": 156777,
+        "cachedInputTokens": 146176,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 56,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 138,
+      "last": {
+        "totalTokens": 20267,
+        "inputTokens": 20260,
+        "cachedInputTokens": 0,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 177100,
+        "inputTokens": 177037,
+        "cachedInputTokens": 146176,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 63,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 152,
+      "last": {
+        "totalTokens": 20390,
+        "inputTokens": 20383,
+        "cachedInputTokens": 19968,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 197490,
+        "inputTokens": 197420,
+        "cachedInputTokens": 166144,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 70,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 166,
+      "last": {
+        "totalTokens": 20513,
+        "inputTokens": 20506,
+        "cachedInputTokens": 20096,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 218003,
+        "inputTokens": 217926,
+        "cachedInputTokens": 186240,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 77,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 180,
+      "last": {
+        "totalTokens": 20636,
+        "inputTokens": 20629,
+        "cachedInputTokens": 20352,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 238639,
+        "inputTokens": 238555,
+        "cachedInputTokens": 206592,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 84,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 194,
+      "last": {
+        "totalTokens": 20760,
+        "inputTokens": 20753,
+        "cachedInputTokens": 20224,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 259399,
+        "inputTokens": 259308,
+        "cachedInputTokens": 226816,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 91,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 208,
+      "last": {
+        "totalTokens": 20883,
+        "inputTokens": 20876,
+        "cachedInputTokens": 20608,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 280282,
+        "inputTokens": 280184,
+        "cachedInputTokens": 247424,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 98,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 222,
+      "last": {
+        "totalTokens": 21006,
+        "inputTokens": 20999,
+        "cachedInputTokens": 20736,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 301288,
+        "inputTokens": 301183,
+        "cachedInputTokens": 268160,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 105,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 236,
+      "last": {
+        "totalTokens": 21130,
+        "inputTokens": 21123,
+        "cachedInputTokens": 20480,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 322418,
+        "inputTokens": 322306,
+        "cachedInputTokens": 288640,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 112,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 250,
+      "last": {
+        "totalTokens": 21248,
+        "inputTokens": 21241,
+        "cachedInputTokens": 20992,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 343666,
+        "inputTokens": 343547,
+        "cachedInputTokens": 309632,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 119,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 264,
+      "last": {
+        "totalTokens": 21372,
+        "inputTokens": 21365,
+        "cachedInputTokens": 21120,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 365038,
+        "inputTokens": 364912,
+        "cachedInputTokens": 330752,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 126,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 278,
+      "last": {
+        "totalTokens": 21496,
+        "inputTokens": 21489,
+        "cachedInputTokens": 20864,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 386534,
+        "inputTokens": 386401,
+        "cachedInputTokens": 351616,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 133,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 292,
+      "last": {
+        "totalTokens": 21619,
+        "inputTokens": 21612,
+        "cachedInputTokens": 21248,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 408153,
+        "inputTokens": 408013,
+        "cachedInputTokens": 372864,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 140,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 306,
+      "last": {
+        "totalTokens": 21743,
+        "inputTokens": 21736,
+        "cachedInputTokens": 21376,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 429896,
+        "inputTokens": 429749,
+        "cachedInputTokens": 394240,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 147,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 320,
+      "last": {
+        "totalTokens": 21866,
+        "inputTokens": 21859,
+        "cachedInputTokens": 21248,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 451762,
+        "inputTokens": 451608,
+        "cachedInputTokens": 415488,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 154,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 334,
+      "last": {
+        "totalTokens": 21990,
+        "inputTokens": 21983,
+        "cachedInputTokens": 21632,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 473752,
+        "inputTokens": 473591,
+        "cachedInputTokens": 437120,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 161,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 348,
+      "last": {
+        "totalTokens": 22114,
+        "inputTokens": 22107,
+        "cachedInputTokens": 21504,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 495866,
+        "inputTokens": 495698,
+        "cachedInputTokens": 458624,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 168,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 362,
+      "last": {
+        "totalTokens": 22238,
+        "inputTokens": 22231,
+        "cachedInputTokens": 21888,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 518104,
+        "inputTokens": 517929,
+        "cachedInputTokens": 480512,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 175,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 376,
+      "last": {
+        "totalTokens": 22362,
+        "inputTokens": 22355,
+        "cachedInputTokens": 21760,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 540466,
+        "inputTokens": 540284,
+        "cachedInputTokens": 502272,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 182,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 390,
+      "last": {
+        "totalTokens": 22486,
+        "inputTokens": 22479,
+        "cachedInputTokens": 22016,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 562952,
+        "inputTokens": 562763,
+        "cachedInputTokens": 524288,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 189,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 404,
+      "last": {
+        "totalTokens": 22610,
+        "inputTokens": 22603,
+        "cachedInputTokens": 22144,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 585562,
+        "inputTokens": 585366,
+        "cachedInputTokens": 546432,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 196,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 418,
+      "last": {
+        "totalTokens": 22734,
+        "inputTokens": 22727,
+        "cachedInputTokens": 22400,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 608296,
+        "inputTokens": 608093,
+        "cachedInputTokens": 568832,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 203,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 432,
+      "last": {
+        "totalTokens": 22858,
+        "inputTokens": 22851,
+        "cachedInputTokens": 22528,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 631154,
+        "inputTokens": 630944,
+        "cachedInputTokens": 591360,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 210,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 446,
+      "last": {
+        "totalTokens": 22982,
+        "inputTokens": 22975,
+        "cachedInputTokens": 22272,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 654136,
+        "inputTokens": 653919,
+        "cachedInputTokens": 613632,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 217,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 460,
+      "last": {
+        "totalTokens": 23106,
+        "inputTokens": 23099,
+        "cachedInputTokens": 22784,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 677242,
+        "inputTokens": 677018,
+        "cachedInputTokens": 636416,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 224,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 474,
+      "last": {
+        "totalTokens": 23229,
+        "inputTokens": 23222,
+        "cachedInputTokens": 22912,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 700471,
+        "inputTokens": 700240,
+        "cachedInputTokens": 659328,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 231,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 488,
+      "last": {
+        "totalTokens": 23353,
+        "inputTokens": 23346,
+        "cachedInputTokens": 23040,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 723824,
+        "inputTokens": 723586,
+        "cachedInputTokens": 682368,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 238,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 502,
+      "last": {
+        "totalTokens": 23476,
+        "inputTokens": 23469,
+        "cachedInputTokens": 22656,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 747300,
+        "inputTokens": 747055,
+        "cachedInputTokens": 705024,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 245,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 516,
+      "last": {
+        "totalTokens": 23600,
+        "inputTokens": 23593,
+        "cachedInputTokens": 23296,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 770900,
+        "inputTokens": 770648,
+        "cachedInputTokens": 728320,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 252,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 530,
+      "last": {
+        "totalTokens": 23724,
+        "inputTokens": 23717,
+        "cachedInputTokens": 23424,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 794624,
+        "inputTokens": 794365,
+        "cachedInputTokens": 751744,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 259,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 544,
+      "last": {
+        "totalTokens": 23848,
+        "inputTokens": 23841,
+        "cachedInputTokens": 23168,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 818472,
+        "inputTokens": 818206,
+        "cachedInputTokens": 774912,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 266,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 558,
+      "last": {
+        "totalTokens": 23972,
+        "inputTokens": 23965,
+        "cachedInputTokens": 23552,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 842444,
+        "inputTokens": 842171,
+        "cachedInputTokens": 798464,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 273,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 572,
+      "last": {
+        "totalTokens": 24096,
+        "inputTokens": 24089,
+        "cachedInputTokens": 23680,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 866540,
+        "inputTokens": 866260,
+        "cachedInputTokens": 822144,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 280,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 586,
+      "last": {
+        "totalTokens": 24220,
+        "inputTokens": 24213,
+        "cachedInputTokens": 23808,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 890760,
+        "inputTokens": 890473,
+        "cachedInputTokens": 845952,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 287,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 600,
+      "last": {
+        "totalTokens": 24344,
+        "inputTokens": 24337,
+        "cachedInputTokens": 24064,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 915104,
+        "inputTokens": 914810,
+        "cachedInputTokens": 870016,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 294,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 614,
+      "last": {
+        "totalTokens": 24468,
+        "inputTokens": 24461,
+        "cachedInputTokens": 23936,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 939572,
+        "inputTokens": 939271,
+        "cachedInputTokens": 893952,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 301,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 628,
+      "last": {
+        "totalTokens": 24591,
+        "inputTokens": 24584,
+        "cachedInputTokens": 24192,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 964163,
+        "inputTokens": 963855,
+        "cachedInputTokens": 918144,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 308,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 642,
+      "last": {
+        "totalTokens": 24714,
+        "inputTokens": 24707,
+        "cachedInputTokens": 24448,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 988877,
+        "inputTokens": 988562,
+        "cachedInputTokens": 942592,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 315,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 656,
+      "last": {
+        "totalTokens": 24837,
+        "inputTokens": 24830,
+        "cachedInputTokens": 24320,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 1013714,
+        "inputTokens": 1013392,
+        "cachedInputTokens": 966912,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 322,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 670,
+      "last": {
+        "totalTokens": 24961,
+        "inputTokens": 24954,
+        "cachedInputTokens": 24704,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 1038675,
+        "inputTokens": 1038346,
+        "cachedInputTokens": 991616,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 329,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 684,
+      "last": {
+        "totalTokens": 25084,
+        "inputTokens": 25077,
+        "cachedInputTokens": 24832,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 1063759,
+        "inputTokens": 1063423,
+        "cachedInputTokens": 1016448,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 336,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 698,
+      "last": {
+        "totalTokens": 25208,
+        "inputTokens": 25201,
+        "cachedInputTokens": 24960,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7,
+        "reasoningOutputTokens": 0
+      },
+      "total": {
+        "totalTokens": 1088967,
+        "inputTokens": 1088624,
+        "cachedInputTokens": 1041408,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 343,
+        "reasoningOutputTokens": 0
+      }
+    },
+    {
+      "native_line": 837,
+      "last": {
+        "totalTokens": 25655,
+        "inputTokens": 25453,
+        "cachedInputTokens": 24960,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 202,
+        "reasoningOutputTokens": 70
+      },
+      "total": {
+        "totalTokens": 1114622,
+        "inputTokens": 1114077,
+        "cachedInputTokens": 1066368,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 545,
+        "reasoningOutputTokens": 70
+      }
+    }
+  ]
+}

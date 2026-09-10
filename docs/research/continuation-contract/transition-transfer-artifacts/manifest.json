@@ -1,0 +1,88 @@
+{
+  "schema": "helix.transition-transfer-public.v1",
+  "frozen_commit": "faae491",
+  "private_manifest_sha256": "5feb2f64a9f3095d8b3cb0b965de6df74eb1de3d53c673a7d25584d144ecabb0",
+  "public_audit_sha256": "ad3e39610afa3d611f15f24c31d49ec955515b99c60c5032da44a0b64563908b",
+  "scope": "Selected factual token usage events and model final answers extracted after full local audit; not complete private native streams or independently signed provider billing receipts",
+  "default_base_sha256": {
+    "astra": "152dfaeeb552876190962be1c12c93d426840ff12691f648261554a7675a6698",
+    "sol": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415"
+  },
+  "order": [
+    [
+      "astra",
+      "off"
+    ],
+    [
+      "astra",
+      "on"
+    ],
+    [
+      "sol",
+      "on"
+    ],
+    [
+      "sol",
+      "off"
+    ]
+  ],
+  "rows": [
+    {
+      "model_key": "astra",
+      "arm": "off",
+      "path": "astra-off.json",
+      "sha256": "db5a53292fdee346d6212870bf4d2f70f5b05e6d9c14f8f76cd9cf90734e66d7"
+    },
+    {
+      "model_key": "astra",
+      "arm": "on",
+      "path": "astra-on.json",
+      "sha256": "ce42aa4eb41e1e17f67fb278b614902f275c0f0c5042c82a7cb50d5a75474cfb"
+    },
+    {
+      "model_key": "sol",
+      "arm": "on",
+      "path": "sol-on.json",
+      "sha256": "2d8a9798946cc98ca7f4b4037af6562cc62385aac92a0648d18a554b576ad4bd"
+    },
+    {
+      "model_key": "sol",
+      "arm": "off",
+      "path": "sol-off.json",
+      "sha256": "70851db2c181df78f1981b342ae773daeb681e0f6966f8817eb3712fdea88f0a"
+    }
+  ],
+  "files": {
+    "fixture.json": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e",
+    "gold.json": "afcb526681bd477a767cf6b6a27bd4ebb57988732c967a1fc86c006faaf49421",
+    "tariff-snapshot.json": "ff803e71d23e7edc81609f95430e0772693d2b18055b2928b08971811b09e934",
+    "astra-on.json": "ce42aa4eb41e1e17f67fb278b614902f275c0f0c5042c82a7cb50d5a75474cfb",
+    "astra-off.json": "db5a53292fdee346d6212870bf4d2f70f5b05e6d9c14f8f76cd9cf90734e66d7",
+    "sol-off.json": "70851db2c181df78f1981b342ae773daeb681e0f6966f8817eb3712fdea88f0a",
+    "verify.py": "6f0c69cfcabe5c69c251388c08cd428471a39d48df61c92b3ad30bd7ca12e241",
+    "history.jsonl": "b3b81ba8e1b33801d15385e96159506c2e1f3c06d226b7f1b3d67ccf8e321629",
+    "sol-on.json": "2d8a9798946cc98ca7f4b4037af6562cc62385aac92a0648d18a554b576ad4bd"
+  },
+  "source_bindings": {
+    "docs/research/continuation-contract/transition_transfer_v1.py": "ecec8804f1afa93a5aaa9b5f8ae6a09d13cc518c4e9ba5a91e77d4cb26b41788",
+    "docs/research/continuation-contract/TRANSITION_TRANSFER_V1_PREREG.md": "113cc5871a7d5d1a74524fa45f7173a19d94ca0753179c47d930efef707d63df",
+    "docs/research/continuation-contract/test_transition_transfer_v1.py": "21589709711423a1a0a65cfb3cff511c29c1abf56533b0914888eddf2102d102",
+    "benchmarks/frozen-high/protocol/long-horizon-v1.json": "9dfe05213b3783e4337bd2f9decc434c3d3b5dab06203757e5b246567845ea6e",
+    "docs/research/continuation-contract/native_luna_ack_pair.py": "af431f7d1ef88a60257d83d1ee25833c59bd172301c494064b6cc155f65357e7",
+    "benchmarks/frozen-high/evaluator/long-horizon-gold.json": "afcb526681bd477a767cf6b6a27bd4ebb57988732c967a1fc86c006faaf49421",
+    "engine/output/caller_memory_receipt.py": "ded6a454e23c156290e8ff53a8cc1a0b39d0134134dbfe4a10d0215f3ab4198d",
+    "engine/output/caller_registration.py": "f242f5583f1e2b34a16c0acbab0f3bbf4de1a96717dd216616c7ca700bb9e7e6",
+    "engine/output/config_bound_session.py": "caed4a681f9823d2dcdcc031124da202ba32cf31f9d1d71f455b82819e3a3ff7",
+    "engine/output/project_registration_preflight.py": "f0147ded9814f9a81da4630af3d935b210343b8b98c730a9a8732cea8fc1b0bc",
+    "docs/research/continuation-contract/luna_varied_coding_v2.py": "7a9e5aec1aa4433b6ba915d48c07efee81523bd495e16dd5e9b943c7cc0ecc83",
+    "engine/output/app_server_native.py": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+    "engine/output/observed_session.py": "fff1210aaf2f3d21b92cc276b9365a5608d3a67609136d8b698127ee6d690fd0",
+    "engine/output/raw_receipts.py": "802d90373771f3f76d9b605e29dc92c54bab258ab685522e0b6edfd9fb0b9fd1",
+    "engine/prototype/passive_workflow.py": "d7bdde08096fd8493f6de6abaefd40e63a73438c9af618b5978a046b1f7b58c5",
+    "engine/prototype/completion_ledger.py": "f262fb69c3fe8e210972287feae996824f382e5eb152612118dd01c6e24ece75",
+    "engine/prototype/receipt_delivery.py": "3b354a052e09a2c5e82bf23d6a34acafe3cc6d5de5462e1e4763a85d9cba3281",
+    "engine/prototype/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "engine/prototype/policy_realization.py": "6eaf2debc6390ef5b1fd00badd8b87a8cc9be981686a97970f60dc1814a976a2"
+  }
+}
