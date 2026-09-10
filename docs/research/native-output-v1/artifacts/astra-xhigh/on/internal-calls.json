@@ -1,0 +1,71 @@
+[
+  {
+    "method": "item/tool/call",
+    "id": 0,
+    "params": {
+      "threadId": "01a089cc-d74d-7911-b54b-9c3dc8e9db5a",
+      "turnId": "01a089cc-d7c6-70c1-a052-56f9430028d1",
+      "callId": "exec-a63fbda3-d8fb-4a4b-97ba-9f6a6a791293",
+      "namespace": null,
+      "tool": "helix_apply_edits",
+      "arguments": {
+        "expected_version": 0,
+        "edits": [
+          {
+            "old": "    def search(self,project,query,limit=10):",
+            "new": "    def search(self,project,query,limit=10,match_mode='all'):"
+          },
+          {
+            "old": "        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n",
+            "new": "        if not isinstance(match_mode,str) or match_mode not in ('all','any'):\n            raise ValueError('Invalid search match mode')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n"
+          },
+          {
+            "old": "        match=' AND '.join('\"'+word+'\"' for word in words)",
+            "new": "        match=(' AND ' if match_mode=='all' else ' OR ').join('\"'+word+'\"' for word in words)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "method": "item/completed",
+    "params": {
+      "item": {
+        "type": "dynamicToolCall",
+        "id": "exec-a63fbda3-d8fb-4a4b-97ba-9f6a6a791293",
+        "namespace": null,
+        "tool": "helix_apply_edits",
+        "arguments": {
+          "expected_version": 0,
+          "edits": [
+            {
+              "old": "    def search(self,project,query,limit=10):",
+              "new": "    def search(self,project,query,limit=10,match_mode='all'):"
+            },
+            {
+              "old": "        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n",
+              "new": "        if not isinstance(match_mode,str) or match_mode not in ('all','any'):\n            raise ValueError('Invalid search match mode')\n        words=re.findall(r'\\w+',query,flags=re.UNICODE)\n"
+            },
+            {
+              "old": "        match=' AND '.join('\"'+word+'\"' for word in words)",
+              "new": "        match=(' AND ' if match_mode=='all' else ' OR ').join('\"'+word+'\"' for word in words)"
+            }
+          ]
+        },
+        "status": "completed",
+        "contentItems": [
+          {
+            "type": "inputText",
+            "text": "{\"artifact\":\"workflow_memory.py\",\"checks\":\"23 public/regression tests and 94 independent finite cases passed\",\"evidence_ref\":\"a44b51e22f73dc3de5e62bf1fd1ced073d9306fba3ab5797d5d02a59de03a8ed\",\"semantic_adequacy\":\"Model responsibility\",\"source_sha256\":\"af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74\",\"status\":\"APPLIED\",\"version\":1}"
+          }
+        ],
+        "success": true,
+        "durationMs": 1171
+      },
+      "threadId": "01a089cc-d74d-7911-b54b-9c3dc8e9db5a",
+      "turnId": "01a089cc-d7c6-70c1-a052-56f9430028d1",
+      "completedAtMs": 1789018324568
+    },
+    "emittedAtMs": 1789018324569
+  }
+]

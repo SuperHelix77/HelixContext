@@ -1,0 +1,487 @@
+{
+  "astra-xhigh": [
+    {
+      "arm": "off",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 19466,
+            "inputTokens": 19386,
+            "cachedInputTokens": 11904,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 80,
+            "reasoningOutputTokens": 0
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 47,
+              "command": "/bin/zsh -lc \"pwd && rg --files -g '\"'!'\"\\\\.git' -g '\"'!'\"\\\\.agents' -g '\"'!'\"\\\\.codex'\"",
+              "output_bytes": 215,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 19719,
+            "inputTokens": 19584,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 135,
+            "reasoningOutputTokens": 0
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 57,
+              "command": "/bin/zsh -lc \"cat AGENTS.md && sed -n '1,280p' workflow_memory.py\"",
+              "output_bytes": 10546,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 59,
+              "command": "/bin/zsh -lc \"cat test_search_mode_public.py && sed -n '1,320p' test_workflow_memory.py && cat evidence.py\"",
+              "output_bytes": 17672,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 61,
+              "command": "/bin/zsh -lc 'git status --short && git diff -- workflow_memory.py'",
+              "output_bytes": 0,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27820,
+            "inputTokens": 27445,
+            "cachedInputTokens": 19456,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 375,
+            "reasoningOutputTokens": 107
+          },
+          "observable_operations": []
+        },
+        {
+          "usage": {
+            "totalTokens": 29007,
+            "inputTokens": 27844,
+            "cachedInputTokens": 11904,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1163,
+            "reasoningOutputTokens": 19
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 134,
+              "command": "/bin/zsh -lc \"PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nfrom pathlib import Path\nfrom tempfile import TemporaryDirectory\nimport pytest\nfrom evidence import Store\nfrom workflow_memory import Memory\n\nwith TemporaryDirectory(prefix='.search-check-', dir=Path.cwd()) as tmp:\n    m = Memory(Store(tmp))\n    bodies = [('alpha', b'alpha'), ('beta', b'beta'), ('or', b'OR'),\n              ('both', b'alpha beta'), ('literal', b'alpha OR beta'),\n              ('unicode', 'caf\u00e9 \u6771\u4eac'.encode()), ('split', b'foo bar'),\n              ('underscore', b'foo_bar'), ('unrelated', b'untouched')]\n    refs = {key: m.record('p', 's', key, body) for key, body in bodies}\n    m.record('other', 's', 'foreign', b'alpha OR beta')\n    ids = lambda query, mode: [r['event_id'] for r in m.search('p', query, match_mode=mode)]\n    assert ids('alpha OR beta', 'all') == ['literal']\n    assert ids('alpha OR beta', 'any') == ['literal', 'both', 'or', 'beta', 'alpha']\n    assert ids('alpha NOT beta', 'all') == []\n    assert ids('alpha NOT beta', 'any') == ['literal', 'both', 'beta', 'alpha']\n    assert ids('\\\"alpha\\\"* -beta', 'all') == ['literal', 'both']\n    assert ids('body:alpha', 'all') == []\n    assert ids('body:alpha', 'any') == ['literal', 'both', 'alpha']\n    assert ids('CAF\u00c9 \u6771\u4eac', 'all') == ['unicode']\n    assert ids('absent \u6771\u4eac', 'any') == ['unicode']\n    assert ids('foo_bar', 'all') == ids('foo_bar', 'any') == ['underscore', 'split']\n    for mode in ('all', 'any'):\n        for query in ('', '  ', '\\\"*+-():'):\n            assert m.search('p', query, match_mode=mode) == []\n        for query in ('', 'alpha'):\n            for kwargs in ({'project': ''}, {'project': None}, {'query': None},\n                           {'limit': True}, {'limit': 0}, {'limit': 101}, {'limit': 1.5}):\n                request = dict(project='p', query=query, match_mode=mode)\n                request.update(kwargs)\n                with pytest.raises(ValueError):\n                    m.search(**request)\n        for row in m.search('p', 'alpha beta', 100, mode):\n            assert {k: v for k, v in row.items() if k \"'!= '\"'ordinal'} == refs[row['event_id']]\n        for mode_invalid in (None, True, 1, b'all', [], {}, '', 'ALL', 'any ', 'or'):\n            for query in ('', 'alpha'):\n                with pytest.raises(ValueError):\n                    m.search('p', query, match_mode=mode_invalid)\n    with m.db() as db:\n        db.execute(\\\"DELETE FROM search WHERE rowid=(SELECT ordinal FROM events WHERE project='p' AND event_id='unrelated')\\\")\n    for mode in ('all', 'any'):\n        for query in ('alpha beta', 'no_match_here'):\n            with pytest.raises(ValueError, match='index'):\n                m.search('p', query, 1, mode)\n    m.rebuild_index('p')\n    source = m.store.root / 'objects' / refs['unrelated']['source_hash']\n    source.write_bytes(b'tampered')\n    for mode in ('all', 'any'):\n        with pytest.raises(ValueError, match='hash mismatch'):\n            m.search('p', 'alpha beta', 1, mode)\nprint('Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.')\nPY\"",
+              "output_bytes": 166,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 160,
+              "command": "/bin/zsh -lc \"PYTHONDONTWRITEBYTECODE=1 python3 - <<'PY'\nfrom pathlib import Path\nfrom tempfile import TemporaryDirectory\nimport pytest\n\nwith TemporaryDirectory(prefix='.search-pytest-', dir=Path.cwd()) as tmp:\n    result = pytest.main(['-q', '-p', 'no:cacheprovider', '--basetemp', tmp,\n                          'test_workflow_memory.py', 'test_search_mode_public.py'])\nraise SystemExit(result)\nPY\"",
+              "output_bytes": 99,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 29212,
+            "inputTokens": 29165,
+            "cachedInputTokens": 27648,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 47,
+            "reasoningOutputTokens": 0
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 167,
+              "command": "/bin/zsh -lc 'git diff --check && git diff --stat && git diff -- workflow_memory.py && git status --short'",
+              "output_bytes": 1248,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 29761,
+            "inputTokens": 29618,
+            "cachedInputTokens": 28928,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 143,
+            "reasoningOutputTokens": 30
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 515,
+      "probes": 1,
+      "native_sha256": "835011e292e57381b81427dafcd8c3401b693318da52b0532a037312e4e8a77a",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    },
+    {
+      "arm": "on",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 24609,
+            "inputTokens": 24474,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 135,
+            "reasoningOutputTokens": 0
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 52,
+              "command": "/bin/zsh -lc \"pwd; cat .agents/skills/helixcontext/SKILL.md; sed -n '68,103p' workflow_memory.py; rg --files -g 'test*.py' -g 'pytest.ini' -g 'pyproject.toml' -g 'conftest.py' -g 'AGENTS.md' -g '\"'!'\"\\\\.git' .\"",
+              "output_bytes": 3786,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 25885,
+            "inputTokens": 25491,
+            "cachedInputTokens": 24320,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 394,
+            "reasoningOutputTokens": 198
+          },
+          "observable_operations": [
+            {
+              "kind": "internal_edit",
+              "event": 60
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27219,
+            "inputTokens": 26032,
+            "cachedInputTokens": 25344,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1187,
+            "reasoningOutputTokens": 516
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 69,
+              "command": "/bin/zsh -lc \"sed -n '80,102p' workflow_memory.py; python3 -B - <<'PY'\nfrom tempfile import TemporaryDirectory\nfrom evidence import Store\nfrom workflow_memory import Memory\n\nchecks = 0\ndef verify(condition):\n    global checks\n    assert condition\n    checks += 1\n\ndef ids(records):\n    return [r['event_id'] for r in records]\n\nwith TemporaryDirectory(prefix='.search-review-', dir='.') as root:\n    m = Memory(Store(root))\n    for event, body in [('alpha', b'alpha'), ('beta', b'beta'),\n                        ('operator', b'OR'), ('all', b'alpha OR beta')]:\n        m.record('literal', 's', event, body)\n    verify(ids(m.search('literal', '\\\"alpha\\\" OR (beta*)', match_mode='all')) == ['all'])\n    verify(ids(m.search('literal', '\\\"alpha\\\" OR (beta*)', match_mode='any')) == ['all', 'operator', 'beta', 'alpha'])\n    verify(ids(m.search('literal', '\\\"OR\\\"', match_mode='any')) == ['all', 'operator'])\n\n    raw = 'caf\u00e9 blue green\\\\x00\\\\ufffd'.encode() + b'\\\\xff'\n    ref = m.record('unicode', 's', 'phrase', raw)\n    m.record('unicode', 's', 'reversed', b'green blue')\n    for mode in ('all', 'any'):\n        found = m.search('unicode', 'caf\u00e9 blue_green', match_mode=mode)\n        verify(ids(found) == ['phrase'])\n        verify(found[0] == {**ref, 'ordinal': found[0]['ordinal']})\n        verify(m.retrieve('unicode', [found[0]['record_hash']])[0]['raw'] == raw)\n\n    m.record('integrity', 's', 'nonmatching', b'unrelated cold evidence')\n    m.record('integrity', 's', 'newest', b'alpha beta')\n    with m.db() as db:\n        db.execute(\\\"DELETE FROM search WHERE rowid=(SELECT ordinal FROM events WHERE project='integrity' AND event_id='nonmatching')\\\")\n    for mode in ('all', 'any'):\n        try:\n            m.search('integrity', 'alpha beta', 1, mode)\n        except ValueError as exc:\n            verify(str(exc) == 'Search index does not match archived evidence; rebuild or use exact timeline recovery')\n        else:\n            raise AssertionError('Nonmatching corruption escaped full validation')\n    verify(ids(m.search('literal', 'OR', match_mode='any')) == ['all', 'operator'])\nprint(f'{checks} additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.')\nPY\"",
+              "output_bytes": 1488,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27854,
+            "inputTokens": 27618,
+            "cachedInputTokens": 25856,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 236,
+            "reasoningOutputTokens": 114
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 514,
+      "probes": 1,
+      "native_sha256": "47c5330b6b728cde1afd550078381d823c53af33c8890d185a03c301d9d86744",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    }
+  ],
+  "sol-high": [
+    {
+      "arm": "off",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 18760,
+            "inputTokens": 18521,
+            "cachedInputTokens": 10880,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 239,
+            "reasoningOutputTokens": 55
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 105,
+              "command": "/bin/zsh -lc \"sed -n '1,240p' /Users/mert/.codex/skills/codexworkflow/SKILL.md\"",
+              "output_bytes": 2772,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 19829,
+            "inputTokens": 19350,
+            "cachedInputTokens": 18304,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 479,
+            "reasoningOutputTokens": 163
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 187,
+              "command": "/bin/zsh -lc '\"sed\" \"-n\" \"1,280p\" \"workflow_memory.py\"'",
+              "output_bytes": 10027,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 190,
+              "command": "/bin/zsh -lc '\"printenv CODEX_THREAD_ID\"'",
+              "output_bytes": 51,
+              "exit_code": 127
+            },
+            {
+              "kind": "command",
+              "event": 191,
+              "command": "/bin/zsh -lc '\"git\" \"status\" \"--short\"'",
+              "output_bytes": 0,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 193,
+              "command": "/bin/zsh -lc '\"rg\" \"--files\" \"-g\" \"AGENTS.md\" \"-g\" \"CODEX_WORKFLOW.md\" \"-g\" \".codex/config.toml\" \"-g\" \"workflow_memory.py\" \"-g\" \"test*.py\" \"-g\" \"*test*.py\"'",
+              "output_bytes": 80,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 22421,
+            "inputTokens": 22009,
+            "cachedInputTokens": 19200,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 412,
+            "reasoningOutputTokens": 202
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 207,
+              "command": "/bin/zsh -lc \"sed -n '1,240p' AGENTS.md\"",
+              "output_bytes": 519,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 209,
+              "command": "/bin/zsh -lc \"sed -n '1,320p' test_search_mode_public.py\"",
+              "output_bytes": 1377,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 211,
+              "command": "/bin/zsh -lc 'rg --files -uu | sort'",
+              "output_bytes": 1481,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 213,
+              "command": "/bin/zsh -lc \"sed -n '1,320p' test_workflow_memory.py\"",
+              "output_bytes": 5101,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 25492,
+            "inputTokens": 24907,
+            "cachedInputTokens": 21888,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 585,
+            "reasoningOutputTokens": 209
+          },
+          "observable_operations": []
+        },
+        {
+          "usage": {
+            "totalTokens": 25706,
+            "inputTokens": 25516,
+            "cachedInputTokens": 24704,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 190,
+            "reasoningOutputTokens": 29
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 307,
+              "command": "/bin/zsh -lc 'pytest -q'",
+              "output_bytes": 33,
+              "exit_code": 127
+            },
+            {
+              "kind": "command",
+              "event": 309,
+              "command": "/bin/zsh -lc 'git diff --check && git diff -- workflow_memory.py'",
+              "output_bytes": 1207,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 26274,
+            "inputTokens": 26049,
+            "cachedInputTokens": 10880,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 225,
+            "reasoningOutputTokens": 76
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 409,
+              "command": "/bin/zsh -lc 'python3 -m pytest -q'",
+              "output_bytes": 99,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27549,
+            "inputTokens": 26313,
+            "cachedInputTokens": 25856,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 1236,
+            "reasoningOutputTokens": 816
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 424,
+              "command": "/bin/zsh -lc 'git diff --check'",
+              "output_bytes": 0,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 426,
+              "command": "/bin/zsh -lc 'git status --short'",
+              "output_bytes": 22,
+              "exit_code": 0
+            },
+            {
+              "kind": "command",
+              "event": 428,
+              "command": "/bin/zsh -lc \"PYTHONDONTWRITEBYTECODE=1 python3 -c 'import tempfile; from pathlib import Path; from evidence import Store; from workflow_memory import Memory; d=tempfile.TemporaryDirectory(); m=Memory(Store(Path(d.name))); m.record(\\\"p\\\",\\\"s\\\",\\\"one\\\",b\\\"alpha\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"two\\\",b\\\"beta\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"both\\\",b\\\"alpha beta\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"ops\\\",b\\\"OR\\\"); assert m.search(\\\"p\\\",\\\"alpha OR beta\\\",match_mode=\\\"all\\\")==[]; assert [r[\\\"event_id\\\"] for r in m.search(\\\"p\\\",\\\"alpha OR beta\\\",match_mode=\\\"any\\\")]==[\\\"ops\\\",\\\"both\\\",\\\"two\\\",\\\"one\\\"]; print(\\\"literal-operator probe passed\\\")'\"",
+              "output_bytes": 30,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27893,
+            "inputTokens": 27596,
+            "cachedInputTokens": 25344,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 297,
+            "reasoningOutputTokens": 125
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 700,
+      "probes": 1,
+      "native_sha256": "df7cca0a594f4b9d2297acc8bb11e4e728d819c7ab93df352e566805d3f901d9",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    },
+    {
+      "arm": "on",
+      "segments": [
+        {
+          "usage": {
+            "totalTokens": 24929,
+            "inputTokens": 24167,
+            "cachedInputTokens": 0,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 762,
+            "reasoningOutputTokens": 246
+          },
+          "observable_operations": [
+            {
+              "kind": "internal_edit",
+              "event": 49
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 25385,
+            "inputTokens": 24980,
+            "cachedInputTokens": 23936,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 405,
+            "reasoningOutputTokens": 131
+          },
+          "observable_operations": [
+            {
+              "kind": "internal_edit",
+              "event": 97
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 25762,
+            "inputTokens": 25534,
+            "cachedInputTokens": 24832,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 228,
+            "reasoningOutputTokens": 83
+          },
+          "observable_operations": [
+            {
+              "kind": "command",
+              "event": 150,
+              "command": "/bin/zsh -lc \"git status --short && git diff -- workflow_memory.py && sed -n '65,95p' workflow_memory.py\"",
+              "output_bytes": 2944,
+              "exit_code": 0
+            }
+          ]
+        },
+        {
+          "usage": {
+            "totalTokens": 27037,
+            "inputTokens": 26574,
+            "cachedInputTokens": 25344,
+            "cacheWriteInputTokens": 0,
+            "outputTokens": 463,
+            "reasoningOutputTokens": 304
+          },
+          "observable_operations": []
+        }
+      ],
+      "final_answer_bytes": 588,
+      "probes": 0,
+      "native_sha256": "88ade111e443a681c731d7b55e06a05e393fba66736aabe25a18ed90e0e0df55",
+      "attribution_limit": "Operations grouped by observed usage update; not causal token allocation or hidden reasoning"
+    }
+  ]
+}

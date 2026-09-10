@@ -1,0 +1,64 @@
+{
+  "classification": "Offline exact replay and display correction; native economics/behavior UNTESTED",
+  "sources": {
+    "docs/research/native-output-v2/offline.py": "8f62607db032fbec3c5a3cd81a2fc09f01dafc94da118ca547d3bbd16cab6050",
+    "docs/research/native-output-v2/review_tool.py": "fd6b7045b431e61cad76c35bb3f10b95f2c5d9f2e88a5df27ab810c82ed3efb9",
+    "engine/prototype/source_packet.py": "1977ea4f403f2bccda6e33d1ef90ee86b8ded207847ecbabfdca2ae1e6fb5ccd",
+    "docs/research/native-output-v1/bound_edit_tool.py": "15cededa71a62c0014f35713ec1dfd69ae63ec6fd19ef098689cff09a27dc6c5"
+  },
+  "rows": [
+    {
+      "model_fixture": "astra-xhigh",
+      "original_requests_unchanged": true,
+      "original_rejected_calls": 0,
+      "exact_artifact": "PASS",
+      "finite_checks": "23 public/regression +94 independent cases PASS",
+      "diff_application_reconstructs_published_bytes": true,
+      "input_source_packet_bytes": 28482,
+      "prior_json_source_bytes": 28345,
+      "review_diff_bytes": 1058,
+      "prior_receipt_bytes": 349,
+      "review_receipt_bytes": 1798,
+      "store_io": {
+        "object_bytes_read": 63140,
+        "object_bytes_written": 17505,
+        "object_bytes_hashed": 80645,
+        "object_read_operations": 8,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "seconds": 0.6624095839797519,
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "native_calls": 0
+    },
+    {
+      "model_fixture": "sol-high",
+      "original_requests_unchanged": true,
+      "original_rejected_calls": 1,
+      "exact_artifact": "PASS",
+      "finite_checks": "23 public/regression +94 independent cases PASS",
+      "diff_application_reconstructs_published_bytes": true,
+      "input_source_packet_bytes": 28482,
+      "prior_json_source_bytes": 28345,
+      "review_diff_bytes": 1119,
+      "prior_receipt_bytes": 349,
+      "review_receipt_bytes": 1860,
+      "store_io": {
+        "object_bytes_read": 73120,
+        "object_bytes_written": 20204,
+        "object_bytes_hashed": 93324,
+        "object_read_operations": 9,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "seconds": 0.6199561670073308,
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "native_calls": 0
+    }
+  ],
+  "native_calls": 0,
+  "model_release": false,
+  "no_automatic_selector_repair": true
+}

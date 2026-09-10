@@ -71,9 +71,12 @@ function renderCohorts(){
  const body=$('cohorts');body.replaceChildren();
  const pct=n=>n==null?'—':n.toFixed(2)+'%';
  for(const c of (state.cohorts||[]).filter(c=>fits(c.model))){
-  const tr=element('tr'),m=c.median_savings_percent,p=c.ratio_of_totals_savings_percent;
+  const release=typeof c.release_target_percent==='number';
+  const tr=element('tr'),m=release?(c.release_median_savings_percent||{}):c.median_savings_percent,p=c.ratio_of_totals_savings_percent;
   const tariff=state.pricing?.fresh&&Date.now()/1000<state.pricing.expires_at?c.tariff_median_savings_percent:null;
-  const values=[shortModel(c.model)+' '+c.effort,c.name,`${c.n_pairs}/${c.registered_pairs}`,pct(m.input_tokens),pct(m.output_tokens),pct(m.uncached_input_tokens),pct(tariff?.short)+' / '+pct(tariff?.long),pct(p.input_tokens)+' / '+pct(p.output_tokens),`${c.finite_check_passes} pass · ${c.finite_check_failures} fail · ${c.finite_check_unknown} unknown`,c.classification];
+  const pending=release&&!c.cohort_complete;
+  const scope=(release?`Target ${c.release_target_percent}/${c.release_target_percent} · ${c.economic_gate} · `:'')+c.classification;
+  const values=[shortModel(c.model)+' '+c.effort,c.name,`${c.n_pairs}/${c.registered_pairs}`,pct(m.input_tokens),pct(m.output_tokens),pct(m.uncached_input_tokens),pending?'pending':pct(tariff?.short)+' / '+pct(tariff?.long),pending?'pending':pct(p.input_tokens)+' / '+pct(p.output_tokens),`${c.finite_check_passes} pass · ${c.finite_check_failures} fail · ${c.finite_check_unknown} unknown`,scope];
   values.forEach((v,i)=>tr.append(element('td',v,i>=3&&i<=5?([m.input_tokens,m.output_tokens,m.uncached_input_tokens][i-3]<0?'bad':''):null)));
   body.append(tr);
  }

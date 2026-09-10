@@ -45,3 +45,19 @@ def test_tariff_medians_withhold_partial_or_stale_cohort():
     assert tariff_medians(cohort,pairs,costs)=={'short':-10,'long':-10}
     costs['b']=None
     assert tariff_medians(cohort,pairs,costs)=={'short':None,'long':None}
+
+
+def test_release_median_withheld_until_whole_registered_cohort_finishes():
+    runs=[run('a',100),run('b',10)]
+    pairs=[{'id':'done','off':'a','on':'b','artifact_check':True}]
+    spec={'model':'luna','effort':'high','pairs':['done','missing'],'release_target_percent':75}
+    row=summarize([spec],pairs,runs)[0]
+    assert row['median_savings_percent']['input_tokens']==90
+    assert not row['cohort_complete'] and row['release_median_savings_percent']['input_tokens'] is None
+    assert row['economic_gate']=='PENDING_COHORT'
+    spec['pairs']=['done'];row=summarize([spec],pairs,runs)[0]
+    assert row['cohort_complete'] and row['economic_gate']=='PASS'
+    assert row['release_qualification']=='NOT_ESTABLISHED'  # Economics cannot certify capability.
+    pairs[0]['artifact_check']=False;row=summarize([spec],pairs,runs)[0]
+    assert row['economic_gate']=='PASS' and row['finite_check_failures']==1
+    assert row['release_qualification']=='NOT_ESTABLISHED'

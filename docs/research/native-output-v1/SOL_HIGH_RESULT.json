@@ -1,0 +1,148 @@
+{
+  "classification": "Fresh N=1 known maintenance task, model/effort release cell; not earlier coding qualification",
+  "N": 1,
+  "manifest_sha256": "572b416e20333202fdca9415f83c47a9cc99e8470e0bf8086afbabbb2879a578",
+  "rows": [
+    {
+      "arm": "off",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "thread_id": "01a089ce-0fe2-7c23-b963-e7a413e80d0c",
+      "usage": {
+        "input_tokens": 190261,
+        "output_tokens": 3663,
+        "cached_input_tokens": 157056,
+        "reasoning_output_tokens": 1675,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 8,
+      "turns": 1,
+      "raw_tool_calls": 7,
+      "engine_tool_calls": 0,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "506d799686fe7e8e975c2dcd50a23ddad66609c241b7f2bdabe50b3f0efaa338",
+      "raw_bytes": 234261,
+      "native_sha256": "df7cca0a594f4b9d2297acc8bb11e4e728d819c7ab93df352e566805d3f901d9",
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "checks": "PASS",
+      "elapsed_seconds": 142.81544774997747,
+      "caller_check_seconds": 0.5704726250260137,
+      "store_io": {},
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": null,
+      "post_audit_check_seconds": 0.5288559580221772,
+      "memory_seconds": 0.14712520805187523,
+      "memory_raw_bytes": 36055,
+      "prompt_bytes": 1873,
+      "base_bytes": 17766,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "final_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "arm": "on",
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "thread_id": "01a089d0-3ec7-7473-88d9-48d8c508bc20",
+      "usage": {
+        "input_tokens": 101255,
+        "output_tokens": 1858,
+        "cached_input_tokens": 74112,
+        "reasoning_output_tokens": 764,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "turns": 1,
+      "raw_tool_calls": 3,
+      "engine_tool_calls": 2,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "108309c1c7e08c452b85bc10c810a1512ed18d017294a4966dd2e99bc91a2f9c",
+      "raw_bytes": 164072,
+      "native_sha256": "88ade111e443a681c731d7b55e06a05e393fba66736aabe25a18ed90e0e0df55",
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "checks": "PASS",
+      "elapsed_seconds": 74.87456824997207,
+      "caller_check_seconds": 0.5585221250075847,
+      "store_io": {
+        "object_bytes_read": 52902,
+        "object_bytes_written": 27541,
+        "object_bytes_hashed": 80443,
+        "object_read_operations": 7,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": {
+        "object_bytes_read": 26509,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 26509,
+        "object_read_operations": 8,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "post_audit_check_seconds": 0.5456042500445619,
+      "memory_seconds": 0.14785000000847504,
+      "memory_raw_bytes": 36054,
+      "prompt_bytes": 31131,
+      "base_bytes": 6193,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "final_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-5.6-sol",
+        "effort": "high",
+        "native_overrides_verified": true
+      }
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 46.78100083569413,
+    "output_tokens": 49.276549276549275,
+    "uncached_input_tokens": 18.256286703809664
+  },
+  "finite_checks": "PASS",
+  "meets_75_75": false,
+  "meets_80_80": false,
+  "preparation_seconds": 0.9654042079928331,
+  "general_release": false,
+  "reused_controls": false,
+  "normal_codex_app_integration": false,
+  "cohort_complete": false,
+  "release_qualification": false,
+  "model": "gpt-5.6-sol",
+  "effort": "high",
+  "release_threshold": 75,
+  "meets_requested_economic_gate": false,
+  "native_usage_all_attempts": {
+    "input_tokens": 291516,
+    "output_tokens": 5521,
+    "cached_input_tokens": 231168,
+    "reasoning_output_tokens": 2439,
+    "cache_write_input_tokens": 0
+  },
+  "limits": [
+    "Composite kernel/skill/internal-tool test with model-written final answer; no isolated mechanism attribution",
+    "One known development maintenance task; not population parity or prior coding qualification",
+    "Setup, caller checks, storage and private evidence capture cost nonzero",
+    "Execution is a research caller; production delivery and hostile-host atomicity unproven"
+  ]
+}

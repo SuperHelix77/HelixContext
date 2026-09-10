@@ -1,0 +1,40 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing.md",
+  "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "checked_at": "2026-09-10T05:40:12.892212+00:00",
+  "scope": "Dated Standard API-equivalent scenarios, not Codex quota/bills or total effective cost",
+  "models": {
+    "astra-xhigh": {
+      "costs": {
+        "off": {
+          "short": 0.55621,
+          "long": 1.063845
+        },
+        "on": {
+          "short": 0.45407,
+          "long": 0.85934
+        }
+      },
+      "saved_percent": {
+        "short": 18.363567717229103,
+        "long": 19.223195108309945
+      }
+    },
+    "sol-high": {
+      "costs": {
+        "off": {
+          "short": 0.26890240000000004,
+          "long": 0.5011748
+        },
+        "on": {
+          "short": 0.1753768,
+          "long": 0.33217359999999996
+        }
+      },
+      "saved_percent": {
+        "short": 34.7805002856055,
+        "long": 33.72100911697876
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "classification": "Explicit native final-answer content review after frozen machine audit; original audits unchanged",
+  "rows": [
+    {
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "arm": "off",
+      "native_sha256": "835011e292e57381b81427dafcd8c3401b693318da52b0532a037312e4e8a77a",
+      "thread_id": "01a089cb-7e08-73b3-a003-77ee71d409cf",
+      "answer_sha256": "40f71ba9ba4c729e7df73674a7f49deeaadd4ecd681586c2b4f7dc0e2e053bf3",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "requested_change_explained": "PASS",
+      "test_and_scope_claims_match_evidence": "PASS",
+      "remaining_issues_reported": "PASS",
+      "cross_model_semantic_probe_replay": "PASS",
+      "assessment": "Coordinator explicit content/evidence review; bounded task only, not universal parity"
+    },
+    {
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "arm": "on",
+      "native_sha256": "47c5330b6b728cde1afd550078381d823c53af33c8890d185a03c301d9d86744",
+      "thread_id": "01a089cc-d74d-7911-b54b-9c3dc8e9db5a",
+      "answer_sha256": "f29982999c148a046856097c0e37023a005a5deaf63b8b565c0bf729fbac7b59",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "requested_change_explained": "PASS",
+      "test_and_scope_claims_match_evidence": "PASS",
+      "remaining_issues_reported": "PASS",
+      "cross_model_semantic_probe_replay": "PASS",
+      "assessment": "Coordinator explicit content/evidence review; bounded task only, not universal parity"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "arm": "off",
+      "native_sha256": "df7cca0a594f4b9d2297acc8bb11e4e728d819c7ab93df352e566805d3f901d9",
+      "thread_id": "01a089ce-0fe2-7c23-b963-e7a413e80d0c",
+      "answer_sha256": "f4197c35bc3b8e1f1a40b6ea8b73c3101b7f26c161c03a69f931a1419f8caa10",
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "requested_change_explained": "PASS",
+      "test_and_scope_claims_match_evidence": "PASS",
+      "remaining_issues_reported": "PASS",
+      "cross_model_semantic_probe_replay": "PASS",
+      "assessment": "Coordinator explicit content/evidence review; bounded task only, not universal parity"
+    },
+    {
+      "model": "gpt-5.6-sol",
+      "effort": "high",
+      "arm": "on",
+      "native_sha256": "88ade111e443a681c731d7b55e06a05e393fba66736aabe25a18ed90e0e0df55",
+      "thread_id": "01a089d0-3ec7-7473-88d9-48d8c508bc20",
+      "answer_sha256": "39425eb886a475157724f291fffc2206faeaf84070f95f7d5ba852d7f936e521",
+      "source_sha256": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+      "normal_model_written_final": "PASS",
+      "after_actual_execution": "PASS",
+      "requested_change_explained": "PASS",
+      "test_and_scope_claims_match_evidence": "PASS",
+      "remaining_issues_reported": "PASS",
+      "cross_model_semantic_probe_replay": "PASS",
+      "assessment": "Coordinator explicit content/evidence review; bounded task only, not universal parity"
+    }
+  ],
+  "public_verification_sha256": "23edb954942fe6cfcf631b9253d9b333e7e271e46514ed89c810ea6aee7f7903",
+  "release_qualification": false,
+  "cohort_complete": false,
+  "normal_codex_app_integration": false
+}

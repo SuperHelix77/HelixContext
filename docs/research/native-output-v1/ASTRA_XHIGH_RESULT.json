@@ -1,0 +1,148 @@
+{
+  "classification": "Fresh N=1 known maintenance task, model/effort release cell; not earlier coding qualification",
+  "N": 1,
+  "manifest_sha256": "b51bd6ce7eee00377fb168f14f35d97221cca53b2adb7244fcf13901b0d88e35",
+  "rows": [
+    {
+      "arm": "off",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "thread_id": "01a089cb-7e08-73b3-a003-77ee71d409cf",
+      "usage": {
+        "input_tokens": 153042,
+        "output_tokens": 1943,
+        "cached_input_tokens": 119040,
+        "reasoning_output_tokens": 156,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 6,
+      "turns": 1,
+      "raw_tool_calls": 5,
+      "engine_tool_calls": 0,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "e11612c27b5fcb2578567b1b41b3c4d94901f823dc3b69d810ff66f18b266aea",
+      "raw_bytes": 236595,
+      "native_sha256": "835011e292e57381b81427dafcd8c3401b693318da52b0532a037312e4e8a77a",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "checks": "PASS",
+      "elapsed_seconds": 88.12170658301329,
+      "caller_check_seconds": 0.5731395829934627,
+      "store_io": {},
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": null,
+      "post_audit_check_seconds": 0.5730095840408467,
+      "memory_seconds": 0.19668545899912715,
+      "memory_raw_bytes": 36058,
+      "prompt_bytes": 1873,
+      "base_bytes": 21269,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "final_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-6-astra",
+        "effort": "xhigh",
+        "native_overrides_verified": true
+      }
+    },
+    {
+      "arm": "on",
+      "model": "gpt-6-astra",
+      "effort": "xhigh",
+      "thread_id": "01a089cc-d74d-7911-b54b-9c3dc8e9db5a",
+      "usage": {
+        "input_tokens": 103615,
+        "output_tokens": 1952,
+        "cached_input_tokens": 75520,
+        "reasoning_output_tokens": 828,
+        "cache_write_input_tokens": 0
+      },
+      "segments": 4,
+      "turns": 1,
+      "raw_tool_calls": 3,
+      "engine_tool_calls": 1,
+      "model_written_final_after_tools": true,
+      "raw_sha256": "46a3ebcf1cb2a6115db7708aab3cd2483a9ec33629cb3ef4787500897cef98c4",
+      "raw_bytes": 171671,
+      "native_sha256": "47c5330b6b728cde1afd550078381d823c53af33c8890d185a03c301d9d86744",
+      "source_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+      "checks": "PASS",
+      "elapsed_seconds": 79.84114979195874,
+      "caller_check_seconds": 0.6160626250202768,
+      "store_io": {
+        "object_bytes_read": 42899,
+        "object_bytes_written": 24968,
+        "object_bytes_hashed": 67867,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "final_answer_semantic_review": "PENDING explicit answer/evidence review",
+      "post_audit_reconstruction_io": {
+        "object_bytes_read": 23911,
+        "object_bytes_written": 0,
+        "object_bytes_hashed": 23911,
+        "object_read_operations": 6,
+        "staging_bytes_read": 0,
+        "staging_bytes_written": 0,
+        "projection_bytes_parsed": 0
+      },
+      "post_audit_check_seconds": 0.5464640419813804,
+      "memory_seconds": 0.14914366597076878,
+      "memory_raw_bytes": 36057,
+      "prompt_bytes": 31131,
+      "base_bytes": 6193,
+      "config_binding": {
+        "schema": "helix.effective-config.v1",
+        "initial_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "final_sha256": "25ec1137cd27494d0e420d5fc19d042be439a6072b80730397d416991d680bde",
+        "changed_top_level_keys": [],
+        "overridden_fields": [
+          "model",
+          "model_reasoning_effort"
+        ],
+        "other_parsed_settings_unchanged": true,
+        "model": "gpt-6-astra",
+        "effort": "xhigh",
+        "native_overrides_verified": true
+      }
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 32.29636308987075,
+    "output_tokens": -0.46320123520329215,
+    "uncached_input_tokens": 17.372507499558854
+  },
+  "finite_checks": "PASS",
+  "meets_75_75": false,
+  "meets_80_80": false,
+  "preparation_seconds": 1.0987564160022885,
+  "general_release": false,
+  "reused_controls": false,
+  "normal_codex_app_integration": false,
+  "cohort_complete": false,
+  "release_qualification": false,
+  "model": "gpt-6-astra",
+  "effort": "xhigh",
+  "release_threshold": 65,
+  "meets_requested_economic_gate": false,
+  "native_usage_all_attempts": {
+    "input_tokens": 256657,
+    "output_tokens": 3895,
+    "cached_input_tokens": 194560,
+    "reasoning_output_tokens": 984,
+    "cache_write_input_tokens": 0
+  },
+  "limits": [
+    "Composite kernel/skill/internal-tool test with model-written final answer; no isolated mechanism attribution",
+    "One known development maintenance task; not population parity or prior coding qualification",
+    "Setup, caller checks, storage and private evidence capture cost nonzero",
+    "Execution is a research caller; production delivery and hostile-host atomicity unproven"
+  ]
+}

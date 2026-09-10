@@ -1,0 +1,43 @@
+{
+  "classification": "Task-only derivatives of fresh known development pilots; not population parity",
+  "reports": {
+    "ASTRA_XHIGH_RESULT.json": "b8547e8870f6c7a25b76e6d2cea3366539596816ce79185e6727ded305cd782e",
+    "SOL_HIGH_RESULT.json": "91507178b3f9384ddbaebc32a28cc31400957de8483dbc61bd519c4c7e84f8bc"
+  },
+  "files": {
+    "COST.json": "7c1f13ab34251322815a46f40d11f8ede79e4a9a046a092cf49b27346b9080f7",
+    "pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "ANATOMY.json": "cfa9ecc0bcb765b239a9b10a11c69f751883643931db441dc44f4bcfc1e67551",
+    "sol-high/on/probe-provenance.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/on/workflow_memory.py": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+    "sol-high/on/internal-calls.json": "16c5ce450ba85109b8b5c3920255441b606ca9aff23baa33c4a8e823c57a9166",
+    "sol-high/on/usage.jsonl": "9901f0bb26f1c8db7d7edede48652c9303304e786eaedab55c57d76185029dca",
+    "sol-high/on/final-answer.md": "39425eb886a475157724f291fffc2206faeaf84070f95f7d5ba852d7f936e521",
+    "sol-high/off/probe-provenance.json": "109a2c8ca0aef6a58a3d48f162063d02bf02a441f1db91b48f4a13fc4c15f7c6",
+    "sol-high/off/probe-1.py": "72953856cc226f3eebb581d290a3b8010d3fbeecff3c6812142080bee0ce96d2",
+    "sol-high/off/workflow_memory.py": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+    "sol-high/off/internal-calls.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/off/usage.jsonl": "8b549526c0915cce0ad75c0bd13db9de74457dc203c2ddced59372a8583ab8dc",
+    "sol-high/off/final-answer.md": "f4197c35bc3b8e1f1a40b6ea8b73c3101b7f26c161c03a69f931a1419f8caa10",
+    "astra-xhigh/on/probe-provenance.json": "c0b538739a2eaf55f6f735b12fd64a2d2a07a8e176d5eef34e6488cea87c7226",
+    "astra-xhigh/on/probe-1.py": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009",
+    "astra-xhigh/on/workflow_memory.py": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+    "astra-xhigh/on/internal-calls.json": "f4b130d60aee91bb83d6c6c79ccc8f8b20edc9e6c45525b2314a7b7a3f580837",
+    "astra-xhigh/on/usage.jsonl": "5064fb5ae016260adc83986e8b33b055f932b8fe920070bb411aea1c05dd8980",
+    "astra-xhigh/on/final-answer.md": "f29982999c148a046856097c0e37023a005a5deaf63b8b565c0bf729fbac7b59",
+    "astra-xhigh/off/probe-provenance.json": "1a0aa14861139a1d1b697330cb41324d59d698bc34b1ab21e2470a273869c823",
+    "astra-xhigh/off/probe-1.py": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1",
+    "astra-xhigh/off/workflow_memory.py": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+    "astra-xhigh/off/internal-calls.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "astra-xhigh/off/usage.jsonl": "7c77aaaf6d24e61fe22014b9030166edf2b4023a1220139c2b9982509ea66fea",
+    "astra-xhigh/off/final-answer.md": "40f71ba9ba4c729e7df73674a7f49deeaadd4ecd681586c2b4f7dc0e2e053bf3"
+  },
+  "created_at": "2026-09-10T05:40:12.199742+00:00",
+  "shared_files": {
+    "maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "maintenance-copy-v1/baseline/test_workflow_memory.py": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+    "maintenance-copy-v1/test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed",
+    "maintenance-copy-v1/oracle.py": "87ea62c59a8f7885124c21b2324f0ac43dc7f3c104ceb0fb2e641324d04a72a7"
+  }
+}

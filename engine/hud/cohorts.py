@@ -62,8 +62,17 @@ def summarize(specs, pairs, runs):
             medians[k] = median(values) if len(values) == len(samples) and values else None
             control = sum(s['control'][k] for s in samples)
             pooled[k] = (1 - sum(s['candidate'][k] for s in samples) / control) * 100 if control else None
+        complete = bool(spec['pairs']) and len(samples) == len(spec['pairs'])
+        target = spec.get('release_target_percent')
+        requested = type(target) in (int, float) and 0 <= target <= 100
+        economic = ('PENDING_COHORT' if not complete else
+                    'UNKNOWN_COUNTER' if any(medians[k] is None for k in ('input_tokens','output_tokens')) else
+                    'PASS' if min(medians['input_tokens'],medians['output_tokens']) >= target else 'FAIL') if requested else 'NOT_REQUESTED'
         output.append({**spec, 'n_pairs': len(samples), 'registered_pairs': len(spec['pairs']),
                        'median_savings_percent': medians, 'ratio_of_totals_savings_percent': pooled,
+                       'cohort_complete': complete,
+                       'release_median_savings_percent': medians if complete else {k: None for k in COUNTERS},
+                       'economic_gate': economic,
                        'finite_check_passes': sum(s['finite_checks'] is True for s in samples),
                        'finite_check_failures': sum(s['finite_checks'] is False for s in samples),
                        'finite_check_unknown': sum(s['finite_checks'] is None for s in samples),

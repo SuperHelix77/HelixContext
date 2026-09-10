@@ -1,0 +1,9 @@
+[
+  {
+    "path": "probe-1.py",
+    "event_index": 428,
+    "command": "/bin/zsh -lc \"PYTHONDONTWRITEBYTECODE=1 python3 -c 'import tempfile; from pathlib import Path; from evidence import Store; from workflow_memory import Memory; d=tempfile.TemporaryDirectory(); m=Memory(Store(Path(d.name))); m.record(\\\"p\\\",\\\"s\\\",\\\"one\\\",b\\\"alpha\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"two\\\",b\\\"beta\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"both\\\",b\\\"alpha beta\\\"); m.record(\\\"p\\\",\\\"s\\\",\\\"ops\\\",b\\\"OR\\\"); assert m.search(\\\"p\\\",\\\"alpha OR beta\\\",match_mode=\\\"all\\\")==[]; assert [r[\\\"event_id\\\"] for r in m.search(\\\"p\\\",\\\"alpha OR beta\\\",match_mode=\\\"any\\\")]==[\\\"ops\\\",\\\"both\\\",\\\"two\\\",\\\"one\\\"]; print(\\\"literal-operator probe passed\\\")'\"",
+    "observed_stdout": "literal-operator probe passed\n",
+    "sha256": "72953856cc226f3eebb581d290a3b8010d3fbeecff3c6812142080bee0ce96d2"
+  }
+]
