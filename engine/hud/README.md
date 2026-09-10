@@ -1,5 +1,15 @@
 # Helix telemetry HUD v0
 
+The release console is now served at `/`; the complete research ledger remains
+at `/research`. `python3 helix_hud.py` starts a portable public-evidence view with
+no registered live runs. Published capsules are hash-bound and never become
+model-wide parity claims. See [preview instructions](../../docs/release/0.1.0-preview.1/README.md).
+
+Optional `peer_states` registrations accept `id`, `name` and `path` to a caller-owned
+JSON state file. Only state, phase, commit, modification time and hash are projected;
+no model is queried and no stored instruction is executed. This is file observation,
+not a liveness attestation. Invalid files become UNAVAILABLE.
+
 Live native streams validate the exact JSONL prefix pinned by the last status
 receipt, then expose later monotonic native counters as **provisional** while the
 matching app-server PID and working directory are live. A growing stream is not a

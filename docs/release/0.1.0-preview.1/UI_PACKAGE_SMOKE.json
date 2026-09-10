@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "9fcfc27e70cafce6311e24f3dad2e475331f1284b965fbe42c25b0c327c51170",
+  "archive_crc": "PASS",
+  "manifest_files": 63,
+  "primitive_help": "PASS",
+  "clean_extraction_http": "PASS",
+  "negative_luna_gate_retained": "PASS",
+  "model_calls": 0
+}

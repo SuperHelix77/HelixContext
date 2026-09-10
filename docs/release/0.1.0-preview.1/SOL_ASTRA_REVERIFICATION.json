@@ -1,0 +1,147 @@
+{
+  "classification": "Offline cross-replay of finite behavioral checks; no universal capability claim",
+  "artifacts": 4,
+  "public_tests_each": 23,
+  "independent_cases_each": 94,
+  "semantic_probe_programs_each": 3,
+  "all_observed_semantic_probes_pass_on_all_artifacts": true,
+  "native_model_calls": 0,
+  "rows": [
+    {
+      "model": "astra-xhigh",
+      "arm": "off",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.15s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.03752595302648842, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.05312653898727149}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "model": "astra-xhigh",
+      "arm": "on",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.15s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.0249616302899085, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.051236328668892384}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "model": "sol-high",
+      "arm": "off",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.16s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.02304554433794692, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.051655830058734864}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        }
+      ]
+    },
+    {
+      "model": "sol-high",
+      "arm": "on",
+      "checks": [
+        {
+          "exit": 0,
+          "stdout": ".......................                                                  [100%]\n23 passed in 0.21s\n",
+          "stderr": ""
+        },
+        {
+          "exit": 0,
+          "stdout": "{\"finite_cases\": 94, \"store_io\": {\"object_bytes_read\": 414956, \"object_bytes_written\": 7422, \"object_bytes_hashed\": 422682, \"object_read_operations\": 3290, \"staging_bytes_read\": 0, \"staging_bytes_written\": 0, \"projection_bytes_parsed\": 0}, \"memory_metrics\": {\"index_input_bytes\": 458, \"index_seconds\": 0.022690336976666003, \"index_validation_bytes\": 12474, \"index_validation_seconds\": 0.050518206087872386}}\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/off/probe-1.py",
+          "exit": 0,
+          "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "astra-xhigh/on/probe-1.py",
+          "exit": 0,
+          "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+          "stderr": ""
+        },
+        {
+          "probe": "sol-high/off/probe-1.py",
+          "exit": 0,
+          "stdout": "literal-operator probe passed\n",
+          "stderr": ""
+        }
+      ]
+    }
+  ]
+}

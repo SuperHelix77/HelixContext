@@ -2,6 +2,13 @@
 
 **HELIX: Hierarchical Evidence Loading and Intelligent eXecution.**
 
+**Release preview:** [Helix Engine0.1.0-preview.1](docs/release/0.1.0-preview.1/README.md)
+ships the local evidence console and explicit-call Engine primitives. Start with
+`python3 helix_hud.py`. The console shows selected paired receipts, current official
+tariff scenarios, live registered events and exact evidence exports. It does not
+certify full-model parity or silently activate an unqualified savings policy.
+[Current model decisions and limits](docs/release/0.1.0-preview.1/ADJUDICATION.md).
+
 Research toward the **maximum empirically safe compression frontier**, with capability, agentic execution and long-horizon workflow preservation first. Separate **80% input/output savings** remains the research objective; 95% is a stretch target. The user permits bounded candidate freezes at 75/75, which must not be described as 80/80 or general model parity.
 
 ## Current Engine milestone — 2026-09-10

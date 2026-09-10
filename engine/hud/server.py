@@ -16,6 +16,7 @@ import uuid
 from pricing import Prices, estimate
 from cohorts import summarize, unique_usage, tariff_medians
 from research_usage import Ledger
+from release_data import project as release_project
 from urllib.parse import urlsplit, parse_qs
 
 HERE=Path(__file__).resolve().parent
@@ -34,6 +35,21 @@ def research_usage(config):
         if path not in RESEARCH_LEDGERS:RESEARCH_LEDGERS[path]=Ledger(path)
         ledger=RESEARCH_LEDGERS[path]
         rows.append({'id':spec['id'],'name':spec['name'],**ledger.scan()})
+    return rows
+
+
+def peer_states(config):
+    """Observe registered state files; never query agents or execute their text."""
+    rows=[]
+    for spec in config.get('peer_states',[]):
+        row={'id':spec['id'],'name':spec.get('name',spec['id'])}
+        try:
+            path=Path(spec['path']); value,digest=read_json(path)
+            row.update(state=str(value.get('state','UNKNOWN'))[:160],phase=str(value.get('phase',''))[:200],
+                       commit=value.get('commit'),source_sha256=digest,modified_at=path.stat().st_mtime,
+                       authority='Observed local state file; process liveness not inferred')
+        except (OSError,ValueError,KeyError,TypeError):row.update(state='UNAVAILABLE',phase='State file cannot be verified')
+        rows.append(row)
     return rows
 
 
@@ -462,6 +478,10 @@ class Observer:
             data=dict(self.current or {})
             price=self.prices.state()
             data['pricing']=price
+            data['release']=release_project(cached_bytes)
+            data['peer_states']=peer_states(self.config)
+            for lane in data['release']['lanes']:
+                lane['costs']={a['arm']:estimate(a['usage'],(price.get('rates') or {}).get(lane.get('model'))) for a in lane.get('arms',[])}
             # Charge every metered attempt, including CLOSED and failed sessions.
             # These are tariff scenarios on observed usage, not a success signal.
             data['costs']={r['id']:estimate(r.get('usage'),(price.get('rates') or {}).get(r.get('model'))) for r in data.get('runs',[]) if r.get('usage_source')=='Native app-server cumulative update' and r.get('usage') is not None}
@@ -479,6 +499,17 @@ class Observer:
                 with self.condition:self.error=type(exc).__name__;self.condition.notify_all()
             time.sleep(2)
 
+    def release_state(self):
+        data=self.state()
+        active=[]
+        for r in data.get('runs',[]):
+            if r.get('state')!='RUNNING':continue
+            row={k:r.get(k) for k in ('id','model','effort','arm','state','mechanisms')}
+            row['timeline']=r.get('timeline',[])[-8:]
+            row['engine_timeline']=r.get('engine_timeline',[])[-8:]
+            active.append(row)
+        return {k:data.get(k) for k in ('release','pricing','observer','peer_states','observed_at','revision')} | {'runs':active}
+
 
 def make_handler(observer):
     class Handler(BaseHTTPRequestHandler):
@@ -495,6 +526,7 @@ def make_handler(observer):
             if host not in ('127.0.0.1','localhost'):return self.send_data(b'Loopback host required','text/plain',403)
             parsed=urlsplit(self.path)
             if parsed.path=='/api/state':return self.send_data(json.dumps(observer.state()).encode(),'application/json')
+            if parsed.path=='/api/release-state':return self.send_data(json.dumps(observer.release_state()).encode(),'application/json')
             if parsed.path=='/api/receipt':
                 key=parse_qs(parsed.query).get('id',[''])[0]
                 with observer.condition:path=observer.receipts.get(key)
@@ -502,7 +534,7 @@ def make_handler(observer):
                 try:data,_=read_json(path)
                 except (ValueError,OSError):return self.send_data(b'Receipt unavailable','text/plain',503)
                 return self.send_data(json.dumps(data,indent=2).encode(),'application/json')
-            if parsed.path=='/api/events':
+            if parsed.path in ('/api/events','/api/release-events'):
                 self.send_response(200);self.send_header('Content-Type','text/event-stream')
                 self.send_header('Cache-Control','no-store');self.send_header('Connection','close');self.end_headers()
                 revision=-1
@@ -512,9 +544,11 @@ def make_handler(observer):
                             if observer.revision==revision:observer.condition.wait(timeout=5)
                             revision=observer.revision
                         # Heartbeats include observer liveness; no model calls or agent polling.
-                        self.wfile.write(('data: '+json.dumps(observer.state())+'\n\n').encode());self.wfile.flush()
+                        state=observer.release_state() if parsed.path=='/api/release-events' else observer.state()
+                        self.wfile.write(('data: '+json.dumps(state)+'\n\n').encode());self.wfile.flush()
                 except (BrokenPipeError,ConnectionResetError):return
-            assets={'/':'index.html','/app.js':'app.js','/style.css':'style.css'}
+            assets={'/':'release.html','/release':'release.html','/release.js':'release.js','/release.css':'release.css',
+                    '/research':'index.html','/app.js':'app.js','/style.css':'style.css'}
             if parsed.path not in assets:return self.send_data(b'Not found','text/plain',404)
             name=assets[parsed.path];ctype={'html':'text/html','js':'text/javascript','css':'text/css'}[name.rsplit('.',1)[1]]
             return self.send_data((HERE/name).read_bytes(),ctype+'; charset=utf-8')

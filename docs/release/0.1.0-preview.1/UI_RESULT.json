@@ -1,0 +1,9 @@
+{
+  "interactions": "PASS",
+  "desktop_mobile": "PASS",
+  "price_expiry": "PASS",
+  "export": "PASS",
+  "research_navigation": "PASS",
+  "page_errors": [],
+  "routine_model_calls": 0
+}

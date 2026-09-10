@@ -1,0 +1,52 @@
+{
+  "schema": "helix.luna.normal-final.semantic-probe-replay.v1",
+  "native_calls": 0,
+  "probe_count": 3,
+  "artifacts": 2,
+  "rows": [
+    {
+      "arm": "on",
+      "probe_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1",
+      "exit_code": 0,
+      "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+      "stderr": ""
+    },
+    {
+      "arm": "on",
+      "probe_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009",
+      "exit_code": 0,
+      "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+      "stderr": ""
+    },
+    {
+      "arm": "on",
+      "probe_sha256": "72953856cc226f3eebb581d290a3b8010d3fbeecff3c6812142080bee0ce96d2",
+      "exit_code": 0,
+      "stdout": "literal-operator probe passed\n",
+      "stderr": ""
+    },
+    {
+      "arm": "off",
+      "probe_sha256": "e0a57b261c7d8b456e66b072bd5402a6f612652ca527e2a29c03303cfd2b9ee1",
+      "exit_code": 0,
+      "stdout": "Supplemental checks passed: literal operators, Unicode, existing FTS tokenization, validation, exact references, and full-project corruption detection in both modes.\n",
+      "stderr": ""
+    },
+    {
+      "arm": "off",
+      "probe_sha256": "7197d8de12f7623769a769a6b286fc9d7fa9b498dc182994c3e033d8d8b64009",
+      "exit_code": 0,
+      "stdout": "12 additional semantic assertions passed: literal operators, Unicode/FTS phrase behavior, exact binary provenance, and full project-scoped corruption checks beyond the result limit.\n",
+      "stderr": ""
+    },
+    {
+      "arm": "off",
+      "probe_sha256": "72953856cc226f3eebb581d290a3b8010d3fbeecff3c6812142080bee0ce96d2",
+      "exit_code": 0,
+      "stdout": "literal-operator probe passed\n",
+      "stderr": ""
+    }
+  ],
+  "all_pass": true,
+  "scope": "Offline replay of three previously observed model-authored probes; not universal semantic proof."
+}

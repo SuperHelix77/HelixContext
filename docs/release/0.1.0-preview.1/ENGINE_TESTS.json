@@ -1,0 +1,7 @@
+{
+  "command": "python3 -m pytest -q engine/prototype engine/hud",
+  "passed": 453,
+  "elapsed_seconds": 5.93,
+  "native_model_calls": 0,
+  "scope": "Local infrastructure tests; no model capability certification"
+}

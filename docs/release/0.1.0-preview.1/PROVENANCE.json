@@ -1,0 +1,17 @@
+{
+  "luna_lane_commit": "df2a222",
+  "luna_import": "Only docs/research/luna-normal-final-v1-20260910 copied exactly; no branch merge or universal runner import",
+  "selected_existing_evidence_commit": "41cab63",
+  "native_pair_model_effort": "gpt-5.6-luna high",
+  "new_sol_astra_model_calls": 0,
+  "observer_payload_bytes": {
+    "research": 711834,
+    "release": 16495,
+    "same_live_snapshot_scope": "Captured2026-09-10; release omits historical research records and preserves links. Sizes vary with active runs."
+  },
+  "original_four_frozen_baselines": "SHA256 reverified unchanged",
+  "release_capsule_index_sha256": "f40439286ea904d0a3e31e66a0d624d2049384479096f2e27a3faf4af9c56828",
+  "normal_codex_preinference_integration": "NOT_ESTABLISHED",
+  "model_wide_parity": false,
+  "fixed_seven_cell_medians": null
+}
