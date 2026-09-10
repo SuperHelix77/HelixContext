@@ -1,0 +1,31 @@
+{
+  "frozen_utc": "2026-09-10T10:24:00.323365+00:00",
+  "manifest_sha256": "7dd504b61a3ee80554ef2069ff30ddf9f327900de485c983607bb09759ce42e8",
+  "binding_count": 50,
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "order": [
+    "off",
+    "on"
+  ],
+  "source_sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+  "source_bytes": 25794,
+  "prompt_bytes": {
+    "off": 1081,
+    "on": 2301
+  },
+  "offline_tests": {
+    "passed": 32,
+    "subtests": 7,
+    "collection_failure_before_fix": 1,
+    "fix": "Imported prior fixture with its module directory available; no inference spent"
+  },
+  "preflight": {
+    "state": "PASS",
+    "model_turns": 0,
+    "manifest_sha256": "7dd504b61a3ee80554ef2069ff30ddf9f327900de485c983607bb09759ce42e8",
+    "seconds": 0.5779337499989197
+  },
+  "native_calls_so_far": 0,
+  "classification": "Exposed development snapshot; Engine-managed ordinary control; same installed configuration and original base"
+}
