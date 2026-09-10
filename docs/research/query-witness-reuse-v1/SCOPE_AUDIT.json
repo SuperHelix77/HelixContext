@@ -1,0 +1,37 @@
+{
+  "state": "SCOPE_FALSIFIER_CONFIRMED",
+  "native_calls": 0,
+  "reference_observations": [
+    {
+      "query": "unlisted_token",
+      "reference_all_matches_auxiliary": false,
+      "reference_single_word_union_matches_auxiliary": false
+    },
+    {
+      "query": "other evidence",
+      "reference_all_matches_auxiliary": true,
+      "reference_single_word_union_matches_auxiliary": true
+    },
+    {
+      "query": "OTHÉR",
+      "reference_all_matches_auxiliary": true,
+      "reference_single_word_union_matches_auxiliary": true
+    },
+    {
+      "query": "unlisted other",
+      "reference_all_matches_auxiliary": false,
+      "reference_single_word_union_matches_auxiliary": true
+    }
+  ],
+  "query_only_interface_verdict": "REJECT_AS_SPECIFIED",
+  "finding": "Scenario identifiers and tool description imply nonmatching auxiliary evidence, but parameterized queries can match it. Mechanical equivalence did not preserve that coverage precondition.",
+  "default_limit_blind_spot": {
+    "method_calls": 1,
+    "explicit_limit": 1,
+    "valid_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+    "known_defect_sha256": "676f0328b2b9390dfa3111b18d324295b5a0728bf0da0ef29df5e8492c9e390b",
+    "proof_scope": "These two sources differ only in the search default. Every search in this witness passes limit=1, so this witness cannot distinguish that change."
+  },
+  "repair_required_before_any_use": "Either check and expose the query-dependent coverage preconditions, or narrow/rename all unsupported scope claims. Add the actual declared preconditions to future observation receipts; retain other tools for untested obligations.",
+  "economic_gate": "Still HOLD_NATIVE: no whole-task 80/80 case even if scope were repaired"
+}

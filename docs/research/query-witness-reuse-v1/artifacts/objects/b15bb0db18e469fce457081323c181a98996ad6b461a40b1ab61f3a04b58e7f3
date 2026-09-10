@@ -1,0 +1,23 @@
+{
+  "files": {
+    "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-1.py": "583636c4e90c073489d0e92936acd6371cb40c680524429452c83b4564d71705",
+    "/private/tmp/helix-named-plans-20260909/docs/research/differential-obligations-v1/compare.py": "fdf7f9e79b356d4450e2c0153016dc03ef6b55951783ce472a1b1608f46656ea",
+    "/private/tmp/helix-named-plans-20260909/docs/research/differential-obligations-v1/DESIGN.md": "f3fb903776f859242133054eb76c4e1e9c0cc8388f582e7d709e0cf7ffec0ad0",
+    "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/TASK.md": "c827db4ca2733959ec621faa8c5411716086174fccfa978f72cb973afff4f507",
+    "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "50298e5fa54e018a9950794d4625a82ba7f2b04a6ef272dc4d26f89a2176072b",
+    "/private/tmp/helix-named-plans-20260909/docs/research/query-witness-reuse-v1/adapter.py": "844e351c610e0fa43f30ebf3a5da92de6cb6cf4f4cf45c35513b697f7e9a6d0b",
+    "/private/tmp/helix-named-plans-20260909/docs/research/astra-obligations-hostile-v1/artifacts/probe.py": "752282cfa7f354e98a11ceec540965a46f6706411f030990135d02809f7f7693"
+  },
+  "runtime": {
+    "python": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+    "sqlite": "3.50.4"
+  },
+  "inputs": {
+    "task": "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/TASK.md",
+    "before": "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/baseline/workflow_memory.py",
+    "candidate": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-1.py",
+    "evidence": "/private/tmp/helix-named-plans-20260909/docs/research/maintenance-copy-v1/baseline/evidence.py"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "state": "OBSERVATIONS_RECORDED",
+  "model_calls": 0,
+  "request_sha256": "28d75f595421da2b085e14cafd09be0738028c3b0aa7b88c4ab7cc053dd4f6ae",
+  "program_sha256": "0e78c9dd0b958313bdd059008bce8f1b788a6f144b84523d548f925f15ad398d",
+  "binding_sha256": "a5c92f72c373985307db6d3c10e002492172a0e8445e9862aea5568b1afff8fc",
+  "copied_source_bytes": 31470,
+  "execution_seconds": 0.0765433749766089,
+  "exit_status": 0,
+  "stdout_sha256": "8a85e6f35fb8b02b229f72f988dd7c8d3bff13d1c564ab26d75e197305333a72",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 3417,
+  "stderr_bytes": 0,
+  "observations": {
+    "targeted_results": [
+      {
+        "scenario": "matching_evidence",
+        "mode": "default",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "matching_evidence",
+        "mode": "all",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "matching_evidence",
+        "mode": "any",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "default",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "all",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "any",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "default",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "all",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "contract_holds": true
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "any",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "contract_holds": true
+      }
+    ],
+    "contract_failures": 0,
+    "control_comparisons": 9,
+    "control_passes": 9
+  },
+  "semantic_adequacy": "UNESTABLISHED; finite scope only",
+  "seconds": 0.08060979098081589,
+  "retained_file_bytes_before_receipt": 39595,
+  "full_physical_io": "UNMEASURED"
+}

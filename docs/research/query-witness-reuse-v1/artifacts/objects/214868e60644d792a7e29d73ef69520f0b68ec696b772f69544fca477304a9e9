@@ -1,0 +1,136 @@
+{
+  "state": "OBSERVATIONS_RECORDED",
+  "model_calls": 0,
+  "request_sha256": "12051d02e27b571a6be4029e3097945a90404d37ab16af1858f90410e2946349",
+  "program_sha256": "15f9f64585cd1fb47ab7c596ab06b77007af2e996f11161e676a3167bf6bbc27",
+  "binding_sha256": "398c88badcda5febc66d124e6c3a7b7ce5ee59b13222fdb1fd868230c16982b6",
+  "copied_source_bytes": 31472,
+  "execution_seconds": 0.07449108298169449,
+  "exit_status": 0,
+  "stdout_sha256": "b06778cd110cf7026c85774014399564d97753d3482e9fc10dda3a46085313f7",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 2736,
+  "stderr_bytes": 0,
+  "observations": {
+    "targeted_results": [
+      {
+        "scenario": "matching_evidence",
+        "mode": "default",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "matching_evidence",
+        "mode": "all",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "matching_evidence",
+        "mode": "any",
+        "expected": {
+          "event_ids": [
+            "target"
+          ]
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "default",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "all",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "missing_nonmatching_index_row",
+        "mode": "any",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Search index does not match archived evidence; rebuild or use exact timeline recovery"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "default",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "all",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      },
+      {
+        "scenario": "corrupt_nonmatching_source",
+        "mode": "any",
+        "expected": {
+          "exception": "ValueError",
+          "message": "Evidence hash mismatch; do not trust the projection"
+        },
+        "actual": {
+          "event_ids": []
+        },
+        "contract_holds": false
+      }
+    ],
+    "contract_failures": 9,
+    "control_comparisons": 9,
+    "control_passes": 9
+  },
+  "semantic_adequacy": "UNESTABLISHED; finite scope only",
+  "seconds": 0.07799479202367365,
+  "retained_file_bytes_before_receipt": 38880,
+  "full_physical_io": "UNMEASURED"
+}

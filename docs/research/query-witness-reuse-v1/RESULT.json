@@ -1,0 +1,41 @@
+{
+  "state": "OFFLINE_PROTOTYPE_REJECTED",
+  "native_benchmark_calls": 0,
+  "mechanical_calibration": "18/18 constructed cases matched their specified counts;10 boundary tests PASS",
+  "scope_gate": "FAIL: parameterized query can violate nonmatching auxiliary-record assumption",
+  "coverage_limit": "All searches pass explicit limit=1; default-limit preservation is untested",
+  "cost_gate": "HOLD: local interface reduction is not a task-level80/80 argument",
+  "model_profile_activated": false,
+  "calls_authorized_by_this_report": 0,
+  "median_case_seconds": 0.07965000002877787,
+  "calibration_seconds": 1.6094996250467375,
+  "comparison_rows": 162,
+  "control_comparisons_passed": 162,
+  "expected_defect_observations": 54,
+  "copied_source_bytes": 566422,
+  "retained_case_file_bytes_at_execution": 709224,
+  "serialized_surfaces": {
+    "original_tool_payload": {
+      "bytes": 2456,
+      "o200k_proxy_tokens": 609
+    },
+    "original_program": {
+      "bytes": 2265,
+      "o200k_proxy_tokens": 509
+    },
+    "prospective_query_arguments": {
+      "bytes": 26,
+      "o200k_proxy_tokens": 7
+    },
+    "prospective_tool_schema": {
+      "bytes": 553,
+      "o200k_proxy_tokens": 110
+    }
+  },
+  "native_token_savings": null,
+  "median_model_savings": null,
+  "full_physical_io": null,
+  "python": "3.14.0 (v3.14.0:ebf955df7a8, Oct  7 2025, 08:20:14) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "tiktoken_version": "0.13.0",
+  "scope": "Failed research candidate, not production Engine or a release cell"
+}

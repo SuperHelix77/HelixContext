@@ -1,0 +1,43 @@
+import json
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from before import Memory as Old
+from workflow_memory import Memory as New
+from evidence import Store
+
+def observe(memory, query, mode=None):
+    try:
+        kwargs = {} if mode is None else {'match_mode': mode}
+        return {'return': memory.search('p', query, 1, **kwargs)}
+    except Exception as exc:
+        return {'exception': type(exc).__name__, 'message': str(exc)}
+
+def compact(value):
+    if 'return' in value:
+        return {'event_ids': [row['event_id'] for row in value['return']]}
+    return value
+
+results = []
+controls = []
+with TemporaryDirectory(prefix='workflow-memory-review-', dir='/private/tmp') as tmp:
+    for scenario in ('matching_evidence', 'missing_nonmatching_index_row', 'corrupt_nonmatching_source'):
+        memories = []
+        for label, cls in (('before', Old), ('proposed', New)):
+            m = cls(Store(Path(tmp) / scenario / label))
+            unrelated = m.record('p', 's', 'unrelated', b'other evidence')
+            m.record('p', 's', 'target', b"x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); #")
+            if scenario == 'missing_nonmatching_index_row':
+                with m.db() as db:
+                    db.execute("DELETE FROM search WHERE rowid=(SELECT ordinal FROM events WHERE project='p' AND event_id='unrelated')")
+            elif scenario == 'corrupt_nonmatching_source':
+                (m.store.root / 'objects' / unrelated['source_hash']).write_bytes(b'tampered')
+            memories.append(m)
+        old, new = memories
+        for mode in (None, 'all', 'any'):
+            expected = observe(old, "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); #")
+            actual = observe(new, "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); #", mode)
+            results.append({'scenario': scenario, 'mode': mode or 'default', 'expected': compact(expected), 'actual': compact(actual), 'contract_holds': expected == actual})
+            # Trailing whitespace has exactly the same literal tokens.
+            control = observe(new, "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); # ", mode)
+            controls.append(control == observe(old, "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); # "))
+print(json.dumps({'targeted_results': results, 'contract_failures': sum(not r['contract_holds'] for r in results), 'control_comparisons': len(controls), 'control_passes': sum(controls)}, indent=2))

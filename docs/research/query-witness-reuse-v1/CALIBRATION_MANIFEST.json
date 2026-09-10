@@ -1,0 +1,147 @@
+{
+  "classification": "Constructed exposed offline cases, not model replication",
+  "native_calls": 0,
+  "cases": [
+    {
+      "name": "0-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-0.py",
+      "query": "unlisted_token",
+      "expected_failures": 9,
+      "target_sha256": "cbc584f1dd2cc72974134245e56c2ddc0de04500900509b274ee5ef6ace89811"
+    },
+    {
+      "name": "0-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "unlisted_token",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "0-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-0.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "cbc584f1dd2cc72974134245e56c2ddc0de04500900509b274ee5ef6ace89811"
+    },
+    {
+      "name": "1-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-1.py",
+      "query": "alpha",
+      "expected_failures": 9,
+      "target_sha256": "583636c4e90c073489d0e92936acd6371cb40c680524429452c83b4564d71705"
+    },
+    {
+      "name": "1-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "alpha",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "1-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-1.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "583636c4e90c073489d0e92936acd6371cb40c680524429452c83b4564d71705"
+    },
+    {
+      "name": "2-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-2.py",
+      "query": "café",
+      "expected_failures": 9,
+      "target_sha256": "98171d30fee93b8d3d2646e2d9b6ae372162d2ef270eb1eccac72ad65af23c57"
+    },
+    {
+      "name": "2-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "café",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "2-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-2.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "98171d30fee93b8d3d2646e2d9b6ae372162d2ef270eb1eccac72ad65af23c57"
+    },
+    {
+      "name": "3-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-3.py",
+      "query": "other evidence",
+      "expected_failures": 9,
+      "target_sha256": "1fa88379daee757309f58fd380495fd9f9a0197d919c22f681d2ed1fe28fd4e5"
+    },
+    {
+      "name": "3-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "other evidence",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "3-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-3.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "1fa88379daee757309f58fd380495fd9f9a0197d919c22f681d2ed1fe28fd4e5"
+    },
+    {
+      "name": "4-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-4.py",
+      "query": "a\"b",
+      "expected_failures": 9,
+      "target_sha256": "928112ab9a01da253060dcd82386111981eceb1b08bcc6d2a888782e69266602"
+    },
+    {
+      "name": "4-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "a\"b",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "4-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-4.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "928112ab9a01da253060dcd82386111981eceb1b08bcc6d2a888782e69266602"
+    },
+    {
+      "name": "5-target",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-5.py",
+      "query": "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); #",
+      "expected_failures": 9,
+      "target_sha256": "13e5dc81d0c052206189b95fabc44382fa06c0fa3c03adcf4520348878eff21a"
+    },
+    {
+      "name": "5-valid",
+      "target": "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py",
+      "query": "x'); __import__('pathlib').Path('QUERY_EXECUTED').touch(); #",
+      "expected_failures": 0,
+      "target_sha256": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74"
+    },
+    {
+      "name": "5-nontarget",
+      "target": "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-5.py",
+      "query": "control_only",
+      "expected_failures": 0,
+      "target_sha256": "13e5dc81d0c052206189b95fabc44382fa06c0fa3c03adcf4520348878eff21a"
+    }
+  ],
+  "files": {
+    "/private/tmp/helix-named-plans-20260909/docs/research/query-witness-reuse-v1/calibrate.py": "9c758b61821aa5bed427d6d896ae9dcaf2248a9ce6a96982010959a17153a87f",
+    "/private/tmp/helix-named-plans-20260909/docs/research/query-witness-reuse-v1/adapter.py": "844e351c610e0fa43f30ebf3a5da92de6cb6cf4f4cf45c35513b697f7e9a6d0b",
+    "/private/tmp/helix-named-plans-20260909/docs/research/query-witness-reuse-v1/DESIGN.md": "1cc409b737c3ab86f9f8a19aaec2342a379812b916ebf9711e1ac3e3f281b86a",
+    "/private/tmp/helix-named-plans-20260909/docs/research/query-witness-reuse-v1/test_adapter.py": "c7ffdb5f855c0878fb1f0bff54427e395c14535c75494429483cbde70649cae4",
+    "/private/tmp/helix-named-plans-20260909/docs/research/astra-obligations-hostile-v1/artifacts/probe.py": "752282cfa7f354e98a11ceec540965a46f6706411f030990135d02809f7f7693",
+    "/private/tmp/helix-named-plans-20260909/docs/research/native-output-v1/artifacts/astra-xhigh/on/workflow_memory.py": "af78b151a947e9951fb57d3ac3317ba4ae5590f22c470ef4688dd3888da9fb74",
+    "/private/tmp/helix-named-plans-20260909/docs/research/differential-obligations-v1/artifacts/uncovered_query-source.py": "cbc584f1dd2cc72974134245e56c2ddc0de04500900509b274ee5ef6ace89811",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-0.py": "cbc584f1dd2cc72974134245e56c2ddc0de04500900509b274ee5ef6ace89811",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-1.py": "583636c4e90c073489d0e92936acd6371cb40c680524429452c83b4564d71705",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-2.py": "98171d30fee93b8d3d2646e2d9b6ae372162d2ef270eb1eccac72ad65af23c57",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-3.py": "1fa88379daee757309f58fd380495fd9f9a0197d919c22f681d2ed1fe28fd4e5",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-4.py": "928112ab9a01da253060dcd82386111981eceb1b08bcc6d2a888782e69266602",
+    "/Users/mert/Documents/ChatGPT/Helix/research/query-witness-reuse-v1-20260910/candidate-5.py": "13e5dc81d0c052206189b95fabc44382fa06c0fa3c03adcf4520348878eff21a"
+  }
+}

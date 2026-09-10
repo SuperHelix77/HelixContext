@@ -1,0 +1,8 @@
+{
+  "counter": "goal tool cumulative coordinator tokensUsed; coarse observation window",
+  "start": 8722646,
+  "end": 8804440,
+  "delta": 81794,
+  "additional_native_benchmark_calls": 0,
+  "scope": "Coordinator research usage is additional cost. This is not a native input/output split, quota or billing measurement, and excludes later closure work. No net saving claimed."
+}

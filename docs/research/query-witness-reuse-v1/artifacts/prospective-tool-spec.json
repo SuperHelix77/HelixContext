@@ -1,0 +1,19 @@
+{
+  "type": "function",
+  "name": "helix_compare_search",
+  "description": "Run the bound finite legacy-search witness for a query you choose. Compares reference and candidate on matching evidence, missing nonmatching index row, corrupted nonmatching source, default/all/any, and trailing-whitespace controls. Returns observed differences, not semantic approval. Other probes and normal tools remain available.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 128
+      }
+    },
+    "required": [
+      "query"
+    ],
+    "additionalProperties": false
+  }
+}
