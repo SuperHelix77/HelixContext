@@ -23,8 +23,8 @@
       "turns": 1,
       "raw_tool_calls": 5,
       "engine_tool_calls": 1,
-      "failed_command_executions": 0,
-      "completed_command_executions": 0,
+      "failed_command_executions": 1,
+      "completed_command_executions": 3,
       "dynamic_tool_calls": 1,
       "native_events_sha256": "9c28d3b1f63994232ca47ecf4bb2d8a340f682db9d3337ec2d97f295ea8864f1",
       "raw_rollout_sha256": "1fe64bb9322d7948099f8419750a5413111686d20177b8a7d6a5aca705f6362b",
@@ -78,8 +78,8 @@
       "turns": 1,
       "raw_tool_calls": 6,
       "engine_tool_calls": 0,
-      "failed_command_executions": 0,
-      "completed_command_executions": 0,
+      "failed_command_executions": 1,
+      "completed_command_executions": 5,
       "dynamic_tool_calls": 0,
       "native_events_sha256": "ca6f4daa1baba7aee27d578daa07455e06b6024f7a6664d5bff1f15d3fcb1f12",
       "raw_rollout_sha256": "3093b852f60033791e53adc2b93c1abe06ea91849e280a352e506475c634aeb6",
@@ -132,9 +132,9 @@
     "receipt_sha256": "b1c90695e4c2d82e9908201334f36956a9bcb55de96878e451ee719ffd86afcd"
   },
   "failed_work_preserved": {
-    "candidate_failed_command_executions": 0,
-    "control_failed_command_executions": 0,
-    "note": "Candidate's failed semantic probe and subsequent recovery remain in private native receipt; no retry was hidden."
+    "candidate_failed_command_executions": 1,
+    "control_failed_command_executions": 1,
+    "note": "All failed command executions and subsequent recovery remain in private native receipts; no retry was hidden."
   },
   "candidate_switches": {
     "model": "gpt-5.6-luna",
@@ -190,6 +190,7 @@
     "candidate_final": "artifacts/candidate-final.md",
     "control_final": "artifacts/control-final.md",
     "probe_replay": "PROBE_REPLAY.json",
-    "final_review": "FINAL_REVIEW.json"
+    "final_review": "FINAL_REVIEW.json",
+    "final_review_sha256": "3982e6d4d2fba9f62b492d54e7030f51a55fb794d8b696878b663c2987a04a5e"
   }
 }

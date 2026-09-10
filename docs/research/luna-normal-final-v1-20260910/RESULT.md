@@ -16,12 +16,12 @@ renderer, output cap or lower effort was used.
 | Arm | Input | Cached | Uncached | Output | Reasoning | Other output | Segments | Raw tools | Failed commands |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | Candidate | 161,167 | 128,768 | 32,399 | 3,574 | 2,033 | 1,541 | 6 | 5 | 1 |
-| Control | 157,828 | 126,208 | 31,620 | 1,878 | 766 | 1,112 | 7 | 6 | 0 |
+| Control | 157,828 | 126,208 | 31,620 | 1,878 | 766 | 1,112 | 7 | 6 | 1 |
 
 Candidate versus control savings were **−2.1156% input, −90.3088% output and
 −2.4636% uncached input**. Output includes reported reasoning. The failed
-candidate semantic probe and recovery are retained and charged; no retry was
-hidden.
+candidate semantic probe and failed control `pytest` lookup, plus subsequent
+recovery, are retained and charged; no retry was hidden.
 
 Both artifacts passed the existing **23 public/regression tests and 94-case
 independent oracle**. All three previously observed semantic probe programs
