@@ -1,0 +1,30 @@
+{
+  "classification": "Task-only derivatives of fresh known development pilots; not population parity",
+  "reports": {
+    "SOL_HIGH_RESULT.json": "4b89527b63d64447cefc09524190c9dac2ec899b2f2497849f4d37e6c97df1cc"
+  },
+  "files": {
+    "COST.json": "a3184cd6a1f2c1ce47bc40066bf8cdc094d16239195132cc24944215e41873ef",
+    "pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "ANATOMY.json": "ddec5b1b8ee7665757179832093db132871687b320faf6b1f780537d14252599",
+    "sol-high/on/probe-provenance.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/on/workflow_memory.py": "8c76cd854aa1c4c75169d001c2ddaf272ded5381cbc8efcde50416c63240f131",
+    "sol-high/on/internal-calls.json": "4ae8baa7b14f3f2354b732ad4772d7dc46ca0084ace785e9855e75675d0a17a9",
+    "sol-high/on/usage.jsonl": "c6c2de02bd2a61e11be4a1bbd24a15e56c65e265f43b1a64d197c4c60fe9f130",
+    "sol-high/on/final-answer.md": "2a493b1cf90be7faa31230a88ef6029a4d68fe6105d0bd8063f3a898c0ff0930",
+    "sol-high/off/probe-provenance.json": "2a06ff2f18b2885d220fba9ad78ceab435eb40f27179b0fa7d2cf723ed07809a",
+    "sol-high/off/probe-1.py": "bde400634a0168cbeb4a3549249579477d883f5060414c34c61b8672c9aa0b0e",
+    "sol-high/off/workflow_memory.py": "233d42aedb117556ff4943d0751eeb9fb9c3ec55c3e83471c50596a32b31e66a",
+    "sol-high/off/internal-calls.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "sol-high/off/usage.jsonl": "f354c0ae04ad420f4c7110624cccd33e7b62f76ffdc23737183b0befced6aa17",
+    "sol-high/off/final-answer.md": "e2cf9d67a640f6c7b2d42d4ef726d277fbddb7f4fb282607dc19d66a4eb99d3c"
+  },
+  "shared_files": {
+    "maintenance-copy-v1/baseline/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "maintenance-copy-v1/baseline/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "maintenance-copy-v1/baseline/test_workflow_memory.py": "f00cc0b00bf1afe76d2a866c845d5b7255e7954178febbf2659d21a2bf37d92f",
+    "maintenance-copy-v1/test_search_mode_public.py": "bb1207f3a08921e3d7fc3a091cee1f2f339fc2ee4bf2bae6aba998fa565a99ed",
+    "maintenance-copy-v1/oracle.py": "87ea62c59a8f7885124c21b2324f0ac43dc7f3c104ceb0fb2e641324d04a72a7"
+  },
+  "created_at": "2026-09-10T06:04:36.574842+00:00"
+}

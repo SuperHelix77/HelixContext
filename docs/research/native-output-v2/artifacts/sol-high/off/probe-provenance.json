@@ -1,0 +1,9 @@
+[
+  {
+    "path": "probe-1.py",
+    "event_index": 223,
+    "command": "/bin/zsh -lc \"python3 - <<'PY'\nimport tempfile\nfrom pathlib import Path\nfrom evidence import Store\nfrom workflow_memory import Memory\n\nwith tempfile.TemporaryDirectory() as directory:\n    memory = Memory(Store(Path(directory)))\n    memory.record('p', 's', '1', b'alpha beta')\n    memory.record('p', 's', '2', b'alpha')\n    memory.record('p', 's', '3', b'OR beta')\n    assert [r['event_id'] for r in memory.search('p', 'alpha beta')] == ['1']\n    assert [r['event_id'] for r in memory.search('p', 'alpha beta', match_mode='any')] == ['3', '2', '1']\n    assert [r['event_id'] for r in memory.search('p', 'alpha OR beta')] == []\n    assert memory.search('p', 'alpha*') == memory.search('p', 'alpha')\n    for invalid in (None, True, 1, '', 'ANY'):\n        try:\n            memory.search('p', '', match_mode=invalid)\n        except ValueError:\n            pass\n        else:\n            raise AssertionError(f'accepted invalid mode: {invalid\"'!r}'\"')\nprint('focused search-mode checks passed')\nPY\ngit diff --check\ngit status --short\"",
+    "observed_stdout": "focused search-mode checks passed\n M workflow_memory.py\n",
+    "sha256": "bde400634a0168cbeb4a3549249579477d883f5060414c34c61b8672c9aa0b0e"
+  }
+]

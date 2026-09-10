@@ -117,7 +117,7 @@ def native_tool_coverage(path,thread_id):
     raw=cached_bytes(path,16_000_000);digest=hashlib.sha256(raw).hexdigest()
     key=(str(path),thread_id);prior=COVERAGE_CACHE.get(key)
     if prior and prior[0]==digest:return prior[1]
-    hooks=set();commands=set()
+    hooks=set();commands=set();dynamic={};conflict=False
     for line in raw.splitlines():
         try:event=json.loads(line)
         except (ValueError,UnicodeError):continue
@@ -130,9 +130,18 @@ def native_tool_coverage(path,thread_id):
         if event.get('method')=='item/completed':
             item=params.get('item',{})
             if item.get('type')=='commandExecution':commands.add(item.get('id'))
-    unmatched={h for h in hooks if h.startswith('exec-')}-commands
+            if item.get('type')=='dynamicToolCall' and item.get('tool')=='helix_apply_edits':
+                identity=item.get('id')
+                if not isinstance(identity,str) or not identity:conflict=True;continue
+                if identity in dynamic and dynamic[identity]!=item:conflict=True
+                dynamic[identity]=item
+    unmatched={h for h in hooks if h.startswith('exec-')}-commands-set(dynamic)
+    content_complete=all(isinstance(i.get('contentItems'),list) and all(isinstance(c,dict) and c.get('type')=='inputText' and isinstance(c.get('text'),str) for c in i['contentItems']) for i in dynamic.values())
     result={'observed_pretool_hooks':len(hooks),
             'unmatched_pretool_hooks':len(unmatched),
+            'native_helix_tool_calls':None if conflict else len(dynamic),
+            'native_helix_failed_calls':None if conflict or any(type(i.get('success')) is not bool for i in dynamic.values()) else sum(not i['success'] for i in dynamic.values()),
+            'native_helix_result_bytes':None if conflict or not content_complete else sum(len(c['text'].encode()) for i in dynamic.values() for c in i['contentItems']),
             'command_trace_coverage':'UNKNOWN: unmatched pre-tool hooks' if unmatched else 'No unmatched hooks observed; completeness unproven'}
     COVERAGE_CACHE[key]=(digest,result)
     return result

@@ -244,6 +244,25 @@ def test_native_tool_coverage_detects_missing_command_receipts(tmp_path):
     assert native_tool_coverage(path,'other')['observed_pretool_hooks']==0
 
 
+def test_native_helix_calls_include_failures_and_deduplicate_delivery(tmp_path):
+    from server import native_tool_coverage
+    path=tmp_path/'wire.jsonl'
+    def item(identity,success):return {'method':'item/completed','params':{'threadId':'t','item':{'type':'dynamicToolCall','tool':'helix_apply_edits','id':identity,'success':success,'contentItems':[{'type':'inputText','text':'actual result'}]}}}
+    a=item('exec-a',False);b=item('exec-b',True)
+    hook={'method':'hook/completed','params':{'threadId':'t','run':{'eventName':'preToolUse','id':'pre:exec-a'}}}
+    path.write_text(''.join(json.dumps(e)+'\n' for e in [hook,a,a,b]))
+    row=native_tool_coverage(path,'t')
+    assert row['native_helix_tool_calls']==2 and row['native_helix_failed_calls']==1
+    assert row['native_helix_result_bytes']==26 and row['unmatched_pretool_hooks']==0
+    assert native_tool_coverage(path,'other')['native_helix_tool_calls']==0
+    with path.open('a') as f:f.write(json.dumps(item('exec-a',True))+'\n')
+    row=native_tool_coverage(path,'t')
+    assert row['native_helix_tool_calls'] is None and row['native_helix_failed_calls'] is None
+    invalid=item('exec-c',True);invalid['params']['item']['contentItems']=[None]
+    path.write_text(json.dumps(invalid)+'\n')
+    assert native_tool_coverage(path,'t')['native_helix_result_bytes'] is None
+
+
 def test_hook_gap_surfaces_as_snapshot_alert(tmp_path):
     cfg=setup(tmp_path);wire=tmp_path/'native.jsonl'
     wire.write_text(json.dumps({'method':'hook/completed','params':{'threadId':'t','run':{'eventName':'preToolUse','id':'pre-tool-use:0:config:exec-missing'}}})+'\n')
