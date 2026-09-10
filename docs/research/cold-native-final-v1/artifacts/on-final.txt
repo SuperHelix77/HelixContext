@@ -1,0 +1,7 @@
+{
+  "inventory_tag": "PKG_01_02",
+  "label_exact": "café / Ω / 箱 59107 \t ",
+  "label_utf8_base64": "Y2FmZcyBIC8gzqkgLyDnrrEgNTkxMDcgCSA=",
+  "sequence_exact": "0000000073129289",
+  "evidence_turn": 1
+}

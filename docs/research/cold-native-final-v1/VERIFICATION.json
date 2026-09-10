@@ -1,0 +1,13 @@
+{
+  "checked_at_utc": "2026-09-10T10:34:41.456826+00:00",
+  "public_bound_files": 22,
+  "public_integrity": "PASS",
+  "independent_exact_source_final_check": "PASS",
+  "native_raw_config_counter_audit": "PASS",
+  "semantic_claim_review": "PASS",
+  "cold_offline_tests": 32,
+  "cold_offline_subtests": 7,
+  "mixed_passive_ledger_tests": 7,
+  "mixed_semantic_benchmark": "NOT_LAUNCHED",
+  "new_engine_implementation": "NONE"
+}

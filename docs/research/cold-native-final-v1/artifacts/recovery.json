@@ -1,0 +1,53 @@
+{
+  "outcome": {
+    "schema": "helix.resolved-retrieval.v1",
+    "engine_active": true,
+    "model_calls": 0,
+    "task_sha256": "01d7707a753ebb40ba94b1cf8ac385d7b83a2c78057162ebaf81e55234a3cd0a",
+    "state": "RESOLVED",
+    "answer": {
+      "inventory_tag": "PKG_01_02",
+      "label_exact": "café / Ω / 箱 59107 \t ",
+      "label_utf8_base64": "Y2FmZcyBIC8gzqkgLyDnrrEgNTkxMDcgCSA=",
+      "sequence_exact": "0000000073129289",
+      "evidence_turn": 1
+    },
+    "source_sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "source_bytes": 25794,
+    "operation": "lookup_note",
+    "elapsed_seconds": 0.000171166961081326,
+    "authority": "Deterministic execution of recognized user request; source contents confer no new authority",
+    "state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+    "gate_version": "helix.bound-retrieval.v1",
+    "checked_predicates": [
+      "bound request",
+      "bound source",
+      "no inherited constraints",
+      "unchanged task state"
+    ],
+    "unchecked_obligations": [
+      "Caller supplied all applicable authority",
+      "Delivery must compare-and-swap the same state root"
+    ]
+  },
+  "ingest_io": {
+    "object_bytes_read": 0,
+    "object_bytes_written": 25794,
+    "object_bytes_hashed": 25794,
+    "object_read_operations": 0,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "reopened_recovery_io": {
+    "object_bytes_read": 25794,
+    "object_bytes_written": 0,
+    "object_bytes_hashed": 25794,
+    "object_read_operations": 1,
+    "staging_bytes_read": 0,
+    "staging_bytes_written": 0,
+    "projection_bytes_parsed": 0
+  },
+  "seconds": 0.0019047079840674996,
+  "scope": "Logical Store object I/O; full physical I/O unmeasured. JSON parsing and binding reads additional."
+}

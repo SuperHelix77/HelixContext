@@ -1,0 +1,34 @@
+{
+  "source": "https://developers.openai.com/api/docs/pricing.md",
+  "checked_at_unix": 1789035964.121035,
+  "source_sha256": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+  "rates": {
+    "short": [
+      10.0,
+      1.0,
+      12.5,
+      50.0
+    ],
+    "long": [
+      20.0,
+      2.0,
+      25.0,
+      75.0
+    ]
+  },
+  "api_equivalent_scenarios": {
+    "off": {
+      "short": 0.294944,
+      "long": 0.578188
+    },
+    "on": {
+      "short": 0.138468,
+      "long": 0.272461
+    }
+  },
+  "savings_percent": {
+    "short": 53.05278290116089,
+    "long": 52.87674597189842
+  },
+  "scope": "Dated standard API tariff scenarios; not included Codex quota, invoice or complete cost"
+}

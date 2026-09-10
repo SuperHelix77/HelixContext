@@ -1,0 +1,35 @@
+{
+  "old_passive_skip_falsifier": {
+    "semantic_route": "semantic_required",
+    "next_ack_error": "Sequence gap or conflicting replay ordinal",
+    "committed_records_after_failure": 1
+  },
+  "generic_mixed_data_replay": {
+    "exact_restart": "PASS",
+    "same_replay": "PASS",
+    "conflict_rejected": "PASS",
+    "completed_records": 3,
+    "head": "709f4ac666eff036d475870a1fa0a3ab8047382ae53c05cf8f3ed1ab4c1e2c35",
+    "logical_store_io": {
+      "object_bytes_read": 5752,
+      "object_bytes_written": 1438,
+      "object_bytes_hashed": 7190,
+      "object_read_operations": 24,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "scope": "Scripted payload storage only; no mixed semantic adapter, model authorship, downstream effect or consumer ACK qualified"
+  },
+  "native_model_calls": 0,
+  "seconds": 0.012750167050398886,
+  "classification": "OFFLINE integration falsifier; not capability or token savings",
+  "bindings": {
+    "docs/research/w50-mixed-offline-v1/replay.py": "4ffcb16135a38484698a8ce84abcf141b5eb38e13bb22de783cca659f6512cbf",
+    "engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "engine/prototype/workflow_memory.py": "84d5c2ef22d8e6b2c1cea3ac110d9600f5854d7ca6d70477b5d5b62c9c18938d",
+    "engine/prototype/completion_ledger.py": "f262fb69c3fe8e210972287feae996824f382e5eb152612118dd01c6e24ece75",
+    "engine/prototype/passive_workflow.py": "d7bdde08096fd8493f6de6abaefd40e63a73438c9af618b5978a046b1f7b58c5",
+    "engine/prototype/receipt_delivery.py": "3b354a052e09a2c5e82bf23d6a34acafe3cc6d5de5462e1e4763a85d9cba3281"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "state": "FINITE_SCOPED_CANDIDATE_NOT_RELEASE",
+  "files": {
+    "pilot.py": "64b431097450aafb4811a3f83cbb8ef25d361fa37a259693f65c11d96e1578d1",
+    "AUDIT.json": "04e477e8705b12c82ff56bc727a240d84e99f0e3c41dd36f5b29031f94443f70",
+    "RESULT.md": "bfe61796f35cdaf39baa1135226bd11ecb1b700cff91e4bdd57c182105d7a7c0",
+    "audit.py": "a60011dfa25ede8fc5d7bee4c7f7c4307d35aee59d16b2e28bec933f8d2ab386",
+    "test_pilot.py": "af94e52cbfefa76fae97b350f9e5b93b9b94f6107135f937b89c56641895eae1",
+    "PREREG.md": "f1913f61e0fc5ead418a21278fd3cc5bc7d2a335fa0e05caa73bd00577de78e0",
+    "SEMANTIC_REVIEW.json": "68fc87b463d384b2809ffdf6d9c0edebb4a1347b9467bc34b53dc24091330b0f",
+    "PRICING.json": "52d44ac2ebc4b38c98273584cf6fa479d8d43df2525130896a1442a61d6d3a54",
+    "verify.py": "0c394fb909643b4efbf85118a343c68a70d763dab5b1428effe2c07c6e135011",
+    "RESEARCH_ACCOUNTING.json": "393862bcd1fbcf52b18b43e60ec907c40845dd12fe241f016779fa8a2c9af141",
+    "FREEZE.json": "a0ab45dbfa99b84d03183f5520c323cd6b4ccc40484a9203ed71d59f91cd572f",
+    "artifacts/fixture.json": "7bbc7bdb4f17c07431a94c8da00022bd987235258084a48df828a2b975d990a4",
+    "artifacts/packet.json": "6f39b9e2e307318d7a5afe2ade0cfab72cb92696e236a2d332699a69ce6839d1",
+    "artifacts/pricing-source.md": "8c9b760861c1c760cc82f6ccf3037bd9d3a49518a1303f56ba63a2eb0b4158ad",
+    "artifacts/on-final.txt": "07f70b72d231296c7a1ab3475a965bcffa14f91e4e798f7e7e9f8f030273f0df",
+    "artifacts/task-state.json": "ccb889744f16f649f5442de12d9a095370540cb640e7c385df08728ba1531fa6",
+    "artifacts/off-visible.json": "d80fe2b0ffa1a0590409a6ad18e3c965cd41e3d81c55c282d1f676343c27e758",
+    "artifacts/manifest.json": "7dd504b61a3ee80554ef2069ff30ddf9f327900de485c983607bb09759ce42e8",
+    "artifacts/off-final.txt": "e926e2c56e178521cf984e241844c2f556c769d246c7b23ecfde8d8df87e3244",
+    "artifacts/PREFLIGHT.json": "ef4399fec3b002320350b9f5724e3257969f931f2ebb0d6880de06bce5ac9b74",
+    "artifacts/recovery.json": "326e7f5afda9a84f4847d26737e3afb3069afcf45a8c4befefcc754a3f3740f5",
+    "artifacts/on-visible.json": "831d9162aeaaaa3153f04083f66c412ef270232f8d74c57d3b844e56dd04e6c6"
+  },
+  "private_native_evidence": "Original raw/native streams retained locally and hash-bound byAUDIT.json; private configuration and memory contents not published",
+  "native_user_turns": 2,
+  "native_retries": 0,
+  "created_at_utc": "2026-09-10T10:34:07.871305+00:00"
+}

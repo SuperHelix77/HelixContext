@@ -1,0 +1,27 @@
+{
+  "measured_at_utc": "2026-09-10T10:27:39.302148+00:00",
+  "coordinator_goal_counter_start": 8919279,
+  "counter_scope": "Coarse coordinator goal token counter only; final closure delta recorded separately. Not native input/output, billing or total project cost.",
+  "private_run_payload_bytes_at_measurement": 1899529,
+  "native_pair_input": 111991,
+  "native_pair_output": 647,
+  "native_pair_cached_input": 79872,
+  "native_pair_reasoning_output": 60,
+  "native_user_turns": 2,
+  "cost_scope": "Both native arms, setup, optional memory, preflights, capture and audit retained. Physical I/O/CPU energy, included quota and complete research economics unknown; no net research profit claim.",
+  "coordinator_goal_counter_observation": 9012862,
+  "coordinator_observed_interval": 93583,
+  "coordinator_scope_limit": "Excludes preceding PREREG work and later closure; not native per-axis counters or quota. Whole-thread counter is9,012,862 at this observation.",
+  "binding_verification": {
+    "logical_bytes_per_pass": 221837176,
+    "native_pair_passes": 7,
+    "native_pair_logical_bytes": 1552860232,
+    "preflight_passes": 3,
+    "preflight_logical_bytes": 665511528,
+    "audit_passes": 1,
+    "audit_logical_bytes": 221837176,
+    "preparation_and_other_reads_additional": true,
+    "method": "Frozen successful call path times unchanged bound file lengths, not syscall tracing",
+    "physical_io": "UNKNOWN"
+  }
+}

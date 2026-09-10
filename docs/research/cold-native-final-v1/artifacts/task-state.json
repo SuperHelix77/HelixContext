@@ -1,0 +1,10 @@
+{
+  "schema": "helix.bound-retrieval.v1",
+  "adapter_version": "helix.resolved-retrieval.v1",
+  "task_sha256": "01d7707a753ebb40ba94b1cf8ac385d7b83a2c78057162ebaf81e55234a3cd0a",
+  "source_ref": {
+    "sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "bytes": 25794
+  },
+  "active_constraints": []
+}

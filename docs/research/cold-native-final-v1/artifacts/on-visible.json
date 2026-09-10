@@ -1,0 +1,20 @@
+[
+  {
+    "type": "agentMessage",
+    "id": "msg_0c091d9e07b0d6bf016aa28572462c87d28fb7f3243a6468ae",
+    "text": "I’m using Helix Context and the caller’s validated extraction to preserve the exact label and sequence.\n",
+    "phase": "commentary",
+    "memoryCitation": null,
+    "delivery": null,
+    "questions": null
+  },
+  {
+    "type": "agentMessage",
+    "id": "msg_0c091d9e07b0d6bf016aa285758c3c87d2b9e762b645504260",
+    "text": "{\n  \"inventory_tag\": \"PKG_01_02\",\n  \"label_exact\": \"café / Ω / 箱 59107 \\t \",\n  \"label_utf8_base64\": \"Y2FmZcyBIC8gzqkgLyDnrrEgNTkxMDcgCSA=\",\n  \"sequence_exact\": \"0000000073129289\",\n  \"evidence_turn\": 1\n}",
+    "phase": "final_answer",
+    "memoryCitation": null,
+    "delivery": null,
+    "questions": null
+  }
+]

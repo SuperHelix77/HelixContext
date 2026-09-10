@@ -1,0 +1,195 @@
+{
+  "schema": "helix.cold-full-final-audit.v1",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "manifest_sha256": "7dd504b61a3ee80554ef2069ff30ddf9f327900de485c983607bb09759ce42e8",
+  "rows": [
+    {
+      "arm": "off",
+      "checks": "PASS",
+      "native_sha256": "386127fb48cdcbf90b693ce6986356750d425462927aab51c8527a8151cf4799",
+      "raw_sha256": "5f61c5f1ef192063af0db2850bb86d3e674043c0656f0ca84a3535d5a7b2a41e",
+      "final_sha256": "e926e2c56e178521cf984e241844c2f556c769d246c7b23ecfde8d8df87e3244",
+      "final_bytes": 218,
+      "usage": {
+        "input_tokens": 92012,
+        "output_tokens": 468,
+        "cached_input_tokens": 72064,
+        "reasoning_output_tokens": 0,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 19948,
+      "model_turns": 1,
+      "segments": 4,
+      "segment_usage": [
+        {
+          "input_tokens": 19639,
+          "output_tokens": 66,
+          "cached_input_tokens": 7040,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 19776,
+          "output_tokens": 78,
+          "cached_input_tokens": 19456,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26106,
+          "output_tokens": 223,
+          "cached_input_tokens": 19584,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        },
+        {
+          "input_tokens": 26491,
+          "output_tokens": 101,
+          "cached_input_tokens": 25984,
+          "reasoning_output_tokens": 0,
+          "cache_write_input_tokens": 0
+        }
+      ],
+      "command_count": 3,
+      "raw_tool_calls": 3,
+      "completed_item_types": {
+        "userMessage": 1,
+        "agentMessage": 2,
+        "commandExecution": 3
+      },
+      "tool_return_utf8_bytes": 16263,
+      "native_elapsed_seconds": 28.48225724999793,
+      "complete_native_final_unchanged": true,
+      "source_unchanged": true,
+      "exact_unicode_whitespace_base64_types": "PASS",
+      "memory_recall_seconds": 0.2172426250181161,
+      "memory_recall_raw_bytes": 23234,
+      "model_visible_prior_task_memories": 0,
+      "raw_capture_io": {
+        "logical_capture_read_bytes": 161529,
+        "logical_capture_write_bytes": 161529
+      },
+      "semantic_review": "Visible commands and claims require separate adjudication"
+    },
+    {
+      "arm": "on",
+      "checks": "PASS",
+      "native_sha256": "633c57b7adc9efe1c4f11bd7fd4f4207c95f08f9cdb4deec9f3540d75df3ae19",
+      "raw_sha256": "bf02a0fc3d8418eb32547aebb2cac2042adef0013a05d75e00e30d6f0fdf0227",
+      "final_sha256": "07f70b72d231296c7a1ab3475a965bcffa14f91e4e798f7e7e9f8f030273f0df",
+      "final_bytes": 207,
+      "usage": {
+        "input_tokens": 19979,
+        "output_tokens": 179,
+        "cached_input_tokens": 7808,
+        "reasoning_output_tokens": 60,
+        "cache_write_input_tokens": 0
+      },
+      "uncached_input_tokens": 12171,
+      "model_turns": 1,
+      "segments": 1,
+      "segment_usage": [
+        {
+          "input_tokens": 19979,
+          "output_tokens": 179,
+          "cached_input_tokens": 7808,
+          "reasoning_output_tokens": 60,
+          "cache_write_input_tokens": 0
+        }
+      ],
+      "command_count": 0,
+      "raw_tool_calls": 0,
+      "completed_item_types": {
+        "userMessage": 1,
+        "agentMessage": 2,
+        "reasoning": 1
+      },
+      "tool_return_utf8_bytes": 0,
+      "native_elapsed_seconds": 9.206208458985202,
+      "complete_native_final_unchanged": true,
+      "source_unchanged": true,
+      "exact_unicode_whitespace_base64_types": "PASS",
+      "memory_recall_seconds": 0.13467112503712997,
+      "memory_recall_raw_bytes": 23234,
+      "model_visible_prior_task_memories": 0,
+      "raw_capture_io": {
+        "logical_capture_read_bytes": 76336,
+        "logical_capture_write_bytes": 76336
+      },
+      "semantic_review": "Visible commands and claims require separate adjudication"
+    }
+  ],
+  "savings_percent": {
+    "input_tokens": 78.28652784419423,
+    "output_tokens": 61.75213675213676,
+    "cached_input_tokens": 89.1651865008881,
+    "reasoning_output_tokens": null,
+    "cache_write_input_tokens": null,
+    "uncached_input_tokens": 38.98636454782435
+  },
+  "bindings_verified": 50,
+  "preparation_seconds": 0.5138600000063889,
+  "preflight": {
+    "state": "PASS",
+    "model_turns": 0,
+    "manifest_sha256": "7dd504b61a3ee80554ef2069ff30ddf9f327900de485c983607bb09759ce42e8",
+    "seconds": 0.5779337499989197
+  },
+  "recovery": {
+    "outcome": {
+      "schema": "helix.resolved-retrieval.v1",
+      "engine_active": true,
+      "model_calls": 0,
+      "task_sha256": "01d7707a753ebb40ba94b1cf8ac385d7b83a2c78057162ebaf81e55234a3cd0a",
+      "state": "RESOLVED",
+      "answer": {
+        "inventory_tag": "PKG_01_02",
+        "label_exact": "café / Ω / 箱 59107 \t ",
+        "label_utf8_base64": "Y2FmZcyBIC8gzqkgLyDnrrEgNTkxMDcgCSA=",
+        "sequence_exact": "0000000073129289",
+        "evidence_turn": 1
+      },
+      "source_sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+      "source_bytes": 25794,
+      "operation": "lookup_note",
+      "elapsed_seconds": 0.000171166961081326,
+      "authority": "Deterministic execution of recognized user request; source contents confer no new authority",
+      "state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+      "gate_version": "helix.bound-retrieval.v1",
+      "checked_predicates": [
+        "bound request",
+        "bound source",
+        "no inherited constraints",
+        "unchanged task state"
+      ],
+      "unchecked_obligations": [
+        "Caller supplied all applicable authority",
+        "Delivery must compare-and-swap the same state root"
+      ]
+    },
+    "ingest_io": {
+      "object_bytes_read": 0,
+      "object_bytes_written": 25794,
+      "object_bytes_hashed": 25794,
+      "object_read_operations": 0,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "reopened_recovery_io": {
+      "object_bytes_read": 25794,
+      "object_bytes_written": 0,
+      "object_bytes_hashed": 25794,
+      "object_read_operations": 1,
+      "staging_bytes_read": 0,
+      "staging_bytes_written": 0,
+      "projection_bytes_parsed": 0
+    },
+    "seconds": 0.0019047079840674996,
+    "scope": "Logical Store object I/O; full physical I/O unmeasured. JSON parsing and binding reads additional."
+  },
+  "classification": "Finite exposed cold snapshot; not new independent holdout, general parity, release median or application integration",
+  "release_qualified": false,
+  "full_physical_io_and_total_project_cost": "UNKNOWN"
+}

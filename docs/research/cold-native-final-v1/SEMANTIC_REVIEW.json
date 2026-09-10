@@ -1,0 +1,31 @@
+{
+  "classification": "OBSERVED finite exact-recovery task parity; not novel semantic efficiency or general capability parity",
+  "arms": {
+    "off": {
+      "verdict": "PASS",
+      "behavior": "Used rg to locate the tag; displayed first16000 characters of serialized history; generated exact extraction/base64 validation; returned complete JSON. No source edit or unsupported final claim."
+    },
+    "on": {
+      "verdict": "PASS",
+      "behavior": "Used caller completed extraction; zero commands; returned complete model-written JSON. Commentary attributes extraction to caller and does not claim an independent model check."
+    }
+  },
+  "output_contract": "Both finals are full model-written JSON and unchanged. Off uses Unicode escapes; on uses literal Unicode plus escaped tab. Decoded code points/types/whitespace equal. Byte-identical formatting was not required.",
+  "authority_limits": "No inherited domain constraints in this exact fixture. Global operational instructions remain in model context. Bound hashes do not prove caller authority completeness. Caller checks source/state before and after delivery; no concurrent writer isolation proved.",
+  "economics_gate": "Neither80/80 nor65/65 met; output61.7521%. Scoped efficiency candidate only. No model release or self deployment.",
+  "new_native_user_turns": 2,
+  "native_retries": 0,
+  "prior_offline_collection_failure": 1,
+  "rows": [
+    {
+      "arm": "off",
+      "native_sha256": "386127fb48cdcbf90b693ce6986356750d425462927aab51c8527a8151cf4799",
+      "checks": "PASS"
+    },
+    {
+      "arm": "on",
+      "native_sha256": "633c57b7adc9efe1c4f11bd7fd4f4207c95f08f9cdb4deec9f3540d75df3ae19",
+      "checks": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": "helix.cold-native-final.v1",
+  "model": "gpt-6-astra",
+  "effort": "high",
+  "order": [
+    "off",
+    "on"
+  ],
+  "base_sha256": "152dfaeeb552876190962be1c12c93d426840ff12691f648261554a7675a6698",
+  "native_turns_authorized": 2,
+  "classification": "Exposed development snapshot; Engine-managed ordinary control; same installed configuration and original base",
+  "source_sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+  "source_bytes": 25794,
+  "protected": {
+    "off": {
+      "history.json": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+      "AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+      ".agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5"
+    },
+    "on": {
+      "history.json": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+      "AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+      ".agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5"
+    }
+  },
+  "prompt_bytes": {
+    "off": 1081,
+    "on": 2301
+  },
+  "bindings": {
+    "/Applications/ChatGPT.app/Contents/Resources/codex": "a30ec314bbd0e3721632234d07db7c99855db3b9f1e32dbe8c791947f07e7629",
+    "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3.14": "50298e5fa54e018a9950794d4625a82ba7f2b04a6ef272dc4d26f89a2176072b",
+    "/Users/mert/.codex/AGENTS.md": "8cf6028e3a0de95df907c96453c296308f46de702b62adb69d3c500f3cab0884",
+    "/Users/mert/.codex/config.toml": "591a3e2f7eaec2ea0b54260735e103a1641edc51d2eede77e7d029583d2c5fba",
+    "/Users/mert/.codex/helix-context/bin/runtime-b09051d7f65fa98b.py": "b09051d7f65fa98bc34cba10084241b117e4facf11738550322f91906b0daddb",
+    "/Users/mert/.codex/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "/Users/mert/.codex/skills/longflow/scripts/codex_mem.py": "5ef0d01d37d355e941d7710adc0fd170df3e609a465f1f5954fb2e6f6751398c",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/catalog.json": "5de0290102596b4240031c5acec8f69955e830cc6b512f36df04fca00cd30144",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/expected.private.json": "f12e601dad42e1a1ad303c301dae064c2b25c24911dc0d45f19539da7db7d5fe",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/fixture.json": "7bbc7bdb4f17c07431a94c8da00022bd987235258084a48df828a2b975d990a4",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off/.agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off/AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off/history.json": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off-memory/raw.json": "ab6321045a6ac8402cfe5c8152837db9367bc6aac0f735a2e1e5c37180982310",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off-memory/receipt.json": "12f80f1a5bc102723425c9345da664ea53213d7c8cbc3d476b1f146cdcef5811",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off-memory/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/off-prompt.txt": "83837ca724e6befd539d23b9e8704bc0124e7d97f83d3913599158274e417536",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on/.agents/skills/helixcontext/SKILL.md": "528b599822a8b121b840f21900da1948cd5d0a760c82060d25653cef40b558d5",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on/AGENTS.md": "50d8915fd5c0adf975521112af1b2cf42759fda0cf3a7af512665bff24d0dcb0",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on/history.json": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on-memory/raw.json": "2e9b9dcaa6557964e23d585d9eea68848fabb871ebc2d9324c7b131e79cf49c5",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on-memory/receipt.json": "3284231a8dc3fc44014b47ef23b9415f06f244a0ebff80267e220aae6e751452",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on-memory/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/on-prompt.txt": "97362b867b69abf8e7e569bf8b7357a5cf89e6a7b789d19d846db45dac28ddb1",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/packet.json": "6f39b9e2e307318d7a5afe2ade0cfab72cb92696e236a2d332699a69ce6839d1",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/recovery.json": "326e7f5afda9a84f4847d26737e3afb3069afcf45a8c4befefcc754a3f3740f5",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/store/objects/f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "/Users/mert/Documents/ChatGPT/Helix/research/astra-cold-full-final-v1-20260910/task-state.json": "ccb889744f16f649f5442de12d9a095370540cb640e7c385df08728ba1531fa6",
+    "/private/tmp/helix-named-plans-20260909/benchmarks/frozen-high/protocol/latent-v1/delay-40.json": "d798ebf0958c77a41671e525d033bae5f48b45df5028d4a4f90e74ad56652bcd",
+    "/private/tmp/helix-named-plans-20260909/benchmarks/frozen-high/protocol/reasoning-v2.json": "c95a7ab8a71d5b01550b8ea479063745187985c82abdf56f3949f7c448db9b97",
+    "/private/tmp/helix-named-plans-20260909/docs/research/astra-reuse-v1/pilot.py": "9c77812167777f6a106396b751893cb32c1e2e028cf4b77ef9ea36f064f898fd",
+    "/private/tmp/helix-named-plans-20260909/docs/research/cold-native-final-v1/PREREG.md": "f1913f61e0fc5ead418a21278fd3cc5bc7d2a335fa0e05caa73bd00577de78e0",
+    "/private/tmp/helix-named-plans-20260909/docs/research/cold-native-final-v1/pilot.py": "64b431097450aafb4811a3f83cbb8ef25d361fa37a259693f65c11d96e1578d1",
+    "/private/tmp/helix-named-plans-20260909/docs/research/cold-native-final-v1/test_pilot.py": "af94e52cbfefa76fae97b350f9e5b93b9b94f6107135f937b89c56641895eae1",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/luna_resolved_retrieval_pair.py": "c716934ffde4a9278057a6f2d1b1db7aacfaf2b0de2b5ee1cda68e127a3b1ae6",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/luna_varied_coding_v1.py": "e444881dbc26be334db248f3e12e5ca22af609e76a0455781686594b3fb1fea4",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/luna_varied_coding_v2.py": "7a9e5aec1aa4433b6ba915d48c07efee81523bd495e16dd5e9b943c7cc0ecc83",
+    "/private/tmp/helix-named-plans-20260909/docs/research/continuation-contract/varied_coding_tasks.py": "524cf17a7ac31255ff25059fba4b2d919059a2a4d6174175b80164fa56404c20",
+    "/private/tmp/helix-named-plans-20260909/engine/output/app_server_native.py": "2be7238a05d1959e86fa76a141af81c74cfdea8c8cb87b4fd9921132e4cf80a7",
+    "/private/tmp/helix-named-plans-20260909/engine/output/caller_memory_receipt.py": "ded6a454e23c156290e8ff53a8cc1a0b39d0134134dbfe4a10d0215f3ab4198d",
+    "/private/tmp/helix-named-plans-20260909/engine/output/caller_registration.py": "f242f5583f1e2b34a16c0acbab0f3bbf4de1a96717dd216616c7ca700bb9e7e6",
+    "/private/tmp/helix-named-plans-20260909/engine/output/config_bound_session.py": "caed4a681f9823d2dcdcc031124da202ba32cf31f9d1d71f455b82819e3a3ff7",
+    "/private/tmp/helix-named-plans-20260909/engine/output/effort_session.py": "a6a7e3fbbfd254f7f682b6a3c33378a9a937bb525b0e28c9f5002669ada9cb59",
+    "/private/tmp/helix-named-plans-20260909/engine/output/observed_session.py": "fff1210aaf2f3d21b92cc276b9365a5608d3a67609136d8b698127ee6d690fd0",
+    "/private/tmp/helix-named-plans-20260909/engine/output/project_registration_preflight.py": "f0147ded9814f9a81da4630af3d935b210343b8b98c730a9a8732cea8fc1b0bc",
+    "/private/tmp/helix-named-plans-20260909/engine/output/raw_receipts.py": "802d90373771f3f76d9b605e29dc92c54bab258ab685522e0b6edfd9fb0b9fd1",
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/bound_retrieval.py": "e86795c19f1efcb214ba4746a67d56657413930701771f9f69e245b958eccd6b",
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/evidence.py": "40b13591bd7aa22480e55f71d4946ab09ef162a340da084b61d18f2d98a5cede",
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/jsonl_extract.py": "242f20d57771818ac139d60b6dbecc82a3e20345eaca1d238a62c5024c72a76d",
+    "/private/tmp/helix-named-plans-20260909/engine/prototype/resolved_retrieval.py": "1debe7d17d6567e479445b546c2c18cd33032e0cf1c26c80a341e37323fea2c9"
+  },
+  "preparation_seconds": 0.5138600000063889
+}

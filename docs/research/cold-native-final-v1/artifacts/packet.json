@@ -1,0 +1,33 @@
+{
+  "schema": "helix.cold-native-final.v1",
+  "source_file": "history.json",
+  "source_ref": {
+    "sha256": "f7ac8dbd1de5e478823997b003956c29e8dcefdb88c5361ce5146d6ef4e073ab",
+    "bytes": 25794
+  },
+  "task_state_root": "f778d8f7021940f1c050f0784af26019bf91cc8d7872e9c77a93afddbad94b5b",
+  "executor": "helix.resolved-retrieval.v1",
+  "gate": "helix.bound-retrieval.v1",
+  "recovered_fields": {
+    "inventory_tag": "PKG_01_02",
+    "label_exact": "café / Ω / 箱 59107 \t ",
+    "label_utf8_base64": "Y2FmZcyBIC8gzqkgLyDnrrEgNTkxMDcgCSA=",
+    "sequence_exact": "0000000073129289",
+    "evidence_turn": 1
+  },
+  "original_note": {
+    "inventory_tag": "PKG_01_02",
+    "label_exact": "café / Ω / 箱 59107 \t ",
+    "sequence_exact": "0000000073129289"
+  },
+  "checked_predicates": [
+    "bound request",
+    "bound source",
+    "no inherited constraints",
+    "unchanged task state"
+  ],
+  "unchecked_obligations": [
+    "Caller supplied all applicable authority",
+    "Delivery must compare-and-swap the same state root"
+  ]
+}
