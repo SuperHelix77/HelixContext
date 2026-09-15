@@ -74,7 +74,8 @@ The repair is fail-open at the optional integration boundaries and conservative 
      an empty assistant row with no attachments and no active or associated generation run.
    - `DELETE /api/chat/threads/{thread_id}/messages/{message_id}` is authenticated and returns
      conflict for non-empty, non-assistant, active, or managed rows.
-   - The frontend deletes its IndexedDB shadow only after the guarded backend delete succeeds.
+   - The frontend deletes its IndexedDB shadow after the guarded backend delete succeeds, or when the
+     backend confirms the row is already missing; protected/managed conflicts remain for recovery.
 
 5. **Tool-history replay**
    - Existing replay serialization drops assistant tool calls that do not have a matching tool
