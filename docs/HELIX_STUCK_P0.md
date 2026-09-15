@@ -63,9 +63,9 @@ The repair is fail-open at the optional integration boundaries and conservative 
 
 3. **Lifecycle tracing**
    - The adapter records `send.received`, `memory.start`, `memory.end`,
-     `memory.timeout`/`memory.error`, `prompt.start`, `prompt.end`, `run.created`,
-     `backend.request`, `backend.first_token`, `backend.complete`, `run.finalized`, and
-     `ui.terminal`.
+     `memory.timeout`/`memory.error`, `prompt.start`, `prompt.end`, `persistence.start`,
+     `persistence.end`, `run.created`, `backend.request`, `backend.first_token`,
+     `backend.complete`, `run.finalized`, and `ui.terminal`.
    - Records include thread ID, run/cancel ID, estimated prompt token count, unresolved tool-call
      count, and elapsed milliseconds. Tracing is best-effort and cannot fail a send.
 
