@@ -35,8 +35,15 @@ def packet_for(payload, tool_name, response_bytes):
 def emit(text):
     if ARM == "A":
         return {"continue": False, "stopReason": text}
-    return {"hookSpecificOutput": {"hookEventName": "PostToolUse",
-                                   "updatedMCPToolOutput": text}}
+    if ARM == "B":
+        return {"hookSpecificOutput": {"hookEventName": "PostToolUse",
+                                       "updatedMCPToolOutput": text}}
+    if ARM == "C":
+        # control: additive context, no result replacement, no turn stop
+        return {"continue": True,
+                "hookSpecificOutput": {"hookEventName": "PostToolUse",
+                                       "additionalContext": text}}
+    return {}
 
 def record(entry):
     if not LOG:
